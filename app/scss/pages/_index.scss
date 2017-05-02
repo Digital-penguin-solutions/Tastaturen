@@ -1,11 +1,18 @@
+@import "../everything";
+
+//header on index page
 .i_header{
   height: 100vh;
   z-index: 4;
-  background: #000;
+  background: $color5;
   .i_header_container{
     .i_header_text_container{
+      z-index: 5;
       h1{
-
+        color: $white;
+        font-size: 3vw;
+        font-weight: 600;
+        text-align: center;
       }
       p{
 
@@ -15,4 +22,29 @@
       
     }
   }
+}
+.i_info{
+  min-height: 50vh;
+  .i_info_container{
+    h1{
+
+
+    }
+    p{
+
+    }
+  }
+}
+
+//pruduct page index
+.i_products{
+  min-height: 100vh;
+  background: red;
+  .i_products_container{
+
+  }
+}
+
+.i_contact{
+
 }

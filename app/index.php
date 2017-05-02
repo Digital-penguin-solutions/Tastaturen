@@ -22,9 +22,20 @@
     </div>
 </header>
 
+<section class="i_info container-fluid">
+    <div class="row-fluid i_info">
+        <div class="col-xs-12 i_info_container">
+            <h1></h1>
+            <p>HEj</p>
+        </div>
+    </div>
+</section>
+
 <section class="i_products container-fluid">
     <div class="row-fluid i_products">
+        <div class="col-xs-12 i_products_container">
 
+        </div>
     </div>
 </section>
 
