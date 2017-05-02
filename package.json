@@ -1,7 +1,7 @@
 {
-  "name": "anders",
+  "name": "tastauren",
   "version": "1.0.0",
-  "description": "Anders bjork nya hemsida",
+  "description": "Tastaturen website of 2017",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

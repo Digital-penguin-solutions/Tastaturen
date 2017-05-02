@@ -42,8 +42,16 @@ g.task('compile-sass', function () {
     return g.src('app/scss/app.scss')
         .pipe(plumber())
         .pipe(sass())
-        .pipe(prefix('last 2 versions'))
         .pipe(g.dest('app/css'));
+});
+
+g.task('prefix', ['compile-sass'], function () {
+    return g.src('html/css/app.css')
+        .pipe(prefix({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(g.dest('html/css/'));
 });
 
 //minify css files and run the sass function before
@@ -132,8 +140,11 @@ g.task('connect-php', function () {
 });
 
 g.task('build',['clean'],function () {
-    g.start('minify', 'css-build', 'js-build', 'copy', 'imgmin')
+    g.start('minify', 'prefix', 'concat-js-app','concat-js-third-party', 'copy', 'imgmin')
 });
 
+//developing with xamp
+g.task('dev', ['prefix', 'concat-js-third-party', 'concat-js-app', 'dev-watch']);
+
 //run css tole to compile css
-g.task('default', ['compile-sass', 'concat-js-app','concat-js-third-party', 'connect-php']);
+g.task('default', ['prefix', 'concat-js-app','concat-js-third-party', 'connect-php']);

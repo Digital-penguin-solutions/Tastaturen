@@ -9,9 +9,13 @@
 @import "variabels";
 @import "everything";
 
-//include pages
-@import "footer";
-@import "nav";
+//partials
+@import "partials/footer";
+@import "partials/nav";
+@import "partials/skroll";
 
-//import scroll
-@import "skroll";
+//views
+@import "views/404";
+
+//pages
+@import "pages/index";
