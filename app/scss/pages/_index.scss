@@ -55,19 +55,21 @@
 
 //contact section
 .i_contact{
+  min-height: 50vh;
+  .i_contact_container{
 
+  }
 }
 
 
 //tablet size
 @media (min-width: $screen-sm-min) {
 
-
 }
 
 //desktop size
 @media (min-width: $screen-md-min) {
-
+/*
   //header Desktop
   .i_header {
     .i_header_container {
@@ -93,5 +95,5 @@
       }
     }
   }
-
+*/
 }
