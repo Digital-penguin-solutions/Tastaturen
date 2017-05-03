@@ -24,9 +24,17 @@
 
 <section class="i_info container-fluid">
     <div class="row-fluid i_info">
-        <div class="col-xs-12 i_info_container">
-            <h1></h1>
-            <p>HEj</p>
+        <div class="col-xs-12 i_info_container col-xs-8 col-xs-offset-2">
+            <h2>Vad vi gör</h2>
+            <p>Herp derpsum berp me berps merp der ler derperker derp.
+                Sherp pee terp herderder derperker?
+                Ner dee terp serp derp merpus.
+                Sherper herpsum derpy sherpus herpderpsmer
+                sherp berp derpus. Herp pee, tee derp derpy der.
+                Pee herpy tee dee, berp ter sherper me herp.
+                Perper herpem perp derpler le, me tee mer.
+                Tee berps nerpy derperker merp me.
+                Serp herp derp mer berps der berp merpus!</p>
         </div>
     </div>
 </section>

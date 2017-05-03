@@ -8,15 +8,14 @@
   background: $color4;
   z-index: 1;
   position: relative;
-  overflow-x: hidden;
 }
 
-/*Styling for the entire html file*/
+//html styling
 html {
   @extend .wrapper;
 }
 
-/*Styling for the body*/
+//boody styling
 body {
   @extend .wrapper;
   font-family: 'Lato', sans-serif;
@@ -28,20 +27,6 @@ section {
   @extend .tole;
   z-index: 2;
   position: relative;
-  overflow-y: hidden;
-  overflow-x: auto;
-}
-
-h1,h2,h3,h4{
-
-}
-
-p{
-
-}
-
-a{
-
 }
 
 //no margin
@@ -79,4 +64,25 @@ a{
 .full_size{
   @extend .fullh;
   @extend .fullw;
+}
+
+.center_vertically_css {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// Center horizonatally
+.center_horizontally_css {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// Center css
+.center_css {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
 }

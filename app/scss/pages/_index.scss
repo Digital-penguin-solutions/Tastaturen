@@ -1,6 +1,6 @@
 @import "../everything";
 
-//header on index page
+//into
 .i_header{
   height: 100vh;
   z-index: 4;
@@ -10,41 +10,88 @@
       z-index: 5;
       h1{
         color: $white;
-        font-size: 3vw;
+        font-size: $i_h1_m;
         font-weight: 600;
         text-align: center;
       }
-      p{
-
+      h2{
+        font-size: $i_h2_m;
       }
     }
     .i_header_slider{
-      
+
     }
   }
 }
+
+//info section
 .i_info{
   min-height: 50vh;
+  background: $color3*1.4;
   .i_info_container{
-    h1{
-
-
+    text-align: center;
+    h2{
+      font-size: $i_h2_m;
+      font-weight: 600;
+      margin-top:5vh;
     }
     p{
-
+      vertical-align: middle;
+      font-size: $i_p_m;
+      font-weight: 400;
     }
   }
 }
 
-//pruduct page index
+//product section
 .i_products{
   min-height: 100vh;
   background: red;
   .i_products_container{
 
+
   }
 }
 
+//contact section
 .i_contact{
+
+}
+
+
+//tablet size
+@media (min-width: $screen-sm-min) {
+
+
+}
+
+//desktop size
+@media (min-width: $screen-md-min) {
+
+  //header Desktop
+  .i_header {
+    .i_header_container {
+      .i_header_text_container {
+        h1{
+          font-size: $i_h1_d;
+        }
+        h2{
+          font-size: $i_h2_d;
+        }
+      }
+    }
+  }
+
+  .i_info{
+    min-height: 60vh;
+    .i_info_container{
+      h2{
+        font-size: $i_h2_d;
+      }
+      p{
+        font-size: $i_p_d;
+      }
+    }
+  }
 
 }
