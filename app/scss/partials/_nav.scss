@@ -7,12 +7,13 @@
   color: $white;
   position: fixed;
   height: 100vh;
-  width: 18vw;
   z-index: 10000;
   .nav_d_container{
     //cart icon
     .nav_cart{
+      display: flex;
       i{
+        font-size: 10vw;
 
       }
       p{
@@ -35,8 +36,16 @@
       a{
         display: block;
         margin-right:1.2vw;
-        color: $white;
+        color: $color2;
         font-size: 1.1vw;
+        &:hover{
+          color: $color2*1.5;
+          text-decoration: none;
+
+        }
+        &:active{
+          color: $white;
+        }
       }
     }
   }
