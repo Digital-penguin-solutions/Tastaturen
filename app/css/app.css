@@ -317,6 +317,7 @@ section {
 
 .center_css {
 <<<<<<< HEAD
+<<<<<<< HEAD
     position: relative;
     left: 50%; top: 50%;
     transform: translateX(-50%); 
@@ -399,8 +400,13 @@ section {
 
 
 =======
+=======
+>>>>>>> parent of 9be881f... Fixed css.
   position: relative;
   left: 50%;
   top: 50%;
   transform: translateX(-50%); }
+<<<<<<< HEAD
+>>>>>>> parent of 9be881f... Fixed css.
+=======
 >>>>>>> parent of 9be881f... Fixed css.
