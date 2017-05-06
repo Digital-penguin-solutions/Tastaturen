@@ -3,8 +3,8 @@
 
         <!-- cart icon -->
         <div class="cart">
-            <i class="fa fa-shopping-cart"></i>
-            <p>Kundvagn - 0</p>
+            <i class="fa fa-bell-o"></i>
+            <p>Kontakta för köp</p>
         </div>
 
         <!-- Logo -->
