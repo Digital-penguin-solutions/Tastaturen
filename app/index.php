@@ -7,12 +7,12 @@
     <meta name="keywords" content="orgel, instrument, musik"/>
 </head>
 
-<body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
+<body class="wrapper col-xs-10" id="page-top" class="index">
 <?php include "partials/nav.php"?>
 
 <header class="container-fluid i_header">
     <div class="row-fluid i_header">
-        <div class="col-xs-12 col-md-10 i_header i_header_container">
+        <div class="col-xs-12 i_header i_header_container">
             <div class="i_header_text_container">
                 <h1>Välkommen till Tastaturen</h1>
                 <p></p>
@@ -24,7 +24,7 @@
 
 <section class="i_info container-fluid">
     <div class="row-fluid i_info">
-        <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
+        <div class="col-xs-12 i_info_container col-xs-offset-2">
             <h2>Vad vi gör</h2>
             <p> Herp derpsum berp me berps merp der ler derperker derp.
                 Sherp pee terp herderder derperker?
@@ -42,7 +42,7 @@
 
 <section class="i_products container-fluid">
     <div class="row-fluid i_products">
-        <div class="ccol-xs-12 col-md-10 i_products_container">
+        <div class="col-xs-12 i_products_container">
 
         </div>
     </div>
