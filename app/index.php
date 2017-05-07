@@ -20,10 +20,10 @@
 
                         <div class="i_slider_1_left col-xs-6">
                             <div class="i_slider_1_left_img"></div>
+                            <div class="i_slider_left_1_btn_hover">
+                                <p></p>
+                            </div>
                             <div class="i_slider_left_1_btn">
-                                <div class="i_slider_left_1_btn_hover">
-                                    <p></p>
-                                </div>
                                 <a href="#">kyrkobruk</a>
                             </div>
                         </div>

@@ -19,6 +19,12 @@
           .i_slider_1_left{
             height: 100vh;
             background: $color3*4.1;
+            .i_slider_1_left_img{
+              background: url('../../img/index_slider/slider1_l.png') no-repeat;
+              background-size: 75vh;
+              height: 75vh;
+              width: 50vw;
+            }
             .i_slider_left_1_btn{
               @extend .btn;
               bottom:2.5vw;

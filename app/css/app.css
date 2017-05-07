@@ -302,6 +302,11 @@ section {
         .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left {
           height: 100vh;
           background: #b0b0b0; }
+          .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_img {
+            background: url("../../img/index_slider/slider1_l.png") no-repeat;
+            background-size: 75vh;
+            height: 75vh;
+            width: 50vw; }
           .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_left_1_btn {
             bottom: 2.5vw;
             left: 5vw; }
