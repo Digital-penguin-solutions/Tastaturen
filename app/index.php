@@ -10,7 +10,7 @@
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php include "partials/nav.php"?>
 
-<!--hader-->
+<!-- Header -->
 <header class="container-fluid i_header">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
@@ -46,11 +46,11 @@
     </div>
 </header>
 
-<!--ico section-->
-<section class="i_info container-fluid">
+<!-- Info section-->
+<section class="container-fluid i_info">
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
-            <h2>Vad vi gör</h2>
+            <h2>Vi är Tastaturen</h2>
             <p>Herp derpsum berp me berps merp der ler derperker derp.
                 Sherp pee terp herderder derperker?
                 Ner dee terp serp derp merpus.
@@ -61,12 +61,18 @@
                 Tee berps nerpy derperker merp me.
                 Serp herp derp mer berps der berp merpus!
             </p>
+            <a href="http://www.johannus.com/" target="_blank">
+                <img src="" alt="johannus logo">
+            </a>
+            <a href="http://www.rodgersinstruments.com/" target="_blank">
+                <img src="" alt="rodgersinstruments logo">
+            </a>
         </div>
     </div>
 </section>
 
-<!-- pruducts-->
-<section class="i_products container-fluid">
+<!-- Pruducts-->
+<section class="container-fluid i_products">
     <div class="row-fluid i_products">
         <div class="ccol-xs-12 col-md-10 i_products_container">
 
@@ -74,8 +80,8 @@
     </div>
 </section>
 
-<!-- contact section -->
-<section class="i_contact container-fluid">
+<!-- Contact section -->
+<section class="container-fluid i_contact">
     <div class="i_contact row-fluid">
         <div class="i_contact_container col-xs-10 col-xs-offset-1">
             <div class="i_contact_left col-xs-6">
