@@ -3,13 +3,15 @@
 
         <!-- cart icon -->
         <div class="cart">
-            <i class="fa fa-bell-o"></i>
-            <p>Kontakta för köp</p>
+            <a href="#">
+                <i class="fa fa-bell-o"></i>
+                Kontakta för köp
+            </a>
         </div>
 
         <!-- Logo -->
         <div class="nav_d_logo">
-            <a href="">
+            <a href="#">
                 <img src="" alt="">
             </a>
         </div>
@@ -17,11 +19,11 @@
         <!--Nav links-->
         <div class="nav_d_link">
             <a href="#">Hem</a>
-            <a href="#">Om</a>
-            <a href="#">Prudukter</a>
+            <a href="#">Om oss</a>
+            <a href="#">orglar för hemet</a>
+            <a href="#">orglar för kyrkan </a>
             <a href="#">Media</a>
-            <a href="#">Kontakta</a>
+            <a href="#">Kontakta oss</a>
         </div>
-
     </div>
 </nav>

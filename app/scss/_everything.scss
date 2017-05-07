@@ -72,7 +72,7 @@ section {
   transform: translateY(-50%);
 }
 
-// Center horizonatally
+// Center horizonatally css
 .center_horizontally_css {
   position: relative;
   left: 50%;
@@ -85,4 +85,28 @@ section {
   left: 50%;
   top: 50%;
   transform: translateX(-50%);
+}
+
+//index header btn
+.btn{
+  position: absolute;
+  height: 5vh;
+  width:10vw;
+  border: solid $white 3px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 4vh;
+  a{
+    color: $white;
+    text-decoration: none;
+    font-size: 1vw;
+  }
+  &:hover{
+    background: $color1;
+    transition: 0.8s;
+    border: 0;
+    a{
+      text-decoration: none;
+    }
+  }
 }
