@@ -10,6 +10,7 @@
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php include "partials/nav.php"?>
 
+<!--hader-->
 <header class="container-fluid i_header">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
@@ -45,7 +46,7 @@
     </div>
 </header>
 
-
+<!--ico section-->
 <section class="i_info container-fluid">
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
@@ -64,9 +65,34 @@
     </div>
 </section>
 
+<!-- pruducts-->
 <section class="i_products container-fluid">
     <div class="row-fluid i_products">
         <div class="ccol-xs-12 col-md-10 i_products_container">
+
+        </div>
+    </div>
+</section>
+
+<!-- contact section -->
+<section class="i_contact container-fluid">
+    <div class="i_contact row-fluid">
+        <div class="i_contact_container col-xs-10 col-xs-offset-1">
+            <div class="i_contact_left col-xs-6">
+                <img src="" alt="">
+            </div>
+            <div class="i_contact_right col-xs-6">
+                <h1></h1>
+                <p></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Media section -->
+<section class="container-fluid i_media">
+    <div class="row-fluid i_media">
+        <div class="col-xs-12 i_media_container">
 
         </div>
     </div>
