@@ -58,7 +58,7 @@
                 där en Rodgers eller en Johannus digitalorgel har installerats.
             </p>
             <a href="http://www.johannus.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
-                <img src="img/logo/saker/johanus_white.svg" alt="johannus logo">
+                <img src="img/logo/saker/rodger_white.svg" alt="johannus logo">
             </a>
             <a href="http://www.rodgersinstruments.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
                 <img src="img/logo/saker/rodger_white.svg" alt="rodgersinstruments logo">

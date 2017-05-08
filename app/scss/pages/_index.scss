@@ -1,6 +1,6 @@
 @import "../everything";
 
-//into
+//into section
 .i_header{
   height: 100vh;
   z-index: 4;
@@ -56,14 +56,14 @@
     h2{
       color: $white;
       font-size: 3vw;
-      font-weight: 600;
+      font-weight: 400;
       margin-top:8vh;
     }
     p{
       color: $white;
       vertical-align: middle;
       font-size: 1.5vw;
-      font-weight: 400;
+      font-weight: 200;
     }
     a{
       margin-top:5vh;
@@ -78,7 +78,7 @@
   min-height: 100vh;
   background: red;
   .i_products_container{
-    
+
   }
 }
 
@@ -105,6 +105,13 @@
 
       }
     }
+  }
+}
+
+//media section
+.i_media{
+  .i_media_container{
+
   }
 }
 
