@@ -14,7 +14,72 @@
 <header class="container-fluid i_header">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
-            <div class="i_header_slider">
+
+
+            <div class = "all_slider_container no_list no_arrows">
+
+                <!--1-->
+                <div class = "slider_page col-md-12">
+                    <div class = "background_image_container">
+                        <img src = "" alt = "">
+                    </div>
+
+                     <div class="i_header_slider">
+
+                        <div class="i_slider_1 col-xs-12">
+                            <div class="i_slider_1_container">
+
+                                <div class="i_slider_1_left col-xs-6">
+
+                                    <div class="i_slider_1_left_img"></div>
+
+                                    <div class="i_slider_1_left_btn">
+                                        <p>Herp derpsum perp dee derp, mer herderder.
+                                            Sherp berp derpler,</p>
+                                        <button>Kyrko bruk</button>
+                                    </div>
+
+                                </div>
+
+                                <div class="i_slider_1_right col-xs-6">
+
+                                    <div class="i_slider_1_right_img"></div>
+
+                                    <div class="i_slider_1_right_btn">
+                                        <p>Herp derpsum perp dee derp, mer herderder.
+                                            Sherp berp derpler,</p>
+                                        <button>Hemma bruk</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class = "slider_page col-md-12">
+                    <div class = "background_image_container">
+                        <img src = "img/404_img.jpg" alt = "MetTempMobile">
+                    </div>
+                    HELLLLLLllllO
+        adssssssssssssssssssssssssssssssssssssssssssssss
+        adssssssss
+        <br>
+        asdasdas2
+                </div>
+            </div>
+
+
+
+
+
+
+
+<!--
+             <div class="i_header_slider">
 
                 <div class="i_slider_1 col-xs-12">
                     <div class="i_slider_1_container">
@@ -46,6 +111,7 @@
                     </div>
                 </div>
             </div>
+-->
         </div>
     </div>
 </header>

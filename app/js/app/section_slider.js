@@ -1,7 +1,5 @@
 console.log("hello");
 
-$(document).ready(on_ready);
-
 var sliding = false;
 
 // page slider variables
@@ -22,8 +20,8 @@ var border_selected_color = "gray";
 var border_not_selected_color = "gray";
 
 function on_ready () {
+    console.log("ready");
 
-    console.log("hello");
     init_sliders();
 
     // puts all the sliders to the first page
@@ -225,7 +223,8 @@ function init_sliders(){
                 button = list_object;
             }
 
-            else if (!$(slider).hasClass("no_dots")){ // adds the dots
+            if (!$(slider).hasClass("no_dots")){ // adds the dots
+                console.log("heelo");
 
                 var dot = $("<div class = 'slider_dot'>");
 
@@ -269,7 +268,6 @@ function init_sliders(){
 
             $(right_arrow).click(function(){
                 move(false, this);
-
             });
 
             function move(left, comp){
@@ -285,6 +283,12 @@ function init_sliders(){
                 slider_go_to_page(slider_num, new_page);
             }
 
+        }
+        else{
+            var left_arrow = $("<img class = '' src=''>");
+            var right_arrow = $("<img class = '' src=''>");
+            $(slider).append(left_arrow);
+            $(slider).append(right_arrow);
         }
     }
 }
