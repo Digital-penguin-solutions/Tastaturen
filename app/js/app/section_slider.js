@@ -29,8 +29,7 @@ function on_ready () {
         slider_go_to_page(i, 0);
     }
 
-    //slider_speed = 600; // sets the slider speed to a value after the first initialisation has been done. This is so that the animations wont be shown when the page is loaded
-    slider_speed = 800; // sets the slider speed to a value after the first initialisation has been done. This is so that the animations wont be shown when the page is loaded
+    slider_speed = 600; // sets the slider speed to a value after the first initialisation has been done. This is so that the animations wont be shown when the page is loaded
 }
 
 function slider_go_to_page(slider_number, page){
