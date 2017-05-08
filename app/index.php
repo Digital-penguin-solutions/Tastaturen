@@ -83,7 +83,7 @@
 <!-- Contact section -->
 <section class="container-fluid i_contact">
     <div class="row-fluid i_contact">
-        <div class="col-xs-12 col-md-10 i_contact_container">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">
 
             <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-4 col-xs-offset-2">
             <img src="img/contact/Anders_gustafsson.jpg" alt="Anders Gustafsson" class="col-xs-4 col-xs-offset-1">

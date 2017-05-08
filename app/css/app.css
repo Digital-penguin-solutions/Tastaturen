@@ -246,12 +246,17 @@ section {
     background: #000;
     margin-left: -4vw; }
   .nav_d .nav_d_container .nav_d_link {
-    float: right; }
+    position: absolute;
+    position: absolut;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
       margin-right: 1.2vw;
       color: #c3c3c3;
-      font-size: 1.1vw; }
+      font-size: 1.2vw; }
       .nav_d .nav_d_container .nav_d_link a:hover {
         color: white;
         text-decoration: none; }

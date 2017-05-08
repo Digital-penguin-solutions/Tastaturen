@@ -36,12 +36,13 @@
 
     //links
     .nav_d_link{
-      float: right;
+      position: absolute;
+      @include vertical-align($position:absolut);
       a{
         display: block;
         margin-right:1.2vw;
         color: $color2;
-        font-size: 1.1vw;
+        font-size: 1.2vw;
         &:hover{
           color: $color2*1.5;
           text-decoration: none;

@@ -51,7 +51,7 @@ g.task('prefix', ['compile-sass'], function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(g.dest('html/css/'));
+        .pipe(g.dest('app/css/'));
 });
 
 //minify css files and run the sass function before
