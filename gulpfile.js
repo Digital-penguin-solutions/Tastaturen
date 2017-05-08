@@ -103,8 +103,8 @@ g.task('imgmin', function () {
 
 // watch for file changes and performs the different tasks
 g.task('dev-watch', function () {
-    g.watch('html/js/**/*.js',         ['concat-js-app','concat-js-third-party']);
-    g.watch('html/scss/**/*',          ['prefix']);
+    g.watch('app/js/**/*.js',         ['concat-js-app','concat-js-third-party']);
+    g.watch('app/scss/**/*',          ['prefix']);
 });
 
 g.task('connect-php', function () {
