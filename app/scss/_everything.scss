@@ -87,26 +87,40 @@ section {
   transform: translateX(-50%);
 }
 
-//index header btn
-.btn{
+//index header slider btn
+.slider_btn{
   position: absolute;
-  height: 5vh;
-  width:10vw;
-  border: solid $white 3px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 4vh;
-  a{
-    color: $white;
-    text-decoration: none;
+  bottom: 2.5vw;
+  p{
+    color: transparent;
+    background-color: transparent;
+    height: 12vh;
+    width: 17vw;
+    margin-bottom:-0.1vh;
+    text-align: center;
+    padding: 1vw;
     font-size: 1vw;
   }
+  button{
+    border: 2px solid $white;
+    color: $white;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    width: 12vw;
+    height: 4.5vh;
+  }
   &:hover{
-    background: $color1;
-    transition: 0.8s;
-    border: 0;
-    a{
-      text-decoration: none;
+    p{
+      color: $white;
+      background: rgba(21,54,255,0.8);
+      transition: 1s;
+    }
+    button{
+      background: $color1;
+      border: 0;
+      transition: 0.5s;
     }
   }
 }

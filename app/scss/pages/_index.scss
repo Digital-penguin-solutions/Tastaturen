@@ -16,29 +16,31 @@
         .i_slider_1_container{
           height: 100vh;
 
-          .i_slider_1_left{
+          .i_slider_1_left {
             height: 100vh;
             background: $color3*4.1;
-            .i_slider_1_left_img{
+
+            .i_slider_1_left_img {
+
             }
-            .i_slider_left_1_btn{
-              @extend .btn;
-              bottom:2.5vw;
+
+            .i_slider_1_left_btn {
               left: 5vw;
-              &:hover{
-                .i_slider_left_1_btn_hover{
-                }
-              }
+             @extend .slider_btn;
             }
           }
 
           .i_slider_1_right{
             height: 100vh;
             background: $color3*4.5;
-            .i_slider_right_1_btn{
-              @extend .btn;
-              bottom:2.5vw;
+
+            .i_slider_1_img{
+
+            }
+
+            .i_slider_1_right_btn {
               right: 5vw;
+              @extend .slider_btn;
             }
           }
         }
@@ -86,11 +88,11 @@
 .i_contact{
   min-height: 50vh;
   .i_contact_container{
-     img{
-       border-radius: 50%;
-       margin-top:10vh;
-       //width: 25vw;
-     }
+    img{
+      border-radius: 50%;
+      margin-top:10vh;
+      //width: 25vw;
+    }
     .i_contact_text{
       color: $white;
       text-align: center;

@@ -20,23 +20,27 @@
                     <div class="i_slider_1_container">
 
                         <div class="i_slider_1_left col-xs-6">
+
                             <div class="i_slider_1_left_img"></div>
-                            <div class="i_slider_left_1_btn_hover">
-                                <p></p>
+
+                            <div class="i_slider_1_left_btn">
+                                <p>Herp derpsum perp dee derp, mer herderder.
+                                    Sherp berp derpler,</p>
+                                <button>Kyrko bruk</button>
                             </div>
-                            <div class="i_slider_left_1_btn">
-                                <a href="#">kyrkobruk</a>
-                            </div>
+
                         </div>
 
                         <div class="i_slider_1_right col-xs-6">
+
                             <div class="i_slider_1_right_img"></div>
-                            <div class="i_slider_right_1_btn">
-                                <div class="i_slider_right_1_btn_hover">
-                                    <p></p>
-                                </div>
-                                <a href="">Hemmabruk</a>
+
+                            <div class="i_slider_1_right_btn">
+                                <p>Herp derpsum perp dee derp, mer herderder.
+                                    Sherp berp derpler,</p>
+                                <button>Hemma bruk</button>
                             </div>
+
                         </div>
 
                     </div>
@@ -46,7 +50,7 @@
     </div>
 </header>
 
-<!-- Info section-->
+<!-- Info section -->
 <section class="container-fluid i_info">
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
@@ -67,7 +71,7 @@
     </div>
 </section>
 
-<!-- Pruducts-->
+<!-- Products -->
 <section class="container-fluid i_products">
     <div class="row-fluid i_products">
         <div class="ccol-xs-12 col-md-10 i_products_container">
@@ -79,10 +83,10 @@
 <!-- Contact section -->
 <section class="container-fluid i_contact">
     <div class="row-fluid i_contact">
-        <div class="col-xs-10 col-xs-offset-1 i_contact_container">
+        <div class="col-xs-12 col-md-10 i_contact_container">
 
-                <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-4 col-xs-offset-2">
-                <img src="img/contact/Anders_gustafsson.jpg" alt="Anders Gustafsson" class="col-xs-4 col-xs-offset-1">
+            <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-4 col-xs-offset-2">
+            <img src="img/contact/Anders_gustafsson.jpg" alt="Anders Gustafsson" class="col-xs-4 col-xs-offset-1">
 
             <div class="col-xs-4 col-xs-offset-2 i_contact_text" >
                 <h2>Anders Björk</h2>
