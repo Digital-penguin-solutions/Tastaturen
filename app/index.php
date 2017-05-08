@@ -149,21 +149,24 @@
 <!-- Contact section -->
 <section class="container-fluid i_contact">
     <div class="row-fluid i_contact">
-        <div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">
+        <div class="col-xs-12 i_contact_container">
+        <!--<div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">-->
 
-            <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-4 col-xs-offset-2">
-            <img src="img/contact/Anders_gustafsson.jpg" alt="Anders Gustafsson" class="col-xs-4 col-xs-offset-1">
+            <div class = "col-xs-offset-2 col-xs-8">
+                <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-5">
+                <img src="img/contact/Anders_gustafsson.jpg" alt="Anders Gustafsson" class="col-xs-5 col-xs-offset-2">
 
-            <div class="col-xs-4 col-xs-offset-2 i_contact_text" >
-                <h2>Anders Björk</h2>
-                <p>070-1090230</p>
-                <p>ab@tastaturen.se</p>
-            </div>
+                <div class="col-xs-5 i_contact_text" >
+                    <h2>Anders Björk</h2>
+                    <p>070-1090230</p>
+                    <p>ab@tastaturen.se</p>
+                </div>
 
-            <div class="col-xs-4 col-xs-offset-1 i_contact_text">
-                <h2>Anders Gustafsson</h2>
-                <p>070-6858037</p>
-                <p>agf@tastaturen.se</p>
+                <div class="col-xs-5 col-xs-offset-2 i_contact_text">
+                    <h2>Anders Gustafsson</h2>
+                    <p>070-6858037</p>
+                    <p>agf@tastaturen.se</p>
+                </div>
             </div>
         </div>
     </div>
