@@ -231,6 +231,7 @@ section {
   height: 100vh;
   z-index: 10000; }
   .nav_d .nav_d_container .nav_cart {
+    display: -ms-flexbox;
     display: flex; }
     .nav_d .nav_d_container .nav_cart i {
       font-size: 10vw; }
@@ -238,8 +239,6 @@ section {
     position: absolute;
     position: absolut;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     height: 15vh;
     width: 15vh;
@@ -251,8 +250,6 @@ section {
     text-align: right;
     position: absolut;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .nav_d .nav_d_container .nav_d_link a {
       display: block;

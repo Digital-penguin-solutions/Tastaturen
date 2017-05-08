@@ -63,12 +63,13 @@ g.task('css-build', ['compile-sass'], function() {
 });
 
 //creating app.js from all js files in the app folder
-g.task('concat-js-app',function () {
-    return g.src('app/js/app/*.js)')
+g.task('concat-js-app' ,function () {
+    return g.src('app/js/app/*.js')
         .pipe(plumber())
         .pipe(concat('app.js'))
         .pipe(g.dest('app/js'))
 });
+
 
 //create impots.js from all js files in imporst folder
 g.task('concat-js-third-party' ,function () {
@@ -149,8 +150,8 @@ g.task('build',['clean'],function () {
     g.start('minify', 'prefix', 'concat-js-app','concat-js-third-party', 'copy', 'imgmin')
 });
 
-//developing with xamp
-g.task('dev', ['prefix', 'concat-js-third-party', 'concat-js-app', 'dev-watch']);
+//developing with xampp
+g.task('dev',       ['prefix', 'concat-js-third-party', 'concat-js-app', 'dev-watch']);
 
 //run css tole to compile css
-g.task('default', ['prefix', 'concat-js-app','concat-js-third-party', 'connect-php']);
+g.task('default',   ['prefix', 'concat-js-third-party', 'concat-js-app' ,'connect-php']);

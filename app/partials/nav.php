@@ -4,7 +4,7 @@
         <!-- cart icon -->
         <div class="cart">
             <a href="#">
-                <i class="fa fa-bell-o"></i>
+                <i class="fa fa-bell-o"> </i>
                 Kontakta för köp
             </a>
         </div>
