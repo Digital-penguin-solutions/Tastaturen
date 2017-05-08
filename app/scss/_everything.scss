@@ -3,124 +3,125 @@
 
 //wrapper styling
 .wrapper {
-  @extend .nopm;
-  @extend .tole;
-  background: $color4;
-  z-index: 1;
-  position: relative;
+    @extend .nopm;
+    @extend .tole;
+    background: $color4;
+    z-index: 1;
+    position: relative;
 }
 
 //html styling
 html {
-  @extend .wrapper;
+    @extend .wrapper;
 }
 
 //boody styling
 body {
-  @extend .wrapper;
-  font-family: 'Lato', sans-serif;
+    @extend .wrapper;
+    font-family: 'Lato', sans-serif;
 }
 
 //section style
 section {
-  @extend .nopm;
-  @extend .tole;
-  z-index: 2;
-  position: relative;
+    @extend .nopm;
+    @extend .tole;
+    z-index: 2;
+    position: relative;
 }
 
 //no margin
 .nom{
-  margin: $no;
+    margin: $no;
 }
 //no padding
 .nop{
-  padding: $no;
+    padding: $no;
 }
 
 //no padding no margin
 .nopm {
-  @extend .nop;
-  @extend .nom;
+    @extend .nop;
+    @extend .nom;
 }
 
 //top left
 .tole {
-  top: $no;
-  left: $no;
+    top: $no;
+    left: $no;
 }
 
 //full with
 .fullw{
-  width: $full !important;
+    width: $full !important;
 }
 
 //full height
 .fullh{
-  height: $full !important;
+    height: $full !important;
 }
 
 //full height and full with combined
 .full_size{
-  @extend .fullh;
-  @extend .fullw;
+    @extend .fullh;
+    @extend .fullw;
 }
 
 .center_vertically_css {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 // Center horizonatally css
 .center_horizontally_css {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 // Center css
 .center_css {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
 }
 
 //index header slider btn
 .slider_btn{
-  position: absolute;
-  bottom: 2.5vw;
-  p{
-    color: transparent;
-    background-color: transparent;
-    height: 12vh;
-    width: 17vw;
-    margin-bottom:-0.1vh;
-    text-align: center;
-    padding: 1vw;
-    font-size: 1vw;
-  }
-  button{
-    border: 2px solid $white;
-    color: $white;
-    background-color: transparent;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2vw;
-    width: 12vw;
-    height: 4.5vh;
-  }
-  &:hover{
+    position: absolute;
+    bottom: 2.5vw;
     p{
-      color: $white;
-      background: rgba(21,54,255,0.8);
-      transition: 1s;
+        color: transparent;
+        background-color: transparent;
+        height: 12vh;
+        width: 17vw;
+        margin-bottom:-0.1vh;
+        text-align: center;
+        padding: 1vw;
+        font-size: 1vw;
     }
     button{
-      background: $color1;
-      border: 0;
-      transition: 0.5s;
+        border: 2px solid $white;
+        color: $white;
+        background-color: transparent;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2vw;
+        width: 12vw;
+        height: 4.5vh;
+        @extend .center_css;
     }
-  }
+    &:hover{
+        p{
+            color: $white;
+            background: rgba(21,54,255,0.8);
+            transition: 1s;
+        }
+        button{
+            background: $color1;
+            border: 0;
+            transition: 0.5s;
+        }
+    }
 }

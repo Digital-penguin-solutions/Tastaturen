@@ -38,7 +38,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css {
+.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
   position: relative;
   left: 50%;
   top: 50%;
@@ -112,7 +112,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css {
+.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
   position: relative;
   left: 50%;
   top: 50%;
@@ -186,7 +186,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css {
+.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
   position: relative;
   left: 50%;
   top: 50%;
@@ -313,7 +313,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css {
+.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
   position: relative;
   left: 50%;
   top: 50%;
@@ -446,7 +446,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css {
+.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
   position: relative;
   left: 50%;
   top: 50%;
