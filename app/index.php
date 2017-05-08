@@ -51,21 +51,17 @@
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
             <h2>Vi är Tastaturen</h2>
-            <p>Herp derpsum berp me berps merp der ler derperker derp.
-                Sherp pee terp herderder derperker?
-                Ner dee terp serp derp merpus.
-                Sherper herpsum derpy sherpus herpderpsmer
-                sherp berp derpus. Herp pee, tee derp derpy der.
-                Pee herpy tee dee, berp ter sherper me herp.
-                Perper herpem perp derpler le, me tee mer.
-                Tee berps nerpy derperker merp me.
-                Serp herp derp mer berps der berp merpus!
+            <p>Vi levererar digitala kyrkorglar för alla behov.
+                Kontakta oss gärna för mer information eller för
+                en personlig demonstration i Er kyrka.
+                Vi kan även förmedla kontakt med kyrkor
+                där en Rodgers eller en Johannus digitalorgel har installerats.
             </p>
-            <a href="http://www.johannus.com/" target="_blank">
-                <img src="" alt="johannus logo">
+            <a href="http://www.johannus.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
+                <img src="img/logo/saker/johanus_white.svg" alt="johannus logo">
             </a>
-            <a href="http://www.rodgersinstruments.com/" target="_blank">
-                <img src="" alt="rodgersinstruments logo">
+            <a href="http://www.rodgersinstruments.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
+                <img src="img/logo/saker/rodger_white.svg" alt="rodgersinstruments logo">
             </a>
         </div>
     </div>
