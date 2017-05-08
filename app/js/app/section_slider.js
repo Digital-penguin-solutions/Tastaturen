@@ -140,7 +140,7 @@ function init_sliders(){
     $(sliders).css("visibility", "visible");
 
     var page_width = $(window).width();
-    slider_dot_width = "0.7"; // vw
+    slider_dot_width = "1.0"; // vw
 
     for (var i = 0; i < sliders.length; i++) {
         var slider = sliders[i];
@@ -169,7 +169,6 @@ function init_sliders(){
 
         }
 
-
         // adds the dot container
         else if (!$(slider).hasClass("no_dots"))
         {
@@ -180,7 +179,7 @@ function init_sliders(){
             $(dots_container).attr("slider_number", i);
             $(inner_dots_container).attr("slider_number", i);
 
-            // the dots have to containers. One to center for the entire page and one to center within the first container. This is beacause the outercontianer has to fill the entire width to make sure no dots ever fall out
+            // the dots have two containers. One to center for the entire page and one to center within the first container. This is beacause the outercontianer has to fill the entire width to make sure no dots ever fall out
             $(dots_container).append(inner_dots_container);
             $(slider_parent).append(dots_container);
         }
@@ -224,12 +223,20 @@ function init_sliders(){
             }
 
             if (!$(slider).hasClass("no_dots")){ // adds the dots
-                console.log("heelo");
 
                 var dot = $("<div class = 'slider_dot'>");
 
-                $(dot).css("width", slider_dot_width + "vw");
-                $(dot).css("margin-left", slider_dot_width * 2 + "vw");
+                var width = slider_dot_width;
+
+                console.log(width);
+                $(dot).css("width", width + "vw");
+                $(dot).css("height", width + "vw");
+                $(dot).css("margin-left", width*2 + "vw");
+
+                // last dot
+                if(n == pages.length-1){
+                    $(dot).css("margin-right", width*2 + "vw");
+                }
 
                 $(inner_dots_container).append(dot);
 
