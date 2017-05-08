@@ -78,14 +78,22 @@
 
 <!-- Contact section -->
 <section class="container-fluid i_contact">
-    <div class="i_contact row-fluid">
-        <div class="i_contact_container col-xs-10 col-xs-offset-1">
-            <div class="i_contact_left col-xs-6">
-                <img src="" alt="">
+    <div class="row-fluid i_contact">
+        <div class="col-xs-10 col-xs-offset-1 i_contact_container">
+
+                <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-4 col-xs-offset-2">
+                <img src="img/contact/Anders_gustafsson.jpg" alt="Anders Gustafsson" class="col-xs-4 col-xs-offset-1">
+
+            <div class="col-xs-4 col-xs-offset-2 i_contact_text" >
+                <h2>Anders Björk</h2>
+                <p>070-1090230</p>
+                <p>ab@tastaturen.se</p>
             </div>
-            <div class="i_contact_right col-xs-6">
-                <h1></h1>
-                <p></p>
+
+            <div class="col-xs-4 col-xs-offset-1 i_contact_text">
+                <h2>Anders Gustafsson</h2>
+                <p>070-6858037</p>
+                <p>agf@tastaturen.se</p>
             </div>
         </div>
     </div>

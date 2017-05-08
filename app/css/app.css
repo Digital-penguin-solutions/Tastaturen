@@ -336,6 +336,19 @@ section {
 
 .i_contact {
   min-height: 50vh; }
+  .i_contact .i_contact_container img {
+    border-radius: 50%;
+    margin-top: 10vh; }
+  .i_contact .i_contact_container .i_contact_text {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10vh; }
+    .i_contact .i_contact_container .i_contact_text h2 {
+      font-size: 2.3vw;
+      font-weight: 600; }
+    .i_contact .i_contact_container .i_contact_text p {
+      font-size: 1.5vw;
+      font-weight: 100; }
 
 .wrapper, html, body {
   background: #212121;
