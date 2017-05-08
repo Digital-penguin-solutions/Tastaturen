@@ -20,8 +20,8 @@
         <div class="nav_d_link">
             <a href="#">Hem</a>
             <a href="#">Om oss</a>
-            <a href="#">orglar för hemet</a>
-            <a href="#">orglar för kyrkan </a>
+            <a href="#">Orglar för hemet</a>
+            <a href="#">Orglar för kyrkan </a>
             <a href="#">Media</a>
             <a href="#">Kontakta oss</a>
         </div>
