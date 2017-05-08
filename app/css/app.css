@@ -247,6 +247,8 @@ section {
     margin-left: -4vw; }
   .nav_d .nav_d_container .nav_d_link {
     position: absolute;
+    right: 0;
+    text-align: right;
     position: absolut;
     top: 50%;
     -webkit-transform: translateY(-50%);

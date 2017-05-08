@@ -37,6 +37,8 @@
     //links
     .nav_d_link{
       position: absolute;
+      right:0;
+      text-align:right;
       @include vertical-align($position:absolut);
       a{
         display: block;
