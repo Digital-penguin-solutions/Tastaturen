@@ -46,7 +46,7 @@ g.task('compile-sass', function () {
 });
 
 g.task('prefix', ['compile-sass'], function () {
-    return g.src('html/css/app.css')
+    return g.src('app/css/app.css')
         .pipe(prefix({
             browsers: ['last 2 versions'],
             cascade: false
