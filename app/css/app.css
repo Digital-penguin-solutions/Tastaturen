@@ -234,6 +234,17 @@ section {
     display: flex; }
     .nav_d .nav_d_container .nav_cart i {
       font-size: 10vw; }
+  .nav_d .nav_d_container .nav_d_logo {
+    position: absolute;
+    position: absolut;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 15vh;
+    width: 15vh;
+    background: #000;
+    margin-left: -4vw; }
   .nav_d .nav_d_container .nav_d_link {
     float: right; }
     .nav_d .nav_d_container .nav_d_link a {

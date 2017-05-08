@@ -14,15 +14,19 @@
       display: flex;
       i{
         font-size: 10vw;
-
       }
       p{
-
       }
     }
 
     //Logo
     .nav_d_logo{
+      position: absolute;
+      @include vertical-align($position:absolut);
+      height: 15vh;
+      width: 15vh;
+      background: #000;
+      margin-left:-4vw;
       a{
         img{
 
@@ -41,7 +45,6 @@
         &:hover{
           color: $color2*1.5;
           text-decoration: none;
-
         }
         &:active{
           color: $white;

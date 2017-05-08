@@ -101,6 +101,12 @@ g.task('imgmin', function () {
         .pipe(g.dest('dist/img'));
 });
 
+// watch for file changes and performs the different tasks
+g.task('dev-watch', function () {
+    g.watch('html/js/**/*.js',         ['concat-js-app','concat-js-third-party']);
+    g.watch('html/scss/**/*',          ['prefix']);
+});
+
 g.task('connect-php', function () {
     connect.server({
         port: 8079,
