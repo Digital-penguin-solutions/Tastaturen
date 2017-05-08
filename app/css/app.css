@@ -38,7 +38,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+.center_css {
   position: relative;
   left: 50%;
   top: 50%;
@@ -112,7 +112,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+.center_css {
   position: relative;
   left: 50%;
   top: 50%;
@@ -186,7 +186,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+.center_css {
   position: relative;
   left: 50%;
   top: 50%;
@@ -313,7 +313,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+.center_css {
   position: relative;
   left: 50%;
   top: 50%;
@@ -363,12 +363,15 @@ section {
           height: 100vh;
           background: #b0b0b0; }
           .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn {
-            left: 5vw; }
+            left: 5vw;
+            float: left; }
         .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right {
           height: 100vh;
           background: #c2c2c2; }
           .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
             right: 5vw; }
+            .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+              float: right; }
 
 .i_info {
   min-height: 50vh;
@@ -446,7 +449,7 @@ section {
   left: 50%;
   transform: translateX(-50%); }
 
-.center_css, .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+.center_css {
   position: relative;
   left: 50%;
   top: 50%;

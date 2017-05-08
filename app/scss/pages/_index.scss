@@ -26,6 +26,7 @@
 
             .i_slider_1_left_btn {
               left: 5vw;
+              float:left;
              @extend .slider_btn;
             }
           }
@@ -41,6 +42,11 @@
             .i_slider_1_right_btn {
               right: 5vw;
               @extend .slider_btn;
+
+              button {
+                float:right;
+              }
+
             }
           }
         }
