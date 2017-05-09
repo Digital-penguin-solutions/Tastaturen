@@ -29,7 +29,9 @@
 
                                 <div class="i_slider_1_left col-xs-6">
 
-                                    <div class="i_slider_1_left_img"></div>
+                                    <div class="i_slider_1_left_img">
+                                        <img src="img/Index_slider/Slider_1_l.png" alt="Orgel för kyrko bruk">
+                                    </div>
 
                                     <div class="i_slider_1_left_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
@@ -41,7 +43,9 @@
 
                                 <div class="i_slider_1_right col-xs-6">
 
-                                    <div class="i_slider_1_right_img"></div>
+                                    <div class="i_slider_1_right_img">
+                                        <img src="img/Index_slider/Slider_1_r.png" alt="Orgel för hemma bruk">
+                                    </div>
 
                                     <div class="i_slider_1_right_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
@@ -136,7 +140,7 @@
         <div class="col-xs-12 i_products_container">
 
             <!-- Products Kyrka -->
-            <div class="i_products col-xs-12"id="Orgel-kyrka">
+            <div class="i_products col-xs-12" id="Orgel-kyrka">
                 <h2>Kyrko Orglar</h2>
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
@@ -149,12 +153,12 @@
                 <!--products that is used in slider-->
                 <div class="i_products_sliders col-xs-4">
                     <a href="">
-                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                    <div class="i_products_sliders_text">
-                        <h1>Prudukt namn</h1>
-                        <p>Denna prudukt är  mycket fin</p>
-                        <p>Detta är ett pris</p>
-                    </div>
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
                     </a>
                 </div>
                 <div class="i_products_sliders col-xs-4">
@@ -227,7 +231,6 @@
 
                 <button class="i_pruducts_btn">Hemma bruk</button>
             </div>
-
 
         </div>
     </div>

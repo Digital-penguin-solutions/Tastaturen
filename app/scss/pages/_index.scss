@@ -19,11 +19,16 @@
           .i_slider_1_left {
             height: 100vh;
             background: $color3*4.1;
-
             .i_slider_1_left_img {
+              right:0;
+              position: absolute;
+              top:10vh;
 
+              img{
+                width:15vw;
+                height: 60vh;
+              }
             }
-
             .i_slider_1_left_btn {
               left: 5vw;
               float:left;
@@ -34,9 +39,16 @@
           .i_slider_1_right{
             height: 100vh;
             background: $color3*4.5;
+            .i_slider_1_right_img{
+              left:0;
+              position: absolute;
+              top:10vh;
 
-            .i_slider_1_img{
-
+              img{
+                width: 15vw;
+                height: 60vh;
+                
+              }
             }
 
             .i_slider_1_right_btn {
