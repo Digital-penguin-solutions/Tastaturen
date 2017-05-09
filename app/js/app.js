@@ -1,12 +1,13 @@
 $(document).ready(on_ready);
 $(document).ready(on_ready_product_scroller);
 
+var sliding = false;
+
 function on_ready_product_scroller () {
 
     console.log("kör0");
     init_product_slider();
     init_arrows();
-    move(true);
 
 }
 
@@ -41,8 +42,6 @@ function init_product_slider(){
             console.log(product_width);
 
 
-
-
             var left = product_width*n + "%";
             console.log(left);
             $(product).css("left", left);
@@ -52,28 +51,36 @@ function init_product_slider(){
 }
 
 function move(right){
-    var dir = 1;
+    if(!sliding){
+        sliding = true;
+        var dir = 1;
 
-    if(right){
-        dir = -1;
-    }
+        if(right){
+            dir = -1;
+        }
 
-    var arrow_tmp = document.getElementsByClassName("i_products_arrow_l")[0];
-    var products_container = arrow_tmp.parentNode;
+        var arrow_tmp = document.getElementsByClassName("i_products_arrow_l")[0];
+        var products_container = arrow_tmp.parentNode;
 
-    var products = products_container.getElementsByClassName("i_products_sliders");
+        var products = products_container.getElementsByClassName("i_products_sliders");
 
-    var product_width = get_width_in_percentage(products[0]);
+        var product_width = get_width_in_percentage(products[0]);
 
-    for(var n = 0; n < products.length; n++){
-        var product = products[n];
+        for(var n = 0; n < products.length; n++){
+            var product = products[n];
 
-        var old_left = get_left_in_percentage(product);
-        console.log(old_left);
+            var old_left = get_left_in_percentage(product);
+            console.log(old_left);
 
-        var new_left = (old_left - product_width*dir) + "%";
-        $(product).css("left", new_left);
+            var new_left = (old_left - product_width*dir) + "%";
+            /*$(product).css("left", new_left);*/
+            $(product).animate({
+                left: new_left
+            }, 500, function(){
+                sliding = false;
+            });
 
+        }
     }
 
 
