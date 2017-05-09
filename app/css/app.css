@@ -249,6 +249,7 @@ section {
   height: 100vh;
   z-index: 10000; }
   .nav_d .nav_d_container .nav_cart {
+    display: -ms-flexbox;
     display: flex; }
     .nav_d .nav_d_container .nav_cart i {
       font-size: 10vw; }
@@ -256,8 +257,6 @@ section {
     position: absolute;
     position: absolut;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: -15vh;
     height: 15vh;
@@ -273,8 +272,6 @@ section {
     text-align: right;
     position: absolut;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
@@ -621,8 +618,6 @@ section {
     border-radius: 5%;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .edit .edit_container h1 {
       text-align: center;
@@ -803,8 +798,6 @@ section {
     margin-top: 5vh;
     position: relative;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     border: 2px solid #ffffff;
     color: #ffffff;
@@ -826,8 +819,6 @@ section {
       margin-top: 6vh;
       position: relative;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       width: 18vw;
       height: 18vw; }
@@ -835,13 +826,9 @@ section {
       position: absolute;
       position: absolute;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       position: absolute;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       color: transparent;
       margin-top: -10vh;
