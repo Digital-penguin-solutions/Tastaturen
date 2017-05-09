@@ -244,6 +244,9 @@
     <div class="row-fluid i_contact">
         <div class="col-xs-12 i_contact_container">
             <!--<div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">-->
+            <div class="i_contact_text_top">
+                <h2>Kontakta oss</h2>
+            </div>
 
             <div class = "col-xs-offset-2 col-xs-8">
                 <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-5">
