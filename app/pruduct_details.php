@@ -14,12 +14,21 @@
     <div class="row-fluid pe_header_container col-xs-12">
         <div class="pe_header_bg"></div>
         <div class="pe_header_text col-xs-6">
-            <h1>Orglar för kyrkobruj</h1>
+            <h1>Orglar för kyrkobruk</h1>
             <p>Det finns många finna orglar. Dessa orglar är mycket fina och kan göra mycket
             fina saker.</p>
         </div>
     </div>
 </header>
+
+<section class="container-fluid pe_prod">
+    <div class="row-fluid pe_prod">
+        <div class="col-xs-12 pe_prod_container">
+
+
+        </div>
+    </div>
+</section>
 
 <?php include "partials/footer.php" ?>
 </body>
