@@ -15,6 +15,22 @@
         @extend .nopm;
         .i_slider_1_container{
           height: 100vh;
+          .i_slider_1_text {
+            position: absolute;
+            color: $white;
+            background: transparent;
+            z-index: 101;
+            height: 100vh;
+            width: 100%;
+            text-align: center;
+            margin-top:35vh;
+
+            h1 {
+              font-size: 8vw;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+          }
 
           .i_slider_1_left {
             height: 100vh;
@@ -22,7 +38,7 @@
             .i_slider_1_left_img {
               right:0;
               position: absolute;
-              top:10vh;
+              top:15vh;
 
               img{
                 width:15vw;
@@ -42,12 +58,12 @@
             .i_slider_1_right_img{
               left:0;
               position: absolute;
-              top:10vh;
+              top:15vh;
 
               img{
                 width: 15vw;
                 height: 60vh;
-                
+
               }
             }
 

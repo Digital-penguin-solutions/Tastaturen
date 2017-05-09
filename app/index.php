@@ -26,6 +26,9 @@
                         <!--Slider 1 -->
                         <div class="i_slider_1 col-xs-12">
                             <div class="i_slider_1_container">
+                                <div class="i_slider_1_text">
+                                    <h1>Tastaturen</h1>
+                                </div>
 
                                 <div class="i_slider_1_left col-xs-6">
 
