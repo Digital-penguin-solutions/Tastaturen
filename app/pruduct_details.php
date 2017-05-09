@@ -7,10 +7,19 @@
     <meta name="keywords" content="orgel, instrument, musik"/>
 </head>
 
-<body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
+<body class="wrapper col-xs-12" id="page-top" class="index">
 <?php include "partials/nav.php"?>
 
-
+<header class="container-fluid pe_header">
+    <div class="row-fluid pe_header_container col-xs-12">
+        <div class="pe_header_bg"></div>
+        <div class="pe_header_text col-xs-6">
+            <h1>Orglar för kyrkobruj</h1>
+            <p>Det finns många finna orglar. Dessa orglar är mycket fina och kan göra mycket
+            fina saker.</p>
+        </div>
+    </div>
+</header>
 
 <?php include "partials/footer.php" ?>
 </body>
