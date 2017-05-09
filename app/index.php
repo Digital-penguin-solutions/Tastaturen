@@ -11,7 +11,7 @@
 <?php include "partials/nav.php"?>
 
 <!-- Header -->
-<header class="container-fluid i_header">
+<header id="Intro" class="container-fluid i_header">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
             <div class = "all_slider_container no_list no_arrows">
@@ -110,7 +110,7 @@
 </header>
 
 <!-- Info section -->
-<section class="container-fluid i_info">
+<section id="Info" class="container-fluid i_info">
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
             <h2>Vi är Tastaturen</h2>
@@ -131,12 +131,12 @@
 </section>
 
 <!-- Products -->
-<section class="container-fluid i_products">
+<section id="Produkter" class="container-fluid i_products">
     <div class="row-fluid i_products">
         <div class="col-xs-12 i_products_container">
 
             <!-- Products Kyrka -->
-            <div class="i_products col-xs-12">
+            <div class="i_products col-xs-12"id="Orgel-kyrka">
                 <h2>Kyrko Orglar</h2>
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
@@ -182,7 +182,7 @@
             </div>
 
             <!-- Products Hemma -->
-            <div class="i_products col-xs-12">
+            <div class="i_products col-xs-12" id="Orgel-hem">
                 <h2>Hemma Orglar</h2>
 
                 <!--l eft and right arrow slider-->
@@ -234,7 +234,7 @@
 </section>
 
 <!-- Contact section -->
-<section class="container-fluid i_contact">
+<section id="kontakta" class="container-fluid i_contact">
     <div class="row-fluid i_contact">
         <div class="col-xs-12 i_contact_container">
             <!--<div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">-->
@@ -260,7 +260,7 @@
 </section>
 
 <!-- Media section -->
-<section class="container-fluid i_media">
+<section id="Media" class="container-fluid i_media">
     <div class="row-fluid i_media">
         <div class="col-xs-12 i_media_container">
 

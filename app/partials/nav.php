@@ -11,19 +11,19 @@
 
         <!-- Logo -->
         <div class="nav_d_logo">
-            <a href="#">
+            <a href="index">
                 <img src="" alt="">
             </a>
         </div>
 
         <!--Nav links-->
         <div class="nav_d_link">
-            <a href="#">Hem</a>
-            <a href="#">Om oss</a>
-            <a href="#">Orglar för hemmet</a>
-            <a href="#">Orglar för kyrkan </a>
-            <a href="#">Media</a>
-            <a href="#">Kontakta oss</a>
+            <a href="index#Intro">Hem</a>
+            <a href="index#Info">Om oss</a>
+            <a href="index#Orgel-hem">Orglar för hemmet</a>
+            <a href="Index#Orgel-kyrka">Orglar för kyrkan </a>
+            <a href="index#kontakta">Kontakta oss</a>
+            <a href="index#Media">Media</a>
         </div>
     </div>
 </nav>
