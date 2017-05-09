@@ -139,37 +139,43 @@
             <div class="i_products col-xs-12">
                 <h2>Kyrko Orglar</h2>
                 <!--l eft and right arrow slider-->
-                <div class="i_products_arrow_l_kyrka">
+                <div class="i_products_arrow_l">
                     <img src="img/Index_slider/left_arrow.svg" alt="slide left">
                 </div>
-                <div class="i_products_arrow_r_kyrka">
+                <div class="i_products_arrow_r">
                     <img src="img/Index_slider/right_arrow.svg" alt="Slide right">
                 </div>
 
                 <!--products that is used in slider-->
                 <div class="i_products_sliders col-xs-4">
+                    <a href="">
                     <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
                     <div class="i_products_sliders_text">
                         <h1>Prudukt namn</h1>
                         <p>Denna prudukt är  mycket fin</p>
                         <p>Detta är ett pris</p>
                     </div>
+                    </a>
                 </div>
                 <div class="i_products_sliders col-xs-4">
-                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                    <div class="i_products_sliders_text">
-                        <h1>Prudukt namn</h1>
-                        <p>Denna prudukt är  mycket fin</p>
-                        <p>Detta är ett pris</p>
-                    </div>
+                    <a href="">
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="i_products_sliders col-xs-4">
-                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                    <div class="i_products_sliders_text">
-                        <h1>Prudukt namn</h1>
-                        <p>Denna prudukt är  mycket fin</p>
-                        <p>Detta är ett pris</p>
-                    </div>
+                    <a href="">
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
+                    </a>
                 </div>
 
                 <button class="i_pruducts_btn">Kyrko bruk</button>
@@ -180,37 +186,43 @@
                 <h2>Hemma Orglar</h2>
 
                 <!--l eft and right arrow slider-->
-                <div class="i_products_arrow_l_hem">
+                <div class="i_products_arrow_l">
                     <img src="img/Index_slider/left_arrow.svg" alt="slide left">
                 </div>
-                <div class="i_products_arrow_r_hem">
+                <div class="i_products_arrow_r">
                     <img src="img/Index_slider/right_arrow.svg" alt="Slide right">
                 </div>
 
                 <!--products that is used in slider-->
                 <div class="i_products_sliders col-xs-4">
-                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                    <div class="i_products_sliders_text">
-                        <h1>Prudukt namn</h1>
-                        <p>Denna prudukt är  mycket fin</p>
-                        <p>Detta är ett pris</p>
-                    </div>
+                    <a href="">
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="i_products_sliders col-xs-4">
-                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                    <div class="i_products_sliders_text">
-                        <h1>Prudukt namn</h1>
-                        <p>Denna prudukt är  mycket fin</p>
-                        <p>Detta är ett pris</p>
-                    </div>
+                    <a href="">
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
+                    </a>
                 </div>
                 <div class="i_products_sliders col-xs-4">
-                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                    <div class="i_products_sliders_text">
-                        <h1>Prudukt namn</h1>
-                        <p>Denna prudukt är  mycket fin</p>
-                        <p>Detta är ett pris</p>
-                    </div>
+                    <a href="">
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
+                    </a>
                 </div>
 
                 <button class="i_pruducts_btn">Hemma bruk</button>

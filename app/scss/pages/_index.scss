@@ -58,7 +58,7 @@
 //info section
 .i_info{
   min-height: 50vh;
-  background: $color3*1.4;
+  background: $color4;
   .i_info_container{
     text-align: center;
     h2{
@@ -84,7 +84,7 @@
 //product section
 .i_products{
   min-height: 100vh;
-  background: red;
+  background: $color4;
   .i_products_container{
 
     @extend .nopm;
@@ -92,12 +92,17 @@
       @extend .nopm;
       h2{
         text-align: center;
-        margin-top:5vh;
+        vertical-align: middle;
+        line-height: 15vh;
         font-size: 2.5vw;
         font-weight: 600;
+        color: $white;
+        width: 100%;
+        height: 15vh;
+        background: $color5;
       }
 
-      .i_products_arrow_l_kyrka{
+      .i_products_arrow_l{
         position: absolute;
         height: 10vh;
         width: 10vh;
@@ -111,17 +116,8 @@
         }
       }
 
-      .i_products_arrow_r_kyrka{
-        @extend .i_products_arrow_l_kyrka;
-        right:0;
-      }
-
-      .i_products_arrow_l_hem{
-        @extend .i_products_arrow_l_kyrka;
-      }
-
-      .i_products_arrow_r_hem{
-        @extend .i_products_arrow_l_kyrka;
+      .i_products_arrow_r{
+        @extend .i_products_arrow_l;
         right:0;
       }
 
@@ -144,45 +140,48 @@
       }
 
       .i_products_sliders{
-        margin-top:5vh;
         background: lighten( $color3, 50% );
         height: 50vh;
-
-        img{
-          margin-top:6vh;
-          @include horizontal-align();
-          width: 18vw;
-          height: 18vw;
-        }
-        .i_products_sliders_text{
-          position: absolute;
-          @include vertical-align($position: absolute);
-          @include horizontal-align($position: absolute);
-          color: transparent;
-          margin-top:-10vh;
-          width:20vw;
-          height:20vh;
-          h1{
-            text-align: center;
-            font-size: 2vw;
-            font-weight: 400;
+        margin-top:-1vh;
+        a {
+          img {
+            margin-top: 6vh;
+            @include horizontal-align();
+            width: 18vw;
+            height: 18vw;
           }
-          p{
-            text-align: center;
-            font-size: 1vw;
-            font-weight: 300;
+          .i_products_sliders_text {
+            position: absolute;
+            @include vertical-align($position: absolute);
+            @include horizontal-align($position: absolute);
+            color: transparent;
+            margin-top: -10vh;
+            width: 20vw;
+            height: 20vh;
+            h1 {
+              text-align: center;
+              font-size: 2vw;
+              font-weight: 400;
+            }
+            p {
+              text-align: center;
+              font-size: 1vw;
+              font-weight: 300;
+            }
           }
         }
         &:hover{
-          img{
-            opacity: 0.5;
-            transition: 0.3s;
-          }
-          .i_products_sliders_text{
-            color: $white;
-            transition: 0.5s;
-            background: $color1;
+          a {
+            img {
+              opacity: 0.5;
+              transition: 0.3s;
             }
+            .i_products_sliders_text {
+              color: $white;
+              transition: 0.5s;
+              background: $color1;
+            }
+          }
         }
         &:nth-child(3){
           background: lighten( $color3, 45% );
@@ -194,7 +193,6 @@
     }
   }
 }
-
 
 //contact section
 .i_contact{
