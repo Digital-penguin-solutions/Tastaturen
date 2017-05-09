@@ -14,18 +14,16 @@
 <header class="container-fluid i_header">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
-
-
             <div class = "all_slider_container no_list no_arrows">
-
-                <!--1-->
                 <div class = "slider_page col-md-12">
                     <div class = "background_image_container">
                         <img src = "" alt = "">
                     </div>
 
-                     <div class="i_header_slider">
+                    <!--slider container-->
+                    <div class="i_header_slider">
 
+                        <!--Slider 1 -->
                         <div class="i_slider_1 col-xs-12">
                             <div class="i_slider_1_container">
 
@@ -55,6 +53,7 @@
 
                             </div>
                         </div>
+
                     </div>
 
 
@@ -72,46 +71,40 @@
                 </div>
             </div>
 
+            <!--
+                         <div class="i_header_slider">
 
+                            <div class="i_slider_1 col-xs-12">
+                                <div class="i_slider_1_container">
 
+                                    <div class="i_slider_1_left col-xs-6">
 
+                                        <div class="i_slider_1_left_img"></div>
 
+                                        <div class="i_slider_1_left_btn">
+                                            <p>Herp derpsum perp dee derp, mer herderder.
+                                                Sherp berp derpler,</p>
+                                            <button>Kyrko bruk</button>
+                                        </div>
 
+                                    </div>
 
-<!--
-             <div class="i_header_slider">
+                                    <div class="i_slider_1_right col-xs-6">
 
-                <div class="i_slider_1 col-xs-12">
-                    <div class="i_slider_1_container">
+                                        <div class="i_slider_1_right_img"></div>
 
-                        <div class="i_slider_1_left col-xs-6">
+                                        <div class="i_slider_1_right_btn">
+                                            <p>Herp derpsum perp dee derp, mer herderder.
+                                                Sherp berp derpler,</p>
+                                            <button>Hemma bruk</button>
+                                        </div>
 
-                            <div class="i_slider_1_left_img"></div>
+                                    </div>
 
-                            <div class="i_slider_1_left_btn">
-                                <p>Herp derpsum perp dee derp, mer herderder.
-                                    Sherp berp derpler,</p>
-                                <button>Kyrko bruk</button>
+                                </div>
                             </div>
-
                         </div>
-
-                        <div class="i_slider_1_right col-xs-6">
-
-                            <div class="i_slider_1_right_img"></div>
-
-                            <div class="i_slider_1_right_btn">
-                                <p>Herp derpsum perp dee derp, mer herderder.
-                                    Sherp berp derpler,</p>
-                                <button>Hemma bruk</button>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
--->
+            -->
         </div>
     </div>
 </header>
@@ -128,7 +121,7 @@
                 där en Rodgers eller en Johannus digitalorgel har installerats.
             </p>
             <a href="http://www.johannus.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
-                <img src="img/logo/saker/rodger_white.svg" alt="johannus logo">
+                <img src="img/logo/saker/johanus_white.svg" alt="johannus logo" style="margin-top: 1.6vh">
             </a>
             <a href="http://www.rodgersinstruments.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
                 <img src="img/logo/saker/rodger_white.svg" alt="rodgersinstruments logo">
@@ -140,7 +133,89 @@
 <!-- Products -->
 <section class="container-fluid i_products">
     <div class="row-fluid i_products">
-        <div class="ccol-xs-12 col-md-10 i_products_container">
+        <div class="col-xs-12 i_products_container">
+
+            <!-- Products Kyrka -->
+            <div class="i_products col-xs-12">
+                <h2>Kyrko Orglar</h2>
+                <!--l eft and right arrow slider-->
+                <div class="i_products_arrow_l_kyrka">
+                    <img src="img/Index_slider/left_arrow.svg" alt="slide left">
+                </div>
+                <div class="i_products_arrow_r_kyrka">
+                    <img src="img/Index_slider/right_arrow.svg" alt="Slide right">
+                </div>
+
+                <!--products that is used in slider-->
+                <div class="i_products_sliders col-xs-4">
+                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                    <div class="i_products_sliders_text">
+                        <h1>Prudukt namn</h1>
+                        <p>Denna prudukt är  mycket fin</p>
+                        <p>Detta är ett pris</p>
+                    </div>
+                </div>
+                <div class="i_products_sliders col-xs-4">
+                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                    <div class="i_products_sliders_text">
+                        <h1>Prudukt namn</h1>
+                        <p>Denna prudukt är  mycket fin</p>
+                        <p>Detta är ett pris</p>
+                    </div>
+                </div>
+                <div class="i_products_sliders col-xs-4">
+                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                    <div class="i_products_sliders_text">
+                        <h1>Prudukt namn</h1>
+                        <p>Denna prudukt är  mycket fin</p>
+                        <p>Detta är ett pris</p>
+                    </div>
+                </div>
+
+                <button class="i_pruducts_btn">Kyrko bruk</button>
+            </div>
+
+            <!-- Products Hemma -->
+            <div class="i_products col-xs-12">
+                <h2>Hemma Orglar</h2>
+
+                <!--l eft and right arrow slider-->
+                <div class="i_products_arrow_l_hem">
+                    <img src="img/Index_slider/left_arrow.svg" alt="slide left">
+                </div>
+                <div class="i_products_arrow_r_hem">
+                    <img src="img/Index_slider/right_arrow.svg" alt="Slide right">
+                </div>
+
+                <!--products that is used in slider-->
+                <div class="i_products_sliders col-xs-4">
+                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                    <div class="i_products_sliders_text">
+                        <h1>Prudukt namn</h1>
+                        <p>Denna prudukt är  mycket fin</p>
+                        <p>Detta är ett pris</p>
+                    </div>
+                </div>
+                <div class="i_products_sliders col-xs-4">
+                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                    <div class="i_products_sliders_text">
+                        <h1>Prudukt namn</h1>
+                        <p>Denna prudukt är  mycket fin</p>
+                        <p>Detta är ett pris</p>
+                    </div>
+                </div>
+                <div class="i_products_sliders col-xs-4">
+                    <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                    <div class="i_products_sliders_text">
+                        <h1>Prudukt namn</h1>
+                        <p>Denna prudukt är  mycket fin</p>
+                        <p>Detta är ett pris</p>
+                    </div>
+                </div>
+
+                <button class="i_pruducts_btn">Hemma bruk</button>
+            </div>
+
 
         </div>
     </div>
@@ -150,7 +225,7 @@
 <section class="container-fluid i_contact">
     <div class="row-fluid i_contact">
         <div class="col-xs-12 i_contact_container">
-        <!--<div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">-->
+            <!--<div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">-->
 
             <div class = "col-xs-offset-2 col-xs-8">
                 <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-5">
