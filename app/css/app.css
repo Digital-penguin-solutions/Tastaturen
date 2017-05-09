@@ -814,7 +814,8 @@ section {
   .i_products .i_products_container .i_products .i_products_sliders {
     background: #ababab;
     height: 50vh;
-    margin-top: -1vh; }
+    margin-top: -1vh;
+    position: absolute; }
     .i_products .i_products_container .i_products .i_products_sliders a img {
       margin-top: 6vh;
       position: relative;

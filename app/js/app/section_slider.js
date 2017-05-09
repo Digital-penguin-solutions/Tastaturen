@@ -21,7 +21,6 @@ var border_not_selected_color = "gray";
 
 function on_ready () {
     console.log("ready");
-
     init_sliders();
 
     // puts all the sliders to the first page
