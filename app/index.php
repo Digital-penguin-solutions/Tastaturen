@@ -9,6 +9,7 @@
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php include "partials/nav.php"?>
+<?php //include "views/edit.php"?>
 
 <!-- Header -->
 <header id="Intro" class="container-fluid i_header">
