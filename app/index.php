@@ -125,7 +125,7 @@
 
                 <!--products that is used in slider-->
                 <div class="i_products_sliders col-xs-4">
-                    <a href="">
+                    <a href="pruduct">
                         <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
                         <div class="i_products_sliders_text">
                             <h1>Prudukt namn</h1>
@@ -136,7 +136,7 @@
                 </div>
 
                 <div class="i_products_sliders col-xs-4">
-                    <a href="">
+                    <a href="pruduct">
                         <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
                         <div class="i_products_sliders_text">
                             <h1>Prudukt namn</h1>
@@ -147,7 +147,7 @@
                 </div>
 
                 <div class="i_products_sliders col-xs-4">
-                    <a href="">
+                    <a href="pruduct">
                         <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
                         <div class="i_products_sliders_text">
                             <h1>Prudukt namn</h1>
@@ -157,7 +157,7 @@
                     </a>
                 </div>
                 <div class="i_products_sliders col-xs-4">
-                    <a href="">
+                    <a href="pruduct">
                         <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
                         <div class="i_products_sliders_text">
                             <h1>Prudukt namn</h1>
@@ -167,7 +167,7 @@
                     </a>
                 </div>
 
-                <button class="i_pruducts_btn">Kyrko bruk</button>
+                <button onclick="location.href='pruduct_details'" class="i_pruducts_btn">Kyrko bruk</button>
             </div>
 
             <!-- Products Hemma -->
@@ -184,7 +184,7 @@
 
                 <!--products that is used in slider-->
                 <div class="i_products_sliders col-xs-4">
-                    <a href="">
+                    <a href="pruduct">
                         <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
                         <div class="i_products_sliders_text">
                             <h1>Prudukt namn</h1>
@@ -194,7 +194,7 @@
                     </a>
                 </div>
                 <div class="i_products_sliders col-xs-4">
-                    <a href="">
+                    <a href="pruduct">
                         <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
                         <div class="i_products_sliders_text">
                             <h1>Prudukt namn</h1>
@@ -204,7 +204,7 @@
                     </a>
                 </div>
                 <div class="i_products_sliders col-xs-4">
-                    <a href="">
+                    <a href="pruduct">
                         <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
                         <div class="i_products_sliders_text">
                             <h1>Prudukt namn</h1>
@@ -214,7 +214,7 @@
                     </a>
                 </div>
 
-                <button class="i_pruducts_btn">Hemma bruk</button>
+                <button onclick="location.href='pruduct_details'" class="i_pruducts_btn">Hemma bruk</button>
             </div>
 
         </div>

@@ -44,10 +44,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -56,7 +56,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -65,11 +65,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -118,10 +118,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -130,7 +130,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -139,11 +139,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -210,10 +210,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -222,7 +222,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -231,11 +231,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -343,10 +343,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -355,7 +355,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -364,11 +364,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -501,10 +501,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -513,7 +513,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -522,11 +522,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -575,10 +575,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -587,7 +587,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -596,11 +596,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -674,10 +674,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -686,7 +686,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -695,11 +695,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -773,100 +773,102 @@ section {
       margin-top: 5vh; }
 
 .i_products {
-  min-height: 100vh;
+  min-height: 60vh;
   background: #212121; }
-  .i_products .i_products_container .i_products h2 {
-    text-align: center;
-    vertical-align: middle;
-    line-height: 15vh;
-    font-size: 2.5vw;
-    font-weight: 600;
-    color: #ffffff;
-    width: 100%;
-    height: 15vh;
-    background: #1e1e1e;
-    text-transform: uppercase; }
-  .i_products .i_products_container .i_products .i_products_arrow_l, .i_products .i_products_container .i_products .i_products_arrow_r {
-    position: absolute;
-    height: 10vh;
-    width: 10vh;
-    z-index: 100;
-    background: transparent;
-    top: 35vh;
-    cursor: pointer; }
-    .i_products .i_products_container .i_products .i_products_arrow_l:hover, .i_products .i_products_container .i_products .i_products_arrow_r:hover {
-      background: rgba(30, 30, 30, 0.2);
-      transition: 0.5s; }
-  .i_products .i_products_container .i_products .i_products_arrow_r {
-    right: 0; }
-  .i_products .i_products_container .i_products .i_pruducts_btn {
-    margin-top: 5vh;
-    position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    background-color: transparent;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2vw;
-    width: 12vw;
-    height: 4.5vh; }
-    .i_products .i_products_container .i_products .i_pruducts_btn:hover {
-      background: #1536ff;
-      border: 0;
-      transition: 0.5s; }
-  .i_products .i_products_container .i_products .i_products_sliders {
-    background: #ababab;
-    height: 50vh;
-    margin-top: -1vh;
-    position: absolute; }
-    .i_products .i_products_container .i_products .i_products_sliders a img {
-      margin-top: 6vh;
+  .i_products .i_products_container .i_products {
+    min-height: 60vh; }
+    .i_products .i_products_container .i_products h2 {
+      text-align: center;
+      vertical-align: middle;
+      line-height: 15vh;
+      font-size: 2.5vw;
+      font-weight: 600;
+      color: #ffffff;
+      width: 100%;
+      height: 15vh;
+      background: #1e1e1e;
+      text-transform: uppercase; }
+    .i_products .i_products_container .i_products .i_products_arrow_l, .i_products .i_products_container .i_products .i_products_arrow_r {
+      position: absolute;
+      height: 10vh;
+      width: 10vh;
+      z-index: 100;
+      background: transparent;
+      top: 35vh;
+      cursor: pointer; }
+      .i_products .i_products_container .i_products .i_products_arrow_l:hover, .i_products .i_products_container .i_products .i_products_arrow_r:hover {
+        background: rgba(30, 30, 30, 0.2);
+        transition: 0.5s; }
+    .i_products .i_products_container .i_products .i_products_arrow_r {
+      right: 0; }
+    .i_products .i_products_container .i_products .i_pruducts_btn {
+      margin-top: 5vh;
       position: relative;
       left: 50%;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
-      width: 18vw;
-      height: 18vw; }
-    .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
-      position: absolute;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      position: absolute;
-      left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-      transform: translateX(-50%);
-      color: transparent;
-      margin-top: -10vh;
-      width: 20vw;
-      height: 20vh; }
-      .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text h1 {
-        text-align: center;
-        font-size: 2vw;
-        font-weight: 400; }
-      .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text p {
-        text-align: center;
-        font-size: 1vw;
-        font-weight: 300; }
-    .i_products .i_products_container .i_products .i_products_sliders:hover a img {
-      opacity: 0.5;
-      transition: 0.3s; }
-    .i_products .i_products_container .i_products .i_products_sliders:hover a .i_products_sliders_text {
+      border: 2px solid #ffffff;
       color: #ffffff;
-      transition: 0.5s;
-      background: #1536ff; }
-    .i_products .i_products_container .i_products .i_products_sliders:nth-child(3) {
-      background: #9e9e9e; }
-    .i_products .i_products_container .i_products .i_products_sliders:nth-child(4) {
-      background: #919191; }
+      background-color: transparent;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2vw;
+      width: 12vw;
+      height: 4.5vh; }
+      .i_products .i_products_container .i_products .i_pruducts_btn:hover {
+        background: #1536ff;
+        border: 0;
+        transition: 0.5s; }
+    .i_products .i_products_container .i_products .i_products_sliders {
+      background: #ababab;
+      height: 50vh;
+      margin-top: -1vh;
+      position: absolute; }
+      .i_products .i_products_container .i_products .i_products_sliders a img {
+        margin-top: 6vh;
+        position: relative;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 18vw;
+        height: 18vw; }
+      .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        color: transparent;
+        margin-top: -10vh;
+        width: 20vw;
+        height: 20vh; }
+        .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text h1 {
+          text-align: center;
+          font-size: 2vw;
+          font-weight: 400; }
+        .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text p {
+          text-align: center;
+          font-size: 1vw;
+          font-weight: 300; }
+      .i_products .i_products_container .i_products .i_products_sliders:hover a img {
+        opacity: 0.5;
+        transition: 0.3s; }
+      .i_products .i_products_container .i_products .i_products_sliders:hover a .i_products_sliders_text {
+        color: #ffffff;
+        transition: 0.5s;
+        background: #1536ff; }
+      .i_products .i_products_container .i_products .i_products_sliders:nth-child(3) {
+        background: #9e9e9e; }
+      .i_products .i_products_container .i_products .i_products_sliders:nth-child(4) {
+        background: #919191; }
 
 .i_contact {
   min-height: 50vh;
@@ -944,10 +946,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -956,7 +958,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -965,14 +967,60 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
+
+.p_prod_head {
+  background: #1e1e1e;
+  height: 100vh; }
+  .p_prod_head .p_prod_head_container {
+    height: 100vh; }
+    .p_prod_head .p_prod_head_container .p_prod_head_bg {
+      z-index: 99;
+      height: 100vh;
+      width: 100%; }
+      .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_text {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-top: -15vh;
+        color: #ffffff; }
+        .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_text h1 {
+          font-size: 4.5vw;
+          font-weight: 400; }
+        .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_text h2 {
+          font-size: 3.5vw;
+          font-weight: 400; }
+      .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr {
+        margin-left: 3.5vw; }
+      .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+        right: 0;
+        margin-right: 3.5vw; }
+      .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_img {
+        position: absolute;
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        z-index: 100;
+        bottom: -15vh; }
+        .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_img img {
+          height: 50vh;
+          width: 50vh; }
+
+.p_info {
+  background: #000;
+  height: 100vh; }
 
 .wrapper, html, body {
   background: #ffffff;
@@ -1018,10 +1066,10 @@ section {
   top: 50%;
   transform: translateX(-50%); }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -1030,7 +1078,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background-color: transparent;
@@ -1039,11 +1087,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }

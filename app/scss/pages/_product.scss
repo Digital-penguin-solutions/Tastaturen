@@ -1,1 +1,63 @@
 @import "../everything";
+
+//product header
+.p_prod_head{
+  background: $color5;
+  height: 100vh;
+  .p_prod_head_container{
+    height:100vh;
+    .p_prod_head_bg{
+      z-index: 99;
+      height:100vh;
+      width:100%;
+      .p_prod_head_text{
+        text-align: center;
+        @include vertical-align();
+        margin-top:-15vh;
+        color: $white;
+        h1{
+          font-size: 4.5vw;
+          font-weight: 400;
+        }
+        h2{
+          font-size: 3.5vw;
+          font-weight: 400;
+        }
+      }
+      .p_prod_head_btn_broschyr{
+        @extend .slider_btn;
+        margin-left:3.5vw;
+      }
+      .p_prod_head_btn_order{
+        @extend .slider_btn;
+        right:0;
+        margin-right:3.5vw;
+      }
+
+      .p_prod_head_img{
+        position: absolute;
+        @include horizontal-align($position: absolute);
+        z-index: 100;
+        bottom:-15vh;
+        img{
+          height: 50vh;
+          width: 50vh;
+        }
+      }
+    }
+  }
+}
+
+//info about product
+.p_info{
+  background: #000;
+  height: 100vh;
+  .p_info_container{
+
+    .p_info_btn{
+
+
+    }
+
+  }
+}
