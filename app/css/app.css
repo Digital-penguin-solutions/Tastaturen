@@ -260,9 +260,8 @@ section {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: -15vh;
-    height: 15vh;
-    width: 15vh;
-    background: #000;
+    height: 20vh;
+    width: 20vh;
     margin-left: -4vw; }
     .nav_d .nav_d_container .nav_d_logo a {
       height: 100%;
@@ -987,12 +986,7 @@ section {
       width: 100%; }
       .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_text {
         text-align: center;
-        position: relative;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        margin-top: -15vh;
+        margin-top: 20vh;
         color: #ffffff; }
         .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_text h1 {
           font-size: 4.5vw;
@@ -1001,10 +995,12 @@ section {
           font-size: 3.5vw;
           font-weight: 400; }
       .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr {
-        margin-left: 3.5vw; }
+        margin-left: 3.5vw;
+        margin-bottom: 2vw; }
       .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
         right: 0;
-        margin-right: 3.5vw; }
+        margin-right: 3.5vw;
+        margin-bottom: 2vw; }
       .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_img {
         position: absolute;
         position: absolute;
@@ -1013,13 +1009,13 @@ section {
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 100;
-        bottom: -15vh; }
+        bottom: -13vh; }
         .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_img img {
           height: 50vh;
           width: 50vh; }
 
 .p_info {
-  background: #000;
+  background: #e6e6e6;
   height: 100vh; }
 
 .wrapper, html, body {
