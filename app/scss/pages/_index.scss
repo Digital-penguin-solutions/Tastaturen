@@ -113,8 +113,8 @@
   min-height: 60vh;
   background: $color4;
   .i_products_container{
-
     @extend .nopm;
+
     .i_products{
       min-height:60vh;
       @extend .nopm;
@@ -131,6 +131,7 @@
         background: $color5;
         text-transform: uppercase;
       }
+
       //Slider Arrow
       .i_products_arrow_l{
         position: absolute;
@@ -152,10 +153,10 @@
         right:0;
       }
 
-      //Btn to pruduct details page
-      .i_pruducts_btn{
-        margin-top:5vh;
+      //Btn to product details page
+      .i_products_btn{
         @include horizontal-align();
+        z-index: 100;
         border: 2px solid $white;
         color: $white;
         background-color: transparent;

@@ -800,13 +800,13 @@ section {
         transition: 0.5s; }
     .i_products .i_products_container .i_products .i_products_arrow_r {
       right: 0; }
-    .i_products .i_products_container .i_products .i_pruducts_btn {
-      margin-top: 5vh;
+    .i_products .i_products_container .i_products .i_products_btn {
       position: relative;
       left: 50%;
       -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
+      z-index: 100;
       border: 2px solid #ffffff;
       color: #ffffff;
       background-color: transparent;
@@ -815,7 +815,7 @@ section {
       font-size: 1.2vw;
       width: 12vw;
       height: 4.5vh; }
-      .i_products .i_products_container .i_products .i_pruducts_btn:hover {
+      .i_products .i_products_container .i_products .i_products_btn:hover {
         background: #1536ff;
         border: 0;
         transition: 0.5s; }
