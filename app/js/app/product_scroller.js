@@ -82,7 +82,6 @@ function move(left, products_container){
             var product = products[n];
 
             var old_left = get_left_in_percentage(product);
-            console.log(old_left);
 
             var new_left = (old_left - product_width*dir) + "%";
             /*$(product).css("left", new_left);*/

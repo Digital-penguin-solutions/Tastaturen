@@ -40,7 +40,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                                 <!--Slider 1 -->
 
                                 <div class="i_slider_1_text">
-                                    <h1>Tastaturen</h1>
+                                    <h1 class = "fade-in fade-in-delay-2">Tastaturen</h1>
                                 </div>
 
                                 <div class="i_slider_1_left col-xs-6">
@@ -49,10 +49,10 @@ $products_church = get_all_visible_products($con, "kyrka");
                                         <img src="img/Index_slider/Slider_1_l.png" alt="Orgel för kyrko bruk">
                                     </div>
 
-                                    <div class="i_slider_1_left_btn">
+                                    <div class="i_slider_1_left_btn ">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-                                        <button>Kyrko bruk</button>
+                                        <button class = "slide-in-delay-3 slide-in slide-in-left">Kyrko bruk</button>
                                     </div>
 
                                 </div>
@@ -66,7 +66,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                                     <div class="i_slider_1_right_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-                                        <button>Hemma bruk</button>
+                                        <button class = "slide-in-delay-3 slide-in">Hemma bruk</button>
                                     </div>
 
                                 </div>
