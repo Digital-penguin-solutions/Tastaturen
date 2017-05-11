@@ -187,8 +187,8 @@ if (isset($_SESSION['admin'])) {
 
                         <h1> Typ </h1>
                         <select name="type">
-                            <option value = "hem">Hem</option>
-                            <option value = "kyrka">Kyrka</option>
+                            <option value = "hem" <?php if($type == "hem"){echo "selected";}?>>Hem</option>
+                            <option value = "kyrka"<?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option>
                         </select>
 
                         <h1>Kort beskrivning</h1>

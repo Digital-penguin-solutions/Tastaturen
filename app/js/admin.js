@@ -2,7 +2,6 @@
 $(document).ready(on_ready_admin);
 
 function on_ready_admin() {
-    console.log("KÖÖÖÖÖÖÖÖR");
 	$(".add_item").click(function(){
 		var button = this;
 		var container = $(this).parent();
@@ -166,7 +165,6 @@ function send_form(){
 		contentType: false,
 		processData: false
 	});
-    console.log("kör form");
 
 	xhr.success(function(response) {
 		//console.log(response);

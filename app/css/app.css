@@ -1125,6 +1125,11 @@ section {
   text-align: center;
   font-size: 1.5vh; }
 
+.products_type {
+  margin-top: 10%;
+  font-size: 2vw;
+  text-align: center; }
+
 .admin_product {
   margin-top: 10%;
   background: #0080CF;

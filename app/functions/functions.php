@@ -110,10 +110,16 @@ if(!isset($functions_included)){
 
     }
     //get all products from database
-    function get_all_products($con) {
+    function get_all_products($con, $type) {
 
-        $query  = "SELECT * FROM product";
-        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        if($type==""){
+            $query  = "SELECT * FROM product";
+            $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        }
+        else {
+            $query  = "SELECT * FROM product WHERE type = '$type'";
+            $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        }
 
         $array  = array();
 
