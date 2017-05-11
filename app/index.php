@@ -8,7 +8,7 @@
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
-<?php 
+<?php
 include "partials/nav.php";
 include "functions/functions.php";
 $con = connect();
@@ -49,11 +49,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                                     <div class="i_slider_1_left_btn ">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-<<<<<<< HEAD
-                                        <button onclick="location.href='pruduct_details'">Kyrko bruk</button>
-=======
-                                        <button class = "slide-in-delay-3 slide-in slide-in-left">Kyrko bruk</button>
->>>>>>> origin/master
+                                        <button class = "slide-in-delay-3 slide-in slide-in-left" onclick="location.href='pruduct_details'">Kyrko bruk</button>
                                     </div>
                                 </div>
 
@@ -66,11 +62,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                                     <div class="i_slider_1_right_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-<<<<<<< HEAD
-                                        <button onclick="location.href='pruduct_details'">Hemma bruk</button>
-=======
-                                        <button class = "slide-in-delay-3 slide-in">Hemma bruk</button>
->>>>>>> origin/master
+                                        <button class = "slide-in-delay-3 slide-in" onclick="location.href='pruduct_details'">Hemma bruk</button>
                                     </div>
                                 </div>
 
