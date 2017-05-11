@@ -112,13 +112,14 @@
     <div class="row-fluid i_products">
         <div class="col-xs-12 i_products_container">
 
+
             <!-- Products Kyrka -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-kyrka">
                 <h2>Kyrko Orglar</h2>
 
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
-                    <img src="img/Index_slider/left_arrow.svg" alt="slide left">
+                    <img src="img/Index_slider/left_arrow.svg" alt="Slide left">
                 </div>
                 <div class="i_products_arrow_r">
                     <img src="img/Index_slider/right_arrow.svg" alt="Slide right">

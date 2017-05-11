@@ -8,6 +8,7 @@ include "partials/head.php";
     <meta name="description" content="MetSense - A page to add new pruduckts ti the webpage">
     <title>MetSense add product</title>
 </head>
+
 <?php
 ini_set('memory_limit', '-1');
 include "functions/functions.php";
@@ -36,6 +37,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $short              = secure_str($_POST["short_description"]);
     $long               = secure_str($_POST["long_description"]);
     $price              = secure_str($_POST["price"]);
+    $type               = secure_str($_POST["type"]);
     //$key_features       = $_POST["key_feature"];
     //$tech_row_left      = $_POST["tech_row_left"];
     //$tech_row_right     = $_POST["tech_row_right"];
@@ -52,7 +54,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $slider_images_array = array(); // array for all the slider_images
 
     read_image($con, "main_image");
-    read_image($con, "key_features_image");
+    //read_image($con, "key_features_image");
     read_image($con, "about_image");
 
     read_slider_images($con, "slider_image");
@@ -60,7 +62,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, long_description, price) VALUES ('$name', '$short', '$long', '$price')";
+        $query = "INSERT INTO product (name, short_description, long_description, price, type) VALUES ('$name', '$short', '$long', '$price', '$type')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -68,7 +70,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $product_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
-        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price' WHERE product_id = '$product_id'";
+        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type' WHERE product_id = '$product_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
@@ -142,6 +144,7 @@ if (isset($_SESSION['admin'])) {
         $price              = $product['price'];
         $main_image         = $product['main_image'];
         $about_image        = $product['about_image'];
+        $type               = $product['type'];
 
         $slider_images      = get_product_images_by_id($con, $product_id);
     }
@@ -152,6 +155,7 @@ if (isset($_SESSION['admin'])) {
         $short              = "";
         $long               = "";
         $price              = "";
+        $type               = "";
         $slider_images      = array();
     }
     ?>
@@ -178,21 +182,27 @@ if (isset($_SESSION['admin'])) {
                         }
                         ?>
 
-                        <h1> Product Name</h1>
+                        <h1>Product namn</h1>
                         <input value = "<?php echo $name ?>" type = "text" name = "name">
 
-                        <h1>  Short description</h1>
+                        <h1> Typ </h1>
+                        <select name="type">
+                            <option value = "hem">Hem</option>
+                            <option value = "kyrka">Kyrka</option>
+                        </select>
+
+                        <h1>Kort beskrivning</h1>
                         <textarea name = "short_description" class="short_description"><?php echo $short?></textarea>
 
-                        <h1>  Long description</h1>
+                        <h1>Lång beskrivning</h1>
                         <textarea name = "long_description" class="long_description"><?php echo $long?></textarea>
 
-                        <h1> Price  </h1>
+                        <h1>Pris</h1>
                         <input value = "<?php echo $price ?>" type = "text" name = "price">
 
 
                         <div class = "admin_list_container admin_tech_list">
-                            <h1>Slider images</h1>
+                            <h1>Bilder till bildspel</h1>
 
                             <!--- THIS FIRST ONE IS HIDDEN AND IS ONLY A TEMPLETE FOR CREATING A NEW ONE BUT IT HAS TO BE HERE  -->
                             <div class = "template admin_list_item image_list_item">
@@ -225,7 +235,7 @@ if (isset($_SESSION['admin'])) {
                             <div class = "add_item">Add new image</div>
                         </div>
 
-                        <h1> Main Image </h1>
+                        <h1> Huvudbild</h1>
                         <div class = "image_select_container">
                             <p class = "center_vertically_css"> <strong>New image: </strong> </p>
                             <input name = "main_image" class = "center_vertically_css" type = "file" onchange="compress_image(event)" >
@@ -235,7 +245,7 @@ if (isset($_SESSION['admin'])) {
                             <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image); ?>" alt="preview of the curent sensor"/>
                         </div>
 
-                        <h1> About Image </h1>
+                        <h1> Bild 2</h1>
                         <div class = "image_select_container">
                             <p class = "center_vertically_css"> <strong>New image: </strong> </p>
                             <input name = "about_image" class = "center_vertically_css"  type = "file" onchange="compress_image(event)" >

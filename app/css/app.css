@@ -1185,6 +1185,9 @@ section {
     text-align: center;
     font-size: 2vw;
     margin-top: 9%; }
+  .add_product_form select {
+    width: 70%;
+    margin-left: 15%; }
   .add_product_form .short_description, .add_product_form .long_description {
     height: 5vh;
     resize: none; }

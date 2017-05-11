@@ -110,6 +110,11 @@
         @extend .fullw;
     }
 
+    select {
+        width:70%;
+        margin-left:15%;
+    }
+
     .short_description{
         @extend .fullw;
         height: 5vh;
