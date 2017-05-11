@@ -1105,9 +1105,6 @@ section {
   .pe_prod .pe_prod_container {
     min-height: 100vh; }
 
-* {
-  color: black !important; }
-
 .template, .always_hidden {
   display: none; }
 
