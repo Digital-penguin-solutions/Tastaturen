@@ -12,7 +12,7 @@
         <!-- Logo -->
         <div class="nav_d_logo">
             <a href="index">
-                <img src="img/logo/Tastaturen/Logo.svg" alt="Tastaturen logo">
+                <img src="img/logo/Tastaturen/Logo_white.svg" alt="Tastaturen logo">
             </a>
         </div>
 

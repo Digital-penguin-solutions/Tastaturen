@@ -22,11 +22,9 @@
     //Logo
     .nav_d_logo{
       position: absolute;
-      @include vertical-align($position:absolut);
-      margin-top:-15vh;
-      height: 20vh;
-      width: 20vh;
-      margin-left:-4vw;
+      //@include vertical-align($position:absolut);
+      height: 30vh;
+      width: 30vh;
       a{
         height: 100%;
         width:100%;
