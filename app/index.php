@@ -165,6 +165,16 @@
                         </div>
                     </a>
                 </div>
+                <div class="i_products_sliders col-xs-4">
+                    <a href="pruduct">
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
+                    </a>
+                </div>
 
                 <button onclick="location.href='pruduct_details'" class="i_products_btn">Kyrko bruk</button>
             </div>
@@ -182,6 +192,26 @@
                 </div>
 
                 <!--products that is used in slider-->
+                <div class="i_products_sliders col-xs-4">
+                    <a href="pruduct">
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="i_products_sliders col-xs-4">
+                    <a href="pruduct">
+                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
+                        <div class="i_products_sliders_text">
+                            <h1>Prudukt namn</h1>
+                            <p>Denna prudukt är  mycket fin</p>
+                            <p>Detta är ett pris</p>
+                        </div>
+                    </a>
+                </div>
                 <div class="i_products_sliders col-xs-4">
                     <a href="pruduct">
                         <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">

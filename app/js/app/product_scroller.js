@@ -67,11 +67,8 @@ function move(left, products_container){
         }
 
         var num_showing = Math.round(100 / product_width);
-        console.log(num_showing);
-        var last_left = product_width * (num_showing-1);
-        console.log(last_left);
-        var last_product_left = get_left_in_percentage(products[products.length-1]);
-        console.log(last_product_left);
+        var last_left = Math.round(product_width * (num_showing-1));
+        var last_product_left = Math.round(get_left_in_percentage(products[products.length-1]));
 
         if(last_product_left == last_left && !left){
             dir = 0;
@@ -91,7 +88,7 @@ function move(left, products_container){
             /*$(product).css("left", new_left);*/
             $(product).animate({
                 left: new_left
-            }, 500, function(){
+            }, 500, 'easeOutCirc',function(){
                 sliding = false;
             });
 

@@ -5,10 +5,6 @@
   z-index: 1;
   position: relative; }
 
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
-
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -82,10 +78,6 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
-
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -178,10 +170,6 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
-
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -311,10 +299,6 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
-
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -474,10 +458,6 @@ section {
   z-index: 1;
   position: relative; }
 
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
-
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -551,10 +531,6 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
-
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -652,10 +628,6 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
-
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -921,10 +893,6 @@ section {
   z-index: 1;
   position: relative; }
 
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
-
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -1039,10 +1007,6 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
-
-html {
-  overflow-x: hidden;
-  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
