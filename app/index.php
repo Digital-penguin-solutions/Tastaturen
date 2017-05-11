@@ -8,8 +8,16 @@
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
-<?php include "partials/nav.php"?>
-<?php //include "views/edit.php"?>
+<?php 
+include "partials/nav.php";
+include "functions/functions.php";
+$con = connect();
+
+$products_home = get_all_visible_products($con, "hem");
+$products_church = get_all_visible_products($con, "kyrka");
+
+
+?>
 
 <!-- Header -->
 <header id="Intro" class="container-fluid i_header">
@@ -30,7 +38,7 @@
 
                                 <!--Slider 1 -->
                                 <div class="i_slider_1_text">
-                                    <h1>Tastaturen</h1>
+                                    <h1 class = "fade-in fade-in-delay-2">Tastaturen</h1>
                                 </div>
 
                                 <div class="i_slider_1_left col-xs-6">
@@ -38,10 +46,14 @@
                                         <img src="img/Index_slider/Slider_1_l.png" alt="Orgel för kyrko bruk">
                                     </div>
 
-                                    <div class="i_slider_1_left_btn">
+                                    <div class="i_slider_1_left_btn ">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
+<<<<<<< HEAD
                                         <button onclick="location.href='pruduct_details'">Kyrko bruk</button>
+=======
+                                        <button class = "slide-in-delay-3 slide-in slide-in-left">Kyrko bruk</button>
+>>>>>>> origin/master
                                     </div>
                                 </div>
 
@@ -54,7 +66,11 @@
                                     <div class="i_slider_1_right_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
+<<<<<<< HEAD
                                         <button onclick="location.href='pruduct_details'">Hemma bruk</button>
+=======
+                                        <button class = "slide-in-delay-3 slide-in">Hemma bruk</button>
+>>>>>>> origin/master
                                     </div>
                                 </div>
 
@@ -105,69 +121,21 @@
     <div class="row-fluid i_products">
         <div class="col-xs-12 i_products_container">
 
+
             <!-- Products Kyrka -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-kyrka">
                 <h2>Kyrko Orglar</h2>
 
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
-                    <img src="img/Index_slider/left_arrow.svg" alt="slide left">
+                    <img src="img/Index_slider/left_arrow.svg" alt="Slide left">
                 </div>
                 <div class="i_products_arrow_r">
                     <img src="img/Index_slider/right_arrow.svg" alt="Slide right">
                 </div>
 
-                <!--products that is used in slider-->
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
+                <?php echo_products_index($products_church);?>
+
 
                 <button onclick="location.href='pruduct_details'" class="i_products_btn">Kyrko bruk</button>
             </div>
@@ -184,57 +152,8 @@
                     <img src="img/Index_slider/right_arrow.svg" alt="Slide right">
                 </div>
 
-                <!--products that is used in slider-->
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="i_products_sliders col-xs-4">
-                    <a href="pruduct">
-                        <img src="img/product/kyrka/rembrant_350.png" alt="rembrant 350 orgel">
-                        <div class="i_products_sliders_text">
-                            <h1>Prudukt namn</h1>
-                            <p>Denna prudukt är  mycket fin</p>
-                            <p>Detta är ett pris</p>
-                        </div>
-                    </a>
-                </div>
+                <?php echo_products_index($products_home);?>
+
 
                 <button onclick="location.href='pruduct_details'" class="i_products_btn">Hemma bruk</button>
             </div>

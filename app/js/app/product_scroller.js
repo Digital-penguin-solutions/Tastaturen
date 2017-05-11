@@ -62,14 +62,23 @@ function move(left, products_container){
 
         var product_width = get_width_in_percentage(products[0]);
 
+        // if you've gone all the way to the right
         if($(products[0]).css("left") == "0px" && left){
             dir = 0;
         }
 
         var num_showing = Math.round(100 / product_width);
+
+        // if there are fewer products than what can be shown
+        if(products.length < num_showing){
+            dir = 0;
+        }
+
+        
         var last_left = Math.round(product_width * (num_showing-1));
         var last_product_left = Math.round(get_left_in_percentage(products[products.length-1]));
 
+        // if you have gone all the way to the left
         if(last_product_left == last_left && !left){
             dir = 0;
         }
@@ -82,9 +91,9 @@ function move(left, products_container){
             var product = products[n];
 
             var old_left = get_left_in_percentage(product);
-            console.log(old_left);
 
             var new_left = (old_left - product_width*dir) + "%";
+
             /*$(product).css("left", new_left);*/
             $(product).animate({
                 left: new_left
@@ -93,20 +102,24 @@ function move(left, products_container){
             });
 
         }
+
+
     }
 
 
 }
 
 function get_left_in_percentage(element){
-    var left = $(element).clone().appendTo('body').wrap('<div style="display: none"></div>').css('left');
+    var left = $(element).clone().appendTo('body').wrap('<div class = "remove_me" style="display: none"></div>').css('left');
     left = left.substr(0, left.length-1); // remove the % symbol
+    $(".remove_me").remove();
     return left;
 }
 
 function get_width_in_percentage(element){
-    var width = $(element).clone().appendTo('body').wrap('<div style="display: none"></div>').css('width');
+    var width = $(element).clone().appendTo('body').wrap('<div class = "remove_me" style="display: none"></div>').css('width');
     width = width.substr(0, width.length-1); // remove the % symbol
+    $(".remove_me").remove();
     return width;
 
 }

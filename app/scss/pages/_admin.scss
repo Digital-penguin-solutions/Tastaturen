@@ -1,0 +1,254 @@
+@import "mixin";
+@import "variabels";
+
+
+.template, .always_hidden{
+    display:none;
+}
+
+.change_password_form {
+    margin-left:10vw !important;
+}
+
+.admin_message {
+    text-align:center;
+    text-decoration:underline;
+}
+
+.admin_header {
+    margin-top: 10vh;
+    text-align:center;
+    font-size:2vw;
+}
+
+.admin_header2{
+    margin-top:1vh;
+    text-align:center;
+    font-size: 1.5vh;
+}
+
+.products_type
+{
+    margin-top:10%;
+    font-size:2vw;
+    text-align:center;
+}
+
+.admin_product {
+    margin-top:10%;
+    background:#0080CF;
+    height:35vh;
+    margin-bottom:5%;
+    padding:0 !important;
+
+    h1 {
+        text-align:center;
+        margin-top: 3%;
+        font-size:2vw;
+    }
+
+    a{
+        color:black !important;
+    }
+    /* Delete and edit buttons */
+    .product_button {
+        display:block;
+        width: 25%;
+        height:15%;
+        position:absolute;
+        bottom:5%;
+        background: white;
+        padding:0;
+        text-align:center;
+        color: #003057;
+        cursor:pointer;
+
+    }
+
+    img {
+        max-width:90%;
+        height:50%;
+    }
+}
+
+.product_edit_button {
+    left: 6.25%;
+}
+
+.product_show_button {
+    left: 37.5%;
+
+}
+
+.product_delete_button {
+    left: 68.75%;
+
+}
+
+
+.add_product_button {
+    text-align:center;
+    display:block;
+    width: 20%;
+    text-decoration:none;
+    color: white;
+    font-size: 1vw;
+    cursor:pointer;
+    background: grey;
+    margin-top:5%;
+    padding:1%;
+    margin-bottom:5%;
+}
+
+/* Admin form to add a new product*/
+.add_product_form {
+    width:60%;
+    margin-left:20%;
+    margin-top:10%;
+    margin-bottom:10%;
+
+    h1{
+        text-align:center;
+        font-size: 2vw;
+        margin-top:9%;
+    }
+
+    input	{
+        @extend .fullw;
+    }
+
+    select {
+        width:70%;
+        margin-left:15%;
+    }
+
+    .short_description{
+        @extend .fullw;
+        height: 5vh;
+        resize: none;
+    }
+    .long_description{
+        @extend .short_description;
+        height: 45vh;
+
+    }
+}
+
+.admin_list_container h1 {
+    margin-top:5%;
+}
+
+/* Container for the key features list on the admin page */
+.admin_list_container {
+    @extend .fullw;
+    //border: solid 1px @color4;
+    background:white;
+    padding: 10px 0;
+    margin-top:5%;
+    overflow: auto;
+}
+
+/* Container for a single row in an admin list*/
+.admin_list_item {
+    margin-top:5%;
+    width:100%;
+
+    p {
+        margin-left:10%;
+        display:block;
+        float:left;
+    }
+}
+
+/* an item in the list of slider images */
+.image_list_item {
+    height: 20vh;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    input {
+        margin-left: 5% !important;
+        width: 35% !important;
+        float: left;
+    }
+    p {
+        margin-left: 5% !important;
+    }
+}
+
+/* Preview for image in slider list editor */
+.list_preview_image {
+    width: 10%;
+    max-height:90%;
+    margin-left:2%;
+}
+
+.image_select_container {
+    height: 20vh;
+    border: black solid 1px;
+
+    input {
+        width: 35% !important;
+        float: left;
+        margin-left: 5%;
+    }
+    p {
+        display: block;
+        float: left;
+        margin-left: 10%;
+    }
+}
+
+/* Button to add a new row to an admin list*/
+.add_item {
+    width:20%;
+    height:5vh;
+    line-height:5vh;
+    margin-left: 40%;
+    background: grey;
+    text-align:center;
+    color: white;
+    margin-top:5%;
+    font-size: 0.8vw;
+    cursor:pointer;
+    float:left;
+}
+
+/* The cross to remove an item from an admin list*/
+.remove_item {
+    width:4%;
+    margin-right:4%;
+    cursor:pointer;
+    vertical-align: baseline !important;
+}
+
+.admin_list_item input {
+    float:left;
+}
+
+/* The inputs in the tech_table and the key_features need to have different width*/
+.admin_key_features_list input {
+    width: 80% !important;
+    margin-left: 10%;
+}
+
+/* This one is slightly smaller cause there are gonna be two next to eachother*/
+.admin_tech_list input {
+    width: 35% !important;
+    margin-left: 10%;
+}
+
+.login{
+    margin-top:5vh;
+    margin-left: 20vw;
+    font-size: 1vw;
+    display: inline-flex;
+    p{
+        font-weight: 600;
+        font-size: 1.6vw;
+        margin-right:1vw;
+        vertical-align: middle;
+    }
+    input{
+        font-weight: 600;
+    }
+}

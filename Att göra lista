@@ -10,11 +10,15 @@ Index
         *bättre fade på section slidern
         *alla bilderna ska göras klart i bildspelet
 
-    *product
-        *Andvänd php för att loopa ut alla prudukter i form av ett bildspel
+    *
+        *inte kunna scrolla med färre än 3
+
 
 prudkter
     *Skapa hela prudukt sidan
 
 prudukt detaljer
     *
+
+admin
+    * Göra så "save product" knappen inte kan råka klickas två gånger
