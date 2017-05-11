@@ -28,15 +28,12 @@
                                     <img src = "" alt = "">
                                 </div>
 
-
                                 <!--Slider 1 -->
-
                                 <div class="i_slider_1_text">
                                     <h1>Tastaturen</h1>
                                 </div>
 
                                 <div class="i_slider_1_left col-xs-6">
-
                                     <div class="i_slider_1_left_img">
                                         <img src="img/Index_slider/Slider_1_l.png" alt="Orgel för kyrko bruk">
                                     </div>
@@ -44,9 +41,8 @@
                                     <div class="i_slider_1_left_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-                                        <button>Kyrko bruk</button>
+                                        <button onclick="location.href='pruduct_details'">Kyrko bruk</button>
                                     </div>
-
                                 </div>
 
                                 <div class="i_slider_1_right col-xs-6">
@@ -58,12 +54,9 @@
                                     <div class="i_slider_1_right_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-                                        <button>Hemma bruk</button>
+                                        <button onclick="location.href='pruduct_details'">Hemma bruk</button>
                                     </div>
-
                                 </div>
-
-
 
                             </div>
 
