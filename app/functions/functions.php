@@ -269,6 +269,34 @@ if(!isset($functions_included)){
         return $array;
     }
 
+
+    function echo_products_index($products){
+
+        foreach($products as $product){
+            $name = $product['name'];
+            $short = $product['short_description'];
+            $price = $product['price'];
+            $image = $product['main_image'];
+
+            ?>
+            <!--products that is used in slider-->
+            <div class="i_products_sliders col-xs-4">
+                <a href="pruduct">
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>"
+                         alt="Huvudbild"/>
+                         <div class="i_products_sliders_text">
+                             <h1><?php echo $name; ?></h1>
+                             <p><?php echo $short; ?></p>
+                             <p><?php echo $price;  ?></p>
+                         </div>
+                </a>
+            </div>
+            <?php
+
+
+        }
+    }
+
     //logout from admin page
     function logout(){
         session_start();
@@ -297,9 +325,9 @@ if(!isset($functions_included)){
         $last = strtolower($val[strlen($val)-1]);
         switch($last) {
             // The 'G' modifier is available since PHP 5.1.0
-            case 'g':$val *= 1024;
-            case 'm':$val *= 1024;
-            case 'k':$val *= 1024;
+        case 'g':$val *= 1024;
+        case 'm':$val *= 1024;
+        case 'k':$val *= 1024;
         }
 
         return $val;
