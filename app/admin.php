@@ -1,6 +1,6 @@
 <?php
-include "include_pages/loading.php";
-include "include_pages/head.php";
+//include "include_pages/loading.php";
+include "partials/head.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -10,14 +10,14 @@ include "include_pages/head.php";
 </head>
 
 <?php
-include "function/functions.php";
+include "functions/functions.php";
 session_start();
 $con = connect();
 $products = get_all_products($con);
 
 ?>
 <body>
-<?php include "include_pages/nav.php" ?>
+<?php //include "include_pages/nav.php" ?>
 
 <section class = "admin_page">
     <div class = "container-fluid full_height">
@@ -45,7 +45,7 @@ $products = get_all_products($con);
                     if(isset($_GET['change_password'])){
 
                         ?>
-                        <form class="login change_password_form" action = "function/login.php" method = "post">
+                        <form class="login change_password_form" action = "functions/login.php" method = "post">
                             <p>New password:</p>
                             <input placeholder = "New password" type = "password" name = "password"><br>
                             <input placeholder = "Repeat new password" type = "password" name = "password_repeat">
@@ -92,12 +92,12 @@ $products = get_all_products($con);
                                 </a>
 
                                 <!--- TOGGLE SHOW BUTTON-->
-                                <a href = "function/toggle_product?product_id=<?php echo $product_id?>" class = "product_button <?php echo $toggle_color?> product_show_button">
+                                <a href = "functions/toggle_product?product_id=<?php echo $product_id?>" class = "product_button <?php echo $toggle_color?> product_show_button">
                                     <p class = "center_vertically_css"><?php echo $toggle_button_value?></p>
                                 </a>
 
                                 <!--- DELETE BUTTON-->
-                                <a href = "function/delete_product?id=<?php echo $product_id?>" class = "product_button product_delete_button">
+                                <a href = "functions/delete_product?id=<?php echo $product_id?>" class = "product_button product_delete_button">
                                     <p class = "center_vertically_css">Delete</p>
                                 </a>
 
@@ -126,7 +126,7 @@ $products = get_all_products($con);
                 }
                 else {
                     ?>
-                    <form class="login hidden-sm hidden-xs" action = "function/login.php" method = "post">
+                    <form class="login hidden-sm hidden-xs" action = "functions/login.php" method = "post">
                         <p>PASSWORD:</p>
                         <input type = "password" name = "password">
                         <input type = "submit" name = "login" value="Login">
