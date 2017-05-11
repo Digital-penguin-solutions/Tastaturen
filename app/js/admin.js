@@ -101,7 +101,10 @@ function compress_image(e) {
 var maxWidth = 1000; // the max width for an image
 
 // this will be run when the "save product"-button is pressed
-function send_form(){
+function send_form(element){
+
+
+    element.disabled = true;
 
 	var form_data = new FormData(document.getElementById("form"));
 
