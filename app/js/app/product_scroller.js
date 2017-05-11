@@ -99,14 +99,16 @@ function move(left, products_container){
 }
 
 function get_left_in_percentage(element){
-    var left = $(element).clone().appendTo('body').wrap('<div style="display: none"></div>').css('left');
+    var left = $(element).clone().appendTo('body').wrap('<div class = "remove_me" style="display: none"></div>').css('left');
     left = left.substr(0, left.length-1); // remove the % symbol
+    $(".remove_me").remove();
     return left;
 }
 
 function get_width_in_percentage(element){
-    var width = $(element).clone().appendTo('body').wrap('<div style="display: none"></div>').css('width');
+    var width = $(element).clone().appendTo('body').wrap('<div class = "remove_me" style="display: none"></div>').css('width');
     width = width.substr(0, width.length-1); // remove the % symbol
+    $(".remove_me").remove();
     return width;
 
 }

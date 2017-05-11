@@ -9,7 +9,6 @@ Index
         *sektionen behöver bli ett bildspel
         *bättre fade på section slidern
         *alla bilderna ska göras klart i bildspelet
-        *ibland kommer bilder från section_slider upp i typ en halv sekund medan sidan laddas. behöver fixas med js
 
     *product
         *Andvänd php för att loopa ut alla prudukter i form av ett bildspel

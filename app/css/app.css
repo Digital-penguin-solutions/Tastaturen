@@ -383,6 +383,8 @@ section {
 
 .all_slider_container {
   overflow: hidden;
+  visibility: hidden;
+  /* Section slider is hidden until it's finished initalizing with JS*/
   height: 100%; }
 
 .slider_list_object {
