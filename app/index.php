@@ -170,7 +170,7 @@
             </div>
 
             <!-- Products Hemma -->
-            <div class="i_products col-xs-12" id="Orgel-hem">
+            <div class="product_slider_container i_products col-xs-12" id="Orgel-hem">
                 <h2>Hemma Orglar</h2>
 
                 <!--l eft and right arrow slider-->

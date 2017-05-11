@@ -10,13 +10,13 @@ function on_ready_product_scroller () {
 
 }
 
-function init_arrows(arrow_l, arrow_r){
+function init_arrows(arrow_l, arrow_r, container){
     $(arrow_l).click(function(){
-        move(false);
+        move(false, container);
     });
 
     $(arrow_r).click(function(){
-        move(true);
+        move(true, container);
     });
 
 }
@@ -26,44 +26,60 @@ function init_product_slider(){
     for(var i = 0; i < slider_containers.length; i++){
         var container = slider_containers[i];
 
-        var left_arrow = container.getElementsByClassName("i_products_arrow_l");
-        var right_arrow = container.getElementsByClassName("i_products_arrow_r");
+        var left_arrow = container.getElementsByClassName("i_products_arrow_r");
+        var right_arrow = container.getElementsByClassName("i_products_arrow_l");
 
-        init_arrows(left_arrow, right_arrow);
+        init_arrows(left_arrow, right_arrow, container);
 
         var products = container.getElementsByClassName("i_products_sliders");
 
         for(var n = 0; n < products.length; n++){
             var product = products[n];
-            console.log(product);
 
             var product_width = get_width_in_percentage(product);
-            console.log(product_width);
 
 
             var left = product_width*n + "%";
-            console.log(left);
             $(product).css("left", left);
         }
 
     }
 }
 
-function move(right){
+function move(left, products_container){
     if(!sliding){
         sliding = true;
+        
+
+
         var dir = 1;
 
-        if(right){
+        if(left){
             dir = -1;
         }
-
-        var arrow_tmp = document.getElementsByClassName("i_products_arrow_l")[0];
-        var products_container = arrow_tmp.parentNode;
 
         var products = products_container.getElementsByClassName("i_products_sliders");
 
         var product_width = get_width_in_percentage(products[0]);
+
+        if($(products[0]).css("left") == "0px" && left){
+            dir = 0;
+        }
+
+        var num_showing = Math.round(100 / product_width);
+        console.log(num_showing);
+        var last_left = product_width * (num_showing-1);
+        console.log(last_left);
+        var last_product_left = get_left_in_percentage(products[products.length-1]);
+        console.log(last_product_left);
+
+        if(last_product_left == last_left && !left){
+            dir = 0;
+        }
+
+        //var products_container = arrow.parentNode;
+
+
 
         for(var n = 0; n < products.length; n++){
             var product = products[n];

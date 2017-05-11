@@ -5,6 +5,10 @@
   z-index: 1;
   position: relative; }
 
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -78,6 +82,10 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -171,6 +179,10 @@ section {
   z-index: 1;
   position: relative; }
 
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -249,6 +261,7 @@ section {
   height: 100vh;
   z-index: 10000; }
   .nav_d .nav_d_container .nav_cart {
+    display: -ms-flexbox;
     display: flex; }
     .nav_d .nav_d_container .nav_cart i {
       font-size: 10vw; }
@@ -256,8 +269,6 @@ section {
     position: absolute;
     position: absolut;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     margin-top: -15vh;
     height: 20vh;
@@ -272,8 +283,6 @@ section {
     text-align: right;
     position: absolut;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
@@ -302,6 +311,10 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -461,6 +474,10 @@ section {
   z-index: 1;
   position: relative; }
 
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
 body {
   font-family: 'Lato', sans-serif; }
 
@@ -534,6 +551,10 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -620,8 +641,6 @@ section {
     border-radius: 5%;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .edit .edit_container h1 {
       text-align: center;
@@ -633,6 +652,10 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -774,8 +797,8 @@ section {
 .i_products {
   min-height: 60vh;
   background: #212121; }
-  .i_products .i_products_container .i_products {
-    min-height: 60vh; }
+  .i_products .i_products_container {
+    overflow: hidden; }
     .i_products .i_products_container .i_products h2 {
       text-align: center;
       vertical-align: middle;
@@ -803,8 +826,6 @@ section {
     .i_products .i_products_container .i_products .i_products_btn {
       position: relative;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       z-index: 100;
       border: 2px solid #ffffff;
@@ -828,8 +849,6 @@ section {
         margin-top: 6vh;
         position: relative;
         left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 18vw;
         height: 18vw; }
@@ -837,13 +856,9 @@ section {
         position: absolute;
         position: absolute;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         position: absolute;
         left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         color: transparent;
         margin-top: -10vh;
@@ -905,6 +920,10 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -1005,8 +1024,6 @@ section {
         position: absolute;
         position: absolute;
         left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 100;
         bottom: -13vh; }
@@ -1022,6 +1039,10 @@ section {
   background: #ffffff;
   z-index: 1;
   position: relative; }
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -1110,8 +1131,6 @@ section {
       z-index: 100;
       position: relative;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-left: 2vw; }
       .pe_header .pe_header_container .pe_header_text h1 {
