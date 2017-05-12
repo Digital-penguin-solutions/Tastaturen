@@ -138,7 +138,7 @@ if(!isset($functions_included)){
         return $array;
     }
 
-    //get all pruduckt from the database by id
+    
     function get_product_by_id($con, $id){
 
         $id = secure_str($id);
@@ -222,7 +222,7 @@ if(!isset($functions_included)){
 
     }
 
-    //get name of prudukt by id from database
+    //get name of produkt by id from database
     function get_product_name_by_id($con, $id){
         $id     = secure_str($id);
         $query  = "SELECT name FROM product WHERE product_id = '$id'";
@@ -281,7 +281,7 @@ if(!isset($functions_included)){
             ?>
             <!--products that is used in slider-->
             <div class="i_products_sliders col-xs-4">
-                <a href="pruduct">
+                <a href="product">
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>"
                          alt="Huvudbild"/>
                          <div class="i_products_sliders_text">

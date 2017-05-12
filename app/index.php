@@ -60,7 +60,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                                     <div class="i_slider_1_right_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-                                        <button class = "slide-in-delay-3 slide-in" onclick="location.href='pruduct_details'">Hemmabruk</button>
+                                        <button class = "slide-in-delay-3 slide-in" onclick="location.href='product_details'">Hemmabruk</button>
                                     </div>
                                 </div>
 
@@ -126,7 +126,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                 <?php echo_products_index($products_church);?>
 
-                <button onclick="location.href='pruduct_details'" class="i_products_btn">Kyrkobruk</button>
+                <button onclick="location.href='product_details'" class="i_products_btn">Kyrkobruk</button>
             </div>
 
             <!-- Products Hemma -->
@@ -144,7 +144,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 <?php echo_products_index($products_home);?>
 
 
-                <button onclick="location.href='pruduct_details'" class="i_products_btn">Hemmabruk</button>
+                <button onclick="location.href='product_details'" class="i_products_btn">Hemmabruk</button>
             </div>
 
         </div>
