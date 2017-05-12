@@ -14,7 +14,7 @@
             @extend .nopm;
             height: 100vh;
             width: 100%;
-            background: rgba($color5, 0.3);
+            //background: rgba($color5, 0.3);
             z-index: 99;
         }
         .pe_header_text{
@@ -37,7 +37,7 @@
 
 .pe_prod{
     min-height: 100vh;
-    background: $white;
+    background: $color2;
 
     .pe_prod_container{
         min-height: 100vh;
@@ -87,7 +87,7 @@
     }
     .pe_sort_container{
         margin-top:5%;
-        background:black;
+        background:$color3;
         height: 25vh;
     }
 }
