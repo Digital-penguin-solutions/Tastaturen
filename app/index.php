@@ -15,8 +15,6 @@ $con = connect();
 
 $products_home = get_all_visible_products($con, "hem");
 $products_church = get_all_visible_products($con, "kyrka");
-
-
 ?>
 
 <!-- Header -->
