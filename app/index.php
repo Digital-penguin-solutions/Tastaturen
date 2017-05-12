@@ -114,7 +114,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 
             <!-- Products Kyrka -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-kyrka">
-                <h2>Kyrko Orglar</h2>
+                <h2>Kyrkorgel</h2>
 
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
@@ -132,7 +132,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 
             <!-- Products Hemma -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-hem">
-                <h2>Hemma Orglar</h2>
+                <h2>hemorgel</h2>
 
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
