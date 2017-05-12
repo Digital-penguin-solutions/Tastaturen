@@ -1,45 +1,93 @@
 @import "../everything";
 
 .pe_header{
-  height: 100vh;
-  background: $color5;
-  @extend .nopm;
-  .pe_header_container{
+    height: 60vh;
+    background: $color5;
     @extend .nopm;
-    height: 100vh;
-    background: url('../../img/product/bg.jpg') no-repeat fixed;
-    background-size: 100vw 100vh;
-    .pe_header_bg{
-      position: absolute;
-      @extend .nopm;
-      height: 100vh;
-      width: 100%;
-      background: rgba($color5, 0.3);
-      z-index: 99;
-    }
-    .pe_header_text{
-      position: absolute;
-      z-index: 100;
-      @include vertical-align();
-      margin-left:2vw;
-      h1{
-        color: $white;
-        font-size: 3.5vw;
-      }
-      p{
-        color: $white;
-        font-size: 1.6vw;
+    .pe_header_container{
+        @extend .nopm;
+        height: 100%;
+        background: url('../../img/product/bg.jpg') no-repeat fixed;
+        background-size: 100vw 100vh;
+        .pe_header_bg{
+            position: absolute;
+            @extend .nopm;
+            height: 100vh;
+            width: 100%;
+            background: rgba($color5, 0.3);
+            z-index: 99;
+        }
+        .pe_header_text{
+            position: absolute;
+            z-index: 100;
+            @include vertical-align();
+            margin-left:2vw;
+            h1{
+                color: $white;
+                font-size: 3.5vw;
+            }
+            p{
+                color: $white;
+                font-size: 1.6vw;
 
-      }
+            }
+        }
     }
-  }
 }
 
 .pe_prod{
-  min-height: 100vh;
-  background: $white;
-  .pe_prod_container{
     min-height: 100vh;
+    background: $white;
 
-  }
+    .pe_prod_container{
+        min-height: 100vh;
+    }
+
+    .pe_product{
+        height: 30vh;
+        background:grey;
+        background: $color3;
+        margin-top:5%;
+
+        div {
+            height:100%;
+        }
+
+        p,h1{
+            text-align:center;
+            color: $white;
+        }
+
+        img {
+            max-height:80%;
+            max-width:100%;
+        }
+        button {
+            @extend .center_horizontally_css;
+            position:absolute;
+            border: 2px solid $white;
+            color: $white;
+            background-color: transparent;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2vw;
+            width: 8vw;
+            height: 4.5vh;
+            bottom:10%;
+
+            &:hover{
+                background: $color1;
+                border: 0;
+                transition: 0.5s;
+            }
+        }
+        &:last-child {
+            margin-bottom: 10%;
+        }
+    }
+    .pe_sort_container{
+        margin-top:5%;
+        background:black;
+        height: 25vh;
+    }
 }
