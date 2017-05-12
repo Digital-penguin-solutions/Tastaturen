@@ -139,6 +139,7 @@ g.task('connect-php', function () {
         'app/**/*.html',
         'app/**/*.php',
         'app/js/*.js',
+        'app/img/**/*',
         'app/css/app.css'
     ]).on('change', reload);
 

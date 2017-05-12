@@ -22,7 +22,7 @@
                     <button>Ladda ner Broschyr</button>
                 </div>
                 <div class="p_prod_head_btn_order">
-                    <button>Ladda ner Broschyr</button>
+                    <button>Skicka en offert</button>
                 </div>
                 <div class="p_prod_head_img">
                     <img src="img/product/kyrka/rembrant_350.png" alt="produkt bild">
