@@ -30,8 +30,12 @@
     <div class="row-fluid pe_prod">
         <div class="col-xs-12 pe_prod_container">
             <div class="col-xs-8 col-xs-offset-2 pe_sort_container">
-                
 
+                    <div class = "center_horizontally_css">
+                        <h3> Sort by </h3>
+                        <button onclick="location.href='product_details'" class="">Name</button>
+                        <button onclick="location.href='product_details'" class="">Price</button>
+                    </div>
             </div>
 
             <?php
@@ -47,9 +51,9 @@
                     <div class="col-xs-8 col-xs-offset-2 pe_product">
 
                         <div class = "col-xs-6">
-                            <h1> <?php echo $name;?> </h1>
+                            <h1 class = "pe_name"> <?php echo $name;?> </h1>
                             <p> <?php echo $short;?> </p>
-                            <p> <?php echo $price;?> </p>
+                            <p class = "pe_price"> <?php echo $price;?> </p>
                             <button onclick="location.href='product_details'" class="">Läs mer</button>
                         </div>
                         <div class = "col-xs-6">

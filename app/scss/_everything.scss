@@ -87,6 +87,20 @@ section {
     transform: translate(-50%, -50%);
 }
 
+.button {
+    border: 2px solid $white;
+    color: $white;
+    background-color: transparent;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    &:hover{
+        background: $color1;
+        border: 0;
+        transition: 0.5s;
+    }
+}
+
 //index header slider btn
 .slider_btn{
     position: absolute;

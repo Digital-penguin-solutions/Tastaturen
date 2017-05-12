@@ -12,7 +12,7 @@
         .pe_header_bg{
             position: absolute;
             @extend .nopm;
-            height: 100vh;
+            height: 100%;
             width: 100%;
             //background: rgba($color5, 0.3);
             z-index: 99;
@@ -35,7 +35,8 @@
     }
 }
 
-.pe_prod{
+
+.pe_prod {
     min-height: 100vh;
     background: $color2;
 
@@ -64,22 +65,12 @@
         }
         button {
             @extend .center_horizontally_css;
+            @extend .button;
             position:absolute;
-            border: 2px solid $white;
-            color: $white;
-            background-color: transparent;
-            text-align: center;
-            text-decoration: none;
-            font-size: 1.2vw;
             width: 8vw;
             height: 4.5vh;
             bottom:10%;
 
-            &:hover{
-                background: $color1;
-                border: 0;
-                transition: 0.5s;
-            }
         }
         &:last-child {
             margin-bottom: 10%;
@@ -89,5 +80,20 @@
         margin-top:5%;
         background:$color3;
         height: 25vh;
+
+        div {
+            box-sizing:border-box;
+            float:left;
+        }
+        h3 {
+            color: $white;
+            font-size:1.5vw;
+            text-align:center;
+        }
+        button {
+            @extend .button;
+            width:6vw;
+            height:2vw;
+        }
     }
 }
