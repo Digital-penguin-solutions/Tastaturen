@@ -21,7 +21,7 @@
             <a href="index#Intro">Hem</a>
             <a href="index#Info">Om oss</a>
             <a href="index#Orgel-hem">Orglar för hemmet</a>
-            <a href="Index#Orgel-kyrka">Orglar för kyrkan </a>
+            <a href="index#Orgel-kyrka">Orglar för kyrkan </a>
             <a href="index#kontakta">Kontakta oss</a>
             <a href="index#Media">Media</a>
         </div>
