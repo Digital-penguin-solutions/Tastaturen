@@ -126,7 +126,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                 <?php echo_products_index($products_church);?>
 
-                <button onclick="location.href='product_details'" class="i_products_btn">Kyrkobruk</button>
+                <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
             </div>
 
             <!-- Products Hemma -->
@@ -144,7 +144,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 <?php echo_products_index($products_home);?>
 
 
-                <button onclick="location.href='product_details'" class="i_products_btn">Hemmabruk</button>
+                <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
             </div>
 
         </div>

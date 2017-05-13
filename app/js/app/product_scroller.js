@@ -95,7 +95,7 @@ function move(left, products_container){
             /*$(product).css("left", new_left);*/
             $(product).animate({
                 left: new_left
-            }, 500, 'easeOutCirc',function(){
+            }, 500, function(){
                 sliding = false;
             });
 

@@ -32,9 +32,17 @@
             <div class="col-xs-8 col-xs-offset-2 pe_sort_container">
 
                     <div class = "center_horizontally_css">
+                        <h3> Visa orglar för </h3>
+                        <button onclick="changeType(this,'kyrka')" class="">Kyrkor</button>
+                        <button onclick="changeType(this,'hem')" class="">Hemmet</button>
+                        <button onclick="changeType(this,'all')" class="">Visa alla</button>
+                    </div>
+
+                    <div class = "col-xs-12"> </div> <!-- Empty div to break new line. Has to be here -->
+                    <div class = "center_horizontally_css pe_sort_buttons">
                         <h3> Sort by </h3>
-                        <button onclick="sortByName()" class="">Name</button>
-                        <button onclick="sortByPrice()" class="">Price</button>
+                        <button onclick="sortByName(this)" class="">Name</button>
+                        <button onclick="sortByPrice(this)" class="">Price</button>
                     </div>
             </div>
 
@@ -47,6 +55,7 @@
                     $short = $product['short_description'];
                     $price = $product['price'];
                     $image = $product['main_image'];
+                    $type = $product['type'];
                     ?>
                     <div class="col-xs-8 col-xs-offset-2 pe_product">
 
@@ -54,6 +63,7 @@
                             <h1 class = "pe_name"> <?php echo $name;?> </h1>
                             <p> <?php echo $short;?> </p>
                             <p class = "pe_price"> <?php echo $price;?> </p>
+                            <p class = "hidden pe_type"> <?php echo $type;?> </p>
                             <button onclick="location.href='product_details'" class="">Läs mer</button>
                         </div>
                         <div class = "col-xs-6">

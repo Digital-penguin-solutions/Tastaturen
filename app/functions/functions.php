@@ -96,11 +96,11 @@ if(!isset($functions_included)){
     /* Return only the products that are to be shown on the homepage */
     function get_all_visible_products($con, $type) {
         if($type==""){
-            $query  = "SELECT price, product_id, name, short_description, main_image FROM product WHERE `show` = '1'";
+            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1'";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
         else {
-            $query  = "SELECT price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' AND type = '$type'";
+            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' AND type = '$type'";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
 
