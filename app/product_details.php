@@ -33,8 +33,8 @@
 
                     <div class = "center_horizontally_css">
                         <h3> Sort by </h3>
-                        <button onclick="location.href='product_details'" class="">Name</button>
-                        <button onclick="location.href='product_details'" class="">Price</button>
+                        <button onclick="sortByName()" class="">Name</button>
+                        <button onclick="sortByPrice()" class="">Price</button>
                     </div>
             </div>
 

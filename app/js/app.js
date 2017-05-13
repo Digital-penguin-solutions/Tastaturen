@@ -50,8 +50,6 @@ function init_product_slider(){
 function move(left, products_container){
     if(!sliding){
         sliding = true;
-        
-
 
         var dir = 1;
 
@@ -129,17 +127,18 @@ function get_width_in_percentage(element){
 
 $(document).ready(on_ready_product_sorter);
 
-var all_products = [];
+var products = [];
 var prices = [];
 var names = [];
 
 function on_ready_product_sorter(){
     console.log("sorter ready");
 
-    all_products = document.getElementsByClassName("pe_product");
+    var all_products = document.getElementsByClassName("pe_product");
 
     for(var i = 0; i < all_products.length; i++){
         var product = all_products[i];
+        products.push($(product).clone());
         var price = product.getElementsByClassName("pe_price")[0].innerHTML.trim();
         price = price.replace(" ", "")*1.0;
 
@@ -157,36 +156,48 @@ function on_ready_product_sorter(){
     console.log(names);
 
 
-    //echoProducts();
-    
+    echoProducts([]);
 }
 
 
 //
-var A = [0.7, 0.1, 0.2, 0.6, 0.8, 2.1];
-var B = ['a', 'b', 'c', 'd', 'e', 'f'];
+//var A = [0.7, 0.1, 0.2, 0.6, 0.8, 2.1];
+//var B = ['a', 'b', 'c', 'd', 'e', 'f'];
 
-function echoProducts(){
+
+function echoProducts(temp_products){
+    if(temp_products.length == 0){
+        temp_products = products;
+    }
     var container = document.getElementsByClassName("pe_prod_container")[0]; 
-    //$(container).empty();
+    $(".pe_product").remove();
     //console.log(container);
     //while (container.firstChild) {
-        //container.removeChild(container.firstChild);
+    //container.removeChild(container.firstChild);
     //}
 
-    for(var i = 0; i < all_products.length; i++){
-        console.log(i);
-        //$(container).append(all_products[i]);
-
+    for(var i = 0; i < products.length; i++){
+        var price = $(temp_products[i]).find(".pe_price").html();
+        $(container).append(temp_products[i]);
     }
-    
+
 }
 
+function sortByPrice(){
+    var temp_products = sortArrayByOther(products, prices);
+    
+    echoProducts(temp_products);
+
+}
 function sortByName(){
 
+    var temp_products = sortArrayByOther(products, names);
+    
+    echoProducts(temp_products);
+
+
 }
 
-sortArrayByOther(B,A);
 // the B array will be sorted by A
 function sortArrayByOther(B, A){
     var all = [];
@@ -195,15 +206,15 @@ function sortArrayByOther(B, A){
         all.push({ 'A': A[i], 'B': B[i] });
     }
 
-    
+
     all.sort(function(a, b) {
         //console.log(a.A);
         //console.log(b.A);
         if (typeof a.A == "String"){
-          return a.A > b.A;
+            return a.A > b.A;
         }
         else {
-          return a.A - b.A;
+            return a.A - b.A;
         }
     });
 
@@ -211,8 +222,8 @@ function sortArrayByOther(B, A){
     B = [];
 
     for (var i = 0; i < all.length; i++) {
-       A.push(all[i].A);
-       B.push(all[i].B);
+        A.push(all[i].A);
+        B.push(all[i].B);
     }    
 
     console.log(A, B);

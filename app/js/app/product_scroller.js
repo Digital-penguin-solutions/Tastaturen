@@ -49,8 +49,6 @@ function init_product_slider(){
 function move(left, products_container){
     if(!sliding){
         sliding = true;
-        
-
 
         var dir = 1;
 
