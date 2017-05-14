@@ -143,7 +143,6 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                 <?php echo_products_index($products_home);?>
 
-
                 <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
             </div>
 
@@ -184,6 +183,11 @@ $products_church = get_all_visible_products($con, "kyrka");
 <section id="Media" class="container-fluid i_media">
     <div class="row-fluid i_media">
         <div class="col-xs-12 i_media_container">
+            <div class="i_media_1"></div>
+            <div class="i_media_2"></div>
+            <div class="i_media_3"></div>
+            <div class="i_media_4"></div>
+            <div class="i_media_5"></div>
         </div>
     </div>
 </section>
