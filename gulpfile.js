@@ -67,15 +67,16 @@ g.task('concat-js-app' ,function () {
     return g.src('app/js/app/*.js')
         .pipe(plumber())
         .pipe(concat('app.js'))
+        .pipe(uglify())
         .pipe(g.dest('app/js'))
 });
-
 
 //create impots.js from all js files in imporst folder
 g.task('concat-js-third-party' ,function () {
     return g.src('app/js/third_party/*.js')
         .pipe(plumber())
         .pipe(concat('third_party.js'))
+        .pipe(uglify())
         .pipe(g.dest('app/js'))
 });
 
@@ -108,6 +109,7 @@ g.task('dev-watch', function () {
     g.watch('app/scss/**/*',          ['prefix']);
 });
 
+//conect to a php server and live uppdate when changes are maide
 g.task('connect-php', function () {
     connect.server({
         port: 8079,
@@ -143,10 +145,12 @@ g.task('connect-php', function () {
         'app/css/app.css'
     ]).on('change', reload);
 
-    g.watch('app/scss/**/*scss',     ['compile-sass']);
-    g.watch('app/js/**/*.js',        ['concat-js-app','concat-js-third-party']);
+    g.watch('app/scss/**/*scss',       ['compile-sass']);
+    g.watch('app/js/app/*.js',         ['concat-js-app']);
+    g.watch('app/js/third_party/*.js', ['concat-js-third-party']);
 });
 
+//clean old dist and compile all files
 g.task('build',['clean'],function () {
     g.start('minify', 'prefix', 'concat-js-app','concat-js-third-party', 'copy', 'imgmin')
 });
