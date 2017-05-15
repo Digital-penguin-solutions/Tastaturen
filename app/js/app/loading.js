@@ -1,8 +1,9 @@
-$(document).ready(function() {
 
-    var counter = 0;
-    var c = 0;
-    var i = setInterval(function(){
+console.log("Loading");
+
+var counter = 0;
+var c = 0;
+var i = setInterval(function(){
         $(".loading-page .counter h1").html(c + "%");
         $(".loading-page .counter hr").css("width", c + "%");
 
@@ -13,5 +14,5 @@ $(document).ready(function() {
             clearInterval(i);
             document.body.removeChild(load_screen);
         }
-    }, 50);
-});
+    },
+    50);
