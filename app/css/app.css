@@ -294,6 +294,7 @@ section {
   height: 100vh;
   z-index: 10000; }
   .nav_d .nav_d_container .nav_cart {
+    display: -ms-flexbox;
     display: flex; }
     .nav_d .nav_d_container .nav_cart i {
       font-size: 10vw; }
@@ -310,8 +311,6 @@ section {
     text-align: right;
     position: absolut;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
@@ -606,8 +605,11 @@ section {
   height: 100vh;
   width: 100vw;
   background: #1e1e1e;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center; }
   .loading-page .counter {
     text-align: center; }
@@ -729,8 +731,6 @@ section {
     border-radius: 5%;
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .edit .edit_container h1 {
       text-align: center;
@@ -927,8 +927,6 @@ section {
     .i_products .i_products_container .i_products .i_products_btn {
       position: relative;
       left: 50%;
-      -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       z-index: 100;
       border: 2px solid #ffffff;
@@ -952,8 +950,6 @@ section {
         margin-top: 6vh;
         position: relative;
         left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         width: 18vw;
         height: 18vw; }
@@ -961,13 +957,9 @@ section {
         position: absolute;
         position: absolute;
         top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
         transform: translateY(-50%);
         position: absolute;
         left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         color: transparent;
         margin-top: -10vh;
@@ -1233,8 +1225,6 @@ section {
         position: absolute;
         position: absolute;
         left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 100;
         bottom: -13vh; }
@@ -1352,8 +1342,6 @@ section {
       z-index: 100;
       position: relative;
       top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-left: 2vw; }
       .pe_header .pe_header_container .pe_header_text h1 {
@@ -1584,6 +1572,7 @@ section {
   margin-top: 5vh;
   margin-left: 20vw;
   font-size: 1vw;
+  display: -ms-inline-flexbox;
   display: inline-flex; }
   .login p {
     font-weight: 600;

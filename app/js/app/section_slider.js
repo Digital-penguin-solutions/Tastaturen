@@ -1,4 +1,5 @@
 console.log("section slider");
+$(document).ready(on_ready_slider);
 
 var sliding = false;
 
@@ -19,7 +20,7 @@ var dot_not_selected_background = "gray";
 var border_selected_color = "gray";
 var border_not_selected_color = "gray";
 
-function on_ready () {
+function on_ready_slider () {
     init_sliders();
 
     // puts all the sliders to the first page
@@ -28,7 +29,7 @@ function on_ready () {
     }
 
     slider_speed = 600; // sets the slider speed to a value after the first initialisation has been done. This is so that the animations wont be shown when the page is loaded
-    $("all_slider_container").show();
+    $(".all_slider_container").css("visibility", "visible");
 }
 
 function slider_go_to_page(slider_number, page){

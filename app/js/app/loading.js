@@ -12,7 +12,7 @@ var i = setInterval(function(){
 
         if(counter == 101) {
             clearInterval(i);
-            document.body.removeChild(load_screen);
+            //document.body.removeChild(load_screen);
         }
     },
     50);
