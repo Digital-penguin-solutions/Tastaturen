@@ -30,7 +30,7 @@
     visibility: hidden
   }
   .piano_container{
-    margin-top:20vh;
+    margin-top:18vh;
     @include horizontal-align();
     position: absolute;
 
@@ -57,7 +57,7 @@
       .black {
         margin: 0 0 0 -1vw;
         width: 2vw;
-        height: 15vh;
+        height: 16.5vh;
         background: #000;
         z-index: 1000;
         border: 2px solid #000;
@@ -70,8 +70,8 @@
       }
 
       .white {
-        width: 2.8vw;
-        height: 25vh;
+        width: 3vw;
+        height: 30vh;
         background: #fff;
         border: 2px solid #000;
         border-left: 0;
