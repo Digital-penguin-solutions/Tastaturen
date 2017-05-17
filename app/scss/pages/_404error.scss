@@ -1,7 +1,95 @@
 @import "../everything";
 
-.error{
-  .error_container{
+.piano{
+  position: absolute;
+  background: $color4;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+  left:0;
+  top:0;
 
+  h1{
+    text-align: center;
+    margin-top:10vh;
+    font-size: 4vw;
+    font-weight: 400;
+
+  }
+  h3{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2vw;
+    a{
+      color: $color1;
+      font-weight: 600;
+    }
+  }
+
+  header{
+    visibility: hidden
+  }
+  .piano_container{
+    margin-top:20vh;
+    @include horizontal-align();
+    position: absolute;
+
+    ul{
+      cursor: pointer;
+      list-style-type: none;
+      position: relative;
+      padding: 0;
+
+      li{
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+        border-radius: 0 0 7px 7px;
+        &:first-of-type{
+          border-left: 2px solid #000;
+          border-radius: 10px 0 7px 7px;
+        }
+        &:last-of-type{
+          border-radius: 0 10px 7px 7px;
+        }
+      }
+      .black {
+        margin: 0 0 0 -1vw;
+        width: 2vw;
+        height: 15vh;
+        background: #000;
+        z-index: 1000;
+        border: 2px solid #000;
+        border-left: 0;
+        &:active {
+          border-top: 2px solid #000;
+          border-bottom: 2px solid #000;
+          box-shadow: inset 7px 10px 67px 8px rgba(204, 204, 204, 0.2);
+        }
+      }
+
+      .white {
+        width: 2.8vw;
+        height: 25vh;
+        background: #fff;
+        border: 2px solid #000;
+        border-left: 0;
+
+        &:active {
+          border-top: 2px solid #000;
+          border-bottom: 2px solid #000;
+          box-shadow: inset 7px 10px 67px 8px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      .black + .white {
+        margin-left: -1vw;
+      }
+    }
+
+    button{
+      visibility: hidden;
+    }
   }
 }
