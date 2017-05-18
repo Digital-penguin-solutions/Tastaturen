@@ -22,7 +22,7 @@ var music = {
     116 : { id :'C-sharp-2', 	note :'C#', sharp : true , 	octave : 2 , keyCodeNum : 116 	},
     121 : { id :'D-2', 			note :'D', 	sharp : false , octave : 2 , keyCodeNum : 121 	},
     117 : { id :'D-sharp-2', 	note :'D#', sharp : true , 	octave : 2 , keyCodeNum : 117 	},
-    105 : { id :'E-3', 			note :'E', 	sharp : false , octave : 3 , keyCodeNum : 105 	},
+    105 : { id :'E-3', 			note :'E', 	sharp : false , octave : 3 , keyCodeNum : 105 	}
 };
 
 (function(){

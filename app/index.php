@@ -48,7 +48,8 @@ $products_church = get_all_visible_products($con, "kyrka");
                                     <div class="i_slider_1_left_btn ">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-                                        <button class = "slide-in-delay-3 slide-in slide-in-left" onclick="location.href='product_details'">Kyrkobruk</button>
+                                        <button class = "slide-in-delay-3 slide-in slide-in-left"
+                                                onclick="location.href='product_details'">Kyrkobruk</button>
                                     </div>
                                 </div>
 
@@ -61,7 +62,8 @@ $products_church = get_all_visible_products($con, "kyrka");
                                     <div class="i_slider_1_right_btn">
                                         <p>Herp derpsum perp dee derp, mer herderder.
                                             Sherp berp derpler,</p>
-                                        <button class = "slide-in-delay-3 slide-in" onclick="location.href='product_details'">Hemmabruk</button>
+                                        <button class = "slide-in-delay-3 slide-in"
+                                                onclick="location.href='product_details'">Hemmabruk</button>
                                     </div>
                                 </div>
 
@@ -181,17 +183,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 </section>
 
 <!-- Media section -->
-<section id="Media" class="container-fluid i_media">
-    <div class="row-fluid i_media">
-        <div class="col-xs-12 i_media_container">
-            <div class="i_media_1"></div>
-            <div class="i_media_2"></div>
-            <div class="i_media_3"></div>
-            <div class="i_media_4"></div>
-            <div class="i_media_5"></div>
-        </div>
-    </div>
-</section>
+<?php include "views/index_media.php"?>
 
 <?php include "partials/footer.php" ?>
 </body>
