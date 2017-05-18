@@ -18,6 +18,7 @@ $products_home = get_all_visible_products($con, "hem");
 $products_church = get_all_visible_products($con, "kyrka");
 ?>
 
+
 <!-- Header -->
 <header id="Intro" class="container-fluid i_header">
     <div class="row-fluid i_header">

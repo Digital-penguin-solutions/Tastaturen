@@ -10,7 +10,7 @@
 <html>
 <body>
 <section class='piano'>
-    <h1>Something when wrong</h1>
+    <h1>Something went wrong</h1>
     <h3>Play some piano or go back <a href="index.php">Home</a></h3>
 
     <header>
