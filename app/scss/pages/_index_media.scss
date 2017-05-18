@@ -1,0 +1,18 @@
+@import "../everything";
+
+//media section
+.i_media{
+  background: #000;
+  min-height:100vh;
+  .i_media_container{
+
+  }
+}
+
+//tablet size
+@media (min-width: $screen-sm-min) {
+}
+
+//desktop size
+@media (min-width: $screen-md-min) {
+}
