@@ -121,7 +121,7 @@ section {
     button{
         border: 2px solid $white;
         color: $white;
-        background-color: transparent;
+        background: rgba($color5, 0.25);
         text-align: center;
         text-decoration: none;
         font-size: 1.2vw;

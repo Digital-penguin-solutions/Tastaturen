@@ -1,22 +1,35 @@
 @import "../everything";
+@import "../views/bg_slider";
 
 //product header
 .p_prod_head{
-  background: $color5;
   height: 100vh;
+  @extend .nopm;
   .p_prod_head_container{
     height:100vh;
+    @extend .nopm;
+
+    .slideshow {
+      @extend .nopm;
+      z-index: 50;
+      height:100vh;
+      width: 100%;
+      filter:blur(4px);
+    }
     .p_prod_head_bg{
-      z-index: 99;
+      z-index: 51;
       height:100vh;
       width:100%;
+      position: absolute;
+      background: rgba($color5, 0.15);
+      //background: rgba($color5 , 0.4);
       .p_prod_head_text{
         text-align: center;
         margin-top:20vh;
         color: $white;
         h1{
-          font-size: 4.5vw;
-          font-weight: 400;
+          font-size: 5vw;
+          font-weight: 600;
         }
         h2{
           font-size: 3.5vw;
@@ -54,6 +67,8 @@
   background: darken($white, 10%);
   height: 100vh;
   .p_info_container{
+    height:100vh;
+    width: 100vw;
 
     .p_info_btn{
 
