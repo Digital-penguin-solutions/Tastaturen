@@ -64,16 +64,38 @@
 
 //info about product
 .p_info{
-  background: darken($white, 10%);
+  background: $color4;
   height: 100vh;
+
   .p_info_container{
     height:100vh;
     width: 100vw;
 
-    .p_info_btn{
+    .p_info_text {
+      @include vertical-align();
+      color: $white;
+      h1{
+        font-size: 3vw;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      h3{
+        font-size: 1.3vw;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      p{
+        font-size: 1.2vw;
+        font-weight: 300;
 
-
+      }
     }
 
+    .p_info_img{
+      @include vertical-align();
+      img{
+      }
+    }
   }
 }
+

@@ -10,6 +10,7 @@
   z-index: 10000;
   .nav_d_container{
     .nav_d_triage{
+      z-index: 10001;
       position: absolute;
       left: -2.5vw !important;
       width: 0;
@@ -19,6 +20,7 @@
     }
     //cart icon
     .nav_cart{
+      z-index: 10002;
       display: flex;
       i{
         font-size: 10vw;

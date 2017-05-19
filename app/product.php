@@ -46,10 +46,24 @@
     </div>
 </header>
 
+<!--information aboute the pruduct-->
 <section class="container-fluid p_info">
     <div class="row-fluid p_info">
         <div class="col-xs-12 p_info_container">
-
+            <div class="p_info_text col-xs-4 col-xs-offset-1">
+                <h1>Live</h1>
+                <h3>PRICE: 999€</h3>
+                <p>Herp derpsum perp dee derp,
+                    mer herderder. Sherp berp derpler,
+                    herpem serp tee perper merpus terp dee.
+                    Sherpus berps herpsum herpler.
+                    Berps herderder herpsum herpderpsmer herp?
+                    Derperker der herpler derp derpsum berps perp sherpus.
+                    Merpus mer perper </p>
+            </div>
+            <div class="p_info_img  col-xs-4">
+                <img src="img/product/kyrka/example3.png" alt="" class="col-xs-12">
+            </div>
         </div>
     </div>
 </section>
