@@ -11,18 +11,18 @@
 
 //partials
 @import "partials/footer";
-@import "partials/nav";
-@import "partials/skroll";
-@import "partials/section_slider";
 @import "partials/loading";
+@import "partials/nav";
+@import "partials/section_slider";
+@import "partials/skroll";
 
 //views
 @import "views/edit";
 
 //pages
+@import "pages/404error";
+@import "pages/admin";
 @import "pages/index";
 @import "pages/index_media";
-@import "pages/product";
 @import "pages/produckt_details";
-@import "pages/admin";
-@import "pages/404error";
+@import "pages/product";

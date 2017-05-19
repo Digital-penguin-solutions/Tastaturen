@@ -1,7 +1,6 @@
 @import "../everything";
 
 
-
 .slider_arrow {
     position: absolute;
     width: 5%;
@@ -11,7 +10,7 @@
 }
 .slider_arrow:hover{
     background: rgba(74,69,68, 0.3);
-    .transition(@time: 0.7s);
+    transition: 0.7s;
 }
 
 .slider_arrow_right {
@@ -40,9 +39,9 @@
 //}
 
 .slider_page {
-    color:@black !important;
-    height:@100h;
-    width: @100p;
+    color:$black !important;
+    height:100%;
+    width: 100%;
     position:relative;
     padding:0 !important;
     margin-right:0 !important;
@@ -59,7 +58,7 @@
 }
 
 .slider_list_container {
-    .fullw;
+    @extend .fullw;
     position:absolute;
     bottom:0;
     height:7%;
@@ -70,7 +69,7 @@
     height: 0.7vh;
     width: 0.7vw;
     bottom:5vh;
-    .fullw;
+    @extend .fullw;
 }
 
 .inner_dots_container {
@@ -112,7 +111,7 @@
 
 .image {
     min-height: 100%;
-    .fullw;
+    @extend .fullw;
     z-index: 100;
-    background: @color3;
+    background: $color3;
 }
