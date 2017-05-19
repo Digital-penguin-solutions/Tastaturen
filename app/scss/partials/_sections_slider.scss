@@ -100,13 +100,13 @@
 }
 
 .background_image_container {
-    .full_size;
-    .tole;
+    @extend .full_size;
+    @extend .tole;
     position:absolute;
 }
 
 .background_image_container img {
-    .background_image_container;
+    @extend  .background_image_container;
 }
 
 .image {
