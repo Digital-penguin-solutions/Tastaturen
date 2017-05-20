@@ -1,17 +1,16 @@
 <?php
 //include "include_pages/loading.php";
 include "partials/head.php";
-?> <!DOCTYPE html><html><head><meta name="description" content="MetSense Admin page. the page to edit the pruduckts and the content of the website"><title>Admin page</title></head> <?php
+?> <!DOCTYPE html><html><head><meta name="description" content=""><title>Admin page</title></head> <?php
 include "functions/functions.php";
 session_start();
 $con = connect();
 //$products = get_all_products($con, "");
 $products_home = get_all_products($con, "hem");
 $products_church = get_all_products($con, "kyrka");
-
 ?> <body> <?php //include "include_pages/nav.php" ?> <section class="admin_page"><div class="container-fluid full_height"><div class="row full_height"><div class="col-md-8 col-md-offset-2"><h1 class="admin_header">Admin page</h1> <?php
                 if(isset($_GET['wrong'])){
-                    echo "<h2 class = 'admin_header'> Wrong password, please try again </h2>"; 
+                    echo "<h2 class = 'admin_header'> Wrong password, please try again </h2>";
                 }
 
                 if(isset($_SESSION['admin'])){
