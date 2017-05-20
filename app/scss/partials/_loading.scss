@@ -9,25 +9,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   .counter{
     text-align: center;
+
     p{
       font-size: 5vw;
       font-weight: 300;
       color: $color1;
-
     }
+
     h1{
       color: white;
       font-size: 8vw;
       margin-top: -10px;
-
     }
+
     hr{
       background: $color1;
       border: none;
       height: 3px;
-
     }
   }
 }

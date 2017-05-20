@@ -6,15 +6,20 @@
   z-index: 4;
   background: $color5;
   @extend .nopm;
+
   .i_header_container{
     height: 100vh;
     @extend .nopm;
+
     .i_header_slider{
       height: 100vh;
+
       .i_slider_1{
         @extend .nopm;
+
         .i_slider_1_container{
           height: 100vh;
+
           .i_slider_1_text {
             position: absolute;
             color: $white;
@@ -34,6 +39,7 @@
           .i_slider_1_left {
             height: 100vh;
             background: $color3*4.1;
+
             .i_slider_1_left_img {
               right:0;
               position: absolute;
@@ -44,15 +50,19 @@
                 height: 60vh;
               }
             }
+
             .i_slider_1_left_btn {
               left: 5vw;
               float:left;
               @extend .slider_btn;
             }
+
             &:hover{
+
               .i_slider_1_left_img{
                 top:14vh;
                 transition: 0.2s;
+
                 img{
                   width: 17vw;
                   height: 63vh;
@@ -65,6 +75,7 @@
           .i_slider_1_right{
             height: 100vh;
             background: $color3*4.5;
+
             .i_slider_1_right_img{
               left:0;
               position: absolute;
@@ -73,7 +84,6 @@
               img{
                 width: 15vw;
                 height: 60vh;
-
               }
             }
 
@@ -84,12 +94,13 @@
               button {
                 float:right;
               }
-
             }
             &:hover{
+
               .i_slider_1_right_img{
                 top:14vh;
                 transition: 0.2s;
+
                 img{
                   width: 17vw;
                   height: 63vh;
@@ -108,6 +119,7 @@
 .i_info{
   min-height: 50vh;
   background: $color4;
+
   .i_info_container{
     text-align: center;
     h2{
@@ -116,14 +128,17 @@
       font-weight: 400;
       margin-top:8vh;
     }
+
     p{
       color: $white;
       vertical-align: middle;
       font-size: 1.5vw;
       font-weight: 200;
     }
+
     a{
       margin-top:5vh;
+
       img{
       }
     }
@@ -134,14 +149,12 @@
 .i_products{
   min-height: 60vh;
   background: $color4;
+
   .i_products_container{
     @extend .nopm;
-
     overflow:hidden;
 
     .i_products{
-
-
       @extend .nopm;
 
       h2{
@@ -166,6 +179,7 @@
         background: transparent;
         top:35vh;
         cursor: pointer;
+
         &:hover{
           background: rgba($color5, 0.2);
           transition: 0.5s;
@@ -190,6 +204,7 @@
         font-size: 1.2vw;
         width: 12vw;
         height: 4.5vh;
+
         &:hover{
           background: $color1;
           border: 0;
@@ -203,13 +218,16 @@
         height: 50vh;
         margin-top:-1vh;
         position:absolute;
+
         a {
+
           img {
             margin-top: 6vh;
             @include horizontal-align();
             width: 18vw;
             height: 18vw;
           }
+
           .i_products_sliders_text {
             position: absolute;
             @include vertical-align($position: absolute);
@@ -218,11 +236,13 @@
             margin-top: -10vh;
             width: 20vw;
             height: 20vh;
+
             h1 {
               text-align: center;
               font-size: 2vw;
               font-weight: 400;
             }
+
             p {
               text-align: center;
               font-size: 1vw;
@@ -230,12 +250,16 @@
             }
           }
         }
+
         &:hover{
+
           a {
+
             img {
               opacity: 0.5;
               transition: 0.3s;
             }
+
             .i_products_sliders_text {
               color: $white;
               transition: 0.5s;
@@ -243,9 +267,11 @@
             }
           }
         }
+
         &:nth-child(3){
           background: lighten( $color3, 45% );
         }
+
         &:nth-child(4){
           background: lighten( $color3, 40% );
         }
@@ -258,14 +284,17 @@
 .i_contact{
   min-height: 50vh;
   background: $color4;
+
   .i_contact_container{
     @extend .nopm;
+
     .i_contact_text_top {
       width: 100%;
       height: 15vh;
       background: $color5;
       text-align: center;
       margin: 0 !important;;
+
       h2 {
         color: $white;
         line-height: 10vh;
@@ -273,23 +302,26 @@
         text-transform: uppercase;
       }
     }
+
     img{
       border-radius: 50%;
       margin-top:10vh;
       //width: 25vw;
     }
+
     .i_contact_text{
       color: $white;
       text-align: center;
       margin-bottom:10vh;
+
       h2{
         font-size: 2.3vw;
         font-weight: 600;
       }
+
       p{
         font-size: 1.5vw;
         font-weight: 100;
-
       }
     }
   }

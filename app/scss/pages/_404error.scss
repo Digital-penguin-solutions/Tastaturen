@@ -29,6 +29,8 @@
   header{
     visibility: hidden
   }
+
+  //container for the piano
   .piano_container{
     margin-top:18vh;
     @include horizontal-align();
@@ -46,14 +48,17 @@
         margin: 0;
         padding: 0;
         border-radius: 0 0 7px 7px;
+
         &:first-of-type{
           border-left: 2px solid #000;
           border-radius: 10px 0 7px 7px;
         }
+
         &:last-of-type{
           border-radius: 0 10px 7px 7px;
         }
       }
+
       .black {
         margin: 0 0 0 -1vw;
         width: 2vw;
@@ -62,6 +67,7 @@
         z-index: 1000;
         border: 2px solid #000;
         border-left: 0;
+
         &:active {
           border-top: 2px solid #000;
           border-bottom: 2px solid #000;

@@ -6,6 +6,7 @@ $color3: #2b2b2b;
 $color4: #212121;
 $color5: #1e1e1e;
 
+//white and black
 $white: #ffffff;
 $black: #000000;
 
@@ -23,7 +24,6 @@ $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
-
 //product slider variables
 $items: 5;
 $animation-time: 10s;
@@ -31,18 +31,3 @@ $transition-time: 0.8s;
 $scale: 15%;
 $total-time: ($animation-time * $items);
 $scale-base-1: (1 + $scale / 100%);
-
-
-//********* index variables **********
-//variables mobil
-
-//variables tablet
-
-//variables desktop
-
-//********* product variables **********
-//variables mobil
-
-//variables tablet
-
-//variables desktop

@@ -570,12 +570,10 @@ section {
   margin-right: 0 !important;
   margin-top: -100vh;
   display: block; }
-
-.slider_page p {
-  text-align: left; }
-
-.slider_page:first-child {
-  margin-top: 0; }
+  .slider_page p {
+    text-align: left; }
+  .slider_page:first-child {
+    margin-top: 0; }
 
 .slider_list_container {
   position: absolute;

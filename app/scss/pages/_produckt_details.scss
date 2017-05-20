@@ -5,11 +5,13 @@
   height: 100vh;
   background: $color5;
   @extend .nopm;
+
   .pe_header_container{
     @extend .nopm;
     height:100vh;
     background: url('../../img/product/bg.jpg') no-repeat fixed;
     background-size: 100vw 100vh;
+
     .pe_header_bg{
       position: absolute;
       @extend .nopm;
@@ -18,15 +20,18 @@
       background: rgba($color5, 0.3);
       z-index: 99;
     }
+
     .pe_header_text{
       position: absolute;
       z-index: 100;
       @include vertical-align();
       margin-left:2vw;
+
       h1{
         color: $white;
         font-size: 3.5vw;
       }
+
       p{
         color: $white;
         font-size: 1.6vw;
@@ -40,6 +45,7 @@
 .pe_prod {
   min-height: 100vh;
   background: darken($white, 5%);
+
   .pe_prod_container {
     min-height: 100vh;
 
@@ -62,6 +68,7 @@
           font-size: 2vw;
           font-weight:400;
         }
+
         button {
           @extend .button;
           margin: -0.1vh 1vh 1vh;
@@ -88,18 +95,19 @@
           font-weight: 600;
           text-transform: uppercase;
         }
+
         .pe_product_short {
           font-size: 1vw;
           font-weight: 400;
-
         }
+
         .pe_product_price {
           font-size: 1.4vw;
           font-weight: 600;
         }
+
         button {
           @extend .button;
-
         }
       }
 
@@ -110,6 +118,7 @@
         margin-right:3vw;
         margin-top:-1vh;
         @include vertical-align();
+
         img{
           width: 100%;
           height:100%;

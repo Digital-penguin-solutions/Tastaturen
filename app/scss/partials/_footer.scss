@@ -3,14 +3,18 @@
 .footer{
   background: $color5;
   height: 50vh;
+
   .footer_container{
+
     .footer_left{
+
       h2{
         text-align: center;
         color: $color2;
         font-size: 2.5vw;
         font-weight:400;
       }
+
       a{
         margin-left:2vw;
         display: block;
@@ -18,14 +22,17 @@
         font-size: 1.3vw;
         font-weight:300;
         text-decoration: none;
+
         &:hover{
           color: $white;
         }
       }
     }
+
     .footer_mid{
 
     }
+
     .footer_right{
 
     }
