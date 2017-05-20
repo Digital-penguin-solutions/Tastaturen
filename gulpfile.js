@@ -71,7 +71,7 @@ g.task('concat-js-app' ,function () {
         .pipe(g.dest('app/js'))
 });
 
-//create impots.js from all js files in imporst folder
+//create imports.js from all js files in import folder
 g.task('concat-js-third-party' ,function () {
     return g.src('app/js/third_party/*.js')
         .pipe(plumber())
@@ -88,7 +88,7 @@ g.task('js-build', ['concat-js-app','concat-js-third-party'] , function () {
         .pipe(g.dest('dist/js'))
 });
 
-//copy img and .htaccess files to dist folder
+//copy .htaccess files to dist folder
 g.task('copy', function() {
     return g.src(['app/.htaccess', 'app/config.ini'])
         .pipe(plumber())
@@ -109,10 +109,10 @@ g.task('dev-watch', function () {
     g.watch('app/scss/**/*',          ['prefix']);
 });
 
-//conect to a php server and live uppdate when changes are maide
+//connect to a php server and live update when changes are made
 g.task('connect-php', function () {
     connect.server({
-        port: 8079,
+        port: 8078,
         base: 'app',
         open: false
     });
@@ -122,14 +122,14 @@ g.task('connect-php', function () {
 
     browserSync({
         notify: false,
-        port  : 8079,
+        port  : 8078,
         server: {
             baseDir   : ['app'],
             middleware: function (req, res, next) {
                 var url = req.url;
 
                 if (!url.match(/^\/(css)\//)) {
-                    proxy.web(req, res, { target: 'http://localhost:8079' });
+                    proxy.web(req, res, { target: 'http://localhost:8078' });
                 } else {
                     next();
                 }

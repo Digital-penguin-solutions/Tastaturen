@@ -1,22 +1,42 @@
 Index
-    * head
-        *sektionen behöver bli ett bildspel
-        *bättre fade på section slidern
-        *alla bilderna ska göras klart i bildspelet
+    * Mobilanpass Hela index sidan.
 
-    *
-        *inte kunna scrolla med färre än 3
+    * Head
+        * Bättre fade på section slidern.
+        * Alla bilderna ska göras klart i bildspelet 4 bilder totalt.
 
-    *Skroll
+    * Pruduct section
         * Göra möhligheten att Bildspelet får upp första punken efter du har gått ett varv.
-        *
+        * Göra så att det går att swipa för att kunna skrolla vidare.
+        * Knappen ska vara under prudukterna.
 
+    * Media
+        * Göra ett grid system som kan visa media i form av text och bilder.
+        * Trycker du på en media tab kommer det upp en popup screan som visar texten eller videon.
 
-prudkter
-    *Skapa hela prudukt sidan
+Prudkter
+    * Fundera ut en ny design för nedre delen av sidan.
+    * Fixa köp knappen så den fungerar.
+    * Fixa brochyr knappen så den fungerar.
 
-prudukt detaljer
-    *
+Prudukt detaljer
+    * Designa om Sidan hur den ser ut i nuläget.
 
-admin
-    * Göra så "save product" knappen inte kan råka klickas två gånger
+Admin
+    * Göra så "save product" knappen inte kan råka klickas två gånger.
+
+404
+    * Designa om sidan men ha kvar piano elementet.
+
+footer
+    * Designa en footer med Län till facebook och lite annat.
+    * Lägg till en länk till admin sidan.
+    * Extra kontakt uppgifter.
+
+Nav
+    * Fixa köp knapen.
+    * På mobil sidan ska det finnas en knapp i högra hören för att toggla naven.
+
+Buy
+    * Fixa buy formuläret på ett enkelt sätt så att man kan sicka en ofert på fler än en orgel.
+    * Designa detta på något smidigt sätt.

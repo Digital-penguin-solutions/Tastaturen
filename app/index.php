@@ -132,9 +132,9 @@ $products_church = get_all_visible_products($con, "kyrka");
                 <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
             </div>
 
-            <!-- Products Hemma -->
+            <!-- Products Home -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-hem">
-                <h2>hemorgel</h2>
+                <h2>Hemorgel</h2>
 
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
