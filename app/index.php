@@ -1,4 +1,4 @@
-<?php // include "partials/loading.php" ?>
+<?php include "partials/loading.php" ?>
 <?php include "partials/head.php" ?>
 <!DOCTYPE html>
 <html lang="en">

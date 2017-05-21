@@ -1,60 +1,64 @@
 @import "../everything";
 
-.piano{
+.piano {
   position: absolute;
   background: $color4;
   color: #fff;
   height: 100vh;
   width: 100vw;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
 
-  h1{
+  h1 {
     text-align: center;
-    margin-top:10vh;
+    margin-top: 10vh;
     font-size: 4vw;
     font-weight: 400;
 
   }
-  h3{
+  h3 {
     text-align: center;
     font-weight: 300;
     font-size: 2vw;
-    a{
+    a {
       color: $color1;
       font-weight: 600;
     }
   }
 
-  header{
+  header {
     visibility: hidden
   }
 
   //container for the piano
-  .piano_container{
-    margin-top:18vh;
+  .piano_container {
     @include horizontal-align();
+    margin-top: 18vh;
     position: absolute;
+    background: url("../../img/piano.jpg");
+    padding: 7vh 2vw 1vh 2vw;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 0 10px 0 0 rgba($color5, 0.9), 0 20px 0 -5px rgba(0, 0, 0, 0.15);
 
-    ul{
+    ul {
       cursor: pointer;
       list-style-type: none;
       position: relative;
       padding: 0;
 
-      li{
+      li {
         position: relative;
         float: left;
         margin: 0;
         padding: 0;
         border-radius: 0 0 7px 7px;
 
-        &:first-of-type{
+        &:first-of-type {
           border-left: 2px solid #000;
           border-radius: 10px 0 7px 7px;
         }
 
-        &:last-of-type{
+        &:last-of-type {
           border-radius: 0 10px 7px 7px;
         }
       }
@@ -94,7 +98,7 @@
       }
     }
 
-    button{
+    button {
       visibility: hidden;
     }
   }

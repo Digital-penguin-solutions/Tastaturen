@@ -1,4 +1,5 @@
 <?php include "partials/head.php" ?>
+<?php include "partials/loading.php" ?>
 <!DOCTYPE html>
 <html lang='en'>
 <head>
@@ -6,8 +7,6 @@
     <meta name="description" content="404 error"/>
     <meta name="keywords" content="orgel, instrument, musik"/>
 </head>
-<body>
-<html>
 <body>
 <section class='piano'>
     <h1>Something went wrong</h1>
@@ -86,10 +85,7 @@
         </button>
     </div>
 </section>
-</body>
-</html>
 
 <script src="js/piano.js"></script>
-
 </body>
 </html>
