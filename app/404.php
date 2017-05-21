@@ -1,5 +1,4 @@
 <?php include "partials/head.php" ?>
-<?php include "partials/loading.php" ?>
 <!DOCTYPE html>
 <html lang='en'>
 <head>
