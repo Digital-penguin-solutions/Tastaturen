@@ -66,7 +66,6 @@ $products_church = get_all_products($con, "kyrka");
                             $product_id = $product['product_id'];
                             $show       = $product['show'];
 
-
                             if($show == 1){
                                 $toggle_button_value = "Hide product";
                                 $toggle_color        = "red";
@@ -75,7 +74,6 @@ $products_church = get_all_products($con, "kyrka");
                                 $toggle_button_value = "Set visible";
                                 $toggle_color        = "green";
                             }
-
 
                             if($count % 2 == 0) {
                                 $offset = 1;
@@ -123,7 +121,6 @@ $products_church = get_all_products($con, "kyrka");
                             $product_id = $product['product_id'];
                             $show       = $product['show'];
 
-
                             if($show == 1){
                                 $toggle_button_value = "Hide product";
                                 $toggle_color        = "red";
@@ -132,7 +129,6 @@ $products_church = get_all_products($con, "kyrka");
                                 $toggle_button_value = "Set visible";
                                 $toggle_color        = "green";
                             }
-
 
                             if($count % 2 == 0) {
                                 $offset = 1;

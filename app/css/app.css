@@ -316,7 +316,7 @@ section {
       height: 10vh;
       background: #1536ff;
       position: absolute;
-      animation: load .7s infinite alternate ease-in-out; }
+      animation: load 1s infinite alternate ease-in-out; }
     .loader_container .loader::before {
       top: -4vh; }
     .loader_container .loader::after {
