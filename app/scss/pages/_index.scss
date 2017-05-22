@@ -14,6 +14,7 @@
     .i_header_slider{
       height: 100vh;
 
+      // Slider 1
       .i_slider_1{
         @extend .nopm;
 
@@ -111,6 +112,53 @@
           }
         }
       }
+
+      // Slider 2
+      .i_slider_2_container{
+        height:100vh;
+        background: #000;
+        .i_slider_2_text{
+          h1{
+
+          }
+          p{
+
+          }
+        }
+        .i_slider_2_img{
+          img{
+
+          }
+        }
+      }
+
+      // Slider 3
+      .i_slider_3_container{
+        .i_slider_3_video{
+          .i_slider_3_video_btn{
+            button{
+
+            }
+          }
+        }
+      }
+
+      //Slider 4
+      .i_slider_4_container{
+        .i_slider_4_text{
+          h1{
+
+          }
+          p{
+
+          }
+        }
+        .i_slider_4_img{
+          img{
+
+          }
+        }
+      }
     }
   }
 }
@@ -151,10 +199,12 @@
   background: $color4;
 
   .i_products_container{
+    min-height: 60vh;
     @extend .nopm;
     overflow:hidden;
 
     .i_products{
+      min-height: 60vh;
       @extend .nopm;
 
       h2{
@@ -192,23 +242,31 @@
         right:0;
       }
 
-      //Btn to product details page
-      .i_products_btn{
-        @include horizontal-align();
+      .i_products_bt_container {
+        height: 10vh;
+        width: 100%;
+        background: $color5;
         z-index: 100;
-        border: 2px solid $white;
-        color: $white;
-        background-color: transparent;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.2vw;
-        width: 12vw;
-        height: 4.5vh;
+        bottom: -10vh;
+        position: absolute;
+        //Btn to product details page
+        .i_products_btn {
+          @include horizontal-align($pos: absolut);
+          position: absolute;
+          border: 2px solid $white;
+          color: $white;
+          background-color: transparent;
+          text-align: center;
+          text-decoration: none;
+          font-size: 1.2vw;
+          width: 12vw;
+          height: 4.5vh;
 
-        &:hover{
-          background: $color1;
-          border: 0;
-          transition: 0.5s;
+          &:hover {
+            background: $color1;
+            border: 0;
+            transition: 0.5s;
+          }
         }
       }
 
@@ -230,8 +288,8 @@
 
           .i_products_sliders_text {
             position: absolute;
-            @include vertical-align($position: absolute);
-            @include horizontal-align($position: absolute);
+            @include vertical-align($pos: absolute);
+            @include horizontal-align($pos: absolute);
             color: transparent;
             margin-top: -10vh;
             width: 20vw;

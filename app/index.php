@@ -29,6 +29,8 @@ $products_church = get_all_visible_products($con, "kyrka");
                     <div class="i_slider_1_container">
 
                         <div class = "all_slider_container no_list no_arrows">
+
+                            <!-- Slider 1-->
                             <div class = "slider_page col-md-12">
 
                                 <div class = "background_image_container">
@@ -69,16 +71,43 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                             </div>
 
+                            <!-- Slider 2 -->
                             <div class = "slider_page col-md-12">
-                                <div class = "background_image_container">
-                                    <img src = "img/404_img.jpg" alt = "MetTempMobile">
+                                <div class="i_slider_2_container">
+                                    <div class="i_slider_2_text">
+                                        <h1>asd</h1>
+                                        <p>asd</p>
+                                    </div>
+                                    <div class="i_slider_2_img">
+                                        <img src="" alt="">
+                                    </div>
                                 </div>
-                                HELLLLLLllllO
-                                adssssssssssssssssssssssssssssssssssssssssssssss
-                                adssssssss
-                                <br>
-                                asdasdas2
                             </div>
+
+                            <!-- Slider 3-->
+                            <div class = "slider_page col-md-12">
+                                <div class="i_slider_3_container">
+                                    <div class="i_slider_3_video">
+                                        <div class="i_slider_3_video_btn">
+                                            <button></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slider 4-->
+                            <div class = "slider_page col-md-12">
+                                <div class="i_slider_4_container">
+                                    <div class="i_slider_4_text">
+                                        <h1></h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="i_slider_4_img">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -114,7 +143,6 @@ $products_church = get_all_visible_products($con, "kyrka");
     <div class="row-fluid i_products">
         <div class="col-xs-12 i_products_container">
 
-
             <!-- Products Kyrka -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-kyrka">
                 <h2>Kyrkorgel</h2>
@@ -129,7 +157,9 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                 <?php echo_products_index($products_church);?>
 
-                <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                <div class="i_products_bt_container">
+                    <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                </div>
             </div>
 
             <!-- Products Home -->
@@ -146,7 +176,9 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                 <?php echo_products_index($products_home);?>
 
-                <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                <div class="i_products_bt_container">
+                    <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                </div>
             </div>
 
         </div>

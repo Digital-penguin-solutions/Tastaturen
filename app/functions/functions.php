@@ -93,7 +93,7 @@ if(!isset($functions_included)){
 
     }
 
-    /* Return only the products that are to be shown on the homepage */
+    // Return only the products that are to be shown on the homepage
     function get_all_visible_products($con, $type) {
         if($type==""){
             $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1'";
@@ -115,6 +115,7 @@ if(!isset($functions_included)){
         return $array;
 
     }
+
     //get all products from database
     function get_all_products($con, $type) {
 
@@ -138,7 +139,7 @@ if(!isset($functions_included)){
         return $array;
     }
 
-    
+    //Get all products from database by id
     function get_product_by_id($con, $id){
 
         $id = secure_str($id);
@@ -183,6 +184,7 @@ if(!isset($functions_included)){
         return $array;
     }
 
+    //get visabel products that are visibel by id
     function get_product_visibility_by_id($con, $id){
         $id    = secure_str($id);
         $data = get_product_by_id($con, $id);
@@ -269,7 +271,7 @@ if(!isset($functions_included)){
         return $array;
     }
 
-
+    //Echo alla products in the index slider
     function echo_products_index($products){
 
         foreach($products as $product){
@@ -319,6 +321,7 @@ if(!isset($functions_included)){
         return $destination;
     }
 
+    //
     function return_bytes($val) {
         $val = trim($val);
         $last = strtolower($val[strlen($val)-1]);
