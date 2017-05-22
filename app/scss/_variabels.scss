@@ -17,7 +17,7 @@ $no: 0 !important;
 $iooh: 100vh;
 $ioow: 100vw;
 $full: 100%;
-$hap: 50%;
+$hap:  50%;
 
 //loading variables
 $loadingh: 10vh;
@@ -29,9 +29,9 @@ $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 
 //product slider variables
-$items: 5;
-$animation-time: 10s;
+$items:           5;
+$animation-time:  10s;
 $transition-time: 0.8s;
-$scale: 15%;
+$scale:           15%;
 $total-time: ($animation-time * $items);
 $scale-base-1: (1 + $scale / 100%);

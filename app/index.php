@@ -12,9 +12,8 @@
 <?php
 include "partials/nav.php";
 include "functions/functions.php";
-$con = connect();
-
-$products_home = get_all_visible_products($con, "hem");
+$con             = connect();
+$products_home   = get_all_visible_products($con, "hem");
 $products_church = get_all_visible_products($con, "kyrka");
 ?>
 
