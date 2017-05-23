@@ -47,7 +47,7 @@ function slider_go_to_page(slider_number, page){
 
         // counts the number of pages on this slider. Minus 2 cause of the two arrows
         var num_pages = $(slider).children().length - 2;
-            if(num_pages > 0){
+        if(num_pages > 0){
 
             // makes it cycle through the pages
             if(page >= num_pages){
@@ -67,10 +67,19 @@ function slider_go_to_page(slider_number, page){
             var new_page = pages[page];
 
             //new_page.style.visibility = "hidden";
-            var background_image = new_page.getElementsByTagName("img")[0].src;
-            //new_page.getElementsByClassName("background_image_container")[0].getElementsByTagName("img")[0].style.visibility = "hidden";
-            new_page.parentNode.style.background = "url(" + background_image + ") no-repeat center center";
-            new_page.parentNode.style.backgroundSize = "100% 100%";
+            var new_page_image = new_page.getElementsByTagName("img")[0];
+
+            // if the new page has a background image
+            if(new_page_image != undefined){
+                var background_image = new_page_image.src;
+                //new_page.getElementsByClassName("background_image_container")[0].getElementsByTagName("img")[0].style.visibility = "hidden";
+                new_page.parentNode.style.background = "url(" + background_image + ") no-repeat center center";
+                new_page.parentNode.style.backgroundSize = "100% 100%";
+            }
+            else {
+                new_page.parentNode.style.background = "none";
+
+            }
 
 
 
@@ -254,6 +263,7 @@ function init_sliders(){
                 var slider_number = $(clicked_parent).attr("slider_number");
 
                 slider_go_to_page(slider_number, index);
+                console.log("hello132");
             });
         }
 

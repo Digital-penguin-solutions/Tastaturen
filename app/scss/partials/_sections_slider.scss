@@ -64,6 +64,7 @@
   width: 0.7vw;
   bottom:5vh;
   @extend .fullw;
+  z-index:10000;
 }
 
 .inner_dots_container {
@@ -73,7 +74,7 @@
 }
 
 .slider_dot {
-  z-index: 1000;
+  z-index: 10000;
   width: 1.5vw;
   height: 1.5vh;
   float:left;

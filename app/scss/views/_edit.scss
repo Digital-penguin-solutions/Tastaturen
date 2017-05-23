@@ -16,7 +16,8 @@
     width: 40vw;
     background: #fff;
     border-radius: 5%;
-    @include vertical-align();
+    @extend .center_vertically_css;
+    //@include vertical-align();
 
     h1{
       text-align: center;
