@@ -5,7 +5,7 @@ include "partials/head.php";
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="description" content="MetSense Admin page. the page to edit the pruduckts and the content of the website">
+    <meta name="description" content="">
     <title>Admin page</title>
 </head>
 
@@ -16,7 +16,6 @@ $con = connect();
 //$products = get_all_products($con, "");
 $products_home = get_all_products($con, "hem");
 $products_church = get_all_products($con, "kyrka");
-
 ?>
 <body>
 <?php //include "include_pages/nav.php" ?>
@@ -29,7 +28,7 @@ $products_church = get_all_products($con, "kyrka");
 
                 <?php
                 if(isset($_GET['wrong'])){
-                    echo "<h2 class = 'admin_header'> Wrong password, please try again </h2>"; 
+                    echo "<h2 class = 'admin_header'> Wrong password, please try again </h2>";
                 }
 
                 if(isset($_SESSION['admin'])){
@@ -67,7 +66,6 @@ $products_church = get_all_products($con, "kyrka");
                             $product_id = $product['product_id'];
                             $show       = $product['show'];
 
-
                             if($show == 1){
                                 $toggle_button_value = "Hide product";
                                 $toggle_color        = "red";
@@ -76,7 +74,6 @@ $products_church = get_all_products($con, "kyrka");
                                 $toggle_button_value = "Set visible";
                                 $toggle_color        = "green";
                             }
-
 
                             if($count % 2 == 0) {
                                 $offset = 1;
@@ -90,17 +87,20 @@ $products_church = get_all_products($con, "kyrka");
                                 <img class = "center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"/>
 
                                 <!--- EDIT BUTTON-->
-                                <a href = "add_product?product_id=<?php echo $product_id?>" class = "product_button product_edit_button">
+                                <a href = "add_product?product_id=<?php echo $product_id?>"
+                                   class = "product_button product_edit_button">
                                     <p class = "center_vertically_css">Edit</p>
                                 </a>
 
                                 <!--- TOGGLE SHOW BUTTON-->
-                                <a href = "functions/toggle_product?product_id=<?php echo $product_id?>" class = "product_button <?php echo $toggle_color?> product_show_button">
+                                <a href = "functions/toggle_product?product_id=<?php echo $product_id?>"
+                                   class = "product_button <?php echo $toggle_color?> product_show_button">
                                     <p class = "center_vertically_css"><?php echo $toggle_button_value?></p>
                                 </a>
 
                                 <!--- DELETE BUTTON-->
-                                <a href = "functions/delete_product?id=<?php echo $product_id?>" class = "product_button product_delete_button">
+                                <a href = "functions/delete_product?id=<?php echo $product_id?>"
+                                   class = "product_button product_delete_button">
                                     <p class = "center_vertically_css">Delete</p>
                                 </a>
 
@@ -121,7 +121,6 @@ $products_church = get_all_products($con, "kyrka");
                             $product_id = $product['product_id'];
                             $show       = $product['show'];
 
-
                             if($show == 1){
                                 $toggle_button_value = "Hide product";
                                 $toggle_color        = "red";
@@ -130,7 +129,6 @@ $products_church = get_all_products($con, "kyrka");
                                 $toggle_button_value = "Set visible";
                                 $toggle_color        = "green";
                             }
-
 
                             if($count % 2 == 0) {
                                 $offset = 1;
@@ -144,17 +142,20 @@ $products_church = get_all_products($con, "kyrka");
                                 <img class = "center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"/>
 
                                 <!--- EDIT BUTTON-->
-                                <a href = "add_product?product_id=<?php echo $product_id?>" class = "product_button product_edit_button">
+                                <a href = "add_product?product_id=<?php echo $product_id?>"
+                                   class = "product_button product_edit_button">
                                     <p class = "center_vertically_css">Edit</p>
                                 </a>
 
                                 <!--- TOGGLE SHOW BUTTON-->
-                                <a href = "functions/toggle_product?product_id=<?php echo $product_id?>" class = "product_button <?php echo $toggle_color?> product_show_button">
+                                <a href = "functions/toggle_product?product_id=<?php echo $product_id?>"
+                                   class = "product_button <?php echo $toggle_color?> product_show_button">
                                     <p class = "center_vertically_css"><?php echo $toggle_button_value?></p>
                                 </a>
 
                                 <!--- DELETE BUTTON-->
-                                <a href = "functions/delete_product?id=<?php echo $product_id?>" class = "product_button product_delete_button">
+                                <a href = "functions/delete_product?id=<?php echo $product_id?>"
+                                   class = "product_button product_delete_button">
                                     <p class = "center_vertically_css">Delete</p>
                                 </a>
 

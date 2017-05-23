@@ -8,13 +8,28 @@
   position: fixed;
   height: 100vh;
   z-index: 10000;
+
   .nav_d_container{
+
+    .nav_d_triage{
+      z-index: 10001;
+      position: absolute;
+      left: -2.5vw !important;
+      width: 0;
+      height: 0;
+      border-top: 100vw solid $color3;
+      border-left: 4vw solid transparent;
+    }
+
     //cart icon
     .nav_cart{
+      z-index: 10002;
       display: flex;
+
       i{
         font-size: 10vw;
       }
+
       p{
       }
     }
@@ -22,12 +37,13 @@
     //Logo
     .nav_d_logo{
       position: absolute;
-      //@include vertical-align($position:absolut);
       height: 30vh;
       width: 30vh;
+
       a{
         height: 100%;
         width:100%;
+
         img{
         }
       }
@@ -38,16 +54,19 @@
       position: absolute;
       right:0;
       text-align:right;
-      @include vertical-align($position:absolut);
+      @include vertical-align($pos:absolut);
+
       a{
         display: block;
         margin-right:1.2vw;
         color: $color2;
         font-size: 1.2vw;
+
         &:hover{
           color: $color2*1.5;
           text-decoration: none;
         }
+
         &:active{
           color: $white;
         }

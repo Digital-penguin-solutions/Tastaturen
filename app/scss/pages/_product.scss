@@ -1,33 +1,53 @@
 @import "../everything";
+@import "../views/bg_slider";
 
 //product header
 .p_prod_head{
-  background: $color5;
   height: 100vh;
+  @extend .nopm;
+
   .p_prod_head_container{
     height:100vh;
+    @extend .nopm;
+
+    .slideshow {
+      @extend .nopm;
+      z-index: 50;
+      height:100vh;
+      width: 100%;
+      filter:blur(4px);
+    }
+
     .p_prod_head_bg{
-      z-index: 99;
+      z-index: 51;
       height:100vh;
       width:100%;
+      position: absolute;
+      background: rgba($color5, 0.15);
+      //background: rgba($color5 , 0.4);
+
       .p_prod_head_text{
         text-align: center;
         margin-top:20vh;
         color: $white;
+
         h1{
-          font-size: 4.5vw;
-          font-weight: 400;
+          font-size: 5vw;
+          font-weight: 600;
         }
+
         h2{
           font-size: 3.5vw;
           font-weight: 400;
         }
       }
+
       .p_prod_head_btn_broschyr{
         @extend .slider_btn;
         margin-left:3.5vw;
         margin-bottom:2vw;
       }
+
       .p_prod_head_btn_order{
         @extend .slider_btn;
         right:0;
@@ -37,9 +57,10 @@
 
       .p_prod_head_img{
         position: absolute;
-        @include horizontal-align($position: absolute);
+        @include horizontal-align($pos: absolute);
         z-index: 100;
         bottom:-13vh;
+
         img{
           height: 50vh;
           width: 50vh;
@@ -51,14 +72,39 @@
 
 //info about product
 .p_info{
-  background: darken($white, 10%);
+  background: $color4;
   height: 100vh;
+
   .p_info_container{
+    height:100vh;
+    width: 100vw;
 
-    .p_info_btn{
+    .p_info_text {
+      @include vertical-align();
+      color: $white;
 
+      h1{
+        font-size: 3vw;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
 
+      h3{
+        font-size: 1.3vw;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+      p{
+        font-size: 1.2vw;
+        font-weight: 300;
+      }
     }
 
+    .p_info_img{
+      @include vertical-align();
+      img{
+      }
+    }
   }
 }

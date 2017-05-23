@@ -1,20 +1,52 @@
 Index
-    * head
-        *sektionen behöver bli ett bildspel
-        *bättre fade på section slidern
-        *alla bilderna ska göras klart i bildspelet
+    * Mobilanpass Hela index sidan.
 
-    *
-        *inte kunna scrolla med färre än 3
+    * Head
+        * Bättre fade på section slidern.
+        * Alla bilderna ska göras klart i bildspelet 4 bilder totalt.
 
+       * Denna videon ska vara #4 på index slidern:https://www.youtube.com/embed/z8kBoDdQOgc?autoplay=1&controls=0&showinfo=0&loop=1&playlist=z8kBoDdQOgc&enablejsapi=1&origin=http%3A%2F%2Fwww.rodgersinstruments.com&widgetid=1
+            Videon ska inte spela musik bara visa när personen spelar
 
+<<<<<<< HEAD
 prudkter
     *Skapa hela prudukt sidan
     *Scrolla runt  i product lista
     * Swipa i produkt lista
+=======
+    * Pruduct section
+        * Göra möhligheten att Bildspelet får upp första punken efter du har gått ett varv.
+        * Göra så att det går att swipa för att kunna skrolla vidare.
+        * Knappen ska vara under prudukterna.
+>>>>>>> 59f23e435432ceffc9a518199d09dd7b98946487
 
-prudukt detaljer
-    *
+    * Media
+        * Göra ett grid system som kan visa media i form av text och bilder.
+        * Trycker du på en media tab kommer det upp en popup screan som visar texten eller videon.
 
-admin
-    * Göra så "save product" knappen inte kan råka klickas två gånger
+Prudkter
+    * Fundera ut en ny design för nedre delen av sidan.
+    * Fixa köp knappen så den fungerar.
+    * Fixa brochyr knappen så den fungerar.
+
+Prudukt detaljer
+    * Designa om Sidan hur den ser ut i nuläget.
+
+Admin
+    * Göra så "save product" knappen inte kan råka klickas två gånger.
+
+404
+    * Designa om sidan men ha kvar piano elementet.
+
+footer
+    * Designa en footer med Län till facebook och lite annat.
+    * Lägg till en länk till admin sidan.
+    * Extra kontakt uppgifter.
+
+Nav
+    * Fixa köp knapen.
+    * På mobil sidan ska det finnas en knapp i högra hören för att toggla naven.
+
+Buy
+    * Fixa buy formuläret på ett enkelt sätt så att man kan sicka en ofert på fler än en orgel.
+    * Designa detta på något smidigt sätt.

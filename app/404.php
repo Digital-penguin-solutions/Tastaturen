@@ -7,10 +7,8 @@
     <meta name="keywords" content="orgel, instrument, musik"/>
 </head>
 <body>
-<html>
-<body>
 <section class='piano'>
-    <h1>Something when wrong</h1>
+    <h1>Something went wrong</h1>
     <h3>Play some piano or go back <a href="index.php">Home</a></h3>
 
     <header>
@@ -86,10 +84,7 @@
         </button>
     </div>
 </section>
-</body>
-</html>
 
 <script src="js/piano.js"></script>
-
 </body>
 </html>

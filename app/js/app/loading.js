@@ -1,18 +1,5 @@
-
-console.log("Loading");
-
-var counter = 0;
-var c = 0;
-var i = setInterval(function(){
-        $(".loading-page .counter h1").html(c + "%");
-        $(".loading-page .counter hr").css("width", c + "%");
-
-        counter++;
-        c++;
-
-        if(counter == 101) {
-            clearInterval(i);
-            document.body.removeChild(load_screen);
-        }
-    },
-    50);
+//loading
+window.addEventListener("load", function(){
+    var load_screen = document.getElementById("load");
+    document.body.removeChild(load_screen).fadeOut("slow");
+});

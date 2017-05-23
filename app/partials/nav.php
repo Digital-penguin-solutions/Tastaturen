@@ -1,5 +1,6 @@
 <nav class="nav_d col-xs-2">
     <div class="nav_d_container">
+        <div class="nav_d_triage"></div>
 
         <!-- cart icon -->
         <div class="cart">

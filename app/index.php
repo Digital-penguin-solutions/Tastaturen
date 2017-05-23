@@ -1,4 +1,4 @@
-<?php // include "partials/loading.php" ?>
+<?php include "partials/loading.php" ?>
 <?php include "partials/head.php" ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -6,13 +6,14 @@
     <title>Tastaturen</title>
     <meta name="description" content="Tastaturen"/>
     <meta name="keywords" content="orgel, instrument, musik"/>
+    <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php
 include "partials/nav.php";
 include "functions/functions.php";
-//include "views/edit.php";
+include "views/edit.php";
 $con = connect();
 
 $products_home = get_all_visible_products($con, "hem");
@@ -30,6 +31,8 @@ $products_church = get_all_visible_products($con, "kyrka");
                     <div class="i_slider_1_container">
 
                         <div class = "all_slider_container no_list no_arrows">
+
+                            <!-- Slider 1-->
                             <div class = "slider_page col-md-12">
 
                                 <div class = "background_image_container">
@@ -70,16 +73,43 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                             </div>
 
+                            <!-- Slider 2 -->
                             <div class = "slider_page col-md-12">
-                                <div class = "background_image_container">
-                                    <img src = "img/404_img.jpg" alt = "MetTempMobile">
+                                <div class="i_slider_2_container">
+                                    <div class="i_slider_2_text">
+                                        <h1>asd</h1>
+                                        <p>asd</p>
+                                    </div>
+                                    <div class="i_slider_2_img">
+                                        <img src="" alt="">
+                                    </div>
                                 </div>
-                                HELLLLLLllllO
-                                adssssssssssssssssssssssssssssssssssssssssssssss
-                                adssssssss
-                                <br>
-                                asdasdas2
                             </div>
+
+                            <!-- Slider 3-->
+                            <div class = "slider_page col-md-12">
+                                <div class="i_slider_3_container">
+                                    <div class="i_slider_3_video">
+                                        <div class="i_slider_3_video_btn">
+                                            <button></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Slider 4-->
+                            <div class = "slider_page col-md-12">
+                                <div class="i_slider_4_container">
+                                    <div class="i_slider_4_text">
+                                        <h1></h1>
+                                        <p></p>
+                                    </div>
+                                    <div class="i_slider_4_img">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -94,12 +124,15 @@ $products_church = get_all_visible_products($con, "kyrka");
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
             <h2>Vi är Tastaturen</h2>
-            <p>Vi levererar digitala kyrkorglar för alla behov.
+            <p class = "col-xs-offset-2 col-xs-8">
+                <?php print_field("test"); ?>
+            </p>
+            <!--<p>Vi levererar digitala kyrkorglar för alla behov.
                 Kontakta oss gärna för mer information eller för
                 en personlig demonstration i Er kyrka.
                 Vi kan även förmedla kontakt med kyrkor
                 där en Rodgers eller en Johannus digitalorgel har installerats.
-            </p>
+            </p>-->
             <a href="http://www.johannus.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
                 <img src="img/logo/saker/johanus_white.svg" alt="johannus logo" style="margin-top: 1.6vh">
             </a>
@@ -115,7 +148,6 @@ $products_church = get_all_visible_products($con, "kyrka");
     <div class="row-fluid i_products">
         <div class="col-xs-12 i_products_container">
 
-
             <!-- Products Kyrka -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-kyrka">
                 <h2>Kyrkorgel</h2>
@@ -130,12 +162,14 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                 <?php echo_products_index($products_church);?>
 
-                <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                <div class="i_products_bt_container">
+                    <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                </div>
             </div>
 
-            <!-- Products Hemma -->
+            <!-- Products Home -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-hem">
-                <h2>hemorgel</h2>
+                <h2>Hemorgel</h2>
 
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
@@ -147,7 +181,9 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                 <?php echo_products_index($products_home);?>
 
-                <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                <div class="i_products_bt_container">
+                    <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                </div>
             </div>
 
         </div>
@@ -185,7 +221,6 @@ $products_church = get_all_visible_products($con, "kyrka");
 
 <!-- Media section -->
 <?php include "views/index_media.php"?>
-
 <?php include "partials/footer.php" ?>
 </body>
 </html>
