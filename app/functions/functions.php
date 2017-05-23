@@ -372,6 +372,14 @@ if(!isset($functions_included)){
         return $data;
     }
 
+    function create_field($name){
+        //global $con;
+        //$name = secure_str($name);
+        //$new_value = secure_str($new_value);
+        //$query = "UPDATE text_field SET value = '$new_value' WHERE name = '$name'";
+        //mysqli_query($con, $query) or die (mysqli_error($con));
+    }
+
     function update_field($name, $new_value){
         global $con;
         $name = secure_str($name);
@@ -383,8 +391,14 @@ if(!isset($functions_included)){
     function print_field($name){
         global $con;
         $field = get_field_by_name($con, $name);
-        $value = $field['value'];
-        echo "<span>".$value . "</span>";
+        if($field != null){
+            $value = $field['value'];
+            echo "<span>".$value . "</span>";
+        }
+        else {
+
+
+        }
 ?>
     
         <script>
