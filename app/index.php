@@ -1,4 +1,3 @@
-<?php include "partials/loading.php" ?>
 <?php include "partials/head.php" ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -33,10 +32,6 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                             <!-- Slider 1-->
                             <div class = "slider_page col-md-12">
-
-                                <div class = "background_image_container">
-                                    <img src = "" alt = "">
-                                </div>
 
                                 <!--Slider 1 -->
                                 <div class="i_slider_1_text">
@@ -105,12 +100,11 @@ $products_church = get_all_visible_products($con, "kyrka");
                             <div class = "slider_page col-xs-12">
                                 <div class="i_slider_4_container">
                                     <div class="i_slider_4_text col-xs-12">
-                                        <div class="i_slider_4_text_container col-xs-5 col-xs-offset-1">
+                                        <div class="i_slider_4_text_container col-xs-12">
                                             <h1> orgel</h1>
                                             <p>Mycket fin orgel med mycket bra saker. </p>
-                                            <div class="i_slider_4_btn ">
-                                                <button class = "slide-in-delay-3 slide-in slide-in-left"
-                                                        onclick="location.href='product_details'">Läs mer</button>
+                                            <div class="i_slider_4_btn">
+                                                <button onclick="location.href='product_details'">Läs mer</button>
                                             </div>
                                         </div>
                                     </div>
@@ -231,6 +225,8 @@ $products_church = get_all_visible_products($con, "kyrka");
 
 <!-- Media section -->
 <?php include "views/index_media.php"?>
+
+<!-- Footer -->
 <?php include "partials/footer.php" ?>
 </body>
 </html>

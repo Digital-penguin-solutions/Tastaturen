@@ -58,6 +58,7 @@
       .p_prod_head_img{
         position: absolute;
         @include horizontal-align($pos: absolute);
+        margin-left:-12vw;
         z-index: 100;
         bottom:-13vh;
 
