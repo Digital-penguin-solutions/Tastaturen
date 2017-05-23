@@ -2215,6 +2215,7 @@ section {
         -webkit-transform: translateX -50%;
         -ms-transform: translateX -50%;
         transform: translateX -50%;
+        margin-left: -12vw;
         z-index: 100;
         bottom: -13vh; }
         .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_img img {
