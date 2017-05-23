@@ -7,11 +7,10 @@
   height: 10%;
   top: 50%;
   cursor: pointer;
-}
-
-.slider_arrow:hover{
-  background: rgba(74,69,68, 0.3);
-  transition: 0.7s;
+  &:hover {
+    background: rgba(74, 69, 68, 0.3);
+    transition: 0.7s;
+  }
 }
 
 .slider_arrow_right {
@@ -74,6 +73,7 @@
 }
 
 .slider_dot {
+  z-index: 1000;
   width: 1.5vw;
   height: 1.5vh;
   float:left;
