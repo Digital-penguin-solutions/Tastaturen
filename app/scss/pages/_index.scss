@@ -387,21 +387,16 @@
           margin:0 !important;
           img {
             position:absolute;
-            //@extend .center_horizontally_css;
             @include horizontal-align($pos: absolute);
             margin-top: 6vh;
-            //@include horizontal-align();
             max-width:70%;
             height:60%;
-            //height: 18vw;
           }
-
           .i_products_sliders_text {
+            @include vertical-align();
+            margin-top:-3vh;
             position:absolute;
-            //@include vertical-align($pos: absolute);
-            //@include horizontal-align($pos: absolute);
             color: transparent;
-            //margin-top: -10vh;
             width: 100%;
             height: 20vh;
 
@@ -420,9 +415,7 @@
         }
 
         &:hover{
-
           a {
-
             img {
               opacity: 0.5;
               transition: 0.3s;
@@ -435,15 +428,16 @@
             }
           }
         }
-
       }
 
       .i_products_sliders_bg_1{
         background: lighten( $color3, 50% );
       }
+
       .i_products_sliders_bg_2{
         background: lighten( $color3, 45% );
       }
+
       .i_products_sliders_bg_3{
         background: lighten( $color3, 40% );
       }

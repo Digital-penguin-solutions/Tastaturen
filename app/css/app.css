@@ -1551,6 +1551,12 @@ section {
             max-width: 70%;
             height: 60%; }
           .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            margin-top: -3vh;
             position: absolute;
             color: transparent;
             width: 100%;
