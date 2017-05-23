@@ -13,8 +13,6 @@ if (isset($_POST['set_password']) && isset($_SESSION['admin'])){
             'cost' => 14
         ));
 
-
-
         mysqli_query($con, "UPDATE constant set data='$password' WHERE name='password'") or die (mysqli_error($con));
         header("Location: ../admin.php?message=Password has been updated");
     }
@@ -27,7 +25,7 @@ else if (isset($_POST['login'])){
     $data_pass   = mysqli_fetch_array($select_pass);
     $admin_pass  = $data_pass['data'];
 
-    $password = $_POST['password'];
+    $password    = $_POST['password'];
 
     if(password_verify($password, $admin_pass)) { // Check if the passwords match
 

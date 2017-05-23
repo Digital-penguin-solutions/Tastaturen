@@ -5,7 +5,7 @@
     $con = connect();
 
     if(isset($_SESSION['admin'])){
-        $id = secure_str($_GET['product_id']);
+        $id   = secure_str($_GET['product_id']);
         $show = get_product_visibility_by_id($con, $id);
 
         if($show == 1){
@@ -15,7 +15,7 @@
             $show = 1;
         }
 
-        $show = secure_str($show); 
+        $show  = secure_str($show);
 
         mysqli_query($con, "UPDATE `product` SET `show` = '$show' WHERE product_id = '$id'") or die (mysqli_error($con));
 
