@@ -33,7 +33,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -122,7 +122,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -229,7 +229,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -368,7 +368,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -505,7 +505,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -689,7 +689,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -799,7 +799,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -965,7 +965,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1236,7 +1236,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1512,7 +1512,7 @@ section {
         bottom: -10vh;
         position: absolute; }
         .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
-          position: absolut;
+          position: absolute;
           left: 50%;
           -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
@@ -1535,39 +1535,34 @@ section {
         height: 50vh;
         margin-top: -1vh;
         position: absolute; }
-        .i_products .i_products_container .i_products .i_products_sliders a img {
-          position: absolute;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-          margin-top: 6vh;
-          width: 18vw;
-          height: 18vw; }
-        .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
-          position: absolute;
-          position: absolute;
-          top: 50%;
-          -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-          position: absolute;
-          left: 50%;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-          color: transparent;
-          margin-top: -10vh;
+        .i_products .i_products_container .i_products .i_products_sliders a {
+          display: inline-block;
           width: 20vw;
-          height: 20vh; }
-          .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text h1 {
-            text-align: center;
-            font-size: 2vw;
-            font-weight: 400; }
-          .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text p {
-            text-align: center;
-            font-size: 1vw;
-            font-weight: 300; }
+          height: 100%;
+          margin: 0 !important; }
+          .i_products .i_products_container .i_products .i_products_sliders a img {
+            position: absolute;
+            position: absolute;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+            margin-top: 6vh;
+            max-width: 70%;
+            height: 60%; }
+          .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
+            position: absolute;
+            color: transparent;
+            width: 100%;
+            height: 20vh; }
+            .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text h1 {
+              text-align: center;
+              font-size: 2vw;
+              font-weight: 400; }
+            .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text p {
+              text-align: center;
+              font-size: 1vw;
+              font-weight: 300; }
         .i_products .i_products_container .i_products .i_products_sliders:hover a img {
           opacity: 0.5;
           transition: 0.3s; }
@@ -1643,7 +1638,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1737,7 +1732,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1921,7 +1916,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -2010,7 +2005,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }

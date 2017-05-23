@@ -353,7 +353,7 @@
 
         //Btn to product details page
         .i_products_btn {
-          @include horizontal-align($pos: absolut);
+          @include horizontal-align($pos: absolute);
           position: absolute;
           border: 2px solid $white;
           color: $white;
@@ -380,20 +380,29 @@
         position:absolute;
 
         a {
+          display:inline-block;
+          @extend .center_horizontally_css;
+          width:20vw;
+          height:100%;
+          margin:0 !important;
           img {
-            @include horizontal-align($pos:absolute);
+            position:absolute;
+            //@extend .center_horizontally_css;
+            @include horizontal-align($pos: absolute);
             margin-top: 6vh;
-            width: 18vw;
-            height: 18vw;
+            //@include horizontal-align();
+            max-width:70%;
+            height:60%;
+            //height: 18vw;
           }
 
           .i_products_sliders_text {
-            position: absolute;
-            @include vertical-align($pos: absolute);
-            @include horizontal-align($pos: absolute);
+            position:absolute;
+            //@include vertical-align($pos: absolute);
+            //@include horizontal-align($pos: absolute);
             color: transparent;
-            margin-top: -10vh;
-            width: 20vw;
+            //margin-top: -10vh;
+            width: 100%;
             height: 20vh;
 
             h1 {
