@@ -13,15 +13,10 @@
 <?php
 include "partials/nav.php";
 include "functions/functions.php";
-<<<<<<< HEAD
+include "views/edit.php";
+
 $con             = connect();
 $products_home   = get_all_visible_products($con, "hem");
-=======
-include "views/edit.php";
-$con = connect();
-
-$products_home = get_all_visible_products($con, "hem");
->>>>>>> origin/master
 $products_church = get_all_visible_products($con, "kyrka");
 ?>
 
@@ -75,18 +70,23 @@ $products_church = get_all_visible_products($con, "kyrka");
                                                 onclick="location.href='product_details'">Hemmabruk</button>
                                     </div>
                                 </div>
-
                             </div>
 
                             <!-- Slider 2 -->
-                            <div class = "slider_page col-md-12">
+                            <div class = "slider_page col-xs-12">
                                 <div class="i_slider_2_container">
-                                    <div class="i_slider_2_text">
-                                        <h1>asd</h1>
-                                        <p>asd</p>
+                                    <div class="i_slider_2_text col-xs-12">
+                                        <div class="i_slider_2_text_container col-xs-5 col-xs-offset-1">
+                                            <h1> orgel</h1>
+                                            <p>Mycket fin orgel med mycket bra saker. </p>
+                                            <div class="i_slider_2_btn ">
+                                                <button class = "slide-in-delay-3 slide-in slide-in-left"
+                                                        onclick="location.href='product_details'">Läs mer</button>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="i_slider_2_img">
-                                        <img src="" alt="">
+                                        <img src="img/Index_slider/Slider_2.jpg" alt="orgel för kykobruk">
                                     </div>
                                 </div>
                             </div>

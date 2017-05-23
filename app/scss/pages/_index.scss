@@ -117,17 +117,65 @@
       .i_slider_2_container{
         height:100vh;
         background: #000;
-        .i_slider_2_text{
-          h1{
+        @extend .nopm;
 
-          }
-          p{
+        .i_slider_2_text{
+          height: 100vh;
+          width: 100%;
+          z-index: 100;
+          position: absolute;
+          background: rgba($color5, 0.3);
+
+          .i_slider_2_text_container{
+            color: $color1;
+            height: 100vh;
+            @include vertical-align();
+            margin-top:-20vh;
+
+            h1{
+              font-size: 6vw;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+
+            p{
+              color: #ffffff;
+              font-size: 2vw;
+              font-weight: 400;
+            }
+
+            .i_slider_2_btn{
+              margin-top:3vh;
+
+              button{
+                border: 2px solid $white;
+                color: $white;
+                background: rgba($color5, 0.25);
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.2vw;
+                width: 12vw;
+                height: 4.5vh;
+              }
+
+              &:hover{
+                button {
+                  background: $color1;
+                  border: 0;
+                  transition: 0.5s;
+                }
+              }
+            }
 
           }
         }
         .i_slider_2_img{
+          z-index: 99;
+          height: 100vh;
+          width:100%;
           img{
-
+            width:100%;
+            height: 100%;
           }
         }
       }
