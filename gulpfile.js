@@ -39,7 +39,7 @@ g.task('minify', ['removeComm'] , function(){
 
 //convert scss to css and add prefixes
 g.task('compile-sass', function () {
-    return g.src('app/scss/app.scss')
+    return g.src('app/_scss/app.scss')
         .pipe(plumber())
         .pipe(sass())
         .pipe(g.dest('app/css'));
@@ -106,7 +106,7 @@ g.task('imgmin', function () {
 // watch for file changes and performs the different tasks
 g.task('dev-watch', function () {
     g.watch('app/js/**/*.js',         ['concat-js-app','concat-js-third-party']);
-    g.watch('app/scss/**/*',          ['prefix']);
+    g.watch('app/_scss/**/*',         ['prefix']);
 });
 
 //connect to a php server and live update when changes are made
@@ -145,7 +145,7 @@ g.task('connect-php', function () {
         'app/css/app.css'
     ]).on('change', reload);
 
-    g.watch('app/scss/**/*scss',       ['compile-sass']);
+    g.watch('app/_scss/**/*scss',       ['compile-sass']);
     g.watch('app/js/app/*.js',         ['concat-js-app']);
     g.watch('app/js/third_party/*.js', ['concat-js-third-party']);
 });
