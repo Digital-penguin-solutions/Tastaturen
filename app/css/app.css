@@ -295,9 +295,13 @@ section {
     position: relative;
     left: 50%;
     top: 50%;
+<<<<<<< HEAD
     -webkit-transform: translate -50% -50%;
     -ms-transform: translate -50% -50%;
     transform: translate -50% -50%;
+=======
+    transform: translate(-50% -50%);
+>>>>>>> origin/master
     width: 20vw;
     height: 10vh;
     line-height: 50px;
@@ -442,6 +446,7 @@ section {
     border-left: 4vw solid transparent; }
   .nav_d .nav_d_container .nav_cart {
     z-index: 10002;
+    display: -ms-flexbox;
     display: flex; }
     .nav_d .nav_d_container .nav_cart i {
       font-size: 10vw; }
@@ -458,9 +463,13 @@ section {
     text-align: right;
     position: absolut;
     top: 50%;
+<<<<<<< HEAD
     -webkit-transform: translateY -50%;
     -ms-transform: translateY -50%;
     transform: translateY -50%; }
+=======
+    transform: translateY(-50%); }
+>>>>>>> origin/master
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
       margin-right: 1.2vw;
@@ -751,7 +760,8 @@ section {
   top: 0;
   left: 0;
   z-index: 1000000;
-  background: rgba(30, 30, 30, 0.5); }
+  background: rgba(30, 30, 30, 0.5);
+  visibility: hidden; }
   .edit .edit_container {
     margin: auto;
     height: 60vh;
@@ -760,9 +770,13 @@ section {
     border-radius: 5%;
     position: relative;
     top: 50%;
+<<<<<<< HEAD
     -webkit-transform: translateY -50%;
     -ms-transform: translateY -50%;
     transform: translateY -50%; }
+=======
+    transform: translateY(-50%); }
+>>>>>>> origin/master
     .edit .edit_container h1 {
       text-align: center;
       padding-top: 3vh;
@@ -883,9 +897,13 @@ section {
   .piano .piano_container {
     position: relative;
     left: 50%;
+<<<<<<< HEAD
     -webkit-transform: translateX -50%;
     -ms-transform: translateX -50%;
     transform: translateX -50%;
+=======
+    transform: translateX(-50%);
+>>>>>>> origin/master
     margin-top: 18vh;
     position: absolute;
     background: url("../../img/piano.jpg");
@@ -1197,6 +1215,7 @@ section {
   margin-top: 5vh;
   margin-left: 20vw;
   font-size: 1vw;
+  display: -ms-inline-flexbox;
   display: inline-flex; }
   .login p {
     font-weight: 600;
@@ -1422,9 +1441,13 @@ section {
         .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
           position: absolut;
           left: 50%;
+<<<<<<< HEAD
           -webkit-transform: translateX -50%;
           -ms-transform: translateX -50%;
           transform: translateX -50%;
+=======
+          transform: translateX(-50%);
+>>>>>>> origin/master
           position: absolute;
           border: 2px solid #ffffff;
           color: #ffffff;
@@ -1447,15 +1470,20 @@ section {
           margin-top: 6vh;
           position: relative;
           left: 50%;
+<<<<<<< HEAD
           -webkit-transform: translateX -50%;
           -ms-transform: translateX -50%;
           transform: translateX -50%;
+=======
+          transform: translateX(-50%);
+>>>>>>> origin/master
           width: 18vw;
           height: 18vw; }
         .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
           position: absolute;
           position: absolute;
           top: 50%;
+<<<<<<< HEAD
           -webkit-transform: translateY -50%;
           -ms-transform: translateY -50%;
           transform: translateY -50%;
@@ -1464,6 +1492,12 @@ section {
           -webkit-transform: translateX -50%;
           -ms-transform: translateX -50%;
           transform: translateX -50%;
+=======
+          transform: translateY(-50%);
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+>>>>>>> origin/master
           color: transparent;
           margin-top: -10vh;
           width: 20vw;
@@ -1717,9 +1751,13 @@ section {
       z-index: 100;
       position: relative;
       top: 50%;
+<<<<<<< HEAD
       -webkit-transform: translateY -50%;
       -ms-transform: translateY -50%;
       transform: translateY -50%;
+=======
+      transform: translateY(-50%);
+>>>>>>> origin/master
       margin-left: 2vw; }
       .pe_header .pe_header_container .pe_header_text h1 {
         color: #ffffff;
@@ -1741,9 +1779,13 @@ section {
       .pe_prod .pe_prod_container .pe_sort_container .pe_sort_buttons {
         position: absolut;
         left: 50%;
+<<<<<<< HEAD
         -webkit-transform: translateX -50%;
         -ms-transform: translateX -50%;
         transform: translateX -50%;
+=======
+        transform: translateX(-50%);
+>>>>>>> origin/master
         position: absolute; }
         .pe_prod .pe_prod_container .pe_sort_container .pe_sort_buttons h3 {
           margin-top: 0.2vh;
@@ -1766,9 +1808,13 @@ section {
         color: white;
         position: relative;
         top: 50%;
+<<<<<<< HEAD
         -webkit-transform: translateY -50%;
         -ms-transform: translateY -50%;
         transform: translateY -50%; }
+=======
+        transform: translateY(-50%); }
+>>>>>>> origin/master
         .pe_prod .pe_prod_container .pe_product .pe_product_text h1 {
           font-size: 2.5vw;
           font-weight: 600;
@@ -1787,9 +1833,13 @@ section {
         margin-top: -1vh;
         position: relative;
         top: 50%;
+<<<<<<< HEAD
         -webkit-transform: translateY -50%;
         -ms-transform: translateY -50%;
         transform: translateY -50%; }
+=======
+        transform: translateY(-50%); }
+>>>>>>> origin/master
         .pe_prod .pe_prod_container .pe_product .pe_product_img img {
           width: 100%;
           height: 100%; }
@@ -2118,9 +2168,13 @@ section {
         position: absolute;
         position: absolute;
         left: 50%;
+<<<<<<< HEAD
         -webkit-transform: translateX -50%;
         -ms-transform: translateX -50%;
         transform: translateX -50%;
+=======
+        transform: translateX(-50%);
+>>>>>>> origin/master
         z-index: 100;
         bottom: -13vh; }
         .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_img img {
@@ -2136,9 +2190,13 @@ section {
     .p_info .p_info_container .p_info_text {
       position: relative;
       top: 50%;
+<<<<<<< HEAD
       -webkit-transform: translateY -50%;
       -ms-transform: translateY -50%;
       transform: translateY -50%;
+=======
+      transform: translateY(-50%);
+>>>>>>> origin/master
       color: #ffffff; }
       .p_info .p_info_container .p_info_text h1 {
         font-size: 3vw;
@@ -2154,6 +2212,10 @@ section {
     .p_info .p_info_container .p_info_img {
       position: relative;
       top: 50%;
+<<<<<<< HEAD
       -webkit-transform: translateY -50%;
       -ms-transform: translateY -50%;
       transform: translateY -50%; }
+=======
+      transform: translateY(-50%); }
+>>>>>>> origin/master

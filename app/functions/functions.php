@@ -271,7 +271,7 @@ if(!isset($functions_included)){
         return $array;
     }
 
-    //Echo alla products in the index slider
+    //Echo all products in the index slider
     function echo_products_index($products){
 
         foreach($products as $product){
@@ -335,7 +335,7 @@ if(!isset($functions_included)){
         return $val;
     }
 
-    //debugging website in consol
+    //debugging website in console
     function debug_to_console( $data ) {
 
         if ( is_array( $data ) )
@@ -345,5 +345,47 @@ if(!isset($functions_included)){
 
         echo $output;
     }
+
+
+    function get_field_by_name($con, $name){
+        $name   = secure_str($name);
+        $query  = "SELECT * FROM text_field WHERE name = '$name'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data   = mysqli_fetch_array($select);
+
+        return $data;
+    }
+
+    function update_field($name, $new_value){
+        global $con;
+        $name = secure_str($name);
+        $new_value = secure_str($new_value);
+        $query = "UPDATE text_field SET value = '$new_value' WHERE name = '$name'";
+        mysqli_query($con, $query) or die (mysqli_error($con));
+    }
+
+    function print_field($name){
+        global $con;
+        $field = get_field_by_name($con, $name);
+        $value = $field['value'];
+        echo $value;
+?>
+    
+        <script>
+            var script = document.currentScript;
+            var parent = script.parentNode;
+            var name   = '<?php echo $name; ?>';
+            $(parent).attr("name", name);
+            $(parent).click(function(){
+                show_edit_view(parent);
+            });
+            console.log(parent);
+
+        </script>
+
+<?php
+
+    }
+
 }
 ?>

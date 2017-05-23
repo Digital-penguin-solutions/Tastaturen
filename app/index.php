@@ -6,14 +6,22 @@
     <title>Tastaturen</title>
     <meta name="description" content="Tastaturen"/>
     <meta name="keywords" content="orgel, instrument, musik"/>
+    <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php
 include "partials/nav.php";
 include "functions/functions.php";
+<<<<<<< HEAD
 $con             = connect();
 $products_home   = get_all_visible_products($con, "hem");
+=======
+include "views/edit.php";
+$con = connect();
+
+$products_home = get_all_visible_products($con, "hem");
+>>>>>>> origin/master
 $products_church = get_all_visible_products($con, "kyrka");
 ?>
 
@@ -121,12 +129,15 @@ $products_church = get_all_visible_products($con, "kyrka");
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
             <h2>Vi är Tastaturen</h2>
-            <p>Vi levererar digitala kyrkorglar för alla behov.
+            <p class = "col-xs-offset-2 col-xs-8">
+                <?php print_field("test"); ?>
+            </p>
+            <!--<p>Vi levererar digitala kyrkorglar för alla behov.
                 Kontakta oss gärna för mer information eller för
                 en personlig demonstration i Er kyrka.
                 Vi kan även förmedla kontakt med kyrkor
                 där en Rodgers eller en Johannus digitalorgel har installerats.
-            </p>
+            </p>-->
             <a href="http://www.johannus.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
                 <img src="img/logo/saker/johanus_white.svg" alt="johannus logo" style="margin-top: 1.6vh">
             </a>

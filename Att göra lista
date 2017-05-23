@@ -8,10 +8,17 @@ Index
        * Denna videon ska vara #4 på index slidern:https://www.youtube.com/embed/z8kBoDdQOgc?autoplay=1&controls=0&showinfo=0&loop=1&playlist=z8kBoDdQOgc&enablejsapi=1&origin=http%3A%2F%2Fwww.rodgersinstruments.com&widgetid=1
             Videon ska inte spela musik bara visa när personen spelar
 
+<<<<<<< HEAD
+prudkter
+    *Skapa hela prudukt sidan
+    *Scrolla runt  i product lista
+    * Swipa i produkt lista
+=======
     * Pruduct section
         * Göra möhligheten att Bildspelet får upp första punken efter du har gått ett varv.
         * Göra så att det går att swipa för att kunna skrolla vidare.
         * Knappen ska vara under prudukterna.
+>>>>>>> 59f23e435432ceffc9a518199d09dd7b98946487
 
     * Media
         * Göra ett grid system som kan visa media i form av text och bilder.
