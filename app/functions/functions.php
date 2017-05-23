@@ -274,15 +274,31 @@ if(!isset($functions_included)){
     //Echo all products in the index slider
     function echo_products_index($products){
 
+        $i          = 0;
+        $firs       = 'i_products_sliders_bg_1';
+        $second     = 'i_products_sliders_bg_2';
+        $third      = 'i_products_sliders_bg_3';
+
         foreach($products as $product){
             $name = $product['name'];
             $short = $product['short_description'];
             $price = $product['price'];
             $image = $product['main_image'];
 
+            $i++;
+
+            if ($i % 3 == 1){
+                $j = $firs;
+            }
+            elseif ($i % 3 == 2){
+                $j = $second;
+            }
+            else{
+                $j = $third;
+            }
             ?>
             <!--products that is used in slider-->
-            <div class="i_products_sliders col-xs-4">
+            <div class="i_products_sliders col-xs-4 <?php echo $j?>">
                 <a href="product">
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
                      <div class="i_products_sliders_text">

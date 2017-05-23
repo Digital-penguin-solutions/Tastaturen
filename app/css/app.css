@@ -1529,10 +1529,12 @@ section {
           color: #ffffff;
           transition: 0.5s;
           background: #1536ff; }
-        .i_products .i_products_container .i_products .i_products_sliders:nth-child(3) {
-          background: #9e9e9e; }
-        .i_products .i_products_container .i_products .i_products_sliders:nth-child(4) {
-          background: #919191; }
+      .i_products .i_products_container .i_products .i_products_sliders_bg_1 {
+        background: #ababab; }
+      .i_products .i_products_container .i_products .i_products_sliders_bg_2 {
+        background: #9e9e9e; }
+      .i_products .i_products_container .i_products .i_products_sliders_bg_3 {
+        background: #919191; }
 
 .i_contact {
   min-height: 50vh;

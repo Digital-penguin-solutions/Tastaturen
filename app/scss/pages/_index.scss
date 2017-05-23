@@ -285,6 +285,7 @@
         z-index: 100;
         bottom: -10vh;
         position: absolute;
+
         //Btn to product details page
         .i_products_btn {
           @include horizontal-align($pos: absolut);
@@ -362,14 +363,18 @@
           }
         }
 
-        &:nth-child(3){
-          background: lighten( $color3, 45% );
-        }
-
-        &:nth-child(4){
-          background: lighten( $color3, 40% );
-        }
       }
+
+      .i_products_sliders_bg_1{
+        background: lighten( $color3, 50% );
+      }
+      .i_products_sliders_bg_2{
+        background: lighten( $color3, 45% );
+      }
+      .i_products_sliders_bg_3{
+        background: lighten( $color3, 40% );
+      }
+
     }
   }
 }
@@ -423,8 +428,10 @@
 
 //tablet size
 @media (min-width: $screen-sm-min) {
+
 }
 
 //desktop size
 @media (min-width: $screen-md-min) {
+
 }
