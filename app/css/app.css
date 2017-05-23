@@ -295,9 +295,9 @@ section {
     position: relative;
     left: 50%;
     top: 50%;
-    -webkit-transform: translate -50% -50%;
-    -ms-transform: translate -50% -50%;
-    transform: translate -50% -50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     width: 20vw;
     height: 10vh;
     line-height: 50px;
@@ -458,9 +458,9 @@ section {
     text-align: right;
     position: absolut;
     top: 50%;
-    -webkit-transform: translateY -50%;
-    -ms-transform: translateY -50%;
-    transform: translateY -50%; }
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
       margin-right: 1.2vw;
@@ -880,9 +880,9 @@ section {
   .piano .piano_container {
     position: relative;
     left: 50%;
-    -webkit-transform: translateX -50%;
-    -ms-transform: translateX -50%;
-    transform: translateX -50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     margin-top: 18vh;
     position: absolute;
     background: url("../../img/piano.jpg");
@@ -1369,9 +1369,9 @@ section {
             height: 100vh;
             position: relative;
             top: 50%;
-            -webkit-transform: translateY -50%;
-            -ms-transform: translateY -50%;
-            transform: translateY -50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
             margin-top: -20vh; }
             .i_header .i_header_container .i_header_slider .i_slider_2_container .i_slider_2_text .i_slider_2_text_container h1 {
               font-size: 6vw;
@@ -1417,9 +1417,9 @@ section {
             height: 100vh;
             position: relative;
             top: 50%;
-            -webkit-transform: translateY -50%;
-            -ms-transform: translateY -50%;
-            transform: translateY -50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
             margin-top: -35vh;
             text-align: center; }
             .i_header .i_header_container .i_header_slider .i_slider_4_container .i_slider_4_text .i_slider_4_text_container h1 {
@@ -1473,10 +1473,10 @@ section {
       margin-top: 5vh; }
 
 .i_products {
-  min-height: 60vh;
+  min-height: 80vh;
   background: #212121; }
   .i_products .i_products_container {
-    min-height: 60vh;
+    min-height: 80vh;
     overflow: hidden; }
     .i_products .i_products_container .i_products {
       min-height: 60vh; }
@@ -1514,9 +1514,9 @@ section {
         .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
           position: absolut;
           left: 50%;
-          -webkit-transform: translateX -50%;
-          -ms-transform: translateX -50%;
-          transform: translateX -50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
           position: absolute;
           border: 2px solid #ffffff;
           color: #ffffff;
@@ -1538,9 +1538,9 @@ section {
         .i_products .i_products_container .i_products .i_products_sliders a img {
           position: absolute;
           left: 50%;
-          -webkit-transform: translateX -50%;
-          -ms-transform: translateX -50%;
-          transform: translateX -50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
           margin-top: 6vh;
           width: 18vw;
           height: 18vw; }
@@ -1548,14 +1548,14 @@ section {
           position: absolute;
           position: absolute;
           top: 50%;
-          -webkit-transform: translateY -50%;
-          -ms-transform: translateY -50%;
-          transform: translateY -50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
           position: absolute;
           left: 50%;
-          -webkit-transform: translateX -50%;
-          -ms-transform: translateX -50%;
-          transform: translateX -50%;
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
           color: transparent;
           margin-top: -10vh;
           width: 20vw;
@@ -1811,9 +1811,9 @@ section {
       z-index: 100;
       position: relative;
       top: 50%;
-      -webkit-transform: translateY -50%;
-      -ms-transform: translateY -50%;
-      transform: translateY -50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
       margin-left: 2vw; }
       .pe_header .pe_header_container .pe_header_text h1 {
         color: #ffffff;
@@ -1835,9 +1835,9 @@ section {
       .pe_prod .pe_prod_container .pe_sort_container .pe_sort_buttons {
         position: absolut;
         left: 50%;
-        -webkit-transform: translateX -50%;
-        -ms-transform: translateX -50%;
-        transform: translateX -50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
         position: absolute; }
         .pe_prod .pe_prod_container .pe_sort_container .pe_sort_buttons h3 {
           margin-top: 0.2vh;
@@ -1860,9 +1860,9 @@ section {
         color: white;
         position: relative;
         top: 50%;
-        -webkit-transform: translateY -50%;
-        -ms-transform: translateY -50%;
-        transform: translateY -50%; }
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
         .pe_prod .pe_prod_container .pe_product .pe_product_text h1 {
           font-size: 2.5vw;
           font-weight: 600;
@@ -1881,9 +1881,9 @@ section {
         margin-top: -1vh;
         position: relative;
         top: 50%;
-        -webkit-transform: translateY -50%;
-        -ms-transform: translateY -50%;
-        transform: translateY -50%; }
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
         .pe_prod .pe_prod_container .pe_product .pe_product_img img {
           width: 100%;
           height: 100%; }
@@ -2212,9 +2212,9 @@ section {
         position: absolute;
         position: absolute;
         left: 50%;
-        -webkit-transform: translateX -50%;
-        -ms-transform: translateX -50%;
-        transform: translateX -50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
         margin-left: -12vw;
         z-index: 100;
         bottom: -13vh; }
@@ -2231,9 +2231,9 @@ section {
     .p_info .p_info_container .p_info_text {
       position: relative;
       top: 50%;
-      -webkit-transform: translateY -50%;
-      -ms-transform: translateY -50%;
-      transform: translateY -50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
       color: #ffffff; }
       .p_info .p_info_container .p_info_text h1 {
         font-size: 3vw;
@@ -2249,6 +2249,6 @@ section {
     .p_info .p_info_container .p_info_img {
       position: relative;
       top: 50%;
-      -webkit-transform: translateY -50%;
-      -ms-transform: translateY -50%;
-      transform: translateY -50%; }
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }

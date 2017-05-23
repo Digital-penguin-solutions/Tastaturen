@@ -1,0 +1,387 @@
+//product section
+.i_products{
+  min-height: 80vh;
+  background: $color4;
+
+  .i_products_container{
+    min-height: 80vh;
+
+    @extend .nopm;
+    overflow:hidden;
+
+    .i_products{
+      min-height: 60vh;
+      @extend .nopm;
+
+      h2{
+        text-align: center;
+        vertical-align: middle;
+        line-height: 15vh;
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: $white;
+        width: 100%;
+        height: 15vh;
+        background: $color5;
+        text-transform: uppercase;
+      }
+
+      //Slider Arrow
+      .i_products_arrow_l{
+        position: absolute;
+        height: 10vh;
+        width: 10vh;
+        z-index: 100;
+        background: transparent;
+        top:35vh;
+        cursor: pointer;
+
+        &:hover{
+          background: rgba($color5, 0.2);
+          transition: 0.5s;
+        }
+      }
+
+      //Slider Arrow
+      .i_products_arrow_r{
+        @extend .i_products_arrow_l;
+        right:0;
+      }
+
+    <<<<<<< HEAD
+    .i_products_bt_container {
+      height: 10vh;
+      width: 100%;
+      background: $color5;
+      z-index: 100;
+      bottom: -10vh;
+      position: absolute;
+
+      //Btn to product details page
+      .i_products_btn {
+        @include horizontal-align($pos: absolut);
+        position: absolute;
+        border: 2px solid $white;
+        color: $white;
+        background-color: transparent;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2vw;
+        width: 12vw;
+        height: 4.5vh;
+
+        &:hover {
+          background: $color1;
+          border: 0;
+          transition: 0.5s;
+        }
+      }
+    }
+    =======
+      //Slider 4
+    .i_slider_4_container{
+      height:100vh;
+      background: #000;
+      @extend .nopm;
+
+      .i_slider_4_text{
+        height: 100vh;
+        width: 100%;
+        z-index: 100;
+        position: absolute;
+        background: rgba($color5, 0.3);
+
+        .i_slider_4_text_container{
+          color: $color1;
+          height: 100vh;
+          @include vertical-align();
+          margin-top:-35vh;
+          text-align: center;
+
+          h1{
+            font-size: 6vw;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+
+          p{
+            color: $white;
+            font-size: 2vw;
+            font-weight: 400;
+            text-align: center;
+          }
+
+          .i_slider_4_btn{
+            margin-top:3vh;
+
+            button{
+              border: 2px solid $white;
+              color: $white;
+              background: rgba($color5, 0.25);
+              text-align: center;
+              text-decoration: none;
+              font-size: 1.2vw;
+              width: 12vw;
+              height: 4.5vh;
+            }
+
+            &:hover{
+              button {
+                background: $color1;
+                border: 0;
+                transition: 0.5s;
+              }
+            }
+          }
+
+        }
+      }
+      .i_slider_4_img{
+        z-index: 99;
+        height: 100vh;
+        width:100%;
+        img{
+          width:100%;
+          height: 100%;
+        }
+      }
+    }
+
+    }
+  }
+}
+>>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+
+  //product styling
+.i_products_sliders{
+  background: lighten( $color3, 50% );
+  height: 50vh;
+  //margin-top:-1vh;
+  position:absolute;
+
+  a {
+    display:inline-block;
+    @extend .center_horizontally_css;
+    width:20vw;
+    height:100%;
+    margin:0 !important;
+
+    img {
+      position:absolute;
+      //@extend .center_horizontally_css;
+      @include horizontal-align($pos: absolute);
+      margin-top: 6vh;
+      //@include horizontal-align();
+      max-width:70%;
+      height:60%;
+      //height: 18vw;
+
+    }
+
+    .i_products_sliders_text {
+      position:absolute;
+      //@include vertical-align($pos: absolute);
+      //@include horizontal-align($pos: absolute);
+      color: transparent;
+      //margin-top: -10vh;
+      width: 100%;
+      height: 20vh;
+
+      h1 {
+        text-align: center;
+        font-size: 2vw;
+        font-weight: 400;
+      }
+
+      p {
+        text-align: center;
+        font-size: 1vw;
+        font-weight: 300;
+      }
+    }
+  }
+
+  &:hover{
+
+    a {
+
+      img {
+        opacity: 0.5;
+        transition: 0.3s;
+      }
+
+      .i_products_sliders_text {
+        color: $white;
+        transition: 0.5s;
+        background: $color1;
+      }
+    }
+  }
+
+<<<<<<< HEAD
+=======
+h2{
+  text-align: center;
+  vertical-align: middle;
+  line-height: 15vh;
+  font-size: 2.5vw;
+  font-weight: 600;
+  color: $white;
+  width: 100%;
+  height: 15vh;
+  background: $color5;
+  text-transform: uppercase;
+}
+
+  //Slider Arrow
+  .i_products_arrow_l{
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    z-index: 100;
+    background: transparent;
+    top:35vh;
+    cursor: pointer;
+
+    &:hover{
+      background: rgba($color5, 0.2);
+      transition: 0.5s;
+    }
+  }
+
+  //Slider Arrow
+  .i_products_arrow_r{
+    @extend .i_products_arrow_l;
+    right:0;
+  }
+
+  .i_products_bt_container {
+    height: 10vh;
+    width: 100%;
+    background: $color5;
+    z-index: 100;
+    bottom: -10vh;
+    position: absolute;
+
+    //Btn to product details page
+    .i_products_btn {
+      @include horizontal-align($pos: absolut);
+      position: absolute;
+      border: 2px solid $white;
+      color: $white;
+      background-color: transparent;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2vw;
+      width: 12vw;
+      height: 4.5vh;
+
+      &:hover {
+        background: $color1;
+        border: 0;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  //product styling
+  .i_products_sliders{
+    background: lighten( $color3, 50% );
+    height: 50vh;
+    margin-top:-1vh;
+    position:absolute;
+
+    a {
+      img {
+        @include horizontal-align($pos:absolute);
+        margin-top: 6vh;
+        width: 18vw;
+        height: 18vw;
+      }
+
+      .i_products_sliders_text {
+        position: absolute;
+        @include vertical-align($pos: absolute);
+        @include horizontal-align($pos: absolute);
+        color: transparent;
+        margin-top: -10vh;
+        width: 20vw;
+        height: 20vh;
+
+        h1 {
+          text-align: center;
+          font-size: 2vw;
+          font-weight: 400;
+        >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+        }
+
+        .i_products_sliders_bg_1{
+          background: lighten( $color3, 50% );
+        }
+        .i_products_sliders_bg_2{
+          background: lighten( $color3, 45% );
+        }
+        .i_products_sliders_bg_3{
+          background: lighten( $color3, 40% );
+        }
+
+      }
+    }
+  }
+
+  //contact section
+  .i_contact{
+    min-height: 50vh;
+    background: $color4;
+
+    .i_contact_container{
+      @extend .nopm;
+
+      .i_contact_text_top {
+        width: 100%;
+        height: 15vh;
+        background: $color5;
+        text-align: center;
+        margin: 0 !important;;
+
+        h2 {
+          color: $white;
+          line-height: 10vh;
+          font-size: 2.5vw;
+          text-transform: uppercase;
+        }
+      }
+
+      img{
+        border-radius: 50%;
+        margin-top:10vh;
+        //width: 25vw;
+      }
+
+      .i_contact_text{
+        color: $white;
+        text-align: center;
+        margin-bottom:10vh;
+
+        h2{
+          font-size: 2.3vw;
+          font-weight: 600;
+        }
+
+        p{
+          font-size: 1.5vw;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+
+  //tablet size
+  @media (min-width: $screen-sm-min) {
+
+  }
+
+  //desktop size
+  @media (min-width: $screen-md-min) {
+
+  }
