@@ -1,4 +1,3 @@
-<?php include "partials/loading.php" ?>
 <?php include "partials/head.php" ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -105,11 +104,11 @@ $products_church = get_all_visible_products($con, "kyrka");
                             <div class = "slider_page col-xs-12">
                                 <div class="i_slider_4_container">
                                     <div class="i_slider_4_text col-xs-12">
-                                        <div class="i_slider_4_text_container col-xs-5 col-xs-offset-1">
+                                        <div class="i_slider_4_text_container col-xs-12">
                                             <h1> orgel</h1>
                                             <p>Mycket fin orgel med mycket bra saker. </p>
                                             <div class="i_slider_4_btn ">
-                                                <button class = "slide-in-delay-3 slide-in slide-in-left"
+                                                <button class = "fade-in fade-in-delay-1"
                                                         onclick="location.href='product_details'">Läs mer</button>
                                             </div>
                                         </div>
@@ -231,6 +230,8 @@ $products_church = get_all_visible_products($con, "kyrka");
 
 <!-- Media section -->
 <?php include "views/index_media.php"?>
+
+<!-- Footer -->
 <?php include "partials/footer.php" ?>
 </body>
 </html>

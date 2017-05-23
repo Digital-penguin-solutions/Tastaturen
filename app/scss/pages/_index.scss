@@ -193,8 +193,74 @@
 
       //Slider 4
       .i_slider_4_container{
-        @extend .i_slider_2_container;
+        height:100vh;
+        background: #000;
+        @extend .nopm;
+
+        .i_slider_4_text{
+          height: 100vh;
+          width: 100%;
+          z-index: 100;
+          position: absolute;
+          background: rgba($color5, 0.3);
+
+          .i_slider_4_text_container{
+            color: $color1;
+            height: 100vh;
+            @include vertical-align();
+            margin-top:-35vh;
+            text-align: center;
+
+            h1{
+              font-size: 6vw;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+
+            p{
+              color: $white;
+              font-size: 2vw;
+              font-weight: 400;
+              text-align: center;
+            }
+
+            .i_slider_4_btn{
+              z-index: 120;
+              margin-top:3vh;
+
+              button{
+                border: 2px solid $white;
+                color: $white;
+                background: rgba($color5, 0.25);
+                text-align: center;
+                text-decoration: none;
+                font-size: 1.2vw;
+                width: 12vw;
+                height: 4.5vh;
+              }
+
+              &:hover{
+                button {
+                  background: $color1;
+                  border: 0;
+                  transition: 0.5s;
+                }
+              }
+            }
+
+          }
+        }
+        .i_slider_4_img{
+          z-index: 99;
+          height: 100vh;
+          width:100%;
+          img{
+            width:100%;
+            height: 100%;
+          }
+        }
       }
+
     }
   }
 }
@@ -315,10 +381,9 @@
         position:absolute;
 
         a {
-
           img {
+            @include horizontal-align($pos:absolute);
             margin-top: 6vh;
-            @include horizontal-align();
             width: 18vw;
             height: 18vw;
           }
