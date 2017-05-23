@@ -33,10 +33,6 @@ $products_church = get_all_visible_products($con, "kyrka");
                             <!-- Slider 1-->
                             <div class = "slider_page col-md-12">
 
-                                <div class = "background_image_container">
-                                    <img src = "" alt = "">
-                                </div>
-
                                 <!--Slider 1 -->
                                 <div class="i_slider_1_text">
                                     <h1 class = "fade-in fade-in-delay-2">Tastaturen</h1>
@@ -107,9 +103,8 @@ $products_church = get_all_visible_products($con, "kyrka");
                                         <div class="i_slider_4_text_container col-xs-12">
                                             <h1> orgel</h1>
                                             <p>Mycket fin orgel med mycket bra saker. </p>
-                                            <div class="i_slider_4_btn ">
-                                                <button class = "fade-in fade-in-delay-1"
-                                                        onclick="location.href='product_details'">Läs mer</button>
+                                            <div class="i_slider_4_btn">
+                                                <button onclick="location.href='product_details'">Läs mer</button>
                                             </div>
                                         </div>
                                     </div>

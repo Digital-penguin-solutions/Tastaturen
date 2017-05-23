@@ -1432,7 +1432,6 @@ section {
               font-weight: 400;
               text-align: center; }
             .i_header .i_header_container .i_header_slider .i_slider_4_container .i_slider_4_text .i_slider_4_text_container .i_slider_4_btn {
-              z-index: 120;
               margin-top: 3vh; }
               .i_header .i_header_container .i_header_slider .i_slider_4_container .i_slider_4_text .i_slider_4_text_container .i_slider_4_btn button {
                 border: 2px solid #ffffff;
