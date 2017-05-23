@@ -4,7 +4,7 @@ Index
     * Head
         * Bättre fade på section slidern.
         * Alla bilderna ska göras klart i bildspelet 4 bilder totalt.
-       * Denna videon ska vara #4 på index slidern:
+        * Denna videon ska vara #4 på index slidern:
             https://www.youtube.com/embed/z8kBoDdQOgc?autoplay=1&controls=0&showinfo=0&loop=1&playlist=z8kBoDdQOgc&enablejsapi=1&origin=http%3A%2F%2Fwww.rodgersinstruments.com&widgetid=1
             Videon ska inte spela musik bara visa när personen spelar
 
@@ -21,12 +21,16 @@ Prudkter
     * Fundera ut en ny design för nedre delen av sidan.
     * Fixa köp knappen så den fungerar.
     * Fixa brochyr knappen så den fungerar.
+    * Lägga till php på texter bilder osv så att de finns i databasen.
 
 Prudukt detaljer
     * Designa om Sidan hur den ser ut i nuläget.
+    * Fixa så att det finns 2 olika pruduct details sidor beroende på vilken knapp man trycker på.
 
 Admin
     * Göra så "save product" knappen inte kan råka klickas två gånger.
+    * Fixa designen på Edit saken
+    * Lägga till en redigera knapp på alla texter och när du är innlogad på admin sidan
 
 404
     * Designa om sidan men ha kvar piano elementet.

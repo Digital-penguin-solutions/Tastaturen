@@ -3,8 +3,7 @@ ErrorDocument 403 /404.php
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^(.*)$ $1.php?url=$1 [L,QSA]
 
 <IfModule mod_headers.c>
   <FilesMatch "\.(js|css|xml|gz)$">

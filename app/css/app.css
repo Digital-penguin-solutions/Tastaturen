@@ -296,12 +296,16 @@ section {
     left: 50%;
     top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     transform: translate(-50%, -50%);
 =======
     -webkit-transform: translate -50% -50%;
     -ms-transform: translate -50% -50%;
     transform: translate -50% -50%;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+    transform: translate(-50%, -50%);
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
     width: 20vw;
     height: 10vh;
     line-height: 50px;
@@ -446,6 +450,7 @@ section {
     border-left: 4vw solid transparent; }
   .nav_d .nav_d_container .nav_cart {
     z-index: 10002;
+    display: -ms-flexbox;
     display: flex; }
     .nav_d .nav_d_container .nav_cart i {
       font-size: 10vw; }
@@ -463,12 +468,16 @@ section {
     position: absolut;
     top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     transform: translateY(-50%); }
 =======
     -webkit-transform: translateY -50%;
     -ms-transform: translateY -50%;
     transform: translateY -50%; }
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+    transform: translateY(-50%); }
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
       margin-right: 1.2vw;
@@ -889,12 +898,16 @@ section {
     position: relative;
     left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     transform: translateX(-50%);
 =======
     -webkit-transform: translateX -50%;
     -ms-transform: translateX -50%;
     transform: translateX -50%;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+    transform: translateX(-50%);
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
     margin-top: 18vh;
     position: absolute;
     background: url("../../img/piano.jpg");
@@ -1206,6 +1219,7 @@ section {
   margin-top: 5vh;
   margin-left: 20vw;
   font-size: 1vw;
+  display: -ms-inline-flexbox;
   display: inline-flex; }
   .login p {
     font-weight: 600;
@@ -1382,12 +1396,16 @@ section {
             position: relative;
             top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
             transform: translateY(-50%);
 =======
             -webkit-transform: translateY -50%;
             -ms-transform: translateY -50%;
             transform: translateY -50%;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+            transform: translateY(-50%);
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
             margin-top: -20vh; }
             .i_header .i_header_container .i_header_slider .i_slider_2_container .i_slider_2_text .i_slider_2_text_container h1 {
               font-size: 6vw;
@@ -1433,9 +1451,7 @@ section {
             height: 100vh;
             position: relative;
             top: 50%;
-            -webkit-transform: translateY -50%;
-            -ms-transform: translateY -50%;
-            transform: translateY -50%;
+            transform: translateY(-50%);
             margin-top: -35vh;
             text-align: center; }
             .i_header .i_header_container .i_header_slider .i_slider_4_container .i_slider_4_text .i_slider_4_text_container h1 {
@@ -1528,8 +1544,9 @@ section {
         bottom: -10vh;
         position: absolute; }
         .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
-          position: absolut;
+          position: absolute;
           left: 50%;
+<<<<<<< HEAD
 <<<<<<< HEAD
           transform: translateX(-50%);
 =======
@@ -1537,6 +1554,9 @@ section {
           -ms-transform: translateX -50%;
           transform: translateX -50%;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+          transform: translateX(-50%);
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
           position: absolute;
           border: 2px solid #ffffff;
           color: #ffffff;
@@ -1554,6 +1574,7 @@ section {
         background: #ababab;
         height: 50vh;
         position: absolute; }
+<<<<<<< HEAD
 <<<<<<< HEAD
         .i_products .i_products_container .i_products .i_products_sliders a {
           display: inline-block;
@@ -1582,6 +1603,10 @@ section {
           color: transparent;
           margin-top: -10vh;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+        .i_products .i_products_container .i_products .i_products_sliders a {
+          display: inline-block;
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
           width: 20vw;
           height: 100%;
           margin: 0 !important; }
@@ -1594,6 +1619,13 @@ section {
             max-width: 70%;
             height: 60%; }
           .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
+<<<<<<< HEAD
+=======
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: -3vh;
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
             position: absolute;
             color: transparent;
             width: 100%;
@@ -1850,12 +1882,16 @@ section {
       position: relative;
       top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
       transform: translateY(-50%);
 =======
       -webkit-transform: translateY -50%;
       -ms-transform: translateY -50%;
       transform: translateY -50%;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+      transform: translateY(-50%);
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
       margin-left: 2vw; }
       .pe_header .pe_header_container .pe_header_text h1 {
         color: #ffffff;
@@ -1878,12 +1914,16 @@ section {
         position: absolut;
         left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
         transform: translateX(-50%);
 =======
         -webkit-transform: translateX -50%;
         -ms-transform: translateX -50%;
         transform: translateX -50%;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+        transform: translateX(-50%);
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
         position: absolute; }
         .pe_prod .pe_prod_container .pe_sort_container .pe_sort_buttons h3 {
           margin-top: 0.2vh;
@@ -1907,12 +1947,16 @@ section {
         position: relative;
         top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
         transform: translateY(-50%); }
 =======
         -webkit-transform: translateY -50%;
         -ms-transform: translateY -50%;
         transform: translateY -50%; }
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+        transform: translateY(-50%); }
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
         .pe_prod .pe_prod_container .pe_product .pe_product_text h1 {
           font-size: 2.5vw;
           font-weight: 600;
@@ -1932,12 +1976,16 @@ section {
         position: relative;
         top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
         transform: translateY(-50%); }
 =======
         -webkit-transform: translateY -50%;
         -ms-transform: translateY -50%;
         transform: translateY -50%; }
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+        transform: translateY(-50%); }
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
         .pe_prod .pe_prod_container .pe_product .pe_product_img img {
           width: 100%;
           height: 100%; }
@@ -2267,11 +2315,15 @@ section {
         position: absolute;
         left: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
         transform: translateX(-50%);
 =======
         -webkit-transform: translateX -50%;
         -ms-transform: translateX -50%;
         transform: translateX -50%;
+=======
+        transform: translateX(-50%);
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
         margin-left: -12vw;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
         z-index: 100;
@@ -2290,12 +2342,16 @@ section {
       position: relative;
       top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
       transform: translateY(-50%);
 =======
       -webkit-transform: translateY -50%;
       -ms-transform: translateY -50%;
       transform: translateY -50%;
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+      transform: translateY(-50%);
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
       color: #ffffff; }
       .p_info .p_info_container .p_info_text h1 {
         font-size: 3vw;
@@ -2312,9 +2368,13 @@ section {
       position: relative;
       top: 50%;
 <<<<<<< HEAD
+<<<<<<< HEAD
       transform: translateY(-50%); }
 =======
       -webkit-transform: translateY -50%;
       -ms-transform: translateY -50%;
       transform: translateY -50%; }
 >>>>>>> d3aefc1f08d351598f2aa35005e4ee775977873d
+=======
+      transform: translateY(-50%); }
+>>>>>>> 84738f9c02da81510c6b125eb18d08bd504d2e38
