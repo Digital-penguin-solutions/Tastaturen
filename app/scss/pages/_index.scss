@@ -193,19 +193,7 @@
 
       //Slider 4
       .i_slider_4_container{
-        .i_slider_4_text{
-          h1{
-
-          }
-          p{
-
-          }
-        }
-        .i_slider_4_img{
-          img{
-
-          }
-        }
+        @extend .i_slider_2_container;
       }
     }
   }

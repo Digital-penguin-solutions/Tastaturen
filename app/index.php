@@ -29,7 +29,6 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="i_header_slider">
                 <div class="i_slider_1 col-xs-12">
                     <div class="i_slider_1_container">
-
                         <div class = "all_slider_container no_list no_arrows">
 
                             <!-- Slider 1-->
@@ -103,14 +102,20 @@ $products_church = get_all_visible_products($con, "kyrka");
                             </div>
 
                             <!-- Slider 4-->
-                            <div class = "slider_page col-md-12">
+                            <div class = "slider_page col-xs-12">
                                 <div class="i_slider_4_container">
-                                    <div class="i_slider_4_text">
-                                        <h1></h1>
-                                        <p></p>
+                                    <div class="i_slider_4_text col-xs-12">
+                                        <div class="i_slider_4_text_container col-xs-5 col-xs-offset-1">
+                                            <h1> orgel</h1>
+                                            <p>Mycket fin orgel med mycket bra saker. </p>
+                                            <div class="i_slider_4_btn ">
+                                                <button class = "slide-in-delay-3 slide-in slide-in-left"
+                                                        onclick="location.href='product_details'">Läs mer</button>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="i_slider_4_img">
-                                        <img src="" alt="">
+                                        <img src="img/Index_slider/Slider_4.jpg" alt="orgel för kykobruk">
                                     </div>
                                 </div>
                             </div>
