@@ -6,7 +6,8 @@ function show_edit_view(element){
     $("#editor").css("visibility", "visible");
 
     //var old = (element.textContent===undefined) ? element.innerText : element.textContent;
-    var old = $(element).text();
+    var span = $(element).find("span");
+    var old = $(span).text();
     old = old.trim();
     var name = $(element).attr("name");
 

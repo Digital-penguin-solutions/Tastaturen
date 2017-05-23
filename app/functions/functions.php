@@ -384,7 +384,7 @@ if(!isset($functions_included)){
         global $con;
         $field = get_field_by_name($con, $name);
         $value = $field['value'];
-        echo $value;
+        echo "<span>".$value . "</span>";
 ?>
     
         <script>
@@ -395,7 +395,6 @@ if(!isset($functions_included)){
             $(parent).click(function(){
                 show_edit_view(parent);
             });
-            console.log(parent);
 
         </script>
 
