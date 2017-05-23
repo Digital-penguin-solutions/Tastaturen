@@ -33,7 +33,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -122,7 +122,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -229,7 +229,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -295,7 +295,7 @@ section {
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate -50% -50%;
+    transform: translate(-50%, -50%);
     width: 20vw;
     height: 10vh;
     line-height: 50px;
@@ -366,7 +366,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -457,7 +457,7 @@ section {
     text-align: right;
     position: absolut;
     top: 50%;
-    transform: translateY -50%; }
+    transform: translateY(-50%); }
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
       margin-right: 1.2vw;
@@ -502,7 +502,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -686,7 +686,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -796,7 +796,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -877,7 +877,7 @@ section {
   .piano .piano_container {
     position: relative;
     left: 50%;
-    transform: translateX -50%;
+    transform: translateX(-50%);
     margin-top: 18vh;
     position: absolute;
     background: url("../../img/piano.jpg");
@@ -960,7 +960,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1232,7 +1232,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1365,7 +1365,7 @@ section {
             height: 100vh;
             position: relative;
             top: 50%;
-            transform: translateY -50%;
+            transform: translateY(-50%);
             margin-top: -20vh; }
             .i_header .i_header_container .i_header_slider .i_slider_2_container .i_slider_2_text .i_slider_2_text_container h1, .i_header .i_header_container .i_header_slider .i_slider_4_container .i_slider_2_text .i_slider_2_text_container h1 {
               font-size: 6vw;
@@ -1417,10 +1417,10 @@ section {
       margin-top: 5vh; }
 
 .i_products {
-  min-height: 60vh;
+  min-height: 80vh;
   background: #212121; }
   .i_products .i_products_container {
-    min-height: 60vh;
+    min-height: 80vh;
     overflow: hidden; }
     .i_products .i_products_container .i_products {
       min-height: 60vh; }
@@ -1458,7 +1458,7 @@ section {
         .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
           position: absolut;
           left: 50%;
-          transform: translateX -50%;
+          transform: translateX(-50%);
           position: absolute;
           border: 2px solid #ffffff;
           color: #ffffff;
@@ -1475,35 +1475,33 @@ section {
       .i_products .i_products_container .i_products .i_products_sliders {
         background: #ababab;
         height: 50vh;
-        margin-top: -1vh;
         position: absolute; }
-        .i_products .i_products_container .i_products .i_products_sliders a img {
-          margin-top: 6vh;
-          position: relative;
-          left: 50%;
-          transform: translateX -50%;
-          width: 18vw;
-          height: 18vw; }
-        .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
-          position: absolute;
-          position: absolute;
-          top: 50%;
-          transform: translateY -50%;
-          position: absolute;
-          left: 50%;
-          transform: translateX -50%;
-          color: transparent;
-          margin-top: -10vh;
+        .i_products .i_products_container .i_products .i_products_sliders a {
+          display: inline-block;
           width: 20vw;
-          height: 20vh; }
-          .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text h1 {
-            text-align: center;
-            font-size: 2vw;
-            font-weight: 400; }
-          .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text p {
-            text-align: center;
-            font-size: 1vw;
-            font-weight: 300; }
+          height: 100%;
+          margin: 0 !important; }
+          .i_products .i_products_container .i_products .i_products_sliders a img {
+            position: absolute;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 6vh;
+            max-width: 70%;
+            height: 60%; }
+          .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text {
+            position: absolute;
+            color: transparent;
+            width: 100%;
+            height: 20vh; }
+            .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text h1 {
+              text-align: center;
+              font-size: 2vw;
+              font-weight: 400; }
+            .i_products .i_products_container .i_products .i_products_sliders a .i_products_sliders_text p {
+              text-align: center;
+              font-size: 1vw;
+              font-weight: 300; }
         .i_products .i_products_container .i_products .i_products_sliders:hover a img {
           opacity: 0.5;
           transition: 0.3s; }
@@ -1579,7 +1577,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1673,7 +1671,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1747,7 +1745,7 @@ section {
       z-index: 100;
       position: relative;
       top: 50%;
-      transform: translateY -50%;
+      transform: translateY(-50%);
       margin-left: 2vw; }
       .pe_header .pe_header_container .pe_header_text h1 {
         color: #ffffff;
@@ -1769,7 +1767,7 @@ section {
       .pe_prod .pe_prod_container .pe_sort_container .pe_sort_buttons {
         position: absolut;
         left: 50%;
-        transform: translateX -50%;
+        transform: translateX(-50%);
         position: absolute; }
         .pe_prod .pe_prod_container .pe_sort_container .pe_sort_buttons h3 {
           margin-top: 0.2vh;
@@ -1792,7 +1790,7 @@ section {
         color: white;
         position: relative;
         top: 50%;
-        transform: translateY -50%; }
+        transform: translateY(-50%); }
         .pe_prod .pe_prod_container .pe_product .pe_product_text h1 {
           font-size: 2.5vw;
           font-weight: 600;
@@ -1811,7 +1809,7 @@ section {
         margin-top: -1vh;
         position: relative;
         top: 50%;
-        transform: translateY -50%; }
+        transform: translateY(-50%); }
         .pe_prod .pe_prod_container .pe_product .pe_product_img img {
           width: 100%;
           height: 100%; }
@@ -1849,7 +1847,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -1938,7 +1936,7 @@ section {
   top: 50%;
   transform: translateY(-50%); }
 
-.center_horizontally_css {
+.center_horizontally_css, .i_products .i_products_container .i_products .i_products_sliders a {
   position: relative;
   left: 50%;
   transform: translateX(-50%); }
@@ -2140,7 +2138,7 @@ section {
         position: absolute;
         position: absolute;
         left: 50%;
-        transform: translateX -50%;
+        transform: translateX(-50%);
         z-index: 100;
         bottom: -13vh; }
         .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_img img {
@@ -2156,7 +2154,7 @@ section {
     .p_info .p_info_container .p_info_text {
       position: relative;
       top: 50%;
-      transform: translateY -50%;
+      transform: translateY(-50%);
       color: #ffffff; }
       .p_info .p_info_container .p_info_text h1 {
         font-size: 3vw;
@@ -2172,4 +2170,4 @@ section {
     .p_info .p_info_container .p_info_img {
       position: relative;
       top: 50%;
-      transform: translateY -50%; }
+      transform: translateY(-50%); }
