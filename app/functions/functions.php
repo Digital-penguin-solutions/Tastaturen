@@ -224,6 +224,18 @@ if(!isset($functions_included)){
 
     }
 
+    function get_product_brochure_by_id($con, $id){
+        $id     = secure_str($id);
+        $query  = "SELECT brochure FROM product WHERE product_id = '$id'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+
+        $data = mysqli_fetch_array($select);
+
+        $brochure = $data['brochure'];
+
+        return $brochure;
+    }
+
     //get name of produkt by id from database
     function get_product_name_by_id($con, $id){
         $id     = secure_str($id);

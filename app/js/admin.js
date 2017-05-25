@@ -108,6 +108,22 @@ function send_form(element){
 
 	var form_data = new FormData(document.getElementById("form"));
 
+
+    //var brochure_path = $("#brochure").val();
+    //var brochure_data;
+    //console.log("brochure path: " + brochure_path);
+    //console.log("brochure data: " + brochure_data);
+
+    //var reader = new FileReader();
+
+    //reader.onload = function(event) {
+        //brochure_data = event.target.result;
+    //};
+
+    ////reader.readAsDataURL(brochure_path);
+
+    //form_data.append("brochure", brochure_data);
+
 	var tmp_holders = document.getElementsByClassName("tmp_holder");
 
 	for (var i = 0; i < tmp_holders.length; i++) {
@@ -170,7 +186,7 @@ function send_form(element){
 	});
 
 	xhr.success(function(response) {
-		//console.log(response);
+        //console.log(response);
         //console.log("response");
 		//$(document).scrollTop(0);
         window.location.replace("admin?message=Product has been added or edited");
