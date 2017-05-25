@@ -374,11 +374,12 @@ if(!isset($functions_included)){
     }
 
     function create_field($name){
-        //global $con;
-        //$name = secure_str($name);
+        global $con;
+        $name = secure_str($name);
+        $value = "Click to edit";
         //$new_value = secure_str($new_value);
-        //$query = "UPDATE text_field SET value = '$new_value' WHERE name = '$name'";
-        //mysqli_query($con, $query) or die (mysqli_error($con));
+        $query = "INSERT INTO text_field (name, value) VALUES ('$name', '$value')";
+        mysqli_query($con, $query) or die (mysqli_error($con));
     }
 
     function update_field($name, $new_value){
@@ -392,13 +393,15 @@ if(!isset($functions_included)){
     function print_field($name){
         global $con;
         $field = get_field_by_name($con, $name);
-        if($field != null){
+
+        
+        if($field != null){ // if field already exists
             $value = $field['value'];
             echo "<span>".$value . "</span>";
         }
         else {
-
-
+            create_field($name);
+            echo "<span> Click to edit </span>";
         }
 ?>
     
@@ -408,7 +411,7 @@ if(!isset($functions_included)){
             var name   = '<?php echo $name; ?>';
             $(parent).attr("name", name);
             $(parent).click(function(){
-                show_edit_view(parent);
+                show_edit_view(this);
             });
 
         </script>

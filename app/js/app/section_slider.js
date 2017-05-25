@@ -67,7 +67,8 @@ function slider_go_to_page(slider_number, page){
             var new_page = pages[page];
 
             //new_page.style.visibility = "hidden";
-            var new_page_image = new_page.getElementsByTagName("img")[0];
+            //var new_page_image = new_page.getElementsByTagName("img")[0];
+            var new_page_image = new_page.getElementsByClassName("section_background")[0];
 
             // if the new page has a background image
             if(new_page_image != undefined){

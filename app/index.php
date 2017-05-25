@@ -80,7 +80,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                                         </div>
                                     </div>
                                     <div class="i_slider_2_img">
-                                        <img src="img/Index_slider/Slider_2.jpg" alt="orgel för kykobruk">
+                                        <img class = "section_background" src="img/Index_slider/Slider_2.jpg" alt="orgel för kykobruk">
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                                         </div>
                                     </div>
                                     <div class="i_slider_4_img">
-                                        <img src="img/Index_slider/Slider_4.jpg" alt="orgel för kykobruk">
+                                        <img class = "section_background" src="img/Index_slider/Slider_4.jpg" alt="orgel för kykobruk">
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 <section id="Info" class="container-fluid i_info">
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
-            <h2>Vi är Tastaturen</h2>
+            <h2><?php print_field("i_about_header"); ?> </h1>
             <p class = "col-xs-offset-2 col-xs-8">
                 <?php print_field("test"); ?>
             </p>
@@ -200,7 +200,7 @@ $products_church = get_all_visible_products($con, "kyrka");
         <div class="col-xs-12 i_contact_container">
             <!--<div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">-->
             <div class="i_contact_text_top">
-                <h2>Kontakta oss</h2>
+                <h2><?php print_field("i_kontakt_header"); ?></h2>
             </div>
 
             <div class = "col-xs-offset-2 col-xs-8">
