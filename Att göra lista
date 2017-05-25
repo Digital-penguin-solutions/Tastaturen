@@ -28,7 +28,6 @@ Prudukt detaljer
     * Fixa så att det finns 2 olika pruduct details sidor beroende på vilken knapp man trycker på.
 
 Admin
-    * Göra så "save product" knappen inte kan råka klickas två gånger.
     * Fixa designen på Edit saken
     * Lägga till en redigera knapp på alla texter och när du är innlogad på admin sidan
 

@@ -7,6 +7,7 @@
   height: 10%;
   top: 50%;
   cursor: pointer;
+  z-index:1000;
   &:hover {
     background: rgba(74, 69, 68, 0.3);
     transition: 0.7s;
@@ -14,11 +15,11 @@
 }
 
 .slider_arrow_right {
-  right: 0;
+  right: 2%;
 }
 
 .slider_arrow_left {
-  left:0;
+  left: 2%;
 }
 
 .all_slider_container {

@@ -120,6 +120,8 @@
         @extend .nopm;
 
         .i_slider_2_text{
+          left:0;
+          top:0;
           height: 100vh;
           width: 100%;
           z-index: 100;
@@ -128,9 +130,8 @@
 
           .i_slider_2_text_container{
             color: $color1;
-            height: 100vh;
             @include vertical-align();
-            margin-top:-20vh;
+            margin-top:-10vh;
 
             h1{
               font-size: 6vw;
@@ -321,6 +322,7 @@
         margin:0;
       }
 
+
       //Slider Arrow
       .i_products_arrow_l{
         position: absolute;
@@ -330,6 +332,8 @@
         background: transparent;
         top:35vh;
         cursor: pointer;
+        left:2%;
+
 
         &:hover{
           background: rgba($color5, 0.2);
@@ -339,8 +343,9 @@
 
       //Slider Arrow
       .i_products_arrow_r{
+        right: 2% !important;
+        left: auto;
         @extend .i_products_arrow_l;
-        right:0;
       }
 
       .i_products_bt_container {

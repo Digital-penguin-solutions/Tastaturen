@@ -28,7 +28,7 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="i_header_slider">
                 <div class="i_slider_1 col-xs-12">
                     <div class="i_slider_1_container">
-                        <div class = "all_slider_container no_list no_arrows">
+                        <div class = "all_slider_container no_list">
 
                             <!-- Slider 1-->
                             <div class = "slider_page col-md-12">

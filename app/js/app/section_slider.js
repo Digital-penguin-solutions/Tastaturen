@@ -1,4 +1,3 @@
-console.log("section slider");
 $(document).ready(on_ready_slider);
 
 var sliding = false;
@@ -237,7 +236,6 @@ function init_sliders(){
 
                 var width = slider_dot_width;
 
-                console.log(width);
                 $(dot).css("width", width + "vw");
                 $(dot).css("height", width + "vw");
                 $(dot).css("margin-left", width*2 + "vw");
@@ -264,15 +262,14 @@ function init_sliders(){
                 var slider_number = $(clicked_parent).attr("slider_number");
 
                 slider_go_to_page(slider_number, index);
-                console.log("hello132");
             });
         }
 
         // decides weather to add arrows to naveigate between the pages
         if (!$(slider).hasClass("no_arrows")){
 
-            var left_arrow = $("<img class = 'slider_arrow slider_arrow_left' src='img/left_d.svg'>");
-            var right_arrow = $("<img class = 'slider_arrow slider_arrow_right' src='img/right_d.svg'>");
+            var left_arrow = $("<img class = 'slider_arrow slider_arrow_left' src='img/Index_slider/left_arrow.svg'>");
+            var right_arrow = $("<img class = 'slider_arrow slider_arrow_right' src='img/Index_slider/right_arrow.svg'>");
             $(left_arrow).attr("slider_number", i);
             $(right_arrow).attr("slider_number", i);
 

@@ -4,7 +4,6 @@ var sliding = false;
 
 function on_ready_product_scroller () {
 
-    console.log("kör0");
     init_product_slider();
     init_arrows();
 
@@ -65,7 +64,7 @@ function move(left, products_container){
             dir = 0;
         }
 
-        var num_showing = Math.round(100 / product_width);
+        var num_showing = Math.round(100 / product_width); // how many products that are visible at one time
 
         // if there are fewer products than what can be shown
         if(products.length < num_showing){
@@ -73,7 +72,7 @@ function move(left, products_container){
         }
 
         
-        var last_left = Math.round(product_width * (num_showing-1));
+        var last_left = Math.round(product_width * (num_showing-1)); 
         var last_product_left = Math.round(get_left_in_percentage(products[products.length-1]));
 
         // if you have gone all the way to the left
