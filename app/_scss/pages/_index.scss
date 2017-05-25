@@ -305,7 +305,6 @@
     overflow:hidden;
 
     .i_products{
-      min-height: 60vh;
       @extend .nopm;
 
       h2{
@@ -319,6 +318,7 @@
         height: 15vh;
         background: $color5;
         text-transform: uppercase;
+        margin:0;
       }
 
       //Slider Arrow
@@ -347,13 +347,12 @@
         height: 10vh;
         width: 100%;
         background: $color5;
-        z-index: 100;
-        bottom: -10vh;
+        bottom:0;
         position: absolute;
 
         //Btn to product details page
         .i_products_btn {
-          @include horizontal-align($pos: absolute);
+          @include center-align($pos: absolute);
           position: absolute;
           border: 2px solid $white;
           color: $white;
@@ -375,7 +374,7 @@
       //product styling
       .i_products_sliders{
         background: lighten( $color3, 50% );
-        height: 50vh;
+        height: 55vh;
         margin-top:-1vh;
         position:absolute;
 
@@ -466,6 +465,7 @@
         line-height: 10vh;
         font-size: 2.5vw;
         text-transform: uppercase;
+        margin:0;
       }
     }
 

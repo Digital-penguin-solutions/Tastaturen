@@ -208,15 +208,15 @@ $products_church = get_all_visible_products($con, "kyrka");
                 <img src="img/contact/Anders_gustafsson.jpg" alt="Anders Gustafsson" class="col-xs-5 col-xs-offset-2">
 
                 <div class="col-xs-5 i_contact_text" >
-                    <h2>Anders Björk</h2>
-                    <p>070-1090230</p>
-                    <p>ab@tastaturen.se</p>
+                    <h2><?php print_field("i_contact_person_name_1") ?></h2>
+                    <p><?php print_field("i_contact_person_number_1") ?></p>
+                    <p><?php print_field("i_contact_person_mail_1") ?></p>
                 </div>
 
                 <div class="col-xs-5 col-xs-offset-2 i_contact_text">
-                    <h2>Anders Gustafsson</h2>
-                    <p>070-6858037</p>
-                    <p>agf@tastaturen.se</p>
+                    <h2><?php print_field("i_contact_person_name_2") ?></h2>
+                    <p><?php print_field("i_contact_person_number_2") ?></p>
+                    <p><?php print_field("i_contact_person_mail_2") ?></p>
                 </div>
             </div>
         </div>

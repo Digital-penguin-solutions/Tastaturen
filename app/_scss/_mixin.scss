@@ -18,7 +18,7 @@
   transform: translateX(-50%);
 }
 
-//center a element horizontal and vertical
+//center a element horizontally and vertically
 @mixin center-align($pos: relative){
   position: $pos;
   left: 50%;
