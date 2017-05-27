@@ -37,11 +37,13 @@
   color: $black !important;
   height: 100%;
   width: 100%;
-  position: relative;
+  position: absolute;
   padding: 0 !important;
   margin-right: 0 !important;
-  margin-top: -100vh;
+  //margin-top: -100vh;
+  left:0;
   display: block;
+  overflow:hidden;
 
   p {
     text-align: left;

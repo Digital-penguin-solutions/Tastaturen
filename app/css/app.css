@@ -3,7 +3,8 @@
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -92,7 +93,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -199,7 +201,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -336,7 +339,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -472,7 +476,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -588,11 +593,12 @@ section {
   color: #000000 !important;
   height: 100%;
   width: 100%;
-  position: relative;
+  position: absolute;
   padding: 0 !important;
   margin-right: 0 !important;
-  margin-top: -100vh;
-  display: block; }
+  left: 0;
+  display: block;
+  overflow: hidden; }
   .slider_page p {
     text-align: left; }
   .slider_page:first-child {
@@ -657,7 +663,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -767,7 +774,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -931,7 +939,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -1205,7 +1214,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -1606,7 +1616,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -1700,7 +1711,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -1876,7 +1888,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }
@@ -1965,7 +1978,8 @@ section {
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   font-family: 'Lato', sans-serif; }

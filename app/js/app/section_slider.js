@@ -32,6 +32,7 @@ function on_ready_slider () {
 }
 
 function slider_go_to_page(slider_number, page){
+    //sliding = false; // TEMP
     if (!sliding) {
         sliding = true;
         var slider = all_sliders[slider_number];
@@ -65,48 +66,72 @@ function slider_go_to_page(slider_number, page){
             // the page that is to be shown
             var new_page = pages[page];
 
+            var old_page_nr = current_page[slider_number];
+            //console.log("old_page " + old_page);
+
+            var old_page = pages[old_page_nr];
+
+            // hides all pages
+            $(pages).css("opacity", "0");
+
+            // sets the old one visible
+            $(old_page).css("opacity", "1");
+
+            // puts the new one in front of the old one
+            $(old_page).css("z-index", "10");
+            $(new_page).css("z-index", "15");
+
+            // fades in the new one
+            $(new_page).animate({'opacity' : 1}, slider_speed, function(){
+                sliding = false;
+                //$(old_page).css("opacity", "0");
+            });
+
+
             //new_page.style.visibility = "hidden";
             //var new_page_image = new_page.getElementsByTagName("img")[0];
-            var new_page_image = new_page.getElementsByClassName("section_background")[0];
+            //var new_page_image = new_page.getElementsByClassName("section_background")[0];
 
             // if the new page has a background image
-            if(new_page_image != undefined){
-                var background_image = new_page_image.src;
-                //new_page.getElementsByClassName("background_image_container")[0].getElementsByTagName("img")[0].style.visibility = "hidden";
-                new_page.parentNode.style.background = "url(" + background_image + ") no-repeat center center";
-                new_page.parentNode.style.backgroundSize = "100% 100%";
-            }
-            else {
-                new_page.parentNode.style.background = "none";
+            //if(new_page_image != undefined){
+                ////var background_image = new_page_image.src;
+                //////new_page.getElementsByClassName("background_image_container")[0].getElementsByTagName("img")[0].style.visibility = "hidden";
+                ////new_page.parentNode.style.background = "url(" + background_image + ") no-repeat center center";
+                ////new_page.parentNode.style.backgroundSize = "100% 100%";
+            //}
+            //else {
+                ////new_page.parentNode.style.background = "none";
 
-            }
-
-
-
-            $(pages).fadeToggle(slider_speed, function() {
-            });
+            //}
 
 
-            for (var i = 0; i < pages.length; i++)
-            {
 
-                var margin_left = (i * 100) - page * 100 + "%";
-                $(pages[i]).animate({'left' : margin_left}, 0);
-
-            }
+            //$(pages).fadeToggle(slider_speed, function() {
+            //});
 
 
-            var fade_in_time = slider_speed / 2;
+            //for (var i = 0; i < pages.length; i++)
+            //{
 
-            if(no_content){
-                fade_in_time = 0;
-            }
+                //var margin_left = (i * 100) - page * 100 + "%";
+                //$(pages[i]).animate({'left' : margin_left}, 0);
 
-            $(pages).fadeToggle(fade_in_time, function(){
-                sliding = false;
-            });
+            //}
+
+
+            //var fade_in_time = slider_speed / 2;
+
+            //if(no_content){
+                //fade_in_time = 0;
+            //}
+
+            //$(pages).fadeToggle(fade_in_time, function(){
+                //sliding = false;
+            //});
             var nth = ":nth-child("+(page+1)+")";
-            //
+
+
+
             // if there is a list on this slider
             if (!$(slider).hasClass("no_list")) {
 
@@ -200,8 +225,8 @@ function init_sliders(){
 
 
             // sets the right position on each slider
-            var left = 100 * n + "%";
-            $(page).css("left", left);
+            //var left = 100 * n + "%";
+            //$(page).css("left", 0);
 
             var button;
 
