@@ -9,6 +9,11 @@
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php include "partials/nav.php"?>
+<?php
+    include "functions/functions.php";
+    $con = connect();
+
+?>
 
 <header class="container-fluid p_prod_head">
     <div class="row-fluid p_prod_head">
