@@ -186,8 +186,7 @@
         .i_slider_3_video{
           height: 100vh;
           width: 100%;
-         iframe{
-           @extend .nopm;
+         .i_slider_3_video_player{
            height: 100vh;
            width: 100%;
          }

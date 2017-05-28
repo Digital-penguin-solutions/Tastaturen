@@ -6,6 +6,7 @@
     <meta name="description" content="Tastaturen"/>
     <meta name="keywords" content="orgel, instrument, musik"/>
     <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
+
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
@@ -89,9 +90,8 @@ $products_church = get_all_visible_products($con, "kyrka");
                             <div class = "slider_page col-md-12">
                                 <div class="i_slider_3_container">
                                     <div class="i_slider_3_video">
-                                        <iframe id="player"  data-video="z8kBoDdQOgc" frameborder="0" allowfullscreen="1"
-                                                src="https://www.youtube.com/embed/z8kBoDdQOgc?controls=0&showinfo=0&loop=1&playlist=z8kBoDdQOgc&enablejsapi=1&origin=http%3A%2F%2Fwww.rodgersinstruments.com&widgetid=1"
-                                        </iframe>
+
+                                        <div id="organvideo" class="i_slider_3_video_player"></div>
 
                                         <div class="i_slider_3_video_btn">
                                             <i class="fa fa-caret-right" aria-hidden="true"></i>
