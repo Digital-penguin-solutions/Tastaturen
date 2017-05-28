@@ -18,13 +18,22 @@ function init_texts(){
         //all_texts[i] = text;
         //effecting[i] = false;
 
+        // empties the text
         text.innerHTML = "";
 
+        // refills the letters in individuals spans
         for(var n = 0; n < content.length; n++){
             $(text).append("<span>" + content[n] + "</span>");
         }
 
-        setTimeout(function() {start_effect(text); }, 500);
+        //setTimeout(function() {start_effect(text); }, 500);
+        $("body").on('appear', ".text-effect", function(event, $ef) {
+            if(!$(this).hasClass("text-effect-done")){
+                $(this).addClass("text-effect-done");
+                start_effect(this);
+            }
+        });
+
         $(text).hover(function(){
             //start_effect(text);
         });
@@ -83,7 +92,6 @@ function effect_letter(letters, i ){
     });
 
 
-    console.log("i " +i);
     i = i + 1;
 
     setTimeout(function(){effect_letter(letters, i); }, effect_duration);
