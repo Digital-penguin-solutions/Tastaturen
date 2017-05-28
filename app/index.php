@@ -35,7 +35,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 
                                 <!--Slider 1 -->
                                 <div class="i_slider_1_text">
-                                    <h1 class = "fade-in fade-in-delay-2">Tastaturen</h1>
+                                    <h1 class = "text-effect fade-in fade-in-delay-2">Tastaturen</h1>
                                 </div>
 
                                 <div class="i_slider_1_left col-xs-6">
