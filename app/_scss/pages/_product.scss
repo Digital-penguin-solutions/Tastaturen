@@ -24,7 +24,6 @@
       width:100%;
       position: absolute;
       background: rgba($color5, 0.15);
-      //background: rgba($color5 , 0.4);
 
       .p_prod_head_text{
         text-align: center;
@@ -125,11 +124,14 @@
 
 .p_info2{
   background: $color4;
+  min-height: 50vh;
   @extend .nopm;
   .p_info2_container{
     .p_info2_text{
+      position: absolute;
+      @include vertical-align($pos:absolute);
       color: $white;
-      margin-top:5vh;
+      margin-top:-5vh;
       margin-bottom:5vh;
       h1{
         font-size: 4vw;
@@ -142,6 +144,14 @@
         font-weight: 300;
 
       }
+
+    }
+    .p_info2_btn{
+      @extend .slider_btn;
+      position: absolute;
+      width: 100%;
+      margin-top:10vh;
+
     }
   }
 }

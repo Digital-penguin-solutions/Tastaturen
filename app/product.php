@@ -85,6 +85,9 @@ $con = connect();
             <h1>kgaeklg</h1>
             <p>kanflansfknwofn fawn pfnwpnfpwanfpanwf</p>
         </div>
+        <div class="p_info2_btn">
+            <button>För mer information</button>
+        </div>
     </div>
 </section>
 

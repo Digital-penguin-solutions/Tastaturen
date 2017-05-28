@@ -60,10 +60,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -72,7 +72,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -81,11 +81,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -150,10 +150,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -162,7 +162,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -171,11 +171,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -258,10 +258,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -270,7 +270,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -279,11 +279,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -398,10 +398,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -410,7 +410,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -419,11 +419,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -536,10 +536,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -548,7 +548,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -557,11 +557,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -723,10 +723,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -735,7 +735,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -744,11 +744,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -816,10 +816,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -828,7 +828,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -837,11 +837,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -927,10 +927,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -939,7 +939,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -948,11 +948,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1094,10 +1094,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -1106,7 +1106,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -1115,11 +1115,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1368,10 +1368,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -1380,7 +1380,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -1389,11 +1389,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1780,10 +1780,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -1792,7 +1792,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -1801,11 +1801,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1875,10 +1875,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -1887,7 +1887,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -1896,11 +1896,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -2060,10 +2060,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -2072,7 +2072,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -2081,11 +2081,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -2150,10 +2150,10 @@ section {
     border: 0;
     transition: 0.5s; }
 
-.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+.slider_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order, .p_info2 .p_info2_container .p_info2_btn {
   position: absolute;
   bottom: 2.5vw; }
-  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p {
+  .slider_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order p, .p_info2 .p_info2_container .p_info2_btn p {
     color: transparent;
     background-color: transparent;
     height: 12vh;
@@ -2162,7 +2162,7 @@ section {
     text-align: center;
     padding: 1vw;
     font-size: 1vw; }
-  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button {
+  .slider_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order button, .p_info2 .p_info2_container .p_info2_btn button {
     border: 2px solid #ffffff;
     color: #ffffff;
     background: rgba(30, 30, 30, 0.25);
@@ -2171,11 +2171,11 @@ section {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }
-  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p {
+  .slider_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover p, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p {
     color: #ffffff;
     background: rgba(21, 54, 255, 0.8);
     transition: 1s; }
-  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button {
+  .slider_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr:hover button, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -2376,10 +2376,17 @@ section {
       width: 100%; }
 
 .p_info2 {
-  background: #212121; }
+  background: #212121;
+  min-height: 50vh; }
   .p_info2 .p_info2_container .p_info2_text {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     color: #ffffff;
-    margin-top: 5vh;
+    margin-top: -5vh;
     margin-bottom: 5vh; }
     .p_info2 .p_info2_container .p_info2_text h1 {
       font-size: 4vw;
@@ -2389,3 +2396,7 @@ section {
       text-align: center;
       font-size: 2.3vw;
       font-weight: 300; }
+  .p_info2 .p_info2_container .p_info2_btn {
+    position: absolute;
+    width: 100%;
+    margin-top: 10vh; }
