@@ -1508,7 +1508,18 @@ section {
         width: 100%; }
         .i_header .i_header_container .i_header_slider .i_slider_3_container .i_slider_3_video .i_slider_3_video_player {
           height: 100vh;
-          width: 100%; }
+          width: 100%;
+          z-index: 100; }
+        .i_header .i_header_container .i_header_slider .i_slider_3_container .i_slider_3_video .i_slider_3_video_btn {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 100000;
+          height: 10vh;
+          width: 5vw; }
+          .i_header .i_header_container .i_header_slider .i_slider_3_container .i_slider_3_video .i_slider_3_video_btn i {
+            font-size: 5vw;
+            color: #ffffff; }
       .i_header .i_header_container .i_header_slider .i_slider_4_container {
         height: 100vh;
         background: #000; }
