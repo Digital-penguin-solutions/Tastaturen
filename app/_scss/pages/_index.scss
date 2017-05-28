@@ -189,9 +189,18 @@
          .i_slider_3_video_player{
            height: 100vh;
            width: 100%;
+           z-index: 100;
          }
           .i_slider_3_video_btn{
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 100000;
+            height: 10vh;
+            width: 5vw;
             i{
+              font-size: 5vw;
+              color: $white;
 
 
             }
