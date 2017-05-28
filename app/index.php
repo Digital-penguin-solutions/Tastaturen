@@ -94,7 +94,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                                         <div id="organvideo" class="i_slider_3_video_player"></div>
 
                                         <div class="i_slider_3_video_btn">
-                                            <i class="fa fa-caret-right" id="video-trigger" aria-hidden="true"></i>
+                                            <i class="fa fa-youtube-play" id="video-trigger" aria-hidden="true"></i>
                                         </div>
                                     </div>
                                 </div>
