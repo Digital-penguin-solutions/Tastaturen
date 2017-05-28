@@ -74,8 +74,7 @@ $slider_images = get_product_images_by_id($con, $product_id);
                 <p> <?php echo $long; ?></p>
             </div>
             <div class="p_info_img  col-xs-4">
-                <img src="img/product/kyrka/example3.png" alt="" class="col-xs-12">
-                <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
+                <img class = "col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
             </div>
         </div>
     </div>
@@ -90,8 +89,8 @@ $slider_images = get_product_images_by_id($con, $product_id);
 <section class="container-fluid p_info2">
     <div class="row-fluid p_info2_container">
         <div class="col-xs-8 col-xs-offset-2 p_info2_text">
-            <h1>kgaeklg</h1>
-            <p>kanflansfknwofn fawn pfnwpnfpwanfpanwf</p>
+            <h1><?php echo $name; ?></h1>
+            <p><?php echo $short; ?></p>
         </div>
         <div class="p_info2_btn">
             <button>För mer information</button>
