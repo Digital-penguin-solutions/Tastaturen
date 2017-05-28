@@ -108,3 +108,40 @@
     }
   }
 }
+
+.p_slider{
+  height: 100vh;
+  @extend .nopm;
+  .p_slider_container{
+    height:100vh;
+    @extend .nopm;
+    img{
+      z-index: 50;
+      height:100vh;
+      width: 100%;
+    }
+  }
+}
+
+.p_info2{
+  background: $color4;
+  @extend .nopm;
+  .p_info2_container{
+    .p_info2_text{
+      color: $white;
+      margin-top:5vh;
+      margin-bottom:5vh;
+      h1{
+        font-size: 4vw;
+        text-align: center;
+        font-weight: 600;
+      }
+      p{
+        text-align: center;
+        font-size: 2.3vw;
+        font-weight: 300;
+
+      }
+    }
+  }
+}

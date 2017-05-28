@@ -10,8 +10,8 @@
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php include "partials/nav.php"?>
 <?php
-    include "functions/functions.php";
-    $con = connect();
+include "functions/functions.php";
+$con = connect();
 
 ?>
 
@@ -69,6 +69,21 @@
             <div class="p_info_img  col-xs-4">
                 <img src="img/product/kyrka/example3.png" alt="" class="col-xs-12">
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid p_slider">
+    <div class="row-fluid p_slider_container">
+        <img src="img/product/kyrka/example4.jpg" alt="exempel4">
+    </div>
+</section>
+
+<section class="container-fluid p_info2">
+    <div class="row-fluid p_info2_container">
+        <div class="col-xs-8 col-xs-offset-2 p_info2_text">
+            <h1>kgaeklg</h1>
+            <p>kanflansfknwofn fawn pfnwpnfpwanfpanwf</p>
         </div>
     </div>
 </section>
