@@ -310,8 +310,7 @@ section {
     font-weight: 600;
     color: #1536ff;
     letter-spacing: 0.3em;
-    font-size: 4vw;
-    margin-left: -15vw; }
+    font-size: 4vw; }
     .loader_container .loader::before, .loader_container .loader::after {
       content: "";
       display: block;
