@@ -89,8 +89,12 @@ $products_church = get_all_visible_products($con, "kyrka");
                             <div class = "slider_page col-md-12">
                                 <div class="i_slider_3_container">
                                     <div class="i_slider_3_video">
+                                        <iframe id="player"  data-video="z8kBoDdQOgc" frameborder="0" allowfullscreen="1"
+                                                src="https://www.youtube.com/embed/z8kBoDdQOgc?controls=0&showinfo=0&loop=1&playlist=z8kBoDdQOgc&enablejsapi=1&origin=http%3A%2F%2Fwww.rodgersinstruments.com&widgetid=1"
+                                        </iframe>
+
                                         <div class="i_slider_3_video_btn">
-                                            <button></button>
+                                            <i class="fa fa-caret-right" aria-hidden="true"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -127,7 +131,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 <section id="Info" class="container-fluid i_info">
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
-            <h2><?php print_field("i_about_header"); ?> </h1>
+            <h2><?php print_field("i_about_header"); ?> </h2>
             <p class = "col-xs-offset-2 col-xs-8">
                 <?php print_field("test"); ?>
             </p>

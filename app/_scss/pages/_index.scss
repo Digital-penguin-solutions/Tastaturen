@@ -184,8 +184,16 @@
       // Slider 3
       .i_slider_3_container{
         .i_slider_3_video{
+          height: 100vh;
+          width: 100%;
+         iframe{
+           @extend .nopm;
+           height: 100vh;
+           width: 100%;
+         }
           .i_slider_3_video_btn{
-            button{
+            i{
+
 
             }
           }
