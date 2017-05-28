@@ -13,6 +13,19 @@
 include "functions/functions.php";
 $con = connect();
 
+//$name = $_GET['n'];
+//$product_id = get_product_id_by_name($con, $name);
+$product_id = $_GET['id'];
+$product = get_product_by_id($con, $product_id);
+$short = $product['short_description'];
+$name = $product['name'];
+$long = $product['long_description'];
+$price = $product['price'];
+$main_image = $product['main_image'];
+$about_image = $product['about_image'];
+$slider_images = get_product_images_by_id($con, $product_id);
+
+
 ?>
 
 <header class="container-fluid p_prod_head">
@@ -34,8 +47,8 @@ $con = connect();
             <div class="p_prod_head_bg">
 
                 <div class="p_prod_head_text">
-                    <h1>LiVE</h1>
-                    <h2>Modell saker</h2>
+                    <h1><?php echo $name;?></h1>
+                    <h2><?php echo $short;?></h2>
                 </div>
                 <div class="p_prod_head_btn_broschyr">
                     <button>Ladda ner Broschyr</button>
@@ -44,7 +57,7 @@ $con = connect();
                     <button>Skicka en offert</button>
                 </div>
                 <div class="p_prod_head_img">
-                    <img src="img/product/kyrka/example.png" alt="produkt bild">
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
                 </div>
             </div>
         </div>
@@ -56,18 +69,13 @@ $con = connect();
     <div class="row-fluid p_info">
         <div class="col-xs-12 p_info_container">
             <div class="p_info_text col-xs-4 col-xs-offset-1">
-                <h1>Live</h1>
-                <h3>PRICE: 999€</h3>
-                <p>Herp derpsum perp dee derp,
-                    mer herderder. Sherp berp derpler,
-                    herpem serp tee perper merpus terp dee.
-                    Sherpus berps herpsum herpler.
-                    Berps herderder herpsum herpderpsmer herp?
-                    Derperker der herpler derp derpsum berps perp sherpus.
-                    Merpus mer perper </p>
+                <h1><?php echo $name; ?></h1>
+                <h3>PRICE: <?php echo $price; ?></h3>
+                <p> <?php echo $long; ?></p>
             </div>
             <div class="p_info_img  col-xs-4">
                 <img src="img/product/kyrka/example3.png" alt="" class="col-xs-12">
+                <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
             </div>
         </div>
     </div>

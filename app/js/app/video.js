@@ -11,12 +11,19 @@ function onYouTubeIframeAPIReady() {
             fs: 0,              // Hide the full screen button
             cc_load_policy: 0,  // Hide closed captions
             iv_load_policy: 3,  // Hide the Video Annotations
-            autohide: 0         // Hide video controls when playing
+            autohide: 0,         // Hide video controls when playing
+            //playlist:'z8kBoDdQOgc'
         },
         events: {
             onReady: function(e) {
                 e.target.mute();
+            },
+            onStateChange: function(e){
+                if (e.data === YT.PlayerState.ENDED) {
+                    player.playVideo(); 
+                }
             }
         }
+
     });
 }

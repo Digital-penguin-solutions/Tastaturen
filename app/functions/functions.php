@@ -88,7 +88,7 @@ if(!isset($functions_included)){
             }
         }
         else {
-            echo "not found single <br>";
+            //echo "not found single <br>";
         }
 
     }
@@ -196,7 +196,7 @@ if(!isset($functions_included)){
     function get_product_id_by_name($con, $name){
 
         $id     = secure_str($name);
-        $query  = "SELECT * FROM product WHERE name = '$name'";
+        $query  = "SELECT product_id FROM product WHERE name = '$name'";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
 
 
