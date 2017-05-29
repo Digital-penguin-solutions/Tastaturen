@@ -32,7 +32,6 @@ function on_ready_slider () {
 }
 
 function slider_go_to_page(slider_number, page){
-    //sliding = false; // TEMP
     if (!sliding) {
         sliding = true;
         var slider = all_sliders[slider_number];
@@ -166,6 +165,19 @@ function slider_go_to_page(slider_number, page){
 }
 
 
+function move(left, comp){
+
+    var slider_num = $(comp).attr("slider_number");
+
+    var new_page = current_page[slider_num]+1;
+
+    if(left) {
+        new_page -= 2;
+    }
+
+    slider_go_to_page(slider_num, new_page);
+}
+
 
 function init_sliders(){
 
@@ -188,6 +200,10 @@ function init_sliders(){
         var num_pages = pages.length;
 
         var slider_parent = $(slider).parent();
+
+        if(!$(slider).hasClass("no_auto_slide")){
+            setInterval(function(){move(false, slider);}, 5000);
+        }
 
         if (!$(slider).hasClass("no_list")){
             var list_container = $("<div class = 'slider_list_container'>");
@@ -309,18 +325,6 @@ function init_sliders(){
                 move(false, this);
             });
 
-            function move(left, comp){
-
-                var slider_num = $(comp).attr("slider_number");
-
-                var new_page = current_page[slider_num]+1;
-
-                if(left) {
-                    new_page -= 2;
-                }
-
-                slider_go_to_page(slider_num, new_page);
-            }
 
         }
         else{

@@ -62,7 +62,7 @@ function effect_letter(letters, i ){
     if(i >= letters.length){
         return;
     }
-    var effect_duration = 100;
+    var effect_duration = 120;
 
     var letter = letters[i];
     
@@ -70,7 +70,8 @@ function effect_letter(letters, i ){
         translateZ:0,
         //translateX: "200px",
         rotateX: "5deg",
-        rotateZ: "5deg"
+        rotateZ: "5deg",
+        color: "#DDDDDD"
 
     },{
         duration: effect_duration,
@@ -79,7 +80,8 @@ function effect_letter(letters, i ){
                 translateZ:0,
                 rotateX: 0,
                 rotateY:0,
-                rotateZ:0
+                rotateZ:0,
+                color: "#FFFFFF"
 
             },{
                 duration: effect_duration
