@@ -2358,10 +2358,6 @@ section {
   height: 100vh; }
   .p_slider .p_slider_container {
     height: 100vh; }
-    .p_slider .p_slider_container img {
-      z-index: 50;
-      height: 100vh;
-      width: 100%; }
 
 .p_info2 {
   background: #212121;

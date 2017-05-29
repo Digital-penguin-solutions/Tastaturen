@@ -34,11 +34,16 @@ $slider_images = get_product_images_by_id($con, $product_id);
 
             <!-- Slider  off products-->
             <div class="slideshow hidden-xs hidden-sm">
-                <div class="slideshow-image" style="background-image: url('img/product/kyrka/Sliders/1.jpg')"></div>
-                <div class="slideshow-image" style="background-image: url('img/product/kyrka/Sliders/2.jpg')"></div>
-                <div class="slideshow-image" style="background-image: url('img/product/kyrka/Sliders/3.jpg')"></div>
-                <div class="slideshow-image" style="background-image: url('img/product/kyrka/Sliders/4.jpg')"></div>
-                <div class="slideshow-image" style="background-image: url('img/product/kyrka/Sliders/5.jpg')"></div>
+                <?php 
+                    foreach($slider_images as $image){
+
+                        ?>
+                        <div class="slideshow-image" style="background-image: url(data:image/jpeg;base64,<?php echo base64_encode($image['data'])?> )"></div>
+                        <?php
+                    }
+
+
+                ?>
             </div>
 
             <!-- Bg for mobile insted of slider-->
@@ -82,7 +87,27 @@ $slider_images = get_product_images_by_id($con, $product_id);
 
 <section class="container-fluid p_slider">
     <div class="row-fluid p_slider_container">
-        <img src="img/product/kyrka/example4.jpg" alt="exempel4">
+
+        <div class = "all_slider_container no_list">
+            <?php
+            foreach($slider_images as $image){
+            ?>
+            <!-- Slider 1-->
+            <div class = "slider_page col-xs-12">
+
+                <div class="col-xs-12">
+                    <div class="i_slider_1_left_img">
+                        <img class = "col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="Huvudbild"/>
+                    </div>
+
+                </div>
+
+            </div>
+            <?php
+            }
+            ?>
+        </div>
+
     </div>
 </section>
 
