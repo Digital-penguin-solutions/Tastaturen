@@ -42,7 +42,7 @@
 }
 
 //products
-.pe_prod {
+/*.pe_prod {
   min-height: 100vh;
   background: darken($white, 5%);
 
@@ -123,6 +123,38 @@
           width: 100%;
           height:100%;
         }
+      }
+    }
+  }
+}*/
+
+.pe_prod{
+  min-height: 60vh;
+  .pe_prod_container{
+    @extend .nopm;
+    .pe_prod_sort{
+      height: 10vh;
+      background: $color5;
+      h1{
+        text-align: center;
+
+      }
+      .pe_product_price{
+      }
+      .pe_product_name{
+      }
+    }
+    .pe_prod_prod{
+      height: 50vh;
+      background: #000;
+      h1{
+
+      }
+      p{
+
+      }
+      img{
+
       }
     }
   }

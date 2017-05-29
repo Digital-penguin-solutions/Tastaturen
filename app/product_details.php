@@ -15,6 +15,7 @@ include "functions/functions.php";
 $con = connect();
 ?>
 
+<!--Header -->
 <header class="container-fluid pe_header">
     <div class="row-fluid pe_header_container col-xs-12">
         <div class="pe_header_bg"></div>
@@ -26,7 +27,8 @@ $con = connect();
     </div>
 </header>
 
-<section class="container-fluid pe_prod">
+<!-- Show all the products-->
+<!--<section class="container-fluid pe_prod">
     <div class="row-fluid pe_prod">
         <div class="col-xs-12 pe_prod_container">
             <div class="col-xs-8 col-xs-offset-2 pe_sort_container">
@@ -38,15 +40,15 @@ $con = connect();
             </div>
 
             <?php
-            $products = get_all_visible_products($con, "");
+$products = get_all_visible_products($con, "");
 
-            foreach($products as $product){
-                $name = $product['name'];
-                $short = $product['short_description'];
-                $price = $product['price'];
-                $image = $product['main_image'];
-                $type = $product['type'];
-                ?>
+foreach($products as $product){
+    $name = $product['name'];
+    $short = $product['short_description'];
+    $price = $product['price'];
+    $image = $product['main_image'];
+    $type = $product['type'];
+    ?>
                 <div class="col-xs-8 col-xs-offset-2 pe_product">
 
                     <div class = "col-xs-6 pe_product_text">
@@ -64,7 +66,32 @@ $con = connect();
             <?php } ?>
         </div>
     </div>
+</section>-->
+
+<section class="container-fluid pe_prod">
+    <div class="row-fluid pe_prod">
+        <div class="col-xs-12 pe_prod_container">
+            <div class="pe_prod_sort col-xs-12">
+                <h1>Sort</h1>
+                <button class="pe_product_price">price</button>
+                <button class="pe_product_name">name</button>
+            </div>
+            <a href="#" class="pe_prod_prod col-xs-5">
+                <img src="" alt="product img">
+                <h1>fin orgel</h1>
+                <p>mycket fin orgel</p>
+            </a>
+
+            <a href="#" class="pe_prod_prod col-xs-5">
+                <img src="" alt="product img">
+                <h1>fin orgel</h1>
+                <p>mycket fin orgel</p>
+            </a>
+        </div>
+    </div>
 </section>
+
+
 
 <?php include "partials/footer.php" ?>
 </body>
