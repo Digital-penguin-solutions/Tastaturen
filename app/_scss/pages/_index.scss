@@ -193,16 +193,13 @@
          }
           .i_slider_3_video_btn{
             position: absolute;
-            top:0;
-            left:0;
+            @include center-align($pos:absolute);
             z-index: 100000;
-            height: 10vh;
-            width: 5vw;
             i{
-              font-size: 5vw;
-              color: $white;
-
-
+              @include center-align($pos:absolute);
+              font-size: 8vw;
+              color: red;
+              cursor: pointer;
             }
           }
         }

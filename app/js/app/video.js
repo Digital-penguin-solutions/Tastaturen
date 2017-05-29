@@ -5,7 +5,7 @@ function onYouTubeIframeAPIReady() {
         //playlist:'z8kBoDdQOgc',
         playerVars: {
             autoplay: 1,        // Auto-play the video on load
-            controls: 1,        // Show pause/play buttons in player
+            controls: 0,        // Show pause/play buttons in player
             showinfo: 0,        // Hide the video title
             modestbranding: 1,  // Hide the Youtube Logo
             loop: 1,            // Run the video in a loop
