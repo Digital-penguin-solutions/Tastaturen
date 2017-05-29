@@ -56,7 +56,7 @@ $slider_images = get_product_images_by_id($con, $product_id);
                     <h2><?php echo $short;?></h2>
                 </div>
                 <div class="p_prod_head_btn_broschyr">
-                    <button>Ladda ner Broschyr</button>
+                    <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'">Ladda ner Broschyr</button>
                 </div>
                 <div class="p_prod_head_btn_order">
                     <button>Skicka en offert</button>
@@ -79,7 +79,7 @@ $slider_images = get_product_images_by_id($con, $product_id);
                 <p> <?php echo $long; ?></p>
             </div>
             <div class="p_info_img  col-xs-4">
-                <img class = "col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
+                <img class = "" src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
             </div>
         </div>
     </div>
@@ -95,12 +95,8 @@ $slider_images = get_product_images_by_id($con, $product_id);
             <!-- Slider 1-->
             <div class = "slider_page col-xs-12">
 
-                <div class="col-xs-12">
-                    <div class="i_slider_1_left_img">
-                        <img class = "col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="Huvudbild"/>
-                    </div>
+                <img class = "p_slider_image col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="Huvudbild"/>
 
-                </div>
 
             </div>
             <?php
