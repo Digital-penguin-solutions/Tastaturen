@@ -194,7 +194,7 @@
           .i_slider_3_video_btn{
             position: absolute;
             @include center-align($pos:absolute);
-            z-index: 100000;
+            z-index: 10000;
             i{
               @include center-align($pos:absolute);
               font-size: 8vw;
