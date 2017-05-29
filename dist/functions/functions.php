@@ -88,7 +88,7 @@ if(!isset($functions_included)){
             }
         }
         else {
-            echo "not found single <br>";
+            //echo "not found single <br>";
         }
 
     }
@@ -196,7 +196,7 @@ if(!isset($functions_included)){
     function get_product_id_by_name($con, $name){
 
         $id     = secure_str($name);
-        $query  = "SELECT * FROM product WHERE name = '$name'";
+        $query  = "SELECT product_id FROM product WHERE name = '$name'";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
 
 
@@ -222,6 +222,18 @@ if(!isset($functions_included)){
 
         return $array;
 
+    }
+
+    function get_product_brochure_by_id($con, $id){
+        $id     = secure_str($id);
+        $query  = "SELECT brochure FROM product WHERE product_id = '$id'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+
+        $data = mysqli_fetch_array($select);
+
+        $brochure = $data['brochure'];
+
+        return $brochure;
     }
 
     //get name of produkt by id from database
@@ -274,13 +286,30 @@ if(!isset($functions_included)){
     //Echo all products in the index slider
     function echo_products_index($products){
 
+        $i          = 0;
+        $firs       = 'i_products_sliders_bg_1';
+        $second     = 'i_products_sliders_bg_2';
+        $third      = 'i_products_sliders_bg_3';
+
         foreach($products as $product){
             $name = $product['name'];
             $short = $product['short_description'];
             $price = $product['price'];
             $image = $product['main_image'];
+            $id = $product['product_id'];
 
-            ?> <!--products that is used in slider--><div class="i_products_sliders col-xs-4"><a href="product"><img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"><div class="i_products_sliders_text"><h1><?php echo $name; ?></h1><p><?php echo $short; ?></p><p><?php echo $price;  ?></p></div></a></div> <?php
+            $i++;
+
+            if ($i % 3 == 1){
+                $j = $firs;
+            }
+            elseif ($i % 3 == 2){
+                $j = $second;
+            }
+            else{
+                $j = $third;
+            }
+            ?> <!--products that is used in slider--><div class="i_products_sliders col-xs-4 <?php echo $j?>"><a href="product?id=<?php echo $id; ?>">- <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"><div class="i_products_sliders_text"><h1><?php echo $name; ?></h1><p><?php echo $short; ?></p><p><?php echo $price;  ?></p></div></a></div> <?php
 
 
         }
@@ -344,6 +373,15 @@ if(!isset($functions_included)){
         return $data;
     }
 
+    function create_field($name){
+        global $con;
+        $name = secure_str($name);
+        $value = "Click to edit";
+        //$new_value = secure_str($new_value);
+        $query = "INSERT INTO text_field (name, value) VALUES ('$name', '$value')";
+        mysqli_query($con, $query) or die (mysqli_error($con));
+    }
+
     function update_field($name, $new_value){
         global $con;
         $name = secure_str($name);
@@ -355,16 +393,23 @@ if(!isset($functions_included)){
     function print_field($name){
         global $con;
         $field = get_field_by_name($con, $name);
-        $value = $field['value'];
-        echo $value;
+
+        
+        if($field != null){ // if field already exists
+            $value = $field['value'];
+            echo "<span>".$value . "</span>";
+        }
+        else {
+            create_field($name);
+            echo "<span> Click to edit </span>";
+        }
 ?> <script>var script = document.currentScript;
             var parent = script.parentNode;
             var name   = '<?php echo $name; ?>';
             $(parent).attr("name", name);
             $(parent).click(function(){
-                show_edit_view(parent);
-            });
-            console.log(parent);</script> <?php
+                show_edit_view(this);
+            });</script> <?php
 
     }
 

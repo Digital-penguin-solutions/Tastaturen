@@ -30,10 +30,11 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $long               = secure_str($_POST["long_description"]);
     $price              = secure_str($_POST["price"]);
     $type               = secure_str($_POST["type"]);
+    //$brochure           = secure_str($_POST["brochure"]);
     //$key_features       = $_POST["key_feature"];
     //$tech_row_left      = $_POST["tech_row_left"];
     //$tech_row_right     = $_POST["tech_row_right"];
-    $show               = secure_str($_POST["show"]);
+    //$show               = secure_str($_POST["show"]);
 
     if (isset($_POST["removed_images"])){
         $removed_images = $_POST["removed_images"];
@@ -51,10 +52,22 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     read_slider_images($con, "slider_image");
 
+    $brochure_data = "";
+
+
+    // if there is a new brochure. The data will be collected and later uploaded
+    if($_FILES['brochure']['size'] > 0){
+        $brochure_tmp_name = $_FILES['brochure']['tmp_name'];
+        $fp = fopen($brochure_tmp_name, 'r'); 
+        $brochure_data = fread($fp, filesize($brochure_tmp_name));
+        $brochure_data = mysqli_real_escape_string($con, $brochure_data);
+        fclose($fp);
+    }
+
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, long_description, price, type) VALUES ('$name', '$short', '$long', '$price', '$type')";
+        $query = "INSERT INTO product (name, short_description, long_description, price, type, brochure) VALUES ('$name', '$short', '$long', '$price', '$type', '$brochure_data')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -65,6 +78,14 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type' WHERE product_id = '$product_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
+
+        // if there is a new brochure to be uploaded
+        if($brochure_data != ""){
+            $query = "UPDATE product SET brochure = '$brochure_data' WHERE product_id = '$product_id'";
+            mysqli_query($con, $query) or die (mysqli_error($con));
+
+        }
+
     }
 
     // UPLOAD OF SINGLE IMAGES
@@ -99,7 +120,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         // if this is none, then there is a new image to be uploaded. if image_id has a value, an old image is to be modified
         if($image_id == "none") {
             $query = "INSERT INTO product_image (data, filename, product_id) VALUES ('$image_data', '$filename', '$product_id')";
-            echo "-----------------------------HERE: " . $image_id;
+            //echo "-----------------------------HERE: " . $image_id;
         }
         else { // modifying old image
             $query = "UPDATE product_image SET data = '$image_data', filename = '$filename' WHERE product_image_id = '$image_id'";
@@ -156,7 +177,7 @@ if (isset($_SESSION['admin'])) {
                         if (isset($_GET["product_id"])){
                             ?> <input type="hidden" value="<?php echo $_GET['product_id'] ?>" name="product_id"> <?php
                         }
-                        ?> <h1>Product namn</h1><input value="<?php echo $name ?>" type="text" name="name"><h1>Typ</h1><select name="type"><option value="hem" <?php if($type == "hem"){echo "selected";}?>>Hem</option><option value="kyrka" <?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option></select><h1>Kort beskrivning</h1><textarea name="short_description" class="short_description"><?php echo $short?></textarea><h1>Lång beskrivning</h1><textarea name="long_description" class="long_description"><?php echo $long?></textarea><h1>Pris</h1><input value="<?php echo $price ?>" type="text" name="price"><div class="admin_list_container admin_tech_list"><h1>Bilder till bildspel</h1><!--- THIS FIRST ONE IS HIDDEN AND IS ONLY A TEMPLETE FOR CREATING A NEW ONE BUT IT HAS TO BE HERE  --><div class="template admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current: </strong>none</p><img src="img/cross.svg" class="center_vertically_css remove_item" alt="remove item from list"></div> <?php
+                        ?> <h1>Product namn</h1><input value="<?php echo $name ?>" type="text" name="name"><h1>Typ</h1><select name="type"><option value="hem" <?php if($type == "hem"){echo "selected";}?>>Hem</option><option value="kyrka" <?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option></select><h1>Kort beskrivning</h1><textarea name="short_description" class="short_description"><?php echo $short?></textarea><h1>Lång beskrivning</h1><textarea name="long_description" class="long_description"><?php echo $long?></textarea><h1>Broschyr</h1><input id="brochure" name="brochure" class="center_horizontally_css" type="file"><h1>Pris</h1><input value="<?php echo $price ?>" type="text" name="price"><div class="admin_list_container admin_tech_list"><h1>Bilder till bildspel</h1><!--- THIS FIRST ONE IS HIDDEN AND IS ONLY A TEMPLETE FOR CREATING A NEW ONE BUT IT HAS TO BE HERE  --><div class="template admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current: </strong>none</p><img src="img/cross.svg" class="center_vertically_css remove_item" alt="remove item from list"></div> <?php
                             // The ones that already exist for this product
                             foreach ($slider_images as $image) {
 

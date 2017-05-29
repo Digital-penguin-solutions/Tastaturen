@@ -1,0 +1,3 @@
+#Block robots from acsessing function folder
+User-agent: *
+Disallow: /functions/

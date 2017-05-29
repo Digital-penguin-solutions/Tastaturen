@@ -1,9 +1,8 @@
-ErrorDocument 404 /404.php
-ErrorDocument 403 /404.php
+ErrorDocument 404 /404error.php
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)$ $1.php?url=$1 [L,QSA]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
 
 <IfModule mod_headers.c>
   <FilesMatch "\.(js|css|xml|gz)$">

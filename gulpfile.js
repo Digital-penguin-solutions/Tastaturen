@@ -55,7 +55,7 @@ g.task('prefix', ['compile-sass'], function () {
 });
 
 //minify css files and run the sass function before
-g.task('css-build', ['compile-sass'], function() {
+g.task('css-build', ['prefix'], function() {
     return g.src('app/css/*.css')
         .pipe(plumber())
         .pipe(cleanCss({compatibility: 'ie8'}))
@@ -152,7 +152,7 @@ g.task('connect-php', function () {
 
 //clean old dist and compile all files
 g.task('build',['clean'],function () {
-    g.start('minify', 'prefix', 'concat-js-app','concat-js-third-party', 'copy', 'imgmin')
+    g.start('minify', 'css-build', 'js-build', 'copy', 'imgmin')
 });
 
 //developing with xampp
