@@ -86,8 +86,8 @@ foreach($products as $product){
                 $products = get_all_visible_products($con, "");
                 $len        = count($products);
                 $odds       = 'prud-big';
-                $odd        = 'col-xs-11';
-                $even       = 'col-md-5 col-md-offset-1 col-xs-11';
+                $odd        = 'col-xs-11 col-xs-offset-1';
+                $even       = 'col-md-5 col-xs-offset-1 col-xs-11';
 
                 foreach($products as $i=>$product){
                     $name = $product['name'];
