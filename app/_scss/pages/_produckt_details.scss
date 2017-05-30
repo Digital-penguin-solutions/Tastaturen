@@ -75,7 +75,8 @@
       .pe_prod_prod {
         height: 50vh;
         background: $color4;
-        margin-top: 10vh;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
         text-decoration: none;
 
         h1 {
@@ -96,8 +97,8 @@
         img {
           position: absolute;
           @include center-align($pos:absolute);
-          height: 32vh;
-          width: 32vh;
+          height: 35vh;
+          width: 35vh;
           margin-top:2vh;
         }
         &:hover{

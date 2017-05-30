@@ -1,5 +1,5 @@
 Viktigt
-    * Mobil anpassa heka hemsidan.
+    * Mobil anpassa hela hemsidan.
     * Fixa robot.txt filen.
     * SEO hela sidan.
 
@@ -8,9 +8,6 @@ Index
 
     * Head
         * Alla bilderna ska göras klart i bildspelet 4 bilder totalt.
-        * Denna videon ska vara #4 på index slidern:
-            https://www.youtube.com/embed/z8kBoDdQOgc?autoplay=1&controls=0&showinfo=0&loop=1&playlist=z8kBoDdQOgc&enablejsapi=1&origin=http%3A%2F%2Fwww.rodgersinstruments.com&widgetid=1
-            Videon ska inte spela upp ljudet från videon förens man trycker på spela knappen
         * Slide in efekterna kommer varje gång man byter slider.
         * Byta slider sida aoutomatiskt efter 5 sec.
 
@@ -25,10 +22,11 @@ Index
 Prudkter
     * Fundera ut en ny design för nedre delen av sidan.
     * Fixa köp knappen så den fungerar.
+    * mobil anpassa sidan
 
 Prudukt detaljer
-    * Designa om Sidan hur den ser ut i nuläget.
     * Fixa så att det finns 2 olika pruduct details sidor beroende på vilken knapp man trycker på.
+    * mobil andpassa sidan
 
 Admin
     * Fixa designen på Edit saken.

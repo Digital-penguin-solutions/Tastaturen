@@ -25,10 +25,6 @@ if(isset($_SESSION['admin'])){
     </script>
 
 <?php
-
-
-    
-
 }
 else {
     header("Location: ../index");
