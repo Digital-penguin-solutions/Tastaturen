@@ -3,7 +3,6 @@ $(document).ready(on_ready_product_scroller);
 var sliding = false;
 
 function on_ready_product_scroller () {
-
     init_product_slider();
     init_arrows();
 
@@ -34,14 +33,10 @@ function init_product_slider(){
 
         for(var n = 0; n < products.length; n++){
             var product = products[n];
-
             var product_width = get_width_in_percentage(product);
-
-
             var left = product_width*n + "%";
             $(product).css("left", left);
         }
-
     }
 }
 
@@ -56,7 +51,6 @@ function move(left, products_container){
         }
 
         var products = products_container.getElementsByClassName("i_products_sliders");
-
         var product_width = get_width_in_percentage(products[0]);
 
         // if you've gone all the way to the right
@@ -71,8 +65,7 @@ function move(left, products_container){
             dir = 0;
         }
 
-        
-        var last_left = Math.round(product_width * (num_showing-1)); 
+        var last_left = Math.round(product_width * (num_showing-1));
         var last_product_left = Math.round(get_left_in_percentage(products[products.length-1]));
 
         // if you have gone all the way to the left
@@ -81,9 +74,6 @@ function move(left, products_container){
         }
 
         //var products_container = arrow.parentNode;
-
-
-
         for(var n = 0; n < products.length; n++){
             var product = products[n];
 
@@ -97,13 +87,8 @@ function move(left, products_container){
             }, 500, function(){
                 sliding = false;
             });
-
         }
-
-
     }
-
-
 }
 
 function get_left_in_percentage(element){
@@ -118,6 +103,4 @@ function get_width_in_percentage(element){
     width = width.substr(0, width.length-1); // remove the % symbol
     $(".remove_me").remove();
     return width;
-
 }
-

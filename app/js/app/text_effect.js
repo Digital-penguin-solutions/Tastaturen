@@ -86,17 +86,11 @@ function effect_letter(letters, i ){
             },{
                 duration: effect_duration
             }
-            
             );
         }
-        
-        
     });
-
 
     i = i + 1;
 
     setTimeout(function(){effect_letter(letters, i); }, effect_duration);
-
-    
 }
