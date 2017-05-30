@@ -15,5 +15,4 @@ header("Content-type: application/pdf");
 echo $brochure_data; 
 
 exit();
-
 ?>

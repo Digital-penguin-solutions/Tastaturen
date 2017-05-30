@@ -20,10 +20,6 @@ if(isset($_SESSION['admin'])){
         prev = prev.split("?")[0];
         var rand = '<?php echo $randi; ?>';
         window.location.href = prev + "?r=" + rand;</script> <?php
-
-
-    
-
 }
 else {
     header("Location: ../index");

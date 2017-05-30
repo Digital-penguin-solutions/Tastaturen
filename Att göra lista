@@ -9,7 +9,8 @@ Index
     * Head
         * Alla bilderna ska göras klart i bildspelet 4 bilder totalt.
         * Slide in efekterna kommer varje gång man byter slider.
-        * Byta slider sida aoutomatiskt efter 5 sec.
+        * Slider 4 fungerar inte korekt.
+        * Slider 3: göra så att knappen fungerar korekt.
 
     * Pruduct section
         * Göra möhligheten att Bildspelet får upp första punken efter du har gått ett varv.
