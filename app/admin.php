@@ -171,7 +171,7 @@ $products_church = get_all_products($con, "kyrka");
 
                 if(isset($_SESSION['admin'])){
                     ?>
-                    <a href = "add_product" class = "add_product_button center_horizontally_css">
+                    <a href = "functions/add_product.php" class = "add_product_button center_horizontally_css">
                         Add a new product
                     </a>
                     <a href = "admin?change_password=" class = "add_product_button center_horizontally_css">

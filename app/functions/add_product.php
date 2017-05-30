@@ -235,7 +235,7 @@ if (isset($_SESSION['admin'])) {
                                 <p class = "center_vertically_css">
                                     <strong> Current: </strong>  none
                                 </p>
-                                <img src = "img/cross.svg"  class = "center_vertically_css remove_item" alt="remove item from list">
+                                <img src = "../img/cross.svg" class = "center_vertically_css remove_item" alt="remove item from list">
                             </div>
                             <?php
                             // The ones that already exist for this product
@@ -251,7 +251,7 @@ if (isset($_SESSION['admin'])) {
                                         <strong> Current: </strong>
                                     </p>
                                     <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $image['data']); ?>" alt="image of the curent sensor"/>
-                                    <img src = "img/cross.svg" image_id = "<?php echo $image_id; ?>" class = "center_vertically_css remove_item" alt="remove item from list">
+                                    <img src = "../img/cross.svg" image_id = "<?php echo $image_id; ?>" class = "center_vertically_css remove_item" alt="remove item from list">
                                 </div>
                                 <?php
                             }
