@@ -28,46 +28,6 @@ $con = connect();
 </header>
 
 <!-- Show all the products-->
-<!--<section class="container-fluid pe_prod">
-    <div class="row-fluid pe_prod">
-        <div class="col-xs-12 pe_prod_container">
-            <div class="col-xs-8 col-xs-offset-2 pe_sort_container">
-                <div class = "center_horizontally_css pe_sort_buttons">
-                    <h3> Sort by </h3>
-                    <button onclick="sortByName(this)" class="">Name</button>
-                    <button onclick="sortByPrice(this)" class="">Price</button>
-                </div>
-            </div>
-
-            <?php
-$products = get_all_visible_products($con, "");
-
-foreach($products as $product){
-    $name = $product['name'];
-    $short = $product['short_description'];
-    $price = $product['price'];
-    $image = $product['main_image'];
-    $type = $product['type'];
-    ?>
-                <div class="col-xs-8 col-xs-offset-2 pe_product">
-
-                    <div class = "col-xs-6 pe_product_text">
-                        <h1> <?php echo $name;?> </h1>
-                        <p class = "pe_product_short"> <?php echo $short;?> </p>
-                        <p class = "pe_product_price"> <?php echo $price;?> </p>
-                        <p class = "hidden pe_product_type"> <?php echo $type;?> </p>
-                        <button onclick="location.href='product_details'" class="">Läs mer</button>
-                    </div>
-
-                    <div class = "pe_product_img">
-                        <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
-                    </div>
-                </div>
-            <?php } ?>
-        </div>
-    </div>
-</section>-->
-
 <section class="container-fluid pe_prod">
     <div class="row-fluid pe_prod">
         <div class="col-xs-12 pe_prod_container">
@@ -81,7 +41,6 @@ foreach($products as $product){
             </div>
 
             <div class="pe_prod_contariner2 col-xs-11">
-
                 <?php
                 $products = get_all_visible_products($con, "");
                 $len        = count($products);
@@ -105,18 +64,14 @@ foreach($products as $product){
                         $size     = $even;
                         $size_big = Null;
                     }
-
                     ?>
-
                     <a href="#" class="pe_prod_prod <?php echo $size ?>">
                         <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
                         <h1><?php echo $name;?></h1>
                         <p><?php echo $short;?> </p>
                         <p><?php echo $price;?></p>
                     </a>
-
                 <?php } ?>
-
             </div>
         </div>
     </div>
