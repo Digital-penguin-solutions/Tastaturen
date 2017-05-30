@@ -80,32 +80,42 @@ foreach($products as $product){
                 </div>
             </div>
 
-            <div class="pe_prod_contariner2 col-xs-11 col-xs-offset-1">
+            <div class="pe_prod_contariner2 col-xs-11">
 
-                <a href="#" class="pe_prod_prod col-xs-5">
-                    <img src="img/product/kyrka/example.png" alt="product img">
-                    <h1>fin orgel</h1>
-                    <p>mycket fin orgel</p>
-                </a>
+                <?php
+                $products = get_all_visible_products($con, "");
+                $len        = count($products);
+                $odds       = 'prud-big';
+                $odd        = 'col-xs-11';
+                $even       = 'col-md-5 col-md-offset-1 col-xs-11';
 
-                <a href="#" class="pe_prod_prod col-xs-5 col-xs-offset-1">
-                    <img src="img/product/kyrka/example.png" alt="product img">
-                    <h1>fin orgel</h1>
-                    <p>mycket fin orgel</p>
-                </a>
+                foreach($products as $i=>$product){
+                    $name = $product['name'];
+                    $short = $product['short_description'];
+                    $price = $product['price'];
+                    $image = $product['main_image'];
+                    $type = $product['type'];
 
-                <a href="#" class="pe_prod_prod col-xs-5">
-                    <img src="img/product/kyrka/example.png" alt="product img">
-                    <h1>fin orgel</h1>
-                    <p>mycket fin orgel</p>
-                </a>
+                    //check if the last pruduct is alone then it covers the entier page
+                    if (($i == $len-1) && ($len%2 == 1)){
+                        $size     = $odd;
+                        $size_big = $odds;
+                    }
+                    else{
+                        $size     = $even;
+                        $size_big = Null;
+                    }
 
-                <a href="#" class="pe_prod_prod col-xs-5 col-xs-offset-1">
-                    <img src="img/product/kyrka/example.png" alt="product img">
-                    <h1>fin orgel</h1>
-                    <p>mycket fin orgel</p>
-                </a>
+                    ?>
 
+                    <a href="#" class="pe_prod_prod <?php echo $size ?>">
+                        <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
+                        <h1><?php echo $name;?></h1>
+                        <p><?php echo $short;?> </p>
+                        <p><?php echo $price;?></p>
+                    </a>
+
+                <?php } ?>
 
             </div>
         </div>
