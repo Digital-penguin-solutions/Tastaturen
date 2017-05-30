@@ -42,99 +42,12 @@
   }
 }
 
-//products
-/*.pe_prod {
-  min-height: 100vh;
-  background: darken($white, 5%);
-
-  .pe_prod_container {
-    min-height: 100vh;
-
-    //Sort stuff
-    .pe_sort_container {
-      margin-top:10vh;
-      height: 11vh;
-      background: $color5;
-      border-radius: 3px;
-
-      .pe_sort_buttons {
-        @include horizontal-align($pos:absolut);
-        position: absolute;
-
-        h3 {
-          margin-top:0.2vh;
-          color: white;
-          text-align: center;
-          text-transform: uppercase;
-          font-size: 2vw;
-          font-weight:400;
-        }
-
-        button {
-          @extend .button;
-          margin: -0.1vh 1vh 1vh;
-        }
-      }
-    }
-
-    //products
-    .pe_product{
-      margin-top:5vh;
-      height: 50vh;
-      background: $color4;
-      border-radius: 3px;
-
-      .pe_product_text {
-        height: 45vh;
-        margin-top: 8vh;
-        margin-left:3vw;
-        color: white;
-        @include vertical-align();
-
-        h1 {
-          font-size: 2.5vw;
-          font-weight: 600;
-          text-transform: uppercase;
-        }
-
-        .pe_product_short {
-          font-size: 1vw;
-          font-weight: 400;
-        }
-
-        .pe_product_price {
-          font-size: 1.4vw;
-          font-weight: 600;
-        }
-
-        button {
-          @extend .button;
-        }
-      }
-
-      .pe_product_img{
-        height: 38vh;
-        width:38vh;
-        float: right;
-        margin-right:3vw;
-        margin-top:-1vh;
-        @include vertical-align();
-
-        img{
-          width: 100%;
-          height:100%;
-        }
-      }
-    }
-  }
-}*/
-
 .pe_prod {
-  min-height: 60vh;
+  min-height: 70vh;
   .pe_prod_container {
     @extend .nopm;
     .pe_prod_sort {
-      height: 10vh;
+      height: 18vh;
       background: $color5;
       h1 {
         text-align: center;
@@ -143,18 +56,26 @@
         text-transform: capitalize;
 
       }
-      .pe_product_price {
-      }
-      .pe_product_name {
+      .pe_prod_btn {
+        margin-top:1vh;
+        position: absolute;
+        @include horizontal-align($pos:absolute);
+        .pe_product_price {
+          @extend .button;
+          width: 10vw;
+        }
+        .pe_product_name {
+          @extend .button;
+          width: 10vw;
+          margin-left:5vw;
+        }
       }
     }
     .pe_prod_contariner2 {
       .pe_prod_prod {
         height: 50vh;
         background: $color4;
-        opacity: 0.7;
         margin-top: 10vh;
-        margin-bottom: 10vh;
         text-decoration: none;
 
         h1 {
@@ -178,6 +99,14 @@
           height: 32vh;
           width: 32vh;
           margin-top:2vh;
+        }
+        &:hover{
+          background: lighten($color5, 25%);
+          @include transition($time:0.4s);
+
+          img{
+            opacity: 0.4;
+          }
         }
 
       }

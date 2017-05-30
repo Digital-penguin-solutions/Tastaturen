@@ -73,12 +73,26 @@ foreach($products as $product){
         <div class="col-xs-12 pe_prod_container">
 
             <div class="pe_prod_sort col-xs-12">
-                <h1>Sort</h1>
-                <button class="pe_product_price">price</button>
-                <button class="pe_product_name">name</button>
+                <h1>Sortera</h1>
+                <div class="pe_prod_btn">
+                    <button class="pe_product_price">Pris</button>
+                    <button class="pe_product_name">Namn</button>
+                </div>
             </div>
 
             <div class="pe_prod_contariner2 col-xs-11 col-xs-offset-1">
+
+                <a href="#" class="pe_prod_prod col-xs-5">
+                    <img src="img/product/kyrka/example.png" alt="product img">
+                    <h1>fin orgel</h1>
+                    <p>mycket fin orgel</p>
+                </a>
+
+                <a href="#" class="pe_prod_prod col-xs-5 col-xs-offset-1">
+                    <img src="img/product/kyrka/example.png" alt="product img">
+                    <h1>fin orgel</h1>
+                    <p>mycket fin orgel</p>
+                </a>
 
                 <a href="#" class="pe_prod_prod col-xs-5">
                     <img src="img/product/kyrka/example.png" alt="product img">

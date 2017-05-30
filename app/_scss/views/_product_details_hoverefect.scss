@@ -4,7 +4,6 @@ $color_bright_sun_approx: #f3cf3f;
 $color_radical_red_approx: #f33f58;
 
 .pe_prod_prod {
-  background: linear-gradient(-45deg, $color_bright_sun_approx 0,$color_radical_red_approx 100%);
   img {
     opacity: 1;
     transition: opacity 0.35s, transform 0.35s;
@@ -37,6 +36,7 @@ $color_radical_red_approx: #f33f58;
     transition: transform 0.35s;
   }
   &:hover {
+
     img {
       opacity: 0.7;
       transform: scale3d(1.05,1.05,1);
