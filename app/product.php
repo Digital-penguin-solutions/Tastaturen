@@ -13,19 +13,17 @@
 include "functions/functions.php";
 $con = connect();
 
-//$name = $_GET['n'];
-//$product_id = get_product_id_by_name($con, $name);
-$product_id = $_GET['id'];
-$product = get_product_by_id($con, $product_id);
-$short = $product['short_description'];
-$name = $product['name'];
-$long = $product['long_description'];
-$price = $product['price'];
-$main_image = $product['main_image'];
-$about_image = $product['about_image'];
-$slider_images = get_product_images_by_id($con, $product_id);
-
-
+//$name         = $_GET['n'];
+//$product_id   = get_product_id_by_name($con, $name);
+$product_id     = $_GET['id'];
+$product        = get_product_by_id($con, $product_id);
+$short          = $product['short_description'];
+$name           = $product['name'];
+$long           = $product['long_description'];
+$price          = $product['price'];
+$main_image     = $product['main_image'];
+$about_image    = $product['about_image'];
+$slider_images  = get_product_images_by_id($con, $product_id);
 ?>
 
 <header class="container-fluid p_prod_head">
@@ -35,14 +33,10 @@ $slider_images = get_product_images_by_id($con, $product_id);
             <!-- Slider  off products-->
             <div class="slideshow hidden-xs hidden-sm">
                 <?php 
-                    foreach($slider_images as $image){
-
-                        ?>
+                    foreach($slider_images as $image){?>
                         <div class="slideshow-image" style="background-image: url(data:image/jpeg;base64,<?php echo base64_encode($image['data'])?> )"></div>
                         <?php
                     }
-
-
                 ?>
             </div>
 
@@ -87,23 +81,18 @@ $slider_images = get_product_images_by_id($con, $product_id);
 
 <section class="container-fluid p_slider">
     <div class="row-fluid p_slider_container">
-
         <div class = "all_slider_container no_list">
             <?php
             foreach($slider_images as $image){
             ?>
             <!-- Slider 1-->
             <div class = "slider_page col-xs-12">
-
                 <img class = "p_slider_image col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="Huvudbild"/>
-
-
             </div>
             <?php
             }
             ?>
         </div>
-
     </div>
 </section>
 

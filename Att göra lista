@@ -21,7 +21,6 @@ Index
         * Trycker du på en media tab kommer det upp en popup screan som visar texten eller videon.
 
 Prudkter
-    * Fundera ut en ny design för nedre delen av sidan.
     * Fixa köp knappen så den fungerar.
     * mobil anpassa sidan
 
@@ -31,7 +30,7 @@ Prudukt detaljer
 
 Admin
     * Fixa designen på Edit saken.
-    * Lägga till en redigera knapp på alla texter och när du är innlogad på admin sidan.
+    * Lägga till en redigera knapp för alla texter och bilder som bara syns när du är inloggad som admin.
 
 404
     * Designa om sidan men ha kvar piano elementet.
