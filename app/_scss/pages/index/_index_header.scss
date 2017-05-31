@@ -27,7 +27,7 @@
             background: transparent;
             z-index: 101;
             text-align: center;
-            margin-top:35vh;
+            margin-top:20vh;
             width:100%;
 
             h1 {
@@ -42,13 +42,13 @@
             background: $color3*4.1;
 
             .i_slider_1_left_img {
+              @include vertical-align();
               right:0;
               position: absolute;
-              top:15vh;
 
               img{
-                width:15vw;
-                height: 60vh;
+                width:30vw;
+                height: 40vh;
               }
             }
 
@@ -61,7 +61,6 @@
             &:hover{
 
               .i_slider_1_left_img{
-                top:14vh;
                 transition: 0.2s;
 
                 img{
@@ -78,13 +77,13 @@
             background: $color3*4.5;
 
             .i_slider_1_right_img{
+              @include vertical-align();
               left:0;
               position: absolute;
-              top:15vh;
 
               img{
-                width: 15vw;
-                height: 60vh;
+                width:30vw;
+                height: 40vh;
               }
             }
 
@@ -99,7 +98,6 @@
             &:hover{
 
               .i_slider_1_right_img{
-                top:14vh;
                 transition: 0.2s;
 
                 img{
@@ -282,4 +280,38 @@
 @media (min-width: $screen-sm-min) {}
 
 //desktop size
-@media (min-width: $screen-md-min) {}
+@media (min-width: $screen-md-min) {
+  .i_header{
+    .i_header_container{
+      .i_header_slider{
+        .i_slider_1{
+          .i_slider_1_container{
+            .i_slider_1_text {
+              margin-top:35vh;
+              h1{
+
+              }
+            }
+
+            .i_slider_1_left{
+              .i_slider_1_left_img{
+                img{
+                  width:15vw;
+                  height: 60vh;
+                }
+              }
+            }
+            .i_slider_1_right{
+              .i_slider_1_right_img{
+                img{
+                  width:15vw;
+                  height: 60vh;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
