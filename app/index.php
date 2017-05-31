@@ -32,9 +32,9 @@ $products_church = get_all_visible_products($con, "kyrka");
 <!-- Info section -->
 <section id="Info" class="container-fluid i_info">
     <div class="row-fluid i_info">
-        <div class="col-xs-12 col-md-10 i_info_container col-xs-offset-1">
+        <div class="col-xs-12 col-md-10 col-md-offset-1 i_info_container">
             <h2><?php print_field("i_about_header"); ?> </h2>
-            <p class = "col-xs-offset-2 col-xs-8">
+            <p class = "col-xs-offset-21col-xs-10 col-md-offset-2 col-md-8">
                 <?php print_field("test"); ?>
             </p>
             <!--<p>Vi levererar digitala kyrkorglar för alla behov.
@@ -43,10 +43,10 @@ $products_church = get_all_visible_products($con, "kyrka");
                 Vi kan även förmedla kontakt med kyrkor
                 där en Rodgers eller en Johannus digitalorgel har installerats.
             </p>-->
-            <a href="http://www.johannus.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
+            <a href="http://www.johannus.com/" target="_blank" class="col-xs-6 col-md-offset-1 col-md-4">
                 <img src="img/logo/saker/johanus_white.svg" alt="johannus logo" style="margin-top: 1.6vh">
             </a>
-            <a href="http://www.rodgersinstruments.com/" target="_blank" class="col-xs-4 col-xs-offset-1">
+            <a href="http://www.rodgersinstruments.com/" target="_blank" class="col-xs-6 col-md-offset-1 col-md-4">
                 <img src="img/logo/saker/rodger_white.svg" alt="rodgersinstruments logo">
             </a>
         </div>

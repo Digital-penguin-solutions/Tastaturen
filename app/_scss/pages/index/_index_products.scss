@@ -1,0 +1,165 @@
+@import "../index";
+
+//product section
+.i_products{
+  min-height: 80vh;
+  background: $color4;
+
+  .i_products_container{
+    min-height: 80vh;
+    @extend .nopm;
+    overflow:hidden;
+
+    .i_products{
+      @extend .nopm;
+
+      h2{
+        text-align: center;
+        vertical-align: middle;
+        line-height: 15vh;
+        font-size: 2.5vw;
+        font-weight: 600;
+        color: $white;
+        width: 100%;
+        height: 15vh;
+        background: $color5;
+        text-transform: uppercase;
+        margin:0;
+      }
+
+
+      //Slider Arrow
+      .i_products_arrow_l{
+        position: absolute;
+        height: 10vh;
+        width: 10vh;
+        z-index: 100;
+        background: transparent;
+        top:35vh;
+        cursor: pointer;
+        left:2%;
+
+
+        &:hover{
+          background: rgba($color5, 0.2);
+          transition: 0.5s;
+        }
+      }
+
+      //Slider Arrow
+      .i_products_arrow_r{
+        right: 2% !important;
+        left: auto;
+        @extend .i_products_arrow_l;
+      }
+
+      .i_products_bt_container {
+        height: 10vh;
+        width: 100%;
+        background: $color5;
+        bottom:0;
+        position: absolute;
+
+        //Btn to product details page
+        .i_products_btn {
+          @include center-align($pos: absolute);
+          position: absolute;
+          border: 2px solid $white;
+          color: $white;
+          background-color: transparent;
+          text-align: center;
+          text-decoration: none;
+          font-size: 1.2vw;
+          width: 12vw;
+          height: 4.5vh;
+
+          &:hover {
+            background: $color1;
+            border: 0;
+            transition: 0.5s;
+          }
+        }
+      }
+
+      //product styling
+      .i_products_sliders{
+        background: lighten( $color3, 50% );
+        height: 55vh;
+        margin-top:-1vh;
+        position:absolute;
+
+        a {
+          display:inline-block;
+          @extend .center_horizontally_css;
+          width:20vw;
+          height:100%;
+          margin:0 !important;
+          img {
+            position:absolute;
+            @include horizontal-align($pos: absolute);
+            margin-top: 6vh;
+            max-width:70%;
+            height:60%;
+          }
+          .i_products_sliders_text {
+            @include vertical-align();
+            margin-top:-3vh;
+            position:absolute;
+            color: transparent;
+            width: 100%;
+            height: 20vh;
+
+            h1 {
+              text-align: center;
+              font-size: 2vw;
+              font-weight: 400;
+            }
+
+            p {
+              text-align: center;
+              font-size: 1vw;
+              font-weight: 300;
+            }
+          }
+        }
+
+        &:hover{
+          a {
+            img {
+              opacity: 0.5;
+              transition: 0.3s;
+            }
+
+            .i_products_sliders_text {
+              color: $white;
+              transition: 0.5s;
+              background: $color1;
+            }
+          }
+        }
+      }
+
+      .i_products_sliders_bg_1{
+        background: lighten( $color3, 50% );
+      }
+
+      .i_products_sliders_bg_2{
+        background: lighten( $color3, 45% );
+      }
+
+      .i_products_sliders_bg_3{
+        background: lighten( $color3, 40% );
+      }
+
+    }
+  }
+}
+
+//tablet size
+@media (min-width: $screen-sm-min) {}
+
+//desktop size
+@media (min-width: $screen-md-min) {
+
+
+}

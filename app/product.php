@@ -32,12 +32,10 @@ $slider_images  = get_product_images_by_id($con, $product_id);
 
             <!-- Slider  off products-->
             <div class="slideshow hidden-xs hidden-sm">
-                <?php 
-                    foreach($slider_images as $image){?>
-                        <div class="slideshow-image" style="background-image: url(data:image/jpeg;base64,<?php echo base64_encode($image['data'])?> )"></div>
-                        <?php
-                    }
-                ?>
+                <?php
+                foreach($slider_images as $image){?>
+                    <div class="slideshow-image" style="background-image: url(data:image/jpeg;base64,<?php echo base64_encode($image['data'])?> )"></div>
+                <?php } ?>
             </div>
 
             <!-- Bg for mobile insted of slider-->
@@ -50,7 +48,9 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                     <h2><?php echo $short;?></h2>
                 </div>
                 <div class="p_prod_head_btn_broschyr">
-                    <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'">Ladda ner Broschyr</button>
+                    <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'">
+                        Ladda ner Broschyr
+                    </button>
                 </div>
                 <div class="p_prod_head_btn_order">
                     <button>Skicka en offert</button>
@@ -84,14 +84,12 @@ $slider_images  = get_product_images_by_id($con, $product_id);
         <div class = "all_slider_container no_list">
             <?php
             foreach($slider_images as $image){
-            ?>
-            <!-- Slider 1-->
-            <div class = "slider_page col-xs-12">
-                <img class = "p_slider_image col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="Huvudbild"/>
-            </div>
-            <?php
-            }
-            ?>
+                ?>
+                <!-- Slider 1-->
+                <div class = "slider_page col-xs-12">
+                    <img class = "p_slider_image col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="Huvudbild"/>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </section>
@@ -100,7 +98,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     <div class="row-fluid p_info2_container">
         <div class="col-xs-8 col-xs-offset-2 p_info2_text">
             <h1><?php echo $name; ?></h1>
-            <p><?php echo $short; ?></p>
+            <p> <?php echo $short;?></p>
         </div>
         <div class="p_info2_btn">
             <button>För mer information</button>
@@ -108,6 +106,6 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </section>
 
-<?php include "partials/footer.php" ?>
+<?php include "partials/footer.php"?>
 </body>
 </html>

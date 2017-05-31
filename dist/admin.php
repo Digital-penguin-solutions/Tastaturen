@@ -86,7 +86,7 @@ $products_church = get_all_products($con, "kyrka");
                 }
 
                 if(isset($_SESSION['admin'])){
-                    ?> <a href="add_product" class="add_product_button center_horizontally_css">Add a new product </a><a href="admin?change_password=" class="add_product_button center_horizontally_css">Change password </a><a href="admin?logout=" class="add_product_button center_horizontally_css">Logout </a> <?php
+                    ?> <a href="functions/add_product.php" class="add_product_button center_horizontally_css">Add a new product </a><a href="admin?change_password=" class="add_product_button center_horizontally_css">Change password </a><a href="admin?logout=" class="add_product_button center_horizontally_css">Logout </a> <?php
                 }
                 else {
                     ?> <form class="login hidden-sm hidden-xs" action="functions/login.php" method="post"><p>PASSWORD:</p><input type="password" name="password"> <input type="submit" name="login" value="Login"></form> <?php

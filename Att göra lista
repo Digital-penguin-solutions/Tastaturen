@@ -2,23 +2,26 @@ Viktigt
     * Mobil anpassa hela hemsidan.
     * Fixa robot.txt filen.
     * SEO hela sidan.
+    * opimizera hastighet.
+        # Kolla att alla bilder är s små som möjligt.
+        # Minimerara request från olika sidor.
 
 Index
     * Mobilanpass Hela index sidan.
 
     * Head
-        * Alla bilderna ska göras klart i bildspelet 4 bilder totalt.
-        * Slide in efekterna kommer varje gång man byter slider.
-        * Slider 4 fungerar inte korekt.
-        * Slider 3: göra så att knappen fungerar korekt.
+        # Alla bilderna ska göras klart i bildspelet 4 bilder totalt.
+        # Slide in efekterna kommer varje gång man byter slider.
+        # Slider 3: göra så att knappen fungerar korekt.
+        # Slider 4 fungerar inte korekt.
 
     * Pruduct section
-        * Göra möhligheten att Bildspelet får upp första punken efter du har gått ett varv.
-        * Göra så att det går att swipa för att kunna skrolla vidare.
+        # Göra möhligheten att Bildspelet får upp första punken efter du har gått ett varv.
+        # Göra så att det går att swipa för att kunna skrolla vidare.
 
     * Media
-        * Göra ett grid system som kan visa media i form av text och bilder.
-        * Trycker du på en media tab kommer det upp en popup screan som visar texten eller videon.
+        # Göra ett grid system som kan visa media i form av text och bilder.
+        # Trycker du på en media tab kommer det upp en popup screan som visar texten eller videon.
 
 Prudkter
     * Fixa köp knappen så den fungerar.

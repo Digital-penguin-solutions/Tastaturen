@@ -1,4 +1,4 @@
-<nav class="nav_d col-xs-2">
+<nav class="nav_d col-xs-2 hidden-sm hidden-xs">
     <div class="nav_d_container">
         <div class="nav_d_triage"></div>
 

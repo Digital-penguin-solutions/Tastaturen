@@ -24,6 +24,11 @@
 @import "pages/404error";
 @import "pages/admin";
 @import "pages/index";
-@import "pages/index_media";
 @import "pages/produckt_details";
 @import "pages/product";
+
+@import "pages/index/index_header";
+@import "pages/index/index_media";
+@import "pages/index/index_products";
+@import "pages/index/index_info";
+@import "pages/index/index_contact";
