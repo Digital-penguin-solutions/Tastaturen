@@ -2725,7 +2725,7 @@ section {
 @media (min-width: 992px) {
   .i_products .i_products_container .i_products h2 {
     font-size: 2.5vw; }
-  .i_products .i_products_container .i_products .i_products_bt_container {
+  .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
     font-size: 1.2vw;
     width: 12vw;
     height: 4.5vh; }

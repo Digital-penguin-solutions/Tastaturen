@@ -27,7 +27,6 @@
         margin:0;
       }
 
-
       //Slider Arrow
       .i_products_arrow_l{
         position: absolute;
@@ -166,23 +165,17 @@
           font-size: 2.5vw;
         }
         .i_products_bt_container {
-          font-size: 1.2vw;
-          width: 12vw;
-          height: 4.5vh;
-
+          .i_products_btn {
+            font-size: 1.2vw;
+            width: 12vw;
+            height: 4.5vh;
+          }
         }
         .i_products_sliders{
           a{
             img{
               max-width:70%;
               height:60%;
-            }
-          }
-          .i_products_bt_container {
-            .i_products_bt_container {
-              .i_products_btn {
-
-              }
             }
           }
         }
