@@ -26,8 +26,7 @@
 
     img{
       border-radius: 50%;
-      margin-top:10vh;
-      //width: 25vw;
+      margin-top:5vh;
     }
 
     .i_contact_text{
@@ -36,13 +35,16 @@
       margin-bottom:10vh;
 
       h2{
-        font-size: 2.3vw;
+        font-size: 6vw;
         font-weight: 600;
       }
 
       p{
-        font-size: 1.5vw;
+        font-size: 3.5vw;
         font-weight: 100;
+      }
+      img{
+
       }
     }
   }
@@ -58,6 +60,18 @@
       .i_contact_text_top {
         h2 {
           font-size: 2.5vw;
+        }
+      }
+      img{
+        margin-top:10vh;
+      }
+      .i_contact_text{
+        h2{
+          font-size: 2.3vw;
+        }
+
+        p{
+          font-size: 1.5vw;
         }
       }
     }
