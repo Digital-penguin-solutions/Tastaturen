@@ -2662,9 +2662,9 @@ section {
         background-color: transparent;
         text-align: center;
         text-decoration: none;
-        font-size: 1.2vw;
-        width: 12vw;
-        height: 4.5vh; }
+        font-size: 3.5vw;
+        width: 22vw;
+        height: 6vh; }
         .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn:hover {
           background: #1536ff;
           border: 0;
@@ -2725,6 +2725,10 @@ section {
 @media (min-width: 992px) {
   .i_products .i_products_container .i_products h2 {
     font-size: 2.5vw; }
+  .i_products .i_products_container .i_products .i_products_bt_container {
+    font-size: 1.2vw;
+    width: 12vw;
+    height: 4.5vh; }
   .i_products .i_products_container .i_products .i_products_sliders a img {
     max-width: 70%;
     height: 60%; } }
