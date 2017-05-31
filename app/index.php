@@ -109,8 +109,8 @@ $products_church = get_all_visible_products($con, "kyrka");
                 <h2><?php print_field("i_kontakt_header"); ?></h2>
             </div>
 
-            <div class = "col-xs-offset-2 col-xs-8">
-                <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-xs-5">
+            <div class = "col-md-offset-2 col-md-8 col-xs-10 col-xs-offset-1">
+                <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk" class="col-md-5 col-xs-10 ">
                 <img src="img/contact/Anders_gustafsson.jpg" alt="Anders Gustafsson" class="col-xs-5 col-xs-offset-2">
 
                 <div class="col-xs-5 i_contact_text" >

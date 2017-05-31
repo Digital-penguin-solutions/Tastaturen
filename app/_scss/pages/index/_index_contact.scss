@@ -18,7 +18,7 @@
       h2 {
         color: $white;
         line-height: 10vh;
-        font-size: 2.5vw;
+        font-size: 6vw;
         text-transform: uppercase;
         margin:0;
       }
@@ -52,4 +52,14 @@
 @media (min-width: $screen-sm-min) {}
 
 //desktop size
-@media (min-width: $screen-md-min) {}
+@media (min-width: $screen-md-min) {
+  .i_contact{
+    .i_contact_container{
+      .i_contact_text_top {
+        h2 {
+          font-size: 2.5vw;
+        }
+      }
+    }
+  }
+}
