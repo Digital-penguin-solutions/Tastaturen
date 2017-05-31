@@ -64,8 +64,8 @@
                 transition: 0.2s;
 
                 img{
-                  width: 17vw;
-                  height: 63vh;
+                  width:32vw;
+                  height: 42vh;
                   transition: 0.4s;
                 }
               }
@@ -101,8 +101,8 @@
                 transition: 0.2s;
 
                 img{
-                  width: 17vw;
-                  height: 63vh;
+                  width:32vw;
+                  height: 42vh;
                   transition: 0.4s;
                 }
               }
@@ -300,12 +300,28 @@
                   height: 60vh;
                 }
               }
+              &:hover{
+                .i_slider_1_left_img {
+                  img {
+                    width: 17vw;
+                    height: 63vh;
+                  }
+                }
+              }
             }
             .i_slider_1_right{
               .i_slider_1_right_img{
                 img{
                   width:15vw;
                   height: 60vh;
+                }
+              }
+              &:hover{
+                .i_slider_1_right_img {
+                  img {
+                    width: 17vw;
+                    height: 63vh;
+                  }
                 }
               }
             }
