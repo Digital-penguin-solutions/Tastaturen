@@ -856,15 +856,53 @@ section {
   visibility: hidden; }
   .edit .edit_container {
     margin: auto;
-    height: 60vh;
-    width: 40vw;
-    background: #fff;
-    border-radius: 5%; }
-    .edit .edit_container h1 {
+    height: 70vh;
+    width: 50vw;
+    background: #e6e6e6;
+    border-radius: 4%; }
+    .edit .edit_container .edit_container_container h1 {
       text-align: center;
       padding-top: 3vh;
       text-transform: uppercase;
-      font-size: 2vw; }
+      font-size: 2vw;
+      font-weight: 600; }
+    .edit .edit_container .edit_container_container .edit_text_old, .edit .edit_container .edit_container_container .edit_text_new {
+      border: solid 2px #1e1e1e;
+      border-radius: 5%;
+      font-size: 1vw;
+      width: 15vw;
+      margin-left: 6vw;
+      margin-top: 4vh; }
+    .edit .edit_container .edit_container_container .edit_text_new {
+      z-index: 1000100; }
+    .edit .edit_container .edit_container_container .btn_container {
+      margin-top: 10vh;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%); }
+      .edit .edit_container .edit_container_container .btn_container .save, .edit .edit_container .edit_container_container .btn_container .close {
+        border: 2px solid #000000;
+        color: #000000;
+        background-color: transparent;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.2vw;
+        height: 5vh;
+        width: 8vw;
+        font-weight: 300;
+        margin-right: 2vw; }
+        .edit .edit_container .edit_container_container .btn_container .save:hover, .edit .edit_container .edit_container_container .btn_container .close:hover {
+          background: #1536ff;
+          color: #ffffff;
+          border: 0;
+          transition: 0.5s; }
+      .edit .edit_container .edit_container_container .btn_container .close {
+        opacity: 1;
+        font-weight: 300;
+        margin-right: 0 !important;
+        margin-left: 2vw; }
 
 .wrapper, html, body {
   background: #ffffff;
@@ -2839,11 +2877,12 @@ section {
       font-size: 5vw;
       font-weight: 200; }
     .i_info .i_info_container a {
-      margin-top: 5vh; }
+      margin-top: 5vh;
+      margin-bottom: 5vh; }
 
 @media (min-width: 992px) {
-  .i_info .i_info_container h1 {
-    font-size: 3vw; }
+  .i_info .i_info_container h2 {
+    font-size: 3.3vw; }
   .i_info .i_info_container p {
     font-size: 1.5vw; } }
 
