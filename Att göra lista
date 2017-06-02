@@ -32,14 +32,15 @@ Prudukt detaljer
     * mobil andpassa sidan
 
 Admin
-    * Fixa designen på Edit saken.
     * Lägga till en redigera knapp för alla texter och bilder som bara syns när du är inloggad som admin.
+        Eller skriva en text som beskriver hur man kan redigera saker.
 
 404
     * Designa om sidan men ha kvar piano elementet.
+    * 
 
 footer
-    * Designa en footer med Län till facebook och lite annat.
+    * Designa en footer med Länk till facebook och lite annat.
     * Lägg till en länk till admin sidan.
     * Extra kontakt uppgifter.
 
