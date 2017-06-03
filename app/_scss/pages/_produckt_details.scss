@@ -102,7 +102,6 @@
           margin-top:2vh;
         }
         &:hover{
-          background: lighten($color5, 25%);
           @include transition($time:0.4s);
 
           img{

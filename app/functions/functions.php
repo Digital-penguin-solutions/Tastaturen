@@ -312,14 +312,11 @@ if(!isset($functions_included)){
             ?>
             <!--products that is used in slider-->
             <div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>">
-                <a href="product?id=<?php echo $id; ?>">
-
- -                   <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
-                     <div class="i_products_sliders_text">
-                         <h1><?php echo $name; ?></h1>
-                         <p><?php echo $short; ?></p>
-                         <p><?php echo $price;  ?></p>
-                     </div>
+                <a href="#" class="i_products_sliders_sak">
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
+                    <h1><?php echo $name;?></h1>
+                    <p class="short"><?php echo $short;?> </p>
+                    <p class="price"><?php echo $price;?></p>
                 </a>
             </div>
             <?php

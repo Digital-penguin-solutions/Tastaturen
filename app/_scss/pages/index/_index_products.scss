@@ -82,59 +82,82 @@
 
       //product styling
       .i_products_sliders{
-        background: lighten( $color3, 50% );
-        height: 55vh;
-        margin-top:-1vh;
-        position:absolute;
-
-        a {
-          display:inline-block;
-          @extend .center_horizontally_css;
-          width:20vw;
-          height:100%;
-          margin:0 !important;
-          img {
-            position:absolute;
-            @include center-align($pos: absolute);
-            max-width:30vw;
-            height:30vw;
+        height: 60vh;
+        .i_products_sliders_sak{
+          height: 60vh;
+          margin-top: 5vh;
+          margin-bottom: 5vh;
+          text-decoration: none;
+          img{
+            position: absolute;
+            @include center-align($pos:absolute);
+            height: 35vh;
+            width: 35vh;
+            margin-top:2vh;
+            opacity: 1;
+            transition: opacity 0.35s, transform 0.35s;
           }
-          .i_products_sliders_text {
-            @include vertical-align();
-            margin-top:-3vh;
-            position:absolute;
-            color: transparent;
+          h1{
+            text-align: center;
+            font-size: 4vw;
+            font-weight: 500;
+            color: $white;
+            text-transform: capitalize;
+            opacity: 1;
+            transform: scale3d(0.8,0.8,1);
+            transition: transform 0.35s;
+          }
+          p{
+            transition: opacity 0.35s, transform 0.35s;
+            transform: scale3d(0.8,0.8,1);
+            padding: 0.5em 2em;
+            text-transform: none;
+            opacity: 0;
+            color: $white;
+            text-align: center;
+            font-size: 2vw;
+          }
+
+          .short{
+            font-weight: 300;
+          }
+          .price{
+            font-weight: 500;
+          }
+          &:after{
+            transition: opacity 0.35s, transform 0.35s;
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 20vh;
-
-            h1 {
-              text-align: center;
-              font-size: 2vw;
-              font-weight: 400;
-            }
-
-            p {
-              text-align: center;
-              font-size: 1vw;
-              font-weight: 300;
-            }
+            height: 100%;
+            border-top: 1px solid $white;
+            border-bottom: 1px solid $white;
+            content: '';
+            opacity: 0;
+            transform: rotate3d(0,0,1,45deg) scale3d(1,0,1);
+            transform-origin: 50% 50%;
           }
         }
-
         &:hover{
-          a {
-            img {
-              opacity: 0.5;
-              transition: 0.3s;
-            }
+          @include transition($time:0.4s);
 
-            .i_products_sliders_text {
-              color: $white;
-              transition: 0.5s;
-              background: $color1;
-            }
+          img{
+            opacity: 0.7;
+          }
+          .i_products_sliders_sak::after {
+            opacity: 1;
+          }
+          h1 {
+            opacity: 1;
+            transform: scale3d(1,1,1);
+          }
+          p {
+            opacity: 1;
+            transform: scale3d(1,1,1);
           }
         }
+
       }
 
       .i_products_sliders_bg_1{
