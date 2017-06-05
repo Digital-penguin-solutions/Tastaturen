@@ -1,4 +1,3 @@
-console.log("KKKKKKKKKKKKKKÖR");
 function close_edit_view(){
     $("#editor").css("visibility", "hidden");
 }
