@@ -1,0 +1,16 @@
+@import "../everything";
+
+.admin_info_container{
+    position:fixed;
+    bottom: 7%;
+    width:30%;
+    left:25%;
+    height:13%;
+    background:rgba(255,255,255,0.7);
+    z-index:10000;
+    text-align:center;
+
+    p{
+        font-size:1.9vh;
+    }
+}
