@@ -19,7 +19,8 @@ var names = [];
 
 function on_ready_product_sorter(){
 
-    var all_products = document.getElementsByClassName("pe_product");
+    var all_products = document.getElementsByClassName("pe_prod_prod");
+    console.log("kör123");
 
     for(var i = 0; i < all_products.length; i++){
         var product = all_products[i];
@@ -27,6 +28,7 @@ function on_ready_product_sorter(){
 
         // get type
         var type = product.getElementsByClassName("pe_type")[0].innerHTML.trim();
+        console.log("asd: " + type);
 
         var price;
         var name;

@@ -1785,6 +1785,9 @@ section {
         color: #ffffff;
         font-size: 1.6vw; }
 
+.pe_type {
+  visibility: hidden; }
+
 .pe_prod {
   min-height: 70vh; }
   .pe_prod .pe_prod_container .pe_prod_sort {
