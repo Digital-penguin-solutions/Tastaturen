@@ -285,18 +285,17 @@ if(!isset($functions_included)){
 
     //Echo all products in the index slider
     function echo_products_index($products){
-
-        $i          = 0;
-        $firs       = 'i_products_sliders_bg_1';
-        $second     = 'i_products_sliders_bg_2';
-        $third      = 'i_products_sliders_bg_3';
+        $i      = 0;
+        $firs   = 'i_products_sliders_bg_1';
+        $second = 'i_products_sliders_bg_2';
+        $third  = 'i_products_sliders_bg_3';
 
         foreach($products as $product){
-            $name = $product['name'];
+            $name  = $product['name'];
             $short = $product['short_description'];
             $price = $product['price'];
             $image = $product['main_image'];
-            $id = $product['product_id'];
+            $id    = $product['product_id'];
 
             $i++;
 

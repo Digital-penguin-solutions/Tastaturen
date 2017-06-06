@@ -13,10 +13,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -103,10 +103,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -211,10 +211,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -298,6 +298,8 @@ section {
     position: relative;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 20vw;
     height: 10vh;
@@ -348,10 +350,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -443,7 +445,6 @@ section {
     border-left: 4vw solid transparent; }
   .nav_d .nav_d_container .nav_cart {
     z-index: 10002;
-    display: -ms-flexbox;
     display: flex; }
     .nav_d .nav_d_container .nav_cart i {
       font-size: 10vw; }
@@ -460,6 +461,8 @@ section {
     text-align: right;
     position: absolut;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%); }
     .nav_d .nav_d_container .nav_d_link a {
       display: block;
@@ -485,10 +488,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -672,10 +675,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -765,10 +768,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -876,6 +879,8 @@ section {
       margin-top: 10vh;
       position: absolute;
       left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
       transform: translateX(-50%); }
       .edit .edit_container .edit_container_container .btn_container .save, .edit .edit_container .edit_container_container .btn_container .close {
         border: 2px solid #000000;
@@ -912,10 +917,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -1014,10 +1019,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -1116,6 +1121,8 @@ section {
   .piano .piano_container {
     position: relative;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     margin-top: 18vh;
     position: absolute;
@@ -1179,10 +1186,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -1431,7 +1438,6 @@ section {
   margin-top: 5vh;
   margin-left: 20vw;
   font-size: 1vw;
-  display: -ms-inline-flexbox;
   display: inline-flex; }
   .login p {
     font-weight: 600;
@@ -1454,10 +1460,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -1544,10 +1550,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -1634,10 +1640,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -1776,6 +1782,8 @@ section {
       z-index: 100;
       position: relative;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-left: 2vw; }
       .pe_header .pe_header_container .pe_header_text h1 {
@@ -1803,6 +1811,8 @@ section {
       position: absolute;
       position: absolute;
       left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
       transform: translateX(-50%); }
       .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price {
         width: 10vw; }
@@ -1831,11 +1841,16 @@ section {
       position: absolute;
       left: 50%;
       top: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       height: 35vh;
       width: 35vh;
       margin-top: 2vh; }
     .pe_prod .pe_prod_container .pe_prod_contariner2 .pe_prod_prod:hover {
+      -webkit-transition: all 0.4s linear;
+      -moz-transition: all 0.4s linear;
+      -o-transition: all 0.4s linear;
       transition: all 0.4s linear; }
       .pe_prod .pe_prod_container .pe_prod_contariner2 .pe_prod_prod:hover img {
         opacity: 0.4; }
@@ -1853,10 +1868,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -1943,10 +1958,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -2166,6 +2181,8 @@ section {
         position: absolute;
         position: absolute;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         z-index: 100;
         bottom: -13vh; }
@@ -2182,6 +2199,8 @@ section {
     .p_info .p_info_container .p_info_text {
       position: relative;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       color: #ffffff; }
       .p_info .p_info_container .p_info_text h1 {
@@ -2198,11 +2217,15 @@ section {
     .p_info .p_info_container .p_info_img {
       position: relative;
       top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       max-height: 60%; }
       .p_info .p_info_container .p_info_img img {
         position: relative;
         left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         height: 100%; }
 
@@ -2224,6 +2247,8 @@ section {
     position: absolute;
     position: absolute;
     top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     color: #ffffff;
     margin-top: -5vh;
@@ -2254,10 +2279,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -2359,6 +2384,8 @@ section {
           .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_img {
             position: relative;
             top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             right: 0;
             position: absolute; }
@@ -2380,6 +2407,8 @@ section {
           .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_img {
             position: relative;
             top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             left: 0;
             position: absolute; }
@@ -2411,6 +2440,8 @@ section {
             color: #1536ff;
             position: relative;
             top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             margin-top: -10vh; }
             .i_header .i_header_container .i_header_slider .i_slider_2_container .i_slider_2_text .i_slider_2_text_container h1 {
@@ -2455,12 +2486,16 @@ section {
           position: absolute;
           left: 50%;
           top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
           z-index: 10000; }
           .i_header .i_header_container .i_header_slider .i_slider_3_container .i_slider_3_video .i_slider_3_video_btn i {
             position: absolute;
             left: 50%;
             top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             font-size: 8vw;
             color: red;
@@ -2479,6 +2514,8 @@ section {
             height: 100vh;
             position: relative;
             top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             margin-top: -35vh;
             text-align: center; }
@@ -2543,10 +2580,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -2643,10 +2680,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -2763,6 +2800,8 @@ section {
         position: absolute;
         left: 50%;
         top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         position: absolute;
         border: 2px solid #ffffff;
@@ -2777,71 +2816,80 @@ section {
           background: #1536ff;
           border: 0;
           transition: 0.5s; }
-    .i_products .i_products_container .i_products .i_products_sliders {
-      height: 60vh; }
-      .i_products .i_products_container .i_products .i_products_sliders .i_products_sliders_sak {
-        height: 60vh;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        text-decoration: none; }
-        .i_products .i_products_container .i_products .i_products_sliders .i_products_sliders_sak img {
-          position: absolute;
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          height: 35vh;
-          width: 35vh;
-          margin-top: 2vh;
-          opacity: 1;
-          transition: opacity 0.35s, transform 0.35s; }
-        .i_products .i_products_container .i_products .i_products_sliders .i_products_sliders_sak h1 {
-          text-align: center;
-          font-size: 4vw;
-          font-weight: 500;
-          color: #ffffff;
-          text-transform: capitalize;
-          opacity: 1;
-          transform: scale3d(0.8, 0.8, 1);
-          transition: transform 0.35s; }
-        .i_products .i_products_container .i_products .i_products_sliders .i_products_sliders_sak p {
-          transition: opacity 0.35s, transform 0.35s;
-          transform: scale3d(0.8, 0.8, 1);
-          padding: 0.5em 2em;
-          text-transform: none;
-          opacity: 0;
-          color: #ffffff;
-          text-align: center;
-          font-size: 2vw; }
-        .i_products .i_products_container .i_products .i_products_sliders .i_products_sliders_sak .short {
-          font-weight: 300; }
-        .i_products .i_products_container .i_products .i_products_sliders .i_products_sliders_sak .price {
-          font-weight: 500; }
-        .i_products .i_products_container .i_products .i_products_sliders .i_products_sliders_sak:after {
-          transition: opacity 0.35s, transform 0.35s;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          border-top: 1px solid #ffffff;
-          border-bottom: 1px solid #ffffff;
-          content: '';
-          opacity: 0;
-          transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
-          transform-origin: 50% 50%; }
-      .i_products .i_products_container .i_products .i_products_sliders:hover {
-        transition: all 0.4s linear; }
-        .i_products .i_products_container .i_products .i_products_sliders:hover img {
-          opacity: 0.7; }
-        .i_products .i_products_container .i_products .i_products_sliders:hover .i_products_sliders_sak::after {
-          opacity: 1; }
-        .i_products .i_products_container .i_products .i_products_sliders:hover h1 {
-          opacity: 1;
-          transform: scale3d(1, 1, 1); }
-        .i_products .i_products_container .i_products .i_products_sliders:hover p {
-          opacity: 1;
-          transform: scale3d(1, 1, 1); }
+    .i_products .i_products_container .i_products .i_products_slider {
+      position: relative;
+      height: 60vh;
+      width: 100%; }
+      .i_products .i_products_container .i_products .i_products_slider .i_products_sliders {
+        height: 60vh; }
+        .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak {
+          margin-top: 5vh;
+          margin-bottom: 5vh;
+          text-decoration: none;
+          width: 100%; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak img {
+            position: absolute;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            height: 35vh;
+            width: 35vh;
+            margin-top: 2vh;
+            opacity: 1;
+            transition: opacity 0.35s, transform 0.35s; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak h1 {
+            text-align: center;
+            font-size: 4vw;
+            font-weight: 500;
+            color: #ffffff;
+            text-transform: capitalize;
+            opacity: 1;
+            transform: scale3d(0.8, 0.8, 1);
+            transition: transform 0.35s; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak p {
+            transition: opacity 0.35s, transform 0.35s;
+            transform: scale3d(0.8, 0.8, 1);
+            padding: 0.5em 2em;
+            text-transform: none;
+            opacity: 0;
+            color: #ffffff;
+            text-align: center;
+            font-size: 2vw; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak .short {
+            font-weight: 300; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak .price {
+            font-weight: 500; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak:after {
+            transition: opacity 0.35s, transform 0.35s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+            content: '';
+            opacity: 0;
+            transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
+            transform-origin: 50% 50%; }
+        .i_products .i_products_container .i_products .i_products_slider .i_products_sliders:hover {
+          -webkit-transition: all 0.4s linear;
+          -moz-transition: all 0.4s linear;
+          -o-transition: all 0.4s linear;
+          transition: all 0.4s linear; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders:hover img {
+            opacity: 0.7; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders:hover .i_products_sliders_sak::after {
+            opacity: 1; }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders:hover h1 {
+            opacity: 1;
+            transform: scale3d(1, 1, 1); }
+          .i_products .i_products_container .i_products .i_products_slider .i_products_sliders:hover p {
+            opacity: 1;
+            transform: scale3d(1, 1, 1); }
     .i_products .i_products_container .i_products .i_products_sliders_bg_1 {
       background: #ababab; }
     .i_products .i_products_container .i_products .i_products_sliders_bg_2 {
@@ -2873,10 +2921,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
@@ -2988,10 +3036,10 @@ section {
   z-index: 2;
   position: relative; }
 
-.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nom, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_contact .i_contact_container {
+.nop, .nopm, .wrapper, html, body, section, .loader_container, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_prod_head .p_prod_head_container .slideshow, .p_slider, .p_slider .p_slider_container, .p_info2, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_sak, .i_contact .i_contact_container {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .loader_container, .background_image_container, .background_image_container img {
