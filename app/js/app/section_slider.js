@@ -86,49 +86,7 @@ function slider_go_to_page(slider_number, page){
                 //$(old_page).css("opacity", "0");
             });
 
-
-            //new_page.style.visibility = "hidden";
-            //var new_page_image = new_page.getElementsByTagName("img")[0];
-            //var new_page_image = new_page.getElementsByClassName("section_background")[0];
-
-            // if the new page has a background image
-            //if(new_page_image != undefined){
-                ////var background_image = new_page_image.src;
-                //////new_page.getElementsByClassName("background_image_container")[0].getElementsByTagName("img")[0].style.visibility = "hidden";
-                ////new_page.parentNode.style.background = "url(" + background_image + ") no-repeat center center";
-                ////new_page.parentNode.style.backgroundSize = "100% 100%";
-            //}
-            //else {
-                ////new_page.parentNode.style.background = "none";
-
-            //}
-
-
-
-            //$(pages).fadeToggle(slider_speed, function() {
-            //});
-
-
-            //for (var i = 0; i < pages.length; i++)
-            //{
-
-                //var margin_left = (i * 100) - page * 100 + "%";
-                //$(pages[i]).animate({'left' : margin_left}, 0);
-
-            //}
-
-
-            //var fade_in_time = slider_speed / 2;
-
-            //if(no_content){
-                //fade_in_time = 0;
-            //}
-
-            //$(pages).fadeToggle(fade_in_time, function(){
-                //sliding = false;
-            //});
             var nth = ":nth-child("+(page+1)+")";
-
 
 
             // if there is a list on this slider
@@ -165,7 +123,7 @@ function slider_go_to_page(slider_number, page){
 }
 
 
-function move(left, comp){
+function move_section(left, comp){
 
     var slider_num = $(comp).attr("slider_number");
 
@@ -202,7 +160,7 @@ function init_sliders(){
         var slider_parent = $(slider).parent();
 
         if(!$(slider).hasClass("no_auto_slide")){
-            setInterval(function(){move(false, slider);}, 5000);
+            setInterval(function(){move_section(false, slider);}, 5000);
         }
 
         if (!$(slider).hasClass("no_list")){
@@ -318,11 +276,11 @@ function init_sliders(){
             $(slider).append(right_arrow);
 
             $(left_arrow).click(function(){
-                move(true, this);
+                move_section(true, this);
             });
 
             $(right_arrow).click(function(){
-                move(false, this);
+                move_section(false, this);
             });
 
 
