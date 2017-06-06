@@ -6,7 +6,6 @@
     <meta name="description" content="Tastaturen"/>
     <meta name="keywords" content="orgel, instrument, musik"/>
     <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
-
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
@@ -139,7 +138,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 </section>
 
 <!-- Media section -->
-<?php include "views/index_media.php"?>
+<?php //include "views/index_media.php"?>
 
 <!-- Footer -->
 <?php include "partials/footer.php" ?>

@@ -1,5 +1,5 @@
 Viktigt
-    * Fixa alla länkar på sidan
+    * Fixa alla länkar på sidan.
     * Mobil anpassa hela hemsidan.
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen
     * Fixa robot.txt filen.
@@ -32,6 +32,7 @@ Prudkter
 
 Prudukt detaljer
     * Fixa så att det finns 2 olika pruduct details sidor beroende på vilken knapp man trycker på.
+    * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt.
     * mobil andpassa sidan.
 
 Admin
