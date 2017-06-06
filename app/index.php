@@ -69,7 +69,9 @@ $products_church = get_all_visible_products($con, "kyrka");
                     <img src="img/Index_slider/right_arrow.svg" alt="Slide right">
                 </div>
 
-                <?php echo_products_index($products_church);?>
+                <div class="i_products_slider">
+                    <?php echo_products_index($products_church);?>
+                </div>
 
                 <div class="i_products_bt_container">
                     <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
@@ -88,7 +90,9 @@ $products_church = get_all_visible_products($con, "kyrka");
                     <img src="img/Index_slider/right_arrow.svg" alt="Slide right">
                 </div>
 
-                <?php echo_products_index($products_home);?>
+                <div class="i_products_slider">
+                    <?php echo_products_index($products_home);?>
+                </div>
 
                 <div class="i_products_bt_container">
                     <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
