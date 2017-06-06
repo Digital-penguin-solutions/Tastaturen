@@ -1,40 +1,65 @@
 @import "../everything";
 
 .footer{
-  background: $color5;
-  height: 50vh;
-
+  min-height: 30vh;
+  background: $color4;
   .footer_container{
-
-    .footer_left{
-
-      h2{
-        text-align: center;
-        color: $color2;
-        font-size: 2.5vw;
-        font-weight:400;
-      }
-
+    .footer_top{
+      text-align: center;
+      width:100%;
+      min-height:15vh;
       a{
-        margin-left:2vw;
-        display: block;
-        color: $color2;
-        font-size: 1.3vw;
-        font-weight:300;
-        text-decoration: none;
-
-        &:hover{
+        text-align: center;
+        i{
           color: $white;
+          font-size: 3vw;
+          margin:2vw;
+        }
+        &:hover{
+          i {
+            color: darken($white, 20%);
+          }
         }
       }
     }
 
     .footer_mid{
-
+      text-align: center;
+      min-height:10vh;
+      ul {
+        display: inline-flex;
+        li {
+          display: inline-flex;
+          a {
+            color: $white;
+            font-size: 1.2vw;
+            text-decoration: none;
+            margin: 0.4vw;
+            &:hover {
+              color: darken($white, 15%);
+            }
+          }
+        }
+      }
+      
+      hr{
+        width: 70%;
+        border-color: rgba($color2, 0.8);
+      }
     }
 
-    .footer_right{
-
+    .footer_bot{
+      text-align: center;
+      min-height:15vh;
+      margin-bottom:-5vh;
+      p{
+        color: darken($white, 20%);
+        font-size:0.8vw;
+        a{
+          color: $color1;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
