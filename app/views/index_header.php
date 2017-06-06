@@ -21,7 +21,7 @@
                             <p>Herp derpsum perp dee derp, mer herderder.
                                 Sherp berp derpler,</p>
                             <button class = "slide-in-delay-3 slide-in slide-in-left"
-                                    onclick="location.href='product_details'">Kyrkobruk</button>
+                                    onclick="location.href='product_details?t=kyrka'">Kyrkobruk</button>
                         </div>
                     </div>
 
@@ -35,7 +35,7 @@
                             <p>Herp derpsum perp dee derp, mer herderder.
                                 Sherp berp derpler,</p>
                             <button class = "slide-in-delay-3 slide-in"
-                                    onclick="location.href='product_details'">Hemmabruk</button>
+                                    onclick="location.href='product_details?t=hem'">Hemmabruk</button>
                         </div>
                     </div>
                 </div>

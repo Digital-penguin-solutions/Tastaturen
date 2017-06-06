@@ -13,7 +13,6 @@
 <?php
 include "partials/nav.php";
 include "functions/functions.php";
-include "views/edit.php";
 
 $con             = connect();
 $products_home   = get_all_visible_products($con, "hem");

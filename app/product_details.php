@@ -18,7 +18,7 @@ if(isset($_GET['t'])){
     $type = $_GET['t'];
 }
 else {
-    $type = "home";
+    $type = "hem";
 }
 ?>
 
@@ -27,7 +27,16 @@ else {
     <div class="row-fluid pe_header_container col-xs-12">
         <div class="pe_header_bg"></div>
         <div class="pe_header_text col-xs-6">
-            <h1>Orglar för kyrkobruk</h1>
+        <h1>
+        <?php 
+            if($type == "hem"){
+                print_field("pe_header_home");
+            }
+            else {
+                print_field("pe_header_church");
+            }
+        ?>
+        </h1>
             <p>Det finns många fina orglar. Dessa orglar är mycket fina och kan göra mycket
                 fina saker.</p>
         </div>
@@ -49,7 +58,7 @@ else {
 
             <div class="pe_prod_contariner2 col-xs-11">
                 <?php
-                $products = get_all_visible_products($con, "");
+                $products = get_all_visible_products($con, $type);
                 $len        = count($products);
                 $odds       = 'prud-big';
                 $odd        = 'col-xs-11 col-xs-offset-1';

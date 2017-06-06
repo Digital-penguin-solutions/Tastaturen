@@ -19,9 +19,17 @@ if(isset($_SESSION['admin'])){
 ?>
     <script>
         var prev = document.referrer;
-        prev = prev.split("?")[0];
+        var split = prev.split("?")[0];
+        //prev = split[0];
         var rand = '<?php echo $randi; ?>';
-        window.location.href = prev + "?r=" + rand;
+        if(prev.indexOf("?") == -1){
+            window.location.href = prev + "?r=" + rand;
+        }
+        else {
+            window.location.href = prev + "&r=" + rand;
+        }
+        //window.location.href = prev + "?r=" + rand + "&" + split[1];
+        //window.location.href = prev + "&r=
     </script>
 
 <?php
