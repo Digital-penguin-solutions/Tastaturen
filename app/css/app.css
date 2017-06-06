@@ -1809,24 +1809,24 @@ section {
       .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
         width: 10vw;
         margin-left: 5vw; }
-  .pe_prod .pe_prod_container .pe_prod_contariner2 .pe_prod_prod {
+  .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod {
     height: 50vh;
     background: #212121;
     margin-top: 5vh;
     margin-bottom: 5vh;
     text-decoration: none; }
-    .pe_prod .pe_prod_container .pe_prod_contariner2 .pe_prod_prod h1 {
+    .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod h1 {
       text-align: center;
       font-size: 4vw;
       font-weight: 500;
       color: #ffffff;
       text-transform: capitalize; }
-    .pe_prod .pe_prod_container .pe_prod_contariner2 .pe_prod_prod p {
+    .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod p {
       font-size: 2vw;
       font-weight: 300;
       color: #ffffff;
       text-align: center; }
-    .pe_prod .pe_prod_container .pe_prod_contariner2 .pe_prod_prod img {
+    .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod img {
       position: absolute;
       position: absolute;
       left: 50%;
@@ -1835,9 +1835,9 @@ section {
       height: 35vh;
       width: 35vh;
       margin-top: 2vh; }
-    .pe_prod .pe_prod_container .pe_prod_contariner2 .pe_prod_prod:hover {
+    .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod:hover {
       transition: all 0.4s linear; }
-      .pe_prod .pe_prod_container .pe_prod_contariner2 .pe_prod_prod:hover img {
+      .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod:hover img {
         opacity: 0.4; }
 
 .wrapper, html, body {

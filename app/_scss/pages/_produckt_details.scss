@@ -45,6 +45,8 @@
 .pe_type {
     visibility:hidden;
 }
+
+
 .pe_prod {
   min-height: 70vh;
   .pe_prod_container {
@@ -74,7 +76,7 @@
         }
       }
     }
-    .pe_prod_contariner2 {
+    .pe_prod_container2 {
       .pe_prod_prod {
         height: 50vh;
         background: $color4;
