@@ -13,6 +13,13 @@
 include "partials/nav.php";
 include "functions/functions.php";
 $con = connect();
+
+if(isset($_GET['t'])){
+    $type = $_GET['t'];
+}
+else {
+    $type = "home";
+}
 ?>
 
 <!--Header -->
@@ -21,7 +28,7 @@ $con = connect();
         <div class="pe_header_bg"></div>
         <div class="pe_header_text col-xs-6">
             <h1>Orglar för kyrkobruk</h1>
-            <p>Det finns många finna orglar. Dessa orglar är mycket fina och kan göra mycket
+            <p>Det finns många fina orglar. Dessa orglar är mycket fina och kan göra mycket
                 fina saker.</p>
         </div>
     </div>
