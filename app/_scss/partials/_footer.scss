@@ -1,8 +1,9 @@
 @import "../everything";
 
 .footer{
-  min-height: 30vh;
+  min-height: 40vh;
   background: $color4;
+  overflow: hidden;
   .footer_container{
     .footer_top{
       text-align: center;

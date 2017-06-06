@@ -1,5 +1,7 @@
 Viktigt
+    * Fixa alla länkar på sidan
     * Mobil anpassa hela hemsidan.
+    * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen
     * Fixa robot.txt filen.
     * SEO hela sidan.
     * opimizera hastighet.
@@ -41,9 +43,8 @@ Admin
     * Designa om sidan men ha kvar piano elementet.
 
 footer
-    * Designa en footer med Länk till facebook och lite annat.
-    * Lägg till en länk till admin sidan.
-    * Extra kontakt uppgifter.
+    * Fixa alla länkar
+    * Mobil anpassa
 
 Nav
     * Fixa köp knapen.
