@@ -34,6 +34,7 @@ Prudukt detaljer
 Admin
     * Lägga till en redigera knapp för alla texter och bilder som bara syns när du är inloggad som admin.
         Eller skriva en text som beskriver hur man kan redigera saker.
+    *Quick edit när man är inne på produkter
 
 404
     * Designa om sidan men ha kvar piano elementet.

@@ -2620,7 +2620,12 @@ section {
 .i_media {
   height: 200vh; }
   .i_media .i_media_container {
-    height: 100%; }
+    height: 100%;
+    margin: auto; }
+  .i_media .i_grid_item {
+    height: 100px;
+    width: 100px;
+    background: blue; }
 
 .wrapper, html, body {
   background: #ffffff;
