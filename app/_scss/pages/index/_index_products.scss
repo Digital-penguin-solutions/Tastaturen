@@ -87,8 +87,9 @@
         width: 100%;
         @extend .nopm;
         .i_products_sliders {
+          position:absolute;
           height: 60vh;
-          .i_products_sliders_sak {
+          .i_products_sliders_item {
             margin-top: 5vh;
             margin-bottom: 5vh;
             text-decoration: none;
@@ -156,7 +157,7 @@
             img {
               opacity: 0.7;
             }
-            .i_products_sliders_sak::after {
+            .i_products_sliders_item::after {
               opacity: 1;
             }
             h1 {

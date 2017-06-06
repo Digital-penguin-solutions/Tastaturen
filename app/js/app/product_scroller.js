@@ -18,6 +18,7 @@ function init_arrows(arrow_l, arrow_r, container){
     });
 
 }
+
 function init_product_slider(){
     var slider_containers = document.getElementsByClassName("product_slider_container");
 

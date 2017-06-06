@@ -1,5 +1,6 @@
 <?php
 //include "include_pages/loading.php";
+$no_admin_info = "1";
 include "partials/head.php";
 ?>
 <!DOCTYPE html>

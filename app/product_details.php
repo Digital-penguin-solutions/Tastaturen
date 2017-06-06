@@ -51,16 +51,16 @@ else {
             <div class="pe_prod_sort col-xs-12">
                 <h1>Sortera</h1>
                 <div class="pe_prod_btn">
-                    <button class="pe_product_price">Pris</button>
-                    <button class="pe_product_name">Namn</button>
+                    <button onclick="sortByPrice(this)" class="pe_product_price">Pris</button>
+                    <button onclick="sortByName(this)" class="pe_product_name">Namn</button>
                 </div>
             </div>
 
-            <div class="pe_prod_contariner2 col-xs-11">
+            <div class="pe_prod_container2 col-xs-11">
                 <?php
                 $products = get_all_visible_products($con, $type);
                 $len        = count($products);
-                $odds       = 'prud-big';
+                //$odds       = 'prud-big';
                 $odd        = 'col-xs-11 col-xs-offset-1';
                 $even       = 'col-md-5 col-xs-offset-1 col-xs-11';
 
@@ -74,18 +74,18 @@ else {
                     //check if the last pruduct is alone then it covers the entier page
                     if (($i == $len-1) && ($len%2 == 1)){
                         $size     = $odd;
-                        $size_big = $odds;
+                        //$size_big = $odds;
                     }
                     else{
                         $size     = $even;
-                        $size_big = Null;
+                        //$size_big = Null;
                     }
                     ?>
                     <a href="#" class="pe_prod_prod <?php echo $size ?>">
                         <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
-                        <h1><?php echo $name;?></h1>
+                        <h1 class = "pe_name"><?php echo $name;?></h1>
                         <p><?php echo $short;?> </p>
-                        <p><?php echo $price;?></p>
+                        <p class = "pe_price"><?php echo $price;?></p>
                     </a>
                 <?php } ?>
             </div>
