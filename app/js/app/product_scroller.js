@@ -1,8 +1,10 @@
 $(document).ready(on_ready_product_scroller);
 
-var sliding = false;
 var all_sliders = [];
 var all_current_left = [];
+
+var currently_sliding = false;
+
 
 function on_ready_product_scroller () {
     init_product_slider();
@@ -28,7 +30,7 @@ function init_product_slider(){
         var container = slider_containers[i];
 
         all_sliders[i] = container;
-        all_current_left[i] = 0;
+        //all_current_left[i] = 0;
 
         var left_arrow = container.getElementsByClassName("i_products_arrow_r");
         var right_arrow = container.getElementsByClassName("i_products_arrow_l");
@@ -37,25 +39,28 @@ function init_product_slider(){
 
         var products = container.getElementsByClassName("i_products_sliders");
 
+        product_width = get_width_in_percentage(products[0]);
+        console.log("width: " +product_width);
+
         for(var n = 0; n < products.length; n++){
             var product = products[n];
-            var product_width = get_width_in_percentage(product);
+            //var product_width = get_width_in_percentage(product);
             var left = product_width*n + "%";
             $(product).css("left", left);
         }
     }
 }
 
+var product_width;
+
 function move(left, products_container){
 
     var products_container = products_container.getElementsByClassName("i_products_slider")[0];
     var i = all_sliders.indexOf(products_container);
 
-    //sliding= false; //tmp
-    sliding = false;
-    if(!sliding){
+    if(currently_sliding === false){
         console.log("ready");
-        sliding = true;
+        currently_sliding = true;
 
         var dir = -1;
 
@@ -64,7 +69,7 @@ function move(left, products_container){
         }
 
         var products = products_container.getElementsByClassName("i_products_sliders");
-        var product_width = get_width_in_percentage(products[0]);
+        console.log(product_width);
         //console.log(products);
 
         // if you've gone all the way to the left
@@ -80,7 +85,6 @@ function move(left, products_container){
             dir = 0;
         }
 
-         // START MOVING STUFF
         var old_left = get_left_in_percentage(products_container);
 
         // it will be "auto" at first. Minus the o because the function removes last character
@@ -93,7 +97,7 @@ function move(left, products_container){
 
         // rounds to three decimals
         var new_left = old_left*1.0 + product_width*dir;
-        new_left = (Math.round(new_left*1000) / 1000) + "%";
+        new_left = (Math.round(new_left*1000) / 1000);
 
 
         //$(products_container).velocity({
@@ -105,25 +109,27 @@ function move(left, products_container){
             //}
         //});
 
-        $(products_container).animate({
-            left: new_left
-        },900,'easeOutQuint', function(){
-            sliding = false;
-        });
 
 
 
-        // END OF MOVING STUFF
 
         // gets the current left value of the container
         //var current_left_real = get_left_in_percentage(products_container);
         var current_left_real = all_current_left[i];
+        console.log("current_left_real: ");
+        console.log(current_left_real);
         var current_left = Math.round(current_left_real);
 
+
+        $(products_container).animate({
+            left: (new_left + "%")
+        },900,'easeOutQuint', function(){
+            currently_sliding = false;
+        });
         // makes sure current_left isn't NaN
-        if(isNaN(current_left)){
-            current_left = 0;
-        }
+        //if(isNaN(current_left)){
+            //current_left = 0;
+        //}
 
         // the left value of the last product
         var last_product_left = (get_left_in_percentage(products[products.length-1]));
@@ -185,6 +191,8 @@ function move(left, products_container){
                 //sliding = false;
             //});
         //}
+        all_current_left[i] = new_left;
+        //currently_sliding = false;
     }
     else {
         console.log("notready");
