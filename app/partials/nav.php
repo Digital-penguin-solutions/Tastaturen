@@ -3,7 +3,7 @@
         <div class="nav_d_triage"></div>
 
         <!-- cart icon -->
-        <div class="cart">
+        <div class="nav_cart">
             <a href="#">
                 <i class="fa fa-bell-o"> </i>
                 Kontakta för köp
