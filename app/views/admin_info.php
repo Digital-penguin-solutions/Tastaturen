@@ -1,7 +1,8 @@
 <?php
     
 if(!isset($no_admin_info)){
-    session_start();
+    include "functions/functions.php";
+    session_start_custom();
 
     if(isset($_SESSION['admin'])){
     ?>

@@ -4,10 +4,20 @@
 //check if functions is included in page to acses them
 if(!isset($functions_included)){
 
+    
+
     $functions_included = true;
 
     //include connect page
     include "db_connect.php";
+
+
+    function session_start_custom(){
+        if(!isset($session_started)){
+            session_start();
+            $session_started = true;
+        }
+    }
 
     // secures a string, protects against SQL injections and other attacks
     function secure_str($data){

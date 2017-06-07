@@ -40,7 +40,6 @@ function init_product_slider(){
         var products = container.getElementsByClassName("i_products_sliders");
 
         product_width = get_width_in_percentage(products[0]);
-        console.log("width: " +product_width);
 
         for(var n = 0; n < products.length; n++){
             var product = products[n];
@@ -98,18 +97,6 @@ function move(left, products_container){
         // rounds to three decimals
         var new_left = old_left*1.0 + product_width*dir;
         new_left = (Math.round(new_left*1000) / 1000);
-
-
-        //$(products_container).velocity({
-            //left:new_left
-        //},{
-            //duration: 700,
-            //complete: function(){
-                //sliding= false;
-            //}
-        //});
-
-
 
 
 

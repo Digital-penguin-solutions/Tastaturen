@@ -12,7 +12,7 @@ include "partials/head.php";
 
 <?php
 include "functions/functions.php";
-session_start();
+session_start_custom();
 $con = connect();
 //$products = get_all_products($con, "");
 $products_home = get_all_products($con, "hem");
