@@ -1,6 +1,8 @@
 $(document).ready(on_ready_product_scroller);
 
 var sliding = false;
+var all_sliders = [];
+var all_current_left = [];
 
 function on_ready_product_scroller () {
     init_product_slider();
@@ -25,6 +27,9 @@ function init_product_slider(){
     for(var i = 0; i < slider_containers.length; i++){
         var container = slider_containers[i];
 
+        all_sliders[i] = container;
+        all_current_left[i] = 0;
+
         var left_arrow = container.getElementsByClassName("i_products_arrow_r");
         var right_arrow = container.getElementsByClassName("i_products_arrow_l");
 
@@ -42,22 +47,31 @@ function init_product_slider(){
 }
 
 function move(left, products_container){
+
+    var products_container = products_container.getElementsByClassName("i_products_slider")[0];
+    var i = all_sliders.indexOf(products_container);
+
+    //sliding= false; //tmp
+    sliding = false;
     if(!sliding){
+        console.log("ready");
         sliding = true;
 
-        var dir = 1;
+        var dir = -1;
 
         if(left){
-            dir = -1;
+            dir = 1;
         }
 
         var products = products_container.getElementsByClassName("i_products_sliders");
         var product_width = get_width_in_percentage(products[0]);
+        //console.log(products);
 
-        // if you've gone all the way to the right
-        if($(products[0]).css("left") == "0px" && left){
-            dir = 0;
-        }
+        // if you've gone all the way to the left
+        //if($(products[0]).css("left") == "0px" && left){
+            //dir = 0;
+        //}
+
 
         var num_showing = Math.round(100 / product_width); // how many products that are visible at one time
 
@@ -66,37 +80,129 @@ function move(left, products_container){
             dir = 0;
         }
 
-        var last_left = Math.round(product_width * (num_showing-1));
-        var last_product_left = Math.round(get_left_in_percentage(products[products.length-1]));
+         // START MOVING STUFF
+        var old_left = get_left_in_percentage(products_container);
 
-        // if you have gone all the way to the left
-        if(last_product_left == last_left && !left){
-            dir = 0;
+        // it will be "auto" at first. Minus the o because the function removes last character
+        if(old_left == "aut"){ 
+            $(products_container).css("left", "0%");
+            old_left = 0;
         }
+
+        old_left = Math.round(old_left*1000) / 1000;
+
+        // rounds to three decimals
+        var new_left = old_left*1.0 + product_width*dir;
+        new_left = (Math.round(new_left*1000) / 1000) + "%";
+
+
+        //$(products_container).velocity({
+            //left:new_left
+        //},{
+            //duration: 700,
+            //complete: function(){
+                //sliding= false;
+            //}
+        //});
+
+        $(products_container).animate({
+            left: new_left
+        },900,'easeOutQuint', function(){
+            sliding = false;
+        });
+
+
+
+        // END OF MOVING STUFF
+
+        // gets the current left value of the container
+        //var current_left_real = get_left_in_percentage(products_container);
+        var current_left_real = all_current_left[i];
+        var current_left = Math.round(current_left_real);
+
+        // makes sure current_left isn't NaN
+        if(isNaN(current_left)){
+            current_left = 0;
+        }
+
+        // the left value of the last product
+        var last_product_left = (get_left_in_percentage(products[products.length-1]));
+        var left_at_leftest = Math.round(-(last_product_left - product_width * (num_showing-1)));
+
+
+        //console.log("current_left: " + current_left);
+        //console.log("last_prodct_left: " + last_product_left);
+        //console.log("left_at_leftest: " + left_at_leftest);
+        //console.log("left: " + left);
+        
+
+        //if you have gone all the way to the right
+        if(left_at_leftest == current_left && !left){
+
+            var first_product = products[0];
+            var first_clone = $(first_product).clone();
+
+            $(first_product).remove();
+            $(products_container).append(first_clone);
+            $(first_clone).css("left", last_product_left*1.0 + 1.0*product_width + "%");
+            //dir = 0;
+        }
+
+        // the left value of the first product 
+        var first_product_left = (get_left_in_percentage(products[0]));
+        var first_product_left_round = Math.round(first_product_left); 
+        
+        // if you gone all the way to the left
+        if(current_left == -first_product_left_round && left){
+
+            // makes a clone of the product that is to be moved
+            var last_product = products[products.length -1];
+            var last_clone = $(last_product).clone();
+
+            
+            // moves the last product to the left of the currently most leftest product
+            $(last_product).remove();
+            $(products_container).prepend(last_clone);
+            $(last_clone).css("left", 1.0*first_product_left - 1.0*product_width + "%");
+
+        }
+
+
+
 
         //var products_container = arrow.parentNode;
-        for(var n = 0; n < products.length; n++){
-            var product = products[n];
+        //for(var n = 0; n < products.length; n++){
+            //var product = products[n];
 
-            var old_left = get_left_in_percentage(product);
+            //var old_left = get_left_in_percentage(product);
 
-            var new_left = (old_left - product_width*dir) + "%";
+            //var new_left = (old_left - product_width*dir) + "%";
 
-            /*$(product).css("left", new_left);*/
-            $(product).animate({
-                left: new_left
-            }, 500, function(){
-                sliding = false;
-            });
-        }
+            //[>$(product).css("left", new_left);<]
+            //$(product).animate({
+                //left: new_left
+            //}, 500, function(){
+                //sliding = false;
+            //});
+        //}
+    }
+    else {
+        console.log("notready");
     }
 }
 
 function get_left_in_percentage(element){
     var left = $(element).clone().appendTo('body').wrap('<div class = "remove_me" style="display: none"></div>').css('left');
     left = left.substr(0, left.length-1); // remove the % symbol
-    $(".remove_me").remove();
+    //$(".remove_me").remove(); 
     return left;
+}
+
+function get_margin_left_in_percentage(element){
+    var width = $(element).clone().appendTo('body').wrap('<div class = "remove_me" style="display: none"></div>').css('margin-left');
+    width = width.substr(0, width.length-1); // remove the % symbol
+    $(".remove_me").remove();
+    return width;
 }
 
 function get_width_in_percentage(element){

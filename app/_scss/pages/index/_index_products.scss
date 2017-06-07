@@ -4,6 +4,7 @@
 .i_products{
   min-height: 60vh;
   background: $color4;
+  @extend .nopm;
 
   .i_products_container{
     @extend .nopm;
