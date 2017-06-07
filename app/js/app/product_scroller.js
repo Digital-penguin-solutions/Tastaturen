@@ -1,6 +1,6 @@
 $(document).ready(on_ready_product_scroller);
 
-var all_sliders = [];
+var all_product_sliders = [];
 var all_current_left = [];
 
 var currently_sliding = false;
@@ -29,7 +29,7 @@ function init_product_slider(){
     for(var i = 0; i < slider_containers.length; i++){
         var container = slider_containers[i];
 
-        all_sliders[i] = container;
+        all_product_sliders[i] = container;
         //all_current_left[i] = 0;
 
         var left_arrow = container.getElementsByClassName("i_products_arrow_r");
@@ -56,7 +56,7 @@ var product_width;
 function move(left, products_container){
 
     var products_container = products_container.getElementsByClassName("i_products_slider")[0];
-    var i = all_sliders.indexOf(products_container);
+    var i = all_product_sliders.indexOf(products_container);
 
     if(currently_sliding === false){
         console.log("ready");
