@@ -21,8 +21,8 @@
         <div class="nav_d_link">
             <a href="index#Intro">Hem</a>
             <a href="index#Info">Om oss</a>
-            <a href="product_details">Orglar för hemmet</a>
-            <a href="product_details">Orglar för kyrkan </a>
+            <a href="product_details?t=hem">Orglar för hemmet</a>
+            <a href="product_details?t=kyrka">Orglar för kyrkan </a>
             <a href="index#kontakta">Kontakta oss</a>
             <a href="index#Media">Media</a>
         </div>

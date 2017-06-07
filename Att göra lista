@@ -12,7 +12,7 @@ Viktigt
 
 Index
     * Head
-        # Slide in efekterna kommer varje gång man byter slider.
+        # Slide in efekterna kommer varje gång man byter slider. (Går inte i nu läget, är omöjligt att ändra i fade-in.js för den är komprimerad.)
         # Slider 3: göra så att knappen fungerar korekt.
         # Ta bort slider sakerna från mobil sidan för att göra den snabbare förutom slider 1 som ska vara kvar.
 
@@ -29,8 +29,7 @@ Prudkter
     * mobil anpassa sidan.
 
 Prudukt detaljer
-    * Fixa så att det finns 2 olika pruduct details sidor beroende på vilken knapp man trycker på.
-    * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt.
+    * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt. 
     * mobil andpassa sidan.
 
 Admin

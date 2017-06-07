@@ -69,6 +69,7 @@ else {
                     $short = $product['short_description'];
                     $price = $product['price'];
                     $image = $product['main_image'];
+                    $id = $product['product_id'];
                     $type = $product['type'];
 
                     //check if the last pruduct is alone then it covers the entier page
@@ -81,7 +82,7 @@ else {
                         //$size_big = Null;
                     }
                     ?>
-                    <a href="#" class="pe_prod_prod <?php echo $size ?>">
+                    <a href="product?id=<?php echo $id; ?>" class="pe_prod_prod <?php echo $size ?>">
                         <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
                         <h1 class = "pe_name"><?php echo $name;?></h1>
                         <p><?php echo $short;?> </p>

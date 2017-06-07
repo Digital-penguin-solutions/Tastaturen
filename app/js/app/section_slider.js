@@ -4,8 +4,9 @@ var sliding = false;
 
 // page slider variables
 var current_page = [];
-var all_sliders = [];
+var all_sliders  = [];
 var slider_speed = 0;
+var intervals    = [];
 
 var selected_background = "#1c2d84";
 var not_selected_background = "#AAAAAA";
@@ -36,13 +37,12 @@ function slider_go_to_page(slider_number, page){
         sliding = true;
         var slider = all_sliders[slider_number];
 
-        var no_content = false;
-
-        if (slider.classList.contains("no_content")){
-            no_content = true;
-        }
-
         var list_container = $(".slider_list_container[slider_number='"+slider_number+"']");
+
+        if(!$(slider).hasClass("no_auto_slide")){
+            clearInterval(intervals[slider_number]);
+            enable_autoslide(slider_number);
+        }
 
         // counts the number of pages on this slider. Minus 2 cause of the two arrows
         var num_pages = $(slider).children().length - 2;
@@ -65,8 +65,9 @@ function slider_go_to_page(slider_number, page){
             // the page that is to be shown
             var new_page = pages[page];
 
+            //reenable_effectss(new_page);
+
             var old_page_nr = current_page[slider_number];
-            //console.log("old_page " + old_page);
 
             var old_page = pages[old_page_nr];
 
@@ -76,9 +77,9 @@ function slider_go_to_page(slider_number, page){
             // sets the old one visible
             $(old_page).css("opacity", "1");
 
-            // puts the new one in front of the old one
-            $(old_page).css("z-index", "10");
+            // puts the new one in front of the old one $(old_page).css("z-index", "10");
             $(new_page).css("z-index", "15");
+            $(old_page).css("z-index", "10");
 
             // fades in the new one
             $(new_page).animate({'opacity' : 1}, slider_speed, function(){
@@ -160,7 +161,11 @@ function init_sliders(){
         var slider_parent = $(slider).parent();
 
         if(!$(slider).hasClass("no_auto_slide")){
-            setInterval(function(){move_section(false, slider);}, 5000);
+            enable_autoslide(i);
+            
+        }
+        else {
+            
         }
 
         if (!$(slider).hasClass("no_list")){
@@ -292,4 +297,16 @@ function init_sliders(){
             $(slider).append(right_arrow);
         }
     }
+}
+
+
+function reenable_effects(page) {
+    
+    
+}
+
+function enable_autoslide(index) {
+    var slider = all_sliders[index];
+    var interval = setInterval(function(){move_section(false, slider);}, 5000);
+    intervals[index] = interval;
 }
