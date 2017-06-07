@@ -74,7 +74,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_products_bt_container">
-                    <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                    <button onclick="location.href='product_details?t=kyrka'" class="i_products_btn">Visa alla</button>
                 </div>
             </div>
 
@@ -95,7 +95,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_products_bt_container">
-                    <button onclick="location.href='product_details'" class="i_products_btn">Visa alla</button>
+                    <button onclick="location.href='product_details?t=hem'" class="i_products_btn">Visa alla</button>
                 </div>
             </div>
 
