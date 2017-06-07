@@ -1,7 +1,7 @@
 @import "../everything";
 
 .footer{
-  min-height: 40vh;
+  min-height: 60vh;
   background: $color5;
   overflow: hidden;
   .footer_container{
@@ -13,8 +13,9 @@
         text-align: center;
         i{
           color: $white;
-          font-size: 3vw;
+          font-size: 10vw;
           margin:2vw;
+          margin-top:5vh;
         }
         &:hover{
           i {
@@ -27,24 +28,28 @@
     .footer_mid{
       text-align: center;
       min-height:10vh;
+      width:100%;
       ul {
-        display: inline-flex;
+        @extend .nopm;
         li {
-          display: inline-flex;
+          display: block;
           a {
             color: $white;
-            font-size: 1.2vw;
+            font-size: 4vw;
             text-decoration: none;
-            margin: 0.4vw;
+
             &:hover {
               color: darken($white, 15%);
             }
           }
         }
       }
-      
+
       hr{
         width: 70%;
+        left: 0;
+        right:0;
+        margin-bottom:5vh;
         border-color: rgba($color2, 0.8);
       }
     }
@@ -55,10 +60,57 @@
       margin-bottom:-5vh;
       p{
         color: darken($white, 20%);
-        font-size:0.8vw;
+        font-size:3vw;
         a{
           color: $color1;
           text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+//tablet size
+@media (min-width: $screen-sm-min) {
+
+}
+
+//desktop size
+@media (min-width: $screen-md-min) {
+  .footer{
+    min-height: 40vh;
+    .footer_container{
+      .footer_top{
+        a{
+          i{
+            margin-top:0;
+            font-size: 3vw;
+          }
+        }
+      }
+      .footer_mid{
+        ul{
+          display: inline-flex;
+          text-align: center;
+          li{
+            display: inline-flex;
+            text-align: center;
+            a{
+              text-align: center;
+              font-size: 1.2vw;
+              margin: 0.4vw;
+            }
+          }
+        }
+        hr{
+
+        }
+      }
+      .footer_bot{
+        p{
+          font-size:0.8vw;
+          a{
+          }
         }
       }
     }

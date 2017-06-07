@@ -103,6 +103,7 @@
     .p_info_img{
       @include vertical-align();
       max-height:60%;
+
       img{
           @include horizontal-align();
           height:100%;
@@ -114,17 +115,21 @@
 .p_slider{
   height: 100vh;
   @extend .nopm;
+
   .p_slider_container{
     height:100vh;
     @extend .nopm;
+
     div{
         padding:0!important;
     }
+
     .p_slider_image{
         width:100%;
         height:100%;
         padding:0 !important;
     }
+
     img{
       //z-index: 50;
       //height:100vh;
@@ -137,32 +142,34 @@
   background: $color4;
   min-height: 50vh;
   @extend .nopm;
+
   .p_info2_container{
+
     .p_info2_text{
       position: absolute;
       @include vertical-align($pos:absolute);
       color: $white;
       margin-top:-5vh;
       margin-bottom:5vh;
+
       h1{
         font-size: 4vw;
         text-align: center;
         font-weight: 600;
       }
+
       p{
         text-align: center;
         font-size: 2.3vw;
         font-weight: 300;
-
       }
-
     }
+
     .p_info2_btn{
       @extend .slider_btn;
       position: absolute;
       width: 100%;
       margin-top:10vh;
-
     }
   }
 }
