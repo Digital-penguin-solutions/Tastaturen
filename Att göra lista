@@ -9,14 +9,13 @@ Viktigt
         # Minimerara request från olika sidor.
 
 Index
-    * Mobilanpass Hela index sidan.
-
     * Head
         # Alla bilderna ska göras klart i bildspelet 4 bilder totalt.
         # Slide in efekterna kommer varje gång man byter slider.
         # Slider 3: göra så att knappen fungerar korekt.
         # Slider 4 fungerar inte korekt.
             * Ska se ut som slider 2
+        # Ta bort slider sakerna från mobil sidan för att göra den snabbare förutom slider 1 som ska vara kvar.
 
     * Pruduct section
         # Göra möhligheten att Bildspelet får upp första punken efter du har gått ett varv.
@@ -38,13 +37,15 @@ Prudukt detaljer
 Admin
     * Lägga till en redigera knapp för alla texter och bilder som bara syns när du är inloggad som admin.
         Eller skriva en text som beskriver hur man kan redigera saker.
-    * Quick edit när man är inne på produkter
+    * Quick edit när man är inne på produkter.
+    * Ta bort alla admin möjlighet från telefonen.
 
 404
     * Designa om sidan men ha kvar piano elementet.
+    * Hitta orgel ljud istället för piano.
 
 footer
-    * Fixa alla länkar
+    * Fixa alla länkar.
 
 Nav
     * Fixa köp knapen.
