@@ -2576,6 +2576,7 @@ section {
         cursor: pointer; }
   .i_header .i_header_container .i_header_slider .i_slider_4_container {
     height: 100vh;
+    width: 100%;
     background: #000; }
     .i_header .i_header_container .i_header_slider .i_slider_4_container .i_slider_4_text {
       height: 100vh;
@@ -2586,12 +2587,8 @@ section {
       .i_header .i_header_container .i_header_slider .i_slider_4_container .i_slider_4_text .i_slider_4_text_container {
         color: #1536ff;
         height: 100vh;
-        position: relative;
-        top: 50%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        margin-top: -35vh;
+        width: 100%;
+        margin-top: 15vh;
         text-align: center; }
         .i_header .i_header_container .i_header_slider .i_slider_4_container .i_slider_4_text .i_slider_4_text_container h1 {
           font-size: 6vw;

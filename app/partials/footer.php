@@ -16,7 +16,7 @@
 
             <div class="footer_mid">
                 <ul>
-                    <li><a href="index#contact">Kontakta</a></li>
+                    <li><a href="index#kontakta">Kontakta</a></li>
                     <li><a href="#">orglar för kyrkan</a></li>
                     <li><a href="#">orglar för hemmet</a></li>
                     <li><a href="#">Terms of service</a></li>

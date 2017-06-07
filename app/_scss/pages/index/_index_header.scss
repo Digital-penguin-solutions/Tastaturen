@@ -264,6 +264,7 @@
         //Slider 4
         .i_slider_4_container{
           height:100vh;
+          width:100%;
           background: #000;
           @extend .nopm;
 
@@ -277,8 +278,8 @@
             .i_slider_4_text_container{
               color: $color1;
               height: 100vh;
-              @include vertical-align();
-              margin-top:-35vh;
+              width:100%;
+              margin-top:15vh;
               text-align: center;
 
               h1{

@@ -12,5 +12,4 @@ if(!isset($no_admin_info)){
     <?php
     }
 }
-
 ?>

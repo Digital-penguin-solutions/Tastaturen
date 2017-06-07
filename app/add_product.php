@@ -6,8 +6,8 @@ include "partials/head.php";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="MetSense - A page to add new pruduckts ti the webpage">
     <title>MetSense add product</title>
+    <meta name="description" content="MetSense - A page to add new pruduckts ti the webpage">
 </head>
 
 <?php
@@ -67,7 +67,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     // if there is a new brochure. The data will be collected and later uploaded
     if($_FILES['brochure']['size'] > 0){
         $brochure_tmp_name = $_FILES['brochure']['tmp_name'];
-        $fp = fopen($brochure_tmp_name, 'r'); 
+        $fp = fopen($brochure_tmp_name, 'r');
         $brochure_data = fread($fp, filesize($brochure_tmp_name));
         $brochure_data = mysqli_real_escape_string($con, $brochure_data);
         fclose($fp);
@@ -94,7 +94,6 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
             mysqli_query($con, $query) or die (mysqli_error($con));
 
         }
-
     }
 
     // UPLOAD OF SINGLE IMAGES
