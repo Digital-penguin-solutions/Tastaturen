@@ -46,29 +46,33 @@
     visibility:hidden;
 }
 
-
 .pe_prod {
   min-height: 70vh;
+
   .pe_prod_container {
     @extend .nopm;
+
     .pe_prod_sort {
       height: 18vh;
       background: $color5;
+
       h1 {
         text-align: center;
         color: $white;
         font-size: 3vw;
         text-transform: capitalize;
-
       }
+
       .pe_prod_btn {
         margin-top:1vh;
         position: absolute;
         @include horizontal-align($pos:absolute);
+
         .pe_product_price {
           @extend .button;
           width: 10vw;
         }
+
         .pe_product_name {
           @extend .button;
           width: 10vw;
@@ -76,7 +80,10 @@
         }
       }
     }
+
     .pe_prod_container2 {
+      cursor: pointer;
+
       .pe_prod_prod {
         height: 50vh;
         background: $color4;
@@ -106,6 +113,7 @@
           width: 35vh;
           margin-top:2vh;
         }
+
         &:hover{
           @include transition($time:0.4s);
 

@@ -111,167 +111,6 @@
         }
       }
 
-      // Slider 2
-      .i_slider_2_container{
-        height:100vh;
-        background: #000;
-        @extend .nopm;
-
-        .i_slider_2_text{
-          left:0;
-          top:0;
-          height: 100vh;
-          width: 100%;
-          z-index: 100;
-          position: absolute;
-          background: rgba($color5, 0.3);
-
-          .i_slider_2_text_container{
-            color: $color1;
-            @include vertical-align();
-            margin-top:-10vh;
-
-            h1{
-              font-size: 6vw;
-              font-weight: 600;
-              text-transform: uppercase;
-            }
-
-            p{
-              color: #ffffff;
-              font-size: 2vw;
-              font-weight: 400;
-            }
-
-            .i_slider_2_btn{
-              margin-top:3vh;
-
-              button{
-                border: 2px solid $white;
-                color: $white;
-                background: rgba($color5, 0.25);
-                text-align: center;
-                text-decoration: none;
-                font-size: 1.2vw;
-                width: 12vw;
-                height: 4.5vh;
-              }
-
-              &:hover{
-                button {
-                  background: $color1;
-                  border: 0;
-                  transition: 0.5s;
-                }
-              }
-            }
-
-          }
-        }
-        .i_slider_2_img{
-          z-index: 99;
-          height: 100vh;
-          width:100%;
-          img{
-            width:100%;
-            height: 100%;
-          }
-        }
-      }
-
-      // Slider 3
-      .i_slider_3_container{
-        .i_slider_3_video{
-          height: 100vh;
-          width: 100%;
-          .i_slider_3_video_player{
-            height: 100vh;
-            width: 100%;
-            z-index: 100;
-          }
-          .i_slider_3_video_btn{
-            position: absolute;
-            @include center-align($pos:absolute);
-            z-index: 10000;
-            i{
-              @include center-align($pos:absolute);
-              font-size: 8vw;
-              color: red;
-              cursor: pointer;
-            }
-          }
-        }
-      }
-
-      //Slider 4
-      .i_slider_4_container{
-        height:100vh;
-        background: #000;
-        @extend .nopm;
-
-        .i_slider_4_text{
-          height: 100vh;
-          width: 100%;
-          z-index: 100;
-          position: absolute;
-          background: rgba($color5, 0.3);
-
-          .i_slider_4_text_container{
-            color: $color1;
-            height: 100vh;
-            @include vertical-align();
-            margin-top:-35vh;
-            text-align: center;
-
-            h1{
-              font-size: 6vw;
-              font-weight: 600;
-              text-transform: uppercase;
-            }
-
-            p{
-              color: $white;
-              font-size: 2vw;
-              font-weight: 400;
-              text-align: center;
-            }
-
-            .i_slider_4_btn{
-              margin-top:3vh;
-
-              button{
-                border: 2px solid $white;
-                color: $white;
-                background: rgba($color5, 0.25);
-                text-align: center;
-                text-decoration: none;
-                font-size: 1.2vw;
-                width: 12vw;
-                height: 4.5vh;
-              }
-
-              &:hover{
-                button {
-                  background: $color1;
-                  border: 0;
-                  transition: 0.5s;
-                }
-              }
-            }
-
-          }
-        }
-        .i_slider_4_img{
-          z-index: 99;
-          height: 100vh;
-          width:100%;
-          img{
-            width:100%;
-            height: 100%;
-          }
-        }
-      }
-
     }
   }
 }
@@ -284,6 +123,8 @@
   .i_header{
     .i_header_container{
       .i_header_slider{
+
+        //slider 1
         .i_slider_1{
           .i_slider_1_container{
             .i_slider_1_text {
@@ -324,6 +165,168 @@
                   }
                 }
               }
+            }
+          }
+        }
+
+        // Slider 2
+        .i_slider_2_container{
+          height:100vh;
+          background: #000;
+          @extend .nopm;
+
+          .i_slider_2_text{
+            left:0;
+            top:0;
+            height: 100vh;
+            width: 100%;
+            z-index: 100;
+            position: absolute;
+            background: rgba($color5, 0.3);
+
+            .i_slider_2_text_container{
+              color: $color1;
+              @include vertical-align();
+              margin-top:-10vh;
+
+              h1{
+                font-size: 6vw;
+                font-weight: 600;
+                text-transform: uppercase;
+              }
+
+              p{
+                color: #ffffff;
+                font-size: 2vw;
+                font-weight: 400;
+              }
+
+              .i_slider_2_btn{
+                margin-top:3vh;
+
+                button{
+                  border: 2px solid $white;
+                  color: $white;
+                  background: rgba($color5, 0.25);
+                  text-align: center;
+                  text-decoration: none;
+                  font-size: 1.2vw;
+                  width: 12vw;
+                  height: 4.5vh;
+                }
+
+                &:hover{
+                  button {
+                    background: $color1;
+                    border: 0;
+                    transition: 0.5s;
+                  }
+                }
+              }
+
+            }
+          }
+          .i_slider_2_img{
+            z-index: 99;
+            height: 100vh;
+            width:100%;
+            img{
+              width:100%;
+              height: 100%;
+            }
+          }
+        }
+
+        // Slider 3
+        .i_slider_3_container{
+          .i_slider_3_video{
+            height: 100vh;
+            width: 100%;
+            .i_slider_3_video_player{
+              height: 100vh;
+              width: 100%;
+              z-index: 100;
+            }
+            .i_slider_3_video_btn{
+              position: absolute;
+              @include center-align($pos:absolute);
+              z-index: 10000;
+              i{
+                @include center-align($pos:absolute);
+                font-size: 8vw;
+                color: red;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        //Slider 4
+        .i_slider_4_container{
+          height:100vh;
+          width:100%;
+          background: #000;
+          @extend .nopm;
+
+          .i_slider_4_text{
+            height: 100vh;
+            width: 100%;
+            z-index: 100;
+            position: absolute;
+            background: rgba($color5, 0.3);
+
+            .i_slider_4_text_container{
+              color: $color1;
+              height: 100vh;
+              width:100%;
+              margin-top:15vh;
+              text-align: center;
+
+              h1{
+                font-size: 6vw;
+                font-weight: 600;
+                text-transform: uppercase;
+              }
+
+              p{
+                color: $white;
+                font-size: 2vw;
+                font-weight: 400;
+                text-align: center;
+              }
+
+              .i_slider_4_btn{
+                margin-top:3vh;
+
+                button{
+                  border: 2px solid $white;
+                  color: $white;
+                  background: rgba($color5, 0.25);
+                  text-align: center;
+                  text-decoration: none;
+                  font-size: 1.2vw;
+                  width: 12vw;
+                  height: 4.5vh;
+                }
+
+                &:hover{
+                  button {
+                    background: $color1;
+                    border: 0;
+                    transition: 0.5s;
+                  }
+                }
+              }
+
+            }
+          }
+          .i_slider_4_img{
+            z-index: 99;
+            height: 100vh;
+            width:100%;
+            img{
+              width:100%;
+              height: 100%;
             }
           }
         }

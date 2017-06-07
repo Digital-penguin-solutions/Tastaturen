@@ -6,7 +6,6 @@
     <meta name="description" content="Tastaturen"/>
     <meta name="keywords" content="orgel, instrument, musik"/>
     <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
-
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
@@ -36,15 +35,11 @@ $products_church = get_all_visible_products($con, "kyrka");
             <p class = "col-xs-offset-21col-xs-10 col-md-offset-2 col-md-8">
                 <?php print_field("test"); ?>
             </p>
-            <!--<p>Vi levererar digitala kyrkorglar för alla behov.
-                Kontakta oss gärna för mer information eller för
-                en personlig demonstration i Er kyrka.
-                Vi kan även förmedla kontakt med kyrkor
-                där en Rodgers eller en Johannus digitalorgel har installerats.
-            </p>-->
+
             <a href="http://www.johannus.com/" target="_blank" class="col-xs-6 col-md-offset-1 col-md-4">
                 <img src="img/logo/saker/johanus_white.svg" alt="johannus logo" style="margin-top: 1.6vh">
             </a>
+
             <a href="http://www.rodgersinstruments.com/" target="_blank" class="col-xs-6 col-md-offset-1 col-md-4">
                 <img src="img/logo/saker/rodger_white.svg" alt="rodgersinstruments logo">
             </a>
@@ -139,7 +134,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 </section>
 
 <!-- Media section -->
-<?php include "views/index_media.php"?>
+<?php //include "views/index_media.php"?>
 
 <!-- Footer -->
 <?php include "partials/footer.php" ?>

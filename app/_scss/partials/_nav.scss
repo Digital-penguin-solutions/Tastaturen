@@ -12,7 +12,6 @@
   .nav_d_container{
 
     .nav_d_triage{
-      z-index: 10001;
       position: absolute;
       left: -2.5vw !important;
       width: 0;
@@ -24,13 +23,21 @@
     //cart icon
     .nav_cart{
       z-index: 10002;
-      display: flex;
-
-      i{
-        font-size: 10vw;
-      }
-
-      p{
+      width:100%;
+      a {
+        margin-left:1vw;
+        font-size: 1.3vw;
+        color: $white;
+        text-decoration: none;
+        i {
+          color: $white;
+        }
+        &:hover{
+          color: darken($white, 20%);
+          i{
+            color: darken($white, 20%);
+          }
+        }
       }
     }
 

@@ -1,40 +1,118 @@
 @import "../everything";
 
 .footer{
+  min-height: 60vh;
   background: $color5;
-  height: 50vh;
-
+  overflow: hidden;
   .footer_container{
-
-    .footer_left{
-
-      h2{
-        text-align: center;
-        color: $color2;
-        font-size: 2.5vw;
-        font-weight:400;
-      }
-
+    .footer_top{
+      text-align: center;
+      width:100%;
+      min-height:15vh;
       a{
-        margin-left:2vw;
-        display: block;
-        color: $color2;
-        font-size: 1.3vw;
-        font-weight:300;
-        text-decoration: none;
-
-        &:hover{
+        text-align: center;
+        i{
           color: $white;
+          font-size: 10vw;
+          margin:2vw;
+          margin-top:5vh;
+        }
+        &:hover{
+          i {
+            color: darken($white, 20%);
+          }
         }
       }
     }
 
     .footer_mid{
+      text-align: center;
+      min-height:10vh;
+      width:100%;
+      ul {
+        @extend .nopm;
+        li {
+          display: block;
+          a {
+            color: $white;
+            font-size: 4vw;
+            text-decoration: none;
 
+            &:hover {
+              color: darken($white, 15%);
+            }
+          }
+        }
+      }
+
+      hr{
+        width: 70%;
+        left: 0;
+        right:0;
+        margin-bottom:5vh;
+        border-color: rgba($color2, 0.8);
+      }
     }
 
-    .footer_right{
+    .footer_bot{
+      text-align: center;
+      min-height:15vh;
+      margin-bottom:-5vh;
+      p{
+        color: darken($white, 20%);
+        font-size:3vw;
+        a{
+          color: $color1;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
 
+//tablet size
+@media (min-width: $screen-sm-min) {
+
+}
+
+//desktop size
+@media (min-width: $screen-md-min) {
+  .footer{
+    min-height: 40vh;
+    .footer_container{
+      .footer_top{
+        a{
+          i{
+            margin-top:0;
+            font-size: 3vw;
+          }
+        }
+      }
+      .footer_mid{
+        ul{
+          display: inline-flex;
+          text-align: center;
+          li{
+            display: inline-flex;
+            text-align: center;
+            a{
+              text-align: center;
+              font-size: 1.2vw;
+              margin: 0.4vw;
+            }
+          }
+        }
+        hr{
+
+        }
+      }
+      .footer_bot{
+        p{
+          font-size:0.8vw;
+          a{
+          }
+        }
+      }
     }
   }
 }
