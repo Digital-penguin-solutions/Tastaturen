@@ -7,6 +7,8 @@ Viktigt
     * opimizera hastighet.
         # Kolla att alla bilder är s små som möjligt.
         # Minimerara request från olika sidor.
+    * Lägga in alla texter och bilder på prudukterna i databasen.
+    * Få rätt kontakt info från anders.
 
 Index
     * Head

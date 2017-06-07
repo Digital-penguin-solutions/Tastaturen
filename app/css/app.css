@@ -1153,7 +1153,8 @@ section {
 
 .piano {
   position: absolute;
-  background: #212121;
+  background-image: url("../img/404.jpg");
+  background-size: cover;
   color: #fff;
   height: 100vh;
   width: 100vw;
@@ -1169,7 +1170,7 @@ section {
     font-weight: 300;
     font-size: 2vw; }
     .piano h3 a {
-      color: #1536ff;
+      color: #2f4cff;
       font-weight: 600; }
   .piano header {
     visibility: hidden; }
