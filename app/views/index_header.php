@@ -1,5 +1,5 @@
 <!--slider container-->
-<div class="i_header_slider">
+<div class="i_header_slider hidden-sm hidden-xs">
     <div class="i_slider_1 col-xs-12">
         <div class="i_slider_1_container">
             <div class = "all_slider_container no_list">
@@ -93,5 +93,11 @@
 
             </div>
         </div>
+    </div>
+</div>
+
+<div class="i_xs_slider hidden-md hidden-lg">
+    <div class="col-xs-12 i_xs_slider">
+
     </div>
 </div>

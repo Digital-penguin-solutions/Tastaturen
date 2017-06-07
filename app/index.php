@@ -23,6 +23,7 @@ $products_church = get_all_visible_products($con, "kyrka");
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
             <?php include "views/index_header.php"?>
+
         </div>
     </div>
 </header>

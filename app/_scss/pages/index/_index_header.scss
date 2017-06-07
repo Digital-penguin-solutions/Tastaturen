@@ -112,6 +112,105 @@
       }
 
     }
+
+    .i_xs_slider{
+      height: 100vh;
+      .i_slider_1{
+        @extend .nopm;
+
+        .i_slider_1_container{
+          height: 100vh;
+
+          .i_slider_1_text {
+            position: absolute;
+            color: $white;
+            background: transparent;
+            z-index: 101;
+            text-align: center;
+            margin-top:20vh;
+            width:100%;
+
+            h1 {
+              font-size: 8vw;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+          }
+
+          .i_slider_1_left {
+            height: 100vh;
+            background: $color3*4.1;
+
+            .i_slider_1_left_img {
+              @include vertical-align();
+              right:0;
+              position: absolute;
+
+              img{
+                width:30vw;
+                height: 40vh;
+              }
+            }
+
+            .i_slider_1_left_btn {
+              left: 5vw;
+              float:left;
+              @extend .slider_btn;
+            }
+
+            &:hover{
+
+              .i_slider_1_left_img{
+                transition: 0.2s;
+
+                img{
+                  width:32vw;
+                  height: 42vh;
+                  transition: 0.4s;
+                }
+              }
+            }
+          }
+
+          .i_slider_1_right{
+            height: 100vh;
+            background: $color3*4.5;
+
+            .i_slider_1_right_img{
+              @include vertical-align();
+              left:0;
+              position: absolute;
+
+              img{
+                width:30vw;
+                height: 40vh;
+              }
+            }
+
+            .i_slider_1_right_btn {
+              right: 5vw;
+              @extend .slider_btn;
+
+              button {
+                float:right;
+              }
+            }
+            &:hover{
+
+              .i_slider_1_right_img{
+                transition: 0.2s;
+
+                img{
+                  width:32vw;
+                  height: 42vh;
+                  transition: 0.4s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 

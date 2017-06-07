@@ -1,7 +1,7 @@
 Viktigt
     * Fixa alla länkar på sidan.
     * Mobil anpassa hela hemsidan.
-    * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen
+    * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen.
     * Fixa robot.txt filen.
     * SEO hela sidan.
     * opimizera hastighet.
@@ -12,7 +12,7 @@ Viktigt
 
 Index
     * Head
-        # Slide in efekterna kommer varje gång man byter slider. (Går inte i nu läget, är omöjligt att ändra i fade-in.js för den är komprimerad.)
+        # Slide in efekterna kommer varje gång man byter slider.
         # Slider 3: göra så att knappen fungerar korekt.
         # Ta bort slider sakerna från mobil sidan för att göra den snabbare förutom slider 1 som ska vara kvar.
 
