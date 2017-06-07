@@ -2807,10 +2807,9 @@ section {
     transition: 0.5s; }
 
 .i_products {
-  min-height: 80vh;
+  min-height: 60vh;
   background: #212121; }
   .i_products .i_products_container {
-    min-height: 80vh;
     overflow: hidden; }
     .i_products .i_products_container .i_products h2 {
       text-align: center;
@@ -2867,11 +2866,11 @@ section {
           transition: 0.5s; }
     .i_products .i_products_container .i_products .i_products_slider {
       position: relative;
-      height: 60vh;
+      height: 40vh;
       width: 100%; }
       .i_products .i_products_container .i_products .i_products_slider .i_products_sliders {
         position: absolute;
-        height: 60vh; }
+        height: 40vh; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
           margin-top: 5vh;
           margin-bottom: 5vh;
@@ -2885,14 +2884,14 @@ section {
             -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-            height: 35vh;
-            width: 35vh;
+            max-width: 75%;
+            height: 55%;
             margin-top: 2vh;
             opacity: 1;
             transition: opacity 0.35s, transform 0.35s; }
           .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item h1 {
             text-align: center;
-            font-size: 4vw;
+            font-size: 6vw;
             font-weight: 500;
             color: #ffffff;
             text-transform: capitalize;
@@ -2907,7 +2906,7 @@ section {
             opacity: 0;
             color: #ffffff;
             text-align: center;
-            font-size: 2vw; }
+            font-size: 4vw; }
           .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item .short {
             font-weight: 300; }
           .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item .price {
@@ -2948,15 +2947,25 @@ section {
       background: #919191; }
 
 @media (min-width: 992px) {
-  .i_products .i_products_container .i_products h2 {
-    font-size: 2.5vw; }
-  .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
-    font-size: 1.2vw;
-    width: 12vw;
-    height: 4.5vh; }
-  .i_products .i_products_container .i_products .i_products_sliders a img {
-    max-width: 70%;
-    height: 60%; } }
+  .i_products {
+    min-height: 80vh; }
+    .i_products .i_products_container .i_products h2 {
+      font-size: 2.5vw; }
+    .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
+      font-size: 1.2vw;
+      width: 12vw;
+      height: 4.5vh; }
+    .i_products .i_products_container .i_products .i_products_slider {
+      height: 60vh; }
+      .i_products .i_products_container .i_products .i_products_slider .i_products_sliders {
+        height: 60vh; }
+        .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item img {
+          max-width: 70%;
+          height: 60%; }
+        .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item h1 {
+          font-size: 4vw; }
+        .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item p {
+          font-size: 2vw; } }
 
 .wrapper, html, body {
   background: #ffffff;
