@@ -8,6 +8,8 @@
     <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
 </head>
 
+
+
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php
 include "partials/nav.php";

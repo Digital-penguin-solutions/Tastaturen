@@ -1057,7 +1057,7 @@ section {
   background: rgba(255, 255, 255, 0.7);
   z-index: 10000;
   text-align: center; }
-  .admin_info_container a img {
+  .admin_info_container img {
     width: 3vw;
     height: 3vh;
     right: 0;
