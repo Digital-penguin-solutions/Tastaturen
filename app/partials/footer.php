@@ -1,4 +1,4 @@
-<footer class="container-fluid footer">
+<footer class="container-fluid footer" role="contentinfo">
     <div class="row-fluid footer">
         <div class="col-xs-12 footer_container">
 
@@ -21,6 +21,7 @@
                     <li><a href="#">orglar för hemmet</a></li>
                     <li><a href="#">Terms of service</a></li>
                     <li><a href="#">privicy and polecy</a></li>
+                    <li><a href="admin">Admin</a></li>
                 </ul>
                 <hr>
             </div>

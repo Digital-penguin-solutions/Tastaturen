@@ -6,7 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
-    <meta name="author" content="Digital Internet Solutions">
+    <meta name="msapplication-TileColor" content="#2b2b2b"/>
+    <meta name="author" content="Digital Penguin Solutions">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--css-->

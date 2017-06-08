@@ -37,6 +37,9 @@ Admin
     * Quick edit när man är inne på produkter.
     * Ta bort alla admin möjlighet från telefonen.
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
+    * Göra möjligheten att kryssa ner admin popup rutan.
+    * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h
+    * På admin sidan behövs en knapp tillbaka till index sidan eller sätta in naven.
 
 404
     * Designa om sidan men ha kvar piano elementet.

@@ -19,7 +19,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 ?>
 
 <!-- Header -->
-<header id="Intro" class="container-fluid i_header">
+<header id="Intro" class="container-fluid i_header" role="banner">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
             <?php include "views/index_header.php"?>
@@ -29,7 +29,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 </header>
 
 <!-- Info section -->
-<section id="Info" class="container-fluid i_info">
+<section id="Info" class="container-fluid i_info" role="main">
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 col-md-offset-1 i_info_container">
             <h2><?php print_field("i_about_header"); ?> </h2>
@@ -49,7 +49,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 </section>
 
 <!-- Products -->
-<section id="Produkter" class="container-fluid i_products">
+<section id="Produkter" class="container-fluid i_products" role="complementary">
     <div class="row-fluid i_products">
         <div class="col-xs-12 i_products_container">
 
@@ -100,7 +100,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 </section>
 
 <!-- Contact section -->
-<section id="kontakta" class="container-fluid i_contact">
+<section id="kontakta" class="container-fluid i_contact" role="complementary">
     <div class="row-fluid i_contact">
         <div class="col-xs-12 i_contact_container">
             <!--<div class="col-xs-12 col-md-10 col-md-offset-1 i_contact_container">-->
