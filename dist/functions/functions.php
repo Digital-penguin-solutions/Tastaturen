@@ -4,10 +4,20 @@
 //check if functions is included in page to acses them
 if(!isset($functions_included)){
 
+    
+
     $functions_included = true;
 
     //include connect page
     include "db_connect.php";
+
+
+    function session_start_custom(){
+        if(!isset($session_started)){
+            session_start();
+            $session_started = true;
+        }
+    }
 
     // secures a string, protects against SQL injections and other attacks
     function secure_str($data){
@@ -285,18 +295,17 @@ if(!isset($functions_included)){
 
     //Echo all products in the index slider
     function echo_products_index($products){
-
-        $i          = 0;
-        $firs       = 'i_products_sliders_bg_1';
-        $second     = 'i_products_sliders_bg_2';
-        $third      = 'i_products_sliders_bg_3';
+        $i      = 0;
+        $firs   = 'i_products_sliders_bg_1';
+        $second = 'i_products_sliders_bg_2';
+        $third  = 'i_products_sliders_bg_3';
 
         foreach($products as $product){
-            $name = $product['name'];
+            $name  = $product['name'];
             $short = $product['short_description'];
             $price = $product['price'];
             $image = $product['main_image'];
-            $id = $product['product_id'];
+            $id    = $product['product_id'];
 
             $i++;
 
@@ -309,9 +318,7 @@ if(!isset($functions_included)){
             else{
                 $j = $third;
             }
-            ?> <!--products that is used in slider--><div class="i_products_sliders col-xs-4 <?php echo $j?>"><a href="product?id=<?php echo $id; ?>">- <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"><div class="i_products_sliders_text"><h1><?php echo $name; ?></h1><p><?php echo $short; ?></p><p><?php echo $price;  ?></p></div></a></div> <?php
-
-
+            ?> <!--products that is used in slider--><div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>"><a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item"><img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"><h1><?php echo $name;?></h1><p class="short"><?php echo $short;?> </p><p class="price"><?php echo $price;?></p></a></div> <?php
         }
     }
 

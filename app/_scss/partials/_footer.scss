@@ -14,8 +14,7 @@
         i{
           color: $white;
           font-size: 10vw;
-          margin:2vw;
-          margin-top:5vh;
+          margin: 5vh 2vw 2vw;
         }
         &:hover{
           i {
@@ -83,11 +82,12 @@
       .footer_top{
         a{
           i{
-            margin-top:0;
+            margin: 5vh 1vw 1vw;
             font-size: 3vw;
           }
         }
       }
+
       .footer_mid{
         ul{
           display: inline-flex;
@@ -106,6 +106,7 @@
 
         }
       }
+
       .footer_bot{
         p{
           font-size:0.8vw;

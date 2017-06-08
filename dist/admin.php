@@ -1,9 +1,10 @@
 <?php
 //include "include_pages/loading.php";
+$no_admin_info = "1";
 include "partials/head.php";
 ?> <!DOCTYPE html><html><head><meta name="description" content=""><title>Admin page</title></head> <?php
 include "functions/functions.php";
-session_start();
+session_start_custom();
 $con = connect();
 //$products = get_all_products($con, "");
 $products_home = get_all_products($con, "hem");

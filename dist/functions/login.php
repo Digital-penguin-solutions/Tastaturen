@@ -2,7 +2,8 @@
 include "functions.php";
 
 $con = connect();
-session_start();
+session_start_custom();
+
 //$password = secure_str($_GET['password']);
 if (isset($_POST['set_password']) && isset($_SESSION['admin'])){
     $password        = secure_str($_POST['password']);
