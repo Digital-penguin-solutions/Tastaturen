@@ -1849,13 +1849,14 @@ section {
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      margin-left: 2vw; }
+      text-align: center; }
       .pe_header .pe_header_container .pe_header_text h1 {
         color: #ffffff;
-        font-size: 3.5vw; }
+        font-size: 7.5vw;
+        font-weight: 600; }
       .pe_header .pe_header_container .pe_header_text p {
         color: #ffffff;
-        font-size: 1.6vw; }
+        font-size: 4.6vw; }
 
 .pe_type {
   visibility: hidden; }
@@ -1868,7 +1869,7 @@ section {
     .pe_prod .pe_prod_container .pe_prod_sort h1 {
       text-align: center;
       color: #ffffff;
-      font-size: 3vw;
+      font-size: 8vw;
       text-transform: capitalize; }
     .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn {
       margin-top: 1vh;
@@ -1879,9 +1880,13 @@ section {
       -ms-transform: translateX(-50%);
       transform: translateX(-50%); }
       .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price {
-        width: 10vw; }
+        width: 15vw;
+        height: 6vh;
+        font-size: 3vw !important; }
       .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
-        width: 10vw;
+        width: 15vw;
+        height: 6vh;
+        font-size: 3vw !important;
         margin-left: 5vw; }
   .pe_prod .pe_prod_container .pe_prod_container2 {
     cursor: pointer; }
@@ -1920,6 +1925,25 @@ section {
         transition: all 0.4s linear; }
         .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod:hover img {
           opacity: 0.4; }
+
+@media (min-width: 992px) {
+  .pe_header .pe_header_container .pe_header_text {
+    text-align: left;
+    margin-left: 2vw; }
+    .pe_header .pe_header_container .pe_header_text h1 {
+      font-size: 3.5vw; }
+    .pe_header .pe_header_container .pe_header_text p {
+      font-size: 1.6vw; }
+  .pe_prod .pe_prod_container .pe_prod_sort h1 {
+    font-size: 3vw; }
+  .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price {
+    width: 10vw;
+    height: 4.5vh;
+    font-size: 1.2vw !important; }
+  .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+    width: 10vw;
+    height: 4.5vh;
+    font-size: 1.2vw !important; } }
 
 .wrapper, html, body {
   background: #ffffff;
