@@ -23,7 +23,7 @@ else {
 ?>
 
 <!--Header -->
-<header class="container-fluid pe_header">
+<header class="container-fluid pe_header" role="banner">
     <div class="row-fluid pe_header_container col-xs-12">
         <div class="pe_header_bg"></div>
         <div class="pe_header_text col-xs-6">
@@ -44,7 +44,7 @@ else {
 </header>
 
 <!-- Show all the products-->
-<section class="container-fluid pe_prod">
+<section class="container-fluid pe_prod" role="main">
     <div class="row-fluid pe_prod">
         <div class="col-xs-12 pe_prod_container">
 

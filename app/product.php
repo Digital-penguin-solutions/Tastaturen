@@ -26,7 +26,7 @@ $about_image    = $product['about_image'];
 $slider_images  = get_product_images_by_id($con, $product_id);
 ?>
 
-<header class="container-fluid p_prod_head">
+<header class="container-fluid p_prod_head" role="banner">
     <div class="row-fluid p_prod_head">
         <div class="col-xs-12 p_prod_head_container">
 
@@ -64,7 +64,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
 </header>
 
 <!--information aboute the pruduct-->
-<section class="container-fluid p_info">
+<section class="container-fluid p_info" role="main">
     <div class="row-fluid p_info">
         <div class="col-xs-12 p_info_container">
             <div class="p_info_text col-xs-4 col-xs-offset-1">
@@ -79,7 +79,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </section>
 
-<section class="container-fluid p_slider">
+<section class="container-fluid p_slider" role="complementary">
     <div class="row-fluid p_slider_container">
         <div class = "all_slider_container no_list">
             <?php
@@ -94,7 +94,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </section>
 
-<section class="container-fluid p_info2">
+<section class="container-fluid p_info2" role="complementary">
     <div class="row-fluid p_info2_container">
         <div class="col-xs-8 col-xs-offset-2 p_info2_text">
             <h1><?php echo $name; ?></h1>
