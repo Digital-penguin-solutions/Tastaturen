@@ -8,8 +8,6 @@
     <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
 </head>
 
-
-
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
 <?php
 include "partials/nav.php";
@@ -24,6 +22,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 <header id="Intro" class="container-fluid i_header" role="banner">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
+
             <?php include "views/index_header.php"?>
 
         </div>
