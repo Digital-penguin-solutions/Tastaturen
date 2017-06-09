@@ -3,6 +3,7 @@
 .grid_container {
   margin:0;
   padding:0;
+  
   .grid_part {
     float:left;
     width:50%;
@@ -14,10 +15,9 @@
     &:nth-child(2){
       width:60%;
     }
+
     .grid_item{
       float:left;
-      width:100%;
-      height: 100%;
 
       img{
         min-height:100%;
@@ -25,6 +25,7 @@
         max-height:110%;
         display:block;
       }
+
       .grid_item_text{
         position: absolute;
         color: $white;

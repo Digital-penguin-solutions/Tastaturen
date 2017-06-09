@@ -13,6 +13,9 @@
 
   .i_media_item {
     overflow:hidden;
+    &:hover{
+      background: #000;
+    }
   }
 }
 
