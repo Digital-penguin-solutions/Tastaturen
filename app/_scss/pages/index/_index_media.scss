@@ -12,20 +12,7 @@
   }
 
   .i_media_item {
-      overflow:hidden;
-
-      //&:hover {
-          //visibility:none;
-      //}
-
-      img {
-
-        //@include center-align($pos: relative);
-        min-height:100%;
-        min-width:100%;
-        max-height:110%;
-        display:block;
-      }
+    overflow:hidden;
   }
 }
 
