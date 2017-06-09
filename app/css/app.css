@@ -1309,13 +1309,49 @@ section {
         border-left: 0;
         border-right: 0;
         height: 4vh; }
+      .offert .offert_container form button {
+        border: solid 1px #212121;
+        background: transparent;
+        font-size: 1.5vw;
+        height: 5vh;
+        color: #212121; }
+        .offert .offert_container form button:hover {
+          background: #1536ff;
+          color: #ffffff;
+          border: 0;
+          transition: 0.5s; }
     .offert .offert_container .offert_product {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      text-align: center; }
+      height: 60vh;
+      overflow: scroll;
+      margin-top: 10vh; }
+      .offert .offert_container .offert_product h1 {
+        font-size: 3vw; }
+      .offert .offert_container .offert_product .offert_product_sak {
+        border: 1px solid black;
+        height: 20vh;
+        margin-top: 2vh; }
+        .offert .offert_container .offert_product .offert_product_sak img {
+          width: 4vw;
+          height: 4vh;
+          position: absolute;
+          top: 1vh;
+          right: 1vw; }
+        .offert .offert_container .offert_product .offert_product_sak .offert_product_text {
+          height: 20vh; }
+          .offert .offert_container .offert_product .offert_product_sak .offert_product_text h1 {
+            font-size: 2vw; }
+          .offert .offert_container .offert_product .offert_product_sak .offert_product_text p {
+            font-size: 1vw; }
+        .offert .offert_container .offert_product .offert_product_sak .offert_product_img {
+          height: 20vh; }
+          .offert .offert_container .offert_product .offert_product_sak .offert_product_img img {
+            position: relative;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            height: 15vh;
+            width: 15vh; }
 
 .wrapper, html, body {
   background: #ffffff;
