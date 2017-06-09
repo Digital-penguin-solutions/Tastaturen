@@ -1,0 +1,55 @@
+@import "../everything";
+
+.offert {
+  @extend .tole;
+  z-index: 10000;
+  height:100vh;
+  width: 100vw;
+  position: fixed;
+  background: rgba($color3, 0.4);
+
+  .offert_container{
+    @include center-align($pos:absolute);
+    background: $white;
+    height: 80%;
+    width: 80%;
+    border-radius: 3%;
+
+    form{
+      @include vertical-align();
+      p{
+        font-weight: 400;
+        font-size: 1.2vw;
+      }
+
+      input{
+        margin-bottom:5vh;
+        border: solid $color4;
+        border-bottom: -1px;
+        border-top:0;
+        border-left: 0;
+        border-right: 0;
+
+        height: 4vh;
+      }
+
+      button{
+
+      }
+    }
+
+    .offert_product{
+      @include vertical-align();
+      text-align: center;
+      h1{
+
+      }
+      p{
+
+      }
+      img{
+
+      }
+    }
+  }
+}

@@ -137,6 +137,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 
 <!-- Media section -->
 <?php include "views/index_media.php"?>
+<?php include "views/offert.php"?>
 
 <!-- Footer -->
 <?php include "partials/footer.php" ?>
