@@ -2,7 +2,7 @@
 $(document).ready(on_ready_grid);
 
 var items_per_part = 4;
-var gap_size = 3;
+var gap_size = 1;
 
 function on_ready_grid(){
     

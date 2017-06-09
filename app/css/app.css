@@ -1167,8 +1167,7 @@ section {
     .grid_container .grid_part:nth-child(2) {
       width: 60%; }
     .grid_container .grid_part .grid_item {
-      float: left;
-      background: green; }
+      float: left; }
 
 .wrapper, html, body {
   background: #ffffff;
@@ -2876,22 +2875,19 @@ section {
 
 .i_media {
   height: 200vh;
-  padding-bottom: 3vh;
+  padding-bottom: 1vh;
   /* Should be the same as the gap_size variable in grid.js */
-  background: gray; }
+  background: #2b2b2b; }
   .i_media .i_media_container {
     height: 100%;
     margin: auto; }
   .i_media .i_media_item {
     overflow: hidden; }
     .i_media .i_media_item img {
-      position: relative;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
       min-height: 100%;
       min-width: 100%;
-      max-height: 110%; }
+      max-height: 110%;
+      display: block; }
 
 .wrapper, html, body {
   background: #ffffff;
