@@ -19,8 +19,8 @@
                     <li><a href="index#kontakta">Kontakta</a></li>
                     <li><a href="#">orglar för kyrkan</a></li>
                     <li><a href="#">orglar för hemmet</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">privicy and polecy</a></li>
+                    <li><a href="#">Andvändar vilkor</a></li>
+                    <li><a href="#">integritetspolicy</a></li>
                     <li><a href="admin">Admin</a></li>
                 </ul>
                 <hr>
