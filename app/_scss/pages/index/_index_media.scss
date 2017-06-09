@@ -3,15 +3,22 @@
 //media section
 .i_media{
   height:200vh;
+  padding-bottom:3vh; /* Should be the same as the gap_size variable in grid.js */
+  background:gray;
 
   .i_media_container{
     height: 100%;
     margin:auto;
   }
-  .i_grid_item{
-      height:100px;
-      width:100px;
-      background:blue;
+
+  .i_media_item {
+      overflow:hidden;
+      img {
+        @include center-align($pos: relative);
+        min-height:100%;
+        min-width:100%;
+        max-height:110%;
+      }
   }
 }
 
