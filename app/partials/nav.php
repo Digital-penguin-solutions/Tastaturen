@@ -31,7 +31,7 @@
     </div>
 </nav>
 
-<div class="nav_d_btn">
+<div class="nav_d_btn hidden-md hidden-lg">
     <ul class = "nav_button_container">
         <li>
             <a class = "McButton" data = "hamburger-menu">
