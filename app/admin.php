@@ -34,6 +34,12 @@ $products_church = get_all_products($con, "kyrka");
 
                 if(isset($_SESSION['admin'])){
 
+                    if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1)) {
+                        session_unset();
+                        session_destroy();
+                    }
+                    $_SESSION['LAST_ACTIVITY'] = time();
+
                     if(isset($_GET['logout'])){
                         session_destroy();
                         header("Location: admin.php");
