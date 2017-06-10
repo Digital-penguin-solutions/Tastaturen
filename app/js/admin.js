@@ -104,7 +104,7 @@ var maxWidth = 1000; // the max width for an image
 function send_form(element, page){
 
 
-    element.disabled = true;
+    //element.disabled = true;
 
 	var form_data = new FormData(document.getElementById("form"));
 
@@ -187,10 +187,10 @@ function send_form(element, page){
 	});
 
 	xhr.success(function(response) {
-        //console.log(response);
-        console.log("response");
+        console.log(response);
+        //console.log("response");
 		//$(document).scrollTop(0);
-        window.location.replace("admin?message=Product has been added or edited");
+       //window.location.replace("admin?message=Product has been added or edited");
         //console.log("asdasd");
 		//location.reload();
 	});
@@ -216,8 +216,8 @@ function compressPNG(image, quality, output_format) {
 	big_canvas.height = org_height;
 
 	var big_ctx = big_canvas.getContext("2d");
-	console.log(typeof small_image);
-	console.log(typeof image);
+	//console.log(typeof small_image);
+	//console.log(typeof image);
 	big_ctx.drawImage(small_image, 0, 0, big_canvas.width, big_canvas.height);
 
 	var new_image_data = big_canvas.toDataURL(output_format);

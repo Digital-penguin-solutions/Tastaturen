@@ -64,6 +64,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $media_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
+        
         $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type' WHERE media_id = '$media_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
@@ -73,7 +74,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     // UPLOAD OF SINGLE IMAGES
 
     if (count($images_array) > 0) { // makes sure it's not empty
-        $images_query = "UPDATE product SET ";
+        $images_query = "UPDATE media SET ";
 
         // the images that are to be uploaded are first put into the images array so that they can all be uploaded with the same query
         foreach ($images_array as $key => $info){
