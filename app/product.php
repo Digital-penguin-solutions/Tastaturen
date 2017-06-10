@@ -39,7 +39,9 @@ $slider_images  = get_product_images_by_id($con, $product_id);
             </div>
 
             <!-- Bg for mobile insted of slider-->
-            <div class="p_prod_head_slider_t"></div>
+            <div class="hidden-lg hidden-md p_prod_slider_container"
+                 style="background-image:url('img/product/kyrka/Sliders/1.jpg')"></div>
+
 
             <div class="p_prod_head_bg">
 
@@ -48,7 +50,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                     <h2><?php echo $short;?></h2>
                 </div>
                 <div class="p_prod_head_btn_broschyr">
-                    <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'">
+                    <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'" class="p_prod_head_btn_broschyr">
                         Ladda ner Broschyr
                     </button>
                 </div>
