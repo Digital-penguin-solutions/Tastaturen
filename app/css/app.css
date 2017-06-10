@@ -482,14 +482,6 @@ section {
   position: fixed;
   height: 100vh;
   z-index: 10000; }
-  .nav_d .nav_d_btn {
-    position: fixed;
-    top: 1.5vh;
-    right: 1.5vw;
-    height: 5vh;
-    width: 10vw;
-    background: #000;
-    z-index: 20000; }
   .nav_d .nav_d_container .nav_d_triage {
     position: absolute;
     left: -2.5vw !important;
@@ -538,6 +530,36 @@ section {
         text-decoration: none; }
       .nav_d .nav_d_container .nav_d_link a:active {
         color: #ffffff; }
+
+.nav_d_btn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 5vh;
+  width: 7.5vw;
+  z-index: 20000; }
+  .nav_d_btn .McButton {
+    color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 1.5vh;
+    right: 2vw;
+    cursor: pointer;
+    padding: 0 !important; }
+    .nav_d_btn .McButton b {
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 2px !important;
+      background-color: #ffffff;
+      position: absolute; }
+      .nav_d_btn .McButton b:nth-child(1) {
+        top: 0; }
+      .nav_d_btn .McButton b:nth-child(2) {
+        top: 50%; }
+      .nav_d_btn .McButton b:nth-child(3) {
+        top: 100%; }
 
 @media (min-width: 992px) {
   .nav_d {

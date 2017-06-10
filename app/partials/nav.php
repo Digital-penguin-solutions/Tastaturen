@@ -1,7 +1,5 @@
 <nav class="nav_d col-md-2 col-xs-7" role="navigation">
 
-    <div class="nav_d_btn hidden-md hidden-lg"></div>
-
     <div class="nav_d_container">
 
         <div class="nav_d_triage"></div>
@@ -32,3 +30,15 @@
         </div>
     </div>
 </nav>
+
+<div class="nav_d_btn">
+    <ul class = "nav_button_container">
+        <li>
+            <a class = "McButton" data = "hamburger-menu">
+                <b></b>
+                <b></b>
+                <b></b>
+            </a>
+        </li>
+    </ul>
+</div>
