@@ -206,11 +206,7 @@ if(!isset($functions_included)){
     function get_product_id_by_name($con, $name){
 
         $id     = secure_str($name);
-        $query  = "SELECT product_id FROM product WHERE name = '$name'";
-        $select = mysqli_query($con, $query) or die (mysqli_error($con));
-
-
-        $data   = mysqli_fetch_array($select);
+        $query  = "SELECT product_id FROM product WHERE name = '$name'"; $select = mysqli_query($con, $query) or die (mysqli_error($con)); $data   = mysqli_fetch_array($select);
         $id     = $data['product_id'];
 
         return $id;
@@ -380,6 +376,15 @@ if(!isset($functions_included)){
         echo $output;
     }
 
+    function get_media_by_id($con, $id){
+        $id = secure_str($id);
+        $query = "SELECT * FROM media WHERE media_id = '$id'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data = mysqli_fetch_array($select);
+
+        return $data;
+
+    }
     function get_all_media_posts_small($con){
         $query  = "SELECT media_id, header_image, title FROM media";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));

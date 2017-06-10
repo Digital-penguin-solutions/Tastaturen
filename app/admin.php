@@ -99,8 +99,10 @@ $products_church = get_all_products($con, "kyrka");
                         
                     }
                     else {
-
-
+                        ?>
+                        <div >
+                        </div>
+<?php>
                     }
 
                 }

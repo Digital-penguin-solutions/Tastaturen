@@ -187,10 +187,10 @@ function send_form(element, page){
 	});
 
 	xhr.success(function(response) {
-        console.log(response);
+        //console.log(response);
         //console.log("response");
 		//$(document).scrollTop(0);
-       //window.location.replace("admin?message=Product has been added or edited");
+        window.location.replace("admin?message=Product has been added or edited");
         //console.log("asdasd");
 		//location.reload();
 	});
