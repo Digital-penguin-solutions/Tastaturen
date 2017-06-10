@@ -32,11 +32,9 @@ Prudukt detaljer
 
 Admin
     * Quick edit när man är inne på produkter.
-    * Ta bort alla admin möjlighet från telefonen.
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra möjligheten att kryssa ner admin popup rutan.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
-    * På admin sidan behövs en knapp tillbaka till index sidan eller sätta in naven.
     * Logga ut knappen fungerar ej
 
 404
@@ -51,7 +49,7 @@ Nav
 
 Buy
     * Fixa buy formuläret på ett enkelt sätt så att man kan sicka en ofert på fler än en orgel.
-    * Fixa php ocj js för offerten.
+    * Fixa php och js för offerten.
 
 Terms of service
     * Fixa en terms of service sidan.
