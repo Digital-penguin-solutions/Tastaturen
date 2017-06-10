@@ -35,6 +35,9 @@ Admin
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra möjligheten att kryssa ner admin popup rutan.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
+    * När du är innloggad som admin ska det bara finnas 3 knappar.
+        1 för att redigera sidorna 1 för att redigera media och en för prudukterna.
+
 
 404
     * Hitta orgel ljud istället för piano.
@@ -44,7 +47,7 @@ footer
 
 Nav
     * Fixa köp knapen.
-    * Mobil och tablet ska se lika dan ut fast större. Den ska dock ligga under en hamburgar meny knapp för att spara plats.
+    * fixa toggel knappen i naven.
 
 Buy
     * Fixa buy formuläret på ett enkelt sätt så att man kan sicka en ofert på fler än en orgel.
