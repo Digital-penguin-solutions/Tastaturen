@@ -31,15 +31,13 @@ Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt. 
 
 Admin
-    * Lägga till en redigera knapp för alla texter och bilder som bara syns när du är inloggad som admin.
-        Eller skriva en text som beskriver hur man kan redigera saker.
     * Quick edit när man är inne på produkter.
     * Ta bort alla admin möjlighet från telefonen.
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra möjligheten att kryssa ner admin popup rutan.
-    * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h
+    * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
     * På admin sidan behövs en knapp tillbaka till index sidan eller sätta in naven.
-    * Fixa en logga ut knapp (finns redan längst ner på admin)
+    * Logga ut knappen fungerar ej
 
 404
     * Hitta orgel ljud istället för piano.

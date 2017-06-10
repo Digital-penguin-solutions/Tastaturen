@@ -18,8 +18,8 @@ $con = connect();
 $products_home = get_all_products($con, "hem");
 $products_church = get_all_products($con, "kyrka");
 ?>
-<body>
-<?php //include "include_pages/nav.php" ?>
+<body class="col-xs-10">
+<?php include "partials/nav.php" ?>
 
 <section class = "admin_page">
     <div class = "container-fluid full_height">
