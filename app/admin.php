@@ -33,7 +33,7 @@ $products_church = get_all_products($con, "kyrka");
                 }
 
                 if(isset($_SESSION['admin'])){
-                    
+
 
                     if(isset($_GET['message'])){
                         $message = $_GET['message'];
@@ -54,41 +54,40 @@ $products_church = get_all_products($con, "kyrka");
                     }
 
                     if(isset($_GET['view']) && $_GET['view'] == "products"){
-                    ?>
-                    <div class = "row admin_all_products_container">
-                        <h1 class = "products_type"> Home products </h1>
+                        ?>
+                        <div class = "row admin_all_products_container">
+                            <h1 class = "products_type"> Home products </h1>
 
-                        <?php
+                            <?php
                             echo_admin_products($products_home);
-                        ?>
-                    </div>
-                    <div class = "row admin_all_products_container">
-                        <h1 class = "products_type"> Church products </h1>
+                            ?>
+                        </div>
+                        <div class = "row admin_all_products_container">
+                            <h1 class = "products_type"> Church products </h1>
 
-                        <?php
+                            <?php
                             echo_admin_products($products_church);
-                        ?>
-                    </div>
-                    <?php
+                            ?>
+                        </div>
+                        <?php
                     }
                     else if(isset($_GET['view']) && $_GET['view'] == "media"){
-?>
+                        ?>
                         <div class = "row admin_all_products_container">
-<?php
-                        $posts = get_all_media_posts_small($con);
-                        echo_admin_media($posts);
-?>
+                            <?php
+                            $posts = get_all_media_posts_small($con);
+                            echo_admin_media($posts);
+                            ?>
                         </div>
-<?php
-                        
+                        <?php
+
                     }
                     else {
                         ?>
                         <div >
                         </div>
-<?php
+                        <?php
                     }
-
                 }
 
                 if(isset($_SESSION['admin'])){
