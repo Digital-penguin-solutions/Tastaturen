@@ -7,7 +7,7 @@ include "partials/head.php";
 <html lang="en">
 <head>
     <title>MetSense add product</title>
-    <meta name="description" content="MetSense - A page to add new products to the webpage">
+    <meta name="description" content="Tastaturen - Add media post">
 </head>
 
 <?php
@@ -38,6 +38,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $content            = secure_str($_POST["content"]);
     $video_link         = secure_str($_POST["video_link"]);
     $type               = secure_str($_POST["type"]);
+    $size               = secure_str($_POST["size"]);
     //$brochure           = secure_str($_POST["brochure"]);
     //$key_features       = $_POST["key_feature"];
     //$tech_row_left      = $_POST["tech_row_left"];
@@ -56,7 +57,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO media (title, content, video_link, type) VALUES ('$title', '$content', '$video_link', '$type')";
+        $query = "INSERT INTO media (title, content, video_link, type, size) VALUES ('$title', '$content', '$video_link', '$type', '$size')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -65,7 +66,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     }
     else { // query for updating constant values
         
-        $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type' WHERE media_id = '$media_id'";
+        $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type', size= '$size' WHERE media_id = '$media_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -99,14 +100,15 @@ if (isset($_SESSION['admin'])) {
 
 // When a product is going to be viewed for editing
     if (isset($_GET["media_id"])){
-        $media_id         = $_GET["media_id"];
-        $product            = get_product_by_id($con, $media_id);
-        $title              = $product['title'];
-        $content            = $product['content'];
-        $video_link         = $product['video_link'];
-        $type               = $product['type'];
-        $header_image       = $product['header_image'];
-        $second_image       = $product['second_image'];
+        $media_id           = $_GET["media_id"];
+        $post               = get_media_by_id($con, $media_id);
+        $title              = $post['title'];
+        $content            = $post['content'];
+        $video_link         = $post['video_link'];
+        $type               = $post['type'];
+        $header_image       = $post['header_image'];
+        $second_image       = $post['second_image'];
+        $size               = $post['size'];
         //$type               = $product['type'];
 
         //$slider_images      = get_product_images_by_id($con, $media_id);
@@ -117,6 +119,7 @@ if (isset($_SESSION['admin'])) {
         $content            = "";
         $video_link         = "";
         $type               = "";
+        $size               = "";
         //$type               = "";
     }
     ?>
@@ -150,6 +153,12 @@ if (isset($_SESSION['admin'])) {
                         <h1>Text</h1>
                         <textarea name = "content" class="short_description"><?php echo $content?></textarea>
 
+                        <h1> Storlek </h1>
+                        <select class = "" name="size">
+                            <option value = "small" <?php if($size == "small"){echo "selected";}?>>Liten</option>
+                            <option value = "medium" <?php if($size == "medium"){echo "selected";}?>>Medium</option>
+                            <option value = "big"  <?php if($size == "big"){echo "selected";}?>>Stor</option>
+                        </select>
 
                         <h1> Typ av inlägg </h1>
                         <select class = "select_type" onchange = "update_inputs(this)" name="type">
@@ -172,7 +181,7 @@ if (isset($_SESSION['admin'])) {
                                 <p class = "center_vertically_css">
                                     <strong> Current: </strong>
                                 </p>
-                                <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image); ?>" alt="preview of the curent sensor"/>
+                                <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image); ?>" alt="None"/>
                             </div>
 
                             <h1> Bild 2 </h1>
@@ -182,7 +191,7 @@ if (isset($_SESSION['admin'])) {
                                 <p class = "center_vertically_css">
                                     <strong> Current: </strong>
                                 </p>
-                                <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $second_image); ?>" alt="preview of the curent sensor"/>
+                                <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $second_image); ?>" alt="None"/>
                             </div>
                         </div>
 
