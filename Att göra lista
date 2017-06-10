@@ -35,9 +35,12 @@ Admin
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra möjligheten att kryssa ner admin popup rutan.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
+<<<<<<< HEAD
     * Logga ut knappen fungerar ej
     * När du är innloggad som admin ska det bara finnas 3 knappar.
         1 för att redigera sidorna 1 för att redigera media och en för prudukterna.
+=======
+>>>>>>> origin/master
 
 404
     * Hitta orgel ljud istället för piano.

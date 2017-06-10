@@ -185,6 +185,9 @@ $products_church = get_all_products($con, "kyrka");
 
                 if(isset($_SESSION['admin'])){
                     ?>
+                    <a href = "add_media.php" class = "add_product_button center_horizontally_css">
+                        Add new media post
+                    </a>
                     <a href = "add_product.php" class = "add_product_button center_horizontally_css">
                         Add a new product
                     </a>
