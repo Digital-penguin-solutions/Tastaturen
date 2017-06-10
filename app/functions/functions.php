@@ -62,7 +62,7 @@ if(!isset($functions_included)){
             }
         }
         else {
-            echo "not found";
+            //echo "not found";
         }
 
     }

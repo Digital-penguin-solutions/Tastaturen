@@ -101,7 +101,7 @@ function compress_image(e) {
 var maxWidth = 1000; // the max width for an image
 
 // this will be run when the "save product"-button is pressed
-function send_form(element){
+function send_form(element, page){
 
 
     element.disabled = true;
@@ -177,7 +177,8 @@ function send_form(element){
 	}
 
 	var xhr = $.ajax({
-		url: 'add_product.php',
+		//url: 'add_product.php',
+		url: page,
 		type: 'POST',
 		data: form_data,
 		cache:false,
@@ -187,7 +188,7 @@ function send_form(element){
 
 	xhr.success(function(response) {
         //console.log(response);
-        //console.log("response");
+        console.log("response");
 		//$(document).scrollTop(0);
         window.location.replace("admin?message=Product has been added or edited");
         //console.log("asdasd");
