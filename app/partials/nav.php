@@ -1,4 +1,4 @@
-<nav class="nav_d col-md-2 col-xs-7" role="navigation">
+<nav class="nav_d col-md-2 col-xs-7 hidden-xs" role="navigation">
 
     <div class="nav_d_container">
 

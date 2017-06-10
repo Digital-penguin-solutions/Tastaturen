@@ -21,7 +21,7 @@
                     <li><a href="#">orglar för hemmet</a></li>
                     <li><a href="#">Andvändar vilkor</a></li>
                     <li><a href="#">integritetspolicy</a></li>
-                    <li class="hidden-lg hidden-md"><a href="admin">Admin</a></li>
+                    <li class="hidden-xs hidden-sm"><a href="admin">Admin</a></li>
                 </ul>
                 <hr>
             </div>
