@@ -69,6 +69,7 @@ $products_church = get_all_products($con, "kyrka");
                         <?php
                     }
 
+                    // if products are to be viewed
                     if(isset($_GET['view']) && $_GET['view'] == "products"){
                     ?>
                     <div class = "row admin_all_products_container">
@@ -87,12 +88,14 @@ $products_church = get_all_products($con, "kyrka");
                     </div>
                     <?php
                     }
+                    // if meda posts are to be viewed
                     else if(isset($_GET['view']) && $_GET['view'] == "media"){
 ?>
+                        <h1 class = "products_type"> Media posts </h1>
                         <div class = "row admin_all_products_container">
 <?php
-                        $posts = get_all_media_posts_small($con);
-                        echo_admin_media($posts);
+                            $posts = get_all_media_posts_small($con);
+                            echo_admin_media($posts);
 ?>
                         </div>
 <?php
@@ -100,27 +103,56 @@ $products_church = get_all_products($con, "kyrka");
                     }
                     else {
                         ?>
-                        <div >
+                        <div class = "manage_buttons_contianer">
+                            <a href = "admin?view=products" class = "manage_button ">
+                                <p> Manage products</p>
+                                
+                            </a>
+                            <a href = "admin?view=media" class = "manage_button ">
+                                <p> Manage media posts</p>
+                            </a>
                         </div>
-<?php>
+<?php
                     }
 
                 }
 
                 if(isset($_SESSION['admin'])){
                     ?>
-                    <a href = "add_media.php" class = "add_product_button center_horizontally_css">
-                        Add new media post
-                    </a>
-                    <a href = "add_product.php" class = "add_product_button center_horizontally_css">
-                        Add a new product
-                    </a>
-                    <a href = "admin?change_password=" class = "add_product_button center_horizontally_css">
-                        Change password
-                    </a>
-                    <a href = "functions/logout" class = "add_product_button center_horizontally_css">
-                        Logout
-                    </a>
+                    <div class = "manage_buttons_contianer">
+                    <?php
+                        if(isset($_GET['view']) && $_GET['view']=="media"){
+                    ?>
+                        <a href = "admin?view=products" class = "manage_button ">
+                            <p> Manage products</p>
+                        </a>
+                        <a href = "add_media.php" class = "manage_button">
+                            
+                            <p> Add new media post</p>
+                        </a>
+
+                    <?php
+                        }
+                        if(isset($_GET['view']) && $_GET['view']=="products"){
+                    ?>
+                        <a href = "admin?view=media" class = "manage_button">
+                            <p> Manage media posts</p>
+                        </a>
+                        <a href = "add_product.php" class = "manage_button">
+                            <p> Add new product </p>
+                        </a>
+                    <?php
+                        }
+                    ?>
+                    </div>
+                    <div>
+                        <a href = "admin?change_password=" class = "add_product_button center_horizontally_css">
+                            Change password
+                        </a>
+                        <a href = "functions/logout" class = "add_product_button center_horizontally_css">
+                            Logout
+                        </a>
+                    </div>
                     <?php
                 }
                 else {
