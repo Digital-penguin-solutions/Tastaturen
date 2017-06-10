@@ -21,10 +21,10 @@ $products_church = get_all_products($con, "kyrka");
 <body class="col-xs-10">
 <?php include "partials/nav.php" ?>
 
-<section class = "admin_page">
+<section class = "admin_page col-xs-12">
     <div class = "container-fluid full_height">
         <div class = "row full_height">
-            <div class = "col-md-8 col-md-offset-2">
+            <div class = "col-xs-10 col-xs-offset-1">
                 <h1 class = "admin_header"> Admin page </h1>
 
                 <?php
@@ -92,18 +92,20 @@ $products_church = get_all_products($con, "kyrka");
 
                 if(isset($_SESSION['admin'])){
                     ?>
-                    <a href = "add_media.php" class = "add_product_button center_horizontally_css">
-                        Add new media post
-                    </a>
-                    <a href = "add_product.php" class = "add_product_button center_horizontally_css">
-                        Add a new product
-                    </a>
-                    <a href = "admin?change_password=" class = "add_product_button center_horizontally_css">
-                        Change password
-                    </a>
-                    <a href = "functions/logout" class = "add_product_button center_horizontally_css">
-                        Logout
-                    </a>
+                    <div class="a_btn_container col-xs-12">
+                        <a href = "add_media.php" class = "add_product_button col-xs-5 col-xs-offset-1">
+                            Add new media post
+                        </a>
+                        <a href = "add_product.php" class = "add_product_button col-xs-5 col-xs-offset-1">
+                            Add a new product
+                        </a>
+                        <a href = "admin?change_password=" class = "add_product_button col-xs-5 col-xs-offset-1">
+                            Change password
+                        </a>
+                        <a href = "functions/logout" class = "add_product_button col-xs-5 col-xs-offset-1">
+                            Logout
+                        </a>
+                    </div>
                     <?php
                 }
                 else {

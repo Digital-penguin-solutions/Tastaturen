@@ -81,20 +81,7 @@
 
 }
 
-.add_product_button {
-    text-align:center;
-    display:block;
-    width: 20%;
-    height:5%;
-    text-decoration:none;
-    color: white;
-    font-size: 1vw;
-    cursor:pointer;
-    background: $color3;
-    margin-top:5%;
-    padding:1%;
-    margin-bottom:5%;
-}
+
 
 /* Admin form to add a new product*/
 .add_product_form {
@@ -249,5 +236,28 @@
     }
     input{
         font-weight: 600;
+    }
+}
+
+.a_btn_container{
+    .add_product_button {
+        vertical-align: middle;
+        line-height: 21vh;
+        text-align:center;
+        display:block;
+        height:24vh;
+        text-decoration:none;
+        color: white;
+        font-size: 1vw;
+        cursor:pointer;
+        background: $color3;
+        margin-top:5%;
+        padding:1%;
+        margin-bottom:5%;
+        text-transform: uppercase;
+        &:hover{
+            background: lighten($color3, 20%);
+            transition: 0.3s;
+        }
     }
 }

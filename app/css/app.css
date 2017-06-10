@@ -1760,20 +1760,6 @@ section {
 .product_delete_button {
   left: 68.75%; }
 
-.add_product_button {
-  text-align: center;
-  display: block;
-  width: 20%;
-  height: 5%;
-  text-decoration: none;
-  color: white;
-  font-size: 1vw;
-  cursor: pointer;
-  background: #2b2b2b;
-  margin-top: 5%;
-  padding: 1%;
-  margin-bottom: 5%; }
-
 /* Admin form to add a new product*/
 .add_product_form {
   width: 60%;
@@ -1882,6 +1868,25 @@ section {
     vertical-align: middle; }
   .login input {
     font-weight: 600; }
+
+.a_btn_container .add_product_button {
+  vertical-align: middle;
+  line-height: 21vh;
+  text-align: center;
+  display: block;
+  height: 24vh;
+  text-decoration: none;
+  color: white;
+  font-size: 1vw;
+  cursor: pointer;
+  background: #2b2b2b;
+  margin-top: 5%;
+  padding: 1%;
+  margin-bottom: 5%;
+  text-transform: uppercase; }
+  .a_btn_container .add_product_button:hover {
+    background: #5e5e5e;
+    transition: 0.3s; }
 
 .wrapper, html, body {
   background: #ffffff;
