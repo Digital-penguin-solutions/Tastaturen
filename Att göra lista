@@ -9,11 +9,12 @@ Viktigt
         # Minimerara request från olika sidor.
     * Lägga in alla texter och bilder på prudukterna i databasen.
     * Få rätt kontakt info från Anders.
+    * Fixa smoothe scroll när man klikar på länkar i naven.
 
 Index
     * Head
-        # Slide in efekterna kommer varje gång man byter slider.
-        # Slider 3: göra så att knappen fungerar korekt. (vad ska snappen göra?)
+        # Slider 3: göra så att knappen sätter på ljudet på videon
+            och gömmer knappen tills du klickar på vidon för att sänga av det igen.
         # Ta bort slider sakerna från mobil sidan för att göra den snabbare förutom slider 1 som ska vara kvar.
 
     * Pruduct section
@@ -21,7 +22,7 @@ Index
 
     * Media
         # Göra ett grid system som kan visa media i form av text och bilder.
-        # Trycker du på en media tab kommer det upp en popup screan som visar texten eller videon.
+        # Trycker du på en media tab kommer det upp en popup screan som visar texten, bilden eller videon.
 
 Prudkter
     * Fixa köp knappen så den fungerar.
@@ -37,7 +38,6 @@ Admin
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
     * När du är innloggad som admin ska det bara finnas 3 knappar.
         1 för att redigera sidorna 1 för att redigera media och en för prudukterna.
-
 
 404
     * Hitta orgel ljud istället för piano.
@@ -58,3 +58,6 @@ Terms of service
 
 Privicy and polency
     * Fixa en Privicy and polency sida.
+
+.htacces
+    * Ta bort alla skumma tänken i urlen så prudukterna bild tex "prudukter/Orgel 3" och inte "product?id=319"
