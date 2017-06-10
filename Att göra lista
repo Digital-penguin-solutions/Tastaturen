@@ -35,7 +35,6 @@ Admin
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra möjligheten att kryssa ner admin popup rutan.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
-    * Logga ut knappen fungerar ej
 
 404
     * Hitta orgel ljud istället för piano.

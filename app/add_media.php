@@ -56,7 +56,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, long_description, price, type, brochure) VALUES ('$name', '$short', '$long', '$price', '$type', '$brochure_data')";
+        $query = "INSERT INTO media (title, content, video_link, type) VALUES ('$title', '$content', '$video_link', '$type')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -64,7 +64,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $media_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
-        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type' WHERE media_id = '$media_id'";
+        $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type' WHERE media_id = '$media_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -146,36 +146,43 @@ if (isset($_SESSION['admin'])) {
                         <h1>Rubrik</h1>
                         <input value = "<?php echo $title ?>" type = "text" name = "title">
 
-                        <h1> Typ av inlägg </h1>
-                        <select name="type">
-                            <option value = "image" <?php if($type == "hem"){echo "selected";}?>>Hem</option>
-                            <option value = "video"<?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option>
-                        </select>
-
                         <h1>Text</h1>
                         <textarea name = "content" class="short_description"><?php echo $content?></textarea>
 
 
+                        <h1> Typ av inlägg </h1>
+                        <select class = "select_type" onchange = "update_inputs(this)" name="type">
+                            <option value = "image" <?php if($type == "image"){echo "selected";}?>>Bildinlägg</option>
+                            <option value = "video"<?php if($type == "video"){echo "selected";}?>>Videoinlägg</option>
+                        </select>
 
 
-                        <h1> Huvudbild</h1>
-                        <div class = "image_select_container">
-                            <p class = "center_vertically_css"> <strong>New image: </strong> </p>
-                            <input name = "header_image" class = "center_vertically_css" type = "file" onchange="compress_image(event)" >
-                            <p class = "center_vertically_css">
-                                <strong> Current: </strong>
-                            </p>
-                            <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image); ?>" alt="preview of the curent sensor"/>
+
+                        <div class = "video_post_only">
+                            <h1>Länk till Youtube-video</h1>
+                            <textarea name = "video_link" class="short_description"><?php echo $video_link?></textarea>
                         </div>
 
-                        <h1> Bild 2 </h1>
-                        <div class = "image_select_container">
-                            <p class = "center_vertically_css"> <strong>New image: </strong> </p>
-                            <input name = "second_image" class = "center_vertically_css"  type = "file" onchange="compress_image(event)" >
-                            <p class = "center_vertically_css">
-                                <strong> Current: </strong>
-                            </p>
-                            <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $second_image); ?>" alt="preview of the curent sensor"/>
+                        <div class = "image_post_only">
+                            <h1> Huvudbild</h1>
+                            <div class = "image_select_container">
+                                <p class = "center_vertically_css"> <strong>New image: </strong> </p>
+                                <input name = "header_image" class = "center_vertically_css" type = "file" onchange="compress_image(event)" >
+                                <p class = "center_vertically_css">
+                                    <strong> Current: </strong>
+                                </p>
+                                <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image); ?>" alt="preview of the curent sensor"/>
+                            </div>
+
+                            <h1> Bild 2 </h1>
+                            <div class = "image_select_container">
+                                <p class = "center_vertically_css"> <strong>New image: </strong> </p>
+                                <input name = "second_image" class = "center_vertically_css"  type = "file" onchange="compress_image(event)" >
+                                <p class = "center_vertically_css">
+                                    <strong> Current: </strong>
+                                </p>
+                                <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $second_image); ?>" alt="preview of the curent sensor"/>
+                            </div>
                         </div>
 
 
