@@ -544,6 +544,9 @@ if(!isset($functions_included)){
         }
 ?>
     
+<?php 
+        if(isset($_SESSION['admin'])){
+?>
         <script>
             var script = document.currentScript;
             var parent = script.parentNode;
@@ -554,6 +557,10 @@ if(!isset($functions_included)){
             });
 
         </script>
+<?php
+
+        }
+?>
 
 <?php
 
