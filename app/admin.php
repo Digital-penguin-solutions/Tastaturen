@@ -35,22 +35,6 @@ $products_church = get_all_products($con, "kyrka");
                 if(isset($_SESSION['admin'])){
                     
 
-//<<<<<<< HEAD
-                //if(isset($_GET['logout'])){
-                        //session_destroy();
-                        //header("Location: admin.php");
-                    //}
-                    if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1)) {
-                        //session_unset();
-                        //session_destroy();
-                    }
-                    $_SESSION['LAST_ACTIVITY'] = time();
-
-                    if(isset($_GET['logout'])){
-                        session_destroy();
-                        header("Location: admin.php");
-                    }
-//>>>>>>> 4caa7c012b230d3c5abc555981cff94162220d81
                     if(isset($_GET['message'])){
                         $message = $_GET['message'];
                         echo "<h1 class = 'admin_message'>" . $message . "</h1>";
@@ -102,7 +86,7 @@ $products_church = get_all_products($con, "kyrka");
                         ?>
                         <div >
                         </div>
-<?php>
+<?php
                     }
 
                 }
