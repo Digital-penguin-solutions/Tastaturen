@@ -380,6 +380,128 @@ if(!isset($functions_included)){
         echo $output;
     }
 
+    function get_all_media_posts_small($con){
+        $query  = "SELECT media_id, header_image, title FROM media";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+
+        $array  = array();
+
+        while($data = mysqli_fetch_array($select)){
+
+            $array[] = $data;
+        }
+
+
+        return $array;
+    }
+
+    function echo_admin_media($posts){
+        $count = 0;
+        foreach ($posts as $post) {
+            $title        = $post['title'];
+            $header_image = $post['header_image'];
+            $media_id     = $post['media_id'];
+            //$show         = $product['show'];
+
+            //if($show == 1){
+                //$toggle_button_value = "Hide product";
+                //$toggle_color        = "red";
+            //}
+            //else {
+                //$toggle_button_value = "Set visible";
+                //$toggle_color        = "green";
+            //}
+
+            if($count % 2 == 0) {
+                $offset = 1;
+            }
+            else {
+                $offset = 2;
+            }
+            ?>
+            <div class = "col-md-4 col-md-offset-<?php echo $offset ?> admin_product">
+                <h1><a href = "product?p=<?php echo $title?>"><?php echo $title ?></a></h1>
+                <img class = "center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image ); ?>" alt="No image selected"/>
+
+                <!--- EDIT BUTTON-->
+                <a href = "add_media?media_id=<?php echo $media_id?>"
+                   class = "product_button product_edit_button">
+                    <p class = "center_vertically_css">Edit</p>
+                </a>
+
+                <!--- TOGGLE SHOW BUTTON-->
+               <!-- <a href = "functions/toggle_product?product_id=<?php //echo $product_id?>"
+                   class = "product_button <?php //echo $toggle_color?> product_show_button">
+                    <p class = "center_vertically_css"><?php //echo $toggle_button_value?></p>
+                </a>
+               -->
+
+                <!--- DELETE BUTTON-->
+                <a href = "functions/delete_media?id=<?php echo $media_id?>"
+                   class = "product_button product_delete_button">
+                    <p class = "center_vertically_css">Delete</p>
+                </a>
+
+            </div>
+            <?php
+            $count++;
+        }
+
+
+    }
+    function echo_admin_products($products){
+        $count = 0;
+        foreach ($products as $product) {
+            $name       = $product['name'];
+            $main_image = $product['main_image'];
+            $product_id = $product['product_id'];
+            $show       = $product['show'];
+
+            if($show == 1){
+                $toggle_button_value = "Hide product";
+                $toggle_color        = "red";
+            }
+            else {
+                $toggle_button_value = "Set visible";
+                $toggle_color        = "green";
+            }
+
+            if($count % 2 == 0) {
+                $offset = 1;
+            }
+            else {
+                $offset = 2;
+            }
+            ?>
+            <div class = "col-md-4 col-md-offset-<?php echo $offset ?> admin_product">
+                <h1><a href = "product?p=<?php echo $name?>"><?php echo $name ?></a></h1>
+                <img class = "center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"/>
+
+                <!--- EDIT BUTTON-->
+                <a href = "add_product?product_id=<?php echo $product_id?>"
+                   class = "product_button product_edit_button">
+                    <p class = "center_vertically_css">Edit</p>
+                </a>
+
+                <!--- TOGGLE SHOW BUTTON-->
+                <a href = "functions/toggle_product?product_id=<?php echo $product_id?>"
+                   class = "product_button <?php echo $toggle_color?> product_show_button">
+                    <p class = "center_vertically_css"><?php echo $toggle_button_value?></p>
+                </a>
+
+                <!--- DELETE BUTTON-->
+                <a href = "functions/delete_product?id=<?php echo $product_id?>"
+                   class = "product_button product_delete_button">
+                    <p class = "center_vertically_css">Delete</p>
+                </a>
+
+            </div>
+            <?php
+            $count++;
+        }
+
+    }
+
 
     function get_field_by_name($con, $name){
         $name   = secure_str($name);

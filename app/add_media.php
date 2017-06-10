@@ -7,7 +7,7 @@ include "partials/head.php";
 <html lang="en">
 <head>
     <title>MetSense add product</title>
-    <meta name="description" content="MetSense - A page to add new products to the webpage">
+    <meta name="description" content="Tastaturen - Add media post">
 </head>
 
 <?php
