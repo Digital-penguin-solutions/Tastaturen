@@ -34,10 +34,10 @@ $products_church = get_all_products($con, "kyrka");
 
                 if(isset($_SESSION['admin'])){
 
-                    if(isset($_GET['logout'])){
-                        session_destroy();
-                        header("Location: admin.php");
-                    }
+                    //if(isset($_GET['logout'])){
+                        //session_destroy();
+                        //header("Location: admin.php");
+                    //}
                     if(isset($_GET['message'])){
                         $message = $_GET['message'];
                         echo "<h1 class = 'admin_message'>" . $message . "</h1>";
@@ -172,13 +172,13 @@ $products_church = get_all_products($con, "kyrka");
 
                 if(isset($_SESSION['admin'])){
                     ?>
-                    <a href = "functions/add_product.php" class = "add_product_button center_horizontally_css">
+                    <a href = "add_product.php" class = "add_product_button center_horizontally_css">
                         Add a new product
                     </a>
                     <a href = "admin?change_password=" class = "add_product_button center_horizontally_css">
                         Change password
                     </a>
-                    <a href = "admin?logout=" class = "add_product_button center_horizontally_css">
+                    <a href = "functions/logout" class = "add_product_button center_horizontally_css">
                         Logout
                     </a>
                     <?php
