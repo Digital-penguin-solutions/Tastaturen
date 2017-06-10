@@ -52,7 +52,44 @@ $products_church = get_all_products($con, "kyrka");
                         </form>
                         <?php
                     }
+                    ?>
+                    <div class = "manage_buttons_container">
+                        <?php
+                        if(isset($_GET['view']) && $_GET['view'] == "products"){
+                            ?>
+                            <a href = "add_product" class = "manage_button ">
+                                <p> Add new product </p>
+                            </a>
+                        <?php
 
+                        }
+                        else {
+                        ?>
+                            <a href = "add_media" class = "manage_button ">
+                                <p> New media post</p>
+                            </a>
+                        <?php
+                        }
+                        if(isset($_GET['view']) && $_GET['view'] == "media"){
+                            ?>
+                            <a href = "admin?view=products" class = "manage_button ">
+                                <p> Manage products</p>
+                            </a>
+                        <?php
+
+                        }
+                        else {
+                        ?>
+                            <a href = "admin?view=media" class = "manage_button ">
+                                <p> Manage media posts</p>
+                            </a>
+                        <?php
+
+                        }
+                        ?>
+                    </div>
+
+                    <?php
                     // if products are to be viewed
                     if(isset($_GET['view']) && $_GET['view'] == "products"){
                         ?>
@@ -74,80 +111,30 @@ $products_church = get_all_products($con, "kyrka");
                     }
                     // if meda posts are to be viewed
                     else if(isset($_GET['view']) && $_GET['view'] == "media"){
-<<<<<<< HEAD
 ?>
                         <h1 class = "products_type"> Media posts </h1>
                         <div class = "row admin_all_products_container">
 <?php
                             $posts = get_all_media_posts_small($con);
                             echo_admin_media($posts);
-?>
-=======
                         ?>
                         <div class = "row admin_all_products_container">
                             <?php
                             $posts = get_all_media_posts_small($con);
                             echo_admin_media($posts);
                             ?>
->>>>>>> c1024fbe8aa81a9b73e48b5e420bc419748143d4
                         </div>
                         <?php
 
                     }
                     else {
                         ?>
-                        <div class = "manage_buttons_contianer">
-                            <a href = "admin?view=products" class = "manage_button ">
-                                <p> Manage products</p>
-                                
-                            </a>
-                            <a href = "admin?view=media" class = "manage_button ">
-                                <p> Manage media posts</p>
-                            </a>
-                        </div>
-<<<<<<< HEAD
-<?php
-=======
                         <?php
->>>>>>> c1024fbe8aa81a9b73e48b5e420bc419748143d4
                     }
                 }
 
                 if(isset($_SESSION['admin'])){
                     ?>
-<<<<<<< HEAD
-                    <div class = "manage_buttons_contianer">
-                    <?php
-                        if(isset($_GET['view']) && $_GET['view']=="media"){
-                    ?>
-                        <a href = "admin?view=products" class = "manage_button ">
-                            <p> Manage products</p>
-                        </a>
-                        <a href = "add_media.php" class = "manage_button">
-                            
-                            <p> Add new media post</p>
-                        </a>
-
-                    <?php
-                        }
-                        if(isset($_GET['view']) && $_GET['view']=="products"){
-                    ?>
-                        <a href = "admin?view=media" class = "manage_button">
-                            <p> Manage media posts</p>
-                        </a>
-                        <a href = "add_product.php" class = "manage_button">
-                            <p> Add new product </p>
-                        </a>
-                    <?php
-                        }
-                    ?>
-                    </div>
-                    <div>
-                        <a href = "admin?change_password=" class = "add_product_button center_horizontally_css">
-                            Change password
-                        </a>
-                        <a href = "functions/logout" class = "add_product_button center_horizontally_css">
-=======
                     <div class="a_btn_container col-xs-12">
                         <a href = "add_media.php" class = "add_product_button col-xs-5 col-xs-offset-1">
                             Add new media post
@@ -159,7 +146,6 @@ $products_church = get_all_products($con, "kyrka");
                             Change password
                         </a>
                         <a href = "functions/logout" class = "add_product_button col-xs-5 col-xs-offset-1">
->>>>>>> c1024fbe8aa81a9b73e48b5e420bc419748143d4
                             Logout
                         </a>
                     </div>

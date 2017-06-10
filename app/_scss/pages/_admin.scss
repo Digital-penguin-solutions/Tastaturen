@@ -81,19 +81,18 @@
 
 }
 
-//<<<<<<< HEAD
-.manage_buttons_contianer{
+.manage_buttons_container{
 
     height:10%;
     display:block;
-    margin-top:20%;
+    margin-top:10%;
     width:60%;
     margin-left:20%;
-    margin-bottom:10%;
 
     p{
         @include vertical-align($pos: relative);
     }
+
     .manage_button {
         text-align:center;
         line-height:100%;
@@ -106,26 +105,26 @@
         float:left;
         font-size:1vw;
         &:nth-child(2){
-        margin-left:10%;
+            margin-left:10%;
 
         }
     }
 }
 
-.add_product_button {
-    text-align:center;
-    display:block;
-    width: 20%;
-    height:5%;
-    text-decoration:none;
-    color: white;
-    font-size: 1vw;
-    cursor:pointer;
-    background: $color3;
-    margin-top:5%;
-    padding:1%;
-    margin-bottom:5%;
-}
+//.add_product_button {
+//text-align:center;
+//display:block;
+//width: 20%;
+//height:5%;
+//text-decoration:none;
+//color: white;
+//font-size: 1vw;
+//cursor:pointer;
+//background: $color3;
+//margin-top:5%;
+//padding:1%;
+//margin-bottom:5%;
+//}
 //=======
 
 //>>>>>>> c1024fbe8aa81a9b73e48b5e420bc419748143d4
