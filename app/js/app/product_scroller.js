@@ -5,6 +5,7 @@ var all_current_left = [];
 
 var currently_sliding = false;
 
+var product_width;
 
 function on_ready_product_scroller () {
     init_product_slider();
@@ -49,8 +50,6 @@ function init_product_slider(){
         }
     }
 }
-
-var product_width;
 
 function move(left, products_container){
 
