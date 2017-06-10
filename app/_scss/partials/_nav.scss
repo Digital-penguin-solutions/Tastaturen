@@ -1,5 +1,6 @@
 @import "../everything";
 
+//nav styling
 .nav_d{
   right:0;
   top:0;
@@ -17,7 +18,7 @@
       width: 0;
       height: 0;
       border-top: 100vw solid $color3;
-      border-left: 4vw solid transparent;
+      border-left: 5vw solid transparent;
     }
 
     //cart icon
@@ -25,8 +26,8 @@
       z-index: 10002;
       width:100%;
       a {
-        margin-left:1vw;
-        font-size: 1.3vw;
+        margin-left:3vw;
+        font-size: 4vw;
         color: $white;
         text-decoration: none;
         i {
@@ -43,9 +44,10 @@
 
     //Logo
     .nav_d_logo{
+      margin-top:2vh;
       position: absolute;
-      height: 30vh;
-      width: 30vh;
+      height: 35vh;
+      width: 35vh;
 
       a{
         height: 100%;
@@ -67,7 +69,7 @@
         display: block;
         margin-right:1.2vw;
         color: $color2;
-        font-size: 1.2vw;
+        font-size: 4.5vw;
 
         &:hover{
           color: $color2*1.5;
@@ -76,6 +78,133 @@
 
         &:active{
           color: $white;
+        }
+      }
+    }
+  }
+}
+
+//nav btn styling
+.nav_d_btn{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 5vh;
+  width: 7.5vw;
+  z-index: 20000;
+
+  .McButton {
+    $bar-color: $white;
+    color: $bar-color;
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    top: 1.5vh;
+    right: 2vw;
+    cursor: pointer;
+    padding: 0 !important;
+
+    b {
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 2px !important;
+      background-color: $bar-color;
+      position:absolute;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 50%;
+      }
+
+      &:nth-child(3) {
+        top: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .nav_d{
+    right:0;
+    top:0;
+    background: $color3;
+    color: $white;
+    position: fixed;
+    height: 100vh;
+    z-index: 10000;
+
+    .nav_d_container{
+
+      .nav_d_triage{
+        position: absolute;
+        left: -2.5vw !important;
+        width: 0;
+        height: 0;
+        border-top: 100vw solid $color3;
+        border-left: 4vw solid transparent;
+      }
+
+      //cart icon
+      .nav_cart{
+        z-index: 10002;
+        width:100%;
+        a {
+          margin-left:1vw;
+          font-size: 1.3vw;
+          color: $white;
+          text-decoration: none;
+          i {
+            color: $white;
+          }
+          &:hover{
+            color: darken($white, 20%);
+            i{
+              color: darken($white, 20%);
+            }
+          }
+        }
+      }
+
+      //Logo
+      .nav_d_logo{
+        position: absolute;
+        height: 30vh;
+        width: 30vh;
+
+        a{
+          height: 100%;
+          width:100%;
+
+          img{
+          }
+        }
+      }
+
+      //links
+      .nav_d_link{
+        position: absolute;
+        right:0;
+        text-align:right;
+        @include vertical-align($pos:absolut);
+
+        a{
+          display: block;
+          margin-right:1.2vw;
+          color: $color2;
+          font-size: 1.2vw;
+
+          &:hover{
+            color: $color2*1.5;
+            text-decoration: none;
+          }
+
+          &:active{
+            color: $white;
+          }
         }
       }
     }
