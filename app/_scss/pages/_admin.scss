@@ -81,6 +81,7 @@
 
 }
 
+//<<<<<<< HEAD
 .manage_buttons_contianer{
 
     height:10%;
@@ -125,6 +126,9 @@
     padding:1%;
     margin-bottom:5%;
 }
+//=======
+
+//>>>>>>> c1024fbe8aa81a9b73e48b5e420bc419748143d4
 
 /* Admin form to add a new product*/
 .add_product_form {
@@ -279,5 +283,28 @@
     }
     input{
         font-weight: 600;
+    }
+}
+
+.a_btn_container{
+    .add_product_button {
+        vertical-align: middle;
+        line-height: 21vh;
+        text-align:center;
+        display:block;
+        height:24vh;
+        text-decoration:none;
+        color: white;
+        font-size: 1vw;
+        cursor:pointer;
+        background: $color3;
+        margin-top:5%;
+        padding:1%;
+        margin-bottom:5%;
+        text-transform: uppercase;
+        &:hover{
+            background: lighten($color3, 20%);
+            transition: 0.3s;
+        }
     }
 }

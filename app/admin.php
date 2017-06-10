@@ -21,10 +21,10 @@ $products_church = get_all_products($con, "kyrka");
 <body class="col-xs-10">
 <?php include "partials/nav.php" ?>
 
-<section class = "admin_page">
+<section class = "admin_page col-xs-12">
     <div class = "container-fluid full_height">
         <div class = "row full_height">
-            <div class = "col-md-8 col-md-offset-2">
+            <div class = "col-xs-10 col-xs-offset-1">
                 <h1 class = "admin_header"> Admin page </h1>
 
                 <?php
@@ -33,24 +33,8 @@ $products_church = get_all_products($con, "kyrka");
                 }
 
                 if(isset($_SESSION['admin'])){
-                    
 
-//<<<<<<< HEAD
-                //if(isset($_GET['logout'])){
-                        //session_destroy();
-                        //header("Location: admin.php");
-                    //}
-                    if (isset($_SESSION['LAST_ACTIVITY']) && (time() - $_SESSION['LAST_ACTIVITY'] > 1)) {
-                        //session_unset();
-                        //session_destroy();
-                    }
-                    $_SESSION['LAST_ACTIVITY'] = time();
 
-                    if(isset($_GET['logout'])){
-                        session_destroy();
-                        header("Location: admin.php");
-                    }
-//>>>>>>> 4caa7c012b230d3c5abc555981cff94162220d81
                     if(isset($_GET['message'])){
                         $message = $_GET['message'];
                         echo "<h1 class = 'admin_message'>" . $message . "</h1>";
@@ -71,25 +55,26 @@ $products_church = get_all_products($con, "kyrka");
 
                     // if products are to be viewed
                     if(isset($_GET['view']) && $_GET['view'] == "products"){
-                    ?>
-                    <div class = "row admin_all_products_container">
-                        <h1 class = "products_type"> Home products </h1>
+                        ?>
+                        <div class = "row admin_all_products_container">
+                            <h1 class = "products_type"> Home products </h1>
 
-                        <?php
+                            <?php
                             echo_admin_products($products_home);
-                        ?>
-                    </div>
-                    <div class = "row admin_all_products_container">
-                        <h1 class = "products_type"> Church products </h1>
+                            ?>
+                        </div>
+                        <div class = "row admin_all_products_container">
+                            <h1 class = "products_type"> Church products </h1>
 
-                        <?php
+                            <?php
                             echo_admin_products($products_church);
-                        ?>
-                    </div>
-                    <?php
+                            ?>
+                        </div>
+                        <?php
                     }
                     // if meda posts are to be viewed
                     else if(isset($_GET['view']) && $_GET['view'] == "media"){
+<<<<<<< HEAD
 ?>
                         <h1 class = "products_type"> Media posts </h1>
                         <div class = "row admin_all_products_container">
@@ -97,9 +82,17 @@ $products_church = get_all_products($con, "kyrka");
                             $posts = get_all_media_posts_small($con);
                             echo_admin_media($posts);
 ?>
+=======
+                        ?>
+                        <div class = "row admin_all_products_container">
+                            <?php
+                            $posts = get_all_media_posts_small($con);
+                            echo_admin_media($posts);
+                            ?>
+>>>>>>> c1024fbe8aa81a9b73e48b5e420bc419748143d4
                         </div>
-<?php
-                        
+                        <?php
+
                     }
                     else {
                         ?>
@@ -112,13 +105,17 @@ $products_church = get_all_products($con, "kyrka");
                                 <p> Manage media posts</p>
                             </a>
                         </div>
+<<<<<<< HEAD
 <?php
+=======
+                        <?php
+>>>>>>> c1024fbe8aa81a9b73e48b5e420bc419748143d4
                     }
-
                 }
 
                 if(isset($_SESSION['admin'])){
                     ?>
+<<<<<<< HEAD
                     <div class = "manage_buttons_contianer">
                     <?php
                         if(isset($_GET['view']) && $_GET['view']=="media"){
@@ -150,6 +147,19 @@ $products_church = get_all_products($con, "kyrka");
                             Change password
                         </a>
                         <a href = "functions/logout" class = "add_product_button center_horizontally_css">
+=======
+                    <div class="a_btn_container col-xs-12">
+                        <a href = "add_media.php" class = "add_product_button col-xs-5 col-xs-offset-1">
+                            Add new media post
+                        </a>
+                        <a href = "add_product.php" class = "add_product_button col-xs-5 col-xs-offset-1">
+                            Add a new product
+                        </a>
+                        <a href = "admin?change_password=" class = "add_product_button col-xs-5 col-xs-offset-1">
+                            Change password
+                        </a>
+                        <a href = "functions/logout" class = "add_product_button col-xs-5 col-xs-offset-1">
+>>>>>>> c1024fbe8aa81a9b73e48b5e420bc419748143d4
                             Logout
                         </a>
                     </div>
