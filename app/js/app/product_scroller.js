@@ -57,9 +57,9 @@ function move(left, products_container){
     var i = all_product_sliders.indexOf(products_container);
 
     if(currently_sliding === false){
-        console.log("ready");
         currently_sliding = true;
 
+        console.timeEnd("1");
         var dir = -1;
 
         if(left){
@@ -67,7 +67,6 @@ function move(left, products_container){
         }
 
         var products = products_container.getElementsByClassName("i_products_sliders");
-        console.log(product_width);
         //console.log(products);
 
         // if you've gone all the way to the left
@@ -83,10 +82,13 @@ function move(left, products_container){
             dir = 0;
         }
 
-        var old_left = get_left_in_percentage(products_container);
+        //var old_left = get_left_in_percentage(products_container);
+        //var old_left_r = get_left_in_percentage(products_container);
+        var old_left = all_current_left[i];
+        //console.log(old_left_r);
 
         // it will be "auto" at first. Minus the o because the function removes last character
-        if(old_left == "aut"){ 
+        if(old_left == "aut" || old_left == undefined){ 
             $(products_container).css("left", "0%");
             old_left = 0;
         }
@@ -96,15 +98,15 @@ function move(left, products_container){
         // rounds to three decimals
         var new_left = old_left*1.0 + product_width*dir;
         new_left = (Math.round(new_left*1000) / 1000);
+        console.timeEnd("7");
 
 
 
         // gets the current left value of the container
         //var current_left_real = get_left_in_percentage(products_container);
         var current_left_real = all_current_left[i];
-        console.log("current_left_real: ");
-        console.log(current_left_real);
         var current_left = Math.round(current_left_real);
+        console.timeEnd("8");
 
 
         $(products_container).animate({
@@ -112,6 +114,7 @@ function move(left, products_container){
         },900,'easeOutQuint', function(){
             currently_sliding = false;
         });
+        console.timeEnd("9");
         // makes sure current_left isn't NaN
         //if(isNaN(current_left)){
             //current_left = 0;
