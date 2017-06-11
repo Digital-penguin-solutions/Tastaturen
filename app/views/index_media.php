@@ -3,7 +3,31 @@
         <div class="col-xs-12 i_media_container grid_container">
             <div class = "grid_temp_holder">
 
-                <div size = "big"    class = "grid_item i_media_item">
+            <?php
+                $con = connect();
+                $posts = get_all_media_posts_small($con);
+
+                foreach($posts as $post){
+                    $title        = $post['title'];
+                    $header_image = $post['header_image'];
+                    $size         = $post['size'];
+
+                    ?> 
+
+                    <div size="<?php echo $size; ?>" class = "grid_item i_media_item"> 
+                        <div class="grid_item_text">
+                            <h1><?php $title; ?></h1>
+                        </div>
+                        <img src="data:image/jpeg;base64,<?php echo base64_encode($header_image) ?>" alt="Huvudbild"/>
+
+                    </div>
+
+
+                    <?php
+                }
+
+            ?>
+                <!--<div size = "big"    class = "grid_item i_media_item">
                     <div class="grid_item_text">
                         <h1>Fin media</h1>
                     </div>
@@ -79,6 +103,7 @@
                     </div>
                     <img src = "img/product/kyrka/Sliders/1.jpg">
                 </div>
+                -->
 
             </div>
         </div>

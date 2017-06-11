@@ -386,7 +386,7 @@ if(!isset($functions_included)){
 
     }
     function get_all_media_posts_small($con){
-        $query  = "SELECT media_id, header_image, title FROM media";
+        $query  = "SELECT size, media_id, header_image, title FROM media";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
 
         $array  = array();
