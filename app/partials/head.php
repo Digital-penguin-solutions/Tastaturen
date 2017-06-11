@@ -1,7 +1,7 @@
 <?php include "loading.php"; ?>
 <?php include "views/admin_info.php"; ?>
 <?php include "views/edit.php"; ?>
-<?php include "views/media_event.php"; ?>
+<?php //include "views/media_event.php"; ?>
 
 <head>
     <meta charset="utf-8">

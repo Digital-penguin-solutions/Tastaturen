@@ -21,6 +21,7 @@ Index
 
     * Media
         # Göra ett grid system som kan visa media i form av text och bilder.
+        # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har smma funkonalitet som på desktop.
         # Trycker du på en media tab kommer det upp en popup screan som visar texten, bilden eller videon.
 
 Prudkter
@@ -38,9 +39,6 @@ Admin
     * När du är innloggad som admin ska det bara finnas 3 knappar.
         1 för att redigera sidorna 1 för att redigera media och en för produkterna.
     * Gå tillbaka knapp inne på add_media och add_product
-
-404
-    * Hitta orgel ljud istället för piano.
 
 footer
     * Fixa alla länkar.
