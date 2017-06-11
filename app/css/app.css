@@ -2983,18 +2983,6 @@ section {
           text-align: center;
           margin-top: 20vh;
           width: 100%; }
-          .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_text .i_hover_left {
-            position: absolute;
-            left: 0%;
-            right: 0;
-            width: 50%;
-            height: 100%; }
-          .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_text .i_hover_left {
-            position: absolute;
-            left: 50%;
-            right: 0;
-            width: 50%;
-            height: 100%; }
           .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_text h1 {
             font-size: 8vw;
             font-weight: 600;
