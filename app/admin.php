@@ -53,11 +53,11 @@ $products_church = get_all_products($con, "kyrka");
                         <?php
                     }
                     ?>
-                    <div class = "manage_buttons_container">
+                    <div class = "manage_buttons_container col-xs-12">
                         <?php
                         if(isset($_GET['view']) && $_GET['view'] == "products"){
                             ?>
-                            <a href = "admin/add_product.php" class = "manage_button ">
+                            <a href = "admin/add_product.php" class = "manage_button col-xs-5 col-xs-offset-1">
                                 <p> Add new product </p>
                             </a>
                         <?php
@@ -65,14 +65,14 @@ $products_church = get_all_products($con, "kyrka");
                         }
                         else {
                         ?>
-                            <a href = "admin/add_media.php" class = "manage_button ">
+                            <a href = "admin/add_media.php" class = "manage_button col-xs-5 col-xs-offset-1">
                                 <p> New media post</p>
                             </a>
                         <?php
                         }
                         if(isset($_GET['view']) && $_GET['view'] == "media"){
                             ?>
-                            <a href = "admin?view=products" class = "manage_button ">
+                            <a href = "admin?view=products" class = "manage_button col-xs-5 col-xs-offset-1">
                                 <p> Manage products</p>
                             </a>
                         <?php
@@ -80,7 +80,7 @@ $products_church = get_all_products($con, "kyrka");
                         }
                         else {
                         ?>
-                            <a href = "admin?view=media" class = "manage_button ">
+                            <a href = "admin?view=media" class = "manage_button col-xs-5 col-xs-offset-1">
                                 <p> Manage media posts</p>
                             </a>
                         <?php
