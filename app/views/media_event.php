@@ -1,12 +1,22 @@
+<?php
+    include "../functions/functions.php";
+    $con = connect();
+    $media_id = $_GET['media_id'];
+    $post = get_media_by_id($con, $media_id);
+    $title = $post['title'];
+    $header_image = $post['header_image'];
+    $second_image = $post['second_image'];
+    $content = $post['content'];
+
+?>
 <div class="media_even">
     <div class="media_even_container">
         <img class="media_even_close" src="img/cross.svg" alt="close media tab">
         <div class="media_even_container_container">
-            <img src="img/product/bg.jpg" alt="hedder image">
-            <h1>Myket fint media innlägg</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum mauris id tortor egestas, eget hendrerit purus dapibus. Sed non nulla venenatis, pharetra mauris sed, placerat libero. Cras ipsum magna, facilisis non dignissim a, imperdiet sed lorem. Proin maximus ligula sem. Vivamus viverra sodales sem et molestie. Aenean consectetur diam a risus finibus cursus. Proin vel consectetur turpis, eget rhoncus arcu. Nam ultricies molestie dapibus. In hac habitasse platea dictumst. In efficitur metus sit amet massa fermentum, eget varius neque condimentum. Proin fermentum nisl lorem, id euismod ex bibendum vitae. Cras posuere efficitur fringilla. Mauris vitae sem eu mauris varius eleifend. Cras eget purus eu ante sollicitudin finibus. Curabitur luctus ornare nisl, in consectetur velit interdum non. Proin quis dui nec justo accumsan vulputate vitae mollis ipsum.</p>
+            <h1><?php echo $title; ?></h1>
+            <img class = "" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image ); ?>" alt="No image selected"/>
+            <p> <?php echo $content; ?></p>
             <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum mauris id tortor egestas, eget hendrerit purus dapibus. Sed non nulla venenatis, pharetra mauris sed, placerat libero. Cras ipsum magna, facilisis non dignissim a, imperdiet sed lorem. Proin maximus ligula sem. Vivamus viverra sodales sem et molestie. Aenean consectetur diam a risus finibus cursus. Proin vel consectetur turpis, eget rhoncus arcu. Nam ultricies molestie dapibus. In hac habitasse platea dictumst. In efficitur metus sit amet massa fermentum, eget varius neque condimentum. Proin fermentum nisl lorem, id euismod ex bibendum vitae. Cras posuere efficitur fringilla. Mauris vitae sem eu mauris varius eleifend. Cras eget purus eu ante sollicitudin finibus. Curabitur luctus ornare nisl, in consectetur velit interdum non. Proin quis dui nec justo accumsan vulputate vitae mollis ipsum.</p>
         </div>
     </div>
 </div>

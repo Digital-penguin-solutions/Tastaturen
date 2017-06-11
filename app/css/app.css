@@ -1543,16 +1543,16 @@ section {
       right: 1vw;
       cursor: pointer; }
     .media_even .media_even_container .media_even_container_container {
-      margin-left: 5%;
-      margin-top: 5%;
-      width: 90%;
+      margin-left: 10%;
+      margin-top: 1%;
+      width: 80%;
       height: 90%;
       overflow: scroll; }
       .media_even .media_even_container .media_even_container_container img {
         width: 100%;
-        height: 30vw; }
+        max-height: 70vh; }
       .media_even .media_even_container .media_even_container_container h1 {
-        margin-top: 2vh;
+        text-align: center;
         font-size: 3vw; }
       .media_even .media_even_container .media_even_container_container p {
         margin-top: 2vh;

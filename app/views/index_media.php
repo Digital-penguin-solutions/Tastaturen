@@ -1,3 +1,4 @@
+<div id = "i_load_container"> </div>
 <section id="Media" class="container-fluid i_media">
     <div class="row-fluid i_media">
         <div class="col-xs-12 i_media_container grid_container">
@@ -12,11 +13,12 @@
 
                     $header_image = $post['header_image'];
                     $size         = $post['size'];
+                    $media_id     = $post['media_id'];
 
                     ?> 
 
                     <div size="<?php echo $size; ?>" class = "grid_item i_media_item"> 
-                        <div class = "i_media_inner">
+                        <div media_id = "<?php echo $media_id; ?>" class = "i_media_inner">
                             <div class="grid_item_text">
                                 <h1><?php echo $title; ?></h1>
                             </div>
