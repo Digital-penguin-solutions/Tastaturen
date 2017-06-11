@@ -9,17 +9,14 @@ $con = connect();
 //$products = get_all_products($con, "");
 $products_home = get_all_products($con, "hem");
 $products_church = get_all_products($con, "kyrka");
-?> <body> <?php //include "include_pages/nav.php" ?> <section class="admin_page"><div class="container-fluid full_height"><div class="row full_height"><div class="col-md-8 col-md-offset-2"><h1 class="admin_header">Admin page</h1> <?php
+?> <body class="col-xs-10"> <?php include "partials/nav.php" ?> <section class="admin_page col-xs-12"><div class="container-fluid full_height"><div class="row full_height"><div class="col-xs-10 col-xs-offset-1"><h1 class="admin_header">Admin page</h1> <?php
                 if(isset($_GET['wrong'])){
                     echo "<h2 class = 'admin_header'> Wrong password, please try again </h2>";
                 }
 
                 if(isset($_SESSION['admin'])){
 
-                    if(isset($_GET['logout'])){
-                        session_destroy();
-                        header("Location: admin.php");
-                    }
+
                     if(isset($_GET['message'])){
                         $message = $_GET['message'];
                         echo "<h1 class = 'admin_message'>" . $message . "</h1>";
@@ -30,66 +27,51 @@ $products_church = get_all_products($con, "kyrka");
 
                         ?> <form class="login change_password_form" action="functions/login.php" method="post"><p>New password:</p><input placeholder="New password" type="password" name="password"><br><input placeholder="Repeat new password" type="password" name="password_repeat"> <input type="submit" name="set_password" value="Change"></form> <?php
                     }
-                    ?> <div class="row admin_all_products_container"><h1 class="products_type">Home products</h1> <?php
-                        $count = 0;
-                        foreach ($products_home as $product) {
-                            $name       = $product['name'];
-                            $main_image = $product['main_image'];
-                            $product_id = $product['product_id'];
-                            $show       = $product['show'];
+                    ?> <div class="manage_buttons_container col-xs-12"> <?php
+                        if(isset($_GET['view']) && $_GET['view'] == "products"){
+                            ?> <a href="admin/add_product.php" class="manage_button col-xs-5 col-xs-offset-1"><p>Add new product</p></a> <?php
 
-                            if($show == 1){
-                                $toggle_button_value = "Hide product";
-                                $toggle_color        = "red";
-                            }
-                            else {
-                                $toggle_button_value = "Set visible";
-                                $toggle_color        = "green";
-                            }
-
-                            if($count % 2 == 0) {
-                                $offset = 1;
-                            }
-                            else {
-                                $offset = 2;
-                            }
-                            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?p=<?php echo $name?>"><?php echo $name ?></a></h1><img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"><!--- EDIT BUTTON--> <a href="add_product?product_id=<?php echo $product_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- TOGGLE SHOW BUTTON--> <a href="functions/toggle_product?product_id=<?php echo $product_id?>" class="product_button <?php echo $toggle_color?> product_show_button"><p class="center_vertically_css"><?php echo $toggle_button_value?></p></a><!--- DELETE BUTTON--> <a href="functions/delete_product?id=<?php echo $product_id?>" class="product_button product_delete_button"><p class="center_vertically_css">Delete</p></a></div> <?php
-                            $count++;
                         }
-                        ?> </div><div class="row admin_all_products_container"><h1 class="products_type">Church products</h1> <?php
-                        $count = 0;
-                        foreach ($products_church as $product) {
-                            $name       = $product['name'];
-                            $main_image = $product['main_image'];
-                            $product_id = $product['product_id'];
-                            $show       = $product['show'];
+                        else {
+                        ?> <a href="admin/add_media.php" class="manage_button col-xs-5 col-xs-offset-1"><p>New media post</p></a> <?php
+                        }
+                        if(isset($_GET['view']) && $_GET['view'] == "media"){
+                            ?> <a href="admin?view=products" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage products</p></a> <?php
 
-                            if($show == 1){
-                                $toggle_button_value = "Hide product";
-                                $toggle_color        = "red";
-                            }
-                            else {
-                                $toggle_button_value = "Set visible";
-                                $toggle_color        = "green";
-                            }
+                        }
+                        else {
+                        ?> <a href="admin?view=media" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage media posts</p></a> <?php
 
-                            if($count % 2 == 0) {
-                                $offset = 1;
-                            }
-                            else {
-                                $offset = 2;
-                            }
-                            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?p=<?php echo $name?>"><?php echo $name ?></a></h1><img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"><!--- EDIT BUTTON--> <a href="add_product?product_id=<?php echo $product_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- TOGGLE SHOW BUTTON--> <a href="functions/toggle_product?product_id=<?php echo $product_id?>" class="product_button <?php echo $toggle_color?> product_show_button"><p class="center_vertically_css"><?php echo $toggle_button_value?></p></a><!--- DELETE BUTTON--> <a href="functions/delete_product?id=<?php echo $product_id?>" class="product_button product_delete_button"><p class="center_vertically_css">Delete</p></a></div> <?php
-                            $count++;
                         }
                         ?> </div> <?php
+                    // if products are to be viewed
+                    if(isset($_GET['view']) && $_GET['view'] == "products"){
+                        ?> <div class="row admin_all_products_container"><h1 class="products_type">Home products</h1> <?php
+                            echo_admin_products($products_home);
+                            ?> </div><div class="row admin_all_products_container"><h1 class="products_type">Church products</h1> <?php
+                            echo_admin_products($products_church);
+                            ?> </div> <?php
+                    }
+                    // if meda posts are to be viewed
+                    else if(isset($_GET['view']) && $_GET['view'] == "media"){
+?> <h1 class="products_type">Media posts</h1><div class="row admin_all_products_container"> <?php
+                            $posts = get_all_media_posts_small($con);
+                            echo_admin_media($posts);
+                        ?> <div class="row admin_all_products_container"> <?php
+                            $posts = get_all_media_posts_small($con);
+                            echo_admin_media($posts);
+                            ?> </div> <?php
 
+                    }
+                    else {
+                        ?> <?php
+                    }
                 }
 
                 if(isset($_SESSION['admin'])){
-                    ?> <a href="functions/add_product.php" class="add_product_button center_horizontally_css">Add a new product </a><a href="admin?change_password=" class="add_product_button center_horizontally_css">Change password </a><a href="admin?logout=" class="add_product_button center_horizontally_css">Logout </a> <?php
+                    ?> <div class="a_btn_container col-xs-12"><a href="admin/add_media.php" class="add_product_button col-xs-5 col-xs-offset-1">Add new media post </a><a href="admin/add_product.php" class="add_product_button col-xs-5 col-xs-offset-1">Add a new product </a><a href="admin?change_password=" class="add_product_button col-xs-5 col-xs-offset-1">Change password </a><a href="functions/logout" class="add_product_button col-xs-5 col-xs-offset-1">Logout</a></div> <?php
                 }
                 else {
                     ?> <form class="login hidden-sm hidden-xs" action="functions/login.php" method="post"><p>PASSWORD:</p><input type="password" name="password"> <input type="submit" name="login" value="Login"></form> <?php
                 }
-                ?> </div></div></div></section></body></html>
+                ?> </div></div></div></div></section></body></html>

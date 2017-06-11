@@ -12,7 +12,6 @@
 <?php
 include "partials/nav.php";
 include "functions/functions.php";
-include "views/media event.php";
 
 $con             = connect();
 $products_home   = get_all_visible_products($con, "hem");
@@ -23,9 +22,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 <header id="Intro" class="container-fluid i_header" role="banner">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
-
             <?php include "views/index_header.php"?>
-
         </div>
     </div>
 </header>
