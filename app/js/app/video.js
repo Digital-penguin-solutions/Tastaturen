@@ -1,4 +1,8 @@
 function onYouTubeIframeAPIReady() {
+    $(document).ready(on_ready_video);
+
+}
+function on_ready_video(){
     var player;
     player = new YT.Player('organvideo', {
         videoId: 'z8kBoDdQOgc', // YouTube Video ID
@@ -27,4 +31,5 @@ function onYouTubeIframeAPIReady() {
         }
 
     });
+
 }

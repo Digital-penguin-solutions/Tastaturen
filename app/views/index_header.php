@@ -45,7 +45,7 @@
                     <div class="i_slider_2_container">
                         <div class="i_slider_2_text col-xs-12">
                             <div class="i_slider_2_text_container col-xs-5 col-xs-offset-1">
-                                <h1> orgel</h1>
+                                <h1> Orgel</h1>
                                 <p>Mycket fin orgel med mycket bra saker. </p>
                                 <div class="i_slider_2_btn ">
                                     <button class = "slide-in-delay-3 slide-in slide-in-left"

@@ -4,7 +4,6 @@ function close_edit_view(){
 function show_edit_view(element){
     $("#editor").css("visibility", "visible");
 
-    //var old = (element.textContent===undefined) ? element.innerText : element.textContent;
     var span = $(element).find("span");
     var old = $(span).text();
     old = old.trim();
