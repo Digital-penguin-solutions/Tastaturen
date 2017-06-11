@@ -1881,7 +1881,9 @@ section {
   display: block;
   margin-top: 10%;
   width: 60%;
-  margin-left: 20%; }
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 10%; }
   .manage_buttons_container p {
     position: relative;
     top: 50%;

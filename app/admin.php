@@ -63,7 +63,7 @@ $products_church = get_all_products($con, "kyrka");
                         <?php
 
                         }
-                        else {
+                        else if(isset($_GET['view'])){
                         ?>
                             <a href = "add_media.php" class = "manage_button col-xs-5 col-xs-offset-1">
                                 <p> New media post</p>
@@ -78,7 +78,7 @@ $products_church = get_all_products($con, "kyrka");
                         <?php
 
                         }
-                        else {
+                        else if(isset($_GET['view'])){
                         ?>
                             <a href = "admin?view=media" class = "manage_button col-xs-5 col-xs-offset-1">
                                 <p> Manage media posts</p>
@@ -86,6 +86,17 @@ $products_church = get_all_products($con, "kyrka");
                         <?php
 
                         }
+                        if(!isset($_GET['view'])){
+                        ?>
+                            <a href = "admin?view=media" class = "manage_button col-xs-5 col-xs-offset-1">
+                                <p> Manage media posts</p>
+                            </a>
+                            <a href = "admin?view=products" class = "manage_button col-xs-5 col-xs-offset-1">
+                                <p> Manage products</p>
+                            </a>
+                    <?php
+                        }
+
                         ?>
                     </div>
 
