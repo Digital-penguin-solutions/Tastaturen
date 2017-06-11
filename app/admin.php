@@ -128,14 +128,6 @@ $products_church = get_all_products($con, "kyrka");
 <?php
                             $posts = get_all_media_posts_small($con);
                             echo_admin_media($posts);
-                        ?>
-                        <div class = "row admin_all_products_container">
-                            <?php
-                            $posts = get_all_media_posts_small($con);
-                            echo_admin_media($posts);
-                            ?>
-                        </div>
-                        <?php
 
                     }
                     else {

@@ -110,7 +110,7 @@ function init_grids(){
         //}
         //init_part(grid, items, 0, 0);
 
-        //$(grid_temp_holder).remove();
+        $(grid_temp_holder).remove();
     }
     
 }

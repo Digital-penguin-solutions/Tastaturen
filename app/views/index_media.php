@@ -6,9 +6,12 @@
             <?php
                 $con = connect();
                 $posts = get_all_media_posts_small($con);
+                echo sizeof($posts);
 
                 foreach($posts as $post){
                     $title        = $post['title'];
+
+                    echo "hello" . $title;
                     $header_image = $post['header_image'];
                     $size         = $post['size'];
 
