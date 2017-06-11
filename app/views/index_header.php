@@ -8,7 +8,9 @@
                 <div class = "slider_page col-md-12">
 
                     <!--Slider 1 -->
-                    <div class="i_slider_1_text">
+                    <div style="pointer-events:none" class="i_slider_1_text">
+ <!--                       <div class = "i_hover_left"></div>
+ <div class = "i_hover_right"></div>-->
                         <h1 class = "text-effect fade-in fade-in-delay-2">Tastaturen</h1>
                     </div>
 
