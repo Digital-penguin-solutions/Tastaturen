@@ -1,10 +1,8 @@
 Viktigt
-    * Fixa alla länkar på sidan.
     * Mobil anpassa hela hemsidan.
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen.
     * SEO hela sidan.
     * opimizera hastighet.
-        # Kolla att alla bilder är s små som möjligt.
         # Minimerara request från olika sidor.
     * Lägga in alla texter och bilder på prudukterna i databasen.
     * Få rätt kontakt info från Anders.
@@ -32,11 +30,7 @@ Prudukt detaljer
 Admin
     * Quick edit när man är inne på produkter.
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
-    * Göra möjligheten att kryssa ner admin popup rutan.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
-    * När du är innloggad som admin ska det bara finnas 3 knappar.
-        1 för att redigera sidorna 1 för att redigera media och en för produkterna.
-    * Gå tillbaka knapp inne på add_media och add_product
 
 footer
     * Fixa alla länkar.
