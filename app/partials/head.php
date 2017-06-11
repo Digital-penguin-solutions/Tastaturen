@@ -1,6 +1,7 @@
 <?php include "loading.php"; ?>
 <?php include "views/admin_info.php"; ?>
 <?php include "views/edit.php"; ?>
+<?php include "views/media_event.php"; ?>
 
 <head>
     <meta charset="utf-8">
@@ -50,6 +51,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"
             integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
             crossorigin="anonymous"></script>
-
-    <script async src="https://www.youtube.com/iframe_api"></script>
 </head>
