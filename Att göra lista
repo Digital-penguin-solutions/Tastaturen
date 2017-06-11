@@ -20,9 +20,7 @@ Index
         # Göra så att det går att swipa för att kunna skrolla vidare.
 
     * Media
-        # Göra ett grid system som kan visa media i form av text och bilder.
         # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har smma funkonalitet som på desktop.
-        # Trycker du på en media tab kommer det upp en popup screan som visar texten, bilden eller videon.
 
 Prudkter
     * Fixa köp knappen så den fungerar.
