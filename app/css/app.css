@@ -3322,8 +3322,9 @@ section {
     margin: auto; }
   .i_media .i_media_item {
     overflow: hidden; }
-    .i_media .i_media_item:hover {
-      background: #000; }
+    .i_media .i_media_item .i_media_inner {
+      width: 100%;
+      height: 100%; }
 
 .wrapper, html, body {
   background: #ffffff;
