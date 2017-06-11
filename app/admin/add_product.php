@@ -1,7 +1,7 @@
 <?php
 //include "include_pages/loading.php";
 $no_admin_info = "1";
-include "partials/head.php";
+include "../partials/head.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ include "partials/head.php";
 
 <?php
 ini_set('memory_limit', '-1');
-include "functions/functions.php";
+include "../functions/functions.php";
 session_start();
 
 $con = connect();

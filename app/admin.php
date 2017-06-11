@@ -57,7 +57,7 @@ $products_church = get_all_products($con, "kyrka");
                         <?php
                         if(isset($_GET['view']) && $_GET['view'] == "products"){
                             ?>
-                            <a href = "add_product" class = "manage_button ">
+                            <a href = "admin/add_product.php" class = "manage_button ">
                                 <p> Add new product </p>
                             </a>
                         <?php
@@ -65,7 +65,7 @@ $products_church = get_all_products($con, "kyrka");
                         }
                         else {
                         ?>
-                            <a href = "add_media" class = "manage_button ">
+                            <a href = "admin/add_media.php" class = "manage_button ">
                                 <p> New media post</p>
                             </a>
                         <?php
@@ -136,10 +136,10 @@ $products_church = get_all_products($con, "kyrka");
                 if(isset($_SESSION['admin'])){
                     ?>
                     <div class="a_btn_container col-xs-12">
-                        <a href = "add_media.php" class = "add_product_button col-xs-5 col-xs-offset-1">
+                        <a href = "admin/add_media.php" class = "add_product_button col-xs-5 col-xs-offset-1">
                             Add new media post
                         </a>
-                        <a href = "add_product.php" class = "add_product_button col-xs-5 col-xs-offset-1">
+                        <a href = "admin/add_product.php" class = "add_product_button col-xs-5 col-xs-offset-1">
                             Add a new product
                         </a>
                         <a href = "admin?change_password=" class = "add_product_button col-xs-5 col-xs-offset-1">

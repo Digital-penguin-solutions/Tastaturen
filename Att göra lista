@@ -2,7 +2,6 @@ Viktigt
     * Fixa alla länkar på sidan.
     * Mobil anpassa hela hemsidan.
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen.
-    * Fixa robot.txt filen.
     * SEO hela sidan.
     * opimizera hastighet.
         # Kolla att alla bilder är s små som möjligt.
@@ -59,9 +58,3 @@ Terms of service
 
 Privicy and polency
     * Fixa en Privicy and polency sida.
-<<<<<<< HEAD
-
-.htacces
-    * Ta bort alla skumma tänken i urlen så prudukterna bild tex "prudukter/Orgel 3" och inte "product?id=319"
-=======
->>>>>>> origin/master
