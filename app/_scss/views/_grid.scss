@@ -1,39 +1,48 @@
 @import "../everything";
 
 .grid_container {
-  margin:0;
-  padding:0;
-  
-  .grid_part {
-    float:left;
-    width:50%;
-    height:50%;
+    margin:0;
+    padding:0;
 
-    &:nth-child(1){
-      width:40%;
-    }
-    &:nth-child(2){
-      width:60%;
-    }
+    .grid_part {
+        float:left;
+        width:50%;
+        height:50%;
 
-    .grid_item{
-      float:left;
-
-      img{
-        min-height:100%;
-        min-width:100%;
-        max-height:110%;
-        display:block;
-      }
-
-      .grid_item_text{
-        position: absolute;
-        color: $white;
-
-        h1{
-          font-size: 3vw;
+        &:nth-child(1){
+            width:40%;
         }
-      }
+        &:nth-child(2){
+            width:60%;
+        }
+
+        .grid_item{
+            float:left;
+            position:relative;
+
+            img{
+
+                @include horizontal-align($pos: relative);
+                min-height:100%;
+                min-width:100%;
+                max-height:110%;
+                display:block;
+            }
+
+            .grid_item_text{
+                position: absolute;
+                left:0;
+                top:0;
+                //right:0;
+                color: black;
+                width:100%;
+                text-align:center;
+                z-index:20;
+
+                h1{
+                    font-size: 3vw;
+                }
+            }
+        }
     }
-  }
 }

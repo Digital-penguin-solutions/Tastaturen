@@ -32,7 +32,10 @@
             height: 90%;
             overflow: scroll;
 
-            img {
+            iframe {
+                min-height:60vh;
+            }
+            img, iframe {
                 width: 100%;
                 max-height:70vh;
             }

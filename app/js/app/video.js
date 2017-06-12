@@ -3,6 +3,7 @@ function onYouTubeIframeAPIReady() {
 
 }
 function on_ready_video(){
+    console.log("startin load");
     var player;
     player = new YT.Player('organvideo', {
         videoId: 'z8kBoDdQOgc', // YouTube Video ID
