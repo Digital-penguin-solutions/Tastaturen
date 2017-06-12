@@ -1,6 +1,7 @@
 $(document).ready(on_ready_product_scroller);
 
 var all_product_sliders = [];
+var all_product_num = [];
 var all_current_left = [];
 
 var currently_sliding = false;
@@ -40,6 +41,8 @@ function init_product_slider(){
 
         var products = container.getElementsByClassName("i_products_sliders");
 
+        all_product_num[i] = products.length;
+
         product_width = get_width_in_percentage(products[0]);
 
         for(var n = 0; n < products.length; n++){
@@ -59,7 +62,6 @@ function move(left, products_container){
     if(currently_sliding === false){
         currently_sliding = true;
 
-        console.timeEnd("1");
         var dir = -1;
 
         if(left){
@@ -78,8 +80,9 @@ function move(left, products_container){
         var num_showing = Math.round(100 / product_width); // how many products that are visible at one time
 
         // if there are fewer products than what can be shown
-        if(products.length < num_showing){
-            dir = 0;
+        if(products.length <= num_showing){
+            currently_sliding = false;
+            return;
         }
 
         //var old_left = get_left_in_percentage(products_container);
@@ -96,9 +99,8 @@ function move(left, products_container){
         old_left = Math.round(old_left*1000) / 1000;
 
         // rounds to three decimals
-        var new_left = old_left*1.0 + product_width*dir;
+        var new_left = old_left*1.0 + (product_width)*dir;
         new_left = (Math.round(new_left*1000) / 1000);
-        console.timeEnd("7");
 
 
 
@@ -106,7 +108,6 @@ function move(left, products_container){
         //var current_left_real = get_left_in_percentage(products_container);
         var current_left_real = all_current_left[i];
         var current_left = Math.round(current_left_real);
-        console.timeEnd("8");
 
 
         $(products_container).animate({
@@ -114,7 +115,6 @@ function move(left, products_container){
         },900,'easeOutQuint', function(){
             currently_sliding = false;
         });
-        console.timeEnd("9");
         // makes sure current_left isn't NaN
         //if(isNaN(current_left)){
             //current_left = 0;
