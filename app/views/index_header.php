@@ -9,7 +9,7 @@
 
                     <!--Slider 1 -->
                     <div style="pointer-events:none" class="i_slider_1_text">
-                        <h1 class = "text-effect fade-in fade-in-delay-2">Tastaturen</h1>
+                        <h1 class = "text-effect fade-in fade-in-delay-2">Tastaturen2</h1>
                     </div>
 
                     <div class="i_slider_1_left col-xs-6">
