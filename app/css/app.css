@@ -1875,6 +1875,9 @@ section {
     color: #1536ff;
     cursor: pointer; }
   .admin_product img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     max-width: 90%;
     height: 50%; }
 

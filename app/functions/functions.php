@@ -406,6 +406,8 @@ if(!isset($functions_included)){
             $title        = $post['title'];
             $header_image = $post['header_image'];
             $media_id     = $post['media_id'];
+            $type         = $post['type'];
+            $yt_id        = $post['youtube_id'];
             //$show         = $product['show'];
 
             //if($show == 1){
@@ -426,8 +428,17 @@ if(!isset($functions_included)){
             ?>
             <div class = "col-md-4 col-md-offset-<?php echo $offset ?> admin_product">
                 <h1><a href = "product?p=<?php echo $title?>"><?php echo $title ?></a></h1>
-                <img class = "center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image ); ?>" alt="No image selected"/>
+                <?php 
+                if($type == "image"){
+                    ?>
+                        <img class = "center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image ); ?>" alt="No image selected"/>
+                <?php
+                }
+                else {
+                    echo_youtube_thumbnail($yt_id);
+                }
 
+                ?>
                 <!--- EDIT BUTTON-->
                 <a href = "add_media?media_id=<?php echo $media_id?>"
                    class = "product_button product_edit_button">
