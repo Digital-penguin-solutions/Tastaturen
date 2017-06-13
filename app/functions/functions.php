@@ -67,6 +67,26 @@ if(!isset($functions_included)){
 
     }
 
+    function read_image_id($con, $index){
+
+        if(isset($_POST[$index])) {
+
+            $data  = $_POST[$index];
+
+            $split = explode("@)(@#!#!#", $data); // splits the data string into image_data, filename and image_id
+
+            $id  = $split[2]; 
+            $id = secure_str($id);
+
+            return $id;
+
+        }
+        else {
+            //echo "not found single <br>";
+        }
+
+    }
+
     //read other images
     function read_image($con, $index){
 
@@ -601,12 +621,36 @@ if(!isset($functions_included)){
         return $data;
     }
 
-    function echo_stored_image_data($con, $name){
+    function update_stored_image($con, $name, $data){
+        $name = secure_str($name);
+        $query = "UPDATE stored_image SET data = '$data' WHERE name = '$name'";
+        mysqli_query($con, $query) or die (mysqli_error($con));
+    }
+
+    function echo_stored_image_data($con, $name, $classes){
 
         $img = get_stored_image_by_name($con, $name);
-        $data = $img['data'];
-        echo "data:image/jpeg;base64," . base64_encode($data);
+        if($img != null){
+            $data = $img['data'];
+        }
+        else {
+            $data = "";
+            create_stored_image($con, $name);
 
+        }
+        //echo "data:image/jpeg;base64," . base64_encode($data);
+        ?>
+        <img onclick="open_input('<?php echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php echo base64_encode($data) ?>" alt="No image selected"/>
+        <input image_id = "<?php echo $name; ?>" name = "stored_image" class = "stored_image_input" type = "file" onchange="compress_image_single(event)" >
+    <?php
+
+    }
+
+    function create_stored_image($con, $name){
+        $name = secure_str($name);
+        //$new_value = secure_str($new_value);
+        $query = "INSERT INTO stored_image (name) VALUES ('$name')";
+        mysqli_query($con, $query) or die (mysqli_error($con));
     }
 
 

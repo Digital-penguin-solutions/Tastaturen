@@ -9,7 +9,7 @@ function on_ready_load_images(){
         var element = load_elements[i];
         if(isDesktop()){
             var path = $(element).attr("src_desktop_only");
-            console.log(path);
+            $(element).attr("src", path);
         }
         
     }

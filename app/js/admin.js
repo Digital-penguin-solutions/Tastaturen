@@ -47,8 +47,22 @@ function update_remove_listener() {
 
 }
 
+function send_form_stored_image(){
+    send_form("","functions/update_stored_image.php", "form_stored_image");
+
+}
+
+function compress_image_single(e, name){
+
+    compress_image(e, function(){
+        setTimeout(function(){
+            send_form("","functions/update_stored_image.php", "form_stored_image");
+        }, 3000);
+    });
+}
+
 // this is run everytime an image is selected in an inputtag. This will load the selected image into a temporary img-tag and the data will be fetch from the temporary img-tag when the form is sent
-function compress_image(e) { 
+function compress_image(e, callback) { 
 	e = e || window.event;
 	var element = e.target || e.srcElement;
 	var parent = element.parentNode;
@@ -88,6 +102,10 @@ function compress_image(e) {
 			tmp_image_holder.src = event.target.result; // loads the uploaded image into a temp img
 			tmp_image_holder.setAttribute("mime", mime);
 
+            if(callback != "none"){
+                callback();
+            }
+
 		};
 
 		reader.readAsDataURL(image);
@@ -101,12 +119,12 @@ function compress_image(e) {
 var maxWidth = 1000; // the max width for an image
 
 // this will be run when the "save product"-button is pressed
-function send_form(element, page){
+function send_form(element, page, form){
 
 
     //element.disabled = true;
 
-	var form_data = new FormData(document.getElementById("form"));
+	var form_data = new FormData(document.getElementById(form));
 
 
     //var brochure_path = $("#brochure").val();
@@ -154,7 +172,9 @@ function send_form(element, page){
 			var ctx = cvs.getContext("2d");
 			ctx.drawImage(source_img_obj, 0, 0, natW, natH);
 
+        //console.log("data: " +new_image_data);
 			new_image_data = cvs.toDataURL(mime, quality);
+        //console.log("data: " +new_image_data);
 		}	
 		else {
 			//var new_image_data = compressPNG(source_img_obj, 0.1, "image/png");
@@ -187,10 +207,32 @@ function send_form(element, page){
 	});
 
 	xhr.success(function(response) {
-        console.log(response);
+        //console.log(response);
         //console.log("response");
 		//$(document).scrollTop(0);
-        //window.location.replace("admin?message=Product has been added or edited");
+         
+        // different action depending on what has been done
+        var message = "";
+        if(page == "add_product.php"){
+            message = "Product has been edited or added";
+            window.location.replace("admin?message=" + message);
+        }
+        else if(page == "add_media.php"){
+            message = "Media post has been edited or added";
+            window.location.replace("admin?message=" + message);
+        }
+
+
+        var rand = Math.floor(Math.random()*1000);
+        var url = window.location.href;    
+        if (url.indexOf('?') > -1){
+           url += '&r='+ rand;
+        }
+        else 
+        {
+           url += '?r=' + rand;
+        }
+        window.location.href = url;
         //console.log("asdasd");
 		//location.reload();
 	});
@@ -235,6 +277,13 @@ function get_filename_from_path(fullPath){
 		}
 	}
 	return filename;
+}
+
+function open_input(name){
+    console.log("asdas");
+    var input = $("[image_id="+name+"]");
+    console.log(input);
+    $(input).trigger('click');
 }
 
 

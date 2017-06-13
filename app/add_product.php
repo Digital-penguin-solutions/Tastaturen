@@ -39,11 +39,6 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $long               = secure_str($_POST["long_description"]);
     $price              = secure_str($_POST["price"]);
     $type               = secure_str($_POST["type"]);
-    //$brochure           = secure_str($_POST["brochure"]);
-    //$key_features       = $_POST["key_feature"];
-    //$tech_row_left      = $_POST["tech_row_left"];
-    //$tech_row_right     = $_POST["tech_row_right"];
-    //$show               = secure_str($_POST["show"]);
 
     if (isset($_POST["removed_images"])){
         $removed_images = $_POST["removed_images"];
@@ -281,7 +276,7 @@ if (isset($_SESSION['admin'])) {
 
 
                         <section class="col-md-4 col-md-offset-4">
-                            <button id="js-trigger-overlay" onclick="send_form(this, 'add_product.php')" type="button">Save product</button>
+                            <button id="js-trigger-overlay" onclick="send_form(this, 'add_product.php', 'form')" type="button">Save product</button>
                         </section>
 
                     </form>

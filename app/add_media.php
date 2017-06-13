@@ -220,7 +220,7 @@ if (isset($_SESSION['admin'])) {
 
 
                         <section class="col-md-4 col-md-offset-4">
-                            <button id="js-trigger-overlay" onclick="send_form(this, 'add_media.php')" type="button">Save product</button>
+                            <button id="js-trigger-overlay" onclick="send_form(this, 'add_media.php', 'form')" type="button">Save product</button>
                         </section>
 
                     </form>

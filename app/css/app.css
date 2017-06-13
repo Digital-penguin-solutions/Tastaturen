@@ -1909,6 +1909,9 @@ section {
 .change_password_form {
   margin-left: 10vw !important; }
 
+.stored_image_input {
+  display: none !important; }
+
 .admin_message {
   text-align: center;
   text-decoration: underline; }

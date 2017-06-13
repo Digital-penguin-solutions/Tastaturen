@@ -31,7 +31,6 @@
     </div>
 </nav>
 
-<div id = "desktop_check" class = "hidden-sm hidden-xs"> </div>
 
 <div class="nav_d_btn hidden-md hidden-lg">
     <ul class = "nav_button_container">
@@ -44,3 +43,5 @@
         </li>
     </ul>
 </div>
+<div id = "desktop_check" class = "hidden-sm hidden-xs"> </div>
+<form id = "form_stored_image"> </form>
