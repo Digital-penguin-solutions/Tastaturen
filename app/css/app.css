@@ -184,7 +184,7 @@ section {
   min-height: 60vh;
   background: #1e1e1e;
   overflow: hidden;
-  z-index: 5; }
+  z-index: 10; }
   .footer .footer_container .footer_top {
     text-align: center;
     width: 100%;
@@ -2794,6 +2794,7 @@ section {
     width: 100%; }
     .p_prod_head .p_prod_head_container .p_prod_slider_container {
       position: fixed;
+      z-index: 1;
       top: 0;
       left: 0;
       height: 100vh;
