@@ -11,7 +11,8 @@ Index
     * Head
         # Slider 3: göra så att knappen sätter på ljudet på videon
             och gömmer knappen tills du klickar på vidon för att sänga av det igen.
-        # Ta bort slider sakerna från mobil sidan för att göra den snabbare förutom slider 1 som ska vara kvar.
+        #fixa lite med slidern så inget av slider sakerna syns på mobile
+
 
     * Pruduct section
         # Göra så att det går att swipa för att kunna skrolla vidare.

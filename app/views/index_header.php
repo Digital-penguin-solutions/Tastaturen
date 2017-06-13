@@ -41,7 +41,7 @@
                 </div>
 
                 <!-- Slider 2 -->
-                <div class = "slider_page col-xs-12">
+                <div class = "slider_page col-xs-12 hidden-xs hidden-sm">
                     <div class="i_slider_2_container">
                         <div class="i_slider_2_text col-xs-12">
                             <div class="i_slider_2_text_container col-xs-5 col-xs-offset-1">
@@ -54,13 +54,13 @@
                             </div>
                         </div>
                         <div class="i_slider_2_img">
-                            <img class = "section_background" src="img/Index_slider/Slider_2.jpg" alt="orgel för kykobruk">
+                            <img class = "section_background" src_desktop_only="img/Index_slider/Slider_2.jpg" alt="orgel för kykobruk">
                         </div>
                     </div>
                 </div>
 
                 <!-- Slider 3-->
-                <div class = "slider_page col-md-12">
+                <div class = "slider_page col-md-12 hidden-xs hidden-sm">
                     <div class="i_slider_3_container">
                         <div class="i_slider_3_video">
 
@@ -74,7 +74,7 @@
                 </div>
 
                 <!-- Slider 4-->
-                <div class = "slider_page col-xs-12">
+                <div class = "slider_page col-xs-12 hidden-xs hidden-sm">
                     <div class="i_slider_4_container">
                         <div class="i_slider_4_text col-xs-12">
                             <div class="i_slider_4_text_container col-xs-12">
