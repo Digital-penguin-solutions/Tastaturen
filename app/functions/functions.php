@@ -592,6 +592,24 @@ if(!isset($functions_included)){
     }
 
 
+    function get_stored_image_by_name($con, $name){
+        $name   = secure_str($name);
+        $query  = "SELECT * FROM stored_image WHERE name = '$name'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data   = mysqli_fetch_array($select);
+
+        return $data;
+    }
+
+    function echo_stored_image_data($con, $name){
+
+        $img = get_stored_image_by_name($con, $name);
+        $data = $img['data'];
+        echo "data:image/jpeg;base64," . base64_encode($data);
+
+    }
+
+
     
 
 }

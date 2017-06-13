@@ -111,7 +111,7 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="col-xs-10 col-xs-offset-1">
 
                 <div class="i_contact_stuff_1 col-md-6 col-xs-12">
-                    <img src="img/contact/Anders_bjork.jpg" alt="Anders Björk"
+                    <img src="<?php echo_stored_image_data($con, 'test2'); ?>" alt="Anders Björk"
                          class="col-xs-12 col-md-10 col-md-offset-1">
                     <div class="i_contact_text col-xs-10 col-xs-offset-1">
                         <h2><?php print_field("i_contact_person_name_1")   ?></h2>

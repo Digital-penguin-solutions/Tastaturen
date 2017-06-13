@@ -15,6 +15,16 @@ function on_ready_product_scroller () {
 }
 
 function init_arrows(arrow_l, arrow_r, container){
+
+    //$(container.parentNode).on("swipeleft",function(){
+        //move(false, container);
+        //console.log("asdddddddddd");
+    //});
+
+    //$(container.parentNode).on("swiperight",function(){
+        //move(true, container);
+    //});
+
     $(arrow_l).click(function(){
         move(false, container);
     });
