@@ -99,7 +99,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
             <p> <?php echo $short;?></p>
         </div>
         <div class="p_info2_btn">
-            <button>För mer information</button>
+            <button>För mer information ladda ner Broschyr</button>
         </div>
     </div>
 </section>
