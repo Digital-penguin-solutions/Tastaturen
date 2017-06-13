@@ -760,6 +760,10 @@ section {
   float: left;
   background: #C4C4C4; }
 
+.slider_preshow {
+  z-index: 10001;
+  display: block !important; }
+
 .slider_page {
   color: #000000 !important;
   height: 100%;

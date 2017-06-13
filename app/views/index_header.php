@@ -5,7 +5,7 @@
             <div class = "all_slider_container no_list">
 
                 <!-- Slider 1-->
-                <div class = "slider_page col-md-12">
+                <div class = "slider_preshow slider_page col-md-12">
 
                     <!--Slider 1 -->
                     <div style="pointer-events:none" class="i_slider_1_text">
