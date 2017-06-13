@@ -53,11 +53,31 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     read_image($con, "second_image");
 
 
+    $yt_id = "";
+
+    if($video_link != ""){
+        // if it is a regular link
+        if(strpos($video_link, "embed") == false){
+            $split_v = explode("v=", $video_link);
+            $yt_id = explode("?", $split_v[1])[0];
+            $video_link = "https://www.youtube.com/embed/" . $yt_id;
+        }
+
+        //$thumbnail_url = "https://img.youtube.com/vi/" . $yt_id . "/0.jpg";
+        //$thumbnail_image = file_get_contents($thumbnail_url);
+
+        //$query = "INSERT INTO media (title, content, video_link, type, size) VALUES ('$title', '$content', '$video_link', '$type', '$size')";
+
+        //mysqli_query($con, $query) or die (mysqli_error($con));
+    }
+
+
+
 
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO media (title, content, video_link, type, size) VALUES ('$title', '$content', '$video_link', '$type', '$size')";
+        $query = "INSERT INTO media (title, content, video_link, type, size, youtube_id) VALUES ('$title', '$content', '$video_link', '$type', '$size', '$yt_id')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -66,11 +86,14 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     }
     else { // query for updating constant values
         
-        $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type', size= '$size' WHERE media_id = '$media_id'";
+        $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type', size= '$size', youtube_id = '$yt_id' WHERE media_id = '$media_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
     }
+
+
+
 
     // UPLOAD OF SINGLE IMAGES
 

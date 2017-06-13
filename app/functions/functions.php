@@ -386,7 +386,7 @@ if(!isset($functions_included)){
 
     }
     function get_all_media_posts_small($con){
-        $query  = "SELECT size, media_id, header_image, title FROM media";
+        $query  = "SELECT youtube_id, type, size, media_id, header_image, title FROM media";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
 
         $array  = array();
@@ -570,6 +570,18 @@ if(!isset($functions_included)){
 <?php
 
     }
+
+    function echo_youtube_thumbnail($yt_id){
+        $thumbnail_url = "https://img.youtube.com/vi/" . $yt_id . "/0.jpg";
+        $thumbnail_image = file_get_contents($thumbnail_url);
+?>
+        <img src="data:image/jpeg;base64,<?php echo base64_encode($thumbnail_image) ?>" alt="Youtube video"/>
+
+<?php
+    }
+
+
+    
 
 }
 ?>

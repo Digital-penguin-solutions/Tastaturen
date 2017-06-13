@@ -2880,8 +2880,6 @@ section {
   .p_info2 .p_info2_container .p_info2_btn {
     position: absolute;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     margin-top: 10vh; }
     .p_info2 .p_info2_container .p_info2_btn button {
@@ -3379,6 +3377,15 @@ section {
     .i_media .i_media_item .i_media_inner {
       width: 100%;
       height: 100%; }
+      .i_media .i_media_item .i_media_inner i {
+        position: absolute;
+        font-size: 3vw;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+        z-index: 200; }
 
 .wrapper, html, body {
   background: #ffffff;

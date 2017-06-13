@@ -13,7 +13,9 @@
 
                     $header_image = $post['header_image'];
                     $size         = $post['size'];
+                    $type         = $post['type'];
                     $media_id     = $post['media_id'];
+                    $yt_id        = $post['youtube_id'];
 
                     ?> 
 
@@ -22,7 +24,20 @@
                             <div class="grid_item_text">
                                 <h1><?php echo $title; ?></h1>
                             </div>
-                            <img src="data:image/jpeg;base64,<?php echo base64_encode($header_image) ?>" alt="Huvudbild"/>
+                            <?php 
+                            if($type == "image"){
+                            ?>
+                                <img src="data:image/jpeg;base64,<?php echo base64_encode($header_image) ?>" alt="Huvudbild"/>
+<?php 
+                            }
+                            else {
+                                ?>
+                                <i class="fa fa-youtube-play" id="video-trigger" aria-hidden="true"></i>
+                                <?php
+                                echo_youtube_thumbnail($yt_id);
+                            }
+
+?>
 
                         </div>
                     </div>
