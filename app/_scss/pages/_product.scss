@@ -8,6 +8,7 @@
 
   .p_prod_head_container{
     height:100vh;
+    width: 100%;
     @extend .nopm;
 
     .p_prod_slider_container{
@@ -32,27 +33,37 @@
         color: $white;
 
         h1{
-          font-size: 5vw;
+          font-size: 7vw;
           font-weight: 600;
         }
 
         h2{
-          font-size: 3.5vw;
+          font-size: 5vw;
           font-weight: 400;
         }
       }
 
       .p_prod_head_btn_broschyr{
-        @extend .slider_btn;
-        margin-left:3.5vw;
-        margin-bottom:2vw;
+        @include horizontal-align($pos:absolute);
+        border: 2px solid $white;
+        color: $white;
+        background-color: transparent;
+        text-align: center;
+        text-decoration: none;
+        font-size: 5vw;
+        margin-top:5vh;
+        width: 50vw;
+        height: 8vh;
+        &:hover{
+          background: $color1;
+          border: 0;
+          transition: 0.5s;
+        }
       }
 
       .p_prod_head_btn_order{
-        @extend .slider_btn;
-        right:0;
-        margin-right:3.5vw;
-        margin-bottom:2vw;
+        @extend .p_prod_head_btn_broschyr;
+        margin-top:15vh !important;
       }
 
       .p_prod_head_img{
@@ -192,16 +203,23 @@
       }
       .p_prod_head_bg{
         .p_prod_head_text{
+          h1{
+            font-size: 5vw;
+          }
+          h2{
+            font-size: 3.5vw;
+          }
 
         }
         .p_prod_head_btn_broschyr{
-          margin-left:3.5vw;
-          margin-bottom:2vw;
+          font-size: 1.2vw;
+          height: 5vh;
+          width: 12vw;
+          left: 10vw;
+          bottom:4.5vh;
         }
         .p_prod_head_btn_order{
-          right:0;
-          margin-right:3.5vw;
-          margin-bottom:2vw;
+          left: 88%;
         }
 
         .p_prod_head_img{

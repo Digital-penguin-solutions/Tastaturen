@@ -49,14 +49,10 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                     <h1><?php echo $name;?></h1>
                     <h2><?php echo $short;?></h2>
                 </div>
-                <div class="p_prod_head_btn_broschyr">
-                    <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'" class="p_prod_head_btn_broschyr">
-                        Ladda ner Broschyr
-                    </button>
-                </div>
-                <div class="p_prod_head_btn_order">
-                    <button>Skicka en offert</button>
-                </div>
+                <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'" class="p_prod_head_btn_broschyr">
+                    Ladda ner Broschyr
+                </button>
+                <button class="p_prod_head_btn_order">Skicka en offert</button>
                 <div class="p_prod_head_img">
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
                 </div>
