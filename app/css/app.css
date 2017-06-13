@@ -2851,35 +2851,27 @@ section {
 
 .p_info {
   background: #212121;
-  height: 100vh; }
+  height: 150vh; }
   .p_info .p_info_container {
-    height: 100vh;
+    height: 150vh;
     width: 100vw; }
     .p_info .p_info_container .p_info_text {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      color: #ffffff; }
+      color: #ffffff;
+      margin-top: 15vh; }
       .p_info .p_info_container .p_info_text h1 {
-        font-size: 3vw;
+        font-size: 6vw;
         font-weight: 500;
         text-transform: uppercase; }
       .p_info .p_info_container .p_info_text h3 {
-        font-size: 1.3vw;
+        font-size: 4.2vw;
         font-weight: 500;
         text-transform: uppercase; }
       .p_info .p_info_container .p_info_text p {
-        font-size: 1.2vw;
+        font-size: 4vw;
         font-weight: 300; }
     .p_info .p_info_container .p_info_img {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      max-height: 60%; }
+      margin-top: 5vh;
+      max-height: 30%; }
       .p_info .p_info_container .p_info_img img {
         position: relative;
         left: 50%;
@@ -2942,7 +2934,34 @@ section {
     left: 10vw;
     bottom: 4.5vh; }
   .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
-    left: 88%; } }
+    left: 88%; }
+  .p_info {
+    height: 100vh; }
+    .p_info .p_info_container {
+      height: 100vh; }
+      .p_info .p_info_container .p_info_text {
+        margin-top: 0;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        .p_info .p_info_container .p_info_text h1 {
+          font-size: 3vw; }
+        .p_info .p_info_container .p_info_text h3 {
+          font-size: 1.3vw; }
+        .p_info .p_info_container .p_info_text p {
+          font-size: 1.2vw; }
+      .p_info .p_info_container .p_info_img {
+        margin-top: 0;
+        max-height: 60%;
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%); }
+        .p_info .p_info_container .p_info_img img {
+          height: 100%; } }
 
 .wrapper, html, body {
   background: #ffffff;

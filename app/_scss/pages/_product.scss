@@ -84,40 +84,40 @@
 //info about product
 .p_info{
   background: $color4;
-  height: 100vh;
+  height: 150vh;
 
   .p_info_container{
-    height:100vh;
+    height:150vh;
     width: 100vw;
 
     .p_info_text {
-      @include vertical-align();
       color: $white;
+      margin-top:15vh;
 
       h1{
-        font-size: 3vw;
+        font-size: 6vw;
         font-weight: 500;
         text-transform: uppercase;
       }
 
       h3{
-        font-size: 1.3vw;
+        font-size: 4.2vw;
         font-weight: 500;
         text-transform: uppercase;
       }
 
       p{
-        font-size: 1.2vw;
+        font-size: 4vw;
         font-weight: 300;
       }
     }
 
     .p_info_img{
-      @include vertical-align();
-      max-height:60%;
+      margin-top:5vh;
+      max-height:30%;
 
       img{
-          @include horizontal-align();
+        @include horizontal-align();
           height:100%;
       }
     }
@@ -192,38 +192,68 @@
 
 //desktop size
 @media (min-width: $screen-md-min) {
-  .p_prod_head{
-    .p_prod_head_container{
+  .p_prod_head {
+    .p_prod_head_container {
       .slideshow {
         @extend .nopm;
         z-index: 50;
-        height:100vh;
+        height: 100vh;
         width: 100%;
-        filter:blur(4px);
+        filter: blur(4px);
       }
-      .p_prod_head_bg{
-        .p_prod_head_text{
-          h1{
+      .p_prod_head_bg {
+        .p_prod_head_text {
+          h1 {
             font-size: 5vw;
           }
-          h2{
+          h2 {
             font-size: 3.5vw;
           }
 
         }
-        .p_prod_head_btn_broschyr{
+        .p_prod_head_btn_broschyr {
           font-size: 1.2vw;
           height: 5vh;
           width: 12vw;
           left: 10vw;
-          bottom:4.5vh;
+          bottom: 4.5vh;
         }
-        .p_prod_head_btn_order{
+        .p_prod_head_btn_order {
           left: 88%;
         }
 
-        .p_prod_head_img{
+        .p_prod_head_img {
 
+        }
+      }
+    }
+  }
+
+  .p_info {
+    height: 100vh;
+    .p_info_container {
+      height: 100vh;
+
+      .p_info_text {
+        margin-top:0;
+        @include vertical-align();
+        h1{
+          font-size: 3vw;
+        }
+        h3 {
+          font-size: 1.3vw;
+        }
+        p {
+          font-size: 1.2vw;
+        }
+      }
+
+      .p_info_img {
+        margin-top:0;
+        max-height: 60%;
+        @include vertical-align();
+        img {
+          height: 100%;
         }
       }
     }
