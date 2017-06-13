@@ -1,5 +1,4 @@
 Viktigt
-    * Mobil anpassa hela hemsidan.
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen.
     * SEO hela sidan.
     * opimizera hastighet.
@@ -22,7 +21,6 @@ Index
 
 Prudkter
     * Fixa köp knappen så den fungerar.
-    * mobil anpassa sidan.
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt. 
