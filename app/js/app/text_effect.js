@@ -11,6 +11,7 @@ function on_ready_text_effect(){
 
 function init_texts(){
     var texts = document.getElementsByClassName("text-effect");
+    $(texts).css("display", "block");
 
     for(var i = 0; i < texts.length; i++){
         var text = texts[i];
@@ -68,7 +69,6 @@ function effect_letter(letters, i ){
     
     $(letter).velocity({
         translateZ:0,
-        //translateX: "200px",
         rotateX: "5deg",
         rotateZ: "5deg",
         color: "#DDDDDD"

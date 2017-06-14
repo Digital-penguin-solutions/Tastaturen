@@ -122,7 +122,7 @@ var maxWidth = 1500; // the max width for an image
 function send_form(element, page, form){
 
 
-    //element.disabled = true;
+    element.disabled = true;
 
 	var form_data = new FormData(document.getElementById(form));
 
@@ -212,27 +212,30 @@ function send_form(element, page, form){
 		//$(document).scrollTop(0);
          
         // different action depending on what has been done
+        console.log(page);
         var message = "";
         if(page == "add_product.php"){
             message = "Product has been edited or added";
-            //window.location.replace("admin?message=" + message);
+            window.location.replace("admin?view=products&message=" + message);
         }
         else if(page == "add_media.php"){
             message = "Media post has been edited or added";
-            //window.location.replace("admin?message=" + message);
+            window.location.replace("admin?view=media&message=" + message);
         }
+        else {
 
 
-        var rand = Math.floor(Math.random()*1000);
-        var url = window.location.href;    
-        if (url.indexOf('?') > -1){
-           url += '&r='+ rand;
+            var rand = Math.floor(Math.random()*1000);
+            var url = window.location.href;    
+            if (url.indexOf('?') > -1){
+               url += '&r='+ rand;
+            }
+            else 
+            {
+               url += '?r=' + rand;
+            }
+            window.location.href = url;
         }
-        else 
-        {
-           url += '?r=' + rand;
-        }
-        //window.location.href = url;
         //console.log("asdasd");
 		//location.reload();
 	});

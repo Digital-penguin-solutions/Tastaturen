@@ -21,11 +21,8 @@ function init_grids(){
         var big_items = $(grid_temp_holder).find(".grid_item[size=big]");
         var medium_items = $(grid_temp_holder).find(".grid_item[size=medium]");
         var small_items = $(grid_temp_holder).find(".grid_item[size=small]");
-        console.log(big_items.length);
-        console.log(medium_items.length);
-        console.log(small_items.length);
 
-        var items = grid_temp_holder.getElementsByClassName("grid_item");
+        var items = grid.getElementsByClassName("grid_item");
 
         $(items).css("marginLeft", gap_size + "%");
         $(items).css("marginTop", gap_size + "vh");
@@ -110,9 +107,92 @@ function init_grids(){
         //}
         //init_part(grid, items, 0, 0);
 
+        /*set_text_color(items);*/
+        setTimeout(function(){set_text_color(items);}, 200); // a small delay to make sure all the images have loaded properly
         $(grid_temp_holder).remove();
     }
     
+}
+
+
+function set_text_color(items){
+     for(var i = 0; i < items.length; i++){
+         console.log("------------");
+         var item = items[i];
+         var image = item.getElementsByTagName("img")[0];
+         var h1= item.getElementsByTagName("h1")[0];
+         console.log("imgage" + image);
+         var average = Math.round(getAverageRGB(image));
+         console.log("avg: "+ average);
+         console.log(h1);
+         //var col = 155-average;
+         var col = average;
+         
+         if(col > 30) {
+             col = 30;
+         }
+         else {
+             col = 250;
+         }
+
+         console.log(col);
+         col = "rgb(" + col +", "+col+", "+col+")";
+
+         $(h1).css("color", col);
+         console.log(h1);
+
+     }
+}
+function getAverageRGB(imgEl) {
+
+    var blockSize = 5, // only visit every 5 pixels
+        defaultRGB = {r:0,g:0,b:0}, // for non-supporting envs
+        canvas = document.createElement('canvas'),
+        context = canvas.getContext && canvas.getContext('2d'),
+        data, width, height,
+        i = -4,
+        length,
+        rgb = {r:0,g:0,b:0},
+        count = 0;
+
+    if (!context) {
+        console.log("FAILD2");
+        return defaultRGB;
+    }
+
+    height = canvas.height = imgEl.naturalHeight || imgEl.offsetHeight || imgEl.height;
+    width = canvas.width = imgEl.naturalWidth || imgEl.offsetWidth || imgEl.width;
+
+    context.drawImage(imgEl, 0, 0, width, height*0.3);
+
+    try {
+        data = context.getImageData(0, 0, width, height);
+    } catch(e) {
+        /* security error, img on diff domain */
+        console.log("FAILD");
+        return defaultRGB;
+    }
+
+    length = data.data.length;
+    console.log("jerry");
+
+    while ( (i += blockSize * 4) < length ) {
+        ++count;
+        rgb.r += data.data[i];
+        rgb.g += data.data[i+1];
+        rgb.b += data.data[i+2];
+    }
+
+    // ~~ used to floor values
+    rgb.r = ~~(rgb.r/count);
+    rgb.g = ~~(rgb.g/count);
+    rgb.b = ~~(rgb.b/count);
+    
+    var all = (rgb.r + rgb.g + rgb.b) / 3;
+    console.log("all " + all);
+
+    return (rgb.r + rgb.g + rgb.b) / 3;
+
 }
 
 function init_part(container, items, start_index, part_order){
