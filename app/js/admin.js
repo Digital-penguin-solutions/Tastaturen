@@ -116,7 +116,7 @@ function compress_image(e, callback) {
 }
 
 
-var maxWidth = 1000; // the max width for an image
+var maxWidth = 1500; // the max width for an image
 
 // this will be run when the "save product"-button is pressed
 function send_form(element, page, form){
@@ -127,6 +127,7 @@ function send_form(element, page, form){
 	var form_data = new FormData(document.getElementById(form));
 
 
+    console.log("asdasda");
     //var brochure_path = $("#brochure").val();
     //var brochure_data;
     //console.log("brochure path: " + brochure_path);
@@ -163,7 +164,7 @@ function send_form(element, page, form){
 
 		// compress for jpg
 		if (mime != "image/png"){
-			var quality = 1;
+			var quality = 0.7;
 
 			var cvs = document.createElement('canvas');
 			cvs.width = natW; 
@@ -207,7 +208,7 @@ function send_form(element, page, form){
 	});
 
 	xhr.success(function(response) {
-        //console.log(response);
+        console.log(response);
         //console.log("response");
 		//$(document).scrollTop(0);
          
@@ -215,11 +216,11 @@ function send_form(element, page, form){
         var message = "";
         if(page == "add_product.php"){
             message = "Product has been edited or added";
-            window.location.replace("admin?message=" + message);
+            //window.location.replace("admin?message=" + message);
         }
         else if(page == "add_media.php"){
             message = "Media post has been edited or added";
-            window.location.replace("admin?message=" + message);
+            //window.location.replace("admin?message=" + message);
         }
 
 
@@ -232,7 +233,7 @@ function send_form(element, page, form){
         {
            url += '?r=' + rand;
         }
-        window.location.href = url;
+        //window.location.href = url;
         //console.log("asdasd");
 		//location.reload();
 	});

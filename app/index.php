@@ -66,7 +66,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_products_slider">
-                    <?php echo_products_index($products_church);?>
+                    <?php //echo_products_index($products_church);?>
                 </div>
 
                 <div class="i_products_bt_container">
@@ -87,7 +87,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_products_slider">
-                    <?php echo_products_index($products_home);?>
+                    <?php //echo_products_index($products_home);?>
                 </div>
 
                 <div class="i_products_bt_container">

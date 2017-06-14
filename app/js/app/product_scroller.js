@@ -53,7 +53,9 @@ function init_product_slider(){
 
         all_product_num[i] = products.length;
 
-        product_width = get_width_in_percentage(products[0]);
+        if(products.length > 0){
+            product_width = get_width_in_percentage(products[0]);
+        }
 
         for(var n = 0; n < products.length; n++){
             var product = products[n];
