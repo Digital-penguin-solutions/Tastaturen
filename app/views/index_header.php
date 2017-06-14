@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <div class="i_slider_4_img">
-                            <img class = "section_background" src="img/Index_slider/Slider_4.jpg" alt="orgel för kykobruk">
+                            <img class = "section_background" src_desktop_only="img/Index_slider/Slider_4.jpg" alt="orgel för kykobruk">
                         </div>
                     </div>
                 </div>

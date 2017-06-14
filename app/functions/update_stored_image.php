@@ -1,25 +1,22 @@
 <?php
-session_start();
-if(isset($_SESSION['admin'])){
+
 
     include "functions.php";
+    session_start();
     $con = connect();
 
-    if(isset($_GET['name']) && isset($_GET['new_value'])){
-        $name = $_GET['name'];
-        $value = $_GET['new_value'];
+    if(isset($_SESSION['admin'])){
+        $images_array = array();
+        read_image($con, "stored_image");
+        $name = read_image_id($con, "stored_image");
+        $data = $images_array[0][0];
 
-        update_field($name, $value);
-        //echo"done";
-    }
-    
-    $randi = rand(0,1000);
-    //echo "<script> history.go(-1); </script>";
-    //header("Location: ../index?rand=$randi");
-?>
+        update_stored_image($con, $name, $data);
 
+        
+    $randi = rand(1,10000); // randomies a number to put in the URL to get around caching. This is so that the admin can see their changes instantly
+    ?>
     <script>
-console.log("asdad");
         var prev = document.referrer;
         var split = prev.split("?")[0];
         //prev = split[0];
@@ -33,9 +30,14 @@ console.log("asdad");
         //window.location.href = prev + "?r=" + rand + "&" + split[1];
         //window.location.href = prev + "&r=
     </script>
-<?php
-}
-else {
-    header("Location: ../index");
-}
+
+    <?php
+
+        
+    }
+    else {
+        header("Location: ../admin.php");
+    }
+
+
 ?>

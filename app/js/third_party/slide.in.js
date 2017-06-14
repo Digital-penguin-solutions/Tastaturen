@@ -1,10 +1,12 @@
 //
 $(document).ready(function() {
 	"use strict";
-	jQuery.fx.interval = 100; /* Ju lägre denna är desto högre kvalitet blir det på animationer men ju lägre den är desto mer tar den på CPU. - JF */
+	//jQuery.fx.interval = 1; //[> Ju lägre denna är desto högre kvalitet blir det på animationer men ju lägre den är desto mer tar den på CPU. - JF <]
 	var fade_in_duration = 500;
 	var pop_up_duration = 1000;
 	
+    $(".slide-in").css("display", "block");
+
 	var body_width = $("body").width();
 	
 	// checks if user uses a desktop JF

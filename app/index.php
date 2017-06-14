@@ -34,7 +34,7 @@ $products_church = get_all_visible_products($con, "kyrka");
         <div class="col-xs-12 col-md-10 col-md-offset-1 i_info_container">
             <h2><?php print_field("i_about_header"); ?> </h2>
             <p class = "col-xs-offset-21col-xs-10 col-md-offset-2 col-md-8">
-                <?php print_field("test"); ?>
+                <?php print_field("i_about_text"); ?>
             </p>
 
             <a href="http://www.johannus.com/" target="_blank" class="col-xs-6 col-md-offset-1 col-md-4">
@@ -66,7 +66,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_products_slider">
-                    <?php //echo_products_index($products_church);?>
+                    <?php echo_products_index($products_church);?>
                 </div>
 
                 <div class="i_products_bt_container">
@@ -87,7 +87,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_products_slider">
-                    <?php //echo_products_index($products_home);?>
+                    <?php echo_products_index($products_home);?>
                 </div>
 
                 <div class="i_products_bt_container">
