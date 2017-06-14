@@ -127,7 +127,6 @@ function send_form(element, page, form){
 	var form_data = new FormData(document.getElementById(form));
 
 
-    console.log("asdasda");
     //var brochure_path = $("#brochure").val();
     //var brochure_data;
     //console.log("brochure path: " + brochure_path);
