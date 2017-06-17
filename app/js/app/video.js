@@ -1,13 +1,13 @@
 function onYouTubeIframeAPIReady() {
     $(document).ready(on_ready_video);
-
 }
+
+var player, iframe;
+
 function on_ready_video(){
     if(isDesktop()){
-        var player;
         player = new YT.Player('organvideo', {
             videoId: 'z8kBoDdQOgc', // YouTube Video ID
-            //playlist:'z8kBoDdQOgc',
             playerVars: {
                 autoplay: 1,        // Auto-play the video on load
                 controls: 0,        // Show pause/play buttons in player
@@ -18,20 +18,42 @@ function on_ready_video(){
                 cc_load_policy: 0,  // Hide closed captions
                 iv_load_policy: 3,  // Hide the Video Annotations
                 autohide: 1         // Hide video controls when playing
-                //playlist:'z8kBoDdQOgc'
             },
             events: {
                 onReady: function(e) {
                     e.target.mute();
+                    onPlayerReady(e);
                 },
                 onStateChange: function(e){
                     if (e.data === YT.PlayerState.ENDED) {
-                        player.playVideo(); 
+                        player.playVideo();
                     }
                 }
             }
 
         });
     }
+}
 
+function onPlayerReady(event) {
+    var player = event.target;
+    iframe = $('#organvideo');
+    setupListener();
+}
+
+function setupListener (){
+    $('#video-trigger').on('click', fullscreen);
+}
+
+function fullscreen() {
+    var e = document.getElementById("organvideo");
+    if (e.requestFullscreen) {
+        e.requestFullscreen();
+    } else if (e.webkitRequestFullscreen) {
+        e.webkitRequestFullscreen();
+    } else if (e.mozRequestFullScreen) {
+        e.mozRequestFullScreen();
+    } else if (e.msRequestFullscreen) {
+        e.msRequestFullscreen();
+    }
 }

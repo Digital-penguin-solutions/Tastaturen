@@ -29,27 +29,31 @@ $products_church = get_all_products($con, "kyrka");
                     }
                     ?> <div class="manage_buttons_container col-xs-12"> <?php
                         if(isset($_GET['view']) && $_GET['view'] == "products"){
-                            ?> <a href="admin/add_product.php" class="manage_button col-xs-5 col-xs-offset-1"><p>Add new product</p></a> <?php
+                            ?> <a href="add_product.php" class="manage_button col-xs-5 col-xs-offset-1"><p>Add new product</p></a> <?php
 
                         }
-                        else {
-                        ?> <a href="admin/add_media.php" class="manage_button col-xs-5 col-xs-offset-1"><p>New media post</p></a> <?php
+                        else if(isset($_GET['view'])){
+                        ?> <a href="add_media.php" class="manage_button col-xs-5 col-xs-offset-1"><p>New media post</p></a> <?php
                         }
                         if(isset($_GET['view']) && $_GET['view'] == "media"){
                             ?> <a href="admin?view=products" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage products</p></a> <?php
 
                         }
-                        else {
+                        else if(isset($_GET['view'])){
                         ?> <a href="admin?view=media" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage media posts</p></a> <?php
 
                         }
+                        if(!isset($_GET['view'])){
+                        ?> <a href="admin?view=media" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage media posts</p></a><a href="admin?view=products" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage products</p></a> <?php
+                        }
+
                         ?> </div> <?php
                     // if products are to be viewed
                     if(isset($_GET['view']) && $_GET['view'] == "products"){
                         ?> <div class="row admin_all_products_container"><h1 class="products_type">Home products</h1> <?php
-                            echo_admin_products($products_home);
+                                echo_admin_products($products_home);
                             ?> </div><div class="row admin_all_products_container"><h1 class="products_type">Church products</h1> <?php
-                            echo_admin_products($products_church);
+                                echo_admin_products($products_church);
                             ?> </div> <?php
                     }
                     // if meda posts are to be viewed
@@ -57,10 +61,6 @@ $products_church = get_all_products($con, "kyrka");
 ?> <h1 class="products_type">Media posts</h1><div class="row admin_all_products_container"> <?php
                             $posts = get_all_media_posts_small($con);
                             echo_admin_media($posts);
-                        ?> <div class="row admin_all_products_container"> <?php
-                            $posts = get_all_media_posts_small($con);
-                            echo_admin_media($posts);
-                            ?> </div> <?php
 
                     }
                     else {
@@ -69,7 +69,7 @@ $products_church = get_all_products($con, "kyrka");
                 }
 
                 if(isset($_SESSION['admin'])){
-                    ?> <div class="a_btn_container col-xs-12"><a href="admin/add_media.php" class="add_product_button col-xs-5 col-xs-offset-1">Add new media post </a><a href="admin/add_product.php" class="add_product_button col-xs-5 col-xs-offset-1">Add a new product </a><a href="admin?change_password=" class="add_product_button col-xs-5 col-xs-offset-1">Change password </a><a href="functions/logout" class="add_product_button col-xs-5 col-xs-offset-1">Logout</a></div> <?php
+                    ?> <div class="a_btn_container col-xs-12"><a href="add_media.php" class="add_product_button col-xs-5 col-xs-offset-1">Add new media post </a><a href="add_product.php" class="add_product_button col-xs-5 col-xs-offset-1">Add a new product </a><a href="admin?change_password=" class="add_product_button col-xs-5 col-xs-offset-1">Change password </a><a href="functions/logout" class="add_product_button col-xs-5 col-xs-offset-1">Logout</a></div> <?php
                 }
                 else {
                     ?> <form class="login hidden-sm hidden-xs" action="functions/login.php" method="post"><p>PASSWORD:</p><input type="password" name="password"> <input type="submit" name="login" value="Login"></form> <?php

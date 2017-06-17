@@ -67,6 +67,26 @@ if(!isset($functions_included)){
 
     }
 
+    function read_image_id($con, $index){
+
+        if(isset($_POST[$index])) {
+
+            $data  = $_POST[$index];
+
+            $split = explode("@)(@#!#!#", $data); // splits the data string into image_data, filename and image_id
+
+            $id  = $split[2]; 
+            $id = secure_str($id);
+
+            return $id;
+
+        }
+        else {
+            //echo "not found single <br>";
+        }
+
+    }
+
     //read other images
     function read_image($con, $index){
 
@@ -376,7 +396,7 @@ if(!isset($functions_included)){
 
     }
     function get_all_media_posts_small($con){
-        $query  = "SELECT media_id, header_image, title FROM media";
+        $query  = "SELECT youtube_id, type, size, media_id, header_image, title FROM media";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
 
         $array  = array();
@@ -396,6 +416,8 @@ if(!isset($functions_included)){
             $title        = $post['title'];
             $header_image = $post['header_image'];
             $media_id     = $post['media_id'];
+            $type         = $post['type'];
+            $yt_id        = $post['youtube_id'];
             //$show         = $product['show'];
 
             //if($show == 1){
@@ -413,7 +435,15 @@ if(!isset($functions_included)){
             else {
                 $offset = 2;
             }
-            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?p=<?php echo $title?>"><?php echo $title ?></a></h1><img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image ); ?>" alt="No image selected"><!--- EDIT BUTTON--> <a href="add_media?media_id=<?php echo $media_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- TOGGLE SHOW BUTTON--><!-- <a href = "functions/toggle_product?product_id=<?php //echo $product_id?>"
+            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?p=<?php echo $title?>"><?php echo $title ?></a></h1> <?php 
+                if($type == "image"){
+                    ?> <img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image ); ?>" alt="No image selected"> <?php
+                }
+                else {
+                    echo_youtube_thumbnail($yt_id);
+                }
+
+                ?> <!--- EDIT BUTTON--> <a href="add_media?media_id=<?php echo $media_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- TOGGLE SHOW BUTTON--><!-- <a href = "functions/toggle_product?product_id=<?php //echo $product_id?>"
                    class = "product_button <?php //echo $toggle_color?> product_show_button">
                     <p class = "center_vertically_css"><?php //echo $toggle_button_value?></p>
                 </a>
@@ -506,6 +536,54 @@ if(!isset($functions_included)){
 ?> <?php
 
     }
+
+    function echo_youtube_thumbnail($yt_id){
+        $thumbnail_url = "https://img.youtube.com/vi/" . $yt_id . "/0.jpg";
+        $thumbnail_image = file_get_contents($thumbnail_url);
+?> <img src="data:image/jpeg;base64,<?php echo base64_encode($thumbnail_image) ?>" alt="Youtube video"> <?php
+    }
+
+
+    function get_stored_image_by_name($con, $name){
+        $name   = secure_str($name);
+        $query  = "SELECT * FROM stored_image WHERE name = '$name'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data   = mysqli_fetch_array($select);
+
+        return $data;
+    }
+
+    function update_stored_image($con, $name, $data){
+        $name = secure_str($name);
+        $query = "UPDATE stored_image SET data = '$data' WHERE name = '$name'";
+        mysqli_query($con, $query) or die (mysqli_error($con));
+    }
+
+    function echo_stored_image_data($con, $name, $classes){
+
+        $img = get_stored_image_by_name($con, $name);
+        if($img != null){
+            $data = $img['data'];
+        }
+        else {
+            $data = "";
+            create_stored_image($con, $name);
+
+        }
+        //echo "data:image/jpeg;base64," . base64_encode($data);
+        ?> <img onclick="open_input('<?php echo $name?>')" class="<?php echo $classes; ?>" src="data:image/jpeg;base64,<?php echo base64_encode($data) ?>" alt="No image selected"> <input image_id="<?php echo $name; ?>" name="stored_image" class="stored_image_input" type="file" onchange="compress_image_single(event)"> <?php
+
+    }
+
+    function create_stored_image($con, $name){
+        $name = secure_str($name);
+        //$new_value = secure_str($new_value);
+        $query = "INSERT INTO stored_image (name) VALUES ('$name')";
+        mysqli_query($con, $query) or die (mysqli_error($con));
+    }
+
+
+    
 
 }
 ?>

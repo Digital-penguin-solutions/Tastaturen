@@ -169,5 +169,6 @@ $products_church = get_all_products($con, "kyrka");
     </div>
 </section>
 
+<?php include "partials/footer.php"?>
 </body>
 </html>

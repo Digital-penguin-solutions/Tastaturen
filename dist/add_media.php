@@ -1,10 +1,10 @@
 <?php
 //include "include_pages/loading.php";
 $no_admin_info = "1";
-include "../partials/head.php";
+include "partials/head.php";
 ?> <!DOCTYPE html><html lang="en"><head><title>MetSense add product</title><meta name="description" content="Tastaturen - Add media post"></head> <?php
 ini_set('memory_limit', '-1');
-include "../functions/functions.php";
+include "functions/functions.php";
 session_start();
 
 $con = connect();
@@ -45,11 +45,31 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     read_image($con, "second_image");
 
 
+    $yt_id = "";
+
+    if($video_link != ""){
+        // if it is a regular link
+        if(strpos($video_link, "embed") == false){
+            $split_v = explode("v=", $video_link);
+            $yt_id = explode("?", $split_v[1])[0];
+            $video_link = "https://www.youtube.com/embed/" . $yt_id;
+        }
+
+        //$thumbnail_url = "https://img.youtube.com/vi/" . $yt_id . "/0.jpg";
+        //$thumbnail_image = file_get_contents($thumbnail_url);
+
+        //$query = "INSERT INTO media (title, content, video_link, type, size) VALUES ('$title', '$content', '$video_link', '$type', '$size')";
+
+        //mysqli_query($con, $query) or die (mysqli_error($con));
+    }
+
+
+
 
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO media (title, content, video_link, type, size) VALUES ('$title', '$content', '$video_link', '$type', '$size')";
+        $query = "INSERT INTO media (title, content, video_link, type, size, youtube_id) VALUES ('$title', '$content', '$video_link', '$type', '$size', '$yt_id')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -58,11 +78,14 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     }
     else { // query for updating constant values
         
-        $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type', size= '$size' WHERE media_id = '$media_id'";
+        $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type', size= '$size', youtube_id = '$yt_id' WHERE media_id = '$media_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
     }
+
+
+
 
     // UPLOAD OF SINGLE IMAGES
 
@@ -120,7 +143,7 @@ if (isset($_SESSION['admin'])) {
                         if (isset($_GET["media_id"])){
                             ?> <input type="hidden" value="<?php echo $_GET['media_id'] ?>" name="media_id"> <?php
                         }
-                        ?> <h1>Rubrik</h1><input value="<?php echo $title ?>" type="text" name="title"><h1>Text</h1><textarea name="content" class="short_description"><?php echo $content?></textarea><h1>Storlek</h1><select class="" name="size"><option value="small" <?php if($size == "small"){echo "selected";}?>>Liten</option><option value="medium" <?php if($size == "medium"){echo "selected";}?>>Medium</option><option value="big" <?php if($size == "big"){echo "selected";}?>>Stor</option></select><h1>Typ av inlägg</h1><select class="select_type" onchange="update_inputs(this)" name="type"><option value="image" <?php if($type == "image"){echo "selected";}?>>Bildinlägg</option><option value="video" <?php if($type == "video"){echo "selected";}?>>Videoinlägg</option></select><div class="video_post_only"><h1>Länk till Youtube-video</h1><textarea name="video_link" class="short_description"><?php echo $video_link?></textarea></div><div class="image_post_only"><h1>Huvudbild</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="header_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image); ?>" alt="None"></div><h1>Bild 2</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="second_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $second_image); ?>" alt="None"></div></div><section class="col-md-4 col-md-offset-4"><button id="js-trigger-overlay" onclick="send_form(this, 'add_media.php')" type="button">Save product</button></section></form></div></div></div></section></body> <?php
+                        ?> <h1>Rubrik</h1><input value="<?php echo $title ?>" type="text" name="title"><h1>Text</h1><textarea name="content" class="short_description"><?php echo $content?></textarea><h1>Storlek</h1><select class="" name="size"><option value="small" <?php if($size == "small"){echo "selected";}?>>Liten</option><option value="medium" <?php if($size == "medium"){echo "selected";}?>>Medium</option><option value="big" <?php if($size == "big"){echo "selected";}?>>Stor</option></select><h1>Typ av inlägg</h1><select class="select_type" onchange="update_inputs(this)" name="type"><option value="image" <?php if($type == "image"){echo "selected";}?>>Bildinlägg</option><option value="video" <?php if($type == "video"){echo "selected";}?>>Videoinlägg</option></select><div class="video_post_only"><h1>Länk till Youtube-video</h1><textarea name="video_link" class="short_description"><?php echo $video_link?></textarea></div><div class="image_post_only"><h1>Huvudbild</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="header_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image); ?>" alt="None"></div><h1>Bild 2</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="second_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $second_image); ?>" alt="None"></div></div><section class="col-md-4 col-md-offset-4"><button id="js-trigger-overlay" onclick="send_form(this, 'add_media.php', 'form')" type="button">Save product</button></section></form></div></div></div></section></body> <?php
 }
 
 else {header("Location: index.php");} ?> </html>
