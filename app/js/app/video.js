@@ -9,7 +9,7 @@ function on_ready_video(){
         player = new YT.Player('organvideo', {
             videoId: 'z8kBoDdQOgc', // YouTube Video ID
             playerVars: {
-                autoplay: 1,        // Auto-play the video on load
+                //autoplay: 1,        // Auto-play the video on load
                 controls: 0,        // Show pause/play buttons in player
                 showinfo: 0,        // Hide the video title
                 modestbranding: 1,  // Hide the Youtube Logo
@@ -35,9 +35,11 @@ function on_ready_video(){
     }
 }
 
+
 function onPlayerReady(event) {
     var player = event.target;
     iframe = $('#organvideo');
+    event.target.playVideo();
     setupListener();
 }
 
