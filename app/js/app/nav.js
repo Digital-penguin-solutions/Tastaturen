@@ -13,14 +13,16 @@ var McBar3 = McButton.find("b:nth-child(3)");
 var nav_in_animation = false;
 
 function on_ready () {
-    $(".nav_d").css("visibility", "visible");
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $(".nav_d").css("visibility", "visible");
 
-    init_mc_button();
+        init_mc_button();
 
-    init_nav_links();
+        init_nav_links();
 
-    toggle_nav_menu();
-    fade_duration = 500;
+        toggle_nav_menu();
+        fade_duration = 500;
+    }
 }
 
 function toggle_nav_menu(){
@@ -44,8 +46,6 @@ function init_mc_button(){
     var McBar1 = McButton.find("b:nth-child(1)");
     var McBar2 = McButton.find("b:nth-child(2)");
     var McBar3 = McButton.find("b:nth-child(3)");
-
-
 
     $(McButton).click( function() {
         toggle_nav(false);

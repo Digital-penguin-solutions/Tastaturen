@@ -1,7 +1,6 @@
 
 $(document).ready(on_ready_load_images);
 
-
 function on_ready_load_images(){
     var load_elements = $("[src_desktop_only]");
 
@@ -20,5 +19,4 @@ function on_ready_load_images(){
 function isDesktop(){
     // if this div is visible, the user is on desktop
     return ($("#desktop_check").css('display') != "none");
-
 }
