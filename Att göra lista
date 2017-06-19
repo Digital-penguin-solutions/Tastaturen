@@ -30,9 +30,6 @@ Admin
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
 
-footer
-    * Fixa alla länkar.
-
 Nav
     * Fixa köp knapen.
 
