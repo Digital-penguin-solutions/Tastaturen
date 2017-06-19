@@ -21,6 +21,7 @@ Index
 
 Prudkter
     * Fixa köp knappen så den fungerar.
+    * Fixa så att mobil bilden finns i databasen och är första bilden i bildspelet.
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt. 
@@ -29,6 +30,7 @@ Admin
     * Quick edit när man är inne på produkter.
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
+    * popupen att man är innlogad som admin förvinner inte permanen när man trycker på krysset.
 
 Nav
     * Fixa köp knapen.
