@@ -45,7 +45,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
 
             <div class="p_prod_head_bg">
 
-                <div class="p_prod_head_text">
+                <div class="p_prod_head_text col-xs-8 col-xs-offset-2">
                     <h1><?php echo $name;?></h1>
                     <h2><?php echo $short;?></h2>
                 </div>
