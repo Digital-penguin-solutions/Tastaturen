@@ -12,6 +12,7 @@ var McBar3 = McButton.find("b:nth-child(3)");
 
 var nav_in_animation = false;
 
+//when the code is loaded and teh device in question is a mobil run functions
 function on_ready () {
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         $(".nav_d").css("visibility", "visible");
@@ -25,6 +26,7 @@ function on_ready () {
     }
 }
 
+// Toggel the meneu
 function toggle_nav_menu(){
     nav_menu_visible = !nav_menu_visible;
 
@@ -39,6 +41,7 @@ function toggle_nav_menu(){
     }
 }
 
+//
 function init_mc_button(){
 
     // hamburger menu
@@ -52,6 +55,7 @@ function init_mc_button(){
     });
 }
 
+//
 function toggle_nav(override_animation){
 
     // hamburger menu
@@ -94,6 +98,7 @@ function toggle_nav(override_animation){
     }
 }
 
+//
 function init_nav_links() {
     $(".nav_link").click(function(){
         toggle_nav(true);
