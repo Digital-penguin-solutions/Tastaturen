@@ -13,7 +13,7 @@ var McBar3 = McButton.find("b:nth-child(3)");
 var nav_in_animation = false;
 
 function on_ready () {
-    $(".nav_menu_container").css("visibility", "visible");
+    $(".nav_d").css("visibility", "visible");
 
     init_mc_button();
 
@@ -26,7 +26,7 @@ function on_ready () {
 function toggle_nav_menu(){
     nav_menu_visible = !nav_menu_visible;
 
-    $(".nav_menu_container").fadeToggle(fade_duration);
+    $(".nav_d").fadeToggle(fade_duration);
 
     // changes the color on the hamburger menu
     if (nav_menu_visible){

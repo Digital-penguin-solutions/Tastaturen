@@ -1,3 +1,13 @@
+<?php
+
+if(isset($_GET['scroll'])){
+    $scroll = "data-scroll";
+}
+else {
+    $scroll = "";
+}
+?>
+
 <nav class="nav_d col-md-2 col-xs-7" role="navigation">
 
     <div class="nav_d_container">
@@ -21,12 +31,12 @@
 
         <!--Nav links-->
         <div class="nav_d_link">
-            <a href="index#Intro">Hem</a>
-            <a href="index#Info">Om oss</a>
-            <a href="product_details?t=hem">Orglar för hemmet</a>
-            <a href="product_details?t=kyrka">Orglar för kyrkan </a>
-            <a href="index#kontakta">Kontakta oss</a>
-            <a href="index#Media">Media</a>
+            <a class = "nav_link" <?php echo $scroll; ?> href="index#Intro">Hem</a>
+            <a class = "nav_link" <?php echo $scroll; ?> href="index#Info">Om oss</a>
+            <a class = "nav_link" <?php echo $scroll; ?> href="product_details?t=hem">Orglar för hemmet</a>
+            <a class = "nav_link" <?php echo $scroll; ?> href="product_details?t=kyrka">Orglar för kyrkan </a>
+            <a class = "nav_link" <?php echo $scroll; ?> href="index#kontakta">Kontakta oss</a>
+            <a class = "nav_link" <?php echo $scroll; ?> href="index#Media">Media</a>
         </div>
     </div>
 </nav>
