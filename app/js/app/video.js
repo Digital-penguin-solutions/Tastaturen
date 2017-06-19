@@ -21,7 +21,6 @@ function on_ready_video(){
             },
             events: {
                 onReady: function(e) {
-                    e.target.mute();
                     onPlayerReady(e);
                 },
                 onStateChange: function(e){
@@ -35,18 +34,21 @@ function on_ready_video(){
     }
 }
 
-
+//when video player is ready
 function onPlayerReady(event) {
     var player = event.target;
     iframe = $('#organvideo');
     event.target.playVideo();
+    event.target.mute();
     setupListener();
 }
 
+//listener for button
 function setupListener (){
     $('#video-trigger').on('click', fullscreen);
 }
 
+//Html fullscreen api
 function fullscreen() {
     var e = document.getElementById("organvideo");
     if (e.requestFullscreen) {

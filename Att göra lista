@@ -13,11 +13,7 @@ Allmänt
 Index
     * Head
         # Slider 3: göra så att knappen sätter på ljudet på videon
-        #fixa lite med slidern så inget av slider sakerna syns på mobile
-
-
-    * Pruduct section
-        # Göra så att det går att swipa för att kunna skrolla vidare.
+        # fixa lite med slidern så inget av slider sakerna syns på mobile
 
     * Media
         # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har samma funkonalitet som på desktop.
@@ -39,7 +35,6 @@ footer
 
 Nav
     * Fixa köp knapen.
-    * fixa toggel knappen i naven.
 
 Buy
     * Fixa buy formuläret på ett enkelt sätt så att man kan sicka en ofert på fler än en orgel.
