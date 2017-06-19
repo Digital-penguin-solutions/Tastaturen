@@ -1,4 +1,4 @@
-<nav class="nav_d col-md-2 col-xs-7 hidden-xs" role="navigation">
+<nav class="nav_d col-md-2 col-xs-7" role="navigation">
 
     <div class="nav_d_container">
 
@@ -31,7 +31,7 @@
     </div>
 </nav>
 
-
+<!--todo Fixa animering och visa nav på mobil och tablet-->
 <div class="nav_d_btn hidden-md hidden-lg">
     <ul class = "nav_button_container">
         <li>
