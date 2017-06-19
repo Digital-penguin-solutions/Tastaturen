@@ -108,7 +108,8 @@ function init_grids(){
         //init_part(grid, items, 0, 0);
 
         /*set_text_color(items);*/
-        setTimeout(function(){set_text_color(items);}, 200); // a small delay to make sure all the images have loaded properly
+        // a small delay to make sure all the images have loaded properly
+        setTimeout(function(){set_text_color(items);}, 200);
         $(grid_temp_holder).remove();
     }
     
