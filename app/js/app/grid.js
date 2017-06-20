@@ -125,7 +125,7 @@ function set_text_color(items){
          //var col = 155-average;
          var col = average;
          
-         if(col > 70) {
+         if(col > 10) {
              col = 30;
          }
          else {
