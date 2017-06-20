@@ -13,7 +13,8 @@ if(!isset($functions_included)){
 
 
     function session_start_custom(){
-        if(!isset($session_started)){
+        global $session_started;
+        if(!$session_started){
             session_start();
             $session_started = true;
         }
@@ -334,7 +335,7 @@ if(!isset($functions_included)){
             else{
                 $j = $third;
             }
-            ?> <!--products that is used in slider--><div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>"><a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item"><img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"><h1><?php echo $name;?></h1><p class="short"><?php echo $short;?> </p><p class="price"><?php echo $price;?></p></a></div> <?php
+            ?> <!--products that is used in slider--><div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>"><a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item"><!--<img src="data:image/jpeg;base64,<?php //A_uecho base64_encode($image) ?>" alt="Huvudbild"/>--> <img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"><h1><?php echo $name;?></h1><p class="short"><?php echo $short;?> </p><p class="price"><?php echo $price;?></p></a></div> <?php
         }
     }
 
@@ -571,8 +572,10 @@ if(!isset($functions_included)){
 
         }
         //echo "data:image/jpeg;base64," . base64_encode($data);
-        ?> <img onclick="open_input('<?php echo $name?>')" class="<?php echo $classes; ?>" src="data:image/jpeg;base64,<?php echo base64_encode($data) ?>" alt="No image selected"> <input image_id="<?php echo $name; ?>" name="stored_image" class="stored_image_input" type="file" onchange="compress_image_single(event)"> <?php
-
+        ?> <img onclick="open_intput('<php echo $name?>')" class="<?php echo $classes; ?>" src="functions/load_stored_image.php?name=<?php echo $name;?>" alt="No image selected"><!--<img onclick="open_input('<?php echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php //echo base64_encode($data) ?>" alt="No image selected"/>--> <?php
+        if(isset($_SESSION['admin'])){
+?> <input image_id="<?php echo $name; ?>" name="stored_image" class="stored_image_input" type="file" onchange="compress_image_single(event)"> <?php
+        }
     }
 
     function create_stored_image($con, $name){
@@ -581,7 +584,6 @@ if(!isset($functions_included)){
         $query = "INSERT INTO stored_image (name) VALUES ('$name')";
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
-
 
     
 

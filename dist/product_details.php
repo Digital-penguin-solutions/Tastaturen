@@ -10,14 +10,29 @@ if(isset($_GET['t'])){
 else {
     $type = "hem";
 }
-?> <!--Header --><header class="container-fluid pe_header" role="banner"><div class="row-fluid pe_header_container col-xs-12"><div class="pe_header_bg"></div><div class="pe_header_text col-md-6 col-xs-12"><h1> <?php 
-            if($type == "hem"){
-                print_field("pe_header_home");
-            }
-            else {
-                print_field("pe_header_church");
-            }
-        ?> </h1><p>Det finns många fina orglar. Dessa orglar är mycket fina och kan göra mycket fina saker.</p></div></div></header><!-- Show all the products--><section class="container-fluid pe_prod" role="main"><div class="row-fluid pe_prod"><div class="col-xs-12 pe_prod_container"><div class="pe_prod_sort col-xs-12"><h1>Sortera</h1><div class="pe_prod_btn"><button onclick="sortByPrice(this)" class="pe_product_price">Pris</button> <button onclick="sortByName(this)" class="pe_product_name">Namn</button></div></div><div class="pe_prod_container2 col-xs-11"> <?php
+?> <!--Header --><header class="container-fluid pe_header" role="banner"><div class="row-fluid pe_header_container col-xs-12"><div class="pe_header_bg"> <?php 
+                if($type == "hem"){
+                    echo_stored_image_data($con, 'pe_header_home', ""); 
+                }
+                else {
+                    echo_stored_image_data($con, 'pe_header_church', ""); 
+
+                }
+            ?> </div><div class="pe_header_text col-md-6 col-xs-12"><h1> <?php 
+                if($type == "hem"){
+                    print_field("pe_header_home");
+                }
+                else {
+                    print_field("pe_header_church");
+                }
+            ?> </h1><p> <?php 
+                if($type == "hem"){
+                    print_field("pe_info_home");
+                }
+                else {
+                    print_field("pe_info_church");
+                }
+            ?> </p></div></div></header><!-- Show all the products--><section class="container-fluid pe_prod" role="main"><div class="row-fluid pe_prod"><div class="col-xs-12 pe_prod_container"><div class="pe_prod_sort col-xs-12"><h1>Sortera</h1><div class="pe_prod_btn"><button onclick="sortByPrice(this)" class="pe_product_price">Pris</button> <button onclick="sortByName(this)" class="pe_product_name">Namn</button></div></div><div class="pe_prod_container2 col-xs-11"> <?php
                 $products = get_all_visible_products($con, $type);
                 $len        = count($products);
                 //$odds       = 'prud-big';

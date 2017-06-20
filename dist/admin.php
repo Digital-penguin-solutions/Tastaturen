@@ -1,15 +1,15 @@
 <?php
 //include "include_pages/loading.php";
 $no_admin_info = "1";
-include "partials/head.php";
-?> <!DOCTYPE html><html><head><meta name="description" content=""><title>Admin page</title></head> <?php
+?> <?php
 include "functions/functions.php";
-session_start_custom();
 $con = connect();
+session_start_custom();
 //$products = get_all_products($con, "");
 $products_home = get_all_products($con, "hem");
 $products_church = get_all_products($con, "kyrka");
-?> <body class="col-xs-10"> <?php include "partials/nav.php" ?> <section class="admin_page col-xs-12"><div class="container-fluid full_height"><div class="row full_height"><div class="col-xs-10 col-xs-offset-1"><h1 class="admin_header">Admin page</h1> <?php
+include "partials/head.php";
+?> <!DOCTYPE html><html><head><meta name="description" content=""><title>Admin page</title></head><body class="col-xs-10"> <?php include "partials/nav.php" ?> <section class="admin_page col-xs-12"><div class="container-fluid full_height"><div class="row full_height"><div class="col-xs-10 col-xs-offset-1"><h1 class="admin_header">Admin page</h1> <?php
                 if(isset($_GET['wrong'])){
                     echo "<h2 class = 'admin_header'> Wrong password, please try again </h2>";
                 }
@@ -74,4 +74,4 @@ $products_church = get_all_products($con, "kyrka");
                 else {
                     ?> <form class="login hidden-sm hidden-xs" action="functions/login.php" method="post"><p>PASSWORD:</p><input type="password" name="password"> <input type="submit" name="login" value="Login"></form> <?php
                 }
-                ?> </div></div></div></div></section></body></html>
+                ?> </div></div></div></div></section> <?php include "partials/footer.php"?> </body></html>

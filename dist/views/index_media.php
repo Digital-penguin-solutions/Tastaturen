@@ -13,7 +13,7 @@
 
                     ?> <div size="<?php echo $size; ?>" class="grid_item i_media_item"><div media_id="<?php echo $media_id; ?>" class="i_media_inner"><div class="grid_item_text"><h1><?php echo $title; ?></h1></div> <?php 
                             if($type == "image"){
-                            ?> <img src="data:image/jpeg;base64,<?php echo base64_encode($header_image) ?>" alt="Huvudbild"> <?php 
+                            ?> <!--<img src="data:image/jpeg;base64,<?php //echo base64_encode($header_image) ?>" alt="Huvudbild"/>--> <img src="functions/load_media_image?id=<?php echo $media_id; ?>" alt="Huvudbild"> <?php 
                             }
                             else {
                                 ?> <i class="fa fa-youtube-play" id="video-trigger" aria-hidden="true"></i> <?php

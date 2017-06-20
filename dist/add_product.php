@@ -1,14 +1,14 @@
 <?php
 //include "include_pages/loading.php";
 $no_admin_info = "1";
-include "partials/head.php";
-?> <!DOCTYPE html><html lang="en"><head><title>MetSense add product</title><meta name="description" content="Tastaturen - Add product"></head> <?php
+
 ini_set('memory_limit', '-1');
 include "functions/functions.php";
 session_start();
 
 $con = connect();
 
+?> <!DOCTYPE html> <?php include "partials/head.php";?> <html lang="en"><head><title>MetSense add product</title><meta name="description" content="Tastaturen - Add product"></head> <?php 
 if (!isset($_SESSION['admin'])) {
     header("Location: index.php");
 }
@@ -178,9 +178,9 @@ if (isset($_SESSION['admin'])) {
 
                                 $image_id = $image['product_image_id'];
                                 $image_name = $image['filename'];
-                                ?> <div class="admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input image_id="<?php echo $image_id;  ?>" class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $image['data']); ?>" alt="image of the curent sensor"> <img src="../img/cross.svg" image_id="<?php echo $image_id; ?>" class="center_vertically_css remove_item" alt="remove item from list"></div> <?php
+                                ?> <div class="admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input image_id="<?php echo $image_id;  ?>" class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $image['data']); ?>" alt="image of the curent image"> <img src="../img/cross.svg" image_id="<?php echo $image_id; ?>" class="center_vertically_css remove_item" alt="remove item from list"></div> <?php
                             }
-                            ?> <div class="add_item">Add new image</div></div><h1>Huvudbild</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="main_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image); ?>" alt="preview of the curent sensor"></div><h1>Bild 2</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="about_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $about_image); ?>" alt="preview of the curent sensor"></div><section class="col-md-4 col-md-offset-4"><button id="js-trigger-overlay" onclick="send_form(this, 'add_product.php', 'form')" type="button">Save product</button></section></form></div></div></div></section></body> <?php
+                            ?> <div class="add_item">Add new image</div></div><h1>Huvudbild</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="main_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image); ?>" alt="preview of the curent image"></div><h1>Bild 2</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="about_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $about_image); ?>" alt="preview of the curent image"></div><section class="col-md-4 col-md-offset-4"><button id="js-trigger-overlay" onclick="send_form(this, 'add_product.php', 'form')" type="button">Save product</button></section></form></div></div></div></section></body> <?php
 }
 
 else {header("Location: index.php");} ?> </html>
