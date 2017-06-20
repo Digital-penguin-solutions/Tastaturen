@@ -12,6 +12,10 @@ function on_ready_offert(){
         send_offert();
     });
 
+    $(".offert_open").click(function(){
+        open_offert();
+    });
+
 }
 
 

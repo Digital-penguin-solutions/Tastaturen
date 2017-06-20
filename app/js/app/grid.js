@@ -118,14 +118,10 @@ function init_grids(){
 
 function set_text_color(items){
      for(var i = 0; i < items.length; i++){
-         console.log("------------");
          var item = items[i];
          var image = item.getElementsByTagName("img")[0];
          var h1= item.getElementsByTagName("h1")[0];
-         console.log("imgage" + image);
          var average = Math.round(getAverageRGB(image));
-         console.log("avg: "+ average);
-         console.log(h1);
          //var col = 155-average;
          var col = average;
          
@@ -136,11 +132,9 @@ function set_text_color(items){
              col = 250;
          }
 
-         console.log(col);
          col = "rgb(" + col +", "+col+", "+col+")";
 
          $(h1).css("color", col);
-         console.log(h1);
 
      }
 }
@@ -157,7 +151,6 @@ function getAverageRGB(imgEl) {
         count = 0;
 
     if (!context) {
-        console.log("FAILD2");
         return defaultRGB;
     }
 
@@ -170,12 +163,10 @@ function getAverageRGB(imgEl) {
         data = context.getImageData(0, 0, width, height);
     } catch(e) {
         /* security error, img on diff domain */
-        console.log("FAILD");
         return defaultRGB;
     }
 
     length = data.data.length;
-    console.log("jerry");
 
     while ( (i += blockSize * 4) < length ) {
         ++count;
@@ -190,7 +181,6 @@ function getAverageRGB(imgEl) {
     rgb.b = ~~(rgb.b/count);
     
     var all = (rgb.r + rgb.g + rgb.b) / 3;
-    console.log("all " + all);
 
     return (rgb.r + rgb.g + rgb.b) / 3;
 

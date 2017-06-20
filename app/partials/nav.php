@@ -16,7 +16,7 @@ else {
 
         <!-- cart icon -->
         <div class="nav_cart">
-            <a href="#">
+            <a href = "#" class="offert_open">
                 <i class="fa fa-bell-o"> </i>
                 Kontakta för köp
             </a>

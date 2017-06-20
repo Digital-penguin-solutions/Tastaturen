@@ -46,9 +46,9 @@
 
       .p_prod_head_btn_broschyr{
         @include horizontal-align($pos:absolute);
-        border: 2px solid $white;
-        color: $white;
-        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        background: rgba(0,0,0, 0.35);
         text-align: center;
         text-decoration: none;
         font-size: 5vw;

@@ -30,15 +30,11 @@ Admin
     * Quick edit när man är inne på produkter.
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
-<<<<<<< HEAD
     * edit på alla sidor funkar??
-    *kolla edit
 
 footer
     * Fixa alla länkar.
-=======
     * popupen att man är innlogad som admin förvinner inte permanen när man trycker på krysset.
->>>>>>> c03accc5e4ffc95306d87544cd6f26acd46ca510
 
 Nav
     * Fixa köp knapen.

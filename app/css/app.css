@@ -3024,9 +3024,9 @@ section {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        border: 2px solid #ffffff;
-        color: #ffffff;
-        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        background: rgba(0, 0, 0, 0.35);
         text-align: center;
         text-decoration: none;
         font-size: 5vw;
@@ -3893,7 +3893,7 @@ section {
         height: 60vh; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item img {
           max-width: 70%;
-          height: 60%; }
+          height: 49%; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item h1 {
           font-size: 4vw; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item p {
@@ -4155,7 +4155,7 @@ section {
       font-weight: 600; }
     .i_contact .i_contact_container .i_contact_text p {
       font-size: 3.5vw;
-      font-weight: 100; }
+      font-weight: 300; }
 
 @media (min-width: 992px) {
   .i_contact .i_contact_container .i_contact_text_top h2 {

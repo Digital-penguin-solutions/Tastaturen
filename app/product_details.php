@@ -27,18 +27,28 @@ else {
     <div class="row-fluid pe_header_container col-xs-12">
         <div class="pe_header_bg"></div>
         <div class="pe_header_text col-md-6 col-xs-12">
-        <h1>
-        <?php 
-            if($type == "hem"){
-                print_field("pe_header_home");
-            }
-            else {
-                print_field("pe_header_church");
-            }
-        ?>
-        </h1>
-            <p>Det finns många fina orglar. Dessa orglar är mycket fina och kan göra mycket
-                fina saker.</p>
+            <h1>
+            <?php 
+                if($type == "hem"){
+                    print_field("pe_header_home");
+                }
+                else {
+                    print_field("pe_header_church");
+                }
+            ?>
+            </h1>
+            <p>
+            
+            <?php 
+                if($type == "hem"){
+                    print_field("pe_info_home");
+                }
+                else {
+                    print_field("pe_info_church");
+                }
+            ?>
+            
+            </p>
         </div>
     </div>
 </header>

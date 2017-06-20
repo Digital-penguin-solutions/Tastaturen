@@ -18,8 +18,7 @@
                         </div>
 
                         <div class="i_slider_1_left_btn ">
-                            <p>Herp derpsum perp dee derp, mer herderder.
-                                Sherp berp derpler,</p>
+                            <p><?php print_field("i_slider_1_kyrka_info"); ?> </p>
                             <button class = "slide-in-delay-3 slide-in slide-in-left"
                                     onclick="location.href='product_details?t=kyrka'">Kyrkobruk</button>
                         </div>
@@ -32,8 +31,7 @@
                         </div>
 
                         <div class="i_slider_1_right_btn">
-                            <p>Herp derpsum perp dee derp, mer herderder.
-                                Sherp berp derpler,</p>
+                            <p><?php print_field("i_slider_1_home_info"); ?> </p>
                             <button class = "slide-in-delay-3 slide-in"
                                     onclick="location.href='product_details?t=hem'">Hemmabruk</button>
                         </div>
@@ -45,11 +43,11 @@
                     <div class="i_slider_2_container">
                         <div class="i_slider_2_text col-xs-12">
                             <div class="i_slider_2_text_container col-xs-5 col-xs-offset-1">
-                                <h1>LIVE</h1>
-                                <p>LiVE marks the definitive dawn of a new era in organs. </p>
+                                <h1><?php print_field("i_slider_2_header"); ?> </h1>
+                                <p><?php print_field("i_slider_2_text"); ?> </p>
                                 <div class="i_slider_2_btn ">
                                     <button class = "slide-in-delay-3 slide-in slide-in-left"
-                                            onclick="location.href='product_details'">Läs mer</button>
+                                            onclick="location.href='product?id=327'">Läs mer</button>
                                 </div>
                             </div>
                         </div>
@@ -64,7 +62,6 @@
                     <div class="i_slider_3_container">
                         <div class="i_slider_3_video">
 
-                            <!--Todo När knapen tryck sätt ljudet på för yt videon-->
                             <div id="organvideo" class="i_slider_3_video_player"></div>
 
                             <div class="i_slider_3_video_btn">
@@ -79,8 +76,8 @@
                     <div class="i_slider_4_container">
                         <div class="i_slider_4_text col-xs-12">
                             <div class="i_slider_4_text_container col-xs-12">
-                                <h1> orgel</h1>
-                                <p>Mycket fin orgel med mycket bra saker. </p>
+                                <h1><?php print_field("i_slider_4_header"); ?> </h1>
+                                <p><?php print_field("i_slider_4_text"); ?> </p>
                                 <div class="i_slider_4_btn">
                                     <button onclick="location.href='product_details'">Läs mer</button>
                                 </div>
