@@ -2,217 +2,222 @@
 
 //into section
 .i_header{
+  height: 100vh;
+  z-index: 4;
+  background: $color5;
+  @extend .nopm;
+
+  .i_header_container{
     height: 100vh;
-    z-index: 4;
-    background: $color5;
     @extend .nopm;
 
-    .i_header_container{
-        height: 100vh;
+    .i_header_slider{
+      height: 100vh;
+
+      // Slider 1
+      .i_slider_1{
         @extend .nopm;
 
-        .i_header_slider{
+        .i_slider_1_container{
+          height: 100vh;
+
+          .i_slider_1_text {
+            position: absolute;
+            color: $white;
+            background: transparent;
+            z-index: 101;
+            text-align: center;
+            margin-top:20vh;
+            width:100%;
+
+
+            h1 {
+              font-size: 8vw;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+          }
+
+          .i_slider_1_left {
             height: 100vh;
+            background: $color3*4.1;
 
-            // Slider 1
-            .i_slider_1{
-                @extend .nopm;
+            .i_slider_1_left_img {
+              @include vertical-align();
+              right:0;
+              position: absolute;
 
-                .i_slider_1_container{
-                    height: 100vh;
-
-                    .i_slider_1_text {
-                        position: absolute;
-                        color: $white;
-                        background: transparent;
-                        z-index: 101;
-                        text-align: center;
-                        margin-top:20vh;
-                        width:100%;
-
-
-                        h1 {
-                            font-size: 8vw;
-                            font-weight: 600;
-                            text-transform: uppercase;
-                        }
-                    }
-
-                    .i_slider_1_left {
-                        height: 100vh;
-                        background: $color3*4.1;
-
-                        .i_slider_1_left_img {
-                            @include vertical-align();
-                            right:0;
-                            position: absolute;
-
-                            img{
-                                width:30vw;
-                                height: 40vh;
-                            }
-                        }
-
-                        .i_slider_1_left_btn {
-                            left: 5vw;
-                            float:left;
-                            @extend .slider_btn;
-                        }
-
-                        &:hover{
-
-                            .i_slider_1_left_img{
-                                transition: 0.2s;
-
-                                img{
-                                    width:32vw;
-                                    height: 42vh;
-                                    transition: 0.4s;
-                                }
-                            }
-                        }
-                    }
-
-                    .i_slider_1_right{
-                        height: 100vh;
-                        background: $color3*4.5;
-
-                        .i_slider_1_right_img{
-                            @include vertical-align();
-                            left:0;
-                            position: absolute;
-
-                            img{
-                                width:30vw;
-                                height: 40vh;
-                            }
-                        }
-
-                        .i_slider_1_right_btn {
-                            right: 5vw;
-                            @extend .slider_btn;
-
-                            button {
-                                float:right;
-                            }
-                        }
-                        &:hover{
-
-                            .i_slider_1_right_img{
-                                transition: 0.4s;
-
-                                img{
-                                    width:32vw;
-                                    height: 42vh;
-                                    transition: 0.4s;
-                                }
-                            }
-                        }
-                    }
-                }
+              img{
+                width:30vw;
+                height: 40vh;
+              }
             }
 
-        }
-
-        .i_xs_slider{
-            height: 100vh;
-            .i_slider_1{
-                @extend .nopm;
-
-                .i_slider_1_container{
-                    height: 100vh;
-
-                    .i_slider_1_text {
-                        position: absolute;
-                        color: $white;
-                        background: transparent;
-                        z-index: 101;
-                        text-align: center;
-                        margin-top:20vh;
-                        width:100%;
-
-                        h1 {
-                            font-size: 8vw;
-                            font-weight: 600;
-                            text-transform: uppercase;
-                        }
-                    }
-
-                    .i_slider_1_left {
-                        height: 100vh;
-                        background: $color3*4.1;
-
-                        .i_slider_1_left_img {
-                            @include vertical-align();
-                            right:0;
-                            position: absolute;
-
-                            img{
-                                width:30vw;
-                                height: 40vh;
-                            }
-                        }
-
-                        .i_slider_1_left_btn {
-                            left: 5vw;
-                            float:left;
-                            @extend .slider_btn;
-                        }
-
-                        &:hover{
-
-                            .i_slider_1_left_img{
-                                transition: 0.4s;
-
-                                img{
-                                    width:32vw;
-                                    height: 42vh;
-                                    transition: 0.4s;
-                                }
-                            }
-                        }
-                    }
-
-                    .i_slider_1_right{
-                        height: 100vh;
-                        background: $color3*4.5;
-
-                        .i_slider_1_right_img{
-                            @include vertical-align();
-                            left:0;
-                            position: absolute;
-
-                            img{
-                                width:30vw;
-                                height: 40vh;
-                            }
-                        }
-
-                        .i_slider_1_right_btn {
-                            right: 5vw;
-                            @extend .slider_btn;
-
-                            button {
-                                float:right;
-                            }
-                        }
-                        &:hover{
-
-                            .i_slider_1_right_img{
-                                transition: 0.2s;
-
-                                img{
-                                    width:32vw;
-                                    height: 42vh;
-                                    transition: 0.4s;
-                                }
-                            }
-                        }
-                    }
-                }
+            .i_slider_1_left_btn {
+              @extend .slider_btn;
+              left: 5vw;
+              float:left;
+              button{
+                font-size: 1.5vw !important;
+              }
             }
+
+            &:hover{
+
+              .i_slider_1_left_img{
+                transition: 0.2s;
+
+                img{
+                  width:32vw;
+                  height: 42vh;
+                  transition: 0.4s;
+                }
+              }
+            }
+          }
+
+          .i_slider_1_right{
+            height: 100vh;
+            background: $color3*4.5;
+
+            .i_slider_1_right_img{
+              @include vertical-align();
+              left:0;
+              position: absolute;
+
+              img{
+                width:30vw;
+                height: 40vh;
+              }
+            }
+
+            .i_slider_1_right_btn {
+              right: 5vw;
+              font-size: 10vw;
+              @extend .slider_btn;
+
+              button {
+                font-size: 1.5vw !important;
+                float:right;
+              }
+            }
+            &:hover{
+
+              .i_slider_1_right_img{
+                transition: 0.4s;
+
+                img{
+                  width:32vw;
+                  height: 42vh;
+                  transition: 0.4s;
+                }
+              }
+            }
+          }
         }
+      }
+
     }
+
+    .i_xs_slider{
+      height: 100vh;
+      .i_slider_1{
+        @extend .nopm;
+
+        .i_slider_1_container{
+          height: 100vh;
+
+          .i_slider_1_text {
+            position: absolute;
+            color: $white;
+            background: transparent;
+            z-index: 101;
+            text-align: center;
+            margin-top:20vh;
+            width:100%;
+
+            h1 {
+              font-size: 8vw;
+              font-weight: 600;
+              text-transform: uppercase;
+            }
+          }
+
+          .i_slider_1_left {
+            height: 100vh;
+            background: $color3*4.1;
+
+            .i_slider_1_left_img {
+              @include vertical-align();
+              right:0;
+              position: absolute;
+
+              img{
+                width:30vw;
+                height: 40vh;
+              }
+            }
+
+            .i_slider_1_left_btn {
+              left: 5vw;
+              float:left;
+              @extend .slider_btn;
+            }
+
+            &:hover{
+
+              .i_slider_1_left_img{
+                transition: 0.4s;
+
+                img{
+                  width:32vw;
+                  height: 42vh;
+                  transition: 0.4s;
+                }
+              }
+            }
+          }
+
+          .i_slider_1_right{
+            height: 100vh;
+            background: $color3*4.5;
+
+            .i_slider_1_right_img{
+              @include vertical-align();
+              left:0;
+              position: absolute;
+
+              img{
+                width:30vw;
+                height: 40vh;
+              }
+            }
+
+            .i_slider_1_right_btn {
+              right: 5vw;
+              @extend .slider_btn;
+
+              button {
+                float:right;
+              }
+            }
+            &:hover{
+
+              .i_slider_1_right_img{
+                transition: 0.2s;
+
+                img{
+                  width:32vw;
+                  height: 42vh;
+                  transition: 0.4s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 //tablet size
@@ -220,217 +225,217 @@
 
 //desktop size
 @media (min-width: $screen-md-min) {
-    .i_header{
-        .i_header_container{
-            .i_header_slider{
+  .i_header{
+    .i_header_container{
+      .i_header_slider{
 
-                //slider 1
-                .i_slider_1{
-                    .i_slider_1_container{
-                        .i_slider_1_text {
-                            margin-top:35vh;
-                            h1{
+        //slider 1
+        .i_slider_1{
+          .i_slider_1_container{
+            .i_slider_1_text {
+              margin-top:35vh;
+              h1{
 
-                            }
-                        }
-
-                        .i_slider_1_left{
-                            .i_slider_1_left_img{
-                                img{
-                                    width:15vw;
-                                    height: 60vh;
-                                }
-                            }
-                            &:hover{
-                                .i_slider_1_left_img {
-                                    img {
-                                        width: 17vw;
-                                        height: 63vh;
-                                    }
-                                }
-                            }
-                        }
-                        .i_slider_1_right{
-                            .i_slider_1_right_img{
-                                img{
-                                    width:15vw;
-                                    height: 60vh;
-                                }
-                            }
-                            &:hover{
-                                .i_slider_1_right_img {
-                                    img {
-                                        width: 17vw;
-                                        height: 63vh;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                // Slider 2
-                .i_slider_2_container{
-                    height:100vh;
-                    background: #000;
-                    @extend .nopm;
-
-                    .i_slider_2_text{
-                        left:0;
-                        top:0;
-                        height: 100vh;
-                        width: 100%;
-                        z-index: 100;
-                        position: absolute;
-                        background: rgba($color5, 0.3);
-
-                        .i_slider_2_text_container{
-                            color: $color1;
-                            @include vertical-align();
-                            margin-top:-10vh;
-
-                            h1{
-                                font-size: 6vw;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                            }
-
-                            p{
-                                color: #ffffff;
-                                font-size: 2vw;
-                                font-weight: 400;
-                            }
-
-                            .i_slider_2_btn{
-                                margin-top:3vh;
-
-                                button{
-                                    border: 2px solid $white;
-                                    color: $white;
-                                    background: rgba($color5, 0.25);
-                                    text-align: center;
-                                    text-decoration: none;
-                                    font-size: 1.2vw;
-                                    width: 12vw;
-                                    height: 4.5vh;
-                                }
-
-                                &:hover{
-                                    button {
-                                        background: $color1;
-                                        border: 0;
-                                        transition: 0.5s;
-                                    }
-                                }
-                            }
-
-                        }
-                    }
-                    .i_slider_2_img{
-                        z-index: 99;
-                        height: 100vh;
-                        width:100%;
-                        img{
-                            width:100%;
-                            height: 100%;
-                        }
-                    }
-                }
-
-                // Slider 3
-                .i_slider_3_container{
-                    .i_slider_3_video{
-                        height: 100vh;
-                        width: 100%;
-                        .i_slider_3_video_player{
-                            height: 100vh;
-                            width: 100%;
-                            z-index: 100;
-                        }
-                        .i_slider_3_video_btn{
-                            position: absolute;
-                            @include center-align($pos:absolute);
-                            z-index: 10000;
-                            i{
-                                @include center-align($pos:absolute);
-                                font-size: 8vw;
-                                color: red;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                }
-
-                //Slider 4
-                .i_slider_4_container{
-                    height:100vh;
-                    width:100%;
-                    background: #000;
-                    @extend .nopm;
-
-                    .i_slider_4_text{
-                        height: 100vh;
-                        width: 100%;
-                        z-index: 100;
-                        position: absolute;
-                        background: rgba($color5, 0.3);
-
-                        .i_slider_4_text_container{
-                            color: $color1;
-                            height: 100vh;
-                            width:100%;
-                            margin-top:15vh;
-                            text-align: center;
-
-                            h1{
-                                font-size: 6vw;
-                                font-weight: 600;
-                                text-transform: uppercase;
-                            }
-
-                            p{
-                                color: $white;
-                                font-size: 2vw;
-                                font-weight: 400;
-                                text-align: center;
-                            }
-
-                            .i_slider_4_btn{
-                                margin-top:3vh;
-
-                                button{
-                                    border: 2px solid $white;
-                                    color: $white;
-                                    background: rgba($color5, 0.25);
-                                    text-align: center;
-                                    text-decoration: none;
-                                    font-size: 1.2vw;
-                                    width: 12vw;
-                                    height: 4.5vh;
-                                }
-
-                                &:hover{
-                                    button {
-                                        background: $color1;
-                                        border: 0;
-                                        transition: 0.5s;
-                                    }
-                                }
-                            }
-
-                        }
-                    }
-                    .i_slider_4_img{
-                        z-index: 99;
-                        height: 100vh;
-                        width:100%;
-                        img{
-                            width:100%;
-                            height: 100%;
-                        }
-                    }
-                }
+              }
             }
+
+            .i_slider_1_left{
+              .i_slider_1_left_img{
+                img{
+                  width:15vw;
+                  height: 60vh;
+                }
+              }
+              &:hover{
+                .i_slider_1_left_img {
+                  img {
+                    width: 17vw;
+                    height: 63vh;
+                  }
+                }
+              }
+            }
+            .i_slider_1_right{
+              .i_slider_1_right_img{
+                img{
+                  width:15vw;
+                  height: 60vh;
+                }
+              }
+              &:hover{
+                .i_slider_1_right_img {
+                  img {
+                    width: 17vw;
+                    height: 63vh;
+                  }
+                }
+              }
+            }
+          }
         }
+
+        // Slider 2
+        .i_slider_2_container{
+          height:100vh;
+          background: #000;
+          @extend .nopm;
+
+          .i_slider_2_text{
+            left:0;
+            top:0;
+            height: 100vh;
+            width: 100%;
+            z-index: 100;
+            position: absolute;
+            background: rgba($color5, 0.3);
+
+            .i_slider_2_text_container{
+              color: $color1;
+              @include vertical-align();
+              margin-top:-10vh;
+
+              h1{
+                font-size: 6vw;
+                font-weight: 600;
+                text-transform: uppercase;
+              }
+
+              p{
+                color: #ffffff;
+                font-size: 2vw;
+                font-weight: 400;
+              }
+
+              .i_slider_2_btn{
+                margin-top:3vh;
+
+                button{
+                  border: 2px solid $white;
+                  color: $white;
+                  background: rgba($color5, 0.25);
+                  text-align: center;
+                  text-decoration: none;
+                  font-size: 1.2vw;
+                  width: 12vw;
+                  height: 4.5vh;
+                }
+
+                &:hover{
+                  button {
+                    background: $color1;
+                    border: 0;
+                    transition: 0.5s;
+                  }
+                }
+              }
+
+            }
+          }
+          .i_slider_2_img{
+            z-index: 99;
+            height: 100vh;
+            width:100%;
+            img{
+              width:100%;
+              height: 100%;
+            }
+          }
+        }
+
+        // Slider 3
+        .i_slider_3_container{
+          .i_slider_3_video{
+            height: 100vh;
+            width: 100%;
+            .i_slider_3_video_player{
+              height: 100vh;
+              width: 100%;
+              z-index: 100;
+            }
+            .i_slider_3_video_btn{
+              position: absolute;
+              @include center-align($pos:absolute);
+              z-index: 10000;
+              i{
+                @include center-align($pos:absolute);
+                font-size: 8vw;
+                color: red;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        //Slider 4
+        .i_slider_4_container{
+          height:100vh;
+          width:100%;
+          background: #000;
+          @extend .nopm;
+
+          .i_slider_4_text{
+            height: 100vh;
+            width: 100%;
+            z-index: 100;
+            position: absolute;
+            background: rgba($color5, 0.3);
+
+            .i_slider_4_text_container{
+              color: $color1;
+              height: 100vh;
+              width:100%;
+              margin-top:15vh;
+              text-align: center;
+
+              h1{
+                font-size: 6vw;
+                font-weight: 600;
+                text-transform: uppercase;
+              }
+
+              p{
+                color: $white;
+                font-size: 2vw;
+                font-weight: 400;
+                text-align: center;
+              }
+
+              .i_slider_4_btn{
+                margin-top:3vh;
+
+                button{
+                  border: 2px solid $white;
+                  color: $white;
+                  background: rgba($color5, 0.25);
+                  text-align: center;
+                  text-decoration: none;
+                  font-size: 1.2vw;
+                  width: 12vw;
+                  height: 4.5vh;
+                }
+
+                &:hover{
+                  button {
+                    background: $color1;
+                    border: 0;
+                    transition: 0.5s;
+                  }
+                }
+              }
+
+            }
+          }
+          .i_slider_4_img{
+            z-index: 99;
+            height: 100vh;
+            width:100%;
+            img{
+              width:100%;
+              height: 100%;
+            }
+          }
+        }
+      }
     }
+  }
 }

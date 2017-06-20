@@ -2,9 +2,7 @@ Viktigt
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen.
     * SEO hela sidan.
     * opimizera hastighet.
-        # Minimerara request från olika sidor.
     * Lägga in alla texter och bilder på prudukterna i databasen.
-    * Få rätt kontakt info från Anders.
     * Fixa smoothe scroll när man klikar på länkar i naven.
 
 Allmänt
@@ -12,14 +10,20 @@ Allmänt
 
 Index
     * Head
+        # Slider 1 ska lägga sit på telefonen.
+        # Slider 1 knapparna ska förstoras för att göra det tydligare
         # Slider 3: göra så att knappen sätter på ljudet på videon
         # fixa lite med slidern så inget av slider sakerna syns på mobile
 
     * Media
         # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har samma funkonalitet som på desktop.
+        # Kunna soretera vilken media sak som ligger övers.
 
 Prudkter
     * Fixa så att mobil bilden finns i databasen och är första bilden i bildspelet.
+    * Kunna välja vilken prudukt som ska ligga överst i listan.
+    * Fixa så att Om man inte skriver in priset så står det kontakta för pris och
+        de Hammnar längs ner när man sorterar efter pris.
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt. 
@@ -35,22 +39,5 @@ footer
 
 Nav
     * Fixa köp knapen.
-    * stänga offert genom att klicka utanför den
-
-Buy
-
-Terms of service
-    * Fixa en terms of service sidan. Om anders vill ha det
-
-Privicy and polency
-    * Fixa en Privicy and polency sida. Om anders vill ha det
-
-
-
-Saker Anders vill att vi ska göra.
-    *
-
-
-
-
-
+    * stänga offert genom att klicka utanför den.
+    * Rubrikerna på index sidan ska vara samma som rubrikerna i naven även när du ändrar rubrikerna.
