@@ -45,8 +45,8 @@
                     <div class="i_slider_2_container">
                         <div class="i_slider_2_text col-xs-12">
                             <div class="i_slider_2_text_container col-xs-5 col-xs-offset-1">
-                                <h1> Orgel</h1>
-                                <p>Mycket fin orgel med mycket bra saker. </p>
+                                <h1>LIVE</h1>
+                                <p>LiVE marks the definitive dawn of a new era in organs. </p>
                                 <div class="i_slider_2_btn ">
                                     <button class = "slide-in-delay-3 slide-in slide-in-left"
                                             onclick="location.href='product_details'">Läs mer</button>

@@ -17,8 +17,13 @@
             <div class="footer_mid">
                 <ul>
                     <li><a href="index#kontakta">Kontakta</a></li>
+<<<<<<< HEAD
                     <li><a href="product_details?t=kyrka">Orglar för kyrkan</a></li>
                     <li><a href="product_details?t=hem">Orglar för hemmet</a></li>
+=======
+                    <li><a href="product_details?t=kyrka">orglar för kyrkan</a></li>
+                    <li><a href="product_details?t=hem">orglar för hemmet</a></li>
+>>>>>>> c03accc5e4ffc95306d87544cd6f26acd46ca510
                     <!--<li><a href="#">personuppgiftspolicy</a></li>-->
                     <!--<li><a href="#">integritetspolicy</a></li>-->
                     <li class="hidden-xs hidden-sm"><a href="admin">Admin</a></li>
