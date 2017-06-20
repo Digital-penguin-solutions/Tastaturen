@@ -3,7 +3,6 @@ function close_edit_view(){
 }
 function show_edit_view(element){
     $("#editor").css("display", "block");
-    console.log("kör123");
 
     var span = $(element).find("span");
     var old = $(span).text();
