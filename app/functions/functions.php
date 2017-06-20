@@ -339,7 +339,8 @@ if(!isset($functions_included)){
             <!--products that is used in slider-->
             <div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>">
                 <a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item">
-                    <img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"/>
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
+                    <!--<img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"/>-->
 
                     <h1><?php echo $name;?></h1>
                     <p class="short"><?php echo $short;?> </p>
