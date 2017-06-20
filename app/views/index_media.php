@@ -27,7 +27,9 @@
                             <?php 
                             if($type == "image"){
                             ?>
-                                <img src="data:image/jpeg;base64,<?php echo base64_encode($header_image) ?>" alt="Huvudbild"/>
+                            <!--<img src="data:image/jpeg;base64,<?php //echo base64_encode($header_image) ?>" alt="Huvudbild"/>-->
+                            <img src="functions/load_media_image?id=<?php echo $media_id; ?>" alt="Huvudbild"/>
+
 <?php 
                             }
                             else {
