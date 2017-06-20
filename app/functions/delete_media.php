@@ -15,7 +15,7 @@
 
         //$select = mysqli_query($con, $query) or die (mysqli_error($con));
 
-        header("Location: ../admin?message=Media post has been deleted");
+        header("Location: ../admin?view=media&message=Media post has been deleted");
     }
     else{
         header("Location: ../index");

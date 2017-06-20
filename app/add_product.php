@@ -1,22 +1,22 @@
 <?php
 //include "include_pages/loading.php";
 $no_admin_info = "1";
-include "partials/head.php";
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>MetSense add product</title>
-    <meta name="description" content="Tastaturen - Add product">
-</head>
 
-<?php
 ini_set('memory_limit', '-1');
 include "functions/functions.php";
 session_start();
 
 $con = connect();
 
+?>
+<!DOCTYPE html>
+<?php include "partials/head.php";?>
+<html lang="en">
+<head>
+    <title>MetSense add product</title>
+    <meta name="description" content="Tastaturen - Add product">
+</head>
+<?php 
 if (!isset($_SESSION['admin'])) {
     header("Location: index.php");
 }
@@ -245,7 +245,7 @@ if (isset($_SESSION['admin'])) {
                                     <p class = "center_vertically_css">
                                         <strong> Current: </strong>
                                     </p>
-                                    <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $image['data']); ?>" alt="image of the curent sensor"/>
+                                    <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $image['data']); ?>" alt="image of the curent image"/>
                                     <img src = "../img/cross.svg" image_id = "<?php echo $image_id; ?>" class = "center_vertically_css remove_item" alt="remove item from list">
                                 </div>
                                 <?php
@@ -261,7 +261,7 @@ if (isset($_SESSION['admin'])) {
                             <p class = "center_vertically_css">
                                 <strong> Current: </strong>
                             </p>
-                            <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image); ?>" alt="preview of the curent sensor"/>
+                            <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image); ?>" alt="preview of the curent image"/>
                         </div>
 
                         <h1> Bild 2</h1>
@@ -271,7 +271,7 @@ if (isset($_SESSION['admin'])) {
                             <p class = "center_vertically_css">
                                 <strong> Current: </strong>
                             </p>
-                            <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $about_image); ?>" alt="preview of the curent sensor"/>
+                            <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $about_image); ?>" alt="preview of the curent image"/>
                         </div>
 
 

@@ -1,14 +1,7 @@
 <?php
 //include "include_pages/loading.php";
 $no_admin_info = "1";
-include "partials/head.php";
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>MetSense add product</title>
-    <meta name="description" content="Tastaturen - Add media post">
-</head>
 
 <?php
 ini_set('memory_limit', '-1');
@@ -17,6 +10,15 @@ session_start();
 
 $con = connect();
 
+?>
+<!DOCTYPE html>
+<?php include "partials/head.php";?>
+<html lang="en">
+<head>
+    <title>MetSense add product</title>
+    <meta name="description" content="Tastaturen - Add media post">
+</head>
+<?php
 if (!isset($_SESSION['admin'])) {
     header("Location: index.php");
 }

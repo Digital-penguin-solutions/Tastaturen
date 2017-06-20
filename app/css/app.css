@@ -2574,27 +2574,34 @@ section {
   height: 65vh;
   background: #1e1e1e; }
   .pe_header .pe_header_container {
-    height: 65vh;
+    height: 100%;
     background-size: 100vw 65vh; }
     .pe_header .pe_header_container .pe_header_bg {
       position: absolute;
       height: 100%;
       width: 100%;
       background: rgba(30, 30, 30, 0.3);
-      z-index: 99; }
+      z-index: 99;
+      overflow: hidden; }
+      .pe_header .pe_header_container .pe_header_bg img {
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
     .pe_header .pe_header_container .pe_header_text {
       position: absolute;
       z-index: 100;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
-      text-align: center; }
+      text-align: center;
+      color: black; }
       .pe_header .pe_header_container .pe_header_text h1 {
-        color: #ffffff;
         font-size: 7.5vw;
         font-weight: 600; }
       .pe_header .pe_header_container .pe_header_text p {
-        color: #ffffff;
         font-size: 4.6vw; }
 
 .pe_type {
@@ -2608,7 +2615,7 @@ section {
     .pe_prod .pe_prod_container .pe_prod_sort h1 {
       text-align: center;
       color: #ffffff;
-      font-size: 8vw;
+      font-size: 2vw;
       text-transform: capitalize; }
     .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn {
       margin-top: 1vh;
@@ -2619,11 +2626,11 @@ section {
       .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price {
         width: 15vw;
         height: 6vh;
-        font-size: 3vw !important; }
+        font-size: 1.3vw !important; }
       .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
         width: 15vw;
         height: 6vh;
-        font-size: 3vw !important;
+        font-size: 1.3vw !important;
         margin-left: 5vw; }
   .pe_prod .pe_prod_container .pe_prod_container2 {
     cursor: pointer; }

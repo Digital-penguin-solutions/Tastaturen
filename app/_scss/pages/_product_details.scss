@@ -3,170 +3,179 @@
 
 //header
 .pe_header{
-  height: 65vh;
-  background: $color5;
-  @extend .nopm;
-
-  .pe_header_container{
-    @extend .nopm;
     height: 65vh;
-    background-size: 100vw 65vh;
+    background: $color5;
+    @extend .nopm;
 
-    .pe_header_bg{
-      position: absolute;
-      @extend .nopm;
-      height: 100%;
-      width: 100%;
-      background: rgba($color5, 0.3);
-      z-index: 99;
+
+    .pe_header_container{
+        @extend .nopm;
+        height:100%;
+        background-size: 100vw 65vh;
+
+        .pe_header_bg{
+            position: absolute;
+            @extend .nopm;
+            height: 100%;
+            width: 100%;
+            background: rgba($color5, 0.3);
+            z-index: 99;
+            overflow:hidden;
+
+
+            img {
+                width:100%;
+                min-height:100%;
+                position:absolute;
+                @include vertical-align($pos:absolute);
+            }
+        }
+
+        .pe_header_text{
+            position: absolute;
+            z-index: 100;
+            @include vertical-align();
+            text-align: center;
+            color:black;
+
+            h1{
+                font-size: 7.5vw;
+                font-weight: 600;
+            }
+
+            p{
+                font-size: 4.6vw;
+
+            }
+        }
     }
-
-    .pe_header_text{
-      position: absolute;
-      z-index: 100;
-      @include vertical-align();
-      text-align: center;
-
-      h1{
-        color: $white;
-        font-size: 7.5vw;
-        font-weight: 600;
-      }
-
-      p{
-        color: $white;
-        font-size: 4.6vw;
-
-      }
-    }
-  }
 }
 
 .pe_type {
-  visibility:hidden;
+    visibility:hidden;
 }
 
 .pe_prod {
-  min-height: 70vh;
+    min-height: 70vh;
 
-  .pe_prod_container {
-    @extend .nopm;
+    .pe_prod_container {
+        @extend .nopm;
 
     .pe_prod_sort {
-      height: 18vh;
-      background: $color5;
-
-      h1 {
-        text-align: center;
-        color: $white;
-        font-size: 8vw;
-        text-transform: capitalize;
-      }
-
-      .pe_prod_btn {
-        margin-top:1vh;
-        position: absolute;
-        @include horizontal-align($pos:absolute);
-
-        .pe_product_price {
-          @extend .button;
-          width: 15vw;
-          height: 6vh;
-          font-size: 3vw !important;
-        }
-
-        .pe_product_name {
-          @extend .button;
-          width: 15vw;
-          height: 6vh;
-          font-size: 3vw !important;
-          margin-left:5vw;
-        }
-      }
-    }
-
-    .pe_prod_container2 {
-      cursor: pointer;
-
-      .pe_prod_prod {
-        height: 50vh;
-        background: $color4;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        text-decoration: none;
+        height: 18vh;
+        background: $color5;
 
         h1 {
-          text-align: center;
-          font-size: 4vw;
-          font-weight: 500;
-          color: $white;
-          text-transform: capitalize;
+            text-align: center;
+            color: $white;
+            font-size: 2vw;
+            text-transform: capitalize;
         }
 
-        p {
-          font-size: 2vw;
-          font-weight: 300;
-          color: $white;
-          text-align: center;
+        .pe_prod_btn {
+            margin-top:1vh;
+            position: absolute;
+            @include horizontal-align($pos:absolute);
+
+            .pe_product_price {
+                @extend .button;
+                width: 15vw;
+                height: 6vh;
+                font-size: 1.3vw !important;
+            }
+
+            .pe_product_name {
+                @extend .button;
+                width: 15vw;
+                height: 6vh;
+                font-size: 1.3vw !important;
+                margin-left:5vw;
+            }
         }
-
-        img {
-          position: absolute;
-          @include center-align($pos:absolute);
-          height: 35vh;
-          width: 35vh;
-          margin-top:2vh;
-        }
-
-        &:hover{
-          @include transition($time:0.4s);
-
-          img{
-            opacity: 0.4;
-          }
-        }
-
-      }
     }
-  }
+
+        .pe_prod_container2 {
+            cursor: pointer;
+
+            .pe_prod_prod {
+                height: 50vh;
+                background: $color4;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                text-decoration: none;
+
+                h1 {
+                    text-align: center;
+                    font-size: 4vw;
+                    font-weight: 500;
+                    color: $white;
+                    text-transform: capitalize;
+                }
+
+                p {
+                    font-size: 2vw;
+                    font-weight: 300;
+                    color: $white;
+                    text-align: center;
+                }
+
+                img {
+                    position: absolute;
+                    @include center-align($pos:absolute);
+                    height: 35vh;
+                    width: 35vh;
+                    margin-top:2vh;
+                }
+
+                &:hover{
+                    @include transition($time:0.4s);
+
+                    img{
+                        opacity: 0.4;
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 @media (min-width: $screen-md-min) {
-  .pe_header{
-    .pe_header_container{
-      .pe_header_text{
-        text-align: left;
-        margin-left:2vw;
-        h1{
-          font-size: 3.5vw;
+    .pe_header{
+        .pe_header_container{
+            .pe_header_text{
+                text-align: left;
+                margin-left:2vw;
+                h1{
+                    font-size: 3.5vw;
+                }
+                p{
+                    font-size: 1.6vw;
+                }
+            }
         }
-        p{
-          font-size: 1.6vw;
-        }
-      }
     }
-  }
 
-  .pe_prod{
-    .pe_prod_container{
-      .pe_prod_sort{
-        h1{
-          font-size: 3vw;
-        }
-        .pe_prod_btn{
-          .pe_product_price{
-            width: 10vw;
-            height: 4.5vh;
-            font-size: 1.2vw !important;;
-          }
-          .pe_product_name{
-            width: 10vw;
-            height: 4.5vh;
-            font-size: 1.2vw !important;;
-          }
+    .pe_prod{
+        .pe_prod_container{
+            .pe_prod_sort{
+                h1{
+                    font-size: 3vw;
+                }
+                .pe_prod_btn{
+                    .pe_product_price{
+                        width: 10vw;
+                        height: 4.5vh;
+                        font-size: 1.2vw !important;;
+                    }
+                    .pe_product_name{
+                        width: 10vw;
+                        height: 4.5vh;
+                        font-size: 1.2vw !important;;
+                    }
 
+                }
+            }
         }
-      }
     }
-  }
 }

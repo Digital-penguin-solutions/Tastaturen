@@ -14,7 +14,7 @@
 
                     <div class="i_slider_1_left col-xs-6">
                         <div class="i_slider_1_left_img">
-                            <img src="img/Index_slider/Slider_1_l.png" alt="Orgel för kyrko bruk">
+                            <?php echo_stored_image_data($con, 'i_slider_1_church', ""); ?>
                         </div>
 
                         <div class="i_slider_1_left_btn ">
@@ -27,7 +27,7 @@
                     <div class="i_slider_1_right col-xs-6">
 
                         <div class="i_slider_1_right_img">
-                            <img src="img/Index_slider/Slider_1_r.png" alt="Orgel för hemma bruk">
+                            <?php echo_stored_image_data($con, 'i_slider_1_home', ""); ?>
                         </div>
 
                         <div class="i_slider_1_right_btn">

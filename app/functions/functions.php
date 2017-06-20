@@ -339,7 +339,8 @@ if(!isset($functions_included)){
             <!--products that is used in slider-->
             <div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>">
                 <a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item">
-                    <img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"/>
+                    <img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"/>
+
                     <h1><?php echo $name;?></h1>
                     <p class="short"><?php echo $short;?> </p>
                     <p class="price"><?php echo $price;?></p>
@@ -641,7 +642,10 @@ if(!isset($functions_included)){
         }
         //echo "data:image/jpeg;base64," . base64_encode($data);
         ?>
-        <img onclick="open_input('<?php echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php echo base64_encode($data) ?>" alt="No image selected"/>
+
+        <img onclick="open_intput('<php echo $name?>')" class = "<?php echo $classes; ?>" src = "functions/load_stored_image.php?name=<?php echo $name;?>" alt = "No image selected">
+
+        <!--<img onclick="open_input('<?php echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php //echo base64_encode($data) ?>" alt="No image selected"/>-->
         <?php
         if(isset($_SESSION['admin'])){
 ?>
@@ -656,7 +660,6 @@ if(!isset($functions_included)){
         $query = "INSERT INTO stored_image (name) VALUES ('$name')";
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
-
 
     
 

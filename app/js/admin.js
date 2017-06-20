@@ -228,13 +228,14 @@ function send_form(element, page, form){
             var url = window.location.href;    
             if (url.indexOf('?') > -1){
 
-
                 // removes the hashtag from url
-                var hash = url.split("#");
-                var first = hash[0];
-                var second = hash[1];
-                var second_split = second.split("?");
-                var url = "?" + second_split[1];
+                if(url.indexOf("#") > -1){
+                    var hash = url.split("#");
+                    var first = hash[0];
+                    var second = hash[1];
+                    var second_split = second.split("?");
+                    var url = "?" + second_split[1];
+                }
 
                 url += '&r='+ rand;
             }
@@ -247,8 +248,8 @@ function send_form(element, page, form){
             }
             console.log(url);
             window.location.replace(url);
+            //window.location.reload();
             //window.location.replace("http://index");
-            console.log(url);
         }
         //console.log("asdasd");
         //location.reload();
