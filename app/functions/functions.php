@@ -13,7 +13,8 @@ if(!isset($functions_included)){
 
 
     function session_start_custom(){
-        if(!isset($session_started)){
+        global $session_started;
+        if(!$session_started){
             session_start();
             $session_started = true;
         }
@@ -641,9 +642,12 @@ if(!isset($functions_included)){
         //echo "data:image/jpeg;base64," . base64_encode($data);
         ?>
         <img onclick="open_input('<?php echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php echo base64_encode($data) ?>" alt="No image selected"/>
-        <input image_id = "<?php echo $name; ?>" name = "stored_image" class = "stored_image_input" type = "file" onchange="compress_image_single(event)" >
+        <?php
+        if(isset($_SESSION['admin'])){
+?>
+            <input image_id = "<?php echo $name; ?>" name = "stored_image" class = "stored_image_input" type = "file" onchange="compress_image_single(event)" >
     <?php
-
+        }
     }
 
     function create_stored_image($con, $name){

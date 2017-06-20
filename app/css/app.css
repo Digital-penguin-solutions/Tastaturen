@@ -1080,7 +1080,7 @@ section {
   left: 0;
   z-index: 1000000;
   background: rgba(30, 30, 30, 0.5);
-  visibility: hidden; }
+  display: none; }
   .edit .edit_container {
     margin: auto;
     height: 70vh;
@@ -1490,11 +1490,12 @@ section {
     transition: 0.5s; }
 
 .offert {
-  z-index: 10000;
+  z-index: 10000000;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: fixed;
-  background: rgba(43, 43, 43, 0.4); }
+  background: rgba(43, 43, 43, 0.4);
+  display: none; }
   .offert .offert_container {
     position: absolute;
     left: 50%;
@@ -1504,6 +1505,12 @@ section {
     height: 80%;
     width: 80%;
     border-radius: 3%; }
+    .offert .offert_container .offert_close {
+      position: absolute;
+      top: 2%;
+      right: 2%;
+      width: 5%;
+      height: 5%; }
     .offert .offert_container form {
       position: relative;
       top: 50%;
@@ -4009,7 +4016,7 @@ section {
       color: #ffffff;
       vertical-align: middle;
       font-size: 5vw;
-      font-weight: 200; }
+      font-weight: 400; }
     .i_info .i_info_container a {
       margin-top: 5vh;
       margin-bottom: 5vh; }

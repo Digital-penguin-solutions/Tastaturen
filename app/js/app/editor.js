@@ -1,8 +1,9 @@
 function close_edit_view(){
-    $("#editor").css("visibility", "hidden");
+    $("#editor").css("display", "none");
 }
 function show_edit_view(element){
-    $("#editor").css("visibility", "visible");
+    $("#editor").css("display", "block");
+    console.log("kör123");
 
     var span = $(element).find("span");
     var old = $(span).text();

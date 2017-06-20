@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>produkter</title>
+    <title>Product</title>
     <meta name="description" content="Tastaturen"/>
     <meta name="keywords" content="orgel, instrument, musik"/>
 </head>
@@ -12,6 +12,9 @@
 <?php
 include "functions/functions.php";
 $con = connect();
+                //session_start();
+
+                //$_SESSION['cart'] = array();
 
 //$name         = $_GET['n'];
 //$product_id   = get_product_id_by_name($con, $name);
@@ -52,7 +55,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                 <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'"
                         class="p_prod_head_btn_broschyr">Ladda ner Broschyr
                 </button>
-                <button class="p_prod_head_btn_order">Skicka en offert</button>
+                <button product_id = "<?php echo $product_id; ?>"class="send_offert p_prod_head_btn_order">Skicka en offert</button>
                 <div class="p_prod_head_img">
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
                 </div>
@@ -61,7 +64,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </header>
 
-<!--information aboute the pruduct-->
+<!--information about the product-->
 <section class="container-fluid p_info" role="main">
     <div class="row-fluid p_info">
         <div class="col-xs-12 p_info_container">

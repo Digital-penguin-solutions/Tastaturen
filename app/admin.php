@@ -1,6 +1,15 @@
 <?php
 //include "include_pages/loading.php";
 $no_admin_info = "1";
+?>
+
+<?php
+include "functions/functions.php";
+$con = connect();
+session_start_custom();
+//$products = get_all_products($con, "");
+$products_home = get_all_products($con, "hem");
+$products_church = get_all_products($con, "kyrka");
 include "partials/head.php";
 ?>
 <!DOCTYPE html>
@@ -9,15 +18,6 @@ include "partials/head.php";
     <meta name="description" content="">
     <title>Admin page</title>
 </head>
-
-<?php
-include "functions/functions.php";
-session_start_custom();
-$con = connect();
-//$products = get_all_products($con, "");
-$products_home = get_all_products($con, "hem");
-$products_church = get_all_products($con, "kyrka");
-?>
 <body class="col-xs-10">
 <?php include "partials/nav.php" ?>
 

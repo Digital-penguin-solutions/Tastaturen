@@ -17,8 +17,8 @@
             <div class="footer_mid">
                 <ul>
                     <li><a href="index#kontakta">Kontakta</a></li>
-                    <li><a href="">orglar för kyrkan</a></li>
-                    <li><a href="#">orglar för hemmet</a></li>
+                    <li><a href="product_details?t=kyrka">Orglar för kyrkan</a></li>
+                    <li><a href="product_details?t=hem">Orglar för hemmet</a></li>
                     <!--<li><a href="#">personuppgiftspolicy</a></li>-->
                     <!--<li><a href="#">integritetspolicy</a></li>-->
                     <li class="hidden-xs hidden-sm"><a href="admin">Admin</a></li>
@@ -28,7 +28,7 @@
 
             <div class="footer_bot">
                 <p>&copy Tastaturen 2017</p>
-                <p>Hemsidan är designad och producerad av <a href="#"> Digital penguin solutions</a></p>
+                <p>Hemsidan är designad och producerad av <a href="#"> Digital Penguin Solutions</a></p>
             </div>
         </div>
     </div>

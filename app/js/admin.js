@@ -57,7 +57,7 @@ function compress_image_single(e, name){
     compress_image(e, function(){
         setTimeout(function(){
             send_form("","functions/update_stored_image.php", "form_stored_image");
-        }, 3000);
+        }, 2000);
     });
 }
 
@@ -223,6 +223,7 @@ function send_form(element, page, form){
             window.location.replace("admin?view=media&message=" + message);
         }
         else {
+            console.log("kör123123123");
 
 
             var rand = Math.floor(Math.random()*1000);
@@ -234,7 +235,10 @@ function send_form(element, page, form){
             {
                url += '?r=' + rand;
             }
-            window.location.href = url;
+            console.log(url);
+            window.location.replace(url);
+            //window.location.replace("http://index");
+            console.log(url);
         }
         //console.log("asdasd");
 		//location.reload();

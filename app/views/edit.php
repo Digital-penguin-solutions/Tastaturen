@@ -1,4 +1,4 @@
-<div class="edit" id = "editor">
+<div style="display:none"class="edit" id = "editor">
     <form class="edit_container" action="functions/update_field.php" method="GET">
         <div class="edit_container_container col-xs-12">
             <h1>Edit</h1>

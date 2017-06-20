@@ -1,89 +1,98 @@
 @import "../everything";
 
 .offert {
-  @extend .tole;
-  z-index: 10000;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  background: rgba($color3, 0.4);
+    @extend .tole;
+    z-index: 10000000;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: rgba($color3, 0.4);
+    display:none;
 
-  .offert_container {
-    @include center-align($pos: absolute);
-    background: $white;
-    height: 80%;
-    width: 80%;
-    border-radius: 3%;
 
-    form {
-      @include vertical-align();
-      p {
-        font-weight: 400;
-        font-size: 1.2vw;
-      }
-
-      input {
-        margin-bottom: 5vh;
-        border: solid $color4;
-        border-bottom: -1px;
-        border-top: 0;
-        border-left: 0;
-        border-right: 0;
-
-        height: 4vh;
-      }
-
-      button {
-        border: solid 1px $color4;
-        background: transparent;
-        font-size: 1.5vw;
-        height: 5vh;
-        color: $color4;
-        &:hover{
-          background: $color1;
-          color: $white;
-          border: 0;
-          transition: 0.5s;
+    .offert_container {
+        @include center-align($pos: absolute);
+        background: $white;
+        height: 80%;
+        width: 80%;
+        border-radius: 3%;
+        .offert_close {
+            position:absolute;
+            top:2%;
+            right:2%;
+            width:5%;
+            height:5%;
         }
-      }
-    }
 
-    .offert_product {
-      height: 60vh;
-      overflow: scroll;
-      margin-top:10vh;
-      h1{
-        font-size: 3vw;
-      }
-      .offert_product_sak {
-        border:1px solid black;
-        height:20vh;
-        margin-top:2vh;
-        img{
-          width: 4vw;
-          height: 4vh;
-          position: absolute;
-          top: 1vh;
-          right: 1vw;
-        }
-        .offert_product_text {
-          height:20vh;
-          h1 {
-            font-size: 2vw;
-          }
-          p {
-            font-size: 1vw;
-          }
-        }
-        .offert_product_img {
-          height:20vh;
-          img {
+        form {
             @include vertical-align();
-            height: 15vh;
-            width: 15vh;
-          }
+            p {
+                font-weight: 400;
+                font-size: 1.2vw;
+            }
+
+            input {
+                margin-bottom: 5vh;
+                border: solid $color4;
+                border-bottom: -1px;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+
+                height: 4vh;
+            }
+
+            button {
+                border: solid 1px $color4;
+                background: transparent;
+                font-size: 1.5vw;
+                height: 5vh;
+                color: $color4;
+                &:hover{
+                    background: $color1;
+                    color: $white;
+                    border: 0;
+                    transition: 0.5s;
+                }
+            }
         }
-      }
+
+        .offert_product {
+            height: 60vh;
+            overflow: scroll;
+            margin-top:10vh;
+            h1{
+                font-size: 3vw;
+            }
+            .offert_product_sak {
+                border:1px solid black;
+                height:20vh;
+                margin-top:2vh;
+                img{
+                    width: 4vw;
+                    height: 4vh;
+                    position: absolute;
+                    top: 1vh;
+                    right: 1vw;
+                }
+                .offert_product_text {
+                    height:20vh;
+                    h1 {
+                        font-size: 2vw;
+                    }
+                    p {
+                        font-size: 1vw;
+                    }
+                }
+                .offert_product_img {
+                    height:20vh;
+                    img {
+                        @include vertical-align();
+                        height: 15vh;
+                        width: 15vh;
+                    }
+                }
+            }
+        }
     }
-  }
 }

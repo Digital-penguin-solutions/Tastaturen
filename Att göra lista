@@ -29,12 +29,15 @@ Admin
     * Quick edit när man är inne på produkter.
     * Lägga till att man kan ändra bilder när man är innlogad på admin.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
+    * edit på alla sidor funkar??
+    *kolla edit
 
 footer
     * Fixa alla länkar.
 
 Nav
     * Fixa köp knapen.
+    * stänga offert genom att klicka utanför den
 
 Buy
     * Fixa buy formuläret på ett enkelt sätt så att man kan sicka en ofert på fler än en orgel.
