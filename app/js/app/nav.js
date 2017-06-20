@@ -3,7 +3,7 @@ $(document).ready(on_ready);
 var fade_duration = 0;
 var nav_menu_visible = true;
 var button_open_color = "white";
-var button_closed_color = "#4A4544";
+var button_closed_color = "white";
 
 var McButton = $("[data=hamburger-menu]");
 var McBar1 = McButton.find("b:nth-child(1)");
