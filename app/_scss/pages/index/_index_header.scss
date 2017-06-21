@@ -58,6 +58,7 @@
               left: 5vw;
               float:left;
               button{
+                width:80%;
                 font-size: 1.5vw !important;
               }
             }
@@ -97,6 +98,7 @@
               @extend .slider_btn;
 
               button {
+                width:80%;
                 font-size: 1.5vw !important;
                 float:right;
               }
