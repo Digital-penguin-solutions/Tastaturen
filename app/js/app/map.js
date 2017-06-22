@@ -213,8 +213,4 @@ function initMap() {
 
 function hide_cover() {
     initMap();
-
-    $("#i_map").click(function() {
-        $("#i_map" ).fadeOut();
-    });
 }
