@@ -4,7 +4,7 @@
         <div class="col-xs-12 i_media_container grid_container">
             <div class = "grid_temp_holder">
 
-            <?php
+                <?php
                 $con = connect();
                 $posts = get_all_media_posts_small($con);
 
@@ -16,21 +16,20 @@
                     $type         = $post['type'];
                     $media_id     = $post['media_id'];
                     $yt_id        = $post['youtube_id'];
+                    ?>
 
-                    ?> 
-
-                    <div size="<?php echo $size; ?>" class = "grid_item i_media_item"> 
+                    <div size="<?php echo $size; ?>" class = "grid_item i_media_item">
                         <div media_id = "<?php echo $media_id; ?>" class = "i_media_inner">
                             <div class="grid_item_text">
                                 <h1><?php echo $title; ?></h1>
                             </div>
-                            <?php 
+                            <?php
                             if($type == "image"){
-                            ?>
-                            <!--<img src="data:image/jpeg;base64,<?php //echo base64_encode($header_image) ?>" alt="Huvudbild"/>-->
-                            <img src="functions/load_media_image?id=<?php echo $media_id; ?>" alt="Huvudbild"/>
+                                ?>
+                                <!--<img src="data:image/jpeg;base64,<?php //echo base64_encode($header_image) ?>" alt="Huvudbild"/>-->
+                                <img src="functions/load_media_image?id=<?php echo $media_id; ?>" alt="Huvudbild"/>
 
-<?php 
+                                <?php
                             }
                             else {
                                 ?>
@@ -38,17 +37,11 @@
                                 <?php
                                 echo_youtube_thumbnail($yt_id);
                             }
-
-?>
-
+                            ?>
                         </div>
                     </div>
 
-
-                    <?php
-                }
-
-            ?>
+                <?php } ?>
                 <!--<div size = "big"    class = "grid_item i_media_item">
                     <div class="grid_item_text">
                         <h1>Fin media</h1>
