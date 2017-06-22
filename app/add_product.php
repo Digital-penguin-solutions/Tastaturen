@@ -39,6 +39,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $long               = secure_str($_POST["long_description"]);
     $price              = secure_str($_POST["price"]);
     $type               = secure_str($_POST["type"]);
+    $order_number       = secure_str($_POST["order_number"]);
 
     if (isset($_POST["removed_images"])){
         $removed_images = $_POST["removed_images"];
@@ -71,7 +72,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, long_description, price, type, brochure) VALUES ('$name', '$short', '$long', '$price', '$type', '$brochure_data')";
+        $query = "INSERT INTO product (name, short_description, long_description, price, type, brochure, order_number) VALUES ('$name', '$short', '$long', '$price', '$type', '$brochure_data', '$order_number')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -79,7 +80,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $product_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
-        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type' WHERE product_id = '$product_id'";
+        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type', order_number='$order_number' WHERE product_id = '$product_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -161,6 +162,7 @@ if (isset($_SESSION['admin'])) {
         $main_image         = $product['main_image'];
         $about_image        = $product['about_image'];
         $type               = $product['type'];
+        $order_number       = $product['order_number'];
 
         $slider_images      = get_product_images_by_id($con, $product_id);
     }
@@ -219,6 +221,8 @@ if (isset($_SESSION['admin'])) {
                         <h1>Pris</h1>
                         <input value = "<?php echo $price ?>" type = "text" name = "price">
 
+                        <h1>Ordningsnummer</h1>
+                        <input value = "<?php echo $order_number ?>" type = "text" name = "order_number">
 
                         <div class = "admin_list_container admin_tech_list">
                             <h1>Bilder till bildspel</h1>

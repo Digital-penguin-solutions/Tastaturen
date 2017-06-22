@@ -9,7 +9,6 @@ function on_ready_admin_media(){
     $(".i_media_inner").click(function(){
         var id = $(this).attr("media_id");
         $("#i_load_container").load("views/media_event.php?media_id="+id,{}, function(){
-            console.log("asdasd");
             init_single_post();
         });
     });
