@@ -7,6 +7,9 @@
     <meta name="keywords" content="orgel, instrument, musik"/>
     <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
     <script async src="https://www.youtube.com/iframe_api"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOROuCcecBybx01QE4zULnPPrSqpCPc3s&callback=initMap">
+    </script>
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
@@ -152,10 +155,10 @@ $products_church = get_all_visible_products($con, "kyrka");
     <div class="row-fluid i_map">
         <div class="col-xs-12 i_map_container">
             <div class="i_map_info" id="map"></div>
-            <div class="i_map_text_container">
-                <h1></h1>
-                <h3></h3>
-                <i></i>
+            <div class="i_map_text_container" id="i_map">
+                <h1>Beök även vår fysiks abutik i danmark</h1>
+                <h3>klicka för att se karta</h3>
+                <i class="fa fa-map-marker"></i>
             </div>
         </div>
     </div>

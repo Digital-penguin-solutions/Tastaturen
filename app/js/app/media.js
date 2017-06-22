@@ -45,7 +45,4 @@ function update_inputs(element){
         $(".video_post_only").show();
 
     }
-
-
-
 }

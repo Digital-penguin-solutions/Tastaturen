@@ -1,95 +1,123 @@
-var map_cover_visible = true;
+$(document).ready(hide_cover);
 
-//Google maps script
-function initialize() {
-    var mapCanvas = document.getElementById('map');
-    var mapOptions = {
-        center: new google.maps.LatLng(57.69065,11.97156),
+//google map api
+function initMap() {
+    var uluru = {lat: 55.4017259, lng: 10.3595234};
+    var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 14,
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(mapCanvas, mapOptions);
+        center: uluru
+    });
     var styles =[
+        {
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#242f3e"
+                }
+            ]
+        },
+        {
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#746855"
+                }
+            ]
+        },
+        {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+                {
+                    "color": "#242f3e"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "administrative.locality",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#d59563"
+                }
+            ]
+        },
         {
             "featureType": "poi",
             "stylers": [
                 {
-                    "visibility": "on"
+                    "visibility": "off"
                 }
             ]
         },
         {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
             "stylers": [
                 {
-                    "saturation": -70
-                },
-                {
-                    "lightness": 37
-                },
-                {
-                    "gamma": 1.15
+                    "color": "#d59563"
                 }
             ]
         },
         {
-            "elementType": "labels",
+            "featureType": "poi.park",
+            "elementType": "geometry",
             "stylers": [
                 {
-                    "gamma": 0.26
-                },
+                    "color": "#263c3f"
+                }
+            ]
+        },
+        {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
                 {
-                    "visibility": "on"
+                    "color": "#6b9a76"
                 }
             ]
         },
         {
             "featureType": "road",
+            "elementType": "geometry",
             "stylers": [
                 {
-                    "hue": "#7b1830"
+                    "color": "#38414e"
                 }
-
             ]
         },
         {
             "featureType": "road",
-            "elementType": "labels.text.stroke",
+            "elementType": "geometry.stroke",
             "stylers": [
                 {
-                    "visibility": "on"
+                    "color": "#212a37"
                 }
             ]
         },
         {
-            "featureType": "road.local",
-            "elementType": "geometry",
+            "featureType": "road",
+            "elementType": "labels.icon",
             "stylers": [
                 {
-                    "color": "#7b1830"
-                },
-                {
-                    "lightness": 40
-                },
-                {
-                    "saturation": -90
-                },
-                {
-                    "visibility": "on"
+                    "visibility": "off"
                 }
             ]
         },
         {
-            "featureType": "road.arterial",
-            "elementType": "geometry",
+            "featureType": "road",
+            "elementType": "labels.text.fill",
             "stylers": [
                 {
-                    "color": "#7b1830"
-                },
-                {
-                    "lightness": 40
-                },
-                {
-                    "saturation": -70
+                    "color": "#9ca5b3"
                 }
             ]
         },
@@ -98,46 +126,78 @@ function initialize() {
             "elementType": "geometry",
             "stylers": [
                 {
-                    "hue": "#7B1830"
-                },
-                {
-                    "saturation": 20
-                },
-                {
-                    "lightness": -60
-                },
-                {
-                    "gamma": 0
+                    "color": "#746855"
                 }
-
             ]
         },
         {
-            "featureType": "administrative.province",
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
             "stylers": [
                 {
-                    "visibility": "on"
-                },
-                {
-                    "lightness": -50
+                    "color": "#1f2835"
                 }
             ]
         },
         {
-            "featureType": "administrative.province",
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#f3d19c"
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "stylers": [
+                {
+                    "visibility": "off"
+                }
+            ]
+        },
+        {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#2f3948"
+                }
+            ]
+        },
+        {
+            "featureType": "transit.station",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#d59563"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+                {
+                    "color": "#17263c"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+                {
+                    "color": "#515c6d"
+                }
+            ]
+        },
+        {
+            "featureType": "water",
             "elementType": "labels.text.stroke",
             "stylers": [
                 {
-                    "visibility": "on"
-                }
-            ]
-        },
-        {
-            "featureType": "administrative.province",
-            "elementType": "labels.text",
-            "stylers": [
-                {
-                    "lightness": 20
+                    "color": "#17263c"
                 }
             ]
         }
@@ -145,43 +205,16 @@ function initialize() {
 
     map.setOptions({styles: styles});
 
-    // Creating a marker and positioning it on the map
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(57.69065, 11.97156),
+        position: uluru,
         map: map
     });
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(57.688520, 11.966624),
-        map: map
-    });
-
 }
-google.maps.event.addDomListener(window, 'load', initialize);
 
-$('html').click(function(e) {
+function hide_cover() {
+    initMap();
 
-    if(map_cover_visible)
-    {
-        if($(e.target).is('#map-cover') || $(e.target).is('#map-cover h1')|| $(e.target).is('#map-cover h1 i'))
-        {
-            $("#map-cover").fadeOut();
-            map_cover_visible = false;
-        }
-    }
-    else
-    {
-
-        if(!$(e.target).is('#map div') && !$(e.target).is("#map-cover")){
-            $("#map-cover").fadeIn();
-            map_cover_visible = true;
-        }
-
-
-    }
-
-
-    //	console.log(e);
-});
-
-$('#map-cover').click(function(e) {
-});
+    $("#i_map").click(function() {
+        $("#i_map" ).fadeOut();
+    });
+}
