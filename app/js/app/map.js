@@ -23,8 +23,12 @@ function on_ready_map(){
 }
 //google map api
 function initMap() {
+    var map_container = document.getElementById('map');
+    if(map_container == undefined){
+        return; 
+    }
     var uluru = {lat: 55.4017259, lng: 10.3595234};
-    var map = new google.maps.Map(document.getElementById('map'), {
+    var map = new google.maps.Map(map_container, {
         zoom: 14,
         center: uluru
     });

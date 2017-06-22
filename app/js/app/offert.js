@@ -13,6 +13,7 @@ function on_ready_offert(){
 
     $(".offert_open").click(function(){
         open_offert();
+        console.log("kör123");
     });
 
 }

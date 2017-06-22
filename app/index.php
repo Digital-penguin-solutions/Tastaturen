@@ -8,7 +8,7 @@
     <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
     <script async src="https://www.youtube.com/iframe_api"></script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOROuCcecBybx01QE4zULnPPrSqpCPc3s&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOROuCcecBybx01QE4zULnPPrSqpCPc3s">
     </script>
 </head>
 
