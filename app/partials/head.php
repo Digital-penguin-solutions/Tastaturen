@@ -15,6 +15,9 @@
     <!--css-->
     <link href="css/app.css" rel="stylesheet">
 
+    <!-- Google maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900i" rel="stylesheet">
 
