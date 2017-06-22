@@ -1,5 +1,26 @@
-$(document).ready(hide_cover);
+$(document).ready(on_ready_map);
 
+var map_cover_visible = true;
+
+function on_ready_map(){
+
+    //init_map();
+
+    $(".i_map_text_container").click(function(){
+        hide_map_cover();
+    });
+
+    $(document).click(function(event){
+        var clicked = event.target;
+        // if the click is outside the map
+        if(!$(clicked).parents().hasClass("i_map")){
+            show_map_cover();
+        }
+    });
+
+
+
+}
 //google map api
 function initMap() {
     var uluru = {lat: 55.4017259, lng: 10.3595234};
@@ -211,6 +232,11 @@ function initMap() {
     });
 }
 
-function hide_cover() {
-    initMap();
+function show_map_cover() {
+    $(".i_map_text_container").fadeIn();
+    var map_cover_visible = true;
+}
+function hide_map_cover() {
+    $(".i_map_text_container").fadeOut();
+    var map_cover_visible = false;
 }

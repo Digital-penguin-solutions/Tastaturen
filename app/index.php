@@ -156,8 +156,8 @@ $products_church = get_all_visible_products($con, "kyrka");
         <div class="col-xs-12 i_map_container">
             <div class="i_map_info" id="map"></div>
             <div class="i_map_text_container" id="i_map">
-                <h1>Beök även vår fysiks abutik i danmark</h1>
-                <h3>klicka för att se karta</h3>
+                <h1>Välkommen till vår fysiska butik i Danmark</h1>
+                <h3>Klicka för att visa kartan</h3>
                 <i class="fa fa-map-marker"></i>
             </div>
         </div>
