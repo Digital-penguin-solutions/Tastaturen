@@ -302,8 +302,7 @@ function init_sliders(){
 
 
 function reenable_effects(page) {
-    
-    
+
 }
 
 function enable_autoslide(index) {

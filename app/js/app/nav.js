@@ -98,7 +98,6 @@ function toggle_nav(override_animation){
     }
 }
 
-//
 function init_nav_links() {
     $(".nav_link").click(function(){
         toggle_nav(true);

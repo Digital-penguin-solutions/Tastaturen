@@ -1,4 +1,3 @@
-
 $(document).ready(on_ready_load_images);
 
 function on_ready_load_images(){
@@ -14,7 +13,6 @@ function on_ready_load_images(){
     }
     //console.log(load_elements.length);
 }
-
 
 function isDesktop(){
     // if this div is visible, the user is on desktop

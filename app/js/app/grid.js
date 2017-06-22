@@ -5,11 +5,8 @@ var items_per_part = 4;
 var gap_size = 1;
 
 function on_ready_grid(){
-    
     init_grids();
-
 }
-
 
 function init_grids(){
     var grids = document.getElementsByClassName("grid_container");
@@ -115,7 +112,6 @@ function init_grids(){
     
 }
 
-
 function set_text_color(items){
      for(var i = 0; i < items.length; i++){
          var item = items[i];
@@ -138,6 +134,7 @@ function set_text_color(items){
 
      }
 }
+
 function getAverageRGB(imgEl) {
 
     var blockSize = 5, // only visit every 5 pixels
@@ -183,14 +180,8 @@ function getAverageRGB(imgEl) {
     var all = (rgb.r + rgb.g + rgb.b) / 3;
 
     return (rgb.r + rgb.g + rgb.b) / 3;
-
 }
 
 function init_part(container, items, start_index, part_order){
-    
-
-    
     //init_part(container, items, start_index + items_per_part, part_order+1);
-
-    
 }

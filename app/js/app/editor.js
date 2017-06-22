@@ -13,4 +13,3 @@ function show_edit_view(element){
     $(".edit_text_new").val(old);
     $(".edit_text_old").val(old);
 }
-

@@ -1,4 +1,3 @@
-
 $(document).ready(on_ready_admin_media);
 
 function on_ready_admin_media(){
@@ -13,9 +12,7 @@ function on_ready_admin_media(){
             console.log("asdasd");
             init_single_post();
         });
-        
     });
-
 }
 
 function init_single_post(){
@@ -30,7 +27,6 @@ function init_single_post(){
     $(".media_even_close").click(function(){
         $("#i_load_container").html("");
     } );
-
 }
 
 function update_inputs(element){
@@ -43,6 +39,5 @@ function update_inputs(element){
     else {
         $(".image_post_only").hide();
         $(".video_post_only").show();
-
     }
 }

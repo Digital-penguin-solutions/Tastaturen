@@ -1,6 +1,4 @@
-
 $(document).ready(on_ready_product_sorter);
-
 
 var products = []; // all products
 var prices = [];
@@ -21,11 +19,7 @@ function on_ready_product_sorter(){
 
         prices.push(price);
         names.push(names);
-
     }
-
-
-
     //echoProducts([]);
 }
 
@@ -136,15 +130,11 @@ function sortArrayByOther(B, A){
 }
 
 function getProductPrice(product){
-
     var price = product.getElementsByClassName("pe_price")[0].innerHTML.trim(); price = price.replace(" ", "")*1.0;
     return price;
-
 }
 
 function getProductName(product){
-
     var name = product.getElementsByClassName("pe_name")[0].innerHTML.trim();
     return name;
-
 }

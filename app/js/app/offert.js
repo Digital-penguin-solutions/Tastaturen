@@ -1,4 +1,3 @@
-
 $(document).ready(on_ready_offert);
 
 function on_ready_offert(){
@@ -17,7 +16,6 @@ function on_ready_offert(){
     });
 
 }
-
 
 function load_cart(){
     $(".offert_product").load("functions/echo_cart", function(){
@@ -48,7 +46,6 @@ function send_offert(){
         //button.innerHTML = "Added to cart";
         //button.style.backgroundColor = "#009600";
     });
-
 }
 
 function init_offert(){
@@ -77,7 +74,6 @@ function init_offert(){
     });
     
 }
-
 
 function open_offert(){
     $(".offert").css("display", "block");

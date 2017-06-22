@@ -11,7 +11,6 @@ var product_width;
 function on_ready_product_scroller () {
     init_product_slider();
     init_arrows();
-
 }
 
 function init_arrows(arrow_l, arrow_r, container){
