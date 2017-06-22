@@ -4,7 +4,7 @@ var map_cover_visible = true;
 
 function on_ready_map(){
 
-    //init_map();
+    initMap();
 
     $(".i_map_text_container").click(function(){
         hide_map_cover();

@@ -2642,7 +2642,7 @@ section {
         top: 50%;
         transform: translate(-50%, -50%);
         height: 35vh;
-        width: 35vh;
+        max-width: 70%;
         margin-top: 2vh; }
       .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod:hover {
         transition: all 0.4s linear; }
