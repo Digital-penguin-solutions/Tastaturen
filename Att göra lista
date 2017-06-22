@@ -6,7 +6,7 @@ Viktigt
     * Fixa smoothe scroll när man klikar på länkar i naven.
 
 Allmänt
-    *Ladda in bilderna från databasen med separat fil??(kanske är onödigt, gör om jag hinner)
+    * Ladda in bilderna från databasen med separat fil??(kanske är onödigt, gör om jag hinner)
 
 Index
     * Head
@@ -18,7 +18,7 @@ Index
         # Kunna soretera vilken media sak som ligger övers.
 
     * produkter
-        *verkar som man kunde scrolla åt vänster där det inte finns något på mobil??
+        # verkar som man kunde scrolla åt vänster där det inte finns något på mobil??
 
 Prudkter
     * Fixa så att mobil bilden finns i databasen och är första bilden i bildspelet.
@@ -39,6 +39,5 @@ footer
     * popupen att man är innlogad som admin förvinner inte permanen när man trycker på krysset.
 
 Nav
-    * Fixa köp knapen.
     * stänga offert genom att klicka utanför den.
     * Rubrikerna på index sidan ska vara samma som rubrikerna i naven även när du ändrar rubrikerna.
