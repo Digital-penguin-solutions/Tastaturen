@@ -1,0 +1,31 @@
+@import "../../everything";
+
+//map on index styling
+.i_map{
+  background: $color4;
+  height: 50vh;
+  .i_map_container{
+
+    .i_map_info{
+      z-index: 50;
+    }
+
+    .i_map_text_container{
+      background: rgba($color3, 0.3);
+      z-index: 100;
+      @include center-align($pos:absolute);
+
+      h1{
+
+      }
+
+      h3{
+
+      }
+
+      i{
+
+      }
+    }
+  }
+}

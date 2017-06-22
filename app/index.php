@@ -132,8 +132,34 @@ $products_church = get_all_visible_products($con, "kyrka");
     </div>
 </section>
 
+<!-- Links and other info -->
+<section class="i_info2 container-fluid">
+    <div class="i_info2 row-fluid">
+        <div class="i_info2_container col-xs-12">
+            <div class="i_info2_text_container col-md-6 col-md-offset-3  col-xs-10 col-xs-offset-1">
+                <h1>Länkar</h1>
+                <p>napfnapwfn wfnapkwnf pnpf nwöfaöaml  fmöawmföam fölwamföl mwömf mwöfm awdd awddawd adwdwa dawdawddd</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Media section -->
 <?php include "views/index_media.php"?>
+
+<!-- Map info -->
+<section class="container-fluid i_map">
+    <div class="row-fluid i_map">
+        <div class="col-xs-12 i_map_container">
+            <div class="i_map_info" id="map"></div>
+            <div class="i_map_text_container">
+                <h1></h1>
+                <h3></h3>
+                <i></i>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Footer -->
 <?php include "partials/footer.php"?>
