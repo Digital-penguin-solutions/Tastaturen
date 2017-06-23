@@ -5,3 +5,5 @@
 db_connect.php
 !*.svg
 node_modules/
+app/js/app.js
+app/js/third_party.js
