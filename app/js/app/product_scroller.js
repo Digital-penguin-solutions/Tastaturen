@@ -99,7 +99,6 @@ function move(left, products_container){
         //var old_left = get_left_in_percentage(products_container);
         //var old_left_r = get_left_in_percentage(products_container);
         var old_left = all_current_left[i];
-        //console.log(old_left_r);
 
         // it will be "auto" at first. Minus the o because the function removes last character
         if(old_left == "aut" || old_left == undefined){ 
@@ -119,6 +118,9 @@ function move(left, products_container){
         //var current_left_real = get_left_in_percentage(products_container);
         var current_left_real = all_current_left[i];
         var current_left = Math.round(current_left_real);
+        if(isNaN(current_left)){
+            current_left = 0;
+        }
 
 
         $(products_container).animate({
@@ -158,6 +160,8 @@ function move(left, products_container){
         var first_product_left = (get_left_in_percentage(products[0]));
         var first_product_left_round = Math.round(first_product_left); 
         
+        console.log("current_left: " + current_left);
+        console.log("first_product_left_round: " + first_product_left_round);
         // if you gone all the way to the left
         if(current_left == -first_product_left_round && left){
 
@@ -171,6 +175,9 @@ function move(left, products_container){
             $(products_container).prepend(last_clone);
             $(last_clone).css("left", 1.0*first_product_left - 1.0*product_width + "%");
 
+        }
+        else {
+            console.log("not left");
         }
 
 

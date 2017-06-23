@@ -335,7 +335,16 @@ if(!isset($functions_included)){
             else{
                 $j = $third;
             }
+
+
+            if($price == ""){
+                $price = "Kontakta för prisuppgifter";
+            }
+
             ?>
+
+            
+
             <!--products that is used in slider-->
             <div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>">
                 <a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item">

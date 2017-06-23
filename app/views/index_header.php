@@ -1,8 +1,8 @@
 <!--slider container-->
-<div class="i_header_slider hidden-sm hidden-xs">
+<div class="i_header_slider">
     <div class="i_slider_1 col-xs-12">
         <div class="i_slider_1_container">
-            <div class = "all_slider_container no_list">
+            <div class = "all_slider_container no_list desktop_only">
 
                 <!-- Slider 1-->
                 <div class = "slider_preshow slider_page col-md-12">

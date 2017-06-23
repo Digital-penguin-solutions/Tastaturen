@@ -8,18 +8,14 @@ Viktigt
 
 Index
     * Head
-        # Slider 1 ska lägga sit på telefonen.
         # Slider 3: göra så att knappen sätter på ljudet på videon
 
     * Media
         # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har samma funkonalitet som på desktop.
         # Kunna soretera vilken media sak som ligger övers.
-
-    * produkter
-        # verkar som man kunde scrolla åt vänster där det inte finns något på mobil??
+        # Hover effect på media inläggen
 
 Prudkter
-    * Fixa så att mobil bilden finns i databasen och är första bilden i bildspelet.
     * Fixa så att Om man inte skriver in priset så står det kontakta för pris och
         de Hammnar längs ner när man sorterar efter pris.
     * fungerar inte ordentligt på mobil. Saker ligger fel. Vissa saker är för små och bakgrundsbilden syns allra längst ner

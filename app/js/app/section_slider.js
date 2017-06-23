@@ -237,22 +237,24 @@ function init_sliders(){
 
             if (!$(slider).hasClass("no_dots")){ // adds the dots
 
-                var dot = $("<div class = 'slider_dot'>");
+                if(!($(slider).hasClass("desktop_only") && !isDesktop())){
+                    var dot = $("<div class = 'slider_dot'>");
 
-                var width = slider_dot_width;
+                    var width = slider_dot_width;
 
-                $(dot).css("width", width + "vw");
-                $(dot).css("height", width + "vw");
-                $(dot).css("margin-left", width*2 + "vw");
+                    $(dot).css("width", width + "vw");
+                    $(dot).css("height", width + "vw");
+                    $(dot).css("margin-left", width*2 + "vw");
 
-                // last dot
-                if(n == pages.length-1){
-                    $(dot).css("margin-right", width*2 + "vw");
+                    // last dot
+                    if(n == pages.length-1){
+                        $(dot).css("margin-right", width*2 + "vw");
+                    }
+
+                    $(inner_dots_container).append(dot);
+
+                    button = dot;
                 }
-
-                $(inner_dots_container).append(dot);
-
-                button = dot;
             }
 
             // adds a click listener to the object that will make the slider change to the objects page
@@ -272,22 +274,24 @@ function init_sliders(){
 
         // decides weather to add arrows to naveigate between the pages
         if (!$(slider).hasClass("no_arrows")){
+            if(!($(slider).hasClass("desktop_only") && !isDesktop())){
 
-            var left_arrow = $("<img class = 'slider_arrow slider_arrow_left' src='img/Index_slider/left_arrow.svg'>");
-            var right_arrow = $("<img class = 'slider_arrow slider_arrow_right' src='img/Index_slider/right_arrow.svg'>");
-            $(left_arrow).attr("slider_number", i);
-            $(right_arrow).attr("slider_number", i);
+                var left_arrow = $("<img class = 'slider_arrow slider_arrow_left' src='img/Index_slider/left_arrow.svg'>");
+                var right_arrow = $("<img class = 'slider_arrow slider_arrow_right' src='img/Index_slider/right_arrow.svg'>");
+                $(left_arrow).attr("slider_number", i);
+                $(right_arrow).attr("slider_number", i);
 
-            $(slider).append(left_arrow);
-            $(slider).append(right_arrow);
+                $(slider).append(left_arrow);
+                $(slider).append(right_arrow);
 
-            $(left_arrow).click(function(){
-                move_section(true, this);
-            });
+                $(left_arrow).click(function(){
+                    move_section(true, this);
+                });
 
-            $(right_arrow).click(function(){
-                move_section(false, this);
-            });
+                $(right_arrow).click(function(){
+                    move_section(false, this);
+                });
+            }
 
 
         }
@@ -306,7 +310,9 @@ function reenable_effects(page) {
 }
 
 function enable_autoslide(index) {
-    var slider = all_sliders[index];
-    var interval = setInterval(function(){move_section(false, slider);}, 5000);
-    intervals[index] = interval;
+    if(isDesktop()){
+        var slider = all_sliders[index];
+        var interval = setInterval(function(){move_section(false, slider);}, 5000);
+        intervals[index] = interval;
+    }
 }

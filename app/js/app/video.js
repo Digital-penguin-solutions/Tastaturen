@@ -4,6 +4,8 @@ function onYouTubeIframeAPIReady() {
 
 var player, iframe;
 
+var isMuted = true;
+
 function on_ready_video(){
     if(isDesktop()){
         player = new YT.Player('organvideo', {
@@ -40,24 +42,34 @@ function onPlayerReady(event) {
     iframe = $('#organvideo');
     event.target.playVideo();
     event.target.mute();
+    //$(player).attr('muted', true);
     setupListener();
 }
 
 //listener for button
 function setupListener (){
-    $('#video-trigger').on('click', fullscreen);
+    $('#video-trigger').on('click', function(){
+        if(isMuted){
+            player.unMute();
+            isMuted = false;
+        }
+        else {
+            player.mute();
+            isMuted = true;
+        }
+    });
 }
 
 //Html fullscreen api
 function fullscreen() {
-    var e = document.getElementById("organvideo");
-    if (e.requestFullscreen) {
-        e.requestFullscreen();
-    } else if (e.webkitRequestFullscreen) {
-        e.webkitRequestFullscreen();
-    } else if (e.mozRequestFullScreen) {
-        e.mozRequestFullScreen();
-    } else if (e.msRequestFullscreen) {
-        e.msRequestFullscreen();
-    }
+    //var e = document.getElementById("organvideo");
+    //if (e.requestFullscreen) {
+        //e.requestFullscreen();
+    //} else if (e.webkitRequestFullscreen) {
+        //e.webkitRequestFullscreen();
+    //} else if (e.mozRequestFullScreen) {
+        //e.mozRequestFullScreen();
+    //} else if (e.msRequestFullscreen) {
+        //e.msRequestFullscreen();
+    //}
 }
