@@ -22,6 +22,7 @@ Prudkter
     * Fixa så att mobil bilden finns i databasen och är första bilden i bildspelet.
     * Fixa så att Om man inte skriver in priset så står det kontakta för pris och
         de Hammnar längs ner när man sorterar efter pris.
+    * fungerar inte ordentligt på mobil. Saker ligger fel. Vissa saker är för små och bakgrundsbilden syns allra längst ner
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt. 
