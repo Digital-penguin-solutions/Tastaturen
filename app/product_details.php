@@ -31,8 +31,7 @@ else {
                     echo_stored_image_data($con, 'pe_header_home', ""); 
                 }
                 else {
-                    echo_stored_image_data($con, 'pe_header_church', ""); 
-
+                    echo_stored_image_data($con, 'pe_header_church', "");
                 }
             ?>
         </div>
@@ -48,7 +47,6 @@ else {
             ?>
             </h1>
             <p>
-            
             <?php 
                 if($type == "hem"){
                     print_field("pe_info_home");
@@ -57,7 +55,6 @@ else {
                     print_field("pe_info_church");
                 }
             ?>
-            
             </p>
         </div>
     </div>
