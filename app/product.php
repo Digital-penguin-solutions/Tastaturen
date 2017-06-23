@@ -43,7 +43,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
 
             <!-- Bg for mobile insted of slider-->
             <div class="hidden-lg hidden-md p_prod_slider_container"
-                 style="background-image:url('img/product/kyrka/Sliders/1.jpg')"></div>
+                 style="background-image:url(data:image/jpeg;base64,<?php echo base64_encode($slider_images[0]['data'])?> )"></div>
 
 
             <div class="p_prod_head_bg">

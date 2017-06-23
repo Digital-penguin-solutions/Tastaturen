@@ -13,7 +13,12 @@ function on_ready_offert(){
 
     $(".offert_open").click(function(){
         open_offert();
-        console.log("kör123");
+    });
+
+    $(document).click(function(e){
+        if($(e.target).hasClass("offert")){
+            close_offert();
+        }
     });
 
 }

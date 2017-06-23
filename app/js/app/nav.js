@@ -14,7 +14,8 @@ var nav_in_animation = false;
 
 //when the code is loaded and teh device in question is a mobil run functions
 function on_ready () {
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    //if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    if(!isDesktop()){
         $(".nav_d").css("visibility", "visible");
 
         init_mc_button();
@@ -24,6 +25,7 @@ function on_ready () {
         toggle_nav_menu();
         fade_duration = 500;
     }
+    //}
 }
 
 // Toggel the meneu
