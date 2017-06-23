@@ -7,3 +7,4 @@ db_connect.php
 node_modules/
 app/js/app.js
 app/js/third_party.js
+app/css/app.css
