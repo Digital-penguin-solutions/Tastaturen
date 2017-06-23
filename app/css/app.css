@@ -2884,54 +2884,51 @@ section {
   animation-name: kenburns;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 50s;
+  animation-duration: 40s;
   opacity: 1;
   transform: scale(1.15); }
   .slideshow-image:nth-child(1) {
     animation-name: kenburns-1;
-    z-index: 4; }
+    z-index: 3; }
   .slideshow-image:nth-child(2) {
     animation-name: kenburns-2;
-    z-index: 3; }
+    z-index: 2; }
   .slideshow-image:nth-child(3) {
     animation-name: kenburns-3;
-    z-index: 2; }
+    z-index: 1; }
   .slideshow-image:nth-child(4) {
     animation-name: kenburns-4;
-    z-index: 1; }
-  .slideshow-image:nth-child(5) {
-    animation-name: kenburns-5;
     z-index: 0; }
 
 @keyframes kenburns-1 {
   0% {
     opacity: 1;
     transform: scale(1.15); }
-  0.8% {
+  1% {
     opacity: 1; }
-  19.2% {
+  24% {
     opacity: 1; }
-  20.8% {
+  26% {
     opacity: 0;
     transform: scale(1); }
   100% {
     opacity: 0;
     transform: scale(1.15); }
-  99.2% {
+  99% {
     opacity: 0;
     transform: scale(1.15577); }
   100% {
     opacity: 1; } }
 
 @keyframes kenburns-2 {
-  19.2% {
+  24% {
     opacity: 1;
     transform: scale(1.15); }
-  20.8% {
+  26% {
     opacity: 1; }
-  39.2% {
+  49% {
     opacity: 1; }
-  40.8% {
+  51% {
     opacity: 0;
     transform: scale(1); }
   100% {
@@ -2939,14 +2936,14 @@ section {
     transform: scale(1.15); } }
 
 @keyframes kenburns-3 {
-  39.2% {
+  49% {
     opacity: 1;
     transform: scale(1.15); }
-  40.8% {
+  51% {
     opacity: 1; }
-  59.2% {
+  74% {
     opacity: 1; }
-  60.8% {
+  76% {
     opacity: 0;
     transform: scale(1); }
   100% {
@@ -2954,27 +2951,12 @@ section {
     transform: scale(1.15); } }
 
 @keyframes kenburns-4 {
-  59.2% {
+  74% {
     opacity: 1;
     transform: scale(1.15); }
-  60.8% {
+  76% {
     opacity: 1; }
-  79.2% {
-    opacity: 1; }
-  80.8% {
-    opacity: 0;
-    transform: scale(1); }
-  100% {
-    opacity: 0;
-    transform: scale(1.15); } }
-
-@keyframes kenburns-5 {
-  79.2% {
-    opacity: 1;
-    transform: scale(1.15); }
-  80.8% {
-    opacity: 1; }
-  99.2% {
+  99% {
     opacity: 1; }
   100% {
     opacity: 0;
