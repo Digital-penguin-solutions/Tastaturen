@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Product</title>
-    <meta name="description" content="Tastaturen"/>
+    <title>Produkter</title>
+    <meta name="description" content="Tastaturens produkt sida. Här kan du läsa om alla våra produkter"/>
     <meta name="keywords" content="orgel, instrument, musik"/>
 </head>
 

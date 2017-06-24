@@ -30,18 +30,42 @@
       cursor: pointer;
 
       h1{
-        margin-top:15vh;
-        font-size: 3vw;
+        margin-top:25vh;
+        font-size: 5vw;
         font-weight: 600;
       }
 
       h3{
-        font-size: 2vw;
+        font-size: 4vw;
         font-weight: 400;
       }
 
       i{
-        font-size: 4vw;
+        margin-top:2vh;
+        font-size: 10vw;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .i_map{
+    .i_map_container{
+      .i_map_text_container{
+
+        h1{
+          margin-top:15vh;
+          font-size: 3vw;
+        }
+
+        h3{
+          font-size: 2vw;
+        }
+
+        i{
+          margin-top:1vh;
+          font-size: 4vw;
+        }
       }
     }
   }

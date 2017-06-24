@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>prudukt detaljer</title>
-    <meta name="description" content="Tastaturen"/>
-    <meta name="keywords" content="orgel, instrument, musik"/>
+    <title>Produkt detaljer</title>
+    <meta name="description" content="En sida för att se alla våra vackra orglar. "/>
+    <meta name="keywords" content="orgel,instrument,musik,"/>
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">

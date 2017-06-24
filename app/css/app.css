@@ -4265,14 +4265,25 @@ section {
       color: white;
       cursor: pointer; }
       .i_map .i_map_container .i_map_text_container h1 {
-        margin-top: 15vh;
-        font-size: 3vw;
+        margin-top: 25vh;
+        font-size: 5vw;
         font-weight: 600; }
       .i_map .i_map_container .i_map_text_container h3 {
-        font-size: 2vw;
+        font-size: 4vw;
         font-weight: 400; }
       .i_map .i_map_container .i_map_text_container i {
-        font-size: 4vw; }
+        margin-top: 2vh;
+        font-size: 10vw; }
+
+@media (min-width: 992px) {
+  .i_map .i_map_container .i_map_text_container h1 {
+    margin-top: 15vh;
+    font-size: 3vw; }
+  .i_map .i_map_container .i_map_text_container h3 {
+    font-size: 2vw; }
+  .i_map .i_map_container .i_map_text_container i {
+    margin-top: 1vh;
+    font-size: 4vw; } }
 
 .wrapper, html, body {
   background: #ffffff;
