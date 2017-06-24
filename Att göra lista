@@ -19,8 +19,4 @@ Prudukt detaljer
 Admin
     * Quick edit när man är inne på produkter.
     * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
-    * Edit på alla sidor funkar??
     * Popupen att man är innlogad som admin förvinner inte permanen när man trycker på krysset.
-
-Nav
-    * Rubrikerna på index sidan ska vara samma som rubrikerna i naven även när du ändrar rubrikerna.

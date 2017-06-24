@@ -3,7 +3,7 @@
     <div class="row-fluid i_media">
         <div class="col-xs-12 i_media_container grid_container">
             <div class="i_media_header">
-                <h1>Media</h1>
+                <h1><?php print_field("i_media_header"); ?></h1>
             </div>
             <div class = "grid_temp_holder">
 

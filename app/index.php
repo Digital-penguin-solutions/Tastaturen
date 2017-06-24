@@ -38,7 +38,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 <section id="Info" class="container-fluid i_info" role="main">
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 col-md-offset-1 i_info_container">
-            <h2><?php print_field("i_about_header"); ?> </h2>
+            <h2><?php print_field("i_about_header"); ?></h2>
             <p class = "col-xs-offset-21col-xs-10 col-md-offset-2 col-md-8">
                 <?php print_field("i_about_text"); ?>
             </p>
@@ -61,7 +61,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 
             <!-- Products Kyrka -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-kyrka">
-                <h2>Kyrkorgel</h2>
+                <h2><?php print_field("i_kyrka_header"); ?></h2>
 
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
@@ -82,7 +82,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 
             <!-- Products Home -->
             <div class="product_slider_container i_products col-xs-12" id="Orgel-hem">
-                <h2>Hemorgel</h2>
+                <h2><?php print_field("i_hem_header"); ?></h2>
 
                 <!--l eft and right arrow slider-->
                 <div class="i_products_arrow_l">
@@ -142,7 +142,7 @@ $products_church = get_all_visible_products($con, "kyrka");
 <section class="i_info2 container-fluid">
     <div class="i_info2 row-fluid">
         <div class="i_info2_container col-xs-12">
-            <h1>Länkar</h1>
+            <h1><?php print_field("i_link_header"); ?></h1>
             <div class="i_info2_text_container col-md-6 col-md-offset-3  col-xs-10 col-xs-offset-1">
                 <div class="i_info2_link_container">
                     <a href="">helawhelhwe</a>

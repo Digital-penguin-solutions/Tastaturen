@@ -1,11 +1,5 @@
 <?php
-
-if(isset($_GET['scroll'])){
-    $scroll = "data-scroll";
-}
-else {
-    $scroll = "";
-}
+$con = connect();
 ?>
 
 <nav class="nav_d col-md-2 col-xs-7" role="navigation">
@@ -31,12 +25,12 @@ else {
 
         <!--Nav links-->
         <div class="nav_d_link">
-            <a class = "nav_link" <?php echo $scroll; ?> href="index#Intro">Hem</a>
-            <a class = "nav_link" <?php echo $scroll; ?> href="index#Info">Om oss</a>
-            <a class = "nav_link" <?php echo $scroll; ?> href="product_details?t=hem">Orglar för hemmet</a>
-            <a class = "nav_link" <?php echo $scroll; ?> href="product_details?t=kyrka">Orglar för kyrkan </a>
-            <a class = "nav_link" <?php echo $scroll; ?> href="index#kontakta">Kontakta oss</a>
-            <a class = "nav_link" <?php echo $scroll; ?> href="index#Media">Media</a>
+            <a class = "nav_link" href="index#Intro">Hem</a>
+            <a class = "nav_link" href="index#Info"><?php print_field("i_about_header"); ?></a>
+            <a class = "nav_link" href="product_details?t=hem"><?php print_field("i_hem_header"); ?></a>
+            <a class = "nav_link" href="product_details?t=kyrka"><?php print_field("i_kyrka_header"); ?></a>
+            <a class = "nav_link" href="index#kontakta"><?php print_field("i_kontakt_header"); ?></a>
+            <a class = "nav_link" href="index#Media"><?php print_field("i_media_header"); ?></a>
         </div>
     </div>
 </nav>
