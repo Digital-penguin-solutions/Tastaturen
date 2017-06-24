@@ -1,21 +1,37 @@
 @import "../../everything";
 
 .i_info2{
-  background: $color3;
+  background: $color4;
+  @extend .nopm;
   .i_info2_container{
-    .i_info2_text_container{
-      margin-top:10vh;
-      margin-bottom:10vh;
-      color: white;
+    @extend .nopm;
+
+    h1{
+      font-size: 6vw;
+      font-weight: 600;
       text-align: center;
-      h1{
-        font-size: 6vw;
-        font-weight: 600;
-      }
-      p{
-        margin-top:5vh;
-        font-size: 3vw;
-        font-weight: 300;
+      background: $color5;
+      width: 100%;
+      color: white;
+      padding: 5vh;
+    }
+
+    .i_info2_text_container{
+      margin-bottom:10vh;
+
+      .i_info2_link_container {
+        margin-top:2vh;
+        a {
+          text-decoration: none;
+          color: white;
+          margin:1vw;
+          font-size: 3vw;
+          font-weight: 300;
+          &:hover{
+            color: darken(white,30%);
+            transition: 0.3s;
+          }
+        }
       }
     }
   }
@@ -24,13 +40,12 @@
 @media (min-width: $screen-md-min) {
   .i_info2{
     .i_info2_container{
+      h1{
+        font-size: 4vw;
+      }
       .i_info2_text_container{
-        h1{
-          font-size: 4vw;
-        }
-
-        p{
-          font-size: 1.5vw;
+        a{
+          font-size: 1vw;
         }
       }
     }

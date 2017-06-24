@@ -11,7 +11,7 @@
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOROuCcecBybx01QE4zULnPPrSqpCPc3s">
     </script>-->
     <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTIpo_wrgCsz4EP3GCGKLpFDKvJL_R1Dk&callback=initMap">
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTIpo_wrgCsz4EP3GCGKLpFDKvJL_R1Dk&callback=initMap">
     </script>
 </head>
 
@@ -117,7 +117,7 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="col-xs-10 col-xs-offset-1">
 
                 <div class="i_contact_stuff_1 col-md-6 col-xs-12">
-                   <?php echo_stored_image_data($con, 'contact_1', "col-xs-12 col-md-10 col-md-offset-1"); ?> 
+                    <?php echo_stored_image_data($con, 'contact_1', "col-xs-12 col-md-10 col-md-offset-1"); ?>
                     <div class="i_contact_text col-xs-10 col-xs-offset-1">
                         <h2><?php print_field("i_contact_person_name_1")   ?></h2>
                         <p> <?php print_field("i_contact_person_number_1") ?></p>
@@ -126,7 +126,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_contact_stuff_2 col-md-6 col-xs-12">
-                   <?php echo_stored_image_data($con, 'contact_2', "col-xs-12 col-md-10 col-md-offset-1"); ?> 
+                    <?php echo_stored_image_data($con, 'contact_2', "col-xs-12 col-md-10 col-md-offset-1"); ?>
                     <div class="i_contact_text col-xs-10 col-xs-offset-1">
                         <h2><?php print_field("i_contact_person_name_2")   ?></h2>
                         <p> <?php print_field("i_contact_person_number_2") ?></p>
@@ -142,9 +142,17 @@ $products_church = get_all_visible_products($con, "kyrka");
 <section class="i_info2 container-fluid">
     <div class="i_info2 row-fluid">
         <div class="i_info2_container col-xs-12">
+            <h1>Länkar</h1>
             <div class="i_info2_text_container col-md-6 col-md-offset-3  col-xs-10 col-xs-offset-1">
-                <h1>Länkar</h1>
-                <p>napfnapwfn wfnapkwnf pnpf nwöfaöaml  fmöawmföam fölwamföl mwömf mwöfm awdd awddawd adwdwa dawdawddd</p>
+                <div class="i_info2_link_container">
+                    <a href="">helawhelhwe</a>
+                    <a href="">helawhelhwe</a>
+                    <a href="">helawhelhwe</a>
+                    <a href="">helawhelhwe</a>
+                    <a href="">helawhelhwe</a>
+                    <a href="">helawhelhwe</a>
+                    <a href="">helawhelhwe</a>
+                </div>
             </div>
         </div>
     </div>
