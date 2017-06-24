@@ -42,7 +42,7 @@
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>-->
     <!--icon-->
-    <link rel="icon" href="img/logo/favicon.png">
+    <link rel="icon" href="favicon.png">
 
 
     <!--[if lt IE 9]>
