@@ -10,7 +10,7 @@ Index
         # Hover effect på media inläggen
 
 Prudkter
-    * Fixa så att Om man inte skriver in priset så står det kontakta för pris och de Hammnar längs ner när man sorterar efter pris.
+    * Fixa så att om man inte skriver in priset så står det kontakta för pris och de Hammnar längs ner när man sorterar efter pris.
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt.
