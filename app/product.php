@@ -12,9 +12,9 @@
 <?php
 include "functions/functions.php";
 $con = connect();
-                //session_start();
+//session_start();
 
-                //$_SESSION['cart'] = array();
+//$_SESSION['cart'] = array();
 
 //$name         = $_GET['n'];
 //$product_id   = get_product_id_by_name($con, $name);
@@ -43,7 +43,8 @@ $slider_images  = get_product_images_by_id($con, $product_id);
 
             <!-- Bg for mobile insted of slider-->
             <div class="hidden-lg hidden-md p_prod_slider_container"
-                 style="background-image:url(data:image/jpeg;base64,<?php echo base64_encode($slider_images[0]['data'])?> )"></div>
+                 style="background-image:url(data:image/jpeg;base64,<?php echo base64_encode($slider_images[0]['data'])?>)">
+            </div>
 
 
             <div class="p_prod_head_bg">
@@ -55,7 +56,9 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                 <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'"
                         class="p_prod_head_btn_broschyr">Ladda ner Broschyr
                 </button>
-                <button product_id = "<?php echo $product_id; ?>"class="send_offert p_prod_head_btn_order">Skicka en offert</button>
+                <button product_id = "<?php echo $product_id; ?>"
+                        class="send_offert p_prod_head_btn_order">Skicka en offert
+                </button>
                 <div class="p_prod_head_img">
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
                 </div>

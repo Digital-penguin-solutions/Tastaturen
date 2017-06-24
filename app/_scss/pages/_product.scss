@@ -12,13 +12,15 @@
     @extend .nopm;
 
     .p_prod_slider_container{
-      position: fixed;
+      position: absolute;
       z-index: 1;
       top: 0;
       left: 0;
       height:100vh;
       width: 100%;
       filter:blur(4px);
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     .p_prod_head_bg{
@@ -30,7 +32,7 @@
 
       .p_prod_head_text{
         text-align: center;
-        margin-top:20vh;
+        margin-top:30vh;
         color: $white;
 
         h1{
@@ -93,7 +95,7 @@
 
     .p_info_text {
       color: $white;
-      margin-top:15vh;
+      margin-top:20vh;
 
       h1{
         font-size: 6vw;
@@ -119,7 +121,7 @@
 
       img{
         @include horizontal-align();
-          height:100%;
+        height:100%;
       }
     }
   }
@@ -134,13 +136,13 @@
     @extend .nopm;
 
     div{
-        padding:0!important;
+      padding:0!important;
     }
 
     .p_slider_image{
-        width:100%;
-        height:100%;
-        padding:0 !important;
+      width:100%;
+      height:100%;
+      padding:0 !important;
     }
 
     img{
@@ -166,14 +168,14 @@
       margin-bottom:5vh;
 
       h1{
-        font-size: 4vw;
+        font-size: 4.5vw;
         text-align: center;
         font-weight: 600;
       }
 
       p{
         text-align: center;
-        font-size: 2.3vw;
+        font-size: 2.5vw;
         font-weight: 300;
       }
     }
@@ -182,9 +184,11 @@
       @extend .slider_btn;
       @include horizontal-align($pos:absolute);
       margin-top:10vh;
+      margin-bottom:5vh;
 
       button{
         height:10vh !important;
+        font-size: 3vw !important;
       }
     }
   }
