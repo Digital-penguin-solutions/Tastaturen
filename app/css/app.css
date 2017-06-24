@@ -4394,9 +4394,15 @@ section {
     color: white;
     text-align: center; }
     .i_info2 .i_info2_container .i_info2_text_container h1 {
-      font-size: 4vw;
+      font-size: 6vw;
       font-weight: 600; }
     .i_info2 .i_info2_container .i_info2_text_container p {
       margin-top: 5vh;
-      font-size: 1.5vw;
+      font-size: 3vw;
       font-weight: 300; }
+
+@media (min-width: 992px) {
+  .i_info2 .i_info2_container .i_info2_text_container h1 {
+    font-size: 4vw; }
+  .i_info2 .i_info2_container .i_info2_text_container p {
+    font-size: 1.5vw; } }

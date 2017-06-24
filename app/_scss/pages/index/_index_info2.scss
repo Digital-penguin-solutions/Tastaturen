@@ -9,13 +9,29 @@
       color: white;
       text-align: center;
       h1{
-        font-size: 4vw;
+        font-size: 6vw;
         font-weight: 600;
       }
       p{
         margin-top:5vh;
-        font-size: 1.5vw;
+        font-size: 3vw;
         font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .i_info2{
+    .i_info2_container{
+      .i_info2_text_container{
+        h1{
+          font-size: 4vw;
+        }
+
+        p{
+          font-size: 1.5vw;
+        }
       }
     }
   }
