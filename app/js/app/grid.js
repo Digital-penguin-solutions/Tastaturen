@@ -1,4 +1,3 @@
-
 $(document).ready(on_ready_grid);
 
 var items_per_part = 4;
@@ -10,7 +9,6 @@ function on_ready_grid(){
 
 function init_grids(){
     var grids = document.getElementsByClassName("grid_container");
-
 
     for(var i = 0; i < grids.length; i++){
         var grid = grids[i];
@@ -100,7 +98,7 @@ function init_grids(){
 
         var num_parts = Math.ceil(items.length / items_per_part);
         //for(var n = 0; n < num_parts; n++){
-            //init_part(grid, items, n*);
+        //init_part(grid, items, n*);
         //}
         //init_part(grid, items, 0, 0);
 
@@ -109,30 +107,28 @@ function init_grids(){
         setTimeout(function(){set_text_color(items);}, 300);
         $(grid_temp_holder).remove();
     }
-    
 }
 
 function set_text_color(items){
-     for(var i = 0; i < items.length; i++){
-         var item = items[i];
-         var image = item.getElementsByTagName("img")[0];
-         var h1= item.getElementsByTagName("h1")[0];
-         var average = Math.round(getAverageRGB(image));
-         //var col = 155-average;
-         var col = average;
-         
-         if(col > 10) {
-             col = 30;
-         }
-         else {
-             col = 250;
-         }
+    for(var i = 0; i < items.length; i++){
+        var item = items[i];
+        var image = item.getElementsByTagName("img")[0];
+        var h1= item.getElementsByTagName("h1")[0];
+        var average = Math.round(getAverageRGB(image));
+        //var col = 155-average;
+        var col = average;
 
-         col = "rgb(" + col +", "+col+", "+col+")";
+        if(col > 10) {
+            col = 30;
+        }
+        else {
+            col = 250;
+        }
 
-         $(h1).css("color", col);
+        col = "rgb(" + col +", "+col+", "+col+")";
 
-     }
+        $(h1).css("color", col);
+    }
 }
 
 function getAverageRGB(imgEl) {
@@ -176,7 +172,7 @@ function getAverageRGB(imgEl) {
     rgb.r = ~~(rgb.r/count);
     rgb.g = ~~(rgb.g/count);
     rgb.b = ~~(rgb.b/count);
-    
+
     var all = (rgb.r + rgb.g + rgb.b) / 3;
 
     return (rgb.r + rgb.g + rgb.b) / 3;

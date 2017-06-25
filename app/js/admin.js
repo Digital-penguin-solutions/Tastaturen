@@ -285,7 +285,6 @@ function compressPNG(image, quality, output_format) {
     return new_image_data;
 }
 
-
 function get_filename_from_path(fullPath){
     if (fullPath) {
         var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
@@ -303,5 +302,3 @@ function open_input(name){
     console.log(input);
     $(input).trigger('click');
 }
-
-

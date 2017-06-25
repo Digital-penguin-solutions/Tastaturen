@@ -3757,14 +3757,14 @@ section {
       width: 10vh;
       z-index: 100;
       background: transparent;
-      top: 35vh;
+      top: 25vh;
       cursor: pointer;
-      left: 2%; }
+      left: 1%; }
       .i_products .i_products_container .i_products .i_products_arrow_l:hover, .i_products .i_products_container .i_products .i_products_arrow_r:hover {
         background: rgba(30, 30, 30, 0.2);
         transition: 0.5s; }
     .i_products .i_products_container .i_products .i_products_arrow_r {
-      right: 2% !important;
+      right: 1% !important;
       left: auto; }
     .i_products .i_products_container .i_products .i_products_bt_container {
       height: 10vh;
@@ -3872,6 +3872,11 @@ section {
     min-height: 80vh; }
     .i_products .i_products_container .i_products h2 {
       font-size: 2.5vw; }
+    .i_products .i_products_container .i_products .i_products_arrow_l, .i_products .i_products_container .i_products .i_products_arrow_r {
+      top: 35vh;
+      left: 2%; }
+    .i_products .i_products_container .i_products .i_products_arrow_r {
+      right: 2% !important; }
     .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
       font-size: 1.2vw;
       width: 12vw;
