@@ -14,7 +14,6 @@ Prudkter
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt.
-    * Sortera med hjälp av php istället för js. (Varför? det gör att sidan måste laddas om varje gång man sorterar?)
 
 Admin
     * Quick edit när man är inne på produkter.
