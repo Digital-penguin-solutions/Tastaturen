@@ -235,6 +235,7 @@ function initMap() {
             position: uluru,
             map: map
         });
+    console.log("kör1234");
     }
 }
 

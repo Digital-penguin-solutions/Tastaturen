@@ -63,8 +63,7 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="product_slider_container i_products col-xs-12" id="Orgel-kyrka">
                 <h2><?php print_field("i_kyrka_header"); ?></h2>
 
-                <!--l eft and right arrow slider-->
-                <div class="i_products_arrow_l">
+                <!--l eft and right arrow slider--> <div class="i_products_arrow_l">
                     <img src="img/Index_slider/left_arrow.svg" alt="Slide left">
                 </div>
                 <div class="i_products_arrow_r">

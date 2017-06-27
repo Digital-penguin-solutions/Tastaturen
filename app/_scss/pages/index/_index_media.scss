@@ -1,32 +1,31 @@
 @import "../../everything";
 
+.i_media_header{
+  width: 100%;
+  height: 15vh;
+  background: $color5;
+  top:0;
+
+  h1{
+    vertical-align: middle;
+    line-height: 15vh;
+    @extend .nopm;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+  }
+}
 //media section
 .i_media{
   height:200vh;
   padding-bottom:1vh; /* Should be the same as the gap_size variable in grid.js */
   background:$color3;
-  @extend .nopm;
 
   .i_media_container{
     height: 100%;
     margin:auto;
     @extend .nopm;
 
-    .i_media_header{
-      width: 100%;
-      height: 15vh;
-      background: $color5;
-      top:0;
-
-      h1{
-        vertical-align: middle;
-        line-height: 15vh;
-        @extend .nopm;
-        color: white;
-        font-size: 4vw;
-        text-align: center;
-      }
-    }
   }
 
   .i_media_item {
