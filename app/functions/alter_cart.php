@@ -15,9 +15,8 @@ if(isset($_SESSION['cart'])){
         $index = array_search($_GET['product_id'], $_SESSION['cart']);
         unset($_SESSION['cart'][$index]);
     }
-    
-
 }
+
 else {
     $_SESSION['cart'] = array();
 }

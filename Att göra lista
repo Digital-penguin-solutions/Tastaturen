@@ -17,5 +17,3 @@ Prudukt detaljer
 
 Admin
     * Quick edit när man är inne på produkter.
-    * Göra så att alla som är inloggade som admin aoutomatiskt loggas ut efter 24h.
-    * Popupen att man är innlogad som admin förvinner inte permanen när man trycker på krysset.
