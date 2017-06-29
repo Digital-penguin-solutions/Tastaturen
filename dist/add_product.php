@@ -8,7 +8,7 @@ session_start();
 
 $con = connect();
 
-?> <!DOCTYPE html> <?php include "partials/head.php";?> <html lang="en"><head><title>MetSense add product</title><meta name="description" content="Tastaturen - Add product"></head> <?php 
+?> <!DOCTYPE html> <?php include "partials/head.php";?> <html lang="swe"><head><title>MetSense add product</title><meta name="description" content="Tastaturen - Add product"></head> <?php 
 if (!isset($_SESSION['admin'])) {
     header("Location: index.php");
 }
@@ -31,6 +31,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $long               = secure_str($_POST["long_description"]);
     $price              = secure_str($_POST["price"]);
     $type               = secure_str($_POST["type"]);
+    $order_number       = secure_str($_POST["order_number"]);
 
     if (isset($_POST["removed_images"])){
         $removed_images = $_POST["removed_images"];
@@ -63,7 +64,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, long_description, price, type, brochure) VALUES ('$name', '$short', '$long', '$price', '$type', '$brochure_data')";
+        $query = "INSERT INTO product (name, short_description, long_description, price, type, brochure, order_number) VALUES ('$name', '$short', '$long', '$price', '$type', '$brochure_data', '$order_number')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -71,7 +72,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $product_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
-        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type' WHERE product_id = '$product_id'";
+        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type', order_number='$order_number' WHERE product_id = '$product_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -153,6 +154,7 @@ if (isset($_SESSION['admin'])) {
         $main_image         = $product['main_image'];
         $about_image        = $product['about_image'];
         $type               = $product['type'];
+        $order_number       = $product['order_number'];
 
         $slider_images      = get_product_images_by_id($con, $product_id);
     }
@@ -172,7 +174,7 @@ if (isset($_SESSION['admin'])) {
                         if (isset($_GET["product_id"])){
                             ?> <input type="hidden" value="<?php echo $_GET['product_id'] ?>" name="product_id"> <?php
                         }
-                        ?> <h1>Product namn</h1><input value="<?php echo $name ?>" type="text" name="name"><h1>Typ</h1><select name="type"><option value="hem" <?php if($type == "hem"){echo "selected";}?>>Hem</option><option value="kyrka" <?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option></select><h1>Kort beskrivning</h1><textarea name="short_description" class="short_description"><?php echo $short?></textarea><h1>Lång beskrivning</h1><textarea name="long_description" class="long_description"><?php echo $long?></textarea><h1>Broschyr</h1><input id="brochure" name="brochure" class="center_horizontally_css" type="file"><h1>Pris</h1><input value="<?php echo $price ?>" type="text" name="price"><div class="admin_list_container admin_tech_list"><h1>Bilder till bildspel</h1><!--- THIS FIRST ONE IS HIDDEN AND IS ONLY A TEMPLETE FOR CREATING A NEW ONE BUT IT HAS TO BE HERE  --><div class="template admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current: </strong>none</p><img src="../img/cross.svg" class="center_vertically_css remove_item" alt="remove item from list"></div> <?php
+                        ?> <h1>Product namn</h1><input value="<?php echo $name ?>" type="text" name="name"><h1>Typ</h1><select name="type"><option value="hem" <?php if($type == "hem"){echo "selected";}?>>Hem</option><option value="kyrka" <?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option></select><h1>Kort beskrivning</h1><textarea name="short_description" class="short_description"><?php echo $short?></textarea><h1>Lång beskrivning</h1><textarea name="long_description" class="long_description"><?php echo $long?></textarea><h1>Broschyr</h1><input id="brochure" name="brochure" class="center_horizontally_css" type="file"><h1>Pris</h1><input value="<?php echo $price ?>" type="text" name="price"><h1>Ordningsnummer</h1><input value="<?php echo $order_number ?>" type="text" name="order_number"><div class="admin_list_container admin_tech_list"><h1>Bilder till bildspel</h1><!--- THIS FIRST ONE IS HIDDEN AND IS ONLY A TEMPLETE FOR CREATING A NEW ONE BUT IT HAS TO BE HERE  --><div class="template admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current: </strong>none</p><img src="../img/cross.svg" class="center_vertically_css remove_item" alt="remove item from list"></div> <?php
                             // The ones that already exist for this product
                             foreach ($slider_images as $image) {
 

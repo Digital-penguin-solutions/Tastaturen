@@ -1,4 +1,4 @@
-<?php include "partials/head.php"; ?> <!DOCTYPE html><html lang="en"><head><title>prudukt detaljer</title><meta name="description" content="Tastaturen"><meta name="keywords" content="orgel, instrument, musik"></head><body class="wrapper col-xs-12 col-md-10" id="page-top" class="index"> <?php
+<?php include "partials/head.php"; ?> <!DOCTYPE html><html lang="swe"><head><title>Tastaturen - Produkt detaljer</title><meta name="description" content="En sida för att se alla våra vackra orglar. "><meta name="keywords" content="orgel,instrument,musik,orgel återförsäljare,johannus,rogerinstrument"></head><body class="wrapper col-xs-12 col-md-10" id="page-top" class="index"> <?php
 
 include "partials/nav.php";
 include "functions/functions.php";
@@ -10,29 +10,28 @@ if(isset($_GET['t'])){
 else {
     $type = "hem";
 }
-?> <!--Header --><header class="container-fluid pe_header" role="banner"><div class="row-fluid pe_header_container col-xs-12"><div class="pe_header_bg"> <?php 
-                if($type == "hem"){
-                    echo_stored_image_data($con, 'pe_header_home', ""); 
-                }
-                else {
-                    echo_stored_image_data($con, 'pe_header_church', ""); 
-
-                }
-            ?> </div><div class="pe_header_text col-md-6 col-xs-12"><h1> <?php 
+?> <!--Header --><header class="container-fluid pe_header" role="banner"><div class="row-fluid pe_header_container col-xs-12"><div class="pe_header_bg"> <?php
+            if($type == "hem"){
+                echo_stored_image_data($con, 'pe_header_home', "");
+            }
+            else {
+                echo_stored_image_data($con, 'pe_header_church', "");
+            }
+            ?> </div><div class="pe_header_text col-md-6 col-xs-12"><h1> <?php
                 if($type == "hem"){
                     print_field("pe_header_home");
                 }
                 else {
                     print_field("pe_header_church");
                 }
-            ?> </h1><p> <?php 
+                ?> </h1><p> <?php
                 if($type == "hem"){
                     print_field("pe_info_home");
                 }
                 else {
                     print_field("pe_info_church");
                 }
-            ?> </p></div></div></header><!-- Show all the products--><section class="container-fluid pe_prod" role="main"><div class="row-fluid pe_prod"><div class="col-xs-12 pe_prod_container"><div class="pe_prod_sort col-xs-12"><h1>Sortera</h1><div class="pe_prod_btn"><button onclick="sortByPrice(this)" class="pe_product_price">Pris</button> <button onclick="sortByName(this)" class="pe_product_name">Namn</button></div></div><div class="pe_prod_container2 col-xs-11"> <?php
+                ?> </p></div></div></header><!-- Show all the products--><section class="container-fluid pe_prod" role="main"><div class="row-fluid pe_prod"><div class="col-xs-12 pe_prod_container"><div class="pe_prod_sort col-xs-12"><h1>Sortera</h1><div class="pe_prod_btn"><button onclick="sortByPrice(this)" class="pe_product_price">Pris</button> <button onclick="sortByName(this)" class="pe_product_name">Namn</button></div></div><div class="pe_prod_container2 col-xs-11"> <?php
                 $products = get_all_visible_products($con, $type);
                 $len        = count($products);
                 //$odds       = 'prud-big';
@@ -56,4 +55,4 @@ else {
                         $size     = $even;
                         //$size_big = Null;
                     }
-                    ?> <a href="product?id=<?php echo $id; ?>" class="pe_prod_prod <?php echo $size ?>"><img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Huvudbild"><h1 class="pe_name"><?php echo $name;?></h1><p><?php echo $short;?> </p><p class="pe_price"><?php echo $price;?></p></a> <?php } ?> </div></div></div></section> <?php include "partials/footer.php" ?> </body></html>
+                    ?> <a href="product?id=<?php echo $id; ?>" class="pe_prod_prod <?php echo $size ?>"><img src="data:image/jpeg;base64,<?php echo base64_encode($image) ?>" alt="Bild på orgel"><h1 class="pe_name"><?php echo $name;?></h1><p><?php echo $short;?> </p><p class="pe_price"><?php echo $price;?></p></a> <?php } ?> </div></div></div></section> <?php include "partials/footer.php" ?> </body></html>

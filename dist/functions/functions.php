@@ -127,11 +127,11 @@ if(!isset($functions_included)){
     // Return only the products that are to be shown on the homepage
     function get_all_visible_products($con, $type) {
         if($type==""){
-            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1'";
+            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' ORDER BY order_number";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
         else {
-            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' AND type = '$type'";
+            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' AND type = '$type' ORDER BY order_number";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
 
@@ -151,11 +151,11 @@ if(!isset($functions_included)){
     function get_all_products($con, $type) {
 
         if($type==""){
-            $query  = "SELECT * FROM product";
+            $query  = "SELECT * FROM product ORDER BY order_number";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
         else {
-            $query  = "SELECT * FROM product WHERE type = '$type'";
+            $query  = "SELECT * FROM product WHERE type = '$type' ORDER BY order_number";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
 
@@ -335,6 +335,12 @@ if(!isset($functions_included)){
             else{
                 $j = $third;
             }
+
+
+            if($price == ""){
+                $price = "Kontakta för prisuppgifter";
+            }
+
             ?> <!--products that is used in slider--><div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>"><a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item"><!--<img src="data:image/jpeg;base64,<?php //A_uecho base64_encode($image) ?>" alt="Huvudbild"/>--> <img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"><h1><?php echo $name;?></h1><p class="short"><?php echo $short;?> </p><p class="price"><?php echo $price;?></p></a></div> <?php
         }
     }
@@ -436,7 +442,7 @@ if(!isset($functions_included)){
             else {
                 $offset = 2;
             }
-            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?p=<?php echo $title?>"><?php echo $title ?></a></h1> <?php 
+            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="index#Media"><?php echo $title ?></a></h1> <?php 
                 if($type == "image"){
                     ?> <img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image ); ?>" alt="No image selected"> <?php
                 }
@@ -477,7 +483,7 @@ if(!isset($functions_included)){
             else {
                 $offset = 2;
             }
-            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?p=<?php echo $name?>"><?php echo $name ?></a></h1><img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"><!--- EDIT BUTTON--> <a href="add_product?product_id=<?php echo $product_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- TOGGLE SHOW BUTTON--> <a href="functions/toggle_product?product_id=<?php echo $product_id?>" class="product_button <?php echo $toggle_color?> product_show_button"><p class="center_vertically_css"><?php echo $toggle_button_value?></p></a><!--- DELETE BUTTON--> <a href="functions/delete_product?id=<?php echo $product_id?>" class="product_button product_delete_button"><p class="center_vertically_css">Delete</p></a></div> <?php
+            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?id=<?php echo $product_id?>"><?php echo $name ?></a></h1><img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"><!--- EDIT BUTTON--> <a href="add_product?product_id=<?php echo $product_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- TOGGLE SHOW BUTTON--> <a href="functions/toggle_product?product_id=<?php echo $product_id?>" class="product_button <?php echo $toggle_color?> product_show_button"><p class="center_vertically_css"><?php echo $toggle_button_value?></p></a><!--- DELETE BUTTON--> <a href="functions/delete_product?id=<?php echo $product_id?>" class="product_button product_delete_button"><p class="center_vertically_css">Delete</p></a></div> <?php
             $count++;
         }
 
@@ -572,7 +578,7 @@ if(!isset($functions_included)){
 
         }
         //echo "data:image/jpeg;base64," . base64_encode($data);
-        ?> <img onclick="open_intput('<php echo $name?>')" class="<?php echo $classes; ?>" src="functions/load_stored_image.php?name=<?php echo $name;?>" alt="No image selected"><!--<img onclick="open_input('<?php echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php //echo base64_encode($data) ?>" alt="No image selected"/>--> <?php
+        ?> <img onclick="open_input('<?php echo $name?>')" class="<?php echo $classes; ?>" src="functions/load_stored_image.php?name=<?php echo $name;?>" alt="No image selected"><!--<img onclick="open_input('<?php //echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php //echo base64_encode($data) ?>" alt="No image selected"/>--> <?php
         if(isset($_SESSION['admin'])){
 ?> <input image_id="<?php echo $name; ?>" name="stored_image" class="stored_image_input" type="file" onchange="compress_image_single(event)"> <?php
         }

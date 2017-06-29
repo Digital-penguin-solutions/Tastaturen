@@ -1,7 +1,5 @@
-#Block robots from acsessing function folder
 User-agent: *
 Disallow: /functions/
-
-#Block robots from acsessing admin page
-User-agent: *
 Disallow: /admin.php
+Disallow: /add_media.php
+Disallow: /add_product.php

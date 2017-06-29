@@ -1,6 +1,6 @@
 <div style="display:none" class="offert">
     <div class="offert_container">
-    <img class = "offert_close" src="img/cross.svg" alt="">
+    <img class = "offert_close" src="img/cross.svg" alt="close">
 
         <form action="" method="post" class="col-xs-6" content="offert_form">
 

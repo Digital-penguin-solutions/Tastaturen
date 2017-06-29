@@ -20,7 +20,7 @@
         mysqli_query($con, "UPDATE `product` SET `show` = '$show' WHERE product_id = '$id'") or die (mysqli_error($con));
 
         
-        header("Location: ../admin.php?message=Product has been toggled");
+        header("Location: ../admin.php?message=Product has been toggled&view=products");
     }
 
     else {

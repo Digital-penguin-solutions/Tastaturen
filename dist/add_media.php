@@ -8,7 +8,7 @@ session_start();
 
 $con = connect();
 
-?> <!DOCTYPE html> <?php include "partials/head.php";?> <html lang="en"><head><title>MetSense add product</title><meta name="description" content="Tastaturen - Add media post"></head> <?php
+?> <!DOCTYPE html> <?php include "partials/head.php";?> <html lang="swe"><head><title>MetSense add product</title><meta name="description" content="Tastaturen - Add media post"></head> <?php
 if (!isset($_SESSION['admin'])) {
     header("Location: index.php");
 }
