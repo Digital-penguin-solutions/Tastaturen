@@ -13,7 +13,7 @@ $products_church = get_all_products($con, "kyrka");
 include "partials/head.php";
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="swe">
 <head>
     <title>Admin</title>
 </head>

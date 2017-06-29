@@ -1,15 +1,13 @@
 <?php include "partials/head.php" ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="swe">
 <head>
-    <title>Tastaturen</title>
-    <meta name="description" content="Tastaturen är en återförsäljare av orglar för både kyrkan och hemmet"/>
-    <meta name="keywords" content="orgel,instrument,musik"/>
-    <!--<META HTTP-EQUIV="EXPIRES" CONTENT="Mon, 22 Jul 2002 11:12:01 GMT">-->
+    <title>Tastaturen - återförsäljare av orglar</title>
+    <meta name="description" content="Tastaturen är en återförsäljare av orglar för både kyrkan och hemmet."/>
+    <meta name="keywords" content="orgel,instrument,musik,orgel återförsäljare,johannus,rogerinstrument"/>
+
     <script async src="https://www.youtube.com/iframe_api"></script>
-    <!--<script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOROuCcecBybx01QE4zULnPPrSqpCPc3s">
-    </script>-->
+
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTIpo_wrgCsz4EP3GCGKLpFDKvJL_R1Dk&callback=initMap">
     </script>

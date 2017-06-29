@@ -13,7 +13,7 @@ $con = connect();
 ?>
 <!DOCTYPE html>
 <?php include "partials/head.php";?>
-<html lang="en">
+<html lang="swe">
 <head>
     <title>MetSense add product</title>
     <meta name="description" content="Tastaturen - Add media post">

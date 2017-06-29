@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang='swe'>
 <head>
-    <title>404 Något gick fel</title>
+    <title>404 - Något gick fel</title>
     <meta name="description" content="Något gick fel."/>
     <meta name="keywords" content="orgel,instrument,musik"/>
 </head>

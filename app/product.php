@@ -1,10 +1,10 @@
 <?php include "partials/head.php" ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="swe">
 <head>
-    <title>Produkter</title>
-    <meta name="description" content="Tastaturens produkt sida. Här kan du läsa om alla våra produkter"/>
-    <meta name="keywords" content="orgel, instrument, musik"/>
+    <title>Tastaturen - Produkter</title>
+    <meta name="description" content="Tastaturens produkt sida. Här kan du läsa om alla våra olika produkter"/>
+    <meta name="keywords" content="orgel,instrument,musik,orgel återförsäljare,johannus,rogerinstrument"/>
 </head>
 
 <body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
@@ -60,7 +60,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                         class="send_offert p_prod_head_btn_order">Skicka en offert
                 </button>
                 <div class="p_prod_head_img">
-                    <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="orgel produkt bild"/>
                 </div>
             </div>
         </div>
@@ -77,7 +77,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                 <p> <?php echo $long; ?></p>
             </div>
             <div class="p_info_img col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
-                <img class = "" src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="Huvudbild"/>
+                <img class = "" src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="orgel produkt bild"/>
             </div>
         </div>
     </div>
@@ -91,7 +91,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                 ?>
                 <!-- Slider 1-->
                 <div class = "slider_page col-xs-12">
-                    <img class = "p_slider_image col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="Huvudbild"/>
+                    <img class = "p_slider_image col-xs-12" src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="orgel silders"/>
                 </div>
             <?php } ?>
         </div>
