@@ -7,7 +7,7 @@ Index
     * Media
         # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har samma funkonalitet som på desktop.
         # Kunna soretera vilken media sak som ligger övers.
-        # Hover effect på media inläggen.
+        # Hover effect på media inläggen. kanske fixat vet ej
 
 Prudkter
     * Fixa så att om man inte skriver in priset så står det kontakta för pris och de Hammnar längs ner när man sorterar efter pris.

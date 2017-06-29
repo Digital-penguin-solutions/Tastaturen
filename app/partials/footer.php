@@ -3,14 +3,11 @@
         <div class="col-xs-12 footer_container">
 
             <div class="footer_top">
-                <a href="#">
+                <a href="https://www.facebook.com/Tastaturen-196268727551511/?fref=ts" target="_blank">
                     <i class="fa fa-facebook"></i>
                 </a>
-                <a href="#">
+                <a href="#" target="_blank">
                     <i class="fa fa-instagram"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-pinterest"></i>
                 </a>
             </div>
 
@@ -19,8 +16,6 @@
                     <li><a href="index#kontakta">Kontakta</a></li>
                     <li><a href="product_details?t=kyrka">Orglar för kyrkan</a></li>
                     <li><a href="product_details?t=hem">Orglar för hemmet</a></li>
-                    <!--<li><a href="#">personuppgiftspolicy</a></li>-->
-                    <!--<li><a href="#">integritetspolicy</a></li>-->
                     <li class="hidden-xs hidden-sm"><a href="admin">Admin</a></li>
                 </ul>
                 <hr>
