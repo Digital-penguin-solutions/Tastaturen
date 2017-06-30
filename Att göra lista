@@ -1,7 +1,7 @@
 Viktigt
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen.
-    * Lägga in alla texter och bilder på prudukterna i databasen. (Anders fixar).
     * Fixa smoothe scroll när man klikar på länkar i naven.
+    * Fixa så att det finns 2 sidor en på danska en på svenska.
 
 Index
     * Media
@@ -14,6 +14,3 @@ Prudkter
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt.
-
-Admin
-    * Quick edit när man är inne på produkter.
