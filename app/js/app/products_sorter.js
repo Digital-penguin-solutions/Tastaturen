@@ -23,7 +23,6 @@ function on_ready_product_sorter(){
     //echoProducts([]);
 }
 
-
 function echoProducts(temp_products){
     var container = document.getElementsByClassName("pe_prod_container2")[0]; 
     $(".pe_prod_prod").remove();
@@ -68,6 +67,7 @@ function forceUpdate(){
     }
 }
 
+//Sort all pruducts by price
 function sortByPrice(element){
     highlight(element);
 
@@ -76,6 +76,8 @@ function sortByPrice(element){
     echoProducts(temp_products);
 
 }
+
+//Sort all pruducts by name
 function sortByName(element){
 
     highlight(element);
