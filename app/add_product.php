@@ -37,6 +37,8 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $name               = secure_str($_POST["name"]);
     $short              = secure_str($_POST["short_description"]);
     $long               = secure_str($_POST["long_description"]);
+    $short_dk           = secure_str($_POST["short_description_dk"]);
+    $long_dk            = secure_str($_POST["long_description_dk"]);
     $price              = secure_str($_POST["price"]);
     $type               = secure_str($_POST["type"]);
     $order_number       = secure_str($_POST["order_number"]);
@@ -72,7 +74,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, long_description, price, type, brochure, order_number) VALUES ('$name', '$short', '$long', '$price', '$type', '$brochure_data', '$order_number')";
+        $query = "INSERT INTO product (name, short_description, short_description_dk, long_description, long_description_dk, price, type, brochure, order_number) VALUES ('$name', '$short', '$short_dk', '$long', '$long_dk', '$price', '$type', '$brochure_data', '$order_number')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -80,7 +82,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $product_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
-        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type', order_number='$order_number' WHERE product_id = '$product_id'";
+        $query = "UPDATE product SET name = '$name', short_description='$short', short_description_dk='$short_dk', long_description_dk='$long_dk', long_description='$long', price = '$price', type = '$type', order_number='$order_number' WHERE product_id = '$product_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -158,6 +160,8 @@ if (isset($_SESSION['admin'])) {
         $show               = $product['show'];
         $short              = $product['short_description'];
         $long               = $product['long_description'];
+        $short_dk           = $product['short_description_dk'];
+        $long_dk            = $product['long_description_dk'];
         $price              = $product['price'];
         $main_image         = $product['main_image'];
         $about_image        = $product['about_image'];
@@ -172,6 +176,8 @@ if (isset($_SESSION['admin'])) {
         $show               = "";
         $short              = "";
         $long               = "";
+        $short_dk           = "";
+        $long_dk            = "";
         $price              = "";
         $type               = "";
         $slider_images      = array();
@@ -209,11 +215,17 @@ if (isset($_SESSION['admin'])) {
                             <option value = "kyrka"<?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option>
                         </select>
 
-                        <h1>Kort beskrivning</h1>
+                        <h1>Kort beskrivning (Svenska)</h1>
                         <textarea name = "short_description" class="short_description"><?php echo $short?></textarea>
 
-                        <h1>Lång beskrivning</h1>
+                        <h1>Kort beskrivning (Danska)</h1>
+                        <textarea name = "short_description_dk" class="short_description"><?php echo $short_dk?></textarea>
+
+                        <h1>Lång beskrivning (Svenska)</h1>
                         <textarea name = "long_description" class="long_description"><?php echo $long?></textarea>
+
+                        <h1>Lång beskrivning (Danska)</h1>
+                        <textarea name = "long_description_dk" class="long_description"><?php echo $long_dk?></textarea>
 
                         <h1> Broschyr</h1>
                         <input id = "brochure" name = "brochure" class = "center_horizontally_css" type = "file" >
@@ -222,7 +234,7 @@ if (isset($_SESSION['admin'])) {
                         <input value = "<?php echo $price ?>" type = "text" name = "price">
 
                         <h1>Ordningsnummer</h1>
-                        <input value = "<?php echo $order_number ?>" type = "text" name = "order_number">
+                        <input value = "<?php if(isset($order_number)){echo $order_number;} ?>" type = "text" name = "order_number">
 
                         <div class = "admin_list_container admin_tech_list">
                             <h1>Bilder till bildspel</h1>
@@ -234,7 +246,7 @@ if (isset($_SESSION['admin'])) {
                                 <p class = "center_vertically_css">
                                     <strong> Current: </strong>  none
                                 </p>
-                                <img src = "../img/cross.svg" class = "center_vertically_css remove_item" alt="remove item from list">
+                                <img src = "img/cross.svg" class = "center_vertically_css remove_item" alt="Remove item">
                             </div>
                             <?php
                             // The ones that already exist for this product
@@ -250,7 +262,7 @@ if (isset($_SESSION['admin'])) {
                                         <strong> Current: </strong>
                                     </p>
                                     <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $image['data']); ?>" alt="image of the curent image"/>
-                                    <img src = "../img/cross.svg" image_id = "<?php echo $image_id; ?>" class = "center_vertically_css remove_item" alt="remove item from list">
+                                    <img src = "img/cross.svg" image_id = "<?php echo $image_id; ?>" class = "center_vertically_css remove_item" alt="Remove item">
                                 </div>
                                 <?php
                             }
