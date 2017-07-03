@@ -7,6 +7,7 @@ function show_edit_view(element){
     var span = $(element).find("span");
     var old = $(span).text();
     old = old.trim();
+
     var name = $(element).attr("name");
 
     $(".edit_name").val(name);

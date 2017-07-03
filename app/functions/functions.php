@@ -589,11 +589,18 @@ if(!isset($functions_included)){
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
 
-    function update_field($name, $new_value){
+    function update_field($name, $new_value, $lang){
         global $con;
         $name = secure_str($name);
         $new_value = secure_str($new_value);
-        $query = "UPDATE text_field SET value = '$new_value' WHERE name = '$name'";
+
+        if($lang == "sv"){ // swedish version
+            $query = "UPDATE text_field SET value = '$new_value' WHERE name = '$name'";
+        }
+        else { // danish version
+            $query = "UPDATE text_field SET value_dk = '$new_value' WHERE name = '$name'";
+
+        }
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
 
@@ -624,10 +631,26 @@ if(!isset($functions_included)){
             var script = document.currentScript;
             var parent = script.parentNode;
             var name   = '<?php echo $name; ?>';
-            $(parent).attr("name", name);
-            $(parent).click(function(){
-                show_edit_view(this);
-            });
+
+            var parent_type = parent.nodeName;
+
+            // if it is a link
+            if(parent_type == "A"){
+                var click_element = "<div class = 'edit_field_btn'> Edit </div>";
+                $(click_element).attr("name", name);
+                $(click_element).click(function(){
+                    show_edit_view(this);
+                });
+                //$(parent).append(click_element);
+
+            }
+            else {
+
+                $(parent).attr("name", name);
+                $(parent).click(function(){
+                    show_edit_view(this);
+                });
+            }
 
         </script>
 <?php
