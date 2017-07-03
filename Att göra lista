@@ -6,6 +6,8 @@ Viktigt
     * Fixa så att om man inte skriver in priset så står det kontakta för pris och de Hammnar längs ner när man sorterar efter pris.
 
 Index
+    *Karta
+        #Ta bort eller se om det är möjligt att flytta knapparna längst ner till höger på kartan eftersom de inte går att klicka på på grund av att den osynliga delen av naven är ivägen
     * Media
         # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har samma funkonalitet som på desktop.
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
