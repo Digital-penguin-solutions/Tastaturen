@@ -4,8 +4,6 @@
 //check if functions is included in page to acses them
 if(!isset($functions_included)){
 
-    
-
     $functions_included = true;
 
     //include connect page
@@ -332,7 +330,6 @@ if(!isset($functions_included)){
 
     //Echo all products in the index slider
     function echo_products_index($products){
-        $i      = 0;
         $firs   = 'i_products_sliders_bg_1';
         $second = 'i_products_sliders_bg_2';
         $third  = 'i_products_sliders_bg_3';
@@ -344,24 +341,12 @@ if(!isset($functions_included)){
             $image = $product['main_image'];
             $id    = $product['product_id'];
 
-            $i++;
-
-            if ($i % 3 == 1){
-                $j = $firs;
-            }
-            elseif ($i % 3 == 2){
-                $j = $second;
-            }
-            else{
-                $j = $third;
-            }
-
 
             if($price == ""){
                 $price = "Kontakta för prisuppgifter";
             }
 
-            ?> <!--products that is used in slider--><div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>"><a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item"><!--<img src="data:image/jpeg;base64,<?php //A_uecho base64_encode($image) ?>" alt="Huvudbild"/>--> <img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"><h1><?php echo $name;?></h1><p class="short"><?php echo $short;?> </p><p class="price"><?php echo $price;?></p></a></div> <?php
+            ?> <!--products that is used in slider--><div class="i_products_sliders col-md-4 col-xs-6"><a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item"><!--<img src="data:image/jpeg;base64,<?php //A_uecho base64_encode($image) ?>" alt="Huvudbild"/>--> <img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"><h1><?php echo $name;?></h1><p class="short"><?php echo $short;?> </p><p class="price"><?php echo $price;?></p></a></div> <?php
         }
     }
 
@@ -388,7 +373,6 @@ if(!isset($functions_included)){
         return $destination;
     }
 
-    //
     function return_bytes($val) {
         $val = trim($val);
         $last = strtolower($val[strlen($val)-1]);
@@ -422,6 +406,7 @@ if(!isset($functions_included)){
         return $data;
 
     }
+
     function get_all_media_posts_small($con){
         $query  = "SELECT youtube_id, type, size, media_id, header_image, title FROM media";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
@@ -480,6 +465,7 @@ if(!isset($functions_included)){
 
 
     }
+
     function echo_admin_products($products){
         $count = 0;
         foreach ($products as $product) {
@@ -508,7 +494,6 @@ if(!isset($functions_included)){
         }
 
     }
-
 
     function get_field_by_name($con, $name){
         $name   = secure_str($name);
@@ -570,7 +555,6 @@ if(!isset($functions_included)){
 ?> <img src="data:image/jpeg;base64,<?php echo base64_encode($thumbnail_image) ?>" alt="Youtube video"> <?php
     }
 
-
     function get_stored_image_by_name($con, $name){
         $name   = secure_str($name);
         $query  = "SELECT * FROM stored_image WHERE name = '$name'";
@@ -610,8 +594,5 @@ if(!isset($functions_included)){
         $query = "INSERT INTO stored_image (name) VALUES ('$name')";
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
-
-    
-
 }
 ?>
