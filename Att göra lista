@@ -9,7 +9,7 @@ Index
     * Media
         # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har samma funkonalitet som på desktop.
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
-        # Samma hover effect på media posterna som på producterna
+        # Samma hover effect på media posterna som på produkterna
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt.
