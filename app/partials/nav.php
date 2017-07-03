@@ -33,6 +33,10 @@ $con = connect();
             <a class = "nav_link" href="index#Media"><?php print_field("i_media_header"); ?></a>
         </div>
     </div>
+    <div class = "lang_container">
+        <a href = "functions/set_lang.php?lang=sv" class = "swedish_btn">Svenska</a>
+        <a href = "functions/set_lang.php?lang=dk" class = "dansih_btn">Dansk</a>
+    </div>
 </nav>
 
 <!--todo Fixa animering och visa nav på mobil och tablet-->

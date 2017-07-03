@@ -196,7 +196,8 @@
 
 //desktop size
 @media (min-width: $screen-md-min) {
-  .i_products{
+
+  .i_products {
     min-height: 80vh;
     .i_products_container{
       .i_products{
@@ -205,7 +206,7 @@
         }
         .i_products_arrow_l{
           top:35vh;
-          left:2%;
+          //left:2%;
         }
         .i_products_arrow_r{
           right: 2% !important;

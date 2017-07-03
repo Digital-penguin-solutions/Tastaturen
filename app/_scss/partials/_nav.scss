@@ -84,6 +84,25 @@
   }
 }
 
+.lang_container{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:5%;
+
+    a {
+        display:block;
+        width:50%;
+        float:left;
+        height:100%;
+        text-align:center;
+        font-size:1.5vw;
+        text-decoration:none;
+        color: $color2 !important;
+    }
+}
+
 //nav btn styling
 .nav_d_btn{
   position: fixed;

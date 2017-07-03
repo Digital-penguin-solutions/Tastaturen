@@ -4,6 +4,7 @@ var map_cover_visible = true;
 
 function on_ready_map(){
 
+    setTimeout(function(){initMap();}, 1000); // sometimes the callback wont run properly, this makes sure that it happens
     //initMap();
 
     $(".i_map_text_container").click(function(){

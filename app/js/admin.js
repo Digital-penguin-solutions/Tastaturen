@@ -11,10 +11,7 @@ function on_ready_admin() {
         $(new_feature).find("input").val('');
 
         $(container).append(new_feature);
-        $(new_feature).insertBefore(button);
-
-        update_remove_listener();
-    });	
+        $(new_feature).insertBefore(button); update_remove_listener(); });	
 
     update_remove_listener();
 }
@@ -297,8 +294,6 @@ function get_filename_from_path(fullPath){
 }
 
 function open_input(name){
-    console.log("asdas");
     var input = $("[image_id="+name+"]");
-    console.log(input);
     $(input).trigger('click');
 }

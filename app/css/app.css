@@ -573,6 +573,22 @@ section {
       .nav_d .nav_d_container .nav_d_link a:active {
         color: #ffffff; }
 
+.lang_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%; }
+  .lang_container a {
+    display: block;
+    width: 50%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #c3c3c3 !important; }
+
 .nav_d_btn {
   position: fixed;
   top: 0;
@@ -3877,8 +3893,7 @@ section {
     .i_products .i_products_container .i_products h2 {
       font-size: 2.5vw; }
     .i_products .i_products_container .i_products .i_products_arrow_l, .i_products .i_products_container .i_products .i_products_arrow_r {
-      top: 35vh;
-      left: 2%; }
+      top: 35vh; }
     .i_products .i_products_container .i_products .i_products_arrow_r {
       right: 2% !important; }
     .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
