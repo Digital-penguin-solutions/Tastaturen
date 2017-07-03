@@ -1,4 +1,5 @@
 Viktigt
+    * Fixa så att youtub videon kan spela ljud när man trycker på play knappen.
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen.
     * Fixa smoothe scroll när man klikar på länkar i naven.
     * Fixa så att det finns 2 sidor en på danska en på svenska.

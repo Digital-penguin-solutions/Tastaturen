@@ -29,6 +29,8 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $name               = secure_str($_POST["name"]);
     $short              = secure_str($_POST["short_description"]);
     $long               = secure_str($_POST["long_description"]);
+    $short_dk           = secure_str($_POST["short_description_dk"]);
+    $long_dk            = secure_str($_POST["long_description_dk"]);
     $price              = secure_str($_POST["price"]);
     $type               = secure_str($_POST["type"]);
     $order_number       = secure_str($_POST["order_number"]);
@@ -64,7 +66,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, long_description, price, type, brochure, order_number) VALUES ('$name', '$short', '$long', '$price', '$type', '$brochure_data', '$order_number')";
+        $query = "INSERT INTO product (name, short_description, short_description_dk, long_description, long_description_dk, price, type, brochure, order_number) VALUES ('$name', '$short', '$short_dk', '$long', '$long_dk', '$price', '$type', '$brochure_data', '$order_number')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -72,7 +74,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $product_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
-        $query = "UPDATE product SET name = '$name', short_description='$short', long_description='$long', price = '$price', type = '$type', order_number='$order_number' WHERE product_id = '$product_id'";
+        $query = "UPDATE product SET name = '$name', short_description='$short', short_description_dk='$short_dk', long_description_dk='$long_dk', long_description='$long', price = '$price', type = '$type', order_number='$order_number' WHERE product_id = '$product_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -150,6 +152,8 @@ if (isset($_SESSION['admin'])) {
         $show               = $product['show'];
         $short              = $product['short_description'];
         $long               = $product['long_description'];
+        $short_dk           = $product['short_description_dk'];
+        $long_dk            = $product['long_description_dk'];
         $price              = $product['price'];
         $main_image         = $product['main_image'];
         $about_image        = $product['about_image'];
@@ -164,6 +168,8 @@ if (isset($_SESSION['admin'])) {
         $show               = "";
         $short              = "";
         $long               = "";
+        $short_dk           = "";
+        $long_dk            = "";
         $price              = "";
         $type               = "";
         $slider_images      = array();
@@ -174,13 +180,13 @@ if (isset($_SESSION['admin'])) {
                         if (isset($_GET["product_id"])){
                             ?> <input type="hidden" value="<?php echo $_GET['product_id'] ?>" name="product_id"> <?php
                         }
-                        ?> <h1>Product namn</h1><input value="<?php echo $name ?>" type="text" name="name"><h1>Typ</h1><select name="type"><option value="hem" <?php if($type == "hem"){echo "selected";}?>>Hem</option><option value="kyrka" <?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option></select><h1>Kort beskrivning</h1><textarea name="short_description" class="short_description"><?php echo $short?></textarea><h1>Lång beskrivning</h1><textarea name="long_description" class="long_description"><?php echo $long?></textarea><h1>Broschyr</h1><input id="brochure" name="brochure" class="center_horizontally_css" type="file"><h1>Pris</h1><input value="<?php echo $price ?>" type="text" name="price"><h1>Ordningsnummer</h1><input value="<?php echo $order_number ?>" type="text" name="order_number"><div class="admin_list_container admin_tech_list"><h1>Bilder till bildspel</h1><!--- THIS FIRST ONE IS HIDDEN AND IS ONLY A TEMPLETE FOR CREATING A NEW ONE BUT IT HAS TO BE HERE  --><div class="template admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current: </strong>none</p><img src="../img/cross.svg" class="center_vertically_css remove_item" alt="remove item from list"></div> <?php
+                        ?> <h1>Product namn</h1><input value="<?php echo $name ?>" type="text" name="name"><h1>Typ</h1><select name="type"><option value="hem" <?php if($type == "hem"){echo "selected";}?>>Hem</option><option value="kyrka" <?php if($type == "kyrka"){echo "selected";}?>>Kyrka</option></select><h1>Kort beskrivning (Svenska)</h1><textarea name="short_description" class="short_description"><?php echo $short?></textarea><h1>Kort beskrivning (Danska)</h1><textarea name="short_description_dk" class="short_description"><?php echo $short_dk?></textarea><h1>Lång beskrivning (Svenska)</h1><textarea name="long_description" class="long_description"><?php echo $long?></textarea><h1>Lång beskrivning (Danska)</h1><textarea name="long_description_dk" class="long_description"><?php echo $long_dk?></textarea><h1>Broschyr</h1><input id="brochure" name="brochure" class="center_horizontally_css" type="file"><h1>Pris</h1><input value="<?php echo $price ?>" type="text" name="price"><h1>Ordningsnummer</h1><input value="<?php if(isset($order_number)){echo $order_number;} ?>" type="text" name="order_number"><div class="admin_list_container admin_tech_list"><h1>Bilder till bildspel</h1><!--- THIS FIRST ONE IS HIDDEN AND IS ONLY A TEMPLETE FOR CREATING A NEW ONE BUT IT HAS TO BE HERE  --><div class="template admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current: </strong>none</p><img src="img/cross.svg" class="center_vertically_css remove_item" alt="Remove item"></div> <?php
                             // The ones that already exist for this product
                             foreach ($slider_images as $image) {
 
                                 $image_id = $image['product_image_id'];
                                 $image_name = $image['filename'];
-                                ?> <div class="admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input image_id="<?php echo $image_id;  ?>" class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $image['data']); ?>" alt="image of the curent image"> <img src="../img/cross.svg" image_id="<?php echo $image_id; ?>" class="center_vertically_css remove_item" alt="remove item from list"></div> <?php
+                                ?> <div class="admin_list_item image_list_item"><p class="center_vertically_css"><strong>New image:</strong></p><input image_id="<?php echo $image_id;  ?>" class="center_vertically_css" name="slider_image[]" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $image['data']); ?>" alt="image of the curent image"> <img src="img/cross.svg" image_id="<?php echo $image_id; ?>" class="center_vertically_css remove_item" alt="Remove item"></div> <?php
                             }
                             ?> <div class="add_item">Add new image</div></div><h1>Huvudbild</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="main_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image); ?>" alt="preview of the curent image"></div><h1>Bild 2</h1><div class="image_select_container"><p class="center_vertically_css"><strong>New image:</strong></p><input name="about_image" class="center_vertically_css" type="file" onchange="compress_image(event)"><p class="center_vertically_css"><strong>Current:</strong></p><img class="center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $about_image); ?>" alt="preview of the curent image"></div><section class="col-md-4 col-md-offset-4"><button id="js-trigger-overlay" onclick="send_form(this, 'add_product.php', 'form')" type="button">Save product</button></section></form></div></div></div></section></body> <?php
 }

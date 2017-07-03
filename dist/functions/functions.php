@@ -25,11 +25,31 @@ if(!isset($functions_included)){
         $con = connect();
         //$data = stripslashes($data);
         $data = trim($data);
-        $data = addslashes($data);
+        /*$data = addslashes($data);*/
         $data = mysqli_real_escape_string($con, $data);
         $data = strip_tags($data);
 
         return $data;
+    }
+
+
+    function get_lang(){
+        if(isset($_SESSION['lang'])){
+            return $_SESSION['lang'];
+        }
+        else {
+            return "sv";
+        }
+    }
+
+    function translate($obj, $field){
+        if(get_lang() == "dk"){
+            return $obj[$field . "_dk"];
+
+        }
+        else {
+            return $obj[$field];
+        }
     }
 
     //read slider images

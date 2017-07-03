@@ -9,9 +9,10 @@ $con = connect();
 //$product_id   = get_product_id_by_name($con, $name);
 $product_id     = $_GET['id'];
 $product        = get_product_by_id($con, $product_id);
-$short          = $product['short_description'];
+
+$short          = translate($product, 'short_description');
+$long           = translate($product, 'long_description');
 $name           = $product['name'];
-$long           = $product['long_description'];
 $price          = $product['price'];
 $main_image     = $product['main_image'];
 $about_image    = $product['about_image'];

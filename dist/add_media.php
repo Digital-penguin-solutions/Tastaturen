@@ -47,12 +47,18 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     $yt_id = "";
 
+
     if($video_link != ""){
         // if it is a regular link
         if(strpos($video_link, "embed") == false){
             $split_v = explode("v=", $video_link);
             $yt_id = explode("?", $split_v[1])[0];
             $video_link = "https://www.youtube.com/embed/" . $yt_id;
+        }
+        else {
+            $split_v = explode("/", $video_link);
+            $yt_id = end($split_v);
+            //$video_link = "https://www.youtube.com/embed/" . $yt_id;
         }
 
         //$thumbnail_url = "https://img.youtube.com/vi/" . $yt_id . "/0.jpg";
