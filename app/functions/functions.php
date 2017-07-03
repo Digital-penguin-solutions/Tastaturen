@@ -603,10 +603,15 @@ if(!isset($functions_included)){
 
         
         if($field != null){ // if field already exists
-            $value = $field['value'];
+            if(get_lang() == "sv"){
+                $value = $field['value'];
+            }
+            else {
+                $value = $field['value_dk'];
+            }
             echo "<span>".$value . "</span>";
         }
-        else {
+        if($field == null || $value == ""){
             create_field($name);
             echo "<span> Click to edit </span>";
         }
