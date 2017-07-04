@@ -43,6 +43,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $type               = secure_str($_POST["type"]);
     $order_number       = secure_str($_POST["order_number"]);
 
+
     if (isset($_POST["removed_images"])){
         $removed_images = $_POST["removed_images"];
     }
@@ -234,7 +235,7 @@ if (isset($_SESSION['admin'])) {
                         <input value = "<?php echo $price ?>" type = "text" name = "price">
 
                         <h1>Ordningsnummer</h1>
-                        <input value = "<?php if(isset($order_number)){echo $order_number;} ?>" type = "text" name = "order_number">
+                        <input value = "<?php if(isset($order_number)){echo $order_number;}else {echo "100";} ?>" type = "text" name = "order_number">
 
                         <div class = "admin_list_container admin_tech_list">
                             <h1>Bilder till bildspel</h1>

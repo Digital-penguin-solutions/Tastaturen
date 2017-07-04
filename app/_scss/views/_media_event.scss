@@ -52,3 +52,15 @@
         }
     }
 }
+// desktop and tablet only
+@media (max-width: $screen-md-min) {
+    .media_even_container_container {
+        iframe{
+            min-height:30vh !important;
+        }
+        p{
+            font-size:3vw !important;
+        }
+    }
+
+}

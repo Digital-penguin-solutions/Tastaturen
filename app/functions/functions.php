@@ -701,7 +701,7 @@ if(!isset($functions_included)){
         //echo "data:image/jpeg;base64," . base64_encode($data);
         ?>
 
-        <img onclick="open_input('<?php echo $name?>')" class = "<?php echo $classes; ?>" src = "functions/load_stored_image.php?name=<?php echo $name;?>" alt = "No image selected">
+        <img onclick="open_input('<?php echo $name?>')" class = "<?php echo $classes; ?>" src = "functions/load_stored_image.php?name=<?php echo $name; if(isset($_GET['r'])){ echo "&r=" . $_GET['r'];}?>" alt = "No image selected">
 
         <!--<img onclick="open_input('<?php //echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php //echo base64_encode($data) ?>" alt="No image selected"/>-->
         <?php

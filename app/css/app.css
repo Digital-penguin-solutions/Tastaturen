@@ -1717,6 +1717,12 @@ section {
         margin-top: 2vh;
         font-size: 1.2vw; }
 
+@media (max-width: 992px) {
+  .media_even_container_container iframe {
+    min-height: 30vh !important; }
+  .media_even_container_container p {
+    font-size: 3vw !important; } }
+
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
@@ -3672,7 +3678,8 @@ section {
         height: auto; }
         .i_media .grid_container .grid_part .i_media_item {
           width: 100%;
-          height: 50vh !important; }
+          height: 50vh !important;
+          overflow-x: hidden; }
           .i_media .grid_container .grid_part .i_media_item img {
             min-width: 100%;
             height: 100%; } }

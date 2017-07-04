@@ -33,7 +33,7 @@
             ?>
             <p> <?php echo $content; ?></p>
             <?php 
-            if($type == "image"){
+            if($type == "image" && $second_image != ""){
                 ?>
                 <img class = "" src="data:image/jpeg;base64,<?php echo base64_encode( $second_image ); ?>" alt="No image selected"/>
                 <?php
