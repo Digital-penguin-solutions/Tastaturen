@@ -20,7 +20,7 @@
                         <div class="i_slider_1_left_btn ">
                             <p><?php print_field("i_slider_1_kyrka_info"); ?> </p>
                             <button class = "slide-in-delay-3 slide-in slide-in-left"
-                                    onclick="location.href='product_details?t=kyrka'">Kyrkobruk</button>
+                                    onclick="location.href='product_details?t=kyrka'"><?php print_field("i_kyrka_header"); ?></button>
                         </div>
                     </div>
 
@@ -33,7 +33,7 @@
                         <div class="i_slider_1_right_btn">
                             <p><?php print_field("i_slider_1_home_info"); ?> </p>
                             <button class = "slide-in-delay-3 slide-in"
-                                    onclick="location.href='product_details?t=hem'">Hemmabruk</button>
+                                    onclick="location.href='product_details?t=hem'"><?php print_field("i_hem_header"); ?></button>
                         </div>
                     </div>
                 </div>
