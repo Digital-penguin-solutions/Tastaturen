@@ -3335,7 +3335,7 @@ section {
             float: left; }
             .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button {
               width: 80%;
-              font-size: 1.5vw !important; }
+              font-size: 2vw !important; }
           .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left:hover .i_slider_1_left_img {
             transition: 0.2s; }
             .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left:hover .i_slider_1_left_img img {
@@ -4490,9 +4490,9 @@ section {
 .i_info2 {
   background: #212121; }
   .i_info2 .i_info2_container h1 {
+    text-align: center;
     font-size: 6vw;
     font-weight: 600;
-    text-align: center;
     background: #1e1e1e;
     width: 100%;
     color: white;
