@@ -28,4 +28,5 @@ Media
 
 Admin
     * Knapp för att editera produkter när man är inne på dem 
-    * Tillbaka knapp från edit product & media
+    * Knapp för att abryta redigering av en produkt och gå tillbaka till admin sidan
+

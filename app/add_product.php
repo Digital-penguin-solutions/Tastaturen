@@ -231,8 +231,13 @@ if (isset($_SESSION['admin'])) {
                         <h1> Broschyr</h1>
                         <input id = "brochure" name = "brochure" class = "center_horizontally_css" type = "file" >
 
-                        <h1>Pris</h1>
+                        
+                        <h1> Lämna prisen nedan tomma ifall du vill att det ska stå "Kontakta oss för prisuppgifter" </h1>
+                        <h1>Svenskt pris</h1>
                         <input value = "<?php echo $price ?>" type = "text" name = "price">
+
+                        <h1>Danskt pris</h1>
+                        <input value = "<?php echo $price ?>" type = "text" name = "price_dk">
 
                         <h1>Ordningsnummer</h1>
                         <input value = "<?php if(isset($order_number)){echo $order_number;}else {echo "100";} ?>" type = "text" name = "order_number">
