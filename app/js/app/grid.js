@@ -109,7 +109,11 @@ function init_grids(){
             //setTimeout(function(){set_text_color(items);}, 300);
         }
         else {
+            var part = document.createElement('div');
+            part.className = "grid_part";
+            $(grid).append(part);
             for(var n = 0; n < items.length; n++){
+                $(part).append(items[i]);
                 
             }
             

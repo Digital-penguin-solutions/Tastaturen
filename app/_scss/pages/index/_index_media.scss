@@ -1,64 +1,94 @@
 @import "../../everything";
 
 .i_media_header{
-  width: 100%;
-  height: 15vh;
-  background: $color5;
-  top:0;
+    width: 100%;
+    height: 15vh;
+    background: $color5;
+    top:0;
 
-  h1{
-    vertical-align: middle;
-    line-height: 15vh;
-    @extend .nopm;
-    color: white;
-    font-size: 4vw;
-    text-align: center;
-  }
+    h1{
+        vertical-align: middle;
+        line-height: 15vh;
+        @extend .nopm;
+        color: white;
+        font-size: 4vw;
+        text-align: center;
+    }
 }
 
 //media section
 .i_media{
-  height:200vh;
-  padding-bottom:1vh; /* Should be the same as the gap_size variable in grid.js */
-  background:$color3;
-
-  .i_media_container{
-    height: 100%;
-    margin:auto;
-    @extend .nopm;
-  }
-
-  .i_media_item {
-    overflow:hidden;
-
-    .i_media_inner {
-        width:100%;
-        height:100%;
-        &:hover{
-          background: rgba($color2, 0.3);
-          transition: 0.3s;
-        }
-
-        i {
-            position:absolute;
-            font-size:3vw;
-            @include center-align($pos:absolute);
-            color:red;
-            z-index:200;
-        }
+    height:200vh; padding-bottom:1vh; /* Should be the same as the gap_size variable in grid.js */ background:$color3; .i_media_container{
+        height: 100%;
+        margin:auto;
+        @extend .nopm;
     }
 
-    img {
-        //visibility:hidden;
+    .i_media_item {
+        overflow:hidden;
+
+        .i_media_inner {
+            width:100%;
+            height:100%;
+            &:hover{
+                background: rgba($color2, 0.3);
+                transition: 0.3s;
+            }
+
+            i {
+                position:absolute;
+                font-size:3vw;
+                @include center-align($pos:absolute);
+                color:red;
+                z-index:200;
+            }
+        }
+
+        img {
+            //visibility:hidden;
+        }
     }
-  }
 }
 
 //tablet size
 @media (min-width: $screen-sm-min) {
+
 }
 
-//desktop size
-@media (min-width: $screen-md-min) {
+// tablet and desktop only
+@media (max-width: $screen-md-min) {
+
+    .i_media {
+        overflow-y:auto;
+        height:auto !important;
+        .row_fluid {
+            overflow-y:auto;
+        }
+        .grid_container {
+            overflow-y:auto;
+            height:auto;
+            .grid_part {
+                width:100% !important;
+                overflow-y:auto;
+                height:auto;
+                .i_media_item {
+                    width:100%;
+                    height:50vh !important;
+
+                    img{
+                        min-width:100%;
+                        height:100%;
+                    }
+
+                }
+            }
+        }
+
+        div {
+            //height:auto;
+            //overflow:auto;
+        }
+
+    }
 }
 

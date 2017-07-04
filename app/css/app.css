@@ -3657,6 +3657,26 @@ section {
         color: red;
         z-index: 200; }
 
+@media (max-width: 992px) {
+  .i_media {
+    overflow-y: auto;
+    height: auto !important; }
+    .i_media .row_fluid {
+      overflow-y: auto; }
+    .i_media .grid_container {
+      overflow-y: auto;
+      height: auto; }
+      .i_media .grid_container .grid_part {
+        width: 100% !important;
+        overflow-y: auto;
+        height: auto; }
+        .i_media .grid_container .grid_part .i_media_item {
+          width: 100%;
+          height: 50vh !important; }
+          .i_media .grid_container .grid_part .i_media_item img {
+            min-width: 100%;
+            height: 100%; } }
+
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
