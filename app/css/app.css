@@ -2597,7 +2597,7 @@ section {
       top: 50%;
       transform: translateY(-50%);
       text-align: center;
-      color: black; }
+      color: #212121; }
       .pe_header .pe_header_container .pe_header_text h1 {
         font-size: 7.5vw;
         font-weight: 600; }

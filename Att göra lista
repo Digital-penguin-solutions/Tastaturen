@@ -1,9 +1,6 @@
 Viktigt
-    * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen.
+    * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen. (Fixade länkarna sitemap men inte snyggt)
     * Fixa smoothe scroll när man klikar på länkar i naven.
-    * Fixa så att det finns 2 sidor en på danska en på svenska.
-        Detta ska göras genom att när man går in på tastaturen.dk direkteras man till tastaturen.se fast med dansk text
-    * Fixa så att om man inte skriver in priset så står det kontakta för pris och de Hammnar längs ner när man sorterar efter pris.
 
 Index
     * Media

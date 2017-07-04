@@ -36,7 +36,7 @@
             z-index: 100;
             @include vertical-align();
             text-align: center;
-            color:black;
+            color:$color4;
 
             h1{
                 font-size: 7.5vw;

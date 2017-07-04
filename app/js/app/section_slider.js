@@ -124,7 +124,6 @@ function slider_go_to_page(slider_number, page){
 
 }
 
-
 function move_section(left, comp){
 
     var slider_num = $(comp).attr("slider_number");
@@ -137,7 +136,6 @@ function move_section(left, comp){
 
     slider_go_to_page(slider_num, new_page);
 }
-
 
 function init_sliders(){
 
@@ -303,7 +301,6 @@ function init_sliders(){
         }
     }
 }
-
 
 function reenable_effects(page) {
 
