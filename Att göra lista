@@ -2,7 +2,13 @@ Viktigt
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen. (Fixade länkarna sitemap men inte snyggt)
     * Fixa smoothe scroll när man klikar på länkar i naven.
 
+
+Product
+    * Saker ser fortfarande inte så bra ut på mobil.
+
 Index
+    * Knapparna på översta sektionen är för små
+
     * Media
         # På telefonen kan det vara bilder som är 100vw breda och 40.vh höga men har samma funkonalitet som på desktop.
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.

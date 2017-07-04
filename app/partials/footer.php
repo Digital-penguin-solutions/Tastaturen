@@ -13,9 +13,9 @@
 
             <div class="footer_mid">
                 <ul>
-                    <li><a href="index#kontakta">Kontakta</a></li>
-                    <li><a href="product_details?t=kyrka">Orglar för kyrkan</a></li>
-                    <li><a href="product_details?t=hem">Orglar för hemmet</a></li>
+                    <li><a href="index#kontakta"><?php print_field("i_kontakt_header"); ?></a></li>
+                    <li><a href="product_details?t=kyrka"><?php print_field("i_kyrka_header"); ?></a></li>
+                    <li><a href="product_details?t=hem"><?php print_field("i_hem_header"); ?></a></li>
                     <li class="hidden-xs hidden-sm"><a href="admin">Admin</a></li>
                 </ul>
                 <hr>

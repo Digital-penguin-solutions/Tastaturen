@@ -13,98 +13,101 @@ function init_grids(){
     for(var i = 0; i < grids.length; i++){
         var grid = grids[i];
         var grid_temp_holder = grid.getElementsByClassName("grid_temp_holder")[0];
-        var big_items = $(grid_temp_holder).find(".grid_item[size=big]");
-        var medium_items = $(grid_temp_holder).find(".grid_item[size=medium]");
-        var small_items = $(grid_temp_holder).find(".grid_item[size=small]");
-
         var items = grid.getElementsByClassName("grid_item");
 
-        $(items).css("marginLeft", gap_size + "%");
-        $(items).css("marginTop", gap_size + "vh");
+        if(isDesktop()){
+            var big_items = $(grid_temp_holder).find(".grid_item[size=big]");
+            var medium_items = $(grid_temp_holder).find(".grid_item[size=medium]");
+            var small_items = $(grid_temp_holder).find(".grid_item[size=small]");
 
 
-        var parts = [];
-
-        for(var n = 0; n < 4; n++){
-            var part = document.createElement('div');
-            part.className = "grid_part";
-            $(part).attr("filled", 0);
-            parts[n] = part;
-            $(grid).append(part);
-        }
-
-        var width = 100 - gap_size;
-        var height = 100 - gap_size;
-        $(big_items).css("width", width + "%");
-        $(big_items).css("height", height + "%");
-
-        for(var n = 0; n < big_items.length; n++){
-            var item = big_items[n];
-            var free_part = $(parts).filter("[filled=0]").first();
-            free_part.append(item);
-            free_part.attr("filled",4);
-        }
+            $(items).css("marginLeft", gap_size + "%");
+            $(items).css("marginTop", gap_size + "vh");
 
 
-        var width = 100 - gap_size;
-        var height = 50 - gap_size;
-        $(medium_items).css("width", width + "%");
-        $(medium_items).css("height", height + "%");
+            var parts = [];
 
-        //var num_medium_prio = 3;
-
-        for(var n = 0; n < medium_items.length; n++){
-            var item = medium_items[n];
-
-            var part_zero = $(parts).filter("[filled=0]").first();
-
-            if(part_zero.length > 0){
-                $(part_zero).append(item);
-                $(part_zero).attr("filled" , 2);
+            for(var n = 0; n < 4; n++){
+                var part = document.createElement('div');
+                part.className = "grid_part";
+                $(part).attr("filled", 0);
+                parts[n] = part;
+                $(grid).append(part);
             }
-            else {
-                var part_two = $(parts).filter("[filled=2]").first();
 
-                if(part_two.length > 0){
-                    $(part_two).append(item);
-                    $(part_two).attr("filled" , 4);
+            var width = 100 - gap_size;
+            var height = 100 - gap_size;
+            $(big_items).css("width", width + "%");
+            $(big_items).css("height", height + "%");
+
+            for(var n = 0; n < big_items.length; n++){
+                var item = big_items[n];
+                var free_part = $(parts).filter("[filled=0]").first();
+                free_part.append(item);
+                free_part.attr("filled",4);
+            }
+
+
+            var width = 100 - gap_size;
+            var height = 50 - gap_size;
+            $(medium_items).css("width", width + "%");
+            $(medium_items).css("height", height + "%");
+
+            //var num_medium_prio = 3;
+
+            for(var n = 0; n < medium_items.length; n++){
+                var item = medium_items[n];
+
+                var part_zero = $(parts).filter("[filled=0]").first();
+
+                if(part_zero.length > 0){
+                    $(part_zero).append(item);
+                    $(part_zero).attr("filled" , 2);
                 }
-            }
-            //$(part + "[filled=0]").first().append(item);
-        }
+                else {
+                    var part_two = $(parts).filter("[filled=2]").first();
 
-        var width = 50 - gap_size;
-        var height = 50 - gap_size;
-        $(small_items).css("width", width + "%");
-        $(small_items).css("height", height + "%");
-
-        for(var n = 0; n < small_items.length; n++){
-            var item = small_items[n];
-
-            //var free_part = $(part).not("[filled=4]").first();
-            var free_part = $(parts).not("[filled=4]").first();
-            var filled_value = $(free_part).attr("filled")*1.0;
-
-            if(filled_value == 3 || filled_value == 4){
-
-                //$(item).css("position", "absolute");
-                //$(item).css("bottom", "0");
+                    if(part_two.length > 0){
+                        $(part_two).append(item);
+                        $(part_two).attr("filled" , 4);
+                    }
+                }
+                //$(part + "[filled=0]").first().append(item);
             }
 
-            $(free_part).append(item);
-            $(free_part).attr("filled", (filled_value+1));
+            var width = 50 - gap_size;
+            var height = 50 - gap_size;
+            $(small_items).css("width", width + "%");
+            $(small_items).css("height", height + "%");
+
+            for(var n = 0; n < small_items.length; n++){
+                var item = small_items[n];
+
+                //var free_part = $(part).not("[filled=4]").first();
+                var free_part = $(parts).not("[filled=4]").first();
+                var filled_value = $(free_part).attr("filled")*1.0;
+
+                if(filled_value == 3 || filled_value == 4){
+
+                    //$(item).css("position", "absolute");
+                    //$(item).css("bottom", "0");
+                }
+
+                $(free_part).append(item);
+                $(free_part).attr("filled", (filled_value+1));
+            }
+
+
+            var num_parts = Math.ceil(items.length / items_per_part);
+            //for(var n = 0; n < num_parts; n++){
+            //init_part(grid, items, n*);
+            //}
+            //init_part(grid, items, 0, 0);
+
+            /*set_text_color(items);*/
+            // a small delay to make sure all the images have loaded properly
+            //setTimeout(function(){set_text_color(items);}, 300);
         }
-
-
-        var num_parts = Math.ceil(items.length / items_per_part);
-        //for(var n = 0; n < num_parts; n++){
-        //init_part(grid, items, n*);
-        //}
-        //init_part(grid, items, 0, 0);
-
-        /*set_text_color(items);*/
-        // a small delay to make sure all the images have loaded properly
-        setTimeout(function(){set_text_color(items);}, 300);
         $(grid_temp_holder).remove();
     }
 }
