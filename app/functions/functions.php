@@ -55,6 +55,7 @@ if(!isset($functions_included)){
                 $value = "Kontakta oss för prisuppgifter";
             }
         }
+        debug_to_console("lang: " .get_lang());
         return $value;
     }
 
@@ -444,7 +445,7 @@ if(!isset($functions_included)){
 
     }
     function get_all_media_posts_small($con){
-        $query  = "SELECT youtube_id, type, size, media_id, header_image, title FROM media";
+        $query  = "SELECT youtube_id, type, size, media_id, header_image,title_dk, title FROM media";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
 
         $array  = array();

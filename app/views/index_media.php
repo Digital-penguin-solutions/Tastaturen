@@ -12,7 +12,8 @@
                 $posts = get_all_media_posts_small($con);
 
                 foreach($posts as $post){
-                    $title        = $post['title'];
+                    $title        = translate($post,'title');
+                    debug_to_console($title);
 
                     $header_image = $post['header_image'];
                     $size         = $post['size'];

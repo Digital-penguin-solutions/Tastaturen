@@ -38,6 +38,8 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     $title              = secure_str($_POST["title"]);
     $content            = secure_str($_POST["content"]);
+    $title_dk           = secure_str($_POST["title_dk"]);
+    $content_dk         = secure_str($_POST["content_dk"]);
     $video_link         = secure_str($_POST["video_link"]);
     $type               = secure_str($_POST["type"]);
     $size               = secure_str($_POST["size"]);
@@ -85,7 +87,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO media (title, content, video_link, type, size, youtube_id) VALUES ('$title', '$content', '$video_link', '$type', '$size', '$yt_id')";
+        $query = "INSERT INTO media (title,title_dk, content,content_dk, video_link, type, size, youtube_id) VALUES ('$title','$title_dk', '$content','$content_dk', '$video_link', '$type', '$size', '$yt_id')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -94,7 +96,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     }
     else { // query for updating constant values
         
-        $query = "UPDATE media SET title = '$title', content='$content', video_link='$video_link', type = '$type', size= '$size', youtube_id = '$yt_id' WHERE media_id = '$media_id'";
+        $query = "UPDATE media SET title = '$title', title_dk = '$title_dk', content='$content', content_dk='$content_dk', video_link='$video_link', type = '$type', size= '$size', youtube_id = '$yt_id' WHERE media_id = '$media_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -135,6 +137,8 @@ if (isset($_SESSION['admin'])) {
         $post               = get_media_by_id($con, $media_id);
         $title              = $post['title'];
         $content            = $post['content'];
+        $title_dk           = $post['title_dk'];
+        $content_dk         = $post['content_dk'];
         $video_link         = $post['video_link'];
         $type               = $post['type'];
         $header_image       = $post['header_image'];
@@ -148,6 +152,8 @@ if (isset($_SESSION['admin'])) {
         // if a new product is to be created, all the values should be empty
         $title              = "";
         $content            = "";
+        $content_dk         = "";
+        $title_dk           = "";
         $video_link         = "";
         $type               = "";
         $size               = "";
@@ -178,11 +184,17 @@ if (isset($_SESSION['admin'])) {
                         }
                         ?>
 
-                        <h1>Rubrik</h1>
+                        <h1>Rubrik (Svenska)</h1>
                         <input value = "<?php echo $title ?>" type = "text" name = "title">
 
-                        <h1>Text</h1>
+                        <h1>Rubrik (Danska)</h1>
+                        <input value = "<?php echo $title_dk ?>" type = "text" name = "title_dk">
+
+                        <h1>Text (Svenska)</h1>
                         <textarea name = "content" class="short_description"><?php echo $content?></textarea>
+
+                        <h1>Text (Danska)</h1>
+                        <textarea name = "content_dk" class="short_description"><?php echo $content_dk?></textarea>
 
                         <h1> Storlek </h1>
                         <select class = "" name="size">
@@ -215,7 +227,7 @@ if (isset($_SESSION['admin'])) {
                                 <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image); ?>" alt="None"/>
                             </div>
 
-                            <h1> Bild 2 </h1>
+                            <h1> Bild 2 (Optional) </h1>
                             <div class = "image_select_container">
                                 <p class = "center_vertically_css"> <strong>New image: </strong> </p>
                                 <input name = "second_image" class = "center_vertically_css"  type = "file" onchange="compress_image(event)" >

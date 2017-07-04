@@ -1,12 +1,13 @@
 <?php
     include "../functions/functions.php";
+    session_start();
     $con = connect();
     $media_id = $_GET['media_id'];
     $post = get_media_by_id($con, $media_id);
-    $title = $post['title'];
+    $title = translate($post, 'title');
     $header_image = $post['header_image'];
     $second_image = $post['second_image'];
-    $content = $post['content'];
+    $content = translate($post, 'content');
     $type = $post['type'];
     $video_link = $post['video_link'];
 
