@@ -109,6 +109,9 @@ function init_grids(){
             //setTimeout(function(){set_text_color(items);}, 300);
         }
         else {
+            for(var n = 0; n < items.length; n++){
+                
+            }
             
         }
         $(grid_temp_holder).remove();
