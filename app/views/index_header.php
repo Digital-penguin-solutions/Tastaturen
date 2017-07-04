@@ -47,7 +47,7 @@
                                 <p><?php print_field("i_slider_2_text"); ?> </p>
                                 <div class="i_slider_2_btn ">
                                     <button class = "slide-in-delay-3 slide-in slide-in-left"
-                                            onclick="location.href='product?id=327'">Läs mer</button>
+                                            onclick="location.href='product_details?t=hem'">Läs mer</button>
                                 </div>
                             </div>
                         </div>

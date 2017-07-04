@@ -636,15 +636,15 @@ if(!isset($functions_included)){
 
             // if it is a link
             if(parent_type == "A"){
-                var click_element = "<div class = 'edit_field_btn'> Edit </div>";
-                $(click_element).attr("name", name);
-                $(click_element).click(function(){
-                    show_edit_view(this);
-                });
+                //var click_element = "<div class = 'edit_field_btn'> Edit </div>";
+                //$(click_element).attr("name", name);
+                //$(click_element).click(function(){
+                    //show_edit_view(this);
+                //});
                 //$(parent).append(click_element);
 
             }
-            else {
+            else { // any element but a link
 
                 $(parent).attr("name", name);
                 $(parent).click(function(){

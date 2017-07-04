@@ -25,7 +25,7 @@ $con = connect();
 
         <!--Nav links-->
         <div class="nav_d_link">
-            <a class = "nav_link" href="index#Intro">Hem</a>
+            <a class = "nav_link" href="index#Intro"><?php print_field("i_home_header"); ?></a>
             <a class = "nav_link" href="index#Info"><?php print_field("i_about_header"); ?></a>
             <a class = "nav_link" href="product_details?t=hem"><?php print_field("i_hem_header"); ?></a>
             <a class = "nav_link" href="product_details?t=kyrka"><?php print_field("i_kyrka_header"); ?></a>
