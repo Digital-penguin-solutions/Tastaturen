@@ -3047,7 +3047,7 @@ section {
 
 .p_info {
   background: #212121;
-  height: 150vh; }
+  min-height: 100vh; }
   .p_info .p_info_container {
     height: 150vh;
     width: 100vw; }
@@ -3072,7 +3072,7 @@ section {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        height: 100%; }
+        height: 70%; }
 
 .p_slider {
   height: 100vh; }
