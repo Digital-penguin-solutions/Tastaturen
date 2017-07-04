@@ -108,6 +108,9 @@ function init_grids(){
             // a small delay to make sure all the images have loaded properly
             //setTimeout(function(){set_text_color(items);}, 300);
         }
+        else {
+            
+        }
         $(grid_temp_holder).remove();
     }
 }
