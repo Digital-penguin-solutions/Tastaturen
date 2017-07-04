@@ -43,13 +43,23 @@ if(!isset($functions_included)){
     }
 
     function translate($obj, $field){
+        $value = "";
         if(get_lang() == "dk"){
-            return $obj[$field . "_dk"];
-
+            $value = $obj[$field . "_dk"];
         }
         else {
-            return $obj[$field];
+            $value = $obj[$field];
         }
+
+        if($field == "price" && $value == ""){
+            if(get_lang() == "dk"){
+                $value = "Kontakt os for priser";
+            }
+            else {
+                $value = "Kontakta oss för prisuppgifter";
+            }
+        }
+        return $value;
     }
 
     //read slider images

@@ -40,6 +40,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $short_dk           = secure_str($_POST["short_description_dk"]);
     $long_dk            = secure_str($_POST["long_description_dk"]);
     $price              = secure_str($_POST["price"]);
+    $price_dk           = secure_str($_POST["price_dk"]);
     $type               = secure_str($_POST["type"]);
     $order_number       = secure_str($_POST["order_number"]);
 
@@ -75,7 +76,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, short_description_dk, long_description, long_description_dk, price, type, brochure, order_number) VALUES ('$name', '$short', '$short_dk', '$long', '$long_dk', '$price', '$type', '$brochure_data', '$order_number')";
+        $query = "INSERT INTO product (name, short_description, short_description_dk, long_description, long_description_dk, price, price_dk, type, brochure, order_number) VALUES ('$name', '$short', '$short_dk', '$long', '$long_dk', '$price','$price_dk', '$type', '$brochure_data', '$order_number')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -83,7 +84,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $product_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
-        $query = "UPDATE product SET name = '$name', short_description='$short', short_description_dk='$short_dk', long_description_dk='$long_dk', long_description='$long', price = '$price', type = '$type', order_number='$order_number' WHERE product_id = '$product_id'";
+        $query = "UPDATE product SET name = '$name', short_description='$short', short_description_dk='$short_dk', long_description_dk='$long_dk', long_description='$long', price_dk = '$price_dk', price = '$price', type = '$type', order_number='$order_number' WHERE product_id = '$product_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -164,6 +165,7 @@ if (isset($_SESSION['admin'])) {
         $short_dk           = $product['short_description_dk'];
         $long_dk            = $product['long_description_dk'];
         $price              = $product['price'];
+        $price_dk           = $product['price_dk'];
         $main_image         = $product['main_image'];
         $about_image        = $product['about_image'];
         $type               = $product['type'];
@@ -180,6 +182,7 @@ if (isset($_SESSION['admin'])) {
         $short_dk           = "";
         $long_dk            = "";
         $price              = "";
+        $price_dk           = "";
         $type               = "";
         $slider_images      = array();
     }
@@ -237,7 +240,7 @@ if (isset($_SESSION['admin'])) {
                         <input value = "<?php echo $price ?>" type = "text" name = "price">
 
                         <h1>Danskt pris</h1>
-                        <input value = "<?php echo $price ?>" type = "text" name = "price_dk">
+                        <input value = "<?php echo $price_dk ?>" type = "text" name = "price_dk">
 
                         <h1>Ordningsnummer</h1>
                         <input value = "<?php if(isset($order_number)){echo $order_number;}else {echo "100";} ?>" type = "text" name = "order_number">
