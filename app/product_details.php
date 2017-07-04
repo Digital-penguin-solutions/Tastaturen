@@ -48,12 +48,12 @@ else {
             </h1>
             <p>
                 <?php
-                if($type == "hem"){
-                    print_field("pe_info_home");
-                }
-                else {
-                    print_field("pe_info_church");
-                }
+                //if($type == "hem"){
+                    ////print_field("pe_info_home");
+                //}
+                //else {
+                    ////print_field("pe_info_church");
+                //}
                 ?>
             </p>
         </div>

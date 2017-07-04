@@ -12,7 +12,7 @@ $con = connect();
         <div class="nav_cart">
             <a href = "#" class="offert_open">
                 <i class="fa fa-bell-o"> </i>
-                Kontakta för köp
+                <?php print_field("i_kontakt_header");?>
             </a>
         </div>
 

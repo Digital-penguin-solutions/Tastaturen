@@ -24,7 +24,7 @@ $product        = get_product_by_id($con, $product_id);
 $short          = translate($product, 'short_description');
 $long           = translate($product, 'long_description');
 $name           = $product['name'];
-$price          = $product['price'];
+$price          = translate($product, 'price');
 $main_image     = $product['main_image'];
 $about_image    = $product['about_image'];
 $slider_images  = get_product_images_by_id($con, $product_id);
@@ -55,10 +55,10 @@ $slider_images  = get_product_images_by_id($con, $product_id);
                     <h2><?php echo $short;?></h2>
                 </div>
                 <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'"
-                        class="p_prod_head_btn_broschyr">Ladda ner Broschyr
+                        class="p_prod_head_btn_broschyr"><?php print_field("download_brochure_btn");?>
                 </button>
                 <button product_id = "<?php echo $product_id; ?>"
-                        class="send_offert p_prod_head_btn_order">Skicka en offert
+                        class="send_offert p_prod_head_btn_order"><?php print_field("offert_btn");?>
                 </button>
                 <div class="p_prod_head_img">
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>" alt="orgel produkt bild"/>
@@ -74,7 +74,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
         <div class="col-xs-12 p_info_container">
             <div class="p_info_text col-md-4 col-md-offset-1 col-xs-12">
                 <h1><?php echo $name; ?></h1>
-                <h3>PRICE: <?php echo $price; ?></h3>
+                <h3><?php echo $price; ?></h3>
                 <p> <?php echo $long; ?></p>
             </div>
             <div class="p_info_img col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
@@ -106,7 +106,9 @@ $slider_images  = get_product_images_by_id($con, $product_id);
             <p> <?php echo $short;?></p>
         </div>
         <div class="p_info2_btn">
-            <button>För mer information ladda ner Broschyr</button>
+            <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'"
+                    class="p_prod_head_btn_broschyr"><?php print_field("download_brochure_btn2");?>
+            </button>
         </div>
     </div>
 </section>
