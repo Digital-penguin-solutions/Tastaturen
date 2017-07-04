@@ -13,6 +13,7 @@
     $name       = secure_str($_GET['name']);
     $number     = secure_str($_GET['phone']);
     $sec     = secure_str($_GET['sec']);
+    $message     = secure_str($_GET['message']);
 
     if($sec == "sueweuey"){
         if (isset($_SESSION['cart'])) {
@@ -36,6 +37,7 @@
 Name:                   \n $name \n
 Email:                  \n $email \n
 Phone number:           \n $number \n
+Message:                \n $message \n
 Order:                  \n $order \n
 
 EMAIL;

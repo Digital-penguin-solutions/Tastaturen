@@ -1,10 +1,6 @@
 <?php
-//all functions for Metsense.com
 
-//check if functions is included in page to acses them
 if(!isset($functions_included)){
-
-    
 
     $functions_included = true;
 

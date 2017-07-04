@@ -1,7 +1,9 @@
 <?php include "loading.php"; ?>
 <?php include "views/admin_info.php"; ?>
 <?php include "views/edit.php"; ?>
-<?php include "views/offert.php"; ?>
+<?php 
+$con = connect();
+?>
 <?php //include "views/media_event.php"; ?>
 
 <head>
@@ -58,3 +60,4 @@
             integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb"
             crossorigin="anonymous"></script>-->
 </head>
+<?php include "views/offert.php"; 

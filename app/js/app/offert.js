@@ -9,6 +9,7 @@ function on_ready_offert(){
 
     $(".offert_send").click(function(){
         send_offert();
+        display_thankyou();
     });
 
     $(".offert_open").click(function(){
@@ -27,6 +28,12 @@ function load_cart(){
     $(".offert_product").load("functions/echo_cart", function(){
         init_offert();
     });
+}
+
+function display_thankyou(){
+    $(".offert_form").hide();
+    $(".offert_product").hide();
+    $(".offert_thankyou").show();
 }
 
 function send_offert(){

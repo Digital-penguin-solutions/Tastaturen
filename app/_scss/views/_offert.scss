@@ -10,6 +10,27 @@
     display:none;
 
 
+    .offert_thankyou {
+        display:none;
+        margin-top:10%;
+        h1,p {
+            text-align:center;
+            display:block;
+            width:50%;
+            margin-left:25%;
+        }
+        h1 {
+            font-size:3vw;
+        }
+        p{
+            font-size:1.5vw;
+            margin-bottom:5%;
+        }
+        .contact {
+            font-size :1vw;
+            margin-bottom:0;
+        }
+    }
     .offert_container {
         @include center-align($pos: absolute);
         background: $white;
@@ -31,15 +52,23 @@
                 font-size: 1.2vw;
             }
 
-            input {
+            input, .input_offert {
                 margin-bottom: 5vh;
                 border: solid $color4;
                 border-bottom: -1px;
                 border-top: 0;
                 border-left: 0;
                 border-right: 0;
-
                 height: 4vh;
+            }
+
+            textarea {
+                margin-bottom: 5vh;
+                border: solid $color4;
+                border-bottom: -1px;
+                border-top: -1px;
+                border-left: -1px;
+                border-right: -1px;
             }
 
             button {
@@ -93,6 +122,28 @@
                     }
                 }
             }
+        }
+    }
+}
+// tablet and mobile only
+@media (max-width: $screen-md-min) {
+    .offert_form {
+        p{
+            font-size: 3vw !important;
+        }
+    }
+    .offert_thankyou {
+        h1 {
+            font-size:6vw !important;
+        }
+
+        p{
+            font-size:3vw !important;
+            margin-bottom:5%;
+        }
+        .contact {
+            font-size :2.5vw !important;
+            margin-bottom:0;
         }
     }
 }
