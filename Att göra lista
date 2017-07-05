@@ -18,3 +18,6 @@ Prudukt detaljer
 
 Admin
     * Knapp för att abryta redigering av en produkt och gå tillbaka till admin sidan
+
+produkt
+    * Ändra price till pris i databasen. och fixa danska vertionen.
