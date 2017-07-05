@@ -1,11 +1,12 @@
 Viktigt
-    * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen. (Fixade länkarna sitemap men inte snyggt)
     * Fixa smoothe scroll när man klikar på länkar i naven.
 
 Index
     * Media
+
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
         # LÄGGA TILL HOVER EFFECT PÅ MEDIA INLÄGGEN. 
+        # Dansk text på media inlägg
 
     * Länkar
         Fixa att man kan ändra länkarna via databasen.
