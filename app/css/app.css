@@ -3452,12 +3452,6 @@ section {
             .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button {
               width: 100%;
               font-size: 5vw !important; }
-          .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left:hover .i_slider_1_left_img {
-            transition: 0.2s; }
-            .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left:hover .i_slider_1_left_img img {
-              width: 32vw;
-              height: 42vh;
-              transition: 0.4s; }
         .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right {
           height: 100vh;
           background: #c2c2c2; }
@@ -3478,12 +3472,6 @@ section {
               width: 100%;
               font-size: 5vw !important;
               float: right; }
-          .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right:hover .i_slider_1_right_img {
-            transition: 0.4s; }
-            .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right:hover .i_slider_1_right_img img {
-              width: 32vw;
-              height: 42vh;
-              transition: 0.4s; }
 
 @media (min-width: 992px) {
   .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_text {

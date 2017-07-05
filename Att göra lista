@@ -2,11 +2,7 @@ Viktigt
     * Fixa .htaccses så det inte finns några frågestäken eller likande i urlen. (Fixade länkarna sitemap men inte snyggt)
     * Fixa smoothe scroll när man klikar på länkar i naven.
 
-
 Index
-    *Kanske ska ta bort hover effecten på första slidern på orglarna, blir nästan bara störande när man håller på att dra runt musen samt sånna hover effekter får användare att tro att det ska hända något när man klickar på sakerna?
-
-
     * Media
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
         # Samma hover effect på media posterna som på produkterna
@@ -21,5 +17,4 @@ Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt.
 
 Admin
-    * Knapp för att editera produkter när man är inne på dem 
     * Knapp för att abryta redigering av en produkt och gå tillbaka till admin sidan
