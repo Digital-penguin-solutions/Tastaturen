@@ -166,6 +166,7 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="i_map_text_container" id="i_map">
                 <h1>Välkommen till vår fysiska butik i Danmark</h1>
                 <h3>Klicka för att visa kartan</h3>
+                <h3>Naverland 29, 2600 Glostrup</h3>
                 <i class="fa fa-map-marker"></i>
             </div>
         </div>

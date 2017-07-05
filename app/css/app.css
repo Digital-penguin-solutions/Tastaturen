@@ -526,52 +526,54 @@ section {
   position: fixed;
   height: 100vh;
   z-index: 10000; }
-  .nav_d .nav_d_container .nav_d_triage {
-    position: absolute;
-    left: -2.5vw !important;
-    width: 0;
-    height: 0;
-    border-top: 100vw solid #2b2b2b;
-    border-left: 5vw solid transparent; }
-  .nav_d .nav_d_container .nav_cart {
-    z-index: 10002;
-    width: 100%; }
-    .nav_d .nav_d_container .nav_cart a {
-      margin-left: 3vw;
-      font-size: 4vw;
-      color: #ffffff;
-      text-decoration: none; }
-      .nav_d .nav_d_container .nav_cart a i {
-        color: #ffffff; }
-      .nav_d .nav_d_container .nav_cart a:hover {
-        color: #cccccc; }
-        .nav_d .nav_d_container .nav_cart a:hover i {
-          color: #cccccc; }
-  .nav_d .nav_d_container .nav_d_logo {
-    margin-top: 2vh;
-    position: absolute;
-    height: 35vh;
-    width: 35vh; }
-    .nav_d .nav_d_container .nav_d_logo a {
-      height: 100%;
+  .nav_d .nav_d_container {
+    background: #2b2b2b; }
+    .nav_d .nav_d_container .nav_d_triage {
+      position: absolute;
+      left: -2.5vw !important;
+      width: 0;
+      height: 0;
+      border-top: 100vw solid #2b2b2b;
+      border-left: 5vw solid transparent; }
+    .nav_d .nav_d_container .nav_cart {
+      z-index: 10002;
       width: 100%; }
-  .nav_d .nav_d_container .nav_d_link {
-    position: absolute;
-    right: 0;
-    text-align: right;
-    position: absolut;
-    top: 50%;
-    transform: translateY(-50%); }
-    .nav_d .nav_d_container .nav_d_link a {
-      display: block;
-      margin-right: 1.2vw;
-      color: #c3c3c3;
-      font-size: 4.5vw; }
-      .nav_d .nav_d_container .nav_d_link a:hover {
-        color: white;
+      .nav_d .nav_d_container .nav_cart a {
+        margin-left: 3vw;
+        font-size: 4vw;
+        color: #ffffff;
         text-decoration: none; }
-      .nav_d .nav_d_container .nav_d_link a:active {
-        color: #ffffff; }
+        .nav_d .nav_d_container .nav_cart a i {
+          color: #ffffff; }
+        .nav_d .nav_d_container .nav_cart a:hover {
+          color: #cccccc; }
+          .nav_d .nav_d_container .nav_cart a:hover i {
+            color: #cccccc; }
+    .nav_d .nav_d_container .nav_d_logo {
+      margin-top: 2vh;
+      position: absolute;
+      height: 35vh;
+      width: 35vh; }
+      .nav_d .nav_d_container .nav_d_logo a {
+        height: 100%;
+        width: 100%; }
+    .nav_d .nav_d_container .nav_d_link {
+      position: absolute;
+      right: 0;
+      text-align: right;
+      position: absolut;
+      top: 50%;
+      transform: translateY(-50%); }
+      .nav_d .nav_d_container .nav_d_link a {
+        display: block;
+        margin-right: 1.2vw;
+        color: #c3c3c3;
+        font-size: 4.5vw; }
+        .nav_d .nav_d_container .nav_d_link a:hover {
+          color: white;
+          text-decoration: none; }
+        .nav_d .nav_d_container .nav_d_link a:active {
+          color: #ffffff; }
 
 .lang_container {
   position: absolute;
