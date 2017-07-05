@@ -4,25 +4,17 @@ Viktigt
 Index
     * Media
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
-<<<<<<< HEAD
         # Dansk text på media inlägg
-=======
-        # LÄGGA TILL HOVER EFFECT PÅ MEDIA INLÄGGEN. 
->>>>>>> origin/master
 
     * Länkar
         Fixa att man kan ändra länkarna via databasen.
 
-<<<<<<< HEAD
     * Product pris
 
 Prudukt detaljer
     * ta bort sorteringen från prudukt detaljer.
-=======
     *Header
         Transition från hover effecten på de halva orglarna har försvunnit??
-
->>>>>>> origin/master
 
 Admin
     * Knapp för att abryta redigering av en produkt och gå tillbaka till admin sidan
