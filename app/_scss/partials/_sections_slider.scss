@@ -3,9 +3,9 @@
 
 .slider_arrow {
   position: absolute;
-  width: 5%;
-  height: 10%;
-  top: 50%;
+  width: 20%;
+  height: 30%;
+  top: 45%;
   cursor: pointer;
   z-index:1000;
   &:hover {
@@ -32,7 +32,6 @@
   float:left;
   background:#C4C4C4;
 }
-
 
 .slider_preshow{
     z-index:10001;
@@ -119,4 +118,12 @@
   @extend .fullw;
   z-index: 100;
   background: $color3;
+}
+
+@media (min-width: $screen-md-min) {
+  .slider_arrow {
+    width: 5%;
+    height: 10%;
+    top: 50%;
+  }
 }

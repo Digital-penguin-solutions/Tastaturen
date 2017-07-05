@@ -777,9 +777,9 @@ section {
 
 .slider_arrow {
   position: absolute;
-  width: 5%;
-  height: 10%;
-  top: 50%;
+  width: 20%;
+  height: 30%;
+  top: 45%;
   cursor: pointer;
   z-index: 1000; }
   .slider_arrow:hover {
@@ -863,6 +863,12 @@ section {
   min-height: 100%;
   z-index: 100;
   background: #2b2b2b; }
+
+@media (min-width: 992px) {
+  .slider_arrow {
+    width: 5%;
+    height: 10%;
+    top: 50%; } }
 
 ::-webkit-scrollbar {
   background-color: rgba(255, 255, 255, 0.5);

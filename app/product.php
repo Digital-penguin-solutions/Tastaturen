@@ -12,12 +12,7 @@
 <?php
 include "functions/functions.php";
 $con = connect();
-//session_start();
 
-//$_SESSION['cart'] = array();
-
-//$name         = $_GET['n'];
-//$product_id   = get_product_id_by_name($con, $name);
 $product_id     = $_GET['id'];
 $product        = get_product_by_id($con, $product_id);
 
@@ -30,6 +25,7 @@ $about_image    = $product['about_image'];
 $slider_images  = get_product_images_by_id($con, $product_id);
 ?>
 
+<!-- Header. Kort info om produkt och en bakrunds bildspel -->
 <header class="container-fluid p_prod_head" role="banner">
     <div class="row-fluid p_prod_head">
         <div class="col-xs-12 p_prod_head_container">
@@ -68,7 +64,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </header>
 
-<!--information about the product-->
+<!-- Lång information om prudukten -->
 <section class="container-fluid p_info" role="main">
     <div class="row-fluid p_info">
         <div class="col-xs-12 p_info_container">
@@ -84,8 +80,10 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </section>
 
+<!-- om man är innlogad som admin visas knappen för att redigera produkten -->
 <?php include "views/admin_edit_prod.php" ?>
 
+<!-- Slider  -->
 <section class="container-fluid p_slider" role="complementary">
     <div class="row-fluid p_slider_container">
         <div class = "all_slider_container no_list">
@@ -101,6 +99,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </section>
 
+<!-- Info och ladda ner brochyr -->
 <section class="container-fluid p_info2" role="complementary">
     <div class="row-fluid p_info2_container">
         <div class="col-xs-8 col-xs-offset-2 p_info2_text">
@@ -115,6 +114,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </section>
 
+<!-- Lägga till fottern -->
 <?php include "partials/footer.php"?>
 </body>
 </html>
