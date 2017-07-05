@@ -34,7 +34,6 @@
             h1 {
               font-size: 10vw;
               font-weight: 600;
-              text-transform: uppercase;
             }
           }
 
@@ -186,14 +185,13 @@
             background: rgba($color5, 0.3);
 
             .i_slider_2_text_container{
-              color: $color1;
               @include vertical-align();
               margin-top:-10vh;
 
               h1{
+                color: white;
                 font-size: 4vw;
                 font-weight: 600;
-                text-transform: uppercase;
               }
 
               p{
@@ -277,7 +275,7 @@
             background: rgba($color5, 0.3);
 
             .i_slider_4_text_container{
-              color: $color1;
+              color: white;
               height: 100vh;
               width:100%;
               margin-top:15vh;
@@ -286,7 +284,6 @@
               h1{
                 font-size: 6vw;
                 font-weight: 600;
-                text-transform: uppercase;
               }
 
               p{
