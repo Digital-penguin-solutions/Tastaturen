@@ -105,8 +105,9 @@ g.task('imgmin', function () {
 
 // watch for file changes and performs the different tasks
 g.task('dev-watch', function () {
-    g.watch('app/js/**/*.js',         ['concat-js-app','concat-js-third-party']);
-    g.watch('app/_scss/**/*',         ['prefix']);
+    g.watch('app/js/app/*.js',          ['concat-js-app']);
+    g.watch('app/js/third_party/*.js',  ['concat-js-third-party']);
+    g.watch('app/_scss/**/*',            ['prefix']);
 });
 
 //connect to a php server and live update when changes are made

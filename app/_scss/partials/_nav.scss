@@ -12,6 +12,7 @@
 
   .nav_d_container{
     background: $color3;
+    height: 100vh;
 
     .nav_d_triage{
       position: absolute;
@@ -114,7 +115,7 @@
   z-index: 20000;
 
   .McButton {
-    $bar-color: $white;
+    $bar-color: $color5;
     color: $bar-color;
     position: absolute;
     width: 100%;
@@ -147,31 +148,17 @@
   }
 }
 
-@media (min-width: $screen-md-min) {
+@media only screen and (min-width: $screen-md-min) {
   .nav_d{
-    right:0;
-    top:0;
     background: $color3;
-    color: $white;
-    position: fixed;
-    height: 100vh;
-    z-index: 10000;
-
     .nav_d_container{
-
+      background: $color3;
       .nav_d_triage{
-        position: absolute;
-        left: -2.5vw !important;
-        width: 0;
-        height: 0;
-        border-top: 100vw solid $color3;
         border-left: 4vw solid transparent;
       }
 
       //cart icon
       .nav_cart{
-        z-index: 10002;
-        width:100%;
         a {
           margin-left:1vw;
           font-size: 1.3vw;
@@ -191,7 +178,6 @@
 
       //Logo
       .nav_d_logo{
-        position: absolute;
         height: 30vh;
         width: 30vh;
 
@@ -206,25 +192,8 @@
 
       //links
       .nav_d_link{
-        position: absolute;
-        right:0;
-        text-align:right;
-        @include vertical-align($pos:absolut);
-
         a{
-          display: block;
-          margin-right:1.2vw;
-          color: $color2;
           font-size: 1.2vw;
-
-          &:hover{
-            color: $color2*1.5;
-            text-decoration: none;
-          }
-
-          &:active{
-            color: $white;
-          }
         }
       }
     }
