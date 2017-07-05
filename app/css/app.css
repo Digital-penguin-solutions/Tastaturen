@@ -3971,7 +3971,7 @@ section {
             transition: opacity 0.35s, transform 0.35s; }
           .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item h1 {
             text-align: center;
-            font-size: 6vw;
+            font-size: 5.5vw;
             font-weight: 500;
             color: #ffffff;
             text-transform: capitalize;
@@ -4005,7 +4005,8 @@ section {
             transform: rotate3d(0, 0, 1, 45deg) scale3d(1, 0, 1);
             transform-origin: 50% 50%; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders:hover {
-          transition: all 0.4s linear; }
+          transition: all 0.4s linear;
+          background: rgba(33, 33, 33, 0.3); }
           .i_products .i_products_container .i_products .i_products_slider .i_products_sliders:hover img {
             opacity: 0.7; }
           .i_products .i_products_container .i_products .i_products_slider .i_products_sliders:hover .i_products_sliders_item::after {
@@ -4044,7 +4045,7 @@ section {
           max-width: 70%;
           height: 49%; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item h1 {
-          font-size: 4vw; }
+          font-size: 3.8vw; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item p {
           font-size: 2vw; } }
 

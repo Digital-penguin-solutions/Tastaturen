@@ -15,9 +15,13 @@ Index
 
 Prudukt detaljer
     * När man trycker på sortera knappen så fungerar inte strolekarna på prudukterna om det är en ojämn prukt.
+    * ta bort sorteringen från prudukt detaljer.
 
 Admin
     * Knapp för att abryta redigering av en produkt och gå tillbaka till admin sidan
+    * behålla namnet på brochyren.
 
-produkt
-    * Ändra price till pris i databasen. och fixa danska vertionen.
+Nav
+    * naven fungerar inte på safari
+
+pris från istället för pris på prudukt sidan.
