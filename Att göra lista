@@ -1,15 +1,14 @@
-Viktigt
-    * Fixa smoothe scroll när man klikar på länkar i naven.
-
 Index
     * Media
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
 
     * Länkar
-        Fixa att man kan ändra länkarna via databasen.
+        # Fixa att man kan ändra länkarna via databasen.
+
+    * Header
+        Göra att man kan ända youtub klipet via admin.
 
 Prudukt detaljer
-    * ta bort sorteringen från prudukt detaljer.
     *Header
         Transition från hover effecten på de halva orglarna har försvunnit??
 

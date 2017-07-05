@@ -1250,8 +1250,8 @@ section {
         text-align: center;
         z-index: 20; }
         .grid_container .grid_part .grid_item .grid_item_text h1 {
-          font-size: 3vw;
-          color: black; }
+          font-size: 2.5vw;
+          color: #c3c3c3; }
       .grid_container .grid_part .grid_item:hover {
         background: rgba(30, 30, 30, 0.8);
         transition: all 0.4s linear; }
@@ -1263,7 +1263,7 @@ section {
           color: white; }
           .grid_container .grid_part .grid_item:hover .grid_item_text h1 {
             color: white;
-            transform: scale3d(1.2, 1.2, 1.2);
+            transform: scale3d(1.1, 1.1, 1.1);
             transition: all 0.5s linear; }
 
 .wrapper, html, body {
