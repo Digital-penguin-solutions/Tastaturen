@@ -32,7 +32,7 @@
 
 
             h1 {
-              font-size: 8vw;
+              font-size: 10vw;
               font-weight: 600;
               text-transform: uppercase;
             }
@@ -57,9 +57,10 @@
               @extend .slider_btn;
               left: 5vw;
               float:left;
+              margin-bottom:10vh;
               button{
-                width:80%;
-                font-size: 2vw !important;
+                width:100%;
+                font-size: 5vw !important;
               }
             }
 
@@ -96,15 +97,16 @@
               right: 5vw;
               font-size: 10vw;
               @extend .slider_btn;
+              margin-bottom:10vh;
 
               button {
-                width:80%;
-                font-size: 1.5vw !important;
+                width:100%;
+                font-size: 5vw !important;
                 float:right;
               }
             }
-            &:hover{
 
+            &:hover{
               .i_slider_1_right_img{
                 transition: 0.4s;
 
@@ -118,107 +120,8 @@
           }
         }
       }
-
     }
 
-    .i_xs_slider{
-      height: 100vh;
-      .i_slider_1{
-        @extend .nopm;
-
-        .i_slider_1_container{
-          height: 100vh;
-
-          .i_slider_1_text {
-            position: absolute;
-            color: $white;
-            background: transparent;
-            z-index: 101;
-            text-align: center;
-            margin-top:20vh;
-            width:100%;
-
-            h1 {
-              font-size: 8vw;
-              font-weight: 600;
-              text-transform: uppercase;
-            }
-          }
-
-          .i_slider_1_left {
-            height: 100vh;
-            background: $color3*4.1;
-
-            .i_slider_1_left_img {
-              @include vertical-align();
-              right:0;
-              position: absolute;
-
-              img{
-                width:30vw;
-                height: 40vh;
-              }
-            }
-
-            .i_slider_1_left_btn {
-              left: 5vw;
-              float:left;
-              @extend .slider_btn;
-            }
-
-            &:hover{
-
-              .i_slider_1_left_img{
-                transition: 0.4s;
-
-                img{
-                  width:32vw;
-                  height: 42vh;
-                  transition: 0.4s;
-                }
-              }
-            }
-          }
-
-          .i_slider_1_right{
-            height: 100vh;
-            background: $color3*4.5;
-
-            .i_slider_1_right_img{
-              @include vertical-align();
-              left:0;
-              position: absolute;
-
-              img{
-                width:30vw;
-                height: 40vh;
-              }
-            }
-
-            .i_slider_1_right_btn {
-              right: 5vw;
-              @extend .slider_btn;
-
-              button {
-                float:right;
-              }
-            }
-            &:hover{
-
-              .i_slider_1_right_img{
-                transition: 0.2s;
-
-                img{
-                  width:32vw;
-                  height: 42vh;
-                  transition: 0.4s;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -234,7 +137,7 @@
             .i_slider_1_text {
               margin-top:35vh;
               h1{
-
+                font-size: 8vw;
               }
             }
 
@@ -245,6 +148,15 @@
                   height: 60vh;
                 }
               }
+              .i_slider_1_left_btn {
+                margin-bottom:0;
+
+                button{
+                  font-size: 1.8vw !important;
+                }
+
+              }
+
               &:hover{
                 .i_slider_1_left_img {
                   img {
@@ -254,6 +166,7 @@
                 }
               }
             }
+
             .i_slider_1_right{
               .i_slider_1_right_img{
                 img{
@@ -261,6 +174,15 @@
                   height: 60vh;
                 }
               }
+              .i_slider_1_right_btn {
+                margin-bottom:0;
+
+                button {
+                  font-size: 1.8vw !important;
+                }
+              }
+
+
               &:hover{
                 .i_slider_1_right_img {
                   img {
