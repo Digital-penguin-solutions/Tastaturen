@@ -102,7 +102,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
 <!-- Info och ladda ner brochyr -->
 <section class="container-fluid p_info2" role="complementary">
     <div class="row-fluid p_info2_container">
-        <div class="col-xs-8 col-xs-offset-2 p_info2_text">
+        <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 p_info2_text">
             <h1><?php echo $name; ?></h1>
             <p> <?php echo $short;?></p>
         </div>

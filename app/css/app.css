@@ -3257,12 +3257,12 @@ section {
     margin-top: -5vh;
     margin-bottom: 5vh; }
     .p_info2 .p_info2_container .p_info2_text h1 {
-      font-size: 4.5vw;
+      font-size: 6vw;
       text-align: center;
       font-weight: 600; }
     .p_info2 .p_info2_container .p_info2_text p {
       text-align: center;
-      font-size: 2.5vw;
+      font-size: 4vw;
       font-weight: 300; }
   .p_info2 .p_info2_container .p_info2_btn {
     position: absolute;
@@ -3272,7 +3272,7 @@ section {
     margin-bottom: 5vh; }
     .p_info2 .p_info2_container .p_info2_btn button {
       height: 10vh !important;
-      font-size: 2vw !important; }
+      font-size: 3vw !important; }
 
 @media (min-width: 992px) {
   .p_prod_head .p_prod_head_container .slideshow {
@@ -3315,6 +3315,10 @@ section {
         transform: translateY(-50%); }
         .p_info .p_info_container .p_info_img img {
           height: 100%; }
+  .p_info2 .p_info2_container .p_info2_text h1 {
+    font-size: 4vw; }
+  .p_info2 .p_info2_container .p_info2_text p {
+    font-size: 2vw; }
   .p_info2 .p_info2_container .p_info2_btn {
     top: 25vh; }
     .p_info2 .p_info2_container .p_info2_btn button {

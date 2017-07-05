@@ -162,14 +162,14 @@
       margin-bottom:5vh;
 
       h1{
-        font-size: 4.5vw;
+        font-size: 6vw;
         text-align: center;
         font-weight: 600;
       }
 
       p{
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 4vw;
         font-weight: 300;
       }
     }
@@ -182,7 +182,7 @@
 
       button{
         height:10vh !important;
-        font-size: 2vw !important;
+        font-size: 3vw !important;
       }
     }
   }
@@ -257,14 +257,18 @@
     }
   }
 
-  .p_slider{
-    .p_slider_container{
-
-    }
-  }
-
   .p_info2{
     .p_info2_container{
+      .p_info2_text{
+        h1{
+          font-size: 4vw;
+        }
+
+        p{
+          font-size: 2vw;
+        }
+      }
+
       .p_info2_btn{
         top:25vh;
 
