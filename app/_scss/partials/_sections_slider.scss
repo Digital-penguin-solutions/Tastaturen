@@ -1,6 +1,5 @@
 @import "../everything";
 
-
 .slider_arrow {
   position: absolute;
   width: 20%;
@@ -45,7 +44,6 @@
   position: absolute;
   padding: 0 !important;
   margin-right: 0 !important;
-  //margin-top: -100vh;
   left:0;
   display:block;
   overflow:hidden;
@@ -67,11 +65,11 @@
 }
 
 .slider_dots_container {
+  @extend .fullw;
   position: absolute;
   height: 0.7vh;
   width: 0.7vw;
   bottom:5vh;
-  @extend .fullw;
   z-index:10000;
 }
 
