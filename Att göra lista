@@ -3,19 +3,15 @@ Viktigt
 
 Index
     * Media
-
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
         # LÄGGA TILL HOVER EFFECT PÅ MEDIA INLÄGGEN. 
-        # Dansk text på media inlägg
 
     * Länkar
         Fixa att man kan ändra länkarna via databasen.
 
+    *Header
+        Transition från hover effecten på de halva orglarna har försvunnit??
 
-    * Product pris
-
-Prudukt detaljer
-    * ta bort sorteringen från prudukt detaljer.
 
 Admin
     * Knapp för att abryta redigering av en produkt och gå tillbaka till admin sidan
@@ -24,4 +20,3 @@ Admin
 Nav
     * naven fungerar inte på safari
 
-pris från istället för pris på prudukt sidan.

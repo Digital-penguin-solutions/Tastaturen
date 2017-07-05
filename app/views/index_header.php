@@ -79,7 +79,7 @@
                                 <h1><?php print_field("i_slider_4_header"); ?> </h1>
                                 <p><?php print_field("i_slider_4_text"); ?> </p>
                                 <div class="i_slider_4_btn">
-                                    <button onclick="location.href='product_details'">Läs mer</button>
+                                    <button onclick="location.href='product_details?t=kyrka'">Läs mer</button>
                                 </div>
                             </div>
                         </div>

@@ -84,8 +84,8 @@ else {
 
                 foreach($products as $i=>$product){
                     $name = $product['name'];
-                    $short = $product['short_description'];
-                    $price = $product['price'];
+                    $short = translate($product,'short_description');
+                    $price = translate($product,'price');
                     $image = $product['main_image'];
                     $id = $product['product_id'];
                     $type = $product['type'];

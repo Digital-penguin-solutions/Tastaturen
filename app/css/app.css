@@ -2159,6 +2159,12 @@ section {
     border: 0;
     transition: 0.5s; }
 
+.red2 {
+  background: red !important; }
+
+.green {
+  background: green !important; }
+
 .template, .always_hidden {
   display: none; }
 
@@ -2779,7 +2785,7 @@ section {
     .pe_prod .pe_prod_container .pe_prod_sort h1 {
       text-align: center;
       color: #ffffff;
-      font-size: 5vw;
+      font-size: 3vw;
       text-transform: capitalize; }
     .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn {
       margin-top: 1vh;
@@ -2806,12 +2812,12 @@ section {
       text-decoration: none; }
       .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod h1 {
         text-align: center;
-        font-size: 6vw;
+        font-size: 3vw;
         font-weight: 500;
         color: #ffffff;
         text-transform: capitalize; }
       .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod p {
-        font-size: 2vw;
+        font-size: 1.6vw;
         font-weight: 300;
         color: #ffffff;
         text-align: center; }

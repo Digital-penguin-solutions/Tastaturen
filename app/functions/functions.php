@@ -55,7 +55,14 @@ if(!isset($functions_included)){
                 $value = "Kontakta oss för prisuppgifter";
             }
         }
-        debug_to_console("lang: " .get_lang());
+        else if ($field == "price"){
+            if(get_lang() == "dk"){
+                $value = "Fra " .$value . "Dkr";
+            }       
+            else {
+                $value = "Från " .$value . "kr";
+            }
+        }
         return $value;
     }
 
@@ -154,11 +161,11 @@ if(!isset($functions_included)){
     // Return only the products that are to be shown on the homepage
     function get_all_visible_products($con, $type) {
         if($type==""){
-            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' ORDER BY order_number";
+            $query  = "SELECT type, price,price_dk, product_id, name, short_description, short_description_dk, main_image FROM product WHERE `show` = '1' ORDER BY order_number";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
         else {
-            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' AND type = '$type' ORDER BY order_number";
+            $query  = "SELECT type, price,price_dk, product_id, name, short_description, short_description_dk, main_image FROM product WHERE `show` = '1' AND type = '$type' ORDER BY order_number";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
 
@@ -346,8 +353,8 @@ if(!isset($functions_included)){
 
         foreach($products as $product){
             $name  = $product['name'];
-            $short = $product['short_description'];
-            $price = $product['price'];
+            $short = translate($product,'short_description');
+            $price = translate($product,'price');
             $image = $product['main_image'];
             $id    = $product['product_id'];
 
@@ -364,9 +371,9 @@ if(!isset($functions_included)){
             }
 
 
-            if($price == ""){
-                $price = "Kontakta för prisuppgifter";
-            }
+            //if($price == ""){
+                //$price = "Kontakta för prisuppgifter";
+            //}
 
             ?>
 
@@ -560,7 +567,7 @@ if(!isset($functions_included)){
 
                 <!--- TOGGLE SHOW BUTTON-->
                 <a href = "functions/toggle_product?product_id=<?php echo $product_id?>"
-                   class = "product_button <?php echo $toggle_color?> product_show_button">
+                   class = "product_button <?php echo $toggle_color;?> product_show_button">
                     <p class = "center_vertically_css"><?php echo $toggle_button_value?></p>
                 </a>
 
