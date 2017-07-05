@@ -2771,7 +2771,7 @@ section {
     .pe_prod .pe_prod_container .pe_prod_sort h1 {
       text-align: center;
       color: #ffffff;
-      font-size: 2vw;
+      font-size: 5vw;
       text-transform: capitalize; }
     .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn {
       margin-top: 1vh;
@@ -2782,11 +2782,11 @@ section {
       .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price {
         width: 15vw;
         height: 6vh;
-        font-size: 1.3vw !important; }
+        font-size: 4vw !important; }
       .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
         width: 15vw;
         height: 6vh;
-        font-size: 1.3vw !important;
+        font-size: 4vw !important;
         margin-left: 5vw; }
   .pe_prod .pe_prod_container .pe_prod_container2 {
     cursor: pointer; }
@@ -2798,7 +2798,7 @@ section {
       text-decoration: none; }
       .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod h1 {
         text-align: center;
-        font-size: 4vw;
+        font-size: 6vw;
         font-weight: 500;
         color: #ffffff;
         text-transform: capitalize; }
@@ -2822,6 +2822,8 @@ section {
           opacity: 0.4; }
 
 @media (min-width: 992px) {
+  .pe_header .pe_header_container .pe_prod_sort h1 {
+    font-size: 3vw; }
   .pe_header .pe_header_container .pe_header_text {
     text-align: left;
     margin-left: 2vw; }
@@ -2838,7 +2840,9 @@ section {
   .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
     width: 10vw;
     height: 4.5vh;
-    font-size: 1.2vw !important; } }
+    font-size: 1.2vw !important; }
+  .pe_prod .pe_prod_container2 .pe_prod_prod h1 {
+    font-size: 4vw; } }
 
 .wrapper, html, body {
   background: #ffffff;
