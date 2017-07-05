@@ -42,7 +42,7 @@
                 <div class = "slider_page col-xs-12 hidden-xs hidden-sm">
                     <div class="i_slider_2_container">
                         <div class="i_slider_2_text col-xs-12">
-                            <div class="i_slider_2_text_container col-xs-5 col-xs-offset-1">
+                            <div class="i_slider_2_text_container col-xs-10 col-xs-offset-1">
                                 <h1><?php print_field("i_slider_2_header"); ?> </h1>
                                 <p><?php print_field("i_slider_2_text"); ?> </p>
                                 <div class="i_slider_2_btn ">

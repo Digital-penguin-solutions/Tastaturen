@@ -65,6 +65,7 @@ else {
     <div class="row-fluid pe_prod">
         <div class="col-xs-12 pe_prod_container">
 
+            <!--
             <div class="pe_prod_sort col-xs-12">
                 <h1>Sortera</h1>
                 <div class="pe_prod_btn">
@@ -72,7 +73,7 @@ else {
                     <button onclick="sortByName(this)" class="pe_product_name">Namn</button>
                 </div>
             </div>
-
+            -->
             <div class="pe_prod_container2 col-xs-11">
                 <?php
                 $products = get_all_visible_products($con, $type);
