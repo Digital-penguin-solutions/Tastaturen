@@ -1,48 +1,68 @@
 @import "../everything";
 
+
 .grid_container {
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
 
-    .grid_part {
-        float:left;
-        width:50%;
-        height:50%;
+  .grid_part {
+    float:left;
+    width:50%;
+    height:50%;
 
-        &:nth-child(1){
-            width:40%;
-        }
-        &:nth-child(2){
-            width:60%;
-        }
-
-        .grid_item{
-            float:left;
-            position:relative;
-
-            img{
-
-                @include horizontal-align($pos: relative);
-                min-height:100%;
-                min-width:100%;
-                max-height:110%;
-                display:block;
-            }
-
-            .grid_item_text{
-                position: absolute;
-                left:0;
-                top:0;
-                //right:0;
-                color: black;
-                width:100%;
-                text-align:center;
-                z-index:20;
-
-                h1{
-                    font-size: 3vw;
-                }
-            }
-        }
+    &:nth-child(1){
+      width:40%;
     }
+    &:nth-child(2){
+      width:60%;
+    }
+
+    .grid_item{
+      float:left;
+      position:relative;
+
+      img{
+        @include horizontal-align($pos: relative);
+        min-height:100%;
+        min-width:100%;
+        max-height:110%;
+        display:block;
+      }
+
+      .grid_item_text{
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        text-align:center;
+        z-index:20;
+
+        h1{
+          font-size: 3vw;
+          color: black;
+        }
+      }
+
+      &:hover{
+        background: rgba($color5, 0.8);
+        @include transition($time: 0.4s);
+
+        img {
+          @include transition($time: 0.3s);
+          opacity: 0.5;
+        }
+        .grid_item_text{
+          @include transition($time: 0.4s);
+          color: white;
+
+          h1{
+            color: white;
+            transform: scale3d(1.2, 1.2, 1.2);
+            @include transition($time: 0.5s);
+          }
+        }
+      }
+    }
+  }
 }
+
