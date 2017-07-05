@@ -1395,12 +1395,25 @@ section {
         position: absolute;
         left: 0;
         top: 0;
-        color: black;
         width: 100%;
         text-align: center;
         z-index: 20; }
         .grid_container .grid_part .grid_item .grid_item_text h1 {
-          font-size: 3vw; }
+          font-size: 3vw;
+          color: black; }
+      .grid_container .grid_part .grid_item:hover {
+        background: rgba(30, 30, 30, 0.8);
+        transition: all 0.4s linear; }
+        .grid_container .grid_part .grid_item:hover img {
+          transition: all 0.3s linear;
+          opacity: 0.5; }
+        .grid_container .grid_part .grid_item:hover .grid_item_text {
+          transition: all 0.4s linear;
+          color: white; }
+          .grid_container .grid_part .grid_item:hover .grid_item_text h1 {
+            color: white;
+            transform: scale3d(1.2, 1.2, 1.2);
+            transition: all 0.5s linear; }
 
 .wrapper, html, body {
   background: #ffffff;
@@ -3763,9 +3776,6 @@ section {
     .i_media .i_media_item .i_media_inner {
       width: 100%;
       height: 100%; }
-      .i_media .i_media_item .i_media_inner:hover {
-        background: rgba(195, 195, 195, 0.3);
-        transition: 0.3s; }
       .i_media .i_media_item .i_media_inner i {
         position: absolute;
         font-size: 3vw;
