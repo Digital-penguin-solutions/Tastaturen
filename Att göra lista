@@ -6,6 +6,7 @@ Index
 
         # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
         # LÄGGA TILL HOVER EFFECT PÅ MEDIA INLÄGGEN. 
+        # Samma hover effect på media posterna som på produkterna
         # Dansk text på media inlägg
 
     * Länkar
