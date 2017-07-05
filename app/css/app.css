@@ -48,14 +48,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -149,14 +149,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -317,14 +317,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -576,14 +576,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -784,14 +784,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -888,14 +888,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1045,14 +1045,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1167,14 +1167,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1314,14 +1314,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1529,14 +1529,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1678,14 +1678,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1793,14 +1793,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -1970,14 +1970,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -2302,14 +2302,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -2403,14 +2403,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -2504,14 +2504,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -2643,29 +2643,6 @@ section {
 
 .pe_prod {
   min-height: 70vh; }
-  .pe_prod .pe_prod_container .pe_prod_sort {
-    height: 18vh;
-    background: #1e1e1e; }
-    .pe_prod .pe_prod_container .pe_prod_sort h1 {
-      text-align: center;
-      color: #ffffff;
-      font-size: 3vw;
-      text-transform: capitalize; }
-    .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn {
-      margin-top: 1vh;
-      position: absolute;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%); }
-      .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price {
-        width: 15vw;
-        height: 6vh;
-        font-size: 4vw !important; }
-      .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
-        width: 15vw;
-        height: 6vh;
-        font-size: 4vw !important;
-        margin-left: 5vw; }
   .pe_prod .pe_prod_container .pe_prod_container2 {
     cursor: pointer; }
     .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod {
@@ -2709,18 +2686,8 @@ section {
       font-size: 3.5vw; }
     .pe_header .pe_header_container .pe_header_text p {
       font-size: 1.6vw; }
-  .pe_prod .pe_prod_container .pe_prod_sort h1 {
-    font-size: 3vw; }
-  .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price {
-    width: 10vw;
-    height: 4.5vh;
-    font-size: 1.2vw !important; }
-  .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
-    width: 10vw;
-    height: 4.5vh;
-    font-size: 1.2vw !important; }
-  .pe_prod .pe_prod_container2 .pe_prod_prod h1 {
-    font-size: 4vw; } }
+  .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod h1 {
+    font-size: 2.5vw; } }
 
 .wrapper, html, body {
   background: #ffffff;
@@ -2770,14 +2737,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -2871,14 +2838,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -3242,14 +3209,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -3544,14 +3511,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -3701,14 +3668,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -3960,14 +3927,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -4086,14 +4053,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -4225,14 +4192,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
@@ -4367,14 +4334,14 @@ section {
 .hidden {
   visibility: hidden; }
 
-.button, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name {
+.button {
   border: 2px solid #ffffff;
   color: #ffffff;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
   font-size: 1.2vw; }
-  .button:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_price:hover, .pe_prod .pe_prod_container .pe_prod_sort .pe_prod_btn .pe_product_name:hover {
+  .button:hover {
     background: #1536ff;
     border: 0;
     transition: 0.5s; }
