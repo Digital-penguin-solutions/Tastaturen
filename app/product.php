@@ -84,6 +84,8 @@ $slider_images  = get_product_images_by_id($con, $product_id);
     </div>
 </section>
 
+<?php include "views/admin_edit_prod.php" ?>
+
 <section class="container-fluid p_slider" role="complementary">
     <div class="row-fluid p_slider_container">
         <div class = "all_slider_container no_list">

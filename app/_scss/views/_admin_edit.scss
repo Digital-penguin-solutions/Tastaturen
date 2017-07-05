@@ -1,0 +1,22 @@
+@import "../everything";
+
+.admin_edit{
+  min-height: 30vh;
+  background: $color5;
+
+  .admin_edit_container{
+
+    h3{
+      margin-top:10vh;
+      text-align: center;
+      color: $white;
+      font-size: 2vw;
+    }
+
+    .admin_edit_btn{
+      bottom:-10vh !important;
+      @extend .slider_btn;
+      @include horizontal-align($pos:absolute);
+    }
+  }
+}
