@@ -44,8 +44,8 @@
       }
 
       &:hover{
-        background: rgba($color5, 0.8);
         @include transition($time: 0.4s);
+        background: rgba($color5 , 0.2);
 
         img {
           @include transition($time: 0.3s);

@@ -1,7 +1,7 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
 @import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900i);
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -102,7 +102,7 @@ section {
     transition: 0.5s; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -270,7 +270,7 @@ section {
       font-size: 0.8vw; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -502,7 +502,7 @@ section {
         font-size: 1.2vw; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -710,7 +710,7 @@ section {
   background: rgba(0, 0, 0, 0.5); }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -814,7 +814,7 @@ section {
   display: inline-block; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -971,7 +971,7 @@ section {
         margin-left: 2vw; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -1093,7 +1093,7 @@ section {
     margin-top: 2vh; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -1226,8 +1226,8 @@ section {
           font-size: 2.5vw;
           color: #c3c3c3; }
       .grid_container .grid_part .grid_item:hover {
-        background: rgba(30, 30, 30, 0.8);
-        transition: all 0.4s linear; }
+        transition: all 0.4s linear;
+        background: rgba(30, 30, 30, 0.2); }
         .grid_container .grid_part .grid_item:hover img {
           transition: all 0.3s linear;
           opacity: 0.5; }
@@ -1240,7 +1240,7 @@ section {
             transition: all 0.5s linear; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -1455,7 +1455,7 @@ section {
     margin-bottom: 0; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -1604,7 +1604,7 @@ section {
     font-size: 3vw !important; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -1719,7 +1719,7 @@ section {
     transform: translateX(-50%); }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -1896,7 +1896,7 @@ section {
       visibility: hidden; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -2228,7 +2228,7 @@ section {
     transition: 0.3s; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -2329,7 +2329,7 @@ section {
     transition: 0.5s; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -2430,7 +2430,7 @@ section {
     transition: 0.5s; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -2587,7 +2587,7 @@ section {
       position: absolute;
       height: 100%;
       width: 100%;
-      background: rgba(30, 30, 30, 0.3);
+      background: rgba(195, 195, 195, 0.3);
       z-index: 99;
       overflow: hidden; }
       .pe_header .pe_header_container .pe_header_bg img {
@@ -2620,7 +2620,7 @@ section {
     cursor: pointer; }
     .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod {
       height: 50vh;
-      background: #212121;
+      background: #c3c3c3;
       margin-top: 5vh;
       margin-bottom: 5vh;
       text-decoration: none; }
@@ -2645,7 +2645,8 @@ section {
         max-width: 70%;
         margin-top: 2vh; }
       .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod:hover {
-        transition: all 0.4s linear; }
+        transition: all 0.4s linear;
+        background: rgba(30, 30, 30, 0.4); }
         .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod:hover img {
           opacity: 0.4; }
 
@@ -2663,7 +2664,7 @@ section {
     font-size: 2.5vw; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -2764,7 +2765,7 @@ section {
     transition: 0.5s; }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -3135,7 +3136,7 @@ section {
       font-size: 1.2vw !important; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -3437,7 +3438,7 @@ section {
         height: 100%; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -3594,7 +3595,7 @@ section {
             height: 100%; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -3853,7 +3854,7 @@ section {
           font-size: 1.8vw; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -3979,7 +3980,7 @@ section {
     font-size: 1.5vw; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -4118,7 +4119,7 @@ section {
     font-size: 1.5vw; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
@@ -4260,7 +4261,7 @@ section {
     font-size: 4vw; } }
 
 .wrapper, html, body {
-  background: #2b2b2b;
+  background: #212121;
   z-index: 1;
   position: relative;
   overflow-x: hidden; }
