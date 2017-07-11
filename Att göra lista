@@ -6,7 +6,7 @@ Index
         # Fixa att man kan ändra länkarna via databasen.
 
     * Header
-        Göra att man kan ända youtub klipet via admin.
+        Göra att man kan ända youtub klipet via admin. 
 
 Prudukt detaljer
     *Header
@@ -15,6 +15,7 @@ Prudukt detaljer
 Admin
     * Knapp för att abryta redigering av en produkt och gå tillbaka till admin sidan
     * behålla namnet på brochyren.
+    * eftersom admin sidan nu är mörk så ser man inte texterna så bra. De måste göras vita
 
 Nav
     * naven fungerar inte på safari
