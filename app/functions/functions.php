@@ -204,7 +204,6 @@ if(!isset($functions_included)){
         return $array;
     }
 
-    //Get all products from database by id
     function get_product_by_id($con, $id){
 
         $id = secure_str($id);
@@ -733,6 +732,14 @@ if(!isset($functions_included)){
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
 
+    function get_link_by_id($con, $id){
+        $id = secure_str($id);
+        $query = "SELECT * FROM link WHERE link_id = '$id'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data = mysqli_fetch_array($select);
+
+        return $data;
+    }
     
 
 }
