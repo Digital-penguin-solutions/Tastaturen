@@ -5,6 +5,7 @@ Index
     * Header
         Göra att man kan ända youtub klipet via admin.
         Göra att man kan ändra bakrunds bildera och inte bara texten i header.
+        Ta tillbaka transition på att hovra på orglarna eller ta bort hover effecten helt.
 
 Admin
     * behålla namnet på brochyren.
