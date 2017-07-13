@@ -299,9 +299,9 @@ if (isset($_SESSION['admin'])) {
                             <img class = "center_vertically_css list_preview_image" src="data:image/jpeg;base64,<?php echo base64_encode( $about_image); ?>" alt="preview of the curent image"/>
                         </div>
 
-
-                        <section class="col-md-4 col-md-offset-4">
-                            <button id="js-trigger-overlay" onclick="send_form(this, 'add_product.php', 'form')" type="button">Save product</button>
+                        <section class="col-md-12 admin_btn">
+                            <button class="col-md-5" id="js-trigger-overlay" onclick="send_form(this, 'add_product.php', 'form')" type="button">Save product</button>
+                            <a class="col-md-5 col-md-offset-2" href="admin.php">Cancel edit</a>
                         </section>
 
                     </form>

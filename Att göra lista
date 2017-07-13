@@ -1,21 +1,13 @@
 Index
-    * Media
-        # Kunna soretera vilken media sak som ligger övers. Genom att ge dem ett id man fyller i när man gör media inlägget.
-
     * Länkar
         # Fixa att man kan ändra länkarna via databasen.
 
     * Header
-        Göra att man kan ända youtub klipet via admin. 
-
-Prudukt detaljer
-    *Header
-        Transition från hover effecten på de halva orglarna har försvunnit??
+        Göra att man kan ända youtub klipet via admin.
+        Göra att man kan ändra bakrunds bildera och inte bara texten i header.
 
 Admin
-    * Knapp för att abryta redigering av en produkt och gå tillbaka till admin sidan
     * behålla namnet på brochyren.
-    * eftersom admin sidan nu är mörk så ser man inte texterna så bra. De måste göras vita
 
 Nav
     * naven fungerar inte på safari

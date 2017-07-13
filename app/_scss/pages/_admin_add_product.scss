@@ -1,0 +1,24 @@
+@import "../everything";
+
+.admin_btn{
+  height: 20vh;
+
+  button{
+    border: 2px solid $white;
+    color: $white;
+    background-color: rgba($color3, 0.9);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.4vw;
+    padding:1vh;
+    &:hover{
+      background: $color1;
+      border: 0;
+      transition: 0.5s;
+    }
+  }
+
+  a{
+    @extend button;
+  }
+}

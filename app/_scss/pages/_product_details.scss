@@ -55,6 +55,7 @@
 
 .pe_prod {
   min-height: 70vh;
+  background: $color4;
 
   .pe_prod_container {
     @extend .nopm;
