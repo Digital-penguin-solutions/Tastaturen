@@ -379,6 +379,7 @@ section {
   height: 100vh;
   z-index: 10000; }
   .nav_d .nav_d_container {
+    position: relative;
     background: #2b2b2b;
     height: 100vh; }
     .nav_d .nav_d_container .nav_d_triage {
@@ -389,10 +390,11 @@ section {
       border-top: 100vw solid #2b2b2b;
       border-left: 5vw solid transparent; }
     .nav_d .nav_d_container .nav_cart {
+      position: absolute;
       z-index: 10002;
-      width: 100%; }
+      margin-left: 1vw; }
       .nav_d .nav_d_container .nav_cart a {
-        margin-left: 3vw;
+        margin-left: 3.4vw;
         font-size: 4vw;
         color: #ffffff;
         text-decoration: none; }
@@ -403,8 +405,8 @@ section {
           .nav_d .nav_d_container .nav_cart a:hover i {
             color: #cccccc; }
     .nav_d .nav_d_container .nav_d_logo {
-      margin-top: 2vh;
       position: absolute;
+      margin-top: 2vh;
       height: 35vh;
       width: 35vh; }
       .nav_d .nav_d_container .nav_d_logo a {

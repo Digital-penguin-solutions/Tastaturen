@@ -3,7 +3,7 @@ $(document).ready(on_ready);
 var fade_duration = 0;
 var nav_menu_visible = true;
 var button_open_color = "white";
-var button_closed_color = "white";
+var button_closed_color = "#2b2b2b";
 
 var McButton = $("[data=hamburger-menu]");
 var McBar1 = McButton.find("b:nth-child(1)");
@@ -14,7 +14,6 @@ var nav_in_animation = false;
 
 //when the code is loaded and teh device in question is a mobil run functions
 function on_ready () {
-    //if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     if(!isDesktop()){
         $(".nav_d").css("visibility", "visible");
 
@@ -25,7 +24,6 @@ function on_ready () {
         toggle_nav_menu();
         fade_duration = 500;
     }
-    //}
 }
 
 // Toggel the meneu
