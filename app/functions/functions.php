@@ -465,6 +465,60 @@ if(!isset($functions_included)){
         return $array;
     }
 
+    function get_all_links($con){
+        $query  = "SELECT * FROM link";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+    
+        $array  = array();
+
+        while($data = mysqli_fetch_array($select)){
+
+            $array[] = $data;
+        }
+
+
+        return $array;
+
+    }
+    function echo_admin_links($links){
+        $count = 0;
+        foreach ($links as $link) {
+            $name         = $link['name'];
+            $name_dk      = $link['name_dk'];
+            $href         = $link['href'];
+            $link_id      = $link['link_id'];
+            
+
+            if($count % 2 == 0) {
+                $offset = 1;
+            }
+            else {
+                $offset = 2;
+            }
+            ?>
+            <div class = "col-md-4 col-md-offset-<?php echo $offset ?> admin_product small_product">
+                <h1><?php echo $name ?></h1>
+                <p><?php echo $href ?></p>
+
+                <!--- EDIT BUTTON-->
+                <a href = "add_link?link_id=<?php echo $link_id?>"
+                   class = "product_button product_edit_button">
+                    <p class = "center_vertically_css">Edit</p>
+                </a>
+
+
+                <!--- DELETE BUTTON-->
+                <a href = "functions/delete_link?id=<?php echo $link_id?>"
+                   class = "product_button product_delete_button">
+                    <p class = "center_vertically_css">Delete</p>
+                </a>
+
+            </div>
+            <?php
+            $count++;
+        }
+    }
+
     function echo_admin_media($posts){
         $count = 0;
         foreach ($posts as $post) {
@@ -473,16 +527,6 @@ if(!isset($functions_included)){
             $media_id     = $post['media_id'];
             $type         = $post['type'];
             $yt_id        = $post['youtube_id'];
-            //$show         = $product['show'];
-
-            //if($show == 1){
-                //$toggle_button_value = "Hide product";
-                //$toggle_color        = "red";
-            //}
-            //else {
-                //$toggle_button_value = "Set visible";
-                //$toggle_color        = "green";
-            //}
 
             if($count % 2 == 0) {
                 $offset = 1;

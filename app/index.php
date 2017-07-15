@@ -142,13 +142,19 @@ $products_church = get_all_visible_products($con, "kyrka");
             <h1><?php print_field("i_link_header"); ?></h1>
             <div class="i_info2_text_container col-md-6 col-md-offset-3  col-xs-10 col-xs-offset-1">
                 <div class="i_info2_link_container">
-                    <a href="">helawhelhwe</a>
-                    <a href="">helawhelhwe</a>
-                    <a href="">helawhelhwe</a>
-                    <a href="">helawhelhwe</a>
-                    <a href="">helawhelhwe</a>
-                    <a href="">helawhelhwe</a>
-                    <a href="">helawhelhwe</a>
+                    <?php 
+                        $links = get_all_links($con);
+
+                        foreach($links as $link){
+                            $name = translate($link, 'name');
+                            $href = $link['href'];
+                            ?>
+
+                            <a href = "<?php echo $href ?>"><?php echo $name?></a>
+
+                            <?php
+                        }
+                    ?>
                 </div>
             </div>
         </div>

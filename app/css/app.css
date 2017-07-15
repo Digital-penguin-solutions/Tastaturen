@@ -2791,12 +2791,13 @@ section {
           font-size: 1.2vw; }
       .p_info .p_info_container .p_info_img {
         margin-top: 0;
-        max-height: 60%;
+        max-height: 90%;
         position: relative;
         top: 50%;
         transform: translateY(-50%); }
         .p_info .p_info_container .p_info_img img {
-          height: 100%; }
+          max-height: 100%;
+          width: 100%; }
   .p_info2 .p_info2_container .p_info2_text h1 {
     font-size: 4vw; }
   .p_info2 .p_info2_container .p_info2_text p {
@@ -2941,6 +2942,9 @@ section {
   font-size: 2vw;
   text-align: center; }
 
+.small_product {
+  height: 20vh !important; }
+
 .admin_product {
   margin-top: 10%;
   background: #c3c3c3;
@@ -2952,6 +2956,8 @@ section {
     text-align: center;
     margin-top: 3%;
     font-size: 2vw; }
+  .admin_product p {
+    text-align: center; }
   .admin_product a {
     color: black !important; }
   .admin_product .product_button {
@@ -2985,9 +2991,6 @@ section {
   height: 10%;
   display: block;
   margin-top: 10%;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
   margin-bottom: 10%; }
   .manage_buttons_container p {
     position: relative;
@@ -4495,11 +4498,15 @@ section {
     .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container {
       margin-top: 2vh; }
       .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container a {
+        text-align: center;
         text-decoration: none;
         color: white;
-        margin: 1vw;
+        margin: 0;
+        float: left;
         font-size: 3vw;
-        font-weight: 300; }
+        font-weight: 300;
+        display: block;
+        width: 50%; }
         .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container a:hover {
           color: #b3b3b3;
           transition: 0.3s; }

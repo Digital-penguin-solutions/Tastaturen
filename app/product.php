@@ -70,7 +70,7 @@ $slider_images  = get_product_images_by_id($con, $product_id);
         <div class="col-xs-12 p_info_container">
             <div class="p_info_text col-md-4 col-md-offset-1 col-xs-12">
                 <h1><?php echo $name; ?></h1>
-                <h3><?php echo $price; ?> kr</h3>
+                <h3><?php echo $price; ?> </h3>
                 <p> <?php echo $long; ?></p>
             </div>
             <div class="p_info_img col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">

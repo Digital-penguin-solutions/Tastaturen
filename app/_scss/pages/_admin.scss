@@ -44,6 +44,10 @@
     text-align:center;
 }
 
+.small_product {
+    height:20vh !important;
+}
+
 .admin_product {
     margin-top:10%;
     background:$color2;
@@ -55,6 +59,10 @@
         text-align:center;
         margin-top: 3%;
         font-size:2vw;
+    }
+
+    p {
+        text-align:center;
     }
 
     a{
@@ -100,9 +108,8 @@
     height:10%;
     display:block;
     margin-top:10%;
-    width:60%;
-    margin-left:20%;
-    margin-right:20%;
+    //margin-left:20%;
+    //margin-right:20%;
     margin-bottom:10%;
 
     p{

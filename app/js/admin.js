@@ -204,13 +204,13 @@ function send_form(element, page, form){
     });
 
     xhr.success(function(response) {
-        console.log(response);
+        //console.log(response);
         //console.log("response");
         //$(document).scrollTop(0);
 
-        // different action depending on what has been done
-        console.log(page);
+        //console.log(page);
         var message = "";
+        // different action depending on what has been done
         if(page == "add_product.php"){
             message = "Product has been edited or added";
             window.location.replace("admin?view=products&message=" + message);
@@ -218,6 +218,10 @@ function send_form(element, page, form){
         else if(page == "add_media.php"){
             message = "Media post has been edited or added";
             window.location.replace("admin?view=media&message=" + message);
+        }
+        else if(page == "add_link.php"){
+            message = "Link has been added or edited";
+            window.location.replace("admin?view=links&message=" + message);
         }
         else {
 
@@ -243,7 +247,7 @@ function send_form(element, page, form){
 
                 url += '?r=' + rand;
             }
-            console.log(url);
+            //console.log(url);
             window.location.replace(url);
             //window.location.reload();
             //window.location.replace("http://index");
