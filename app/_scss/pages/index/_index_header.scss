@@ -104,6 +104,16 @@
   .i_header{
     .i_header_container{
       .i_header_slider{
+          .i_slider_background_dark {
+            background: rgba($color5, 0.3);
+            z-index: 99;
+            position: absolute;
+            left:0;
+            top:0;
+            width:100%;
+            height:100%;
+            pointer-events:none;
+          }
 
         //slider 1
         .i_slider_1{
@@ -175,18 +185,18 @@
           background: #000;
           @extend .nopm;
 
+
           .i_slider_2_text{
             left:0;
             top:0;
-            height: 100vh;
-            width: 100%;
+            height: 50vh;
+            width: 70%;
             z-index: 100;
             position: absolute;
-            background: rgba($color5, 0.3);
 
             .i_slider_2_text_container{
-              @include vertical-align();
-              margin-top:-10vh;
+              //@include vertical-align();
+              margin-top:20vh;
 
               h1{
                 color: white;
@@ -268,11 +278,11 @@
           @extend .nopm;
 
           .i_slider_4_text{
-            height: 100vh;
-            width: 100%;
+            height: 50%;
+            width: 60%;
+            margin-left:20%;
             z-index: 100;
             position: absolute;
-            background: rgba($color5, 0.3);
 
             .i_slider_4_text_container{
               color: white;

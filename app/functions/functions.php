@@ -296,7 +296,6 @@ if(!isset($functions_included)){
         return $brochure;
     }
 
-    //get name of produkt by id from database
     function get_product_name_by_id($con, $id){
         $id     = secure_str($id);
         $query  = "SELECT name FROM product WHERE product_id = '$id'";
@@ -304,6 +303,16 @@ if(!isset($functions_included)){
         $data   = mysqli_fetch_array($select);
 
         $name = $data['name'];
+        return $name;
+    }
+
+    function get_product_brochure_name_by_id($con, $id){
+        $id     = secure_str($id);
+        $query  = "SELECT brochure_name FROM product WHERE product_id = '$id'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data   = mysqli_fetch_array($select);
+
+        $name = $data['brochure_name'];
         return $name;
     }
 

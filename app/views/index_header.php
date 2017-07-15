@@ -41,6 +41,8 @@
                 <!-- Slider 2 -->
                 <div class = "slider_page col-xs-12 hidden-xs hidden-sm">
                     <div class="i_slider_2_container">
+                        <div class="i_slider_background_dark col-xs-12">
+                        </div>
                         <div class="i_slider_2_text col-xs-12">
                             <div class="i_slider_2_text_container col-xs-10 col-xs-offset-1">
                                 <h1><?php print_field("i_slider_2_header"); ?> </h1>
@@ -52,7 +54,8 @@
                             </div>
                         </div>
                         <div class="i_slider_2_img">
-                            <img class = "section_background" src_desktop_only="img/Index_slider/Slider_2.jpg" alt="orgel för kykobruk">
+                            <!--<img class = "section_background" src_desktop_only="img/Index_slider/Slider_2.jpg" alt="orgel för kykobruk">-->
+                            <?php echo_stored_image_data($con, 'i_slider_2_bg', ""); ?>
                         </div>
                     </div>
                 </div>
@@ -74,6 +77,8 @@
                 <!-- Slider 4-->
                 <div class = "slider_page col-xs-12 hidden-xs hidden-sm">
                     <div class="i_slider_4_container">
+                        <div class="i_slider_background_dark col-xs-12">
+                        </div>
                         <div class="i_slider_4_text col-xs-12">
                             <div class="i_slider_4_text_container col-xs-12">
                                 <h1><?php print_field("i_slider_4_header"); ?> </h1>
@@ -84,7 +89,8 @@
                             </div>
                         </div>
                         <div class="i_slider_4_img">
-                            <img class = "section_background" src_desktop_only="img/Index_slider/Slider_4.jpg" alt="orgel för kykobruk">
+                            <!--<img class = "section_background" src_desktop_only="img/Index_slider/Slider_4.jpg" alt="orgel för kykobruk">-->
+                            <?php echo_stored_image_data($con, 'i_slider_4_bg', "section_background"); ?>
                         </div>
                     </div>
                 </div>

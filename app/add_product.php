@@ -62,11 +62,13 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     read_slider_images($con, "slider_image");
 
     $brochure_data = "";
+    $brochure_name = "";
 
 
     // if there is a new brochure. The data will be collected and later uploaded
     if($_FILES['brochure']['size'] > 0){
         $brochure_tmp_name = $_FILES['brochure']['tmp_name'];
+        $brochure_name = $_FILES['brochure']['name'];
         $fp = fopen($brochure_tmp_name, 'r');
         $brochure_data = fread($fp, filesize($brochure_tmp_name));
         $brochure_data = mysqli_real_escape_string($con, $brochure_data);
@@ -76,7 +78,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     if (!$editing) {
         // adds the product along with the constant values
-        $query = "INSERT INTO product (name, short_description, short_description_dk, long_description, long_description_dk, price, price_dk, type, brochure, order_number) VALUES ('$name', '$short', '$short_dk', '$long', '$long_dk', '$price','$price_dk', '$type', '$brochure_data', '$order_number')";
+        $query = "INSERT INTO product (name, short_description, short_description_dk, long_description, long_description_dk, price, price_dk, type, brochure, brochure_name, order_number) VALUES ('$name', '$short', '$short_dk', '$long', '$long_dk', '$price','$price_dk', '$type', '$brochure_data', '$brochure_name', '$order_number')";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -90,7 +92,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
         // if there is a new brochure to be uploaded
         if($brochure_data != ""){
-            $query = "UPDATE product SET brochure = '$brochure_data' WHERE product_id = '$product_id'";
+            $query = "UPDATE product SET brochure = '$brochure_data', brochure_name = '$brochure_name' WHERE product_id = '$product_id'";
             mysqli_query($con, $query) or die (mysqli_error($con));
 
         }

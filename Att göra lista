@@ -2,22 +2,12 @@ Index
 
     Smoothscroll.
 
-    * Länkar
-        # Fixa att man kan ändra länkarna via databasen.
-
     * Header
         Göra att man kan ända youtub klipet via admin.
-        Göra att man kan ändra bakrunds bildera och inte bara texten i header.
         Ta tillbaka transition på att hovra på orglarna eller ta bort hover effecten helt.
-
-Admin
-    * behålla namnet på brochyren.
 
 Nav
     * naven fungerar inte på safari
 
-offert
-    * begär en offert ska oxå va på danska.
-
 product
-    *om sliders är tom
+    *om sliders är tom kan hela den sektionen vara gömd

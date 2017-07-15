@@ -5,7 +5,7 @@ if (isset($_SESSION['admin'])) {?>
             <div class="col-md-12 admin_edit_container">
                 <h3>Redigera produkten</h3>
                 <div class="admin_edit_btn">
-                    <button onclick="location.href="">Redigera denna produkt</button>
+                    <button onclick="location.href='add_product?product_id=<?php echo $product['product_id'];?>'">Redigera denna produkt</button>
                 </div>
             </div>
         </div>

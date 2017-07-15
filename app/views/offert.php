@@ -15,7 +15,7 @@
 
             <p class="col-xs-offset-2 col-xs-4">Message</p>
             <textarea type="text" name="message" id="message" placeholder="Optional message" class="col-xs-8 col-xs-offset-2"></textarea>
-            <button type="button" class="offert_send col-xs-4 col-xs-offset-4">Begär en offert</button>
+            <button type="button" class="offert_send col-xs-4 col-xs-offset-4"><?php print_field("offert_send") ?></button>
         </form>
 
         <div class="offert_product col-md-6 hidden-xs">
