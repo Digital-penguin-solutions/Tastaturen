@@ -1,5 +1,5 @@
-<?php include "partials/head.php" ?>
 <!DOCTYPE html>
+<?php include "partials/head.php" ?>
 <html lang="swe">
 <head>
     <title>Tastaturen - återförsäljare av orglar</title>
