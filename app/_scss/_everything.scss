@@ -14,6 +14,7 @@
 
 //html styling
 html {
+  overflow-x:hidden;
   @extend .wrapper;
 }
 
@@ -29,6 +30,7 @@ section {
   @extend .tole;
   z-index: 2;
   position: relative;
+  overflow-x:hidden;
 }
 
 //no margin
