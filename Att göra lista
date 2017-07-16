@@ -1,10 +1,8 @@
 Index
-
-    Smoothscroll.
+    Smoothscroll. (Ander sa att han inte vill ha det)
 
     * Header
         Göra att man kan ända youtub klipet via admin.
-        Ta tillbaka transition på att hovra på orglarna eller ta bort hover effecten helt.
 
 product
-    *om sliders är tom kan hela den sektionen vara gömd
+    * Om sliders är tom kan hela den sektionen vara gömd
