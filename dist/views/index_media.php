@@ -1,9 +1,10 @@
-<div id="i_load_container"></div><div class="i_media_header"><h1><?php print_field("i_media_header"); ?></h1></div><section id="Media" class="container-fluid i_media"><div class="row-fluid i_media"><div class="col-xs-12 i_media_container grid_container"><div class="grid_temp_holder"> <?php
+<div id="i_load_container"></div><div class="i_media_header"><h1><?php print_field("i_media_header"); ?></h1></div><section id="Media" class="container-fluid i_media"><div class="row-fluid"><div class="col-xs-12 i_media_container grid_container"><div class="grid_temp_holder"> <?php
                 $con = connect();
                 $posts = get_all_media_posts_small($con);
 
                 foreach($posts as $post){
-                    $title        = $post['title'];
+                    $title        = translate($post,'title');
+                    debug_to_console($title);
 
                     $header_image = $post['header_image'];
                     $size         = $post['size'];

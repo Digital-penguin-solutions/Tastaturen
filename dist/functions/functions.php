@@ -1,7 +1,5 @@
 <?php
-//all functions for Metsense.com
 
-//check if functions is included in page to acses them
 if(!isset($functions_included)){
 
     $functions_included = true;
@@ -41,13 +39,31 @@ if(!isset($functions_included)){
     }
 
     function translate($obj, $field){
+        $value = "";
         if(get_lang() == "dk"){
-            return $obj[$field . "_dk"];
-
+            $value = $obj[$field . "_dk"];
         }
         else {
-            return $obj[$field];
+            $value = $obj[$field];
         }
+
+        if($field == "price" && $value == ""){
+            if(get_lang() == "dk"){
+                $value = "Kontakt os for priser";
+            }
+            else {
+                $value = "Kontakta oss för prisuppgifter";
+            }
+        }
+        else if ($field == "price"){
+            if(get_lang() == "dk"){
+                $value = "Fra " .$value . "Dkr";
+            }       
+            else {
+                $value = "Från " .$value . "kr";
+            }
+        }
+        return $value;
     }
 
     //read slider images
@@ -145,11 +161,11 @@ if(!isset($functions_included)){
     // Return only the products that are to be shown on the homepage
     function get_all_visible_products($con, $type) {
         if($type==""){
-            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' ORDER BY order_number";
+            $query  = "SELECT type, price,price_dk, product_id, name, short_description, short_description_dk, main_image FROM product WHERE `show` = '1' ORDER BY order_number";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
         else {
-            $query  = "SELECT type, price, product_id, name, short_description, main_image FROM product WHERE `show` = '1' AND type = '$type' ORDER BY order_number";
+            $query  = "SELECT type, price,price_dk, product_id, name, short_description, short_description_dk, main_image FROM product WHERE `show` = '1' AND type = '$type' ORDER BY order_number";
             $select = mysqli_query($con, $query) or die (mysqli_error($con));
         }
 
@@ -188,7 +204,6 @@ if(!isset($functions_included)){
         return $array;
     }
 
-    //Get all products from database by id
     function get_product_by_id($con, $id){
 
         $id = secure_str($id);
@@ -281,7 +296,6 @@ if(!isset($functions_included)){
         return $brochure;
     }
 
-    //get name of produkt by id from database
     function get_product_name_by_id($con, $id){
         $id     = secure_str($id);
         $query  = "SELECT name FROM product WHERE product_id = '$id'";
@@ -289,6 +303,16 @@ if(!isset($functions_included)){
         $data   = mysqli_fetch_array($select);
 
         $name = $data['name'];
+        return $name;
+    }
+
+    function get_product_brochure_name_by_id($con, $id){
+        $id     = secure_str($id);
+        $query  = "SELECT brochure_name FROM product WHERE product_id = '$id'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data   = mysqli_fetch_array($select);
+
+        $name = $data['brochure_name'];
         return $name;
     }
 
@@ -330,23 +354,36 @@ if(!isset($functions_included)){
 
     //Echo all products in the index slider
     function echo_products_index($products){
+        $i      = 0;
         $firs   = 'i_products_sliders_bg_1';
         $second = 'i_products_sliders_bg_2';
         $third  = 'i_products_sliders_bg_3';
 
         foreach($products as $product){
             $name  = $product['name'];
-            $short = $product['short_description'];
-            $price = $product['price'];
+            $short = translate($product,'short_description');
+            $price = translate($product,'price');
             $image = $product['main_image'];
             $id    = $product['product_id'];
 
+            $i++;
 
-            if($price == ""){
-                $price = "Kontakta för prisuppgifter";
+            if ($i % 3 == 1){
+                $j = $firs;
+            }
+            elseif ($i % 3 == 2){
+                $j = $second;
+            }
+            else{
+                $j = $third;
             }
 
-            ?> <!--products that is used in slider--><div class="i_products_sliders col-md-4 col-xs-6"><a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item"><!--<img src="data:image/jpeg;base64,<?php //A_uecho base64_encode($image) ?>" alt="Huvudbild"/>--> <img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"><h1><?php echo $name;?></h1><p class="short"><?php echo $short;?> </p><p class="price"><?php echo $price;?></p></a></div> <?php
+
+            //if($price == ""){
+                //$price = "Kontakta för prisuppgifter";
+            //}
+
+            ?> <!--products that is used in slider--><div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>"><a href="product?id=<?php echo $id; ?>" class="i_products_sliders_item"><!--<img src="data:image/jpeg;base64,<?php //A_uecho base64_encode($image) ?>" alt="Huvudbild"/>--> <img src="functions/load_product_image?id=<?php echo $id; ?>" alt="Huvudbild"><h1><?php echo $name;?></h1><p class="short"><?php echo $short;?> </p><p class="price"><?php echo $price;?></p></a></div> <?php
         }
     }
 
@@ -373,6 +410,7 @@ if(!isset($functions_included)){
         return $destination;
     }
 
+    //
     function return_bytes($val) {
         $val = trim($val);
         $last = strtolower($val[strlen($val)-1]);
@@ -406,9 +444,8 @@ if(!isset($functions_included)){
         return $data;
 
     }
-
     function get_all_media_posts_small($con){
-        $query  = "SELECT youtube_id, type, size, media_id, header_image, title FROM media";
+        $query  = "SELECT youtube_id, type, size, media_id, header_image,title_dk, title FROM media";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
 
         $array  = array();
@@ -422,6 +459,41 @@ if(!isset($functions_included)){
         return $array;
     }
 
+    function get_all_links($con){
+        $query  = "SELECT * FROM link";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+    
+        $array  = array();
+
+        while($data = mysqli_fetch_array($select)){
+
+            $array[] = $data;
+        }
+
+
+        return $array;
+
+    }
+    function echo_admin_links($links){
+        $count = 0;
+        foreach ($links as $link) {
+            $name         = $link['name'];
+            $name_dk      = $link['name_dk'];
+            $href         = $link['href'];
+            $link_id      = $link['link_id'];
+            
+
+            if($count % 2 == 0) {
+                $offset = 1;
+            }
+            else {
+                $offset = 2;
+            }
+            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product small_product"><h1><?php echo $name ?></h1><p><?php echo $href ?></p><!--- EDIT BUTTON--> <a href="add_link?link_id=<?php echo $link_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- DELETE BUTTON--> <a href="functions/delete_link?id=<?php echo $link_id?>" class="product_button product_delete_button"><p class="center_vertically_css">Delete</p></a></div> <?php
+            $count++;
+        }
+    }
+
     function echo_admin_media($posts){
         $count = 0;
         foreach ($posts as $post) {
@@ -430,16 +502,6 @@ if(!isset($functions_included)){
             $media_id     = $post['media_id'];
             $type         = $post['type'];
             $yt_id        = $post['youtube_id'];
-            //$show         = $product['show'];
-
-            //if($show == 1){
-                //$toggle_button_value = "Hide product";
-                //$toggle_color        = "red";
-            //}
-            //else {
-                //$toggle_button_value = "Set visible";
-                //$toggle_color        = "green";
-            //}
 
             if($count % 2 == 0) {
                 $offset = 1;
@@ -465,7 +527,6 @@ if(!isset($functions_included)){
 
 
     }
-
     function echo_admin_products($products){
         $count = 0;
         foreach ($products as $product) {
@@ -489,11 +550,12 @@ if(!isset($functions_included)){
             else {
                 $offset = 2;
             }
-            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?id=<?php echo $product_id?>"><?php echo $name ?></a></h1><img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"><!--- EDIT BUTTON--> <a href="add_product?product_id=<?php echo $product_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- TOGGLE SHOW BUTTON--> <a href="functions/toggle_product?product_id=<?php echo $product_id?>" class="product_button <?php echo $toggle_color?> product_show_button"><p class="center_vertically_css"><?php echo $toggle_button_value?></p></a><!--- DELETE BUTTON--> <a href="functions/delete_product?id=<?php echo $product_id?>" class="product_button product_delete_button"><p class="center_vertically_css">Delete</p></a></div> <?php
+            ?> <div class="col-md-4 col-md-offset-<?php echo $offset ?> admin_product"><h1><a href="product?id=<?php echo $product_id?>"><?php echo $name ?></a></h1><img class="center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="Product main image"><!--- EDIT BUTTON--> <a href="add_product?product_id=<?php echo $product_id?>" class="product_button product_edit_button"><p class="center_vertically_css">Edit</p></a><!--- TOGGLE SHOW BUTTON--> <a href="functions/toggle_product?product_id=<?php echo $product_id?>" class="product_button <?php echo $toggle_color;?> product_show_button"><p class="center_vertically_css"><?php echo $toggle_button_value?></p></a><!--- DELETE BUTTON--> <a href="functions/delete_product?id=<?php echo $product_id?>" class="product_button product_delete_button"><p class="center_vertically_css">Delete</p></a></div> <?php
             $count++;
         }
 
     }
+
 
     function get_field_by_name($con, $name){
         $name   = secure_str($name);
@@ -513,11 +575,18 @@ if(!isset($functions_included)){
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
 
-    function update_field($name, $new_value){
+    function update_field($name, $new_value, $lang){
         global $con;
         $name = secure_str($name);
         $new_value = secure_str($new_value);
-        $query = "UPDATE text_field SET value = '$new_value' WHERE name = '$name'";
+
+        if($lang == "sv"){ // swedish version
+            $query = "UPDATE text_field SET value = '$new_value' WHERE name = '$name'";
+        }
+        else { // danish version
+            $query = "UPDATE text_field SET value_dk = '$new_value' WHERE name = '$name'";
+
+        }
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
 
@@ -527,10 +596,15 @@ if(!isset($functions_included)){
 
         
         if($field != null){ // if field already exists
-            $value = $field['value'];
+            if(get_lang() == "sv"){
+                $value = $field['value'];
+            }
+            else {
+                $value = $field['value_dk'];
+            }
             echo "<span>".$value . "</span>";
         }
-        else {
+        if($field == null || $value == ""){
             create_field($name);
             echo "<span> Click to edit </span>";
         }
@@ -539,10 +613,26 @@ if(!isset($functions_included)){
 ?> <script>var script = document.currentScript;
             var parent = script.parentNode;
             var name   = '<?php echo $name; ?>';
-            $(parent).attr("name", name);
-            $(parent).click(function(){
-                show_edit_view(this);
-            });</script> <?php
+
+            var parent_type = parent.nodeName;
+
+            // if it is a link
+            if(parent_type == "A"){
+                //var click_element = "<div class = 'edit_field_btn'> Edit </div>";
+                //$(click_element).attr("name", name);
+                //$(click_element).click(function(){
+                    //show_edit_view(this);
+                //});
+                //$(parent).append(click_element);
+
+            }
+            else { // any element but a link
+
+                $(parent).attr("name", name);
+                $(parent).click(function(){
+                    show_edit_view(this);
+                });
+            }</script> <?php
 
         }
 ?> <?php
@@ -554,6 +644,7 @@ if(!isset($functions_included)){
         $thumbnail_image = file_get_contents($thumbnail_url);
 ?> <img src="data:image/jpeg;base64,<?php echo base64_encode($thumbnail_image) ?>" alt="Youtube video"> <?php
     }
+
 
     function get_stored_image_by_name($con, $name){
         $name   = secure_str($name);
@@ -582,7 +673,7 @@ if(!isset($functions_included)){
 
         }
         //echo "data:image/jpeg;base64," . base64_encode($data);
-        ?> <img onclick="open_input('<?php echo $name?>')" class="<?php echo $classes; ?>" src="functions/load_stored_image.php?name=<?php echo $name;?>" alt="No image selected"><!--<img onclick="open_input('<?php //echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php //echo base64_encode($data) ?>" alt="No image selected"/>--> <?php
+        ?> <img onclick="open_input('<?php echo $name?>')" class="<?php echo $classes; ?>" src="functions/load_stored_image.php?name=<?php echo $name; if(isset($_GET['r'])){ echo "&r=" . $_GET['r'];}?>" alt="No image selected"><!--<img onclick="open_input('<?php //echo $name?>')" class = "<?php echo $classes; ?>"src="data:image/jpeg;base64,<?php //echo base64_encode($data) ?>" alt="No image selected"/>--> <?php
         if(isset($_SESSION['admin'])){
 ?> <input image_id="<?php echo $name; ?>" name="stored_image" class="stored_image_input" type="file" onchange="compress_image_single(event)"> <?php
         }
@@ -594,5 +685,16 @@ if(!isset($functions_included)){
         $query = "INSERT INTO stored_image (name) VALUES ('$name')";
         mysqli_query($con, $query) or die (mysqli_error($con));
     }
+
+    function get_link_by_id($con, $id){
+        $id = secure_str($id);
+        $query = "SELECT * FROM link WHERE link_id = '$id'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data = mysqli_fetch_array($select);
+
+        return $data;
+    }
+    
+
 }
 ?>

@@ -25,13 +25,13 @@ else {
                     print_field("pe_header_church");
                 }
                 ?> </h1><p> <?php
-                if($type == "hem"){
-                    print_field("pe_info_home");
-                }
-                else {
-                    print_field("pe_info_church");
-                }
-                ?> </p></div></div></header><!-- Show all the products--><section class="container-fluid pe_prod" role="main"><div class="row-fluid pe_prod"><div class="col-xs-12 pe_prod_container"><div class="pe_prod_sort col-xs-12"><h1>Sortera</h1><div class="pe_prod_btn"><button onclick="sortByPrice(this)" class="pe_product_price">Pris</button> <button onclick="sortByName(this)" class="pe_product_name">Namn</button></div></div><div class="pe_prod_container2 col-xs-11"> <?php
+                //if($type == "hem"){
+                    ////print_field("pe_info_home");
+                //}
+                //else {
+                    ////print_field("pe_info_church");
+                //}
+                ?> </p></div></div></header><!-- Show all the products--><section class="container-fluid pe_prod" role="main"><div class="row-fluid pe_prod"><div class="col-xs-12 pe_prod_container"><div class="pe_prod_container2 col-xs-11"> <?php
                 $products = get_all_visible_products($con, $type);
                 $len        = count($products);
                 //$odds       = 'prud-big';
@@ -40,8 +40,8 @@ else {
 
                 foreach($products as $i=>$product){
                     $name = $product['name'];
-                    $short = $product['short_description'];
-                    $price = $product['price'];
+                    $short = translate($product,'short_description');
+                    $price = translate($product,'price');
                     $image = $product['main_image'];
                     $id = $product['product_id'];
                     $type = $product['type'];

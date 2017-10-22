@@ -28,24 +28,32 @@ include "partials/head.php";
                     ?> <form class="login change_password_form" action="functions/login.php" method="post"><p>New password:</p><input placeholder="New password" type="password" name="password"><br><input placeholder="Repeat new password" type="password" name="password_repeat"> <input type="submit" name="set_password" value="Change"></form> <?php
                 }
                 ?> <div class="manage_buttons_container col-xs-12"> <?php
-                    if(isset($_GET['view']) && $_GET['view'] == "products"){
-                        ?> <a href="add_product.php" class="manage_button col-xs-5 col-xs-offset-1"><p>Add new product</p></a> <?php
+                    //if(isset($_GET['view']) && $_GET['view'] == "products"){
+                        //?> <!--//<a href = "add_product.php" class = "manage_button col-xs-5 col-xs-offset-1">
+                            //<p> Add new product </p>
+                            //</a>--> <?php
 
-                    }
-                    else if(isset($_GET['view'])){
-                        ?> <a href="add_media.php" class="manage_button col-xs-5 col-xs-offset-1"><p>New media post</p></a> <?php
-                    }
-                    if(isset($_GET['view']) && $_GET['view'] == "media"){
-                        ?> <a href="admin?view=products" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage products</p></a> <?php
+                    //}
+                    //else if(isset($_GET['view'])){
+                        //?> <!--//<a href = "add_media.php" class = "manage_button col-xs-5 col-xs-offset-1">
+                            //<p> New media post</p>
+                            //</a>--> <?php
+                    //}
+                    //if(isset($_GET['view']) && $_GET['view'] == "media"){
+                        //?> <!--//<a href = "admin?view=products" class = "manage_button col-xs-5 col-xs-offset-1">
+                            //<p> Manage products</p>
+                            //</a>--> <?php
 
-                    }
-                    else if(isset($_GET['view'])){
-                        ?> <a href="admin?view=media" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage media posts</p></a> <?php
+                    //}
+                    //else if(isset($_GET['view'])){
+                        //?> <!--//<a href = "admin?view=media" class = "manage_button col-xs-5 col-xs-offset-1">
+                            //<p> Manage media posts</p>
+                            //</a>--> <?php
 
-                    }
-                    if(!isset($_GET['view'])){
-                        ?> <a href="admin?view=media" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage media posts</p></a><a href="admin?view=products" class="manage_button col-xs-5 col-xs-offset-1"><p>Manage products</p></a> <?php
-                    }
+                    //}
+                    //if(!isset($_GET['view'])){
+                    ?> <a href="admin?view=media" class="manage_button col-xs-3 col-xs-offset-1"><p>Manage media posts</p></a><a href="admin?view=products" class="manage_button col-xs-3 col-xs-offset-1"><p>Manage products</p></a><a href="admin?view=links" class="manage_button col-xs-3 col-xs-offset-1"><p>Manage links</p></a> <?php
+                    //}
 
                     ?> </div> <?php
                 // if products are to be viewed
@@ -62,14 +70,16 @@ include "partials/head.php";
                     $posts = get_all_media_posts_small($con);
                     echo_admin_media($posts);
 
-                    }
-                    else {
-                        ?> <?php
-                    }
-                    }
+                }
+                else if(isset($_GET['view']) && $_GET['view'] == "links"){
+                    $links = get_all_links($con);
+                    echo_admin_links($links);
+
+                }
+            }
 
                     if(isset($_SESSION['admin'])){
-                        ?> <div class="a_btn_container col-xs-12"><a href="add_media.php" class="add_product_button col-xs-5 col-xs-offset-1">Add new media post </a><a href="add_product.php" class="add_product_button col-xs-5 col-xs-offset-1">Add a new product </a><a href="admin?change_password=" class="add_product_button col-xs-5 col-xs-offset-1">Change password </a><a href="functions/logout" class="add_product_button col-xs-5 col-xs-offset-1">Logout</a></div> <?php
+                        ?> <div class="a_btn_container col-xs-12"><a href="add_product.php" class="add_product_button col-xs-5 col-xs-offset-1">Add a new product </a><a href="add_media.php" class="add_product_button col-xs-5 col-xs-offset-1">Add new media post </a><a href="add_link.php" class="add_product_button col-xs-5 col-xs-offset-1">Add new link </a><a href="admin?change_password=" class="add_product_button col-xs-5 col-xs-offset-1">Change password </a><a href="functions/logout" class="add_product_button col-xs-5 col-xs-offset-1">Logout</a></div> <?php
                     }
                     else {
                         ?> <form class="login hidden-sm hidden-xs" action="functions/login.php" method="post"><p>PASSWORD:</p><input type="password" name="password"> <input type="submit" name="login" value="Login"></form> <?php
