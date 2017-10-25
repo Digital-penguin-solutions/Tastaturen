@@ -1433,12 +1433,12 @@ section {
         border: solid 1px #212121;
         background: transparent;
         font-size: 1.5vw;
-        height: 5vh;
+        height: auto;
         color: #212121; }
         .offert .offert_container form button:hover, .offert .offert_container form .admin_btn a:hover, .admin_btn .offert .offert_container form a:hover {
           background: #1536ff;
           color: #ffffff;
-          border: 0;
+          border: solid 1px transparent;
           transition: 0.5s; }
     .offert .offert_container .offert_product {
       height: 60vh;

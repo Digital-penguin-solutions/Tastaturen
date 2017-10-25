@@ -1,5 +1,5 @@
-<?php include "loading.php"; ?>
 <?php include "views/admin_info.php"; ?>
+<?php include "loading.php"; ?>
 <?php include "views/edit.php"; ?>
 <?php include "views/offert.php";?>
 <?php 

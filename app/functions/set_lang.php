@@ -7,8 +7,13 @@
     else {
         $_SESSION['lang'] = "sv";
     }
-    
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    //ho $_SERVER['HTTP_REFERER'];
+    if(strpos($_SERVER['HTTP_REFERER'], "tastaturen.dk") !== false){
+       header('Location: ../index.php');
+    }
+    else {
+       header('Location: ' . $_SERVER['HTTP_REFERER']);
+    }
 
 ?>
 <!--
@@ -17,3 +22,4 @@
 
 </script>
 -->
+

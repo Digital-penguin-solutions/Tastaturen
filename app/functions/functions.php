@@ -1,5 +1,4 @@
 <?php
-
 if(!isset($functions_included)){
 
     $functions_included = true;

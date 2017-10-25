@@ -1,3 +1,6 @@
+<?php
+    $con = connect();
+?>
 <div style="display:none" class="offert">
     <div class="offert_container">
     <img class = "offert_close" src="img/cross.svg" alt="close">

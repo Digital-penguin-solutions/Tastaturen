@@ -75,12 +75,12 @@
                 border: solid 1px $color4;
                 background: transparent;
                 font-size: 1.5vw;
-                height: 5vh;
+                height: auto;
                 color: $color4;
                 &:hover{
                     background: $color1;
                     color: $white;
-                    border: 0;
+                    border: solid 1px transparent;
                     transition: 0.5s;
                 }
             }

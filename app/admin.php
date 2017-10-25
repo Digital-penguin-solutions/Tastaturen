@@ -1,12 +1,12 @@
 <?php
+include "functions/functions.php";
+session_start_custom();
 //include "include_pages/loading.php";
 $no_admin_info = "1";
 ?>
 
 <?php
-include "functions/functions.php";
 $con = connect();
-session_start_custom();
 //$products = get_all_products($con, "");
 $products_home = get_all_products($con, "hem");
 $products_church = get_all_products($con, "kyrka");

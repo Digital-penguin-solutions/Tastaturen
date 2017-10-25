@@ -1,9 +1,8 @@
-
 <h1 class="col-xs-offset-1">Produkter</h1>
 <?php
     include "functions.php";
     $con = connect();
-    session_start();
+    //session_start();
     if(isset($_SESSION['cart'] )){
         $cart = $_SESSION['cart'];
 
@@ -18,8 +17,8 @@
                 <img product_id = "<?php echo $item; ?>"class = "cart_remove" src="img/cross.svg" alt="">
                 <div class="offert_product_text col-xs-6">
                     <h1><?php echo $name;?></h1>
-                    <p><?php echo $short;?></p>
-                    <p><?php echo $price;?></p>
+                    <p><?php //echo $short;?></p>
+                    <p><?php //echo $price;?></p>
                 </div>
 
                 <div class="offert_product_img col-xs-5">
