@@ -10,8 +10,8 @@
 -[ ] En till sida ``events``
 -[ ] Uppdatera sitemap.xml
 -[ ] lägga till humans.txt
--[ ] Fixa favicon så den fungerar i alla enheten.
 -[ ] Fixa README filen
 
 ## Done
+-[x] Fixa favicon så den fungerar i alla enheten.
 -[x] Sätta in att coppyright saken är altid upp to date med php

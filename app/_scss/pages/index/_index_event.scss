@@ -1,4 +1,4 @@
-@import "../index";
+@import "../../everything";
 
 .i_event{
   background: $color4;
@@ -16,7 +16,7 @@
     }
 
     .i_event_container_text{
-      padding-top: 10vh;
+      padding-bottom: 10vh;
     }
   }
 }

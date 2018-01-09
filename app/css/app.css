@@ -3565,7 +3565,7 @@ section {
     color: white;
     padding: 5vh; }
   .i_event .i_event_container .i_event_container_text {
-    padding-top: 10vh; }
+    padding-bottom: 10vh; }
 
 .wrapper, html, body {
   background: white;
