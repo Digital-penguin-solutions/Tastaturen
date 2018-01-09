@@ -9,9 +9,9 @@
 -[ ] Lägg till `länkar` I naven
 -[ ] En till sida ``events``
 -[ ] Uppdatera sitemap.xml
--[ ] lägga till humans.txt
 -[ ] Fixa README filen
 
 ## Done
+-[x] lägga till humans.txt
 -[x] Fixa favicon så den fungerar i alla enheten.
 -[x] Sätta in att coppyright saken är altid upp to date med php
