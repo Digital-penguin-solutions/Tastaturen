@@ -1,7 +1,0 @@
-*.css.map
-.idea/
-.DS_Store
-*.db
-db_connect.php
-!*.svg
-node_modules/
