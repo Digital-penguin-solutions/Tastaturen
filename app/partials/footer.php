@@ -22,7 +22,7 @@
             </div>
 
             <div class="footer_bot">
-                <p>&copy Tastaturen 2017</p>
+                <p>&copy Tastaturen <?php echo date("Y"); ?></p>
                 <p>Hemsidan är designad och producerad av <a href="#"> Digital Penguin Solutions</a></p>
             </div>
         </div>

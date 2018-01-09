@@ -14,3 +14,4 @@
 -[ ] Fixa README filen
 
 ## Done
+-[x] Sätta in att coppyright saken är altid upp to date med php

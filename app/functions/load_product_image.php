@@ -1,4 +1,4 @@
-<?php
+d<?php
 
     include "functions.php";
     $con = connect();

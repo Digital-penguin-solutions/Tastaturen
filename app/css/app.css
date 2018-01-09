@@ -16,10 +16,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -120,10 +120,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -291,10 +291,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -528,10 +528,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -739,10 +739,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -846,10 +846,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -1006,10 +1006,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -1131,10 +1131,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -1281,10 +1281,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -1499,10 +1499,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -1651,10 +1651,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -1769,10 +1769,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -1949,10 +1949,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -2053,10 +2053,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -2157,10 +2157,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -2307,23 +2307,19 @@ section {
       overflow: hidden; }
       .pe_header .pe_header_container .pe_header_bg img {
         width: 100%;
-        min-height: 100%;
+        min-height: 80%;
         position: absolute;
         position: absolute;
         top: 50%;
         transform: translateY(-50%); }
-    .pe_header .pe_header_container .pe_header_text {
-      position: absolute;
-      z-index: 100;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      text-align: center;
-      color: #212121; }
-      .pe_header .pe_header_container .pe_header_text h1 {
+    .pe_header .pe_header_container .pe_header_bg_overlay {
+      height: 100%;
+      width: 100%;
+      background: black; }
+      .pe_header .pe_header_container .pe_header_bg_overlay h1 {
         font-size: 7.5vw;
         font-weight: 600; }
-      .pe_header .pe_header_container .pe_header_text p {
+      .pe_header .pe_header_container .pe_header_bg_overlay p {
         font-size: 4.6vw; }
 
 .pe_type {
@@ -2367,8 +2363,6 @@ section {
           opacity: 0.4; }
 
 @media (min-width: 992px) {
-  .pe_header .pe_header_container .pe_prod_sort h1 {
-    font-size: 3vw; }
   .pe_header .pe_header_container .pe_header_text {
     text-align: left;
     margin-left: 2vw; }
@@ -2395,10 +2389,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -2499,10 +2493,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -2874,10 +2868,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -3211,10 +3205,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -3330,10 +3324,269 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  padding: 0 !important; }
+
+.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
+  top: 0 !important;
+  left: 0 !important; }
+
+.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
+  width: 100% !important; }
+
+.fullh, .full_size, .background_image_container, .background_image_container img {
+  height: 100% !important; }
+
+.center_vertically_css, .edit .edit_container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.center_horizontally_css {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.center_css {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.hidden {
+  visibility: hidden; }
+
+.button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2vw; }
+  .button:hover {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+#desktop_check {
+  position: fixed;
+  width: 0;
+  height: 0;
+  color: transparent; }
+
+.slide-in {
+  display: none; }
+
+.text-effect {
+  display: none; }
+
+.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+  position: absolute;
+  bottom: 2.5vw; }
+  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+    color: transparent;
+    background-color: transparent;
+    height: 12vh;
+    width: 17vw;
+    margin-bottom: -0.1vh;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1vw; }
+  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: rgba(30, 30, 30, 0.25);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: 1vh; }
+  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+    color: #ffffff;
+    background: rgba(21, 54, 255, 0.8);
+    transition: 1s; }
+  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+.i_contact {
+  min-height: 50vh;
+  background: #212121; }
+  .i_contact .i_contact_container .i_contact_text_top {
+    width: 100%;
+    height: 15vh;
+    background: #1e1e1e;
+    text-align: center;
+    margin: 0 !important; }
+    .i_contact .i_contact_container .i_contact_text_top h2 {
+      color: #ffffff;
+      line-height: 10vh;
+      font-size: 6vw;
+      margin: 0; }
+  .i_contact .i_contact_container img {
+    border-radius: 50%;
+    margin-top: 5vh; }
+  .i_contact .i_contact_container .i_contact_text {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 10vh; }
+    .i_contact .i_contact_container .i_contact_text h2 {
+      font-size: 6vw;
+      font-weight: 600; }
+    .i_contact .i_contact_container .i_contact_text p {
+      font-size: 3.5vw;
+      font-weight: 300; }
+
+@media (min-width: 992px) {
+  .i_contact .i_contact_container .i_contact_text_top h2 {
+    font-size: 2.5vw; }
+  .i_contact .i_contact_container img {
+    margin-top: 10vh; }
+  .i_contact .i_contact_container .i_contact_text h2 {
+    font-size: 2.3vw; }
+  .i_contact .i_contact_container .i_contact_text p {
+    font-size: 1.5vw; } }
+
+.wrapper, html, body {
+  background: white;
+  z-index: 1;
+  position: relative; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+section {
+  z-index: 2;
+  position: relative;
+  overflow-x: hidden; }
+
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  margin: 0 !important; }
+
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  padding: 0 !important; }
+
+.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
+  top: 0 !important;
+  left: 0 !important; }
+
+.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
+  width: 100% !important; }
+
+.fullh, .full_size, .background_image_container, .background_image_container img {
+  height: 100% !important; }
+
+.center_vertically_css, .edit .edit_container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.center_horizontally_css {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.center_css {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.hidden {
+  visibility: hidden; }
+
+.button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2vw; }
+  .button:hover {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+#desktop_check {
+  position: fixed;
+  width: 0;
+  height: 0;
+  color: transparent; }
+
+.slide-in {
+  display: none; }
+
+.text-effect {
+  display: none; }
+
+.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+  position: absolute;
+  bottom: 2.5vw; }
+  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+    color: transparent;
+    background-color: transparent;
+    height: 12vh;
+    width: 17vw;
+    margin-bottom: -0.1vh;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1vw; }
+  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: rgba(30, 30, 30, 0.25);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: 1vh; }
+  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+    color: #ffffff;
+    background: rgba(21, 54, 255, 0.8);
+    transition: 1s; }
+  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+.i_event {
+  background: #212121; }
+  .i_event .i_event_container h1 {
+    text-align: center;
+    font-size: 4vw;
+    font-weight: 600;
+    background: #1e1e1e;
+    width: 100%;
+    color: white;
+    padding: 5vh; }
+  .i_event .i_event_container .i_event_container_text {
+    padding-top: 10vh; }
+
+.wrapper, html, body {
+  background: white;
+  z-index: 1;
+  position: relative; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+section {
+  z-index: 2;
+  position: relative;
+  overflow-x: hidden; }
+
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  margin: 0 !important; }
+
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -3642,10 +3895,422 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  padding: 0 !important; }
+
+.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
+  top: 0 !important;
+  left: 0 !important; }
+
+.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
+  width: 100% !important; }
+
+.fullh, .full_size, .background_image_container, .background_image_container img {
+  height: 100% !important; }
+
+.center_vertically_css, .edit .edit_container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.center_horizontally_css {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.center_css {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.hidden {
+  visibility: hidden; }
+
+.button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2vw; }
+  .button:hover {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+#desktop_check {
+  position: fixed;
+  width: 0;
+  height: 0;
+  color: transparent; }
+
+.slide-in {
+  display: none; }
+
+.text-effect {
+  display: none; }
+
+.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+  position: absolute;
+  bottom: 2.5vw; }
+  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+    color: transparent;
+    background-color: transparent;
+    height: 12vh;
+    width: 17vw;
+    margin-bottom: -0.1vh;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1vw; }
+  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: rgba(30, 30, 30, 0.25);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: 1vh; }
+  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+    color: #ffffff;
+    background: rgba(21, 54, 255, 0.8);
+    transition: 1s; }
+  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+.i_info {
+  min-height: 50vh;
+  background: #212121; }
+  .i_info .i_info_container {
+    text-align: center; }
+    .i_info .i_info_container h2 {
+      color: #ffffff;
+      font-size: 8vw;
+      font-weight: 400;
+      margin-top: 8vh; }
+    .i_info .i_info_container p {
+      color: #ffffff;
+      vertical-align: middle;
+      font-size: 5vw;
+      font-weight: 400; }
+    .i_info .i_info_container a {
+      margin-top: 5vh;
+      margin-bottom: 5vh; }
+
+@media (min-width: 992px) {
+  .i_info .i_info_container h2 {
+    font-size: 3.3vw; }
+  .i_info .i_info_container p {
+    font-size: 1.5vw; } }
+
+.wrapper, html, body {
+  background: white;
+  z-index: 1;
+  position: relative; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+section {
+  z-index: 2;
+  position: relative;
+  overflow-x: hidden; }
+
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  margin: 0 !important; }
+
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  padding: 0 !important; }
+
+.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
+  top: 0 !important;
+  left: 0 !important; }
+
+.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
+  width: 100% !important; }
+
+.fullh, .full_size, .background_image_container, .background_image_container img {
+  height: 100% !important; }
+
+.center_vertically_css, .edit .edit_container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.center_horizontally_css {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.center_css {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.hidden {
+  visibility: hidden; }
+
+.button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2vw; }
+  .button:hover {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+#desktop_check {
+  position: fixed;
+  width: 0;
+  height: 0;
+  color: transparent; }
+
+.slide-in {
+  display: none; }
+
+.text-effect {
+  display: none; }
+
+.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+  position: absolute;
+  bottom: 2.5vw; }
+  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+    color: transparent;
+    background-color: transparent;
+    height: 12vh;
+    width: 17vw;
+    margin-bottom: -0.1vh;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1vw; }
+  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: rgba(30, 30, 30, 0.25);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: 1vh; }
+  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+    color: #ffffff;
+    background: rgba(21, 54, 255, 0.8);
+    transition: 1s; }
+  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+.i_info2 {
+  background: #212121; }
+  .i_info2 .i_info2_container h1 {
+    text-align: center;
+    font-size: 6vw;
+    font-weight: 600;
+    background: #1e1e1e;
+    width: 100%;
+    color: white;
+    padding: 5vh; }
+  .i_info2 .i_info2_container .i_info2_text_container {
+    margin-bottom: 10vh; }
+    .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container {
+      margin-top: 2vh; }
+      .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container a {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin: 0;
+        float: left;
+        font-size: 3vw;
+        font-weight: 300;
+        display: block;
+        width: 50%; }
+        .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container a:hover {
+          color: #b3b3b3;
+          transition: 0.3s; }
+
+@media (min-width: 992px) {
+  .i_info2 .i_info2_container h1 {
+    font-size: 4vw; }
+  .i_info2 .i_info2_container .i_info2_text_container a {
+    font-size: 1vw; } }
+
+.wrapper, html, body {
+  background: white;
+  z-index: 1;
+  position: relative; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+section {
+  z-index: 2;
+  position: relative;
+  overflow-x: hidden; }
+
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  margin: 0 !important; }
+
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  padding: 0 !important; }
+
+.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
+  top: 0 !important;
+  left: 0 !important; }
+
+.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
+  width: 100% !important; }
+
+.fullh, .full_size, .background_image_container, .background_image_container img {
+  height: 100% !important; }
+
+.center_vertically_css, .edit .edit_container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.center_horizontally_css {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.center_css {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+.hidden {
+  visibility: hidden; }
+
+.button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2vw; }
+  .button:hover {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+#desktop_check {
+  position: fixed;
+  width: 0;
+  height: 0;
+  color: transparent; }
+
+.slide-in {
+  display: none; }
+
+.text-effect {
+  display: none; }
+
+.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
+  position: absolute;
+  bottom: 2.5vw; }
+  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
+    color: transparent;
+    background-color: transparent;
+    height: 12vh;
+    width: 17vw;
+    margin-bottom: -0.1vh;
+    text-align: center;
+    padding: 1vw;
+    font-size: 1vw; }
+  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background: rgba(30, 30, 30, 0.25);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    padding: 1vh; }
+  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
+    color: #ffffff;
+    background: rgba(21, 54, 255, 0.8);
+    transition: 1s; }
+  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
+    background: #1536ff;
+    border: 0;
+    transition: 0.5s; }
+
+.i_map {
+  height: 70vh;
+  background: #212121; }
+  .i_map .i_map_container {
+    height: 100%;
+    width: 100%; }
+    .i_map .i_map_container .i_map_info {
+      z-index: 50;
+      height: 100%;
+      width: 100%;
+      position: absolute; }
+    .i_map .i_map_container .i_map_text_container {
+      background: rgba(195, 195, 195, 0.7);
+      height: 100%;
+      width: 100%;
+      z-index: 100;
+      position: absolute;
+      text-align: center;
+      color: white;
+      cursor: pointer; }
+      .i_map .i_map_container .i_map_text_container h1 {
+        margin-top: 25vh;
+        font-size: 5vw;
+        font-weight: 600; }
+      .i_map .i_map_container .i_map_text_container h3 {
+        font-size: 4vw;
+        font-weight: 400; }
+      .i_map .i_map_container .i_map_text_container i {
+        margin-top: 2vh;
+        font-size: 10vw; }
+
+@media (min-width: 992px) {
+  .i_map .i_map_container .i_map_text_container h1 {
+    margin-top: 15vh;
+    font-size: 3vw; }
+  .i_map .i_map_container .i_map_text_container h3 {
+    font-size: 2vw; }
+  .i_map .i_map_container .i_map_text_container i {
+    margin-top: 1vh;
+    font-size: 4vw; } }
+
+.wrapper, html, body {
+  background: white;
+  z-index: 1;
+  position: relative; }
+
+html {
+  overflow-x: hidden; }
+
+body {
+  font-family: 'Lato', sans-serif; }
+
+section {
+  z-index: 2;
+  position: relative;
+  overflow-x: hidden; }
+
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
+  margin: 0 !important; }
+
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -3802,10 +4467,10 @@ section {
   position: relative;
   overflow-x: hidden; }
 
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   margin: 0 !important; }
 
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
+.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_contact .i_contact_container, .i_event, .i_event .i_event_container, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_info2, .i_info2 .i_info2_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
   padding: 0 !important; }
 
 .tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
@@ -4047,557 +4712,3 @@ section {
           font-size: 2.2vw; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item p {
           font-size: 1.8vw; } }
-
-.wrapper, html, body {
-  background: white;
-  z-index: 1;
-  position: relative; }
-
-html {
-  overflow-x: hidden; }
-
-body {
-  font-family: 'Lato', sans-serif; }
-
-section {
-  z-index: 2;
-  position: relative;
-  overflow-x: hidden; }
-
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
-  margin: 0 !important; }
-
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
-  padding: 0 !important; }
-
-.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
-  top: 0 !important;
-  left: 0 !important; }
-
-.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
-  width: 100% !important; }
-
-.fullh, .full_size, .background_image_container, .background_image_container img {
-  height: 100% !important; }
-
-.center_vertically_css, .edit .edit_container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.center_horizontally_css {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); }
-
-.center_css {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
-
-.hidden {
-  visibility: hidden; }
-
-.button {
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.2vw; }
-  .button:hover {
-    background: #1536ff;
-    border: 0;
-    transition: 0.5s; }
-
-#desktop_check {
-  position: fixed;
-  width: 0;
-  height: 0;
-  color: transparent; }
-
-.slide-in {
-  display: none; }
-
-.text-effect {
-  display: none; }
-
-.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
-  position: absolute;
-  bottom: 2.5vw; }
-  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
-    color: transparent;
-    background-color: transparent;
-    height: 12vh;
-    width: 17vw;
-    margin-bottom: -0.1vh;
-    text-align: center;
-    padding: 1vw;
-    font-size: 1vw; }
-  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    background: rgba(30, 30, 30, 0.25);
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2vw;
-    padding: 1vh; }
-  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
-    color: #ffffff;
-    background: rgba(21, 54, 255, 0.8);
-    transition: 1s; }
-  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
-    background: #1536ff;
-    border: 0;
-    transition: 0.5s; }
-
-.i_info {
-  min-height: 50vh;
-  background: #212121; }
-  .i_info .i_info_container {
-    text-align: center; }
-    .i_info .i_info_container h2 {
-      color: #ffffff;
-      font-size: 8vw;
-      font-weight: 400;
-      margin-top: 8vh; }
-    .i_info .i_info_container p {
-      color: #ffffff;
-      vertical-align: middle;
-      font-size: 5vw;
-      font-weight: 400; }
-    .i_info .i_info_container a {
-      margin-top: 5vh;
-      margin-bottom: 5vh; }
-
-@media (min-width: 992px) {
-  .i_info .i_info_container h2 {
-    font-size: 3.3vw; }
-  .i_info .i_info_container p {
-    font-size: 1.5vw; } }
-
-.wrapper, html, body {
-  background: white;
-  z-index: 1;
-  position: relative; }
-
-html {
-  overflow-x: hidden; }
-
-body {
-  font-family: 'Lato', sans-serif; }
-
-section {
-  z-index: 2;
-  position: relative;
-  overflow-x: hidden; }
-
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
-  margin: 0 !important; }
-
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
-  padding: 0 !important; }
-
-.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
-  top: 0 !important;
-  left: 0 !important; }
-
-.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
-  width: 100% !important; }
-
-.fullh, .full_size, .background_image_container, .background_image_container img {
-  height: 100% !important; }
-
-.center_vertically_css, .edit .edit_container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.center_horizontally_css {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); }
-
-.center_css {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
-
-.hidden {
-  visibility: hidden; }
-
-.button {
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.2vw; }
-  .button:hover {
-    background: #1536ff;
-    border: 0;
-    transition: 0.5s; }
-
-#desktop_check {
-  position: fixed;
-  width: 0;
-  height: 0;
-  color: transparent; }
-
-.slide-in {
-  display: none; }
-
-.text-effect {
-  display: none; }
-
-.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
-  position: absolute;
-  bottom: 2.5vw; }
-  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
-    color: transparent;
-    background-color: transparent;
-    height: 12vh;
-    width: 17vw;
-    margin-bottom: -0.1vh;
-    text-align: center;
-    padding: 1vw;
-    font-size: 1vw; }
-  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    background: rgba(30, 30, 30, 0.25);
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2vw;
-    padding: 1vh; }
-  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
-    color: #ffffff;
-    background: rgba(21, 54, 255, 0.8);
-    transition: 1s; }
-  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
-    background: #1536ff;
-    border: 0;
-    transition: 0.5s; }
-
-.i_contact {
-  min-height: 50vh;
-  background: #212121; }
-  .i_contact .i_contact_container .i_contact_text_top {
-    width: 100%;
-    height: 15vh;
-    background: #1e1e1e;
-    text-align: center;
-    margin: 0 !important; }
-    .i_contact .i_contact_container .i_contact_text_top h2 {
-      color: #ffffff;
-      line-height: 10vh;
-      font-size: 6vw;
-      margin: 0; }
-  .i_contact .i_contact_container img {
-    border-radius: 50%;
-    margin-top: 5vh; }
-  .i_contact .i_contact_container .i_contact_text {
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 10vh; }
-    .i_contact .i_contact_container .i_contact_text h2 {
-      font-size: 6vw;
-      font-weight: 600; }
-    .i_contact .i_contact_container .i_contact_text p {
-      font-size: 3.5vw;
-      font-weight: 300; }
-
-@media (min-width: 992px) {
-  .i_contact .i_contact_container .i_contact_text_top h2 {
-    font-size: 2.5vw; }
-  .i_contact .i_contact_container img {
-    margin-top: 10vh; }
-  .i_contact .i_contact_container .i_contact_text h2 {
-    font-size: 2.3vw; }
-  .i_contact .i_contact_container .i_contact_text p {
-    font-size: 1.5vw; } }
-
-.wrapper, html, body {
-  background: white;
-  z-index: 1;
-  position: relative; }
-
-html {
-  overflow-x: hidden; }
-
-body {
-  font-family: 'Lato', sans-serif; }
-
-section {
-  z-index: 2;
-  position: relative;
-  overflow-x: hidden; }
-
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
-  margin: 0 !important; }
-
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
-  padding: 0 !important; }
-
-.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
-  top: 0 !important;
-  left: 0 !important; }
-
-.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
-  width: 100% !important; }
-
-.fullh, .full_size, .background_image_container, .background_image_container img {
-  height: 100% !important; }
-
-.center_vertically_css, .edit .edit_container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.center_horizontally_css {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); }
-
-.center_css {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
-
-.hidden {
-  visibility: hidden; }
-
-.button {
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.2vw; }
-  .button:hover {
-    background: #1536ff;
-    border: 0;
-    transition: 0.5s; }
-
-#desktop_check {
-  position: fixed;
-  width: 0;
-  height: 0;
-  color: transparent; }
-
-.slide-in {
-  display: none; }
-
-.text-effect {
-  display: none; }
-
-.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
-  position: absolute;
-  bottom: 2.5vw; }
-  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
-    color: transparent;
-    background-color: transparent;
-    height: 12vh;
-    width: 17vw;
-    margin-bottom: -0.1vh;
-    text-align: center;
-    padding: 1vw;
-    font-size: 1vw; }
-  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    background: rgba(30, 30, 30, 0.25);
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2vw;
-    padding: 1vh; }
-  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
-    color: #ffffff;
-    background: rgba(21, 54, 255, 0.8);
-    transition: 1s; }
-  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
-    background: #1536ff;
-    border: 0;
-    transition: 0.5s; }
-
-.i_map {
-  height: 70vh;
-  background: #212121; }
-  .i_map .i_map_container {
-    height: 100%;
-    width: 100%; }
-    .i_map .i_map_container .i_map_info {
-      z-index: 50;
-      height: 100%;
-      width: 100%;
-      position: absolute; }
-    .i_map .i_map_container .i_map_text_container {
-      background: rgba(195, 195, 195, 0.7);
-      height: 100%;
-      width: 100%;
-      z-index: 100;
-      position: absolute;
-      text-align: center;
-      color: white;
-      cursor: pointer; }
-      .i_map .i_map_container .i_map_text_container h1 {
-        margin-top: 25vh;
-        font-size: 5vw;
-        font-weight: 600; }
-      .i_map .i_map_container .i_map_text_container h3 {
-        font-size: 4vw;
-        font-weight: 400; }
-      .i_map .i_map_container .i_map_text_container i {
-        margin-top: 2vh;
-        font-size: 10vw; }
-
-@media (min-width: 992px) {
-  .i_map .i_map_container .i_map_text_container h1 {
-    margin-top: 15vh;
-    font-size: 3vw; }
-  .i_map .i_map_container .i_map_text_container h3 {
-    font-size: 2vw; }
-  .i_map .i_map_container .i_map_text_container i {
-    margin-top: 1vh;
-    font-size: 4vw; } }
-
-.wrapper, html, body {
-  background: white;
-  z-index: 1;
-  position: relative; }
-
-html {
-  overflow-x: hidden; }
-
-body {
-  font-family: 'Lato', sans-serif; }
-
-section {
-  z-index: 2;
-  position: relative;
-  overflow-x: hidden; }
-
-.nom, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
-  margin: 0 !important; }
-
-.nop, .nopm, .wrapper, html, body, section, .footer .footer_container .footer_mid ul, .pe_header, .pe_header .pe_header_container, .pe_header .pe_header_container .pe_header_bg, .pe_prod .pe_prod_container, .p_prod_head, .p_prod_head .p_prod_head_container, .p_slider, .p_slider .p_slider_container, .p_info2, .p_prod_head .p_prod_head_container .slideshow, .i_header, .i_header .i_header_container, .i_header .i_header_container .i_header_slider .i_slider_1, .i_header .i_header_container .i_header_slider .i_slider_2_container, .i_header .i_header_container .i_header_slider .i_slider_4_container, .i_media_header h1, .i_media .i_media_container, .i_products, .i_products .i_products_container, .i_products .i_products_container .i_products, .i_products .i_products_container .i_products .i_products_slider, .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item, .i_contact .i_contact_container, .i_map, .i_map .i_map_container, .i_map .i_map_container .i_map_info, .i_map .i_map_container .i_map_text_container, .i_info2, .i_info2 .i_info2_container {
-  padding: 0 !important; }
-
-.tole, .wrapper, html, body, section, .background_image_container, .background_image_container img, .offert {
-  top: 0 !important;
-  left: 0 !important; }
-
-.fullw, .full_size, .background_image_container, .background_image_container img, .slider_list_container, .slider_dots_container, .image, .add_product_form input[type=text], .add_product_form .short_description, .add_product_form .long_description, .admin_list_container {
-  width: 100% !important; }
-
-.fullh, .full_size, .background_image_container, .background_image_container img {
-  height: 100% !important; }
-
-.center_vertically_css, .edit .edit_container {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.center_horizontally_css {
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%); }
-
-.center_css {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); }
-
-.hidden {
-  visibility: hidden; }
-
-.button {
-  border: 2px solid #ffffff;
-  color: #ffffff;
-  background-color: transparent;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.2vw; }
-  .button:hover {
-    background: #1536ff;
-    border: 0;
-    transition: 0.5s; }
-
-#desktop_check {
-  position: fixed;
-  width: 0;
-  height: 0;
-  color: transparent; }
-
-.slide-in {
-  display: none; }
-
-.text-effect {
-  display: none; }
-
-.slider_btn, .admin_edit .admin_edit_container .admin_edit_btn, .p_info2 .p_info2_container .p_info2_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn {
-  position: absolute;
-  bottom: 2.5vw; }
-  .slider_btn p, .admin_edit .admin_edit_container .admin_edit_btn p, .p_info2 .p_info2_container .p_info2_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn p {
-    color: transparent;
-    background-color: transparent;
-    height: 12vh;
-    width: 17vw;
-    margin-bottom: -0.1vh;
-    text-align: center;
-    padding: 1vw;
-    font-size: 1vw; }
-  .slider_btn button, .admin_edit .admin_edit_container .admin_edit_btn button, .p_info2 .p_info2_container .p_info2_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn button, .slider_btn .admin_btn a, .admin_btn .slider_btn a, .admin_edit .admin_edit_container .admin_edit_btn .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn a, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn a {
-    border: 2px solid #ffffff;
-    color: #ffffff;
-    background: rgba(30, 30, 30, 0.25);
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2vw;
-    padding: 1vh; }
-  .slider_btn:hover p, .admin_edit .admin_edit_container .admin_edit_btn:hover p, .p_info2 .p_info2_container .p_info2_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover p, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover p {
-    color: #ffffff;
-    background: rgba(21, 54, 255, 0.8);
-    transition: 1s; }
-  .slider_btn:hover button, .admin_edit .admin_edit_container .admin_edit_btn:hover button, .p_info2 .p_info2_container .p_info2_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover button, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover button, .slider_btn:hover .admin_btn a, .admin_btn .slider_btn:hover a, .admin_edit .admin_edit_container .admin_edit_btn:hover .admin_btn a, .admin_btn .admin_edit .admin_edit_container .admin_edit_btn:hover a, .p_info2 .p_info2_container .p_info2_btn:hover .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_left .i_slider_1_left_btn:hover a, .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover .admin_btn a, .admin_btn .i_header .i_header_container .i_header_slider .i_slider_1 .i_slider_1_container .i_slider_1_right .i_slider_1_right_btn:hover a {
-    background: #1536ff;
-    border: 0;
-    transition: 0.5s; }
-
-.i_info2 {
-  background: #212121; }
-  .i_info2 .i_info2_container h1 {
-    text-align: center;
-    font-size: 6vw;
-    font-weight: 600;
-    background: #1e1e1e;
-    width: 100%;
-    color: white;
-    padding: 5vh; }
-  .i_info2 .i_info2_container .i_info2_text_container {
-    margin-bottom: 10vh; }
-    .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container {
-      margin-top: 2vh; }
-      .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container a {
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        margin: 0;
-        float: left;
-        font-size: 3vw;
-        font-weight: 300;
-        display: block;
-        width: 50%; }
-        .i_info2 .i_info2_container .i_info2_text_container .i_info2_link_container a:hover {
-          color: #b3b3b3;
-          transition: 0.3s; }
-
-@media (min-width: 992px) {
-  .i_info2 .i_info2_container h1 {
-    font-size: 4vw; }
-  .i_info2 .i_info2_container .i_info2_text_container a {
-    font-size: 1vw; } }

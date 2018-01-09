@@ -23,18 +23,16 @@
 
       img {
         width:100%;
-        min-height:100%;
+        min-height:80%;
         position:absolute;
         @include vertical-align($pos:absolute);
       }
     }
 
-    .pe_header_text{
-      position: absolute;
-      z-index: 100;
-      @include vertical-align();
-      text-align: center;
-      color:$color4;
+    .pe_header_bg_overlay{
+      height: 100%;
+      width: 100%;
+      background: black;
 
       h1{
         font-size: 7.5vw;
@@ -43,7 +41,6 @@
 
       p{
         font-size: 4.6vw;
-
       }
     }
   }
@@ -110,11 +107,6 @@
 @media (min-width: $screen-md-min) {
   .pe_header {
     .pe_header_container {
-      .pe_prod_sort {
-        h1 {
-          font-size: 3vw;
-        }
-      }
       .pe_header_text {
         text-align: left;
         margin-left: 2vw;

@@ -136,29 +136,41 @@ $products_church = get_all_visible_products($con, "kyrka");
 </section>
 
 <!-- Links and other info -->
-<section class="i_info2 container-fluid">
+<section id="lankar" class="i_info2 container-fluid">
     <div class="i_info2 row-fluid">
         <div class="i_info2_container col-xs-12">
             <h1><?php print_field("i_link_header"); ?></h1>
             <div class="i_info2_text_container col-md-6 col-md-offset-3  col-xs-10 col-xs-offset-1">
                 <div class="i_info2_link_container">
-                    <?php 
-                        $links = get_all_links($con);
+                    <?php
+                    $links = get_all_links($con);
 
-                        foreach($links as $link){
-                            $name = translate($link, 'name');
-                            $href = $link['href'];
-                            ?>
+                    foreach($links as $link){
+                        $name = translate($link, 'name');
+                        $href = $link['href'];
+                        ?>
 
-                            <a href = "<?php echo $href ?>"><?php echo $name?></a>
+                        <a href = "<?php echo $href ?>"><?php echo $name?></a>
 
-                            <?php
-                        }
+                        <?php
+                    }
                     ?>
                 </div>
             </div>
         </div>
     </div>
+</section>
+
+<!-- Event -->
+<section id="event" class="container_fluid i_event">
+    <div class="i_event row">
+        <div class="i_event_container col-xs-12">
+            <h1><?php print_field("i_event_header"); ?></h1>
+            <div class="i_event_container_text">
+
+            </div>
+            </div>
+        </div>
 </section>
 
 <!-- Media section -->
