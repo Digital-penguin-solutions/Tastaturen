@@ -7,10 +7,9 @@
 -[ ] Gömma ladda ner brochyren knappen när det inte finns någon brochyr för enheten.
 -[ ] Produkt sidan funkar inte så bra för mobil. ( när man är inne på en enskild produkt)
 -[ ] php till sidan ``events``
--[ ] Uppdatera sitemap.xml
-
 
 ## Done
+-[x] Uppdatera sitemap.xml
 -[x] Lägg till `länkar` I naven
 -[x] Lägg till `events` I naven
 -[x] En till sida ``events``

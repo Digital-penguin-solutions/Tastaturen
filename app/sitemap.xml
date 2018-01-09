@@ -4,61 +4,146 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>1.00</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/index</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/index</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product_details?t=hem</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product_details?t=kyrka</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product_details?t=kyrka</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product_details?t=hem</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=299</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=359</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=319</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=299</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=335</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=335</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=327</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=358</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=330</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=376</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=334</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=377</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=336</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=378</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=337</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=360</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=338</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=404</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://146.185.150.217/Tastaturen/app/product?id=339</loc>
-        <changefreq>weekly</changefreq>
+        <loc>http://tastaturen.se/product?id=365</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=363</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=364</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=366</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=367</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=368</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=369</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=330</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=361</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=370</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=371</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=362</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=327</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=374</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>http://tastaturen.se/product?id=375</loc>
+        <lastmod>2018-01-09T16:02:35+00:00</lastmod>
+        <priority>0.80</priority>
     </url>
 </urlset>
