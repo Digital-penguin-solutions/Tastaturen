@@ -169,8 +169,8 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="i_event_container_text">
 
             </div>
-            </div>
         </div>
+    </div>
 </section>
 
 <!-- Media section -->

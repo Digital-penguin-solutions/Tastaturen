@@ -51,6 +51,7 @@
 }
 
 .pe_prod {
+  overflow: hidden;
   min-height: 70vh;
   background: $color4;
 
@@ -85,14 +86,14 @@
         img {
           position: absolute;
           @include center-align($pos:absolute);
-          height: 35vh;
-          max-width:70%;
-          margin-top:2vh;
+          margin-top: 4vh;
+          width: 18vw;
+          height: auto;
         }
 
         &:hover{
           @include transition($time: 0.4s);
-          background: rgba($color5 , 0.4);
+          background: rgba($color2 , 0.4);
 
           img{
             opacity: 0.4;
