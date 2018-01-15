@@ -21,6 +21,12 @@
   height:200vh;
   padding-bottom:1vh !important; /* Should be the same as the gap_size variable in grid.js */
   background:$color4;
+  
+
+  .row-fluid{
+    height:100%;
+  }
+
   .i_media_container{
     height: 100%;
     margin:auto;

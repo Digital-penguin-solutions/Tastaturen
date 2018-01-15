@@ -4413,6 +4413,8 @@ section {
   padding-bottom: 1vh !important;
   /* Should be the same as the gap_size variable in grid.js */
   background: #212121; }
+  .i_media .row-fluid {
+    height: 100%; }
   .i_media .i_media_container {
     height: 100%;
     margin: auto; }
