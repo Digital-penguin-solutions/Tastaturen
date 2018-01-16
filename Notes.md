@@ -8,7 +8,7 @@
 -[ ] php till sidan ``events``.
 
 ## Done
--[x] Media sakerna fungerar inte ordentligt.
+-[x] MEdia sakerna fungerar inte ordentligt.
 -[x] Fixa att orglarna blir konstig storlek när du inte har browser fönstret i fullskärm 
 -[x] Göra bakrunden för orglarna ljusare I hem och kyrka alternatift lägga ett filter över
 -[x] fixa robots.txt

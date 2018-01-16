@@ -23,10 +23,10 @@ $price = translate($product, 'price');
 $main_image = $product['main_image'];
 $about_image = $product['about_image'];
 $slider_images = get_product_images_by_id($con, $product_id);
-$brochure_id = get_product_brochure_by_id($con, $product_id);
+$brochure = get_product_brochure_by_id($con, $product_id);
 ?>
 
-<!-- Header. Kort info om produkt och en bakrunds bildspel -->
+<!-- Header. Kort info om produkt och en bakgrunds bildspel -->
 <header class="container-fluid p_prod_head" role="banner">
     <div class="row-fluid p_prod_head">
         <div class="col-xs-12 p_prod_head_container">
@@ -41,7 +41,7 @@ $brochure_id = get_product_brochure_by_id($con, $product_id);
                 <?php } ?>
             </div>
 
-            <!-- Bg for mobile insted of slider-->
+            <!-- Bg for mobile instead of slider-->
             <div class="hidden-lg hidden-md p_prod_slider_container"
                  style="background-image:url(data:image/jpeg;base64,<?php echo base64_encode($slider_images[0]['data']) ?>)">
             </div>
@@ -54,7 +54,7 @@ $brochure_id = get_product_brochure_by_id($con, $product_id);
                     <h2><?php echo $short; ?></h2>
                 </div>
 
-                <?php if ($brochure_id !== NULL) { ?>
+                <?php if (!empty($brochure)) { ?>
                     <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'"
                             class="p_prod_head_btn_broschyr"><?php print_field("download_brochure_btn"); ?>
                     </button>
@@ -72,7 +72,7 @@ $brochure_id = get_product_brochure_by_id($con, $product_id);
     </div>
 </header>
 
-<!-- Lång information om prudukten -->
+<!-- Lång information om produkten -->
 <section class="container-fluid p_info" role="main">
     <div class="row-fluid p_info">
         <div class="col-xs-12 p_info_container">
@@ -83,13 +83,13 @@ $brochure_id = get_product_brochure_by_id($con, $product_id);
             </div>
             <div class="p_info_img col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
                 <img class="" src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>"
-                     alt="orgel produkt bild"/>
+                     alt="Orgel produkt bild"/>
             </div>
         </div>
     </div>
 </section>
 
-<!-- om man är innlogad som admin visas knappen för att redigera produkten -->
+<!-- om man är inloggad som admin visas knappen för att redigera produkten -->
 <?php include "views/admin_edit_prod.php" ?>
 
 <!-- Slider  -->
@@ -102,7 +102,7 @@ $brochure_id = get_product_brochure_by_id($con, $product_id);
                 <!-- Slider 1-->
                 <div class="slider_page col-xs-12">
                     <img class="p_slider_image col-xs-12"
-                         src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt="orgel silders"/>
+                         src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt=""/>
                 </div>
             <?php } ?>
         </div>
