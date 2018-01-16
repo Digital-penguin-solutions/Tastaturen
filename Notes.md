@@ -1,7 +1,6 @@
 # Notes
 
 ## To do
--[ ] MEdia sakerna fungerar inte ordentligt.
 -[ ] Byta första bilden. En orgel istället för två `index`. 
 -[ ] När man laddar ner broschyr på iPhone så försöker den förhandsgranska den.
 -[ ] Gömma ladda ner brochyren knappen när det inte finns någon brochyr för enheten.
@@ -9,6 +8,7 @@
 -[ ] php till sidan ``events``.
 
 ## Done
+-[x] MEdia sakerna fungerar inte ordentligt.
 -[x] Fixa att orglarna blir konstig storlek när du inte har browser fönstret i fullskärm 
 -[x] Göra bakrunden för orglarna ljusare I hem och kyrka alternatift lägga ett filter över
 -[x] fixa robots.txt
