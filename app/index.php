@@ -18,16 +18,18 @@
 include "partials/nav.php";
 include "functions/functions.php";
 
-$con             = connect();
-$products_home   = get_all_visible_products($con, "hem");
+$con = connect();
+$products_home = get_all_visible_products($con, "hem");
 $products_church = get_all_visible_products($con, "kyrka");
+$links = get_all_links($con);
+$event = get_all_events($con);
 ?>
 
 <!-- Header -->
 <header id="Intro" class="container-fluid i_header" role="banner">
     <div class="row-fluid i_header">
         <div class="col-xs-12 i_header_container">
-            <?php include "views/index_header.php"?>
+            <?php include "views/index_header.php" ?>
         </div>
     </div>
 </header>
@@ -37,7 +39,7 @@ $products_church = get_all_visible_products($con, "kyrka");
     <div class="row-fluid i_info">
         <div class="col-xs-12 col-md-10 col-md-offset-1 i_info_container">
             <h2><?php print_field("i_about_header"); ?></h2>
-            <p class = "col-xs-offset-21col-xs-10 col-md-offset-2 col-md-8">
+            <p class="col-xs-offset-21col-xs-10 col-md-offset-2 col-md-8">
                 <?php print_field("i_about_text"); ?>
             </p>
 
@@ -52,6 +54,13 @@ $products_church = get_all_visible_products($con, "kyrka");
     </div>
 </section>
 
+<!-- Event -->
+<?php
+if (!empty($event)) {
+    include "views/events.php";
+}
+?>
+
 <!-- Products -->
 <section id="Produkter" class="container-fluid i_products" role="complementary">
     <div class="row-fluid i_products">
@@ -61,7 +70,8 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="product_slider_container i_products col-xs-12" id="Orgel-kyrka">
                 <h2><?php print_field("i_kyrka_header"); ?></h2>
 
-                <!--l eft and right arrow slider--> <div class="i_products_arrow_l">
+                <!--l eft and right arrow slider-->
+                <div class="i_products_arrow_l">
                     <img src="img/Index_slider/left_arrow.svg" alt="Slide left">
                 </div>
                 <div class="i_products_arrow_r">
@@ -69,7 +79,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_products_slider">
-                    <?php echo_products_index($products_church);?>
+                    <?php echo_products_index($products_church); ?>
                 </div>
 
                 <div class="i_products_bt_container">
@@ -90,7 +100,7 @@ $products_church = get_all_visible_products($con, "kyrka");
                 </div>
 
                 <div class="i_products_slider">
-                    <?php echo_products_index($products_home);?>
+                    <?php echo_products_index($products_home); ?>
                 </div>
 
                 <div class="i_products_bt_container">
@@ -116,18 +126,18 @@ $products_church = get_all_visible_products($con, "kyrka");
                 <div class="i_contact_stuff_1 col-md-6 col-xs-12">
                     <?php echo_stored_image_data($con, 'contact_1', "col-xs-12 col-md-10 col-md-offset-1"); ?>
                     <div class="i_contact_text col-xs-10 col-xs-offset-1">
-                        <h2><?php print_field("i_contact_person_name_1")   ?></h2>
+                        <h2><?php print_field("i_contact_person_name_1") ?></h2>
                         <p> <?php print_field("i_contact_person_number_1") ?></p>
-                        <p> <?php print_field("i_contact_person_mail_1")   ?></p>
+                        <p> <?php print_field("i_contact_person_mail_1") ?></p>
                     </div>
                 </div>
 
                 <div class="i_contact_stuff_2 col-md-6 col-xs-12">
                     <?php echo_stored_image_data($con, 'contact_2', "col-xs-12 col-md-10 col-md-offset-1"); ?>
                     <div class="i_contact_text col-xs-10 col-xs-offset-1">
-                        <h2><?php print_field("i_contact_person_name_2")   ?></h2>
+                        <h2><?php print_field("i_contact_person_name_2") ?></h2>
                         <p> <?php print_field("i_contact_person_number_2") ?></p>
-                        <p> <?php print_field("i_contact_person_mail_2")   ?></p>
+                        <p> <?php print_field("i_contact_person_mail_2") ?></p>
                     </div>
                 </div>
             </div>
@@ -143,38 +153,22 @@ $products_church = get_all_visible_products($con, "kyrka");
             <div class="i_info2_text_container col-md-6 col-md-offset-3  col-xs-10 col-xs-offset-1">
                 <div class="i_info2_link_container">
                     <?php
-                    $links = get_all_links($con);
-
-                    foreach($links as $link){
+                    foreach ($links as $link) {
                         $name = translate($link, 'name');
                         $href = $link['href'];
                         ?>
 
-                        <a href = "<?php echo $href ?>"><?php echo $name?></a>
+                        <a href="<?php echo $href ?>"><?php echo $name ?></a>
 
-                        <?php
-                    }
-                    ?>
+                    <?php } ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Event -->
-<section id="event" class="container_fluid i_event">
-    <div class="i_event row">
-        <div class="i_event_container col-xs-12">
-            <h1><?php print_field("i_event_header"); ?></h1>
-            <div class="i_event_container_text">
-
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Media section -->
-<?php include "views/index_media.php"?>
+<?php include "views/index_media.php" ?>
 
 <!-- Map info -->
 <section class="container-fluid i_map">
@@ -192,6 +186,6 @@ $products_church = get_all_visible_products($con, "kyrka");
 </section>
 
 <!-- Footer -->
-<?php include "partials/footer.php"?>
+<?php include "partials/footer.php" ?>
 </body>
 </html>

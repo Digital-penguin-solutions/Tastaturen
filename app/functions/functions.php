@@ -57,7 +57,7 @@ if(!isset($functions_included)){
         else if ($field == "price"){
             if(get_lang() == "dk"){
                 $value = "Fra " .$value . "Dkr";
-            }       
+            }
             else {
                 $value = "Från " .$value . "kr";
             }
@@ -109,7 +109,7 @@ if(!isset($functions_included)){
 
             $split = explode("@)(@#!#!#", $data); // splits the data string into image_data, filename and image_id
 
-            $id  = $split[2]; 
+            $id  = $split[2];
             $id = secure_str($id);
 
             return $id;
@@ -384,7 +384,7 @@ if(!isset($functions_included)){
 
             ?>
 
-            
+
 
             <!--products that is used in slider-->
             <div class="i_products_sliders col-md-4 col-xs-6 <?php echo $j?>">
@@ -476,7 +476,7 @@ if(!isset($functions_included)){
     function get_all_links($con){
         $query  = "SELECT * FROM link";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
-    
+
         $array  = array();
 
         while($data = mysqli_fetch_array($select)){
@@ -488,6 +488,7 @@ if(!isset($functions_included)){
         return $array;
 
     }
+
     function echo_admin_links($links){
         $count = 0;
         foreach ($links as $link) {
@@ -495,7 +496,7 @@ if(!isset($functions_included)){
             $name_dk      = $link['name_dk'];
             $href         = $link['href'];
             $link_id      = $link['link_id'];
-            
+
 
             if($count % 2 == 0) {
                 $offset = 1;
@@ -527,6 +528,21 @@ if(!isset($functions_included)){
         }
     }
 
+    function get_all_events($con){
+            $query  = "SELECT * FROM event";
+            $select = mysqli_query($con, $query) or die (mysqli_error($con));
+
+            $array  = array();
+
+            while($data = mysqli_fetch_array($select)){
+
+                $array[] = $data;
+            }
+
+            return $array;
+
+        }
+
     function echo_admin_media($posts){
         $count = 0;
         foreach ($posts as $post) {
@@ -545,7 +561,7 @@ if(!isset($functions_included)){
             ?>
             <div class = "col-md-4 col-md-offset-<?php echo $offset ?> admin_product">
                 <h1><a href = "index#Media"><?php echo $title ?></a></h1>
-                <?php 
+                <?php
                 if($type == "image"){
                     ?>
                         <img class = "center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $header_image ); ?>" alt="No image selected"/>
@@ -582,6 +598,7 @@ if(!isset($functions_included)){
 
 
     }
+
     function echo_admin_products($products){
         $count = 0;
         foreach ($products as $product) {
@@ -673,7 +690,7 @@ if(!isset($functions_included)){
         global $con;
         $field = get_field_by_name($con, $name);
 
-        
+
         if($field != null){ // if field already exists
             if(get_lang() == "sv"){
                 $value = $field['value'];
@@ -688,8 +705,8 @@ if(!isset($functions_included)){
             echo "<span> Click to edit </span>";
         }
 ?>
-    
-<?php 
+
+<?php
         if(isset($_SESSION['admin'])){
 ?>
         <script>
@@ -792,7 +809,7 @@ if(!isset($functions_included)){
 
         return $data;
     }
-    
+
 
 }
 ?>
