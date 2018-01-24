@@ -3,10 +3,12 @@
 ## To do
 -[ ] Byta första bilden. En orgel istället för två `index`. 
 -[ ] När man laddar ner broschyr på iPhone så försöker den förhandsgranska den.
--[ ] Produkt sidan funkar inte så bra för mobil. (när man är inne på en enskild produkt).
 -[ ] php till sidan `events`.
+-[ ] landskap för padda
 
 ## Done
+-[x] Produkt sidan funkar inte så bra för mobil. (när man är inne på en enskild produkt).
+-[x] landskap fungerar på telefon
 -[x] Gömma ladda ner brochyren knappen när det inte finns någon brochyr för enheten.
 -[x] lägga till event section som inte syns när det inte finns några event.
 -[x] MEdia sakerna fungerar inte ordentligt.

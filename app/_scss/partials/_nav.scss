@@ -1,21 +1,21 @@
 @import "../everything";
 
 //nav styling
-.nav_d{
-  right:0;
-  top:0;
+.nav_d {
+  right: 0;
+  top: 0;
   background: $color3;
   color: $white;
   position: fixed;
   height: 100vh;
   z-index: 10000;
 
-  .nav_d_container{
+  .nav_d_container {
     position: relative;
     background: $color3;
     height: 100vh;
 
-    .nav_d_triage{
+    .nav_d_triage {
       position: absolute;
       left: -2.5vw !important;
       width: 0;
@@ -25,21 +25,21 @@
     }
 
     //cart icon
-    .nav_cart{
+    .nav_cart {
       position: absolute;
       z-index: 10002;
-      margin-left:1vw;
+      margin-left: 1vw;
       a {
-        margin-left:3.4vw;
+        margin-left: 3.4vw;
         font-size: 4vw;
         color: $white;
         text-decoration: none;
         i {
           color: $white;
         }
-        &:hover{
+        &:hover {
           color: darken($white, 20%);
-          i{
+          i {
             color: darken($white, 20%);
           }
         }
@@ -47,37 +47,37 @@
     }
 
     //Logo
-    .nav_d_logo{
+    .nav_d_logo {
       position: absolute;
-      margin-top:2vh;
+      margin-top: 2vh;
       height: 35vh;
       width: 35vh;
 
-      a{
+      a {
         height: 100%;
-        width:100%;
+        width: 100%;
       }
     }
 
     //links
-    .nav_d_link{
+    .nav_d_link {
       position: absolute;
-      right:0;
-      text-align:right;
-      @include vertical-align($pos:absolute);
+      right: 0;
+      text-align: right;
+      @include vertical-align($pos: absolute);
 
-      a{
+      a {
         display: block;
-        margin-right:1.2vw;
+        margin-right: 1.2vw;
         color: $color2;
         font-size: 4.5vw;
 
-        &:hover{
+        &:hover {
           color: $color2*1.5;
           text-decoration: none;
         }
 
-        &:active{
+        &:active {
           color: $white;
         }
       }
@@ -85,92 +85,103 @@
   }
 }
 
-.lang_container{
-  position:absolute;
-  bottom:0;
-  left:0;
-  width:100%;
-  height:5%;
+.lang_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
 
   a {
-    display:block;
-    width:50%;
-    float:left;
-    height:100%;
-    text-align:center;
-    font-size:1.5vw;
-    text-decoration:none;
+    display: block;
+    width: 50%;
+    float: left;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    text-decoration: none;
     color: $color2 !important;
   }
 }
 
 //nav btn styling
-.nav_d_btn{
+.nav_d_btn {
   position: fixed;
   top: 0;
   right: 0;
   height: 5vh;
   width: 7.5vw;
   z-index: 20000;
+  ul {
+    list-style: none;
+    li {
+      list-style: none;
 
-  .McButton {
-    $bar-color: $color5;
-    color: $bar-color;
-    position: absolute;
-    width: 100%;
-    height: 40%;
-    top: 1.5vh;
-    right: 2vw;
-    cursor: pointer;
-    padding: 0 !important;
+      .McButton {
+        $bar-color: $color5;
+        color: $bar-color;
+        position: absolute;
+        width: 100%;
+        height: 40%;
+        top: 1.5vh;
+        right: 2vw;
+        cursor: pointer;
+        padding: 0 !important;
 
-    b {
-      display: block;
-      left: 0;
-      width: 100%;
-      height: 2px !important;
-      background-color: $bar-color;
-      position:absolute;
+        b {
+          display: block;
+          left: 0;
+          width: 100%;
+          height: 2px !important;
+          background-color: $bar-color;
+          position: absolute;
 
-      &:nth-child(1) {
-        top: 0;
-      }
+          &:nth-child(1) {
+            top: 0;
+          }
 
-      &:nth-child(2) {
-        top: 50%;
-      }
+          &:nth-child(2) {
+            top: 50%;
+          }
 
-      &:nth-child(3) {
-        top: 100%;
+          &:nth-child(3) {
+            top: 100%;
+          }
+        }
       }
     }
   }
 }
 
-
+@media (max-width: $screen-sm-min) and (orientation: landscape) {
+  .nav_d_btn {
+    height: 15vh;
+    width: 8vw;
+  }
+}
 
 @media only screen and (min-width: $screen-md-min) {
-  .nav_d{
+  .nav_d {
     background: $color3;
-    .nav_d_container{
+    .nav_d_container {
       background: $color3;
-      .nav_d_triage{
+      .nav_d_triage {
         border-left: 4vw solid transparent;
       }
 
       //cart icon
-      .nav_cart{
+      .nav_cart {
         a {
-          margin-left:1vw;
+          margin-left: 1vw;
           font-size: 1.3vw;
           color: $white;
           text-decoration: none;
           i {
             color: $white;
           }
-          &:hover{
+          &:hover {
             color: darken($white, 20%);
-            i{
+            i {
               color: darken($white, 20%);
             }
           }
@@ -178,22 +189,22 @@
       }
 
       //Logo
-      .nav_d_logo{
+      .nav_d_logo {
         height: 30vh;
         width: 30vh;
 
-        a{
+        a {
           height: 100%;
-          width:100%;
+          width: 100%;
 
-          img{
+          img {
           }
         }
       }
 
       //links
-      .nav_d_link{
-        a{
+      .nav_d_link {
+        a {
           font-size: 1.2vw;
         }
       }
