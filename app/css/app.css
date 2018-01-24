@@ -2822,6 +2822,16 @@ section {
       height: 10vh !important;
       font-size: 3vw !important; }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_broschyr, .p_prod_head .p_prod_head_container .p_prod_head_bg .p_prod_head_btn_order {
+    height: 11vh;
+    width: 45vw;
+    font-size: 4vw; }
+  .p_info2 {
+    min-height: 60vh; }
+    .p_info2 .p_info2_container .p_info2_btn button, .p_info2 .p_info2_container .p_info2_btn .admin_btn a, .admin_btn .p_info2 .p_info2_container .p_info2_btn a {
+      font-size: 2vw !important; } }
+
 @media (min-width: 992px) {
   .p_prod_head .p_prod_head_container .slideshow {
     z-index: 50;
