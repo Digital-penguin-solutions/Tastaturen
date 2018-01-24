@@ -61,7 +61,6 @@
     .pe_prod_container2 {
       cursor: pointer;
 
-
       .pe_prod_prod {
         height: 50vh;
         background: $color2;
@@ -101,6 +100,21 @@
           }
         }
 
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm-min) and (orientation: landscape) {
+  .pe_prod{
+    .pe_prod_container{
+      .pe_prod_container2{
+        .pe_prod_prod{
+
+          img{
+            width: 22vw;
+          }
+        }
       }
     }
   }
