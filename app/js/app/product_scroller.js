@@ -67,8 +67,8 @@ function init_product_slider(){
 
 function move(left, products_container){
 
-    var products_container = products_container.getElementsByClassName("i_products_slider")[0];
     var i = all_product_sliders.indexOf(products_container);
+    var products_container = products_container.getElementsByClassName("i_products_slider")[0];
 
     if(currently_sliding === false){
         currently_sliding = true;
