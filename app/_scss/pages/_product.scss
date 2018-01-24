@@ -183,6 +183,36 @@
   }
 }
 
+@media (max-width: $screen-sm-min) and (orientation: landscape) {
+  .p_prod_head{
+    .p_prod_head_container{
+      .p_prod_head_bg{
+        .p_prod_head_btn_broschyr{
+          height: 11vh;
+          width: 45vw;
+          font-size: 4vw;
+        }
+
+        .p_prod_head_btn_order{
+
+        }
+      }
+    }
+  }
+
+  .p_info2{
+    min-height: 60vh;
+    .p_info2_container{
+      .p_info2_btn{
+        button{
+          font-size: 2vw !important;
+        }
+
+      }
+    }
+  }
+}
+
 //desktop size
 @media (min-width: $screen-md-min) {
   .p_prod_head {

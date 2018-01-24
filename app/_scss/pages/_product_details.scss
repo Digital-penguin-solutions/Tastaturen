@@ -2,44 +2,44 @@
 @import "../views/product_details_hovereffect";
 
 //header
-.pe_header{
+.pe_header {
   height: 65vh;
   background: $color5;
   @extend .nopm;
 
-  .pe_header_container{
+  .pe_header_container {
     @extend .nopm;
-    height:100%;
+    height: 100%;
     background-size: 100vw 65vh;
 
-    .pe_header_bg{
+    .pe_header_bg {
       position: absolute;
       @extend .nopm;
       height: 100%;
       width: 100%;
       background: rgba($color2, 0.3);
       z-index: 99;
-      overflow:hidden;
+      overflow: hidden;
 
       img {
-        width:100%;
-        min-height:80%;
-        position:absolute;
-        @include vertical-align($pos:absolute);
+        width: 100%;
+        min-height: 80%;
+        position: absolute;
+        @include vertical-align($pos: absolute);
       }
     }
 
-    .pe_header_bg_overlay{
+    .pe_header_bg_overlay {
       height: 100%;
       width: 100%;
       background: black;
 
-      h1{
+      h1 {
         font-size: 7.5vw;
         font-weight: 600;
       }
 
-      p{
+      p {
         font-size: 4.6vw;
       }
     }
@@ -47,7 +47,7 @@
 }
 
 .pe_type {
-  visibility:hidden;
+  visibility: hidden;
 }
 
 .pe_prod {
@@ -85,21 +85,55 @@
 
         img {
           position: absolute;
-          @include center-align($pos:absolute);
+          @include center-align($pos: absolute);
           margin-top: 4vh;
-          width: 18vw;
+          width: 55vw;
           height: auto;
         }
 
-        &:hover{
+        &:hover {
           @include transition($time: 0.4s);
-          background: rgba($color2 , 0.4);
+          background: rgba($color2, 0.4);
 
-          img{
+          img {
             opacity: 0.4;
           }
         }
 
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-sm-min) and (orientation: landscape) {
+  .pe_prod{
+    .pe_prod_container{
+      .pe_prod_container2{
+        .pe_prod_prod{
+
+          img{
+            width: 22vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .pe_prod {
+    .pe_prod_container {
+
+      .pe_prod_container2 {
+        .pe_prod_prod {
+          h1 {
+            font-size: 2.5vw;
+          }
+          img {
+            width: 35vw;
+            height: auto;
+          }
+        }
       }
     }
   }
@@ -128,6 +162,10 @@
         .pe_prod_prod {
           h1 {
             font-size: 2.5vw;
+          }
+          img {
+            width: 18vw;
+            height: auto;
           }
         }
       }

@@ -48,6 +48,12 @@
   }
 }
 
+@media (max-width: $screen-sm-min) and (orientation: landscape) {
+  .i_map{
+    height: 100vh;
+  }
+}
+
 @media (min-width: $screen-md-min) {
   .i_map{
     .i_map_container{

@@ -8,8 +8,6 @@
   background: white;
   z-index: 1;
   position: relative;
-  //overflow-x:hidden;
-  //background:transparent !important;
 }
 
 //html styling
@@ -56,7 +54,7 @@ section {
 }
 
 //full with
-.fullw{ width: $full !important; } 
+.fullw{ width: $full !important; }
 //full height
 .fullh{
   height: $full !important;
@@ -108,18 +106,18 @@ section {
 }
 
 #desktop_check {
-    position:fixed;
-    width:0;
-    height:0;
-    color:transparent;
+  position:fixed;
+  width:0;
+  height:0;
+  color:transparent;
 }
 
 .slide-in {
-    display:none;
+  display:none;
 }
 
 .text-effect {
-    display:none;
+  display:none;
 }
 
 //index header slider btn

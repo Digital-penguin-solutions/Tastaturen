@@ -31,8 +31,18 @@
   }
 }
 
-//tablet size
-@media (min-width: $screen-sm-min) {}
+@media (max-width: $screen-sm-min) and (orientation : landscape) {
+  .i_info{
+    .i_info_container{
+      h2{
+        font-size: 7vw;
+      }
+      p{
+        font-size: 3vw;
+      }
+    }
+  }
+}
 
 //desktop size
 @media (min-width: $screen-md-min) {
