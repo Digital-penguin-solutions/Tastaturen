@@ -209,9 +209,9 @@ section {
     transition: 0.5s; }
 
 .footer {
+  padding-bottom: 10vh;
   min-height: 60vh;
   background: #1e1e1e;
-  overflow: hidden;
   z-index: 10; }
   .footer .footer_container .footer_top {
     text-align: center;
@@ -253,6 +253,12 @@ section {
       .footer .footer_container .footer_bot p a {
         color: #1536ff;
         text-decoration: none; }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .footer .footer_container .footer_top {
+    min-height: 30vh; }
+    .footer .footer_container .footer_top a i {
+      font-size: 8vw; } }
 
 @media (min-width: 992px) {
   .footer {
@@ -2355,13 +2361,20 @@ section {
         top: 50%;
         transform: translate(-50%, -50%);
         margin-top: 4vh;
-        width: 18vw;
+        width: 55vw;
         height: auto; }
       .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod:hover {
         transition: all 0.4s linear;
         background: rgba(195, 195, 195, 0.4); }
         .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod:hover img {
           opacity: 0.4; }
+
+@media (min-width: 768px) {
+  .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod h1 {
+    font-size: 2.5vw; }
+  .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod img {
+    width: 35vw;
+    height: auto; } }
 
 @media (min-width: 992px) {
   .pe_header .pe_header_container .pe_header_text {
@@ -2372,7 +2385,10 @@ section {
     .pe_header .pe_header_container .pe_header_text p {
       font-size: 1.6vw; }
   .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod h1 {
-    font-size: 2.5vw; } }
+    font-size: 2.5vw; }
+  .pe_prod .pe_prod_container .pe_prod_container2 .pe_prod_prod img {
+    width: 18vw;
+    height: auto; } }
 
 .wrapper, html, body {
   background: white;
@@ -3441,6 +3457,13 @@ section {
       font-size: 3.5vw;
       font-weight: 300; }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  .i_contact .i_contact_container img {
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); } }
+
 @media (min-width: 992px) {
   .i_contact .i_contact_container .i_contact_text_top h2 {
     font-size: 2.5vw; }
@@ -4003,6 +4026,12 @@ section {
       margin-top: 5vh;
       margin-bottom: 5vh; }
 
+@media (max-width: 768px) and (orientation: landscape) {
+  .i_info .i_info_container h2 {
+    font-size: 7vw; }
+  .i_info .i_info_container p {
+    font-size: 3vw; } }
+
 @media (min-width: 992px) {
   .i_info .i_info_container h2 {
     font-size: 3.3vw; }
@@ -4281,6 +4310,10 @@ section {
       .i_map .i_map_container .i_map_text_container i {
         margin-top: 2vh;
         font-size: 10vw; }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .i_map {
+    height: 100vh; } }
 
 @media (min-width: 992px) {
   .i_map .i_map_container .i_map_text_container h1 {
@@ -4619,7 +4652,7 @@ section {
       width: 100%; }
       .i_products .i_products_container .i_products .i_products_slider .i_products_sliders {
         position: absolute;
-        height: 40vh; }
+        height: 100%; }
         .i_products .i_products_container .i_products .i_products_slider .i_products_sliders .i_products_sliders_item {
           margin-top: 5vh;
           margin-bottom: 5vh;
@@ -4631,8 +4664,8 @@ section {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            max-width: 75%;
-            height: 55%;
+            max-width: 70%;
+            height: auto;
             margin-top: 2vh;
             opacity: 1;
             transition: opacity 0.35s, transform 0.35s; }
@@ -4686,10 +4719,21 @@ section {
             transform: scale3d(1, 1, 1); }
     .i_products .i_products_container .i_products .i_products_sliders_bg_1 {
       background: #ababab; }
-    .i_products .i_products_container .i_products .i_products_sliders_bg_2 {
+    .i_products .i_products_container .i_products .i_prod ucts_sliders_bg_2 {
       background: #9e9e9e; }
     .i_products .i_products_container .i_products .i_products_sliders_bg_3 {
       background: #919191; }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .i_products .i_products_container .i_products .i_products_arrow_l, .i_products .i_products_container .i_products .i_products_arrow_r {
+    height: 20vh;
+    width: 20vh;
+    top: 50vh; }
+  .i_products .i_products_container .i_products .i_products_bt_container .i_products_btn {
+    font-size: 2.5vw;
+    height: 7vh; }
+  .i_products .i_products_container .i_products .i_products_slider {
+    height: 100vh; } }
 
 @media (min-width: 992px) {
   .i_products {

@@ -1,11 +1,13 @@
 @import "../everything";
 
 .footer{
+  padding-bottom: 10vh;
   min-height: 60vh;
   background: $color5;
-  overflow: hidden;
   z-index: 10;
+
   .footer_container{
+
     .footer_top{
       text-align: center;
       width:100%;
@@ -70,9 +72,22 @@
   }
 }
 
-//tablet size
-@media (min-width: $screen-sm-min) {
+@media (max-width: $screen-sm-min) and (orientation: landscape) {
+  .footer{
+    .footer_container{
+      .footer_top {
+        min-height: 30vh;
 
+        a {
+          i {
+            font-size: 8vw;
+          }
+        }
+      }
+      .footer_mid{}
+      .footer_bot{}
+    }
+  }
 }
 
 //desktop size

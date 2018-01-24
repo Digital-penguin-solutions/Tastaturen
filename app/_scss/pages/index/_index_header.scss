@@ -99,6 +99,14 @@
   }
 }
 
+@media (max-width: $screen-sm-min) and (orientation : landscape) {
+  .i_header{
+    .i_header_container{
+
+    }
+  }
+}
+
 //desktop size
 @media (min-width: $screen-md-min) {
   .i_header{

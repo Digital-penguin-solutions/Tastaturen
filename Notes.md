@@ -3,11 +3,12 @@
 ## To do
 -[ ] Byta första bilden. En orgel istället för två `index`. 
 -[ ] När man laddar ner broschyr på iPhone så försöker den förhandsgranska den.
--[ ] Gömma ladda ner brochyren knappen när det inte finns någon brochyr för enheten.
 -[ ] Produkt sidan funkar inte så bra för mobil. (när man är inne på en enskild produkt).
--[ ] php till sidan ``events``.
+-[ ] php till sidan `events`.
 
 ## Done
+-[x] Gömma ladda ner brochyren knappen när det inte finns någon brochyr för enheten.
+-[x] lägga till event section som inte syns när det inte finns några event.
 -[x] MEdia sakerna fungerar inte ordentligt.
 -[x] Fixa att orglarna blir konstig storlek när du inte har browser fönstret i fullskärm 
 -[x] Göra bakrunden för orglarna ljusare I hem och kyrka alternatift lägga ett filter över

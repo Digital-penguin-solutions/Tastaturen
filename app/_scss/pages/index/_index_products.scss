@@ -1,19 +1,19 @@
 @import "../index";
 
 //product section
-.i_products{
+.i_products {
   min-height: 60vh;
   background: $color4;
   @extend .nopm;
 
-  .i_products_container{
+  .i_products_container {
     @extend .nopm;
-    overflow:hidden;
+    overflow: hidden;
 
-    .i_products{
+    .i_products {
       @extend .nopm;
 
-      h2{
+      h2 {
         text-align: center;
         vertical-align: middle;
         line-height: 15vh;
@@ -23,29 +23,28 @@
         width: 100%;
         height: 15vh;
         background: $color5;
-        margin:0;
+        margin: 0;
       }
 
       //Slider Arrow
-      .i_products_arrow_l{
+      .i_products_arrow_l {
         position: absolute;
         height: 10vh;
         width: 10vh;
         z-index: 100;
         background: transparent;
-        top:25vh;
+        top: 25vh;
         cursor: pointer;
-        left:1%;
+        left: 1%;
 
-
-        &:hover{
+        &:hover {
           background: rgba($color5, 0.2);
           transition: 0.5s;
         }
       }
 
       //Slider Arrow
-      .i_products_arrow_r{
+      .i_products_arrow_r {
         right: 1% !important;
         left: auto;
         @extend .i_products_arrow_l;
@@ -55,7 +54,7 @@
         height: 10vh;
         width: 100%;
         background: $color5;
-        bottom:0;
+        bottom: 0;
         position: absolute;
 
         //Btn to product details page
@@ -87,8 +86,8 @@
         @extend .nopm;
 
         .i_products_sliders {
-          position:absolute;
-          height: 40vh;
+          position: absolute;
+          height: 100%;
 
           .i_products_sliders_item {
             margin-top: 5vh;
@@ -100,8 +99,8 @@
             img {
               position: absolute;
               @include center-align($pos: absolute);
-              max-width:75%;
-              height:55%;
+              max-width: 70%;
+              height: auto;
               margin-top: 2vh;
               opacity: 1;
               transition: opacity 0.35s, transform 0.35s;
@@ -155,7 +154,7 @@
 
           &:hover {
             @include transition($time: 0.4s);
-            background: rgba($color4 , 0.3);
+            background: rgba($color4, 0.3);
 
             img {
               opacity: 0.7;
@@ -179,36 +178,70 @@
         }
       }
 
-      .i_products_sliders_bg_1{
-        background: lighten( $color3, 50% );
+      .i_products_sliders_bg_1 {
+        background: lighten($color3, 50%);
       }
 
-      .i_products_sliders_bg_2{
-        background: lighten( $color3, 45% );
+      .i_prod ucts_sliders_bg_2 {
+        background: lighten($color3, 45%);
       }
 
-      .i_products_sliders_bg_3{
-        background: lighten( $color3, 40% );
+      .i_products_sliders_bg_3 {
+        background: lighten($color3, 40%);
       }
     }
   }
 }
 
+@media (max-width: $screen-sm-min) and (orientation: landscape) {
+  .i_products {
+    .i_products_container {
+      .i_products {
+
+        //Slider Arrow
+        .i_products_arrow_l {
+          height: 20vh;
+          width: 20vh;
+          top: 50vh;
+        }
+
+        .i_products_bt_container {
+          .i_products_btn {
+            font-size: 2.5vw;
+            height: 7vh;
+          }
+        }
+
+        .i_products_slider {
+          height: 100vh;
+          .i_products_sliders {
+            .i_products_sliders_item{
+            img {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+}
 //desktop size
 @media (min-width: $screen-md-min) {
 
   .i_products {
     min-height: 80vh;
-    .i_products_container{
-      .i_products{
-        h2{
+    .i_products_container {
+      .i_products {
+        h2 {
           font-size: 2.5vw;
         }
-        .i_products_arrow_l{
-          top:35vh;
+        .i_products_arrow_l {
+          top: 35vh;
           //left:2%;
         }
-        .i_products_arrow_r{
+        .i_products_arrow_r {
           right: 2% !important;
         }
         .i_products_bt_container {
@@ -222,15 +255,15 @@
           height: 60vh;
           .i_products_sliders {
             height: 60vh;
-            .i_products_sliders_item{
-              img{
-                max-width:70%;
-                height:49%;
+            .i_products_sliders_item {
+              img {
+                max-width: 70%;
+                height: 49%;
               }
-              h1{
+              h1 {
                 font-size: 2.2vw;
               }
-              p{
+              p {
                 font-size: 1.8vw;
               }
             }

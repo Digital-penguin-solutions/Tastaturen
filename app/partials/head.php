@@ -14,6 +14,7 @@ $con = connect();
     <meta name="msapplication-TileColor" content="#2b2b2b"/>
     <link rel="author" href="humans.txt"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 
     <!--css-->
     <link href="css/app.css" rel="stylesheet">
