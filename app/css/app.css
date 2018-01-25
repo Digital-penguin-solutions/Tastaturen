@@ -3603,16 +3603,53 @@ section {
 
 .i_event {
   background: #212121; }
-  .i_event .i_event_container h1 {
-    text-align: center;
-    font-size: 4vw;
-    font-weight: 600;
-    background: #1e1e1e;
-    width: 100%;
-    color: white;
-    padding: 5vh; }
-  .i_event .i_event_container .i_event_container_text {
-    padding-bottom: 10vh; }
+  .i_event .i_event_container {
+    padding-bottom: 20vh; }
+    .i_event .i_event_container h1 {
+      text-align: center;
+      font-size: 4vw;
+      font-weight: 600;
+      background: #1e1e1e;
+      width: 100%;
+      color: white;
+      padding: 5vh; }
+    .i_event .i_event_container .i_event_event_container {
+      padding-bottom: 5vh; }
+      .i_event .i_event_container .i_event_event_container .i_event_img img {
+        height: auto;
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: 5vh; }
+      .i_event .i_event_container .i_event_event_container .i_event_text {
+        margin-top: 5vh;
+        color: white; }
+        .i_event .i_event_container .i_event_event_container .i_event_text .i_event_header {
+          font-size: 7.5vw;
+          font-weight: 600; }
+        .i_event .i_event_container .i_event_event_container .i_event_text .i_event_date {
+          font-size: 3.5vw;
+          font-weight: 400;
+          font-style: italic; }
+        .i_event .i_event_container .i_event_event_container .i_event_text .i_event_info {
+          font-size: 3.3vw; }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  .i_event_text .i_event_header {
+    font-size: 3.5vw; }
+  .i_event_text .i_event_date {
+    font-size: 1.8vw; }
+  .i_event_text .i_event_info {
+    font-size: 1.3vw; } }
+
+@media (min-width: 992px) {
+  .i_event .i_event_container .i_event_event_container .i_event_img img {
+    width: 80%; }
+  .i_event .i_event_container .i_event_event_container .i_event_text .i_event_header {
+    font-size: 3.5vw; }
+  .i_event .i_event_container .i_event_event_container .i_event_text .i_event_date {
+    font-size: 1.8vw; }
+  .i_event .i_event_container .i_event_event_container .i_event_text .i_event_info {
+    font-size: 1.3vw; } }
 
 .wrapper, html, body {
   background: white;
