@@ -1,11 +1,12 @@
 # Notes
 
-## To do
--[ ] Byta första bilden. En orgel istället för två `index`. 
+## To do 
 -[ ] När man laddar ner broschyr på iPhone så försöker den förhandsgranska den.
 -[ ] php till sidan `events`.
 
 ## Done
+-[x] Byta första bilden. En orgel istället för två `index`.
+-[x] event page designed
 -[x] landskap för padda
 -[x] Produkt sidan funkar inte så bra för mobil. (när man är inne på en enskild produkt).
 -[x] landskap fungerar på telefon

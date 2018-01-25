@@ -2,6 +2,7 @@
     <div class="i_event row">
         <div class="i_event_container col-xs-12">
             <h1><?php print_field("i_event_header"); ?></h1>
+
             <div class="i_event_event_container col-xs-12">
 
                 <div class="i_event_img col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
@@ -47,7 +48,6 @@
                 </div>
 
             </div>
-
         </div>
     </div>
 </section>
