@@ -15,7 +15,7 @@ $con = connect();
 <?php include "partials/head.php";?>
 <html lang="swe">
 <head>
-    <title>MetSense add product</title>
+    <title>Tastaturen add media post</title>
     <meta name="description" content="Tastaturen - Add media post">
 </head>
 <?php

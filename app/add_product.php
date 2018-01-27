@@ -13,7 +13,7 @@ $con = connect();
 <?php include "partials/head.php";?>
 <html lang="swe">
 <head>
-    <title>MetSense add product</title>
+    <title>Tastaturen add product</title>
     <meta name="description" content="Tastaturen - Add product">
 </head>
 <?php 

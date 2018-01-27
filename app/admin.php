@@ -87,14 +87,17 @@ include "partials/head.php";
                     //}
                     //if(!isset($_GET['view'])){
                     ?>
-                    <a href = "admin?view=media" class = "manage_button col-xs-3 col-xs-offset-1">
+                    <a href = "admin?view=media" class = "manage_button col-xs-2 col-xs-offset-1">
                         <p> Manage media posts</p>
                     </a>
-                    <a href = "admin?view=products" class = "manage_button col-xs-3 col-xs-offset-1">
+                    <a href = "admin?view=products" class = "manage_button col-xs-2 col-xs-offset-1">
                         <p> Manage products</p>
                     </a>
-                    <a href = "admin?view=links" class = "manage_button col-xs-3 col-xs-offset-1">
+                    <a href = "admin?view=links" class = "manage_button col-xs-2 col-xs-offset-1">
                         <p> Manage links</p>
+                    </a>
+                    <a href = "admin?view=events" class = "manage_button col-xs-2 col-xs-offset-1">
+                        <p> Manage events</p>
                     </a>
                     <?php
                     //}
@@ -150,6 +153,9 @@ include "partials/head.php";
                             </a>
                             <a href = "add_link.php" class = "add_product_button col-xs-5 col-xs-offset-1">
                                 Add new link
+                            </a>
+                            <a href = "add_event.php" class = "add_product_button col-xs-5 col-xs-offset-1">
+                                Add new event
                             </a>
                             <a href = "admin?change_password=" class = "add_product_button col-xs-5 col-xs-offset-1">
                                 Change password
