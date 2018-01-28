@@ -213,6 +213,15 @@ if(!isset($functions_included)){
         return $data;
     }
 
+    function get_event_by_id($con, $id){
+        $id = secure_str($id);
+        $query = "SELECT * FROM event WHERE event_id = '$id'";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+        $data = mysqli_fetch_array($select);
+
+        return $data;
+    }
+
     //get long description by id from database
     function get_product_long_by_id($con, $id){
 
@@ -362,7 +371,7 @@ if(!isset($functions_included)){
             $name  = $product['name'];
             $short = translate($product,'short_description');
             $price = translate($product,'price');
-            $image = $product['main_image'];
+            //$image = $product['main_image'];
             $id    = $product['product_id'];
 
             $i++;
@@ -473,6 +482,20 @@ if(!isset($functions_included)){
         return $array;
     }
 
+    function get_all_events($con){
+        $query  = "SELECT * FROM event ORDER BY event_id DESC";
+        $select = mysqli_query($con, $query) or die (mysqli_error($con));
+
+        $array  = array();
+
+        while($data = mysqli_fetch_array($select)){
+            $array[] = $data;
+        }
+
+        return $array;
+
+    }
+
     function get_all_links($con){
         $query  = "SELECT * FROM link";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
@@ -486,6 +509,49 @@ if(!isset($functions_included)){
 
 
         return $array;
+
+    }
+
+    function echo_admin_events($events){
+        $count = 0;
+        foreach ($events as $event) {
+            $header       = $event['header'];
+            $header_dk    = $event['header_dk'];
+            $info         = $event['info'];
+            $info_dk      = $event['info_dk'];
+            $main_image   = $event['main_image'];
+
+            $event_id = $event['event_id'];
+
+
+            if($count % 2 == 0) {
+                $offset = 1;
+            }
+            else {
+                $offset = 2;
+            }
+            ?>
+            <div class = "col-md-4 col-md-offset-<?php echo $offset ?> admin_product">
+                <h1><?php echo $header ?></h1>
+                <img class = "center_horizontally_css" src="data:image/jpeg;base64,<?php echo base64_encode( $main_image ); ?>" alt="No image chosen"/>
+
+                <!--- EDIT BUTTON-->
+                <a href = "add_event?event_id=<?php echo $event_id?>"
+                   class = "product_button product_edit_button">
+                    <p class = "center_vertically_css">Edit</p>
+                </a>
+
+
+                <!--- DELETE BUTTON-->
+                <a href = "functions/delete_event?id=<?php echo $event_id?>"
+                   class = "product_button product_delete_button">
+                    <p class = "center_vertically_css">Delete</p>
+                </a>
+
+            </div>
+            <?php
+            $count++;
+        }
 
     }
 
@@ -528,20 +594,6 @@ if(!isset($functions_included)){
         }
     }
 
-    function get_all_events($con){
-            $query  = "SELECT * FROM event";
-            $select = mysqli_query($con, $query) or die (mysqli_error($con));
-
-            $array  = array();
-
-            while($data = mysqli_fetch_array($select)){
-
-                $array[] = $data;
-            }
-
-            return $array;
-
-        }
 
     function echo_admin_media($posts){
         $count = 0;

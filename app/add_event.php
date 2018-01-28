@@ -27,7 +27,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
 
     // if a product_id is already set, then a product is to be edited
-    if (isset($_POST['product_id'])){
+    if (isset($_POST['event_id'])){
         $editing        = true;
         $event_id       = secure_str($_POST['event_id']);
     }
@@ -39,9 +39,9 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $header             = secure_str($_POST['header']);
     $header_dk          = secure_str($_POST['header_dk']);
     $date               = secure_str($_POST['date']);
-    $date_dk            = secure_src($_POST['date_dk']);
+    $date_dk            = secure_str($_POST['date_dk']);
     $info               = secure_str($_POST['info']);
-    $info_dk            = secure_src($_POST['info_dk']);
+    $info_dk            = secure_str($_POST['info_dk']);
 
 
     $images_array        = array(); // array for all the single images
@@ -60,7 +60,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $event_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
-        $query = "UPDATE product SET header = '$header', header_dk='$header_dk', info='$info', info_dk='$info_dk', date='$date', date_dk = '$date_dk'";
+        $query = "UPDATE event SET header = '$header', header_dk='$header_dk', info='$info', info_dk='$info_dk', date='$date', date_dk = '$date_dk' WHERE event_id = '$event_id'";
 
         mysqli_query($con, $query) or die (mysqli_error($con));
 
@@ -68,7 +68,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
     // UPLOAD OF SINGLE IMAGES
     if (count($images_array) > 0) { // makes sure it's not empty
-        $images_query = "UPDATE product SET ";
+        $images_query = "UPDATE event SET ";
 
         // the images that are to be uploaded are first put into the images array so that they can all be uploaded with the same query
         foreach ($images_array as $key => $info){
@@ -83,7 +83,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
             }
         }
 
-        $images_query .= " WHERE product_id = '$product_id'";
+        $images_query .= " WHERE event_id = '$event_id'";
         mysqli_query($con, $images_query) or die (mysqli_error($con));
     }
 
@@ -91,16 +91,17 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 
 if (isset($_SESSION['admin'])) {
 
-// When a product is going to be viewed for editing
-    if (isset($_GET["product_id"])){
+// When an event is going to be viewed for editing
+    if (isset($_GET["event_id"])){
         $event_id           = $_GET["event_id"];
-        $event              = get_event_by_id($con, $product_id);
+        $event              = get_event_by_id($con, $event_id);
         $header             = $event['header'];
         $date               = $event['date'];
         $info               = $event['info'];
         $header_dk          = $event['header_dk'];
         $date_dk            = $event['date_dk'];
         $info_dk            = $event['info_dk'];
+        $main_image         = $event['main_image'];
     }
     else {
         // if a new product is to be created, all the values should be empty
@@ -136,7 +137,7 @@ if (isset($_SESSION['admin'])) {
                         <textarea name = "header" class="short_description"><?php echo $header?></textarea>
 
                         <h1>Rubrik (Danska)</h1>
-                        <textarea name = "header" class="short_description"><?php echo $header_dk?></textarea>
+                        <textarea name = "header_dk" class="short_description"><?php echo $header_dk?></textarea>
 
                         <h1>Beskrivning (Svenska)</h1>
                         <textarea name = "info" class="long_description"><?php echo $info?></textarea>

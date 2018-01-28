@@ -39,6 +39,11 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
     $href               = secure_str($_POST["href"]);
     //$order_number       = secure_str($_POST["order_number"]);
 
+    $url_start_one = "http://";
+    $url_start_two = "https://";
+    if(!(substr($href, 0, strlen($url_start_one)) === $url_start_one) && !(substr($href, 0, strlen($url_start_two)) === $url_start_two)){
+        $href = "http://" . $href;
+    }
 
     if (!$editing) {
         // adds the product along with the constant values
@@ -47,7 +52,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         mysqli_query($con, $query) or die (mysqli_error($con));
 
         // gets the ID of the inserted product
-        $product_id = secure_str(mysqli_insert_id($con));
+        $link_id = secure_str(mysqli_insert_id($con));
     }
     else { // query for updating constant values
         $query = "UPDATE link SET name = '$name', name_dk='$name_dk', href='$href' WHERE link_id = '$link_id'";
@@ -60,9 +65,9 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
 if (isset($_SESSION['admin'])) {
 
 // When a product is going to be viewed for editing
-    if (isset($_GET["product_id"])){
+    if (isset($_GET["link_id"])){
         $link_id            = $_GET["link_id"];
-        $link               = get_link_by_id($con, $product_id);
+        $link               = get_link_by_id($con, $link_id);
         $name               = $link['name'];
         $name_dk            = $link['name_dk'];
         $href               = $link['href'];
@@ -84,12 +89,12 @@ if (isset($_SESSION['admin'])) {
             <div class = "row full_height">
                 <div class = "col-md-8 col-md-offset-2">
                     <h1 class = "admin_header">Add link</h1>
-                    <form id = "form" class = "add_product_form" method = "post" action = "add_product.php" enctype="multipart/form-data">
+                    <form id = "form" class = "add_product_form" method = "post" action = "add_link.php" enctype="multipart/form-data">
                         <input type = "hidden" name = "add">
                         <?php
-                        if (isset($_GET["product_id"])){
+                        if (isset($_GET["link_id"])){
                             ?>
-                            <input type = "hidden" value = "<?php echo $_GET['product_id'] ?>" name = "product_id">
+                            <input type = "hidden" value = "<?php echo $_GET['link_id'] ?>" name = "link_id">
                             <?php
                         }
                         ?>

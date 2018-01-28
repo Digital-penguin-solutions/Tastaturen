@@ -204,7 +204,7 @@ function send_form(element, page, form){
     });
 
     xhr.success(function(response) {
-        //console.log(response);
+        console.log(response);
         //console.log("response");
         //$(document).scrollTop(0);
 
@@ -222,6 +222,10 @@ function send_form(element, page, form){
         else if(page == "add_link.php"){
             message = "Link has been added or edited";
             window.location.replace("admin?view=links&message=" + message);
+        }
+        else if(page == "add_event.php"){
+            message = "Event has been added or edited";
+            window.location.replace("admin?view=events&message=" + message);
         }
         else {
 

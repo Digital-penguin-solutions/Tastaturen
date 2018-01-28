@@ -140,6 +140,11 @@ include "partials/head.php";
                     echo_admin_links($links);
 
                 }
+                else if(isset($_GET['view']) && $_GET['view'] == "events"){
+                    $events = get_all_events($con);
+                    echo_admin_events($events);
+
+                }
             }
 
                     if(isset($_SESSION['admin'])){

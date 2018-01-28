@@ -23,7 +23,7 @@ $con = connect();
 $products_home = get_all_visible_products($con, "hem");
 $products_church = get_all_visible_products($con, "kyrka");
 $links = get_all_links($con);
-$event = get_all_events($con);
+$events = get_all_events($con);
 ?>
 
 <!-- Header -->
@@ -57,7 +57,7 @@ $event = get_all_events($con);
 
 <!-- Event -->
 <?php
-if (!empty($event)) {
+if (!empty($events)) {
     include "views/events.php";
 }
 ?>
