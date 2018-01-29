@@ -4,6 +4,7 @@
         <div class="i_slider_1_container">
             <div class = "all_slider_container no_list desktop_only">
 
+                <!-- slider 1 -->
                 <div class = "slider_page col-xs-12">
                     <div class="i_slider_2_container">
                         <div class="i_slider_background_dark col-xs-12">
