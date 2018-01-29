@@ -14,7 +14,7 @@
     </script>
 </head>
 
-<body class="wrapper col-xs-12 col-md-10" id="page-top" class="index">
+<body class="wrapper col-xs-12 col-md-10 index" id="page-top">
 <?php
 include "partials/nav.php";
 include "functions/functions.php";

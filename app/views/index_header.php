@@ -4,7 +4,7 @@
         <div class="i_slider_1_container">
             <div class = "all_slider_container no_list desktop_only">
 
-                <div class = "slider_page col-xs-12 hidden-xs hidden-sm">
+                <div class = "slider_page col-xs-12">
                     <div class="i_slider_2_container">
                         <div class="i_slider_background_dark col-xs-12">
                         </div>
@@ -83,11 +83,5 @@
 
             </div>
         </div>
-    </div>
-</div>
-
-<div class="i_xs_slider hidden-md hidden-lg">
-    <div class="col-xs-12 i_xs_slider">
-
     </div>
 </div>

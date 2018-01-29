@@ -37,72 +37,72 @@
             }
           }
 
-          .i_slider_1_left {
-            height: 100vh;
-            background: $color3*4.1;
+        }
 
-            .i_slider_1_left_img {
-              @include vertical-align();
-              right:0;
-              position: absolute;
+        .i_slider_2_container{
+          height:100vh;
+          background: #000;
 
-              img{
-                width:30vw;
-                height: 40vh;
+          .i_slider_2_text{
+            left:0;
+            top:0;
+            height: 50vh;
+            width: 70%;
+            z-index: 100;
+            position: absolute;
+
+            .i_slider_2_text_container{
+              //@include vertical-align();
+              margin-top:20vh;
+
+              h1{
+                color: white;
+                font-size: 4vw;
+                font-weight: 600;
               }
-            }
 
-            .i_slider_1_left_btn {
-              @extend .slider_btn;
-              left: 5vw;
-              float:left;
-              margin-bottom:10vh;
-              button{
-                width:100%;
-                font-size: 5vw !important;
+              p{
+                color: #ffffff;
+                font-size: 2vw;
+                font-weight: 400;
               }
+
+              .i_slider_2_btn{
+                margin-top:3vh;
+
+                button{
+                  border: 2px solid $white;
+                  color: $white;
+                  background: rgba($color5, 0.25);
+                  text-align: center;
+                  text-decoration: none;
+                  font-size: 1.2vw;
+                  width: 12vw;
+                  height: 4.5vh;
+                }
+
+                &:hover{
+                  button {
+                    background: $color1;
+                    border: 0;
+                    transition: 0.5s;
+                  }
+                }
+              }
+
             }
           }
-
-          .i_slider_1_right{
+          .i_slider_2_img{
+            z-index: 99;
             height: 100vh;
-            background: $color3*4.5;
-
-            .i_slider_1_right_img{
-              @include vertical-align();
-              left:0;
-              position: absolute;
-
-              img{
-                width:30vw;
-                height: 40vh;
-              }
-            }
-
-            .i_slider_1_right_btn {
-              right: 5vw;
-              font-size: 10vw;
-              @extend .slider_btn;
-              margin-bottom:10vh;
-
-              button {
-                width:100%;
-                font-size: 5vw !important;
-                float:right;
-              }
+            width:100%;
+            img{
+              width:100%;
+              height: 100%;
             }
           }
         }
       }
-    }
-
-  }
-}
-
-@media (max-width: $screen-sm-min) and (orientation : landscape) {
-  .i_header{
-    .i_header_container{
-
     }
   }
 }
