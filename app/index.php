@@ -25,15 +25,8 @@ $products_church = get_all_visible_products($con, "kyrka");
 $links = get_all_links($con);
 $events = get_all_events($con);
 ?>
-
 <!-- Header -->
-<header id="Intro" class="container-fluid i_header" role="banner">
-    <div class="row-fluid i_header">
-        <div class="col-xs-12 i_header_container">
-            <?php include "views/index_header.php" ?>
-        </div>
-    </div>
-</header>
+<?php include "views/index_header.php" ?>
 
 <!-- Info section -->
 <section id="Info" class="container-fluid i_info" role="main">

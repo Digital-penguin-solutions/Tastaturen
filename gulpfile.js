@@ -91,7 +91,7 @@ g.task('js-build', ['concat-js-app', 'concat-js-third-party'], function () {
 
 //copy .htaccess files to dist folder
 g.task('copy', function () {
-    return g.src(['app/.htaccess', 'app/robots.txt', 'app/sitemap.xml'])
+    return g.src(['app/.htaccess', 'app/robots.txt', 'app/sitemap.xml', 'app/humans.txt'])
         .pipe(plumber())
         .pipe(g.dest('dist'));
 });

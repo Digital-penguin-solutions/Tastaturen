@@ -1,132 +1,83 @@
-@import "../index";
+@import "../../everything";
 
-//into section
 .i_header {
   height: 100vh;
-  z-index: 4;
-  background: $color5;
   @extend .nopm;
 
   .i_header_container {
-    height: 100vh;
     @extend .nopm;
+    height: 100%;
 
-    .i_header_slider {
-      height: 100vh;
+    .i_head_slider {
+      @extend .nopm;
+      height: 100%;
 
-      // Slider 1
-      .i_slider_1 {
+      .i_head_slider_container {
         @extend .nopm;
+        height: 100%;
 
-        .i_slider_1_container {
-          height: 100vh;
+        .i_head_slider_text {
+          position: absolute;
+          z-index: 100;
 
-          .i_slider_1_text {
-            position: absolute;
-            color: $white;
-            background: transparent;
-            z-index: 101;
-            text-align: center;
+          .i_slider_text_container {
+            color: white;
             margin-top: 20vh;
-            width: 100%;
 
             h1 {
               font-size: 10vw;
               font-weight: 600;
             }
+            p {
+              font-size: 7vw;
+              font-weight: 400;
+
+            }
+            button {
+              background: transparent;
+              font-size: 6vw;
+              border: 1px solid white;
+              padding: 2vw;
+
+              &:hover {
+                background: $color1;
+              }
+            }
           }
         }
 
-        .i_slider_2_container {
+        .i_head_slider_img {
           height: 100vh;
-          background: #000;
+          width: 100vw;
+          z-index: 10;
+          position: absolute;
+          @extend .nopm;
 
-          .i_slider_2_text {
-            left: 0;
-            top: 0;
-            height: 50vh;
-            width: 70%;
-            z-index: 100;
-            position: absolute;
-
-            .i_slider_2_text_container {
-              margin-top: 20vh;
-
-              h1 {
-                color: white;
-                font-size: 10vw;
-                font-weight: 600;
-              }
-
-              p {
-                color: #ffffff;
-                font-size: 7vw;
-                font-weight: 400;
-              }
-
-              .i_slider_2_btn {
-                margin-top: 3vh;
-
-                button {
-                  border: 2px solid $white;
-                  color: $white;
-                  background: rgba($color5, 0.25);
-                  text-align: center;
-                  text-decoration: none;
-                  font-size: 6vw;
-                  padding: 1.5vw;
-                }
-
-                &:hover {
-                  button {
-                    background: $color1;
-                    border: 0;
-                    transition: 0.5s;
-                  }
-                }
-              }
-
-            }
-          }
-          .i_slider_2_img {
-            z-index: 99;
-            height: 100vh;
-            width: 100%;
-
-            img {
-              width: 100%;
-              height: 100%;
-            }
-          }
         }
       }
     }
   }
 }
 
-@media (max-width: $screen-sm-min) and (orientation: landscape) {
-
+@media (max-width: $screen-sm-min) and (orientation: landscape){
   .i_header {
     .i_header_container {
-      .i_header_slider {
-        .i_slider_1 {
-          .i_slider_2_container {
-            .i_slider_2_text {
-              .i_slider_2_text_container {
-                h1 {
-                  font-size: 8vw !important;
-                }
+      .i_head_slider {
+        .i_head_slider_container {
+          .i_head_slider_text {
+            .i_slider_text_container {
+              h1 {
+                font-size: 7vw;
+                font-weight: 600;
+              }
+              p {
+                font-size: 4vw;
+                font-weight: 400;
 
-                p {
-                  font-size: 5vw !important;
-                }
-
-                .i_slider_2_btn {
-                  button {
-                  font-size: 4vw !important;
-                    padding: 1.1vw !important;
-                  }
-                }
+              }
+              button {
+                font-size: 3vw;
+                padding: 1vw;
               }
             }
           }
@@ -136,242 +87,141 @@
   }
 }
 
-//desktop size
+@media (min-width: $screen-sm-min) {
+  .i_header {
+    .i_header_container {
+      .i_head_slider {
+        .i_head_slider_container {
+          .i_head_slider_text {
+            .i_slider_text_container {
+              h1 {
+                font-size: 7vw;
+                font-weight: 600;
+              }
+              p {
+                font-size: 4vw;
+                font-weight: 400;
+
+              }
+              button {
+                font-size: 3vw;
+                padding: 1vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
 @media (min-width: $screen-md-min) {
   .i_header {
     .i_header_container {
-      .i_header_slider {
-        .i_slider_background_dark {
-          background: rgba($color5, 0.3);
-          z-index: 99;
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          pointer-events: none;
-        }
 
-        //slider 1
-        .i_slider_1 {
-          .i_slider_1_container {
-            .i_slider_1_text {
-              margin-top: 35vh;
+      .i_head_slider {
+        .i_head_slider_container {
+          .i_head_slider_text {
+            .i_slider_text_container {
               h1 {
-                font-size: 8vw;
-              }
-            }
-
-            .i_slider_1_left {
-              .i_slider_1_left_img {
-                img {
-                  width: 15vw;
-                  height: 60vh;
-                }
-              }
-              .i_slider_1_left_btn {
-                margin-bottom: 0;
-
-                button {
-                  font-size: 1.8vw !important;
-                }
-
-              }
-
-              &:hover {
-                .i_slider_1_left_img {
-                  img {
-                    transition: 0.3s;
-                    width: 17vw;
-                    height: 63vh;
-                  }
-                }
-              }
-            }
-
-            .i_slider_1_right {
-              .i_slider_1_right_img {
-                img {
-                  width: 15vw;
-                  height: 60vh;
-                }
-              }
-              .i_slider_1_right_btn {
-                margin-bottom: 0;
-
-                button {
-                  font-size: 1.8vw !important;
-                }
-              }
-
-              &:hover {
-                .i_slider_1_right_img {
-                  img {
-                    transition: 0.3s;
-                    width: 17vw;
-                    height: 63vh;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        // Slider 2
-        .i_slider_2_container {
-          height: 100vh;
-          background: #000;
-          @extend .nopm;
-
-          .i_slider_2_text {
-            left: 0;
-            top: 0;
-            height: 50vh;
-            width: 70%;
-            z-index: 100;
-            position: absolute;
-
-            .i_slider_2_text_container {
-              //@include vertical-align();
-              margin-top: 20vh;
-
-              h1 {
-                color: white;
                 font-size: 4vw;
                 font-weight: 600;
               }
-
               p {
-                color: #ffffff;
                 font-size: 2vw;
                 font-weight: 400;
+
               }
-
-              .i_slider_2_btn {
-                margin-top: 3vh;
-
-                button {
-                  border: 2px solid $white;
-                  color: $white;
-                  background: rgba($color5, 0.25);
-                  text-align: center;
-                  text-decoration: none;
-                  font-size: 1.2vw;
-                  width: 12vw;
-                  height: 4.5vh;
-                }
-
-                &:hover {
-                  button {
-                    background: $color1;
-                    border: 0;
-                    transition: 0.5s;
-                  }
-                }
+              button {
+                font-size: 1.5vw;
+                padding: 1vw;
               }
-
-            }
-          }
-          .i_slider_2_img {
-            z-index: 99;
-            height: 100vh;
-            width: 100%;
-            img {
-              width: 100%;
-              height: 100%;
             }
           }
         }
+      }
 
-        // Slider 3
-        .i_slider_3_container {
-          .i_slider_3_video {
-            height: 100vh;
+      .i_head_slider_3 {
+        height: 100vh;
+        .i_head_slider_3_container {
+          height: 100%;
+          width: 100%;
+          .i_head_slider_3_video {
+            height: 100%;
             width: 100%;
-            .i_slider_3_video_player {
-              height: 100vh;
+            .i_head_slider_3_video_player {
+              height: 100%;
               width: 100%;
-              z-index: 100;
+              position: absolute;
+              z-index: 10;
+
             }
-            .i_slider_3_video_btn {
+            .i_head_slider_3_video_btn {
+              z-index: 100;
               position: absolute;
               @include center-align($pos: absolute);
-              z-index: 10000;
               i {
-                @include center-align($pos: absolute);
-                font-size: 8vw;
                 color: red;
-                cursor: pointer;
+                font-size: 8vw;
               }
             }
           }
         }
+      }
 
-        //Slider 4
-        .i_slider_4_container {
-          height: 100vh;
-          width: 100%;
-          background: #000;
+      .i_head_slider_4{
+        @extend .nopm;
+        height: 100%;
+
+        .i_head_slider_4_container{
           @extend .nopm;
+          height: 100%;
 
-          .i_slider_4_text {
-            height: 50%;
-            width: 60%;
-            margin-left: 20%;
-            z-index: 100;
+          .i_head_slider_4_text{
             position: absolute;
+            z-index: 100;
 
-            .i_slider_4_text_container {
+            .i_slider_4_text_container{
               color: white;
-              height: 100vh;
-              width: 100%;
-              margin-top: 15vh;
-              text-align: center;
+              margin-top: 20vh;
 
               h1 {
-                font-size: 6vw;
+                text-align: center;
+                font-size: 4vw;
                 font-weight: 600;
               }
-
               p {
-                color: $white;
+                text-align: center;
                 font-size: 2vw;
                 font-weight: 400;
-                text-align: center;
+
               }
-
-              .i_slider_4_btn {
-                margin-top: 3vh;
-
-                button {
-                  border: 2px solid $white;
-                  color: $white;
-                  background: rgba($color5, 0.25);
-                  text-align: center;
-                  text-decoration: none;
-                  font-size: 1.2vw;
-                  width: 12vw;
-                  height: 4.5vh;
-                }
+              button {
+                @include horizontal-align();
+                text-align: center;
+                background: transparent;
+                border: 1px solid white;
+                font-size: 1.5vw;
+                padding: 1vw;
 
                 &:hover {
-                  button {
-                    background: $color1;
-                    border: 0;
-                    transition: 0.5s;
-                  }
+                  background: $color1;
                 }
               }
-
             }
           }
-          .i_slider_4_img {
-            z-index: 99;
+
+          .i_head_slider_4_img{
+            @extend .nopm;
             height: 100vh;
-            width: 100%;
-            img {
-              width: 100%;
+            position: absolute;
+            z-index: 10;
+
+            img{
+              @extend .nopm;
               height: 100%;
+              width: 100%;
             }
           }
         }

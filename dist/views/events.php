@@ -1,4 +1,4 @@
-<section id="event" class="container_fluid i_event"><div class="i_event row"><div class="i_event_container col-xs-10"><h1><?php print_field("i_event_header"); ?></h1> <?php
+<section id="event" class="container_fluid i_event"><div class="i_event row"><div class="i_event_container col-xs-12"><h1><?php print_field("i_event_header"); ?></h1> <?php
             foreach ($events as $event) {
                 $header = translate($event, 'header');
                 $date = translate($event, 'date');
