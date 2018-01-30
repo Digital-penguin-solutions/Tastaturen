@@ -3,6 +3,7 @@
 .i_header {
   height: 100vh;
   @extend .nopm;
+  overflow: hidden;
 
   .i_header_container {
     @extend .nopm;

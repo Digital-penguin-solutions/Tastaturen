@@ -3756,7 +3756,8 @@ section {
     transition: 0.5s; }
 
 .i_header {
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden; }
   .i_header .i_header_container {
     height: 100%; }
     .i_header .i_header_container .i_head_slider {

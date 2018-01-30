@@ -26,7 +26,11 @@ $links = get_all_links($con);
 $events = get_all_events($con);
 ?>
 <!-- Header -->
-<?php include "views/index_header.php" ?>
+<header id="Intro" class="container-fluid i_header" role="banner">
+    <div class="row-fluid i_header">
+        <?php include "views/index_header.php" ?>
+    </div>
+</header>
 
 <!-- Info section -->
 <section id="Info" class="container-fluid i_info" role="main">
