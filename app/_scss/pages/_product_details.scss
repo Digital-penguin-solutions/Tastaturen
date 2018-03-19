@@ -33,6 +33,7 @@
       height: 100%;
       width: 100%;
       background: black;
+      z-index: 100!important;
 
       h1 {
         font-size: 7.5vw;
@@ -145,6 +146,7 @@
       .pe_header_text {
         text-align: left;
         margin-left: 2vw;
+        z-index: 100;
         h1 {
           font-size: 3.5vw;
         }

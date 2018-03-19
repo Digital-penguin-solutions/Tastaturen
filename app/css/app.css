@@ -2330,7 +2330,8 @@ section {
     .pe_header .pe_header_container .pe_header_bg_overlay {
       height: 100%;
       width: 100%;
-      background: black; }
+      background: black;
+      z-index: 100 !important; }
       .pe_header .pe_header_container .pe_header_bg_overlay h1 {
         font-size: 7.5vw;
         font-weight: 600; }
@@ -2392,7 +2393,8 @@ section {
 @media (min-width: 992px) {
   .pe_header .pe_header_container .pe_header_text {
     text-align: left;
-    margin-left: 2vw; }
+    margin-left: 2vw;
+    z-index: 100; }
     .pe_header .pe_header_container .pe_header_text h1 {
       font-size: 3.5vw; }
     .pe_header .pe_header_container .pe_header_text p {
