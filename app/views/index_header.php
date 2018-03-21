@@ -1,4 +1,4 @@
-<div class="col-xs-12 i_header_container all_slider_container no_list desktop_only">
+<div class="col-md-12 i_header_container all_slider_container no_list">
 
     <!-- slider 1 -->
     <div class="i_head_slider col-xs-12 slider_page">

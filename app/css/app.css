@@ -3791,8 +3791,8 @@ section {
           z-index: 10;
           position: absolute; }
           .i_header .i_header_container .i_head_slider .i_head_slider_container .i_head_slider_img img {
-            height: 100%;
-            width: 100%; }
+            height: 100vh;
+            width: 100vw; }
 
 @media (max-width: 768px) and (orientation: landscape) {
   .i_header .i_header_container .i_head_slider .i_head_slider_container .i_head_slider_text .i_slider_text_container h1 {

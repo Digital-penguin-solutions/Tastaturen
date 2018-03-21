@@ -48,15 +48,16 @@
         }
 
         .i_head_slider_img {
+          @extend .nopm;
           height: 100vh;
           width: 100vw;
           z-index: 10;
           position: absolute;
-          @extend .nopm;
+
           img{
             @extend .nopm;
-            height: 100%;
-            width: 100%;
+            height: 100vh;
+            width: 100vw;
           }
         }
       }
