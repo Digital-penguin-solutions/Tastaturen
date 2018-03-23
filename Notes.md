@@ -2,9 +2,12 @@
 
 ## To do 
 -[ ] När man laddar ner broschyr på iPhone så försöker den förhandsgranska den.
--[ ] php till sidan `events`.
+-[ ] Knappen på första index slider index gör inget vettigt.
+-[ ] Gömma "Events" i naven när det inte finns några events
+-[ ] Gör allt inte är ihoptryckt medan sidan laddas in...
 
 ## Done
+-[x] php till sidan `events`.
 -[x] Byta första bilden. En orgel istället för två `index`.
 -[x] event page designed
 -[x] landskap för padda

@@ -20,7 +20,7 @@ function connect(){
     }
 
     if($con === false) {
-        die("Connection failed: " . myrsqli_connect_error());
+        die("Connection failed: " . mysqli_connect_error());
         header("Location: 404");
     }
 
