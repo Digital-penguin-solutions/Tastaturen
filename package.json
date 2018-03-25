@@ -1,7 +1,7 @@
 {
   "name": "tastauren",
   "version": "1.0.0",
-  "description": "Tastaturen website of 2017",
+  "description": "Tastaturen website of 2018",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

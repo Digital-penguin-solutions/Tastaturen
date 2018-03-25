@@ -1,20 +1,20 @@
 //import everything
-var g = require('gulp');
-var sass = require('gulp-sass');
-var cleanCss = require('gulp-clean-css');
-var prefix = require('gulp-autoprefixer');
-var uglify = require('gulp-uglify');
-var concat = require('gulp-concat');
-var htmlmin = require('gulp-htmlmin');
-var imgmin = require('gulp-imagemin');
-var watch = require('gulp-watch');
-var plumber = require('gulp-plumber');
-var removeComm = require('gulp-remove-html-comments');
-var clean = require('gulp-clean');
-var httpProxy = require('http-proxy');
+var g           = require('gulp');
+var sass        = require('gulp-sass');
+var cleanCss    = require('gulp-clean-css');
+var prefix      = require('gulp-autoprefixer');
+var uglify      = require('gulp-uglify');
+var concat      = require('gulp-concat');
+var htmlmin     = require('gulp-htmlmin');
+var imgmin      = require('gulp-imagemin');
+var watch       = require('gulp-watch');
+var plumber     = require('gulp-plumber');
+var removeComm  = require('gulp-remove-html-comments');
+var clean       = require('gulp-clean');
 var browserSync = require('browser-sync');
-var php = require('gulp-connect-php');
-var reload = browserSync.reload;
+var connect     = require('gulp-connect-php');
+
+var httpProxy = require('http-proxy');
 
 //delete dist folder
 g.task('clean', function () {
@@ -104,6 +104,37 @@ g.task('imgmin', function () {
         .pipe(g.dest('dist/img'));
 });
 
+
+g.task('connect-php', function () {
+    connect.server({
+        port: 8080,
+        base: 'app',
+        open: false
+    });
+
+    var proxy   = httpProxy.createProxyServer({});
+    var reload  = browserSync.reload;
+
+
+    browserSync({
+        notify: false,
+        port  : 8080,
+        proxy: 'localhost/Tastaturen/app'
+    });
+
+    g.watch([
+        'app/**/*.html',
+        'app/**/*.php',
+        'app/js/*.js',
+        'app/css/app.css',
+        'app/img/**/*'
+    ]).on('change', reload);
+
+    g.watch('app/_scss/**/*scss',       ['prefix']);
+    g.watch('app/js/app/*.js',          ['concat-js-app']);
+    g.watch('app/js/third_party/*.js',  ['concat-js-third-party']);
+});
+
 // watch for file changes and performs the different tasks
 g.task('dev-watch', function () {
     g.watch('app/js/app/*.js', ['concat-js-app']);
@@ -116,8 +147,8 @@ g.task('build', ['clean'], function () {
     g.start('minify', 'css-build', 'js-build', 'copy', 'imgmin')
 });
 
-//developing with xampp
-g.task('default', ['prefix', 'concat-js-third-party', 'concat-js-app', 'dev-watch']);
+//developing with Xampp
+g.task('dev', ['prefix', 'concat-js-third-party', 'concat-js-app', 'dev-watch']);
 
 //run css tole to compile css
-//g.task('default',   ['prefix', 'concat-js-third-party', 'concat-js-app' ,'connect-php']);
+g.task('default', ['prefix', 'concat-js-third-party', 'concat-js-app' ,'connect-php']);
