@@ -1,237 +1,273 @@
 @import "../../everything";
 
+
 .i_header {
-  height: 100vh;
-  @extend .nopm;
-  overflow: hidden;
-
-  .i_header_container {
+    height: 100vh;
     @extend .nopm;
-    height: 100%;
+    overflow: hidden;
 
-    .i_head_slider {
-      @extend .nopm;
-      height: 100%;
-
-      .i_head_slider_container {
+    .i_header_container {
         @extend .nopm;
         height: 100%;
 
-        .i_head_slider_text {
-          position: absolute;
-          z-index: 100;
-
-          .i_slider_text_container {
-            color: white;
-            margin-top: 20vh;
-
-            h1 {
-              font-size: 10vw;
-              font-weight: 600;
-            }
-            p {
-              font-size: 7vw;
-              font-weight: 400;
-
-            }
-            button {
-              background: transparent;
-              font-size: 6vw;
-              border: 1px solid white;
-              padding: 2vw;
-
-              &:hover {
-                background: $color1;
-              }
-            }
-          }
-        }
-
-        .i_head_slider_img {
-          @extend .nopm;
-          height: 100vh;
-          width: 100vw;
-          z-index: 10;
-          position: absolute;
-
-          img{
+        .i_head_slider {
             @extend .nopm;
-            height: 100vh;
-            width: 100vw;
-          }
+            height: 100%;
+
+            .i_head_slider_container {
+                @extend .nopm;
+                height: 100%;
+
+                .i_head_slider_text {
+                    position: absolute;
+                    z-index: 100;
+
+                    .i_slider_text_container {
+                        color: white;
+                        margin-top: 25vh;
+
+                        h1 {
+                            font-size: 10vw;
+                            font-weight: 600;
+                            color: $color3;
+
+                        }
+                        p {
+                            font-size: 7vw;
+                            font-weight: 400;
+                            color: $color3 !important;
+                        }
+                        .i_slider_btn, .i_slider_2_btn {
+                            button {
+                                background: transparent;
+                                font-size: 1vw;
+                                border: 1px solid $color3;
+                                color: $color3 !important;
+                                padding: 0.5vw;
+
+                                &:hover {
+                                    background: $color2;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .i_head_slider_img {
+                    height: 100vh;
+                    width: 100vw;
+                    z-index: 10;
+                    position: absolute;
+                    @extend .nopm;
+                    img{
+                        @extend .nopm;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media (max-width: $screen-sm-min) and (orientation: landscape){
-  .i_header {
-    .i_header_container {
-      .i_head_slider {
-        .i_head_slider_container {
-          .i_head_slider_text {
-            .i_slider_text_container {
-              h1 {
-                font-size: 7vw;
-                font-weight: 600;
-              }
-              p {
-                font-size: 4vw;
-                font-weight: 400;
+    .i_header {
+        .i_header_container {
+            .i_head_slider {
+                .i_head_slider_container {
+                    .i_head_slider_text {
+                        .i_slider_text_container {
+                            h1 {
+                                font-size: 7vw;
+                                font-weight: 600;
+                            }
+                            p {
+                                font-size: 4vw;
+                                font-weight: 400;
 
-              }
-              button {
-                font-size: 3vw;
-                padding: 1vw;
-              }
+                            }
+                            button {
+                                font-size: 3vw;
+                                padding: 1vw;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 }
 
 @media (min-width: $screen-sm-min) {
-  .i_header {
-    .i_header_container {
-      .i_head_slider {
-        .i_head_slider_container {
-          .i_head_slider_text {
-            .i_slider_text_container {
-              h1 {
-                font-size: 7vw;
-                font-weight: 600;
-              }
-              p {
-                font-size: 4vw;
-                font-weight: 400;
+    .i_header {
+        .i_header_container {
+            .i_head_slider {
+                .i_head_slider_container {
+                    .i_head_slider_text {
+                        .i_slider_text_container {
+                            h1 {
+                                font-size: 7vw;
+                                font-weight: 600;
+                            }
+                            p {
+                                font-size: 4vw;
+                                font-weight: 400;
 
-              }
-              button {
-                font-size: 3vw;
-                padding: 1vw;
-              }
+                            }
+                            button {
+                                font-size: 3vw;
+                                padding: 1vw;
+                            }
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     }
-  }
 
 }
 
-@media (min-width: $screen-md-min) {
-  .i_header {
-    .i_header_container {
-
-      .i_head_slider {
-        .i_head_slider_container {
-          .i_head_slider_text {
-            .i_slider_text_container {
-              h1 {
-                font-size: 4vw;
-                font-weight: 600;
-              }
-              p {
-                font-size: 2vw;
-                font-weight: 400;
-
-              }
-              button {
-                font-size: 1.5vw;
-                padding: 1vw;
-              }
-            }
-          }
-        }
-      }
-
-      .i_head_slider_3 {
-        height: 100vh;
-        .i_head_slider_3_container {
-          height: 100%;
-          width: 100%;
-          .i_head_slider_3_video {
-            height: 100%;
-            width: 100%;
-            .i_head_slider_3_video_player {
-              height: 100%;
-              width: 100%;
-              position: absolute;
-              z-index: 10;
-
-            }
-            .i_head_slider_3_video_btn {
-              z-index: 100;
-              position: absolute;
-              @include center-align($pos: absolute);
-              i {
-                color: red;
-                font-size: 8vw;
-              }
-            }
-          }
-        }
-      }
-
-      .i_head_slider_4{
-        @extend .nopm;
-        height: 100%;
-
-        .i_head_slider_4_container{
-          @extend .nopm;
-          height: 100%;
-
-          .i_head_slider_4_text{
-            position: absolute;
-            z-index: 100;
-
-            .i_slider_4_text_container{
-              color: white;
-              margin-top: 20vh;
-
-              h1 {
-                text-align: center;
-                font-size: 4vw;
-                font-weight: 600;
-              }
-              p {
-                text-align: center;
-                font-size: 2vw;
-                font-weight: 400;
-
-              }
-              button {
-                @include horizontal-align();
-                text-align: center;
-                background: transparent;
-                border: 1px solid white;
-                font-size: 1.5vw;
-                padding: 1vw;
-
-                &:hover {
-                  background: $color1;
-                }
-              }
-            }
-          }
-
-          .i_head_slider_4_img{
-            @extend .nopm;
-            height: 100vh;
-            position: absolute;
-            z-index: 10;
-
-            img{
-              @extend .nopm;
-              height: 100%;
-              width: 100%;
-            }
-          }
-        }
-      }
+/* mobile */
+@media (max-width: $screen-md-min) {
+    .i_head_slider_img img {
+        min-width: 100% !important;
+        height:100% !important;
+        width:auto !important;
+        float:right;
     }
-  }
+    .i_slider_btn, .i_slider_2_btn {
+        visibility:hidden;
+    }
+    .i_slider_text_container {
+        width:100%;
+        margin-left:0 !important;
+        margin-top:7vh !important;
+        h1 {
+            width:100%;
+            text-align:center;
+            font-size: 13vw !important;
+            font-weight: 600;
+        }
+        p {
+            margin-top:17vh;
+            text-align:center;
+
+
+        }
+    }
+
+
+}
+@media (min-width: $screen-md-min) {
+    .i_header {
+        .i_header_container {
+
+            .i_head_slider {
+                .i_head_slider_container {
+                    .i_head_slider_text {
+                        .i_slider_text_container {
+                            h1 {
+                                font-size: 4vw;
+                                font-weight: 600;
+                            }
+                            p {
+                                font-size: 2vw;
+                                font-weight: 400;
+
+                            }
+                            button {
+                                font-size: 1.5vw;
+                                padding: 1vw;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .i_head_slider_3 {
+                height: 100vh;
+                .i_head_slider_3_container {
+                    height: 100%;
+                    width: 100%;
+                    .i_head_slider_3_video {
+                        height: 100%;
+                        width: 100%;
+                        .i_head_slider_3_video_player {
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                            z-index: 10;
+
+                        }
+                        .i_head_slider_3_video_btn {
+                            z-index: 100;
+                            position: absolute;
+                            @include center-align($pos: absolute);
+                            i {
+                                color: red;
+                                font-size: 8vw;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .i_head_slider_4{
+                @extend .nopm;
+                height: 100%;
+
+                .i_head_slider_4_container{
+                    @extend .nopm;
+                    height: 100%;
+
+                    .i_head_slider_4_text{
+                        position: absolute;
+                        z-index: 100;
+
+                        .i_slider_4_text_container{
+                            color: white;
+                            margin-top: 20vh;
+
+                            h1 {
+                                text-align: center;
+                                font-size: 4vw;
+                                font-weight: 600;
+                            }
+                            p {
+                                text-align: center;
+                                font-size: 2vw;
+                                font-weight: 400;
+
+                            }
+                            button {
+                                @include horizontal-align();
+                                text-align: center;
+                                background: transparent;
+                                border: 1px solid white;
+                                font-size: 1.5vw;
+                                padding: 1vw;
+
+                                &:hover {
+                                    background: $color1;
+                                }
+                            }
+                        }
+                    }
+
+                    .i_head_slider_4_img{
+                        @extend .nopm;
+                        height: 100vh;
+                        position: absolute;
+                        z-index: 10;
+
+                        img{
+                            @extend .nopm;
+                            height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

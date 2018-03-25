@@ -309,7 +309,7 @@ function reenable_effects(page) {
 function enable_autoslide(index) {
     if(isDesktop()){
         var slider = all_sliders[index];
-        var interval = setInterval(function(){move_section(false, slider);}, 5000);
+        var interval = setInterval(function(){move_section(false, slider);}, 10000);
         intervals[index] = interval;
     }
 }
