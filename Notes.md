@@ -2,16 +2,12 @@
 
 ## To do 
 -[ ] När man laddar ner broschyr på iPhone så försöker den förhandsgranska den.
--[ ] php till sidan `events`.
--[ ] Visning av PDF-filer (broschyrer) på iOS (iPhone / iPAD) måste lösas. Om ni inte har en framkomlig 
-    väg får vi köpa utrymme hos någon annan och länka dit – men det måste åtgärdas.
--[ ] Första sidan är inte OK. Vg se bifogat skärmklipp så förstår ni. Ingen kontrast mellan texten och bilden. Antingen 
-    får ni ge mig ett verktyg där jag kan justera textfärgen manuellt eller så får ni lösa det på Ert vis.
--[ ] Skalning av bilder fungerar inte fullt ut på iOS iPhone. Verkar dock fungera korrekt på iPAD. Framförallt är 
-    det viktigt att ni löser skalningen på förstasidan. På Iphone ser det ut som skit just nu.
--[ ] Skalning av bilder verkar fungera på Google Chrome men inte på OSx Safari. Se bifogat skärmklipp och jämför med 
-    det ni själv ser i Chrome.
+-[ ] Knappen på första index slider index gör inget vettigt.
+-[ ] Gömma "Events" i naven när det inte finns några events
+-[ ] Gör allt inte är ihoptryckt medan sidan laddas in...
+
 ## Done
+-[x] php till sidan `events`.
 -[x] Byta första bilden. En orgel istället för två `index`.
 -[x] event page designed
 -[x] landskap för padda

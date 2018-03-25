@@ -55,7 +55,7 @@ $brochure = get_product_brochure_by_id($con, $product_id);
                 </div>
 
                 <?php if (!empty($brochure)) { ?>
-                    <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'"
+                    <button onclick="location.href='view_brochure?product_id=<?php echo $product_id; ?>'"
                             class="p_prod_head_btn_broschyr"><?php print_field("download_brochure_btn"); ?>
                     </button>
                 <?php } ?>
@@ -117,9 +117,11 @@ $brochure = get_product_brochure_by_id($con, $product_id);
             <p> <?php echo $short; ?></p>
         </div>
         <div class="p_info2_btn">
-            <button onclick="location.href='functions/download_brochure?product_id=<?php echo $product_id; ?>'"
-                    class="p_prod_head_btn_broschyr"><?php print_field("download_brochure_btn2"); ?>
-            </button>
+            <?php if (!empty($brochure)) { ?>
+                <button onclick="location.href='view_brochure?product_id=<?php echo $product_id; ?>'"
+                        class="p_prod_head_btn_broschyr"><?php print_field("download_brochure_btn2"); ?>
+                </button>
+            <?php } ?>
         </div>
     </div>
 </section>
