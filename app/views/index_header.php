@@ -9,7 +9,7 @@
                     <h1><?php print_field("i_slider_1_header"); ?> </h1>
                     <p><?php print_field("i_slider_1_text"); ?> </p>
                     <div class="i_slider_btn ">
-                        <button class="slide-in-delay-3 slide-in slide-in-left"
+                        <button class=""
                                 onclick="location.href='product_details?t=hem'">Läs mer
                         </button>
                     </div>
@@ -30,7 +30,7 @@
                     <h1><?php print_field("i_slider_2_header"); ?> </h1>
                     <p><?php print_field("i_slider_2_text"); ?> </p>
                     <div class="i_slider_2_btn ">
-                        <button class="slide-in-delay-3 slide-in slide-in-left"
+                        <button class=""
                                 onclick="location.href='product_details?t=hem'">Läs mer
                         </button>
                     </div>
@@ -49,7 +49,7 @@
 
                 <div id="organvideo" class="i_head_slider_3_video_player"></div>
 
-                <div class="i_head_slider_3_video_btn">
+                <div class="i_head_slider_3_video_btn hidden">
                     <i class="fa fa-youtube-play" id="video-trigger" aria-hidden="true"></i>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                     <h1><?php print_field("i_slider_4_header"); ?> </h1>
                     <p><?php print_field("i_slider_4_text"); ?> </p>
                     <div class="i_slider_4_btn ">
-                        <button class="slide-in-delay-3 slide-in slide-in-left"
+                        <button class=""
                                 onclick="location.href='product_details?t=hem'">Läs mer
                         </button>
                     </div>
