@@ -1,7 +1,0 @@
-User-agent: *
-Disallow: /functions/
-Disallow: /admin.php
-Disallow: /add_media.php
-Disallow: /add_product.php
-Disallow: /add_link.php
-Disallow: /admin.php

@@ -8,11 +8,6 @@
                 <div class="i_slider_text_container col-xs-10 col-xs-offset-1">
                     <h1><?php print_field("i_slider_1_header"); ?> </h1>
                     <p><?php print_field("i_slider_1_text"); ?> </p>
-                    <div class="i_slider_btn ">
-                        <button class=""
-                                onclick="location.href='product_details?t=hem'">Läs mer
-                        </button>
-                    </div>
                 </div>
             </div>
             <div class="i_head_slider_img">
