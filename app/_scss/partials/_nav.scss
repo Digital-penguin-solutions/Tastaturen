@@ -87,7 +87,7 @@
 
 .lang_container {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 0;
   width: 100%;
   height: 5%;
@@ -98,7 +98,7 @@
     float: left;
     height: 100%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 5vw;
     text-decoration: none;
     color: $color2 !important;
   }
@@ -208,6 +208,13 @@
           font-size: 1.2vw;
         }
       }
+    }
+  }
+
+  .lang_container {
+    bottom: 10%;
+    a {
+      font-size: 2vw;
     }
   }
 }

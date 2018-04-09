@@ -447,7 +447,7 @@ section {
 
 .lang_container {
   position: absolute;
-  bottom: 0;
+  bottom: 10%;
   left: 0;
   width: 100%;
   height: 5%; }
@@ -457,7 +457,7 @@ section {
     float: left;
     height: 100%;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 5vw;
     text-decoration: none;
     color: #c3c3c3 !important; }
 
@@ -525,7 +525,11 @@ section {
           height: 100%;
           width: 100%; }
       .nav_d .nav_d_container .nav_d_link a {
-        font-size: 1.2vw; } }
+        font-size: 1.2vw; }
+  .lang_container {
+    bottom: 10%; }
+    .lang_container a {
+      font-size: 2vw; } }
 
 .wrapper, html, body {
   background: white;

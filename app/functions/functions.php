@@ -6,7 +6,6 @@ if(!isset($functions_included)){
     //include connect page
     include "db_connect.php";
 
-
     function session_start_custom(){
         global $session_started;
         if(!$session_started){
@@ -26,7 +25,6 @@ if(!isset($functions_included)){
 
         return $data;
     }
-
 
     function get_lang(){
         if(isset($_SESSION['lang'])){
@@ -433,7 +431,6 @@ if(!isset($functions_included)){
         return $destination;
     }
 
-    //
     function return_bytes($val) {
         $val = trim($val);
         $last = strtolower($val[strlen($val)-1]);
@@ -467,6 +464,7 @@ if(!isset($functions_included)){
         return $data;
 
     }
+
     function get_all_media_posts_small($con){
         $query  = "SELECT youtube_id, type, size, media_id, header_image,title_dk, title FROM media";
         $select = mysqli_query($con, $query) or die (mysqli_error($con));
@@ -594,7 +592,6 @@ if(!isset($functions_included)){
         }
     }
 
-
     function echo_admin_media($posts){
         $count = 0;
         foreach ($posts as $post) {
@@ -647,8 +644,6 @@ if(!isset($functions_included)){
             <?php
             $count++;
         }
-
-
     }
 
     function echo_admin_products($products){
@@ -703,7 +698,6 @@ if(!isset($functions_included)){
         }
 
     }
-
 
     function get_field_by_name($con, $name){
         $name   = secure_str($name);
@@ -805,7 +799,6 @@ if(!isset($functions_included)){
 <?php
     }
 
-
     function get_stored_image_by_name($con, $name){
         $name   = secure_str($name);
         $query  = "SELECT * FROM stored_image WHERE name = '$name'";
@@ -861,7 +854,6 @@ if(!isset($functions_included)){
 
         return $data;
     }
-
 
 }
 ?>
