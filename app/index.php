@@ -124,7 +124,14 @@ if (!empty($events)) {
             <div class="col-xs-10 col-xs-offset-1">
 
                 <div class="i_contact_stuff_1 col-md-6 col-xs-12">
-                    <?php echo_stored_image_data($con, 'contact_1', "col-xs-12 col-md-10 col-md-offset-1"); ?>
+                    <?php 
+                        if(get_lang() == "sv"){
+                            echo_stored_image_data($con, 'contact_1', "col-xs-12 col-md-10 col-md-offset-1"); 
+                        } else {
+                            echo_stored_image_data($con, 'contact_1_dk', "col-xs-12 col-md-10 col-md-offset-1"); 
+
+                        }
+                    ?>
                     <div class="i_contact_text col-xs-10 col-xs-offset-1">
                         <h2><?php print_field("i_contact_person_name_1") ?></h2>
                         <p> <?php print_field("i_contact_person_number_1") ?></p>
@@ -133,7 +140,13 @@ if (!empty($events)) {
                 </div>
 
                 <div class="i_contact_stuff_2 col-md-6 col-xs-12">
-                    <?php echo_stored_image_data($con, 'contact_2', "col-xs-12 col-md-10 col-md-offset-1"); ?>
+                    <?php 
+                        if(get_lang() == "sv"){
+                            echo_stored_image_data($con, 'contact_2', "col-xs-12 col-md-10 col-md-offset-1");
+                        } else {
+                            echo_stored_image_data($con, 'contact_2_dk', "col-xs-12 col-md-10 col-md-offset-1");
+                        }
+                    ?>
                     <div class="i_contact_text col-xs-10 col-xs-offset-1">
                         <h2><?php print_field("i_contact_person_name_2") ?></h2>
                         <p> <?php print_field("i_contact_person_number_2") ?></p>
