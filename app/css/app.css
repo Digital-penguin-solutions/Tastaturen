@@ -2791,7 +2791,8 @@ section {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        height: 70%; }
+        height: auto;
+        width: 50vw; }
 
 .p_slider {
   height: 100vh; }
@@ -2883,8 +2884,8 @@ section {
         top: 50%;
         transform: translateY(-50%); }
         .p_info .p_info_container .p_info_img img {
-          max-height: 100%;
-          width: 100%; }
+          width: 25vw;
+          height: auto; }
   .p_info2 .p_info2_container .p_info2_text h1 {
     font-size: 4vw; }
   .p_info2 .p_info2_container .p_info2_text p {

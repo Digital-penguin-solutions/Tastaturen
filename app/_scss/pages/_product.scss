@@ -119,7 +119,8 @@
 
       img{
         @include horizontal-align();
-        height:70%;
+        height: auto;
+        width: 50vw;
       }
     }
   }
@@ -276,8 +277,8 @@
         max-height: 90%;
         @include vertical-align();
         img {
-            max-height:100%;
-            width:100%;
+            width: 25vw;
+            height: auto;
         }
       }
     }

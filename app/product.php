@@ -82,7 +82,7 @@ $brochure = get_product_brochure_by_id($con, $product_id);
                 <p> <?php echo $long; ?></p>
             </div>
             <div class="p_info_img col-md-4 col-md-offset-0 col-xs-10 col-xs-offset-1">
-                <img class="" src="data:image/jpeg;base64,<?php echo base64_encode($main_image) ?>"
+                <img class="" src="data:image/jpeg;base64,<?php echo base64_encode($about_image) ?>"
                      alt="Orgel produkt bild"/>
             </div>
         </div>
@@ -93,21 +93,11 @@ $brochure = get_product_brochure_by_id($con, $product_id);
 <?php include "views/admin_edit_prod.php" ?>
 
 <!-- Slider  -->
-<section style="overflow-y:hidden" class="container-fluid p_slider" role="complementary">
-    <div class="row-fluid p_slider_container">
-        <div class="all_slider_container no_list">
-            <?php
-            foreach ($slider_images as $image) {
-                ?>
-                <!-- Slider 1-->
-                <div class="slider_page col-xs-12">
-                    <img class="p_slider_image col-xs-12"
-                         src="data:image/jpeg;base64,<?php echo base64_encode($image['data']); ?>" alt=""/>
-                </div>
-            <?php } ?>
-        </div>
-    </div>
-</section>
+<?php
+if (!empty($slider_images)) {
+    include "views/product_slider.php";
+}
+?>
 
 <!-- Info och ladda ner brochyr -->
 <section class="container-fluid p_info2" role="complementary">
