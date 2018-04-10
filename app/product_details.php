@@ -1,5 +1,6 @@
-<?php include "partials/head.php"; ?>
+<?php session_start (); ?>
 <!DOCTYPE html>
+<?php include "partials/head.php"; ?>
 <html lang="swe">
 <head>
     <title>Tastaturen - Produkt detaljer</title>

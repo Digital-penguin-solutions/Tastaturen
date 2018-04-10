@@ -302,6 +302,8 @@ function get_filename_from_path(fullPath){
 }
 
 function open_input(name){
+    console.log("kör123");
     var input = $("[image_id="+name+"]");
+    console.log(input);
     $(input).trigger('click');
 }
