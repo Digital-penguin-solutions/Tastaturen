@@ -1,11 +1,11 @@
-<div class="col-md-12 i_header_container all_slider_container no_list">
+<div class="col-md-12 i_header_container all_slider_container no_list desktop_only">
 
     <!-- slider 1 -->
     <div class="i_head_slider col-xs-12 slider_page">
         <div class="i_head_slider_container">
             <div class="i_head_slider_background_dark col-xs-12"></div>
             <div class="i_head_slider_text col-xs-12">
-                <div class="i_slider_text_container col-xs-10 col-xs-offset-1">
+                <div class="i_slider_text_container i_slider_first col-xs-10 col-xs-offset-1">
                     <h1><?php print_field("i_slider_1_header"); ?> </h1>
                     <p><?php print_field("i_slider_1_text"); ?> </p>
                 </div>
