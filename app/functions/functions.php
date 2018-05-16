@@ -35,6 +35,7 @@ if(!isset($functions_included)){
         }
     }
 
+
     function translate($obj, $field){
         $value = "";
         if(get_lang() == "dk"){
@@ -98,6 +99,7 @@ if(!isset($functions_included)){
         }
 
     }
+
 
     function read_image_id($con, $index){
 
@@ -854,6 +856,5 @@ if(!isset($functions_included)){
 
         return $data;
     }
-
 }
 ?>

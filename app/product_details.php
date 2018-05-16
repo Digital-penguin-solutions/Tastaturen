@@ -59,7 +59,6 @@ else {
                 <?php
                 $products = get_all_visible_products($con, $type);
                 $len        = count($products);
-                //$odds       = 'prud-big';
                 $odd        = 'col-xs-11 col-xs-offset-1';
                 $even       = 'col-md-5 col-xs-offset-1 col-xs-11';
 
@@ -74,11 +73,9 @@ else {
                     //check if the last pruduct is alone then it covers the entier page
                     if (($i == $len-1) && ($len%2 == 1)){
                         $size     = $odd;
-                        //$size_big = $odds;
                     }
                     else{
                         $size     = $even;
-                        //$size_big = Null;
                     }
                     ?>
                     <a href="product?id=<?php echo $id; ?>" class="pe_prod_prod <?php echo $size ?>">

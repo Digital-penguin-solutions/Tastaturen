@@ -14,16 +14,18 @@ include "functions/functions.php";
 $con = connect();
 
 $product_id = $_GET['id'];
+
 $product = get_product_by_id($con, $product_id);
+$slider_images = get_product_images_by_id($con, $product_id);
+$brochure = get_product_brochure_by_id($con, $product_id);
 
 $short = translate($product, 'short_description');
 $long = translate($product, 'long_description');
-$name = $product['name'];
 $price = translate($product, 'price');
+
+$name = $product['name'];
 $main_image = $product['main_image'];
 $about_image = $product['about_image'];
-$slider_images = get_product_images_by_id($con, $product_id);
-$brochure = get_product_brochure_by_id($con, $product_id);
 ?>
 
 <!-- Header. Kort info om produkt och en bakgrunds bildspel -->
