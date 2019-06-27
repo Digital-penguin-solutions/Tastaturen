@@ -1,22 +1,21 @@
 $(document).ready(function() {
 	"use strict";
-	jQuery.fx.interval = 100; /* Ju lägre denna är desto högre kvalitet blir det på animationer men ju lägre den är desto mer tar den på CPU. - JF */
-	var fade_in_duration = 1000;
-	var pop_up_duration = 500;
+	jQuery.fx.interval = 30; /* Ju lägre denna är desto högre kvalitet blir det på animationer men ju lägre den är desto mer tar den på CPU. - JF */
+	var fade_in_duration = 500;
+	var pop_up_duration = 500; 
 	
 	var body_width = $("body").width();
 	
 	// checks if user uses a desktop JF
-	if(body_width > 992) {
+	if(body_width > 576) {
 		$(".fade-in").appear();
-		$(".fade-in").addClass("has-not-faded"); // denna klassen läggs till på alla object som ska fadas in när de syns J-F
 		$(".fade-in").css("opacity","0"); // gör alla object som ska fadas in osynliga från början J-F
-		$(".fade-in").css("position","relative");
-		$(".fade-in").css("top","20px");
+		$(".fade-in").addClass("has-not-faded"); // denna klassen läggs till på alla object som ska fadas in när de syns J-F
 		
 		
 		/* när ett objekt med klassen ".fade-in" kommer in på skärmen*/
-		$("body").on('appear', ".fade-in", function(event, $ef) {
+		$(document.body).on('appear', ".fade-in", function(event, $ef) {
+            console.log("appear");
 			
 			var $this = $(this);
 			// kollar så den inte redan har fadats in
@@ -37,13 +36,23 @@ $(document).ready(function() {
 				}
 				else if($(this).hasClass("fade-delay-4")){
 					delay = 2000;
+				} else if($(this).hasClass("fade-delay-5")){
+					delay = 2500;
+				} else if($(this).hasClass("fade-delay-6")){
+					delay = 3000;
+				} else if($(this).hasClass("fade-delay-7")){
+					delay = 3500;
 				}
 				
 				setTimeout(function()
 				{
 					$this.removeClass("has-not-faded"); // tar bort klassen som säger att detta objekten inte har fadats in än J-F
-					$this.animate( {opacity: '1' }, {duration: fade_in_duration, queue:false}); // höjer opaciteten så objeket blir synligt J-F
-					$this.animate( { top: '0px'}, {duration: pop_up_duration, queue:false});
+					$this.animate( {opacity: '1' }, {duration: fade_in_duration, queue:false, easing: "easeOutCubic"}); // höjer opaciteten så objeket blir synligt J-F
+                    if(!$this.hasClass("fade-no-moving")){
+                        $(".fade-in").css("position","relative");
+                        $(".fade-in").css("top","20px");
+                        $this.animate( { top: '0px'}, {duration: pop_up_duration, queue:false, easing: "easeOutSine"});
+                    }
 					
 				}, delay);
 				
@@ -64,8 +73,10 @@ $(document).ready(function() {
 	setTimeout(function()
 	{
 		$.force_appear();
-	}, 100);
+	}, 500);
 	
+} else {
+		$(".fade-in").css("opacity","1"); 
 }
 
 });							

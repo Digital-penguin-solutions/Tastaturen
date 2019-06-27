@@ -34,10 +34,10 @@ function toggle_nav_menu(){
 
     // changes the color on the hamburger menu
     if (nav_menu_visible){
-        jQuery(".McButton b").animate({"background-color" : button_open_color}, fade_duration);
+        //jQuery(".McButton b").animate({"background-color" : button_open_color}, fade_duration);
     }
     else{
-        jQuery(".McButton b").animate({"background-color" : button_closed_color}, fade_duration);
+        //jQuery(".McButton b").animate({"background-color" : button_closed_color}, fade_duration);
     }
 }
 

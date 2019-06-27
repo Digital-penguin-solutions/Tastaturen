@@ -2,7 +2,6 @@
 include "views/admin_info.php";
 include "partials/loading.php";
 include "views/edit.php";
-include "views/offert.php";
 
 $con = connect();
 ?>
@@ -26,9 +25,9 @@ $con = connect();
     <script src="js/jquery-latest.min.js" type="text/javascript"></script>
 
     <!--js files-->
-    <script src="js/app.js"></script>
-    <script src="js/third_party.js"></script>
-    <script src="js/admin.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/third_party.js" type="text/javascript"></script>
+    <script src="js/admin.js" type="text/javascript"></script>
 
     <!--icon-->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -61,3 +60,6 @@ $con = connect();
 
 </head>
 
+<?php
+include "views/offert.php"; 
+?>

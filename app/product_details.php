@@ -3,8 +3,8 @@
 <?php include "partials/head.php"; ?>
 <html lang="swe">
 <head>
-    <title>Tastaturen - Produkt detaljer</title>
-    <meta name="description" content="En sida för att se alla våra vackra orglar. "/>
+    <title>Tastaturen - Produkter</title>
+    <meta name="description" content="Här hittar du våra bästa orglar. "/>
     <meta name="keywords" content="orgel,instrument,musik,orgel återförsäljare,johannus,rogerinstrument"/>
 </head>
 
@@ -26,16 +26,18 @@ else {
 <!--Header -->
 <header class="container-fluid pe_header" role="banner">
     <div class="row-fluid pe_header_container col-xs-12">
+        <!--
         <div class="pe_header_bg">
             <?php
             if($type == "hem"){
-                echo_stored_image_data($con, 'pe_header_home', "");
+                //echo_stored_image_data($con, 'pe_header_home', "");
             }
             else {
-                echo_stored_image_data($con, 'pe_header_church', "");
+                //echo_stored_image_data($con, 'pe_header_church', "");
             }
             ?>
-        </div>
+        </div>-->
+
         <div class="pe_header_text col-md-6 col-xs-12">
             <h1>
                 <?php

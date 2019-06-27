@@ -6,9 +6,9 @@
                 <a href="https://www.facebook.com/Tastaturen-196268727551511/?fref=ts" target="_blank">
                     <i class="fa fa-facebook"></i>
                 </a>
-                <a href="#" target="_blank">
+                <!--<a href="#" target="_blank">
                     <i class="fa fa-instagram"></i>
-                </a>
+                </a>-->
             </div>
 
             <div class="footer_mid">

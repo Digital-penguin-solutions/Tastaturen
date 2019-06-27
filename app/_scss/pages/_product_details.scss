@@ -3,174 +3,175 @@
 
 //header
 .pe_header {
-  height: 65vh;
-  background: $color5;
-  @extend .nopm;
-
-  .pe_header_container {
+    height: 15vh;
+    background: $color5;
     @extend .nopm;
-    height: 100%;
-    background-size: 100vw 65vh;
 
-    .pe_header_bg {
-      position: absolute;
-      @extend .nopm;
-      height: 100%;
-      width: 100%;
-      background: rgba($color2, 0.3);
-      z-index: 99;
-      overflow: hidden;
+    .pe_header_container {
+        @extend .nopm;
+        height: 100%;
+        background-size: 100vw 65vh;
+        color:white;
 
-      img {
-        width: 100%;
-        min-height: 80%;
-        position: absolute;
-        @include vertical-align($pos: absolute);
-      }
+        .pe_header_bg {
+            position: absolute;
+            @extend .nopm;
+            height: 100%;
+            width: 100%;
+            background: $black;
+            z-index: 99;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                min-height: 80%;
+                position: absolute;
+                @include vertical-align($pos: absolute);
+            }
+        }
+
+        .pe_header_bg_overlay {
+            height: 100%;
+            width: 100%;
+            background: black;
+            z-index: 100!important;
+
+            h1 {
+                font-size: 7.5vw;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 4.6vw;
+            }
+        }
     }
-
-    .pe_header_bg_overlay {
-      height: 100%;
-      width: 100%;
-      background: black;
-      z-index: 100!important;
-
-      h1 {
-        font-size: 7.5vw;
-        font-weight: 600;
-      }
-
-      p {
-        font-size: 4.6vw;
-      }
-    }
-  }
 }
 
 .pe_type {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .pe_prod {
-  overflow: hidden;
-  min-height: 70vh;
-  background: $color4;
+    overflow: hidden;
+    min-height: 70vh;
+    background: $color4;
 
-  .pe_prod_container {
-    @extend .nopm;
+    .pe_prod_container {
+        @extend .nopm;
 
-    .pe_prod_container2 {
-      cursor: pointer;
+        .pe_prod_container2 {
+            cursor: pointer;
 
-      .pe_prod_prod {
-        height: 50vh;
-        background: $color2;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
-        text-decoration: none;
+            .pe_prod_prod {
+                height: 50vh;
+                background: $color2;
+                margin-top: 5vh;
+                margin-bottom: 5vh;
+                text-decoration: none;
 
-        h1 {
-          text-align: center;
-          font-size: 3vw;
-          font-weight: 500;
-          color: $white;
-          text-transform: capitalize;
+                h1 {
+                    text-align: center;
+                    font-size: 3vw;
+                    font-weight: 500;
+                    color: $white;
+                    text-transform: capitalize;
+                }
+
+                p {
+                    font-size: 1.6vw;
+                    font-weight: 300;
+                    color: $white;
+                    text-align: center;
+                }
+
+                img {
+                    position: absolute;
+                    @include center-align($pos: absolute);
+                    margin-top: 4vh;
+                    width: 55vw;
+                    height: auto;
+                }
+
+                &:hover {
+                    @include transition($time: 0.4s);
+                    background: rgba($color2, 0.4);
+
+                    img {
+                        opacity: 0.4;
+                    }
+                }
+
+            }
         }
-
-        p {
-          font-size: 1.6vw;
-          font-weight: 300;
-          color: $white;
-          text-align: center;
-        }
-
-        img {
-          position: absolute;
-          @include center-align($pos: absolute);
-          margin-top: 4vh;
-          width: 55vw;
-          height: auto;
-        }
-
-        &:hover {
-          @include transition($time: 0.4s);
-          background: rgba($color2, 0.4);
-
-          img {
-            opacity: 0.4;
-          }
-        }
-
-      }
     }
-  }
 }
 
 @media (max-width: $screen-sm-min) and (orientation: landscape) {
-  .pe_prod{
-    .pe_prod_container{
-      .pe_prod_container2{
-        .pe_prod_prod{
+    .pe_prod{
+        .pe_prod_container{
+            .pe_prod_container2{
+                .pe_prod_prod{
 
-          img{
-            width: 22vw;
-          }
+                    img{
+                        width: 22vw;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media (min-width: $screen-sm-min) {
-  .pe_prod {
-    .pe_prod_container {
+    .pe_prod {
+        .pe_prod_container {
 
-      .pe_prod_container2 {
-        .pe_prod_prod {
-          h1 {
-            font-size: 2.5vw;
-          }
-          img {
-            width: 35vw;
-            height: auto;
-          }
+            .pe_prod_container2 {
+                .pe_prod_prod {
+                    h1 {
+                        font-size: 2.5vw;
+                    }
+                    img {
+                        width: 35vw;
+                        height: auto;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media (min-width: $screen-md-min) {
-  .pe_header {
-    .pe_header_container {
-      .pe_header_text {
-        text-align: left;
-        margin-left: 2vw;
-        z-index: 100;
-        h1 {
-          font-size: 3.5vw;
+    .pe_header {
+        .pe_header_container {
+            .pe_header_text {
+                text-align: left;
+                margin-left: 2vw;
+                z-index: 100;
+                h1 {
+                    font-size: 3.5vw;
+                }
+                p {
+                    font-size: 1.6vw;
+                }
+            }
         }
-        p {
-          font-size: 1.6vw;
-        }
-      }
     }
-  }
 
-  .pe_prod {
-    .pe_prod_container {
+    .pe_prod {
+        .pe_prod_container {
 
-      .pe_prod_container2 {
-        .pe_prod_prod {
-          h1 {
-            font-size: 2.5vw;
-          }
-          img {
-            width: 18vw;
-            height: auto;
-          }
+            .pe_prod_container2 {
+                .pe_prod_prod {
+                    h1 {
+                        font-size: 2.5vw;
+                    }
+                    img {
+                        width: 18vw;
+                        height: auto;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

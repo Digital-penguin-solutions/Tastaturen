@@ -18,18 +18,59 @@
                 @extend .nopm;
                 height: 100%;
 
-                .i_head_slider_text {
-                    position: absolute;
-                    z-index: 100;
+                .i_showcase {
+                    z-index:100;
+                    height:60%;
+                    position:absolute;
+                    bottom:0%;
+                    .showcase_product {
+                        margin:0 !important;
+                        margin-bottom:5% !important;
+                        text-decoration:none;
+                        color: $index_header_text;
+                        transition: all .2s ease-in-out;
+                        height:75%;
+                        padding:0;
+                        p {
+                            text-align:center;
+                            font-size:2vw;
+                        }
+                        img {
+                            height:80%;
+                        }
+                    }
+                    .showcase_product:hover{
+                        transform: scale(1.02);
+                    }
 
+                    .i_show_all_btn {
+                        color: $index_header_text;
+                        height:20%;
+                        text-align:center;
+                        font-size:1.5vw;
+                        width:100%;
+                        display:block;
+                    }
+                }
+
+                .i_head_slider_text {
+                    z-index:100;
                     .i_slider_first {
-                        h1,p {
-                            color: white !important;
+                        h1 {
+                            color:$index_header_text !important;
+                            text-align:center;
+                            span {
+                                opacity:0;
+                            }
+                        }
+                        p {
+                            color:$index_header_text !important;
+                            text-align:center;
                         }
                     }
 
                     .i_slider_text_container {
-                        margin-top: 25vh;
+                        margin-top: 5vh;
 
                         h1 {
                             font-size: 10vw;

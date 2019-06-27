@@ -16,6 +16,7 @@
 </head>
 
 <body class="wrapper col-xs-12 col-md-10 index" id="page-top">
+
 <?php
 include "partials/nav.php";
 include "functions/functions.php";
@@ -43,13 +44,17 @@ $events = get_all_events($con);
                 <?php print_field("i_about_text"); ?>
             </p>
 
+            <a href="https://www.allenorgan.com/" target="_blank" class="col-xs-offset-3 col-xs-6 col-md-offset-4 col-md-4">
+                <?php echo_stored_image_data($con, 'allen_logo', "col-xs-12 col-md-10 col-md-offset-1"); ?>
+            </a>
+            <!--
             <a href="http://www.johannus.com/" target="_blank" class="col-xs-6 col-md-offset-1 col-md-4">
                 <img src="img/logo/saker/johanus_white.svg" alt="johannus logo" style="margin-top: 1.6vh">
             </a>
 
             <a href="http://www.rodgersinstruments.com/" target="_blank" class="col-xs-6 col-md-offset-1 col-md-4">
                 <img src="img/logo/saker/rodger_white.svg" alt="rodgersinstruments logo">
-            </a>
+            </a>-->
         </div>
     </div>
 </section>
@@ -200,5 +205,8 @@ if (!empty($events)) {
 
 <!-- Footer -->
 <?php include "partials/footer.php" ?>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </body>
 </html>
