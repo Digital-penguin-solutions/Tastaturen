@@ -46,8 +46,14 @@ $(document).ready(function() {
 				
 				setTimeout(function()
 				{
+                    var fade_duration = fade_in_duration;
+
+                    if($this.hasClass("fade-slow")){
+                        fade_duration *= 2;
+                    }
+
 					$this.removeClass("has-not-faded"); // tar bort klassen som säger att detta objekten inte har fadats in än J-F
-					$this.animate( {opacity: '1' }, {duration: fade_in_duration, queue:false, easing: "easeOutCubic"}); // höjer opaciteten så objeket blir synligt J-F
+					$this.animate( {opacity: '1' }, {duration: fade_duration, queue:false, easing: "easeOutCubic"}); // höjer opaciteten så objeket blir synligt J-F
                     if(!$this.hasClass("fade-no-moving")){
                         $(".fade-in").css("position","relative");
                         $(".fade-in").css("top","20px");

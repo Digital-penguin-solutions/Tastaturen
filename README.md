@@ -1,8 +1,8 @@
 # Tastaturen
 Website built 2017-2018
 
-[Tastaturen](http://tastaturen.se/) is a organ dealer based in Sewaden. 
-Website includes full flege admin page with capabiletys to edit all images and text. 
+[Tastaturen](http://tastaturen.se/) is a organ dealer based in Sweden. 
+Website includes full flege admin page with capabilities to edit all images and text. 
 
 ## Dependencis
 * ``npm`` 

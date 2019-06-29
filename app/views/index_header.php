@@ -11,20 +11,20 @@
                 <div class="i_slider_text_container i_slider_first col-xs-8 col-xs-offset-2">
                     
                     <h1 class="text-effect">Tastaturen</h1>
-                    <p class="fade-no-moving fade-in fade-delay-2"><?php print_field("i_slider_1_text"); ?> </p>
+                    <p class="fade-no-moving fade-in fade-delay-5 fade-slow"><?php print_field("i_slider_1_text"); ?> </p>
                 </div>
             </div>
             <div class = "i_showcase col-xs-8 col-xs-offset-2">
                 <!--Product 1  -->
-                <a target="_blank" rel="noopener noreferrer" href = "" class = "fade-no-moving fade-in fade-delay-3 showcase_product hidden-xs hidden-sm col-md-6">
-                    <?php echo_stored_image_data($con, 'i_showcase_image_1', "center_horizontally_css"); ?>
-                    <p><?php print_field("i_showcase_1"); ?> </p>
+                <a target="_blank" rel="noopener noreferrer" href = "" class = "fade-no-moving fade-in fade-delay-2 showcase_product hidden-xs hidden-sm col-md-6">
+                    <?php echo_stored_image_data($con, 'i_category_church_image', "center_horizontally_css"); ?>
+                    <p><?php print_field("i_category_church"); ?> </p>
                 </a>
-                <a target="_blank" rel="noopener noreferrer" href = "" class = "fade-no-moving fade-in fade-delay-5 showcase_product hidden-xs hidden-sm col-md-6"> <!--Product 2  -->
-                    <?php echo_stored_image_data($con, 'i_showcase_image_2', "center_horizontally_css"); ?>
-                    <p><?php print_field("i_showcase_2"); ?> </p>
+                <a target="_blank" rel="noopener noreferrer" href = "" class = "fade-no-moving fade-in fade-delay-4 showcase_product hidden-xs hidden-sm col-md-6"> <!--Product 2  -->
+                    <?php echo_stored_image_data($con, 'i_category_home_image', "center_horizontally_css"); ?>
+                    <p><?php print_field("i_category_home"); ?> </p>
                 </a>
-                <a data-scroll href = "#Orgel-kyrka" class="fade-in fade-no-moving fade-delay-7 i_show_all_btn"><?php print_field("i_show_all"); ?></a>
+                <!--<a data-scroll href = "#Orgel-kyrka" class="fade-in fade-no-moving fade-delay-7 i_show_all_btn"><?php //print_field("i_show_all"); ?></a>-->
             </div>
         </div>
     </div>

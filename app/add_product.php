@@ -34,6 +34,7 @@ if (isset($_POST["add"]) && isset($_SESSION['admin'])){
         $editing        = false;
     }
 
+
     $name               = secure_str($_POST["name"]);
     $short              = secure_str($_POST["short_description"]);
     $long               = secure_str($_POST["long_description"]);
